@@ -1,0 +1,11 @@
+{
+  "name": "angielski-audio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Odtwarzacz audio do nauki angielskiego — statyczna strona (Render).",
+  "scripts": {
+    "build": "node tools/generate.js",
+    "serve": "node tools/generate.js && python3 -m http.server 8000"
+  }
+}

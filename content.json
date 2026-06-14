@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-06-14T09:50:33.685Z",
+  "chapters": [
+    {
+      "id": "01-na-lotnisku",
+      "slug": "01-na-lotnisku",
+      "number": 1,
+      "title": "Na lotnisku / At the Airport",
+      "titlePl": "Na lotnisku",
+      "titleEn": "At the Airport",
+      "pdf": "01-na-lotnisku/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "01-na-lotnisku/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "01-na-lotnisku/grupa-2.mp3"
+        }
+      ]
+    },
+    {
+      "id": "02-na-lotnisku-rozszerzony",
+      "slug": "02-na-lotnisku-rozszerzony",
+      "number": 2,
+      "title": "Na lotnisku — wersja rozszerzona / At the Airport — Extended",
+      "titlePl": "Na lotnisku — wersja rozszerzona",
+      "titleEn": "At the Airport — Extended",
+      "pdf": "02-na-lotnisku-rozszerzony/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "03-pociag-cieszyn-warszawa",
+      "slug": "03-pociag-cieszyn-warszawa",
+      "number": 3,
+      "title": "Pociągiem z Cieszyna do Warszawy / Cieszyn to Warsaw by Train",
+      "titlePl": "Pociągiem z Cieszyna do Warszawy",
+      "titleEn": "Cieszyn to Warsaw by Train",
+      "pdf": "03-pociag-cieszyn-warszawa/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "03-pociag-cieszyn-warszawa/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "03-pociag-cieszyn-warszawa/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "03-pociag-cieszyn-warszawa/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "03-pociag-cieszyn-warszawa/grupa-4.mp3"
+        }
+      ]
+    },
+    {
+      "id": "04-pomidory-kongo",
+      "slug": "04-pomidory-kongo",
+      "number": 4,
+      "title": "Zbieranie pomidorów na farmie w Kongu / Picking Tomatoes on a Farm in the Congo",
+      "titlePl": "Zbieranie pomidorów na farmie w Kongu",
+      "titleEn": "Picking Tomatoes on a Farm in the Congo",
+      "pdf": "04-pomidory-kongo/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "05-cieszyn-lofthus",
+      "slug": "05-cieszyn-lofthus",
+      "number": 5,
+      "title": "Z Cieszyna do Lofthus / From Cieszyn to Lofthus",
+      "titlePl": "Z Cieszyna do Lofthus",
+      "titleEn": "From Cieszyn to Lofthus",
+      "pdf": "05-cieszyn-lofthus/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "05-cieszyn-lofthus/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "05-cieszyn-lofthus/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "05-cieszyn-lofthus/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "05-cieszyn-lofthus/grupa-4.mp3"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "05-cieszyn-lofthus/grupa-5.mp3"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "05-cieszyn-lofthus/grupa-6.mp3"
+        }
+      ]
+    },
+    {
+      "id": "06-rzad-wylacza-ai",
+      "slug": "06-rzad-wylacza-ai",
+      "number": 6,
+      "title": "Rząd wyłącza AI / When the Government Pulls the Plug on AI",
+      "titlePl": "Rząd wyłącza AI",
+      "titleEn": "When the Government Pulls the Plug on AI",
+      "pdf": "06-rzad-wylacza-ai/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "06-rzad-wylacza-ai/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "06-rzad-wylacza-ai/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "06-rzad-wylacza-ai/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "06-rzad-wylacza-ai/grupa-4.mp3"
+        }
+      ]
+    },
+    {
+      "id": "07-co-dalej-po-norwegii",
+      "slug": "07-co-dalej-po-norwegii",
+      "number": 7,
+      "title": "Co dalej po Norwegii? / What's Next After Norway?",
+      "titlePl": "Co dalej po Norwegii?",
+      "titleEn": "What's Next After Norway?",
+      "pdf": "07-co-dalej-po-norwegii/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-4.mp3"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-5.mp3"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "07-co-dalej-po-norwegii/aa/grupa-6.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: angielski-audio
+    runtime: static
+    buildCommand: node tools/generate.js
+    staticPublishPath: .
+    headers:
+      - path: /*.mp3
+        name: Cache-Control
+        value: public, max-age=31536000, immutable

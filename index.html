@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="apple-mobile-web-app-title" content="Angielski">
+  <title>Angielski — audio</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="topbar-back" id="back" type="button" hidden aria-label="Wstecz">‹</button>
+    <span class="topbar-title" id="topbar-title">Angielski</span>
+  </header>
+
+  <main id="view" class="view"><!-- wypełniane przez app.js --></main>
+
+  <!-- Pasek odtwarzacza (sticky, dół). Widoczny po wybraniu grupy. -->
+  <div class="player" id="player" hidden>
+    <div class="player-top">
+      <div class="player-info">
+        <span class="player-group" id="p-group">Grupa 1</span>
+        <span class="player-chapter" id="p-chapter">—</span>
+      </div>
+      <button class="player-repeat" id="p-repeat" type="button" aria-label="Tryb pętli">
+        <span class="rep-glyph">⟳</span><span class="rep-tag" id="p-rep-tag">jedna</span>
+      </button>
+    </div>
+    <div class="player-seek">
+      <span class="t t-cur" id="p-cur">0:00</span>
+      <input type="range" id="p-seek" min="0" max="1000" value="0" step="1" aria-label="Postęp odtwarzania">
+      <span class="t t-dur" id="p-dur">0:00</span>
+    </div>
+    <div class="player-controls">
+      <button class="pc" id="p-prev" type="button" aria-label="Poprzednia grupa">⏮</button>
+      <button class="pc pc-main" id="p-play" type="button" aria-label="Odtwórz lub pauza">▶</button>
+      <button class="pc" id="p-next" type="button" aria-label="Następna grupa">⏭</button>
+    </div>
+  </div>
+
+  <!-- Jeden, współdzielony element audio (sedno odtwarzania w tle na iOS). -->
+  <audio id="audio" playsinline preload="metadata"></audio>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
