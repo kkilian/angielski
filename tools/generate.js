@@ -13,6 +13,19 @@ const ROOT = path.resolve(__dirname, '..'); // korzeń = folder ~/angielski
 
 const isChapterDir = (name) => /^\d{2}-/.test(name);
 
+// Rozdziały ukryte w publicznej wersji (osobny produkt / robocze). Zostają na
+// dysku i w repo, ale NIE trafiają do content.json → nie widać ich w odtwarzaczu.
+// Aby pokazać rozdział publicznie, usuń jego id z tego zbioru.
+const HIDDEN = new Set([
+  '01-na-lotnisku',
+  '02-na-lotnisku-rozszerzony',
+  '03-pociag-cieszyn-warszawa',
+  '04-pomidory-kongo',
+  '05-cieszyn-lofthus',
+  '06-rzad-wylacza-ai',
+  '07-co-dalej-po-norwegii',
+]);
+
 // Tytuł z pierwszej linii nagłówka H1 w rozdzial.md, np.
 // "# Z Cieszyna do Lofthus / From Cieszyn to Lofthus"
 function readTitle(chapterPath) {
@@ -58,7 +71,7 @@ function findGroups(chapterPath, chapterId) {
 
 function build() {
   const ids = fs.readdirSync(ROOT, { withFileTypes: true })
-    .filter((e) => e.isDirectory() && isChapterDir(e.name))
+    .filter((e) => e.isDirectory() && isChapterDir(e.name) && !HIDDEN.has(e.name))
     .map((e) => e.name)
     .sort();
 
