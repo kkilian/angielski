@@ -17,13 +17,8 @@ const isChapterDir = (name) => /^\d{2}-/.test(name);
 // dysku i w repo, ale NIE trafiają do content.json → nie widać ich w odtwarzaczu.
 // Aby pokazać rozdział publicznie, usuń jego id z tego zbioru.
 const HIDDEN = new Set([
-  '01-na-lotnisku',
-  '02-na-lotnisku-rozszerzony',
-  '03-pociag-cieszyn-warszawa',
-  '04-pomidory-kongo',
-  '05-cieszyn-lofthus',
-  '06-rzad-wylacza-ai',
-  '07-co-dalej-po-norwegii',
+  // (puste) — wszystkie rozdziały widoczne w odtwarzaczu.
+  // Aby ukryć rozdział, dodaj tu jego id, np. '04-pomidory-kongo'.
 ]);
 
 // Tytuł z pierwszej linii nagłówka H1 w rozdzial.md, np.
