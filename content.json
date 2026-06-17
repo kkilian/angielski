@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T04:11:42.381Z",
+  "generatedAt": "2026-06-17T03:46:23.569Z",
   "chapters": [
     {
       "id": "01-na-lotnisku",
@@ -190,122 +190,6 @@
           "n": 6,
           "label": "Grupa 6",
           "src": "07-co-dalej-po-norwegii/aa/grupa-6.mp3"
-        }
-      ]
-    },
-    {
-      "id": "08-rozmowa-rekrutacyjna",
-      "slug": "08-rozmowa-rekrutacyjna",
-      "number": 8,
-      "title": "Rozmowa rekrutacyjna w amerykańskiej firmie / Acing the Interview",
-      "titlePl": "Rozmowa rekrutacyjna w amerykańskiej firmie",
-      "titleEn": "Acing the Interview",
-      "pdf": "08-rozmowa-rekrutacyjna/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "08-rozmowa-rekrutacyjna/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "08-rozmowa-rekrutacyjna/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "08-rozmowa-rekrutacyjna/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "08-rozmowa-rekrutacyjna/grupa-4.mp3"
-        },
-        {
-          "n": 5,
-          "label": "Grupa 5",
-          "src": "08-rozmowa-rekrutacyjna/grupa-5.mp3"
-        },
-        {
-          "n": 6,
-          "label": "Grupa 6",
-          "src": "08-rozmowa-rekrutacyjna/grupa-6.mp3"
-        }
-      ]
-    },
-    {
-      "id": "09-daily-standup",
-      "slug": "09-daily-standup",
-      "number": 9,
-      "title": "Daily standup po angielsku / The Daily Standup",
-      "titlePl": "Daily standup po angielsku",
-      "titleEn": "The Daily Standup",
-      "pdf": "09-daily-standup/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "09-daily-standup/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "09-daily-standup/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "09-daily-standup/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "09-daily-standup/grupa-4.mp3"
-        },
-        {
-          "n": 5,
-          "label": "Grupa 5",
-          "src": "09-daily-standup/grupa-5.mp3"
-        }
-      ]
-    },
-    {
-      "id": "10-code-review",
-      "slug": "10-code-review",
-      "number": 10,
-      "title": "Code review po angielsku / Code Review",
-      "titlePl": "Code review po angielsku",
-      "titleEn": "Code Review",
-      "pdf": "10-code-review/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "10-code-review/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "10-code-review/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "10-code-review/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "10-code-review/grupa-4.mp3"
-        },
-        {
-          "n": 5,
-          "label": "Grupa 5",
-          "src": "10-code-review/grupa-5.mp3"
         }
       ]
     }
