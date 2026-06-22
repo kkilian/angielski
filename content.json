@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T03:46:23.569Z",
+  "generatedAt": "2026-06-22T16:59:27.470Z",
   "chapters": [
     {
       "id": "01-na-lotnisku",
@@ -190,6 +190,183 @@
           "n": 6,
           "label": "Grupa 6",
           "src": "07-co-dalej-po-norwegii/aa/grupa-6.mp3"
+        }
+      ]
+    },
+    {
+      "id": "08-m1d1-domykanie-i-powrot",
+      "slug": "08-m1d1-domykanie-i-powrot",
+      "number": 8,
+      "title": "M1 · Dział 1: Domykanie i powrót / M1 · Part 1: Wrapping Up and Heading Home",
+      "titlePl": "M1 · Dział 1: Domykanie i powrót",
+      "titleEn": "M1 · Part 1: Wrapping Up and Heading Home",
+      "pdf": "08-m1d1-domykanie-i-powrot/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "08-m1d1-domykanie-i-powrot/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "08-m1d1-domykanie-i-powrot/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "08-m1d1-domykanie-i-powrot/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "08-m1d1-domykanie-i-powrot/grupa-4.mp3"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "08-m1d1-domykanie-i-powrot/grupa-5.mp3"
+        }
+      ]
+    },
+    {
+      "id": "09-m1d2-gdzie-zamieszkac",
+      "slug": "09-m1d2-gdzie-zamieszkac",
+      "number": 9,
+      "title": "M1 · Dział 2: Gdzie zamieszkać i pierwszy ruch / M1 · Part 2: Where to Live and the First Move",
+      "titlePl": "M1 · Dział 2: Gdzie zamieszkać i pierwszy ruch",
+      "titleEn": "M1 · Part 2: Where to Live and the First Move",
+      "pdf": "09-m1d2-gdzie-zamieszkac/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "09-m1d2-gdzie-zamieszkac/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "09-m1d2-gdzie-zamieszkac/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "09-m1d2-gdzie-zamieszkac/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "09-m1d2-gdzie-zamieszkac/grupa-4.mp3"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "09-m1d2-gdzie-zamieszkac/grupa-5.mp3"
+        }
+      ]
+    },
+    {
+      "id": "10-m1d3-przegadac-z-jakiem",
+      "slug": "10-m1d3-przegadac-z-jakiem",
+      "number": 10,
+      "title": "M1 · Dział 3: Przegadać to z Jakiem / M1 · Part 3: Talking It Over with Jake",
+      "titlePl": "M1 · Dział 3: Przegadać to z Jakiem",
+      "titleEn": "M1 · Part 3: Talking It Over with Jake",
+      "pdf": "10-m1d3-przegadac-z-jakiem/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "10-m1d3-przegadac-z-jakiem/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "10-m1d3-przegadac-z-jakiem/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "10-m1d3-przegadac-z-jakiem/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "10-m1d3-przegadac-z-jakiem/grupa-4.mp3"
+        }
+      ]
+    },
+    {
+      "id": "11-m1d4-wszystko-naraz",
+      "slug": "11-m1d4-wszystko-naraz",
+      "number": 11,
+      "title": "M1 · Dział 4: Wszystko naraz / M1 · Part 4: Putting It All Together",
+      "titlePl": "M1 · Dział 4: Wszystko naraz",
+      "titleEn": "M1 · Part 4: Putting It All Together",
+      "pdf": "11-m1d4-wszystko-naraz/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "11-m1d4-wszystko-naraz/grupa-1.mp3"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "11-m1d4-wszystko-naraz/grupa-2.mp3"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "11-m1d4-wszystko-naraz/grupa-3.mp3"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "11-m1d4-wszystko-naraz/grupa-4.mp3"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "11-m1d4-wszystko-naraz/grupa-5.mp3"
+        }
+      ]
+    },
+    {
+      "id": "12-m1d5-ostatnie-dwa-tygodnie",
+      "slug": "12-m1d5-ostatnie-dwa-tygodnie",
+      "number": 12,
+      "title": "M1 · Dział 5: Ostatnie dwa tygodnie / M1 · Part 5: The Last Two Weeks",
+      "titlePl": "M1 · Dział 5: Ostatnie dwa tygodnie",
+      "titleEn": "M1 · Part 5: The Last Two Weeks",
+      "pdf": "12-m1d5-ostatnie-dwa-tygodnie/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "12-m1d5-ostatnie-dwa-tygodnie/grupa-1.mp3"
+        }
+      ]
+    },
+    {
+      "id": "13-m1d6-so-whats-next",
+      "slug": "13-m1d6-so-whats-next",
+      "number": 13,
+      "title": "M1 · Dział 6: No to co dalej? / M1 · Part 6: So What's Next?",
+      "titlePl": "M1 · Dział 6: No to co dalej?",
+      "titleEn": "M1 · Part 6: So What's Next?",
+      "pdf": "13-m1d6-so-whats-next/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "13-m1d6-so-whats-next/grupa-1.mp3"
         }
       ]
     }
