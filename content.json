@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T17:07:55.088Z",
+  "generatedAt": "2026-06-22T17:32:32.263Z",
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
@@ -14,27 +14,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "01-m1d1-domykanie-i-powrot/grupa-1.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-1.mp3?v=1782148855653"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "01-m1d1-domykanie-i-powrot/grupa-2.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-2.mp3?v=1782148887753"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "01-m1d1-domykanie-i-powrot/grupa-3.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-3.mp3?v=1782148920817"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "01-m1d1-domykanie-i-powrot/grupa-4.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-4.mp3?v=1782148956432"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "01-m1d1-domykanie-i-powrot/grupa-5.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-5.mp3?v=1782148982002"
         }
       ]
     },
@@ -51,27 +51,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "02-m1d2-gdzie-zamieszkac/grupa-1.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-1.mp3?v=1782149018889"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "02-m1d2-gdzie-zamieszkac/grupa-2.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-2.mp3?v=1782149048158"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "02-m1d2-gdzie-zamieszkac/grupa-3.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-3.mp3?v=1782149077802"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "02-m1d2-gdzie-zamieszkac/grupa-4.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-4.mp3?v=1782149107943"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "02-m1d2-gdzie-zamieszkac/grupa-5.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-5.mp3?v=1782149137914"
         }
       ]
     },
@@ -88,22 +88,22 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "03-m1d3-przegadac-z-jakiem/grupa-1.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-1.mp3?v=1782149166536"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "03-m1d3-przegadac-z-jakiem/grupa-2.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-2.mp3?v=1782149191767"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "03-m1d3-przegadac-z-jakiem/grupa-3.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-3.mp3?v=1782149219709"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "03-m1d3-przegadac-z-jakiem/grupa-4.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-4.mp3?v=1782149245039"
         }
       ]
     },
@@ -120,27 +120,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "04-m1d4-wszystko-naraz/grupa-1.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-1.mp3?v=1782149272855"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "04-m1d4-wszystko-naraz/grupa-2.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-2.mp3?v=1782149295079"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "04-m1d4-wszystko-naraz/grupa-3.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-3.mp3?v=1782149316765"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "04-m1d4-wszystko-naraz/grupa-4.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-4.mp3?v=1782149349883"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "04-m1d4-wszystko-naraz/grupa-5.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-5.mp3?v=1782149375173"
         }
       ]
     },
@@ -157,7 +157,7 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "05-m1d5-ostatnie-dwa-tygodnie/grupa-1.mp3"
+          "src": "05-m1d5-ostatnie-dwa-tygodnie/grupa-1.mp3?v=1782149402515"
         }
       ]
     },
@@ -174,7 +174,7 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "06-m1d6-so-whats-next/grupa-1.mp3"
+          "src": "06-m1d6-so-whats-next/grupa-1.mp3?v=1782148786501"
         }
       ]
     }

@@ -47,7 +47,14 @@ function findGroups(chapterPath, chapterId) {
       const m = e.name.match(/^grupa-(\d+)\.mp3$/i);
       if (m) {
         const n = parseInt(m[1], 10);
-        if (!found.has(n)) found.set(n, `${relDir}/${e.name}`);
+        if (!found.has(n)) {
+          // cache-busting: ?v=<mtime>. mp3 mają nagłówek immutable (render.yaml),
+          // a nazwy się nie zmieniają po regeneracji — bez tego przeglądarka grałaby
+          // stary plik z cache. mtime zmienia URL tylko gdy plik faktycznie się zmienił.
+          let v = '';
+          try { v = `?v=${Math.round(fs.statSync(path.join(absDir, e.name)).mtimeMs)}`; } catch {}
+          found.set(n, `${relDir}/${e.name}${v}`);
+        }
       }
     }
   };
