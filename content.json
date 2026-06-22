@@ -1,372 +1,180 @@
 {
-  "generatedAt": "2026-06-22T16:59:27.470Z",
+  "generatedAt": "2026-06-22T17:07:55.088Z",
   "chapters": [
     {
-      "id": "01-na-lotnisku",
-      "slug": "01-na-lotnisku",
+      "id": "01-m1d1-domykanie-i-powrot",
+      "slug": "01-m1d1-domykanie-i-powrot",
       "number": 1,
-      "title": "Na lotnisku / At the Airport",
-      "titlePl": "Na lotnisku",
-      "titleEn": "At the Airport",
-      "pdf": "01-na-lotnisku/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "01-na-lotnisku/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "01-na-lotnisku/grupa-2.mp3"
-        }
-      ]
-    },
-    {
-      "id": "02-na-lotnisku-rozszerzony",
-      "slug": "02-na-lotnisku-rozszerzony",
-      "number": 2,
-      "title": "Na lotnisku — wersja rozszerzona / At the Airport — Extended",
-      "titlePl": "Na lotnisku — wersja rozszerzona",
-      "titleEn": "At the Airport — Extended",
-      "pdf": "02-na-lotnisku-rozszerzony/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
-    },
-    {
-      "id": "03-pociag-cieszyn-warszawa",
-      "slug": "03-pociag-cieszyn-warszawa",
-      "number": 3,
-      "title": "Pociągiem z Cieszyna do Warszawy / Cieszyn to Warsaw by Train",
-      "titlePl": "Pociągiem z Cieszyna do Warszawy",
-      "titleEn": "Cieszyn to Warsaw by Train",
-      "pdf": "03-pociag-cieszyn-warszawa/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "03-pociag-cieszyn-warszawa/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "03-pociag-cieszyn-warszawa/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "03-pociag-cieszyn-warszawa/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "03-pociag-cieszyn-warszawa/grupa-4.mp3"
-        }
-      ]
-    },
-    {
-      "id": "04-pomidory-kongo",
-      "slug": "04-pomidory-kongo",
-      "number": 4,
-      "title": "Zbieranie pomidorów na farmie w Kongu / Picking Tomatoes on a Farm in the Congo",
-      "titlePl": "Zbieranie pomidorów na farmie w Kongu",
-      "titleEn": "Picking Tomatoes on a Farm in the Congo",
-      "pdf": "04-pomidory-kongo/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
-    },
-    {
-      "id": "05-cieszyn-lofthus",
-      "slug": "05-cieszyn-lofthus",
-      "number": 5,
-      "title": "Z Cieszyna do Lofthus / From Cieszyn to Lofthus",
-      "titlePl": "Z Cieszyna do Lofthus",
-      "titleEn": "From Cieszyn to Lofthus",
-      "pdf": "05-cieszyn-lofthus/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "05-cieszyn-lofthus/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "05-cieszyn-lofthus/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "05-cieszyn-lofthus/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "05-cieszyn-lofthus/grupa-4.mp3"
-        },
-        {
-          "n": 5,
-          "label": "Grupa 5",
-          "src": "05-cieszyn-lofthus/grupa-5.mp3"
-        },
-        {
-          "n": 6,
-          "label": "Grupa 6",
-          "src": "05-cieszyn-lofthus/grupa-6.mp3"
-        }
-      ]
-    },
-    {
-      "id": "06-rzad-wylacza-ai",
-      "slug": "06-rzad-wylacza-ai",
-      "number": 6,
-      "title": "Rząd wyłącza AI / When the Government Pulls the Plug on AI",
-      "titlePl": "Rząd wyłącza AI",
-      "titleEn": "When the Government Pulls the Plug on AI",
-      "pdf": "06-rzad-wylacza-ai/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "06-rzad-wylacza-ai/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "06-rzad-wylacza-ai/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "06-rzad-wylacza-ai/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "06-rzad-wylacza-ai/grupa-4.mp3"
-        }
-      ]
-    },
-    {
-      "id": "07-co-dalej-po-norwegii",
-      "slug": "07-co-dalej-po-norwegii",
-      "number": 7,
-      "title": "Co dalej po Norwegii? / What's Next After Norway?",
-      "titlePl": "Co dalej po Norwegii?",
-      "titleEn": "What's Next After Norway?",
-      "pdf": "07-co-dalej-po-norwegii/rozdzial.pdf",
-      "hasAudio": true,
-      "groups": [
-        {
-          "n": 1,
-          "label": "Grupa 1",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-1.mp3"
-        },
-        {
-          "n": 2,
-          "label": "Grupa 2",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-2.mp3"
-        },
-        {
-          "n": 3,
-          "label": "Grupa 3",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-3.mp3"
-        },
-        {
-          "n": 4,
-          "label": "Grupa 4",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-4.mp3"
-        },
-        {
-          "n": 5,
-          "label": "Grupa 5",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-5.mp3"
-        },
-        {
-          "n": 6,
-          "label": "Grupa 6",
-          "src": "07-co-dalej-po-norwegii/aa/grupa-6.mp3"
-        }
-      ]
-    },
-    {
-      "id": "08-m1d1-domykanie-i-powrot",
-      "slug": "08-m1d1-domykanie-i-powrot",
-      "number": 8,
       "title": "M1 · Dział 1: Domykanie i powrót / M1 · Part 1: Wrapping Up and Heading Home",
       "titlePl": "M1 · Dział 1: Domykanie i powrót",
       "titleEn": "M1 · Part 1: Wrapping Up and Heading Home",
-      "pdf": "08-m1d1-domykanie-i-powrot/rozdzial.pdf",
+      "pdf": "01-m1d1-domykanie-i-powrot/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "08-m1d1-domykanie-i-powrot/grupa-1.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-1.mp3"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "08-m1d1-domykanie-i-powrot/grupa-2.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-2.mp3"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "08-m1d1-domykanie-i-powrot/grupa-3.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-3.mp3"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "08-m1d1-domykanie-i-powrot/grupa-4.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-4.mp3"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "08-m1d1-domykanie-i-powrot/grupa-5.mp3"
+          "src": "01-m1d1-domykanie-i-powrot/grupa-5.mp3"
         }
       ]
     },
     {
-      "id": "09-m1d2-gdzie-zamieszkac",
-      "slug": "09-m1d2-gdzie-zamieszkac",
-      "number": 9,
+      "id": "02-m1d2-gdzie-zamieszkac",
+      "slug": "02-m1d2-gdzie-zamieszkac",
+      "number": 2,
       "title": "M1 · Dział 2: Gdzie zamieszkać i pierwszy ruch / M1 · Part 2: Where to Live and the First Move",
       "titlePl": "M1 · Dział 2: Gdzie zamieszkać i pierwszy ruch",
       "titleEn": "M1 · Part 2: Where to Live and the First Move",
-      "pdf": "09-m1d2-gdzie-zamieszkac/rozdzial.pdf",
+      "pdf": "02-m1d2-gdzie-zamieszkac/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "09-m1d2-gdzie-zamieszkac/grupa-1.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-1.mp3"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "09-m1d2-gdzie-zamieszkac/grupa-2.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-2.mp3"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "09-m1d2-gdzie-zamieszkac/grupa-3.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-3.mp3"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "09-m1d2-gdzie-zamieszkac/grupa-4.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-4.mp3"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "09-m1d2-gdzie-zamieszkac/grupa-5.mp3"
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-5.mp3"
         }
       ]
     },
     {
-      "id": "10-m1d3-przegadac-z-jakiem",
-      "slug": "10-m1d3-przegadac-z-jakiem",
-      "number": 10,
+      "id": "03-m1d3-przegadac-z-jakiem",
+      "slug": "03-m1d3-przegadac-z-jakiem",
+      "number": 3,
       "title": "M1 · Dział 3: Przegadać to z Jakiem / M1 · Part 3: Talking It Over with Jake",
       "titlePl": "M1 · Dział 3: Przegadać to z Jakiem",
       "titleEn": "M1 · Part 3: Talking It Over with Jake",
-      "pdf": "10-m1d3-przegadac-z-jakiem/rozdzial.pdf",
+      "pdf": "03-m1d3-przegadac-z-jakiem/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "10-m1d3-przegadac-z-jakiem/grupa-1.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-1.mp3"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "10-m1d3-przegadac-z-jakiem/grupa-2.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-2.mp3"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "10-m1d3-przegadac-z-jakiem/grupa-3.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-3.mp3"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "10-m1d3-przegadac-z-jakiem/grupa-4.mp3"
+          "src": "03-m1d3-przegadac-z-jakiem/grupa-4.mp3"
         }
       ]
     },
     {
-      "id": "11-m1d4-wszystko-naraz",
-      "slug": "11-m1d4-wszystko-naraz",
-      "number": 11,
+      "id": "04-m1d4-wszystko-naraz",
+      "slug": "04-m1d4-wszystko-naraz",
+      "number": 4,
       "title": "M1 · Dział 4: Wszystko naraz / M1 · Part 4: Putting It All Together",
       "titlePl": "M1 · Dział 4: Wszystko naraz",
       "titleEn": "M1 · Part 4: Putting It All Together",
-      "pdf": "11-m1d4-wszystko-naraz/rozdzial.pdf",
+      "pdf": "04-m1d4-wszystko-naraz/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "11-m1d4-wszystko-naraz/grupa-1.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-1.mp3"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "11-m1d4-wszystko-naraz/grupa-2.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-2.mp3"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "11-m1d4-wszystko-naraz/grupa-3.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-3.mp3"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "11-m1d4-wszystko-naraz/grupa-4.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-4.mp3"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "11-m1d4-wszystko-naraz/grupa-5.mp3"
+          "src": "04-m1d4-wszystko-naraz/grupa-5.mp3"
         }
       ]
     },
     {
-      "id": "12-m1d5-ostatnie-dwa-tygodnie",
-      "slug": "12-m1d5-ostatnie-dwa-tygodnie",
-      "number": 12,
+      "id": "05-m1d5-ostatnie-dwa-tygodnie",
+      "slug": "05-m1d5-ostatnie-dwa-tygodnie",
+      "number": 5,
       "title": "M1 · Dział 5: Ostatnie dwa tygodnie / M1 · Part 5: The Last Two Weeks",
       "titlePl": "M1 · Dział 5: Ostatnie dwa tygodnie",
       "titleEn": "M1 · Part 5: The Last Two Weeks",
-      "pdf": "12-m1d5-ostatnie-dwa-tygodnie/rozdzial.pdf",
+      "pdf": "05-m1d5-ostatnie-dwa-tygodnie/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "12-m1d5-ostatnie-dwa-tygodnie/grupa-1.mp3"
+          "src": "05-m1d5-ostatnie-dwa-tygodnie/grupa-1.mp3"
         }
       ]
     },
     {
-      "id": "13-m1d6-so-whats-next",
-      "slug": "13-m1d6-so-whats-next",
-      "number": 13,
+      "id": "06-m1d6-so-whats-next",
+      "slug": "06-m1d6-so-whats-next",
+      "number": 6,
       "title": "M1 · Dział 6: No to co dalej? / M1 · Part 6: So What's Next?",
       "titlePl": "M1 · Dział 6: No to co dalej?",
       "titleEn": "M1 · Part 6: So What's Next?",
-      "pdf": "13-m1d6-so-whats-next/rozdzial.pdf",
+      "pdf": "06-m1d6-so-whats-next/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "13-m1d6-so-whats-next/grupa-1.mp3"
+          "src": "06-m1d6-so-whats-next/grupa-1.mp3"
         }
       ]
     }

@@ -74,7 +74,7 @@ Bohater wracający w każdym dziale: **Jake** — amerykański kumpel z Norwegii
 peer** (bez slangu na siłę). Apka („kopilot matematyczny") świadomie odłożona do
 **M5** (capstone — tam słownictwo pod biznes i ryzyko).
 
-### Dział 1 (08) — Etap I (PL→EN) — „Domykanie i powrót / Wrapping Up and Heading Home"
+### Dział 1 (01) — Etap I (PL→EN) — „Domykanie i powrót / Wrapping Up and Heading Home"
 Nowe wyrażenia (4), każde wałkowane 8–12 zdaniami:
 
 | klocek | PL | EN |
@@ -88,7 +88,7 @@ Partnerzy kolokacyjni do drylu: *wrap up a project / wrap things up / wrap up lo
 ends*; *head back home / head back to Poland*; *back for good / gone for good*;
 *mixed feelings about leaving / about it*.
 
-### Dział 2 (09) — Etap I (PL→EN) — „Gdzie zamieszkać i pierwszy ruch / Where to Live and the First Move"
+### Dział 2 (02) — Etap I (PL→EN) — „Gdzie zamieszkać i pierwszy ruch / Where to Live and the First Move"
 Nowe (4):
 
 | klocek | PL | EN |
@@ -103,7 +103,7 @@ Partnerzy: *sit on the fence / come off the fence / still on the fence*; *move b
 in with my folks*; *figure it out / figure out what to do*; *go out on my own /
 do my own thing*. **Wierność:** rodziców → *my parents* (nie „someone" — naprawa błędu z 07).
 
-### Dział 3 (10) — Etap II (EN→PL) — „Przegadać to z Jakiem / Talking It Over with Jake"
+### Dział 3 (03) — Etap II (EN→PL) — „Przegadać to z Jakiem / Talking It Over with Jake"
 Powtórka konwersacyjna + rozpoznawanie ze słuchu (kierunek EN→PL). Nowe lekkie (3):
 
 | klocek | PL | EN |
@@ -116,7 +116,7 @@ Wraca (Etap II — obowiązkowo): *wrap up, head back, for good, mixed feelings,
 on the fence, move back in with my parents, figure out, go out on my own* —
 w swobodnych wymianach i wierszach EN→PL.
 
-### Dział 4 (11) — Etap III (PL→EN) — „Wszystko naraz / Putting It All Together"
+### Dział 4 (04) — Etap III (PL→EN) — „Wszystko naraz / Putting It All Together"
 Łączenie 2–3 znanych klocków + gramatyka C1 (bez reguł, przez przykłady):
 
 - **mixed conditional / inwersja:** *Had I figured this out sooner, I wouldn't be on the fence now.*
@@ -126,13 +126,13 @@ w swobodnych wymianach i wierszach EN→PL.
 
 Wraca: całe M1 (d1–d3). Nowych wyrażeń brak — nowa jest STRUKTURA.
 
-### Dział 5 (12) — Etap IV (słuchanka) — „Ostatnie dwa tygodnie / The Last Two Weeks"
+### Dział 5 (05) — Etap IV (słuchanka) — „Ostatnie dwa tygodnie / The Last Two Weeks"
 Spójny dialog/monolog z Jakiem (~180–220 słów) używający WSZYSTKICH wyrażeń M1
 w naturalnym kontekście (domykanie pracy, powrót na stałe, mieszane uczucia,
 wahanie co do mieszkania, próby rozkminienia, przegadanie z Jakiem, „prześpię się
 z tym"). Audio: EN ciągłe; PDF: EN + PL pod spodem.
 
-### Dział 6 (13) — Etap V (EN-only) — „No to co dalej? / So What's Next?"
+### Dział 6 (06) — Etap V (EN-only) — „No to co dalej? / So What's Next?"
 Jake pyta po angielsku, Ty odpowiadasz po angielsku (wzorcowe odpowiedzi), np.:
 - *So what are you wrapping up over there, and how do you feel about heading back?*
 - *Are you on the fence about where to live once you're back?*
@@ -191,5 +191,5 @@ przeglądu poprzedniego — dokładnie to, o co prosiłeś („niech to wróci w
 - [x] Reguły metody zaktualizowane (`METODA-C1.md`, `SKILL.md`).
 - [x] Syllabus (ten plik) + rejestr (`slownik.json`).
 - [x] **Akceptacja:** temat M1 wybrany przez Krzyśka (powrót z Norwegii; bohater Jake; rejestr peer; apka→M5).
-- [~] Generacja **Minikursu 1** (działy 08–13: md → 3 recenzentów → PDF → audio) — **W TOKU**.
+- [x] Generacja **Minikursu 1** (działy 01–06: md → 3 recenzentów → PDF → audio) — **GOTOWE**. Stary kurs (01–07) usunięty; M1 przenumerowany na 01–06.
 - [ ] Twoja ocena (cel ≥ 4+) → finalizacja list M2–M5 → generacja reszty.
