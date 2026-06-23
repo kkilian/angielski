@@ -1,264 +1,263 @@
 # Projekt: metoda v2 — kurs angielskiego B2→C1 (4− → 4+/5)
 
-- **Data:** 2026-06-23
+- **Data:** 2026-06-23 (rewizja po adversarialnej recenzji 4 agentów)
 - **Status:** zaakceptowany do planu implementacji
-- **Autor:** Krzysiek + Claude (brainstorming)
+- **Autor:** Krzysiek + Claude (brainstorming + 4 recenzentów Opus)
 - **Dotyczy:** repo `~/angielski` (kurs) + skill `~/.claude/skills/angielski-rozdzial`
+
+---
+
+## 0. Rewizja po recenzji (co się zmieniło względem 1. wersji specu)
+
+Cztery adversarialne recenzje (dydaktyka, wierność, wykonalność, YAGNI) wykryły, że
+1. wersja specu **przeszacowała zakres pracy** i miała sprzeczności numeracji.
+Korekty (źródło findingu w nawiasie):
+
+**Sprostowania faktów (mniej do zrobienia, niż sądziłem):**
+- **3 „nowe" tryby audio JUŻ ISTNIEJĄ** w `assemble-audio.js` (`normalizeMode` + gałęzie
+  `sluchanka`/`en-only`/`en2pl`/`pl2en`, linie 48–185), są przetestowane i live (działy
+  03/05/06 ich używają). → Faza 0 = **zweryfikuj/dostrój**, nie „zbuduj". `SKILL.md`
+  (linie 159–161) ma NIEAKTUALNY tekst „trybów nie ma" — do poprawy. (red-team)
+- **3 recenzenci A/B/C już są** w `SKILL.md` (Krok 1). Spec ich nie tworzy — wzmacnia. (wierność)
+- **METODA-C1.md (2026-06-22) to de facto „v1.5"** — ma już rejestr `review[]`, harmonogram,
+  dryl „mało wyrażeń/dużo zdań", kontrast B2→C1, wierność PL↔EN, łuk 5 etapów, specyfikacje
+  trybów audio. Realny **delta v2 jest cieńszy**. (YAGNI)
+- **Głosy potwierdzone:** EN=alloy, PL=nova; ElevenLabs opt-in, domyślnie WYŁĄCZONY (zgodne). (red-team)
+
+**Naprawione sprzeczności:**
+- „`review[]` bez zmian" vs „pod budżet" → `review[]` trzeba **PRZELICZYĆ** ze starej siatki
+  6-działowej na 11-działową i **rozszerzyć**; długość `review[]` JEST budżetem. (wierność, YAGNI)
+- Numery w przykładach (np. „on the fence = d3") to **ilustracja docelowej siatki**, nie
+  obecne `intro` (faktycznie d2). Mapowanie stare→nowe powstaje w Fazie 0. (wierność)
+- `PROGRAM.md`/`METODA-C1.md` mają zaszyte „6 działów / 30 / 3–4 wyrażenia" — trzeba je
+  **jawnie przepisać** na 11/55/2, inaczej zostanie sprzeczny martwy tekst. (wierność)
+
+**Cięcia (YAGNI):** usuwam pola `policzono`, `partnerzy`, `budzet_powrotow` ze słownika —
+`review[]` (lista działów) wystarcza jako budżet; partnerzy kolokacyjni żyją w regule
+METODA-C1 §2 i w haśle `en`, nie jako drugie źródło prawdy.
+
+**Dodatki dydaktyczne (dźwignia 4+→5):** aktywne wydobycie zamiast samej ekspozycji,
+rozproszone quick-checki, rozszerzające interwały, lekka warstwa wymowy/błędów,
+produkcja swobodna wcześniej. (dydaktyka)
 
 ---
 
 ## 1. Kontekst i problem
 
-Po kilku lekcjach wygenerowanego Minikursu 1 (działy 01–06) ocena: **4− w skali 1–6**
-(4 = użyteczne z błędami; cel: 4+ → docelowo 5). Feedback Krzyśka:
+Po kilku lekcjach M1 (działy 01–06) ocena **4−/6** (cel ≥4+, docelowo 5). Feedback:
+1. Tłumaczenia czasem nieprecyzyjne (pamiętany „move back in with someone" — w istocie
+   błąd **starego** kursu, już naprawiony w obecnym dziale 02).
+2. Jedno wyrażenie użyte **za rzadko**, w za małej liczbie kontekstów/kolokacji.
+3. Brak **powrotów między działami**.
+4. Dłuższe, dobrze zaplanowane całości; **cały minikurs/program z góry**, nie „strzelanie".
+5. **Zbadać metodę Pawlikowskiej** i osadzić w niej łuk.
 
-1. **Tłumaczenia czasem nieprecyzyjne** — przykład pamiętany: „wprowadzić się
-   z powrotem do rodziców" jako *move back in with someone* zamiast *…with your parents*.
-2. **Za mało powtórzeń jednego wyrażenia** — klocek pojawia się zbyt rzadko, żeby
-   wbić się w różnych kontekstach i połączeniach. „Trzeba bardziej wałkować."
-3. **Brak powrotów między działami** — to, co było w dziale poprzednim, ma wracać
-   w następnych, żeby się utrwalało.
-4. **Za krótkie jednostki** — generować większe, dobrze zaplanowane całości.
-5. **Generować z góry cały minikurs** (a docelowo cały program), żeby widzieć
-   progresję, przeplatanie i metodę — „porządnie, nie strzelać dział po dziale".
-6. **Zbadać metodę Pawlikowskiej jeszcze raz** i osadzić w niej łuk kursu.
-
-### Ustalenia ze stanu faktycznego (przed projektem)
-- Błąd „someone vs parents" jest **już naprawiony** w aktualnym dziale 02
-  (*move back in with my parents / your parents / my folks*). Pochodził ze
-  **starego** kursu (rozdz. 07), skasowanego. Feedback częściowo dotyczył starego materiału.
-- `METODA-C1.md` została rano 2026-06-22 podbita (głębszy dryl, rejestr-sufit,
-  wierność PL↔EN, szkic przeplatania). Część postulatów jest już w regułach.
-- **Co realnie cienkie** (źródło 4−): (a) spirala między działami LEKKA — wyrażenie
-  z d1 wraca w d2 raptem 1–2×; (b) druga połowa minikursu chuda — działy 05/06
-  (słuchanka/egzamin) mają po 1 grupie/mp3 vs 4–5 w 01–04; (c) brak automatycznej
-  kontroli wierności tłumaczeń.
-
-**Wniosek:** to nie przebudowa, lecz **podkręcenie pokręteł + warstwa QA +
-holistyczny plan generacji**. Wybrane podejście: **B (ewolucyjne „metoda v2")**.
+**Realne źródło 4−** (po audycie): spirala LEKKA (wyrażenie wraca 1–2×), druga połowa
+chuda (działy 05/06 = 1 grupa), brak twardej egzekucji recyklingu i aktywnego wydobycia.
+**Wybrane podejście: B (ewolucyjne) — podkręcenie istniejącego, nie przebudowa.**
 
 ---
 
 ## 2. Cele i kryteria sukcesu
 
-- Ocena ≥ **4+** na próbce (checkpoint po 3 działach M1), docelowo **5**.
-- Każde kluczowe wyrażenie spotykane **~10–14×** w całym programie, zawsze w nowym
-  kontekście (nie dosłowne kopie).
-- Druga połowa minikursu (Etap IV/V) pełnoprawna, nie „urwana".
-- Zero usterek wierności PL↔EN typu „someone vs parents" (egzekwowane maszynowo).
-- Cały program (~55 działów) **zaplanowany z góry**; generacja falami z checkpointem.
+- Ocena ≥ **4+** na checkpoincie (po działach 1–3 **+ próbka drugiej połowy**), docelowo 5.
+- Każdy rdzeniowy klocek: **≥10 powrotów** (długość `review[]`) w programie, w tym
+  **≥5 aktywnych wydobyć** (wiersze PL→EN, gdzie klocek jest CELEM produkcji), nie samej ekspozycji.
+- Druga połowa minikursu pełnoprawna; **testowanie rozproszone**, nie tylko egzamin na końcu.
+- Zero usterek wierności PL↔EN (egzekwowane: skrypt + recenzent).
+- Cały program zaplanowany z góry; generacja falami z checkpointem.
 
 ### Non-goals (YAGNI)
-- Nie zmieniamy łuku 5 etapów (research potwierdził, że jest wierny Pawlikowskiej).
-- Nie przechodzimy na „globalne przebiegi" Pawlikowskiej (wariant C) — zostaje
-  per-temat (pełna obróbka tematu naraz, domknięcie + egzamin blisko).
-- Nie budujemy nowej apki/odtwarzacza — istniejący czyta `content.json`.
-- Nie generujemy wszystkich 55 działów w jednym ciągu (wariant odrzucony jako ryzyko).
+- Nie zmieniamy łuku 5 etapów (research potwierdził wierność Pawlikowskiej).
+- Nie budujemy trybów audio od zera (już istnieją) ani nowej apki.
+- Nie zamrażamy „11 działów" dla M2–M5 przed walidacją M1 (finalizacja po checkpoincie).
+- Nie dodajemy pól JSON, których uczeń nie odczuje (`policzono`/`partnerzy`/`budzet_powrotow`).
+- Pełny „shadowing" wymowy i adaptacja trudności per-klocek — **odłożone** (po walidacji M1).
 
 ---
 
 ## 3. Research metody Pawlikowskiej (osadzenie łuku)
 
-Źródło: analiza „Blondynki na językach" (`~/.claude/skills/wloski-rozdzial/METODA-PAWLIKOWSKIEJ.md`).
-
-1. **Łuk 5 etapów odwzorowuje jej 5 poziomów 1:1** i pokrywa się z pamięcią Krzyśka:
-   - Etap I (PL→EN, fundament) = Poziom I
-   - Etap II (EN→PL, powtórka potocznie) = Poziom II
-   - Etap III (PL→EN, składanie klocków + gramatyka C1) = Poziom III
-   - Etap IV (dłuższe opowiastki/słuchanka) = Poziom IV
-   - Etap V (egzamin bez tłumaczenia) = Poziom V
-   → **łuku nie ruszamy.**
-2. **Jej silnik powtarzalności to RECYKLING, nie długość drylu.** Jej dryl ma 3–5
-   wierszy (my mamy 6–12, więcej). Powtórzenia biorą się z tego, że **to samo słowo
-   wraca przez wiele lekcji** w nowych konstrukcjach (np. *albergo* przez present →
-   past → future). → **główna dźwignia do 4+/5 = mocno podkręcony recykling.**
-3. **Różnica strukturalna (świadoma):** u niej 5 poziomów to globalne przebiegi przez
-   cały materiał; u nas 5 etapów **per temat**. Zgodne z „na jeden temat generować
-   od razu wszystko".
+Źródło: `~/.claude/skills/wloski-rozdzial/METODA-PAWLIKOWSKIEJ.md`.
+1. **Łuk 5 etapów odwzorowuje jej 5 poziomów co do kierunku i funkcji** (PL→EN fundament →
+   EN→PL powtórka → składanie → opowiastki → egzamin bez tłumaczenia). *Uwaga: rozpoznawanie
+   ze słuchu w Etapie II to nasze świadome rozszerzenie — u niej Poziom II nie wydziela słuchu.*
+2. **Jej silnik powtarzalności to RECYKLING, nie długość drylu** (jej dryl 3–5 wierszy; my
+   6–12). To samo słowo wraca przez wiele lekcji w nowych konstrukcjach. → **główna dźwignia**.
+3. **Różnica świadoma:** u niej 5 poziomów = globalne przebiegi przez cały materiał; u nas
+   5 etapów **per temat** (zgodne z „na jeden temat generować od razu wszystko").
 
 ---
 
-## 4. Sekcja 1 — Struktura minikursu (finer działy)
+## 4. Struktura minikursu (finer działy — produkcja wcześniej)
 
-Minikurs = **11 krótszych działów** (dziś 6). Jedna „codzienna porcja" ≈ 1 dział;
-minikurs ≈ 2 tygodnie nauki. Łuk 5 etapów zostaje; fundament rozłożony na więcej dni,
-druga połowa pogrubiona.
+Minikurs = **~11 krótszych działów** (dziś 6). „~11" to **wynik M1 do walidacji**, nie
+zamrożony wzorzec dla M2–M5. Rozkład etapów na działy (stary→nowy): I: 2→**4**, II: 1→**2**,
+III: 1→**3**, IV: 1→**1**, V: 1→**1**. Fundament skrócony (z 5 do 4), składanie wydłużone
+(produkcja swobodna wcześniej i dłużej).
 
-| Dział | Etap | Co robi | Kierunek | Nowe wyrażenia | Grupy (mp3) |
+| Dział | Etap | Co robi | Kier. | Nowe | Grupy |
 |---|---|---|---|---|---|
-| 1 | I | Fundament: 2 nowe klocki, dryl 8–12 zdań każdy | PL→EN | 2 | ~4 |
-| 2 | I | j.w. + recykling d1 | PL→EN | 2 | ~4 |
-| 3 | I | j.w. + recykling d1–2 | PL→EN | 2 | ~4 |
-| 4 | I | j.w. + recykling d1–3 | PL→EN | 2 | ~4 |
-| 5 | I | j.w. + recykling d1–4 | PL→EN | 2 | ~4 |
-| 6 | II | Powtórka konwersacyjna + rozpoznawanie ze słuchu | EN→PL | 0–1 | ~4 |
-| 7 | II | j.w., druga porcja (swobodne wymiany) | EN→PL | 0–1 | ~4 |
-| 8 | III | Składanie 2–3 klocków + gramatyka C1 (inwersje, cleft) | PL→EN | struktury | ~4 |
-| 9 | III | j.w., trudniejsze sploty | PL→EN | struktury | ~4 |
-| 10 | IV | Słuchanka — spójna historia z Jakiem, pocięta na sceny | EN (+PL w PDF) | — | ~4 |
-| 11 | V | Egzamin EN-only — pytania → wzorcowe odpowiedzi | EN-only | — | ~3 |
+| 1 | I | Fundament: 2–3 nowe klocki, dryl 8–12 zdań; **kończy otwartą produkcją** | PL→EN | 2–3 | ~4 |
+| 2 | I | j.w. + recykling d1; **otwarte wiersze** (uczeń sam buduje, EN dopiero w audio) | PL→EN | 2–3 | ~4 |
+| 3 | I | j.w. + recykling d1–2; **+ quick-check (2–3 EN-only) na końcu** | PL→EN | 2 | ~4 |
+| 4 | I | j.w. + recykling d1–3 + quick-check | PL→EN | 2 | ~4 |
+| 5 | II | Powtórka konwersacyjna + rozpoznawanie | EN→PL | 0–1 | ~4 |
+| 6 | II | j.w., swobodne wymiany + mini-narracja (rozgrzewka słuchanki) | EN→PL | 0–1 | ~4 |
+| 7 | III | Składanie 2–3 klocków + gramatyka C1; **przeplatanie typów** (phrasal/idiom/struktura) | PL→EN | struktury | ~4 |
+| 8 | III | j.w., trudniejsze sploty + quick-check | PL→EN | struktury | ~4 |
+| 9 | III | j.w., pełne splatanie całego minikursu | PL→EN | struktury | ~4 |
+| 10 | IV | **Słuchanka** — spójna historia z Jakiem, **2–3 sceny** | EN (+PL w PDF) | — | 2–3 |
+| 11 | V | **Egzamin** EN-only — pytania → wzorcowe odpowiedzi | EN-only | — | ~3 |
 
 **Decyzje:**
-- **2 nowe wyrażenia/dział** w Etapie I → **~10 klocków rdzeniowych/minikurs**, każdy
-  głębiej wałkowany i **wracający w każdym kolejnym dziale**.
-- Gramatyka C1 skoncentrowana w Etapie III (działy 8–9).
-- M1 zachowuje treść (Jake, powrót z Norwegii, te same wyrażenia) — przesypana na 11
-  działów z mocnym recyklingiem.
-- Skala: ~44 grupy/mp3 na minikurs (dziś ~20); ~55 działów w całym programie.
-
-Szkielet 11-działowy jest **wzorcem dla wszystkich 5 minikursów** (M1–M5).
-
----
-
-## 5. Sekcja 2 — Silnik recyklingu (rdzeń naprawy)
-
-**Cel:** każde kluczowe wyrażenie spotykane **~10–14×** w programie, nigdy jako
-dosłowne powtórzenie — każdy powrót dokłada **jedną nową rzecz** (nowy partner
-kolokacyjny / nowa struktura / nowy temat). Wałkujemy *wyrażenie*, nie *zdanie*.
-
-### Przykład cyklu życia: `to be on the fence` (wchodzi M1 d3)
-| Gdzie | Co nowego |
-|---|---|
-| M1 d3 (intro) | dryl 8–12 zdań: *on the fence about X · sit on the fence · come off the fence* |
-| M1 d4 | spleciony z `figure out` |
-| M1 d5 | spleciony z `go out on my own` |
-| M1 d6–7 (II) | rozpoznawanie EN→PL |
-| M1 d8 (III) | inwersja C1: *Had they offered more, I wouldn't be on the fence* |
-| M1 d10 | w narracji (słuchanka) |
-| M1 d11 | w odpowiedzi EN-only (egzamin) |
-| M2 | *on the fence about the offer* (temat: praca) |
-| M5 | *on the fence about going all in* (capstone) |
-→ ~10–12 spotkań zamiast 2.
-
-### Zmiany w `slownik.json` (rejestr przeplatania)
-Do każdego wpisu dochodzą 2 pola:
-- `budzet_powrotow` — liczba docelowa wystąpień (np. 12 dla rdzeniowych, mniej dla gramatyki).
-- `partnerzy` — lista kolokacji do rotacji, żeby powroty się różniły.
-- `review[]` — bez zmian (lista działów, w których wyrażenie MA wrócić); rozpisana
-  tak, by sumarycznie trafić w `budzet_powrotow`. Numeracja `m<k>-d<n>` do d11.
-- (opcjonalnie) `policzono` — liczność per dział, uzupełniana przez recenzenta — audyt QA.
-
-### Dwa kanały recyklingu w każdym dziale
-1. **Wpleciony** — stare wyrażenia mieszają się z nowymi w zwykłych grupach (kontekstowo).
-2. **Grupa-splot** — ostatnia grupa działu zawsze braiduje nowe + stare (skoncentrowana
-   powtórka). M1 już to robi jako „Grupa 5".
-
-### Egzekwowanie
-Recenzent-recyklingu (Sekcja 7) po wygenerowaniu działu czyta `slownik.json`, zbiera
-wyrażenia z `review[]` na ten dział i **liczy**, czy faktycznie są i czy nie są
-dosłowną kopią. Brak → dział do poprawki. Zamienia „obietnicę w słowniku" w twardy warunek.
+- **2–3 nowe klocki/dział** w Etapie I → **~10 rdzeniowych/minikurs**, każdy głębiej wałkowany
+  i wracający; B2 udźwignie 3 w d1–d2.
+- **Produkcja swobodna od d2** (otwarte wiersze: polski wyzwalacz, uczeń buduje sam, wzorzec
+  dopiero w audio/po odsłonięciu) — nie czekamy z produkcją do Etapu III.
+- **Quick-check** (2–3 pytania EN-only na końcu działu, od d3) recyklinguje wcześniejsze klocki
+  = **testowanie rozproszone**, nie jeden egzamin na finiszu.
+- Skala: ~40 grup/mp3 na minikurs; ~55 działów w programie (do potwierdzenia po M1).
 
 ---
 
-## 6. Sekcja 3 — Słuchanka + egzamin (pełna druga połowa)
+## 5. Silnik recyklingu (rdzeń naprawy 4−)
 
-### Etap IV — Słuchanka (dział 10), ~4 grupy zamiast 1
-Spójna historia z Jakiem pocięta na sceny (scena = 1 mp3), ~500–700 słów angielskiego,
-używająca **wszystkich** wałkowanych wyrażeń minikursu:
+**Cel:** każdy rdzeniowy klocek ma `review[]` o długości **≥10** (gramatyka ≥6), rozłożone
+przez program; każdy powrót dokłada **jedną nową rzecz** (nowy partner kolokacyjny / struktura /
+temat). **Długość `review[]` JEST budżetem** — bez osobnego pola liczbowego.
 
-| Grupa | Scena | Recykling |
-|---|---|---|
-| 1 | Jake łapie Cię na ostatnie tygodnie — *wrapping up, heading back* | d1–2 |
-| 2 | Dylemat mieszkaniowy — *on the fence, move back in with my parents* | d3 |
-| 3 | Rozkmina zawodowa — *figure out, go out on my own, play it safe* | d4–5 |
-| 4 | „Prześpij się z tym" — *talk it over, sleep on it, mixed feelings* | całość |
+**Ekspozycja ≠ wydobycie (kluczowa poprawka dydaktyczna).** Większość powrotów musi być
+**aktywnym wydobyciem**: wiersz PL→EN, w którym **stary klocek jest CELEM produkcji** (polski
+wyzwalacz wymusza dokładnie ten klocek jako jedyną trudną rzecz), a nie tłem w zdaniu obok
+nowego materiału. Twardy próg: **≥5 aktywnych wydobyć** na rdzeniowy klocek w programie.
 
-- Audio: **EN ciągłe**, zdanie po zdaniu z krótką pauzą, bez wyzwalacza PL. PDF: EN + PL.
+**Definicja liczenia (obiektywna):** „1 powrót" = klocek pojawia się ≥1× w danym dziale z
+`review[]`. Skrypt liczy obecność per dział (nie wewnątrz-działowe powtórki). Anty-klastrowanie:
+max ~2 wystąpienia tego samego klocka w jednej grupie.
+
+**Harmonogram — interwały rozszerzające** (nie sztywne +1/+3/+6): pierwszy powrót **+2** działy
+(po przespanej nocy), potem rosnąco (+2, +4, +8…). Klocki wprowadzone późno (d3–d4) fizycznie
+mieszczą mniej powrotów w M1 — **dobijają budżet w następnym minikursie** (`review[]` celuje
+w m2/m3), więc budżet realnie zależy od działu wprowadzenia (wczesne ~12–14, późne ~8–10 w M1).
+
+**Dwa kanały w każdym dziale:** (1) *wpleciony* — stare klocki mieszają się z nowymi; (2)
+*grupa-splot* — ostatnia grupa braiduje nowe + stare. Co najmniej połowa powrotów używa
+**innego partnera kolokacyjnego** niż intro (rotacja partnerów — z reguły METODA-C1 §2, nie z pola JSON).
+
+**Egzekwowanie (hybryda — obiektywne + jakościowe):**
+- **Skrypt-checker** (deterministyczny): czyta `slownik.json`, dla każdego wpisu z `review[]`
+  na ten dział grepuje `rozdzial.md` i raportuje brak/obecność + liczbę wystąpień (anty-klaster).
+  To zdejmuje subiektywność z najważniejszego warunku.
+- **Recenzent C (LLM)** ocenia, czy powroty to **wydobycie czy ekspozycja** i czy partner rotuje.
+
+### Zmiany w `slownik.json`
+- **Bez nowych pded** — schemat zostaje `{id, pl, en, typ, intro, review[]}`.
+- `review[]` każdego wpisu: **przeliczyć na siatkę 11-działową** (m1-d1…m1-d11, m2-…) i
+  **rozszerzyć do ≥10** (rdzeniowe) / ≥6 (gramatyka). Stary harmonogram (pod 6 działów) nadpisany.
+- Reguły dydaktyczne (partnerzy, budżet, rotacja) żyją w **METODA-C1.md**; `slownik.json`
+  trzyma tylko dane per-wyrażenie. (Jedno źródło prawdy.)
+
+---
+
+## 6. Słuchanka + egzamin + warstwa wymowy/błędów
+
+### Etap IV — Słuchanka (dział 10), **2–3 sceny** (zamiast 1 grupy)
+Spójna historia z Jakiem, ~400–600 słów EN, używa wszystkich klocków minikursu. Scena = 1 mp3.
+- Audio: tryb `słuchanka` (już w kodzie) — EN ciągłe, zdanie po zdaniu, pauza, bez PL. PDF: EN+PL.
+- Zastępuje dawne „150–250 słów" z METODA-C1/PROGRAM (do aktualizacji w Fazie 0).
 
 ### Etap V — Egzamin EN-only (dział 11), ~3 grupy
-Jake pyta po angielsku → cisza (odpowiadasz na głos) → wzorcowa odpowiedź EN
-(też recyklinguje wyrażenia):
+Pytanie EN → cisza (odpowiadasz) → wzorcowa odpowiedź EN (recyklinguje klocki).
+- Grupy: rozgrzewka (krótkie) / pogłębione (wymuszają klocki) / scenariusz (dłuższa wypowiedź).
+- Audio: tryb `en-only` (już w kodzie).
 
-| Grupa | Typ | Przykład |
-|---|---|---|
-| 1 | Rozgrzewka (krótkie) | *So when do you wrap up over there?* |
-| 2 | Pogłębione (wymuszają klocki) | *Are you on the fence about where to live once you're back?* |
-| 3 | Scenariusz (dłuższa wypowiedź) | *Walk me through it — what's the first move, and why?* |
+### Warstwa wymowy/błędów (NOWE, lekkie — adresuje „brzmieć jak native")
+W sekcji `## Nowe słowa i struktury` (poza audio), per dział:
+- **Akcent wyrazowy + 1–2 pułapki wymowy** dla trudnych słów (np. `figure ['fɪɡjər]`, „th").
+- **1–2 typowe błędy Polaka** przy tych klockach (np. brak „the", kalka „make a decision"
+  vs „zrobić decyzję"). Tanio, a zdejmuje fosylizację. (Pełny shadowing — odłożony.)
 
-- Audio: **pytanie EN → dłuższa cisza → wzorcowa odpowiedź EN.**
-
-### Tryby audio do zbudowania w `assemble-audio.js`
-Dziś skrypt umie tylko `PL→cisza→EN`. Do dodania **3 tryby** (+ testy):
-- `EN→PL` (Etap II): EN → cisza → PL potwierdza.
-- `słuchanka` (Etap IV): EN ciągłe, zdanie po zdaniu z krótką pauzą, bez PL.
-- `EN-only` (Etap V): pytanie EN → dłuższa cisza → wzorcowa odpowiedź EN.
-Markery etapu w `.md` (`<!-- mode: ... -->`) sterują trybem. **Głosy: wyłącznie
-OpenAI (PL = nova, EN = alloy)** — patrz Sekcja 9.
+### Kontrakt kolumn per-tryb (żeby recenzent wierności nie zgłaszał fałszywych alarmów)
+- `pl2en`/`en2pl`/`słuchanka`: kolumna 1 = PL (w słuchance PL idzie tylko do PDF).
+- `en-only` (egzamin): **kolumna 1 = pytanie po ANGIELSKU** — recenzent wierności PL↔EN
+  **pomija ten dział** (dostaje inną instrukcję: ocena jakości pytań/odpowiedzi EN).
+- **Surowy `|` w treści trybów swobodnych** (słuchanka/egzamin) MUSI być escapowany `\|`
+  (parser dzieli po niezescapowanym `|`); checker ostrzega, gdy wiersz ma >4 komórki.
 
 ---
 
-## 7. Sekcja 4 — QA tłumaczeń (3 adversarialni recenzenci)
+## 7. QA — recenzenci (wzmocnienie istniejących, nie nowy build)
 
-Istniejący „3 recenzentów" przedefiniowani na **3 wyspecjalizowanych, adversarialnych**
-agentów (mają *szukać* błędów, nie przyklepywać). Lecą **równolegle** po wygenerowaniu
-md, **przed** PDF/audio. Dział nie przechodzi, dopóki wszyscy trzej nie przejdą.
+`SKILL.md` ma już 3 recenzentów (A: poprawność+US; B: naturalność+rejestr+poziom; C: wierność+
+przeplatanie). Wzmocnienia:
+- **C dostaje twarde wsparcie skryptem** (sekcja 5) — liczenie recyklingu przestaje być „na oko".
+- **C ocenia wydobycie vs ekspozycja** i rotację partnera.
+- **Recenzent wierności (C): back-translation** kontroluje WYŁĄCZNIE zgodność referenta i
+  ogólności/konkretności („someone vs parents") oraz brak zmiany znaczenia rdzennego —
+  **dopuszcza stylistyczny rozjazd** wyzwalacza (inaczej zabije naturalność polskiej kolumny).
+- **Recenzenci dostają w prompcie** ścieżki/treść `slownik.json` + `METODA-C1.md` (§5–§6), nie
+  tylko `rozdzial.md`.
+- **Bezpiecznik pętli:** max **3 iteracje** poprawek; potem dział idzie do checkpointu z listą
+  spornych uwag (nie w nieskończoność). **Precedencja przy konflikcie:** wierność > poprawność >
+  naturalność > preferencja (rozwiązuje oscylację „luźniej" vs „sufit rejestru").
+- Recenzent zwraca **PASS/FAIL + lista**; brak wierszy BŁĄD/ZMIEŃ = PASS.
 
-1. **Recenzent WIERNOŚCI PL↔EN:**
-   - zgodność ogólność↔konkretność (referent po PL → referent po EN; reguła „someone vs parents");
-   - **back-translation** EN→PL i kontrola, czy znaczenie się nie rozjechało;
-   - PL jako naturalny *wyzwalacz produkcji*, nie kalka.
-2. **Recenzent NATURALNOŚCI + sufit rejestru:**
-   - test „czy 30-letni Amerykanin powie to na głos w 2026?";
-   - sufit rejestru: zero slangu na siłę, ≤1–2 „(luźno)"/grupa;
-   - US (apartment, vacation), skróty naturalne, struktury C1 w wariancie mówionym.
-3. **Recenzent RECYKLINGU + metody:**
-   - **liczy** wyrażenia z `review[]` na ten dział (egzekwuje Sekcję 5), wyłapuje dosłowne kopie;
-   - 2 nowe wyrażenia/dział × 8–12 zdań, drabinka rośnie, jest partner kolokacyjny, markery etapu OK.
-
-**Pętla:** problem → automatyczna poprawka → ponowna recenzja → PDF + audio.
-
-**Dwie bramki:** automatyczna (recenzenci, każdy dział) + ludzka (checkpoint po 3
-działach M1). Maszyna łapie wierność i metodę; Krzysiek ocenia „czy to brzmi jak 4+".
+**Dwie bramki:** automatyczna (skrypt + recenzenci, każdy dział) + ludzka (checkpoint).
 
 ---
 
-## 8. Sekcja 5 — Plan generacji
+## 8. Plan generacji
 
-**Cały plan na papierze powstaje z góry; kosztowna generacja idzie falami z checkpointem.**
+Sednem są **3 ruchy**; szczegóły proceduralne → plan implementacji.
 
-### Faza 0 — Metoda i mapa (papier + kod, zero audio)
-1. `METODA-C1.md` → reguły v2 (finer działy, budżet recyklingu, gruba druga połowa,
-   3 adversarialni recenzenci, tryby audio, twarda zasada OpenAI/no-ElevenLabs).
-2. `slownik.json` → pola `budzet_powrotow` + `partnerzy`; `review[]` pod budżet ~10–14;
-   **harmonogram wszystkich ~55 działów** (M1–M5).
-3. `PROGRAM.md` → pełna mapa ~55 działów wg szkieletu 11-działowego.
-4. `assemble-audio.js` → 3 nowe tryby audio (EN→PL, słuchanka, EN-only) + testy.
+**Ruch 0 — Reguły i mapa na papierze (zero generacji treści):**
+- `METODA-C1.md` → v2: przepisz liczby **6→~11 działów, 3–4→2–3 nowe/dział**; harmonogram
+  → interwały rozszerzające + `review[]` ≥10/≥6; dodaj: wydobycie≠ekspozycja, quick-checki,
+  kontrakt kolumn per-tryb, warstwa wymowy/błędów, precedencja recenzentów, twarda reguła OpenAI.
+- `slownik.json` → przelicz wszystkie `review[]` na siatkę 11-działową i rozszerz do budżetu;
+  zaplanuj harmonogram dla M1–M5 (bez nowych pól).
+- `PROGRAM.md` → przepisz **30→~55, 6→~11**; mapa M1 z 11 działami; zdejmij status „GOTOWE 01–06".
+- `assemble-audio.js` → **zweryfikuj** istniejące tryby (dostrój pauzę słuchanki, ~0.8 s może być
+  za krótka); **NIE pisz od zera**. Popraw NIEAKTUALNY tekst w `SKILL.md` (linie 159–161).
+- Pre-flight: klucz OpenAI z `OPENAI_API_KEY` (preferowane) zamiast zależności od `coach-2.0/main.js`.
 
-### Faza 1 — M1 od nowa, z checkpointem
-5. Generuj M1 działy **1–3** (fundament; widać dryl + start recyklingu) → 3 recenzentów → PDF + audio.
-6. **CHECKPOINT (Krzysiek):** czy 4+? Tak → dalej. Nie → korekta metody, regeneracja.
-   *(Na życzenie próbka słuchanki/egzaminu, żeby ocenić też drugą połowę.)*
-7. Generuj M1 działy **4–11** → recenzenci → PDF + audio.
-8. **Dopiero gdy cały nowy M1 (01–11) gotowy i zwalidowany** — podmień stary M1
-   (01–06) na nowy; zaktualizuj `content.json`/apkę. Stary M1 zostaje live przez
-   całą regenerację, żeby Krzysiek nie został bez materiału do nauki.
+**Ruch 1 — M1 od nowa, z checkpointem (jedyna bramka, która może zawrócić metodę):**
+- Generuj M1 działy 1–3 + **próbka drugiej połowy** (1 grupa składania, 1 scena słuchanki,
+  1 blok egzaminu na klockach z d1–3) → skrypt-checker + recenzenci → PDF + audio.
+- **CHECKPOINT (Krzysiek):** ocena + **1 mierzalne pytanie**: „weź 2 klocki z d1 i policz, ile
+  razy wróciły w d2–3 i czy za każdym razem w innym połączeniu". Może oznaczyć klocki „już umiem"
+  → degradacja do tła, budżet uwolniony na trudne (adaptacja przez pętlę ludzką, bez pola JSON).
+- Tak → generuj M1 działy 4–11. Nie → korekta metody, regeneracja próbki.
 
-### Faza 2 — M2–M5 hurtem
-9. Finalizuj listy wyrażeń M2–M5 (dziś szkice w `slownik.json`).
-10. Generuj minikurs po minikursie (po 11 działów) przez ten sam pipeline.
-11. Aktualizuj apkę.
+**Ruch 2 — Podmiana M1 i reszta hurtem:**
+- **Stary M1 (01–06) do skasowania** — Krzysiek go nie chce („wywal, nie podoba mi się").
+  Brak wymogu utrzymania live UPRASZCZA podmianę: **skasuj stare 01–06, wygeneruj nowe 01–11
+  w ich miejsce** (nie trzeba tymczasowego prefiksu dla ciągłości). Dla bezpieczeństwa kolejność:
+  skasuj stare foldery + ich wpisy z `content.json` PRZED regeneracją (apka routuje po nazwie
+  folderu i `generate.js` nie dedupuje po `number` — inaczej duplikaty/kolizje 01–06). Awaria
+  w połowie jest akceptowalna (ciągłość nauki nie jest wymagana, regeneracja wznawialna per dział).
+- Finalizuj listy wyrażeń M2–M5; generuj minikurs po minikursie tym samym pipeline'em.
+- Numeracja folderów: **globalna 2-cyfrowa** (01–55) + slug `m<k>d<n>`; `generate.js` (`parseInt`)
+  to uniesie (<99). Per-minikurs 01–11 dałoby kolizje — odrzucone.
 
-### Odporność i ryzyka
-- Każdy dział = osobny folder → generacja wznawialna (padnie jeden, reszta zostaje).
-- Recenzenci pilnują jakości per dział; checkpoint pilnuje metody przed skalą.
-- **Skala (szczerze):** ~55 działów × (md + 3 recenzentów + PDF + audio) = dużo czasu
-  i tokenów. Checkpoint po 3 działach = wyłącznik awaryjny, zanim się rozkręci.
+**Skala i koszt (do oszacowania w planie):** ~55 działów × (md + recenzenci + PDF + audio).
+Audio woła `gpt-4o-mini-tts` **sekwencyjnie per segment** (~100–130 wywołań/dział) → tysiące
+wywołań, godziny, realny rachunek. Mitigacje w planie: **skip-jeśli-mp3-istnieje** (idempotencja
+per grupa), rozważyć równoległość TTS, oszacować koszt przed falą M2–M5. Checkpoint chroni jakość,
+nie koszt skali — stąd osobny budżet.
 
 ---
 
-## 9. Reguły globalne (twarde, niezmienne)
+## 9. Reguły globalne (twarde)
 
-- **Wariant:** General American (słownictwo, pisownia, idiomy współczesne).
-- **Sufit rejestru:** naturalna, neutralna amerykańszczyzna mówiona; bez ultra-slangu;
-  ≤1–2 „(luźno)" na grupę.
-- **Wierność PL↔EN:** ogólność↔konkretność musi się zgadzać (Sekcja 7, recenzent 1).
-- **Audio = wyłącznie OpenAI TTS.** Głosy: **PL = nova, EN = alloy** (instrukcja:
-  natural General American). Dotyczy też 3 nowych trybów. **ElevenLabs ZAKAZANY**,
-  chyba że Krzysiek wprost o niego poprosi (opt-in). (Trwała preferencja — patrz
-  pamięć `no-elevenlabs-english-audio`; commit 381232b „bez ElevenLabs".)
-- **Kontrakt parsera audio:** tabele zawsze `| polski | angielski |`, nagłówki zawsze
-  `## Grupa N`, jedna grupa = jeden `grupa-N.mp3`, sekcja `## Nowe słowa i struktury`
-  poza audio.
+- **Wariant:** General American. **Sufit rejestru:** neutralna amerykańszczyzna, bez slangu na
+  siłę, ≤1–2 „(luźno)"/grupa. **Wierność PL↔EN:** ogólność↔konkretność (recenzent C + skrypt).
+- **Audio = wyłącznie OpenAI TTS.** PL=**nova**, EN=**alloy**. Tryby słuchanka/en-only: tylko
+  `alloy` (brak PL). **ElevenLabs ZAKAZANY** poza świadomym opt-in (kod już domyślnie wyłącza:
+  `ELEVEN_ENABLED = klucz && ELEVEN_TTS==='1'`). (Pamięć `no-elevenlabs-english-audio`; commit 381232b.)
+- **Kontrakt parsera:** tabele `| polski | angielski |`, nagłówki `## Grupa N`, jedna grupa =
+  jeden `grupa-N.mp3`, `## Nowe słowa i struktury` poza audio. Markery `<!-- mode: ... -->` per grupa.
 
 ---
 
@@ -266,18 +265,20 @@ działach M1). Maszyna łapie wierność i metodę; Krzysiek ocenia „czy to br
 
 | Plik | Zmiana |
 |---|---|
-| `~/.claude/skills/angielski-rozdzial/METODA-C1.md` | reguły v2 (sekcje 4–9 tego specu) |
-| `~/.claude/skills/angielski-rozdzial/SKILL.md` | workflow: 11 działów, 3 recenzenci, tryby audio |
-| `~/.claude/skills/angielski-rozdzial/assemble-audio.js` | 3 nowe tryby audio + testy |
-| `~/angielski/slownik.json` | pola `budzet_powrotow`/`partnerzy`; harmonogram ~55 działów |
-| `~/angielski/PROGRAM.md` | mapa ~55 działów (szkielet 11-działowy) |
-| `~/angielski/01..11-*` (M1) | regeneracja M1 od nowa (po checkpoincie) |
-| `~/angielski/content.json` | nowe działy M1 (potem M2–M5) |
+| `…/angielski-rozdzial/METODA-C1.md` | v2: 6→11 działów, 3–4→2–3 nowe, interwały rozszerzające, wydobycie≠ekspozycja, quick-checki, warstwa wymowy, kontrakt per-tryb, precedencja recenzentów |
+| `…/angielski-rozdzial/SKILL.md` | popraw nieaktualne linie 159–161 (tryby JUŻ są); 11 działów; recenzenci dostają slownik+METODA; skrypt-checker w Kroku 1 |
+| `…/angielski-rozdzial/assemble-audio.js` | **tylko weryfikacja/dostrojenie** (pauza słuchanki); idempotencja skip-jeśli-istnieje; klucz z env |
+| `…/angielski-rozdzial/` (nowy) | `check-recykling.js` — deterministyczny licznik `review[]` w dziale |
+| `~/angielski/slownik.json` | przelicz `review[]` na 11-działową siatkę, rozszerz do budżetu (bez nowych pól) |
+| `~/angielski/PROGRAM.md` | przepisz 30→55, 6→11; mapa M1 (11 działów); zdejmij „GOTOWE" |
+| `~/angielski/01..06-*` (stary M1) | **SKASOWAĆ** (Krzysiek nie chce) — usuń foldery + wpisy z content.json |
+| `~/angielski/01..11-*` (nowy M1) | regeneracja w miejsce skasowanego |
+| `~/angielski/content.json` | po podmianie M1 (potem M2–M5) |
 
 ---
 
-## 11. Otwarte pytania (do planu implementacji)
-- Dokładne listy 2-wyrażeń-na-dział dla M1 (z obecnych ~14 klocków → ~10 rdzeniowych
-  rozłożonych na działy 1–5; reszta jako partnerzy kolokacyjni).
-- Czy checkpoint ma objąć też próbkę słuchanki/egzaminu (decyzja Krzyśka w Fazie 1).
-- Finalizacja list wyrażeń M2–M5 — po walidacji M1.
+## 11. Otwarte pytania (do planu / po checkpoincie)
+- Dokładne listy 2–3-wyrażeń-na-dział dla M1 (z obecnych ~14 klocków → ~10 rdzeniowych na d1–4).
+- Finalna liczba działów/minikurs (czy „11" zostaje) — decyzja PO checkpoincie.
+- Finalizacja list M2–M5 — po walidacji M1.
+- Czy włączyć adaptację trudności per-klocek jako trwałe pole (na razie: pętla ludzka na checkpoincie).
