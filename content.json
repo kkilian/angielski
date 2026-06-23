@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T04:48:35.396Z",
+  "generatedAt": "2026-06-23T04:57:35.573Z",
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
@@ -32,6 +32,49 @@
           "src": "01-m1d1-domykanie-i-powrot/grupa-4.mp3?v=1782190090989"
         }
       ]
+    },
+    {
+      "id": "02-m1d2-gdzie-zamieszkac",
+      "slug": "02-m1d2-gdzie-zamieszkac",
+      "number": 2,
+      "title": "M1 · Dział 2: Gdzie zamieszkać / M1 · Part 2: Where to Live",
+      "titlePl": "M1 · Dział 2: Gdzie zamieszkać",
+      "titleEn": "M1 · Part 2: Where to Live",
+      "pdf": "02-m1d2-gdzie-zamieszkac/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-1.mp3?v=1782190467127"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-2.mp3?v=1782190494080"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-3.mp3?v=1782190519898"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "02-m1d2-gdzie-zamieszkac/grupa-4.mp3?v=1782190540645"
+        }
+      ]
+    },
+    {
+      "id": "03-m1d3-pierwszy-ruch",
+      "slug": "03-m1d3-pierwszy-ruch",
+      "number": 3,
+      "title": "M1 · Dział 3: Pierwszy ruch / M1 · Part 3: The First Move",
+      "titlePl": "M1 · Dział 3: Pierwszy ruch",
+      "titleEn": "M1 · Part 3: The First Move",
+      "pdf": null,
+      "hasAudio": false,
+      "groups": []
     }
   ]
 }
