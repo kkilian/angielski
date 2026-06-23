@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T04:57:35.573Z",
+  "generatedAt": "2026-06-23T04:59:33.337Z",
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
@@ -72,9 +72,30 @@
       "title": "M1 · Dział 3: Pierwszy ruch / M1 · Part 3: The First Move",
       "titlePl": "M1 · Dział 3: Pierwszy ruch",
       "titleEn": "M1 · Part 3: The First Move",
-      "pdf": null,
-      "hasAudio": false,
-      "groups": []
+      "pdf": "03-m1d3-pierwszy-ruch/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "03-m1d3-pierwszy-ruch/grupa-1.mp3?v=1782190710205"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "03-m1d3-pierwszy-ruch/grupa-2.mp3?v=1782190733457"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "03-m1d3-pierwszy-ruch/grupa-3.mp3?v=1782190753037"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "03-m1d3-pierwszy-ruch/grupa-4.mp3?v=1782190760156"
+        }
+      ]
     }
   ]
 }
