@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T04:59:33.337Z",
+  "generatedAt": "2026-06-23T14:21:59.741Z",
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
@@ -96,6 +96,94 @@
           "src": "03-m1d3-pierwszy-ruch/grupa-4.mp3?v=1782190760156"
         }
       ]
+    },
+    {
+      "id": "04-m1d4-przegadac-i-przespac",
+      "slug": "04-m1d4-przegadac-i-przespac",
+      "number": 4,
+      "title": "M1 · Dział 4: Przegadać i przespać / M1 · Part 4: Talk It Over and Sleep On It",
+      "titlePl": "M1 · Dział 4: Przegadać i przespać",
+      "titleEn": "M1 · Part 4: Talk It Over and Sleep On It",
+      "pdf": "04-m1d4-przegadac-i-przespac/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "05-m1d5-rozpoznawanie-ze-sluchu",
+      "slug": "05-m1d5-rozpoznawanie-ze-sluchu",
+      "number": 5,
+      "title": "M1 · Dział 5: Rozpoznawanie ze słuchu / M1 · Part 5: Listening It Back",
+      "titlePl": "M1 · Dział 5: Rozpoznawanie ze słuchu",
+      "titleEn": "M1 · Part 5: Listening It Back",
+      "pdf": "05-m1d5-rozpoznawanie-ze-sluchu/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "06-m1d6-swobodne-wymiany",
+      "slug": "06-m1d6-swobodne-wymiany",
+      "number": 6,
+      "title": "M1 · Dział 6: Swobodne wymiany / M1 · Part 6: Easy Back-and-Forth",
+      "titlePl": "M1 · Dział 6: Swobodne wymiany",
+      "titleEn": "M1 · Part 6: Easy Back-and-Forth",
+      "pdf": "06-m1d6-swobodne-wymiany/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "07-m1d7-wszystko-naraz",
+      "slug": "07-m1d7-wszystko-naraz",
+      "number": 7,
+      "title": "M1 · Dział 7: Wszystko naraz / M1 · Part 7: All at Once",
+      "titlePl": "M1 · Dział 7: Wszystko naraz",
+      "titleEn": "M1 · Part 7: All at Once",
+      "pdf": "07-m1d7-wszystko-naraz/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "08-m1d8-trudniejsze-sploty",
+      "slug": "08-m1d8-trudniejsze-sploty",
+      "number": 8,
+      "title": "M1 · Dział 8: Trudniejsze sploty / M1 · Part 8: Tighter Braids",
+      "titlePl": "M1 · Dział 8: Trudniejsze sploty",
+      "titleEn": "M1 · Part 8: Tighter Braids",
+      "pdf": "08-m1d8-trudniejsze-sploty/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "09-m1d9-pelne-splatanie",
+      "slug": "09-m1d9-pelne-splatanie",
+      "number": 9,
+      "title": "M1 · Dział 9: Pełne splatanie / M1 · Part 9: The Full Braid",
+      "titlePl": "M1 · Dział 9: Pełne splatanie",
+      "titleEn": "M1 · Part 9: The Full Braid",
+      "pdf": "09-m1d9-pelne-splatanie/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "10-m1d10-ostatnie-dwa-tygodnie",
+      "slug": "10-m1d10-ostatnie-dwa-tygodnie",
+      "number": 10,
+      "title": "M1 · Dział 10: Słuchanka: Ostatnie dwa tygodnie / M1 · Part 10: The Last Two Weeks",
+      "titlePl": "M1 · Dział 10: Słuchanka: Ostatnie dwa tygodnie",
+      "titleEn": "M1 · Part 10: The Last Two Weeks",
+      "pdf": "10-m1d10-ostatnie-dwa-tygodnie/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
+    },
+    {
+      "id": "11-m1d11-so-whats-next",
+      "slug": "11-m1d11-so-whats-next",
+      "number": 11,
+      "title": "M1 · Dział 11: Egzamin — So what's next? / M1 · Part 11: Final Exam — So What's Next?",
+      "titlePl": "M1 · Dział 11: Egzamin — So what's next?",
+      "titleEn": "M1 · Part 11: Final Exam — So What's Next?",
+      "pdf": "11-m1d11-so-whats-next/rozdzial.pdf",
+      "hasAudio": false,
+      "groups": []
     }
   ]
 }
