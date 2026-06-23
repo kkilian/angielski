@@ -5,7 +5,7 @@
   "harmonogram": "Interwały rozszerzające: +2/+4/+8 od intro, oraz obowiązkowo Etap II-V bieżącego minikursu i Etap I-III następnego. Żadna luka > ~4 działy. Późne klocki dobijają budżet w następnym minikursie. Etap IV (słuchanka) i V (egzamin) recyklingują całość.",
   "typy": ["phrasal", "kolokacja", "idiom", "gramatyka"],
   "minikursy": [
-    { "id": "m1", "tytul": "Co dalej ze mną — powrót z Norwegii", "temat": "Domykanie roboty w Norwegii, powrót do Polski, gdzie zamieszkać (Kraków: pokój/kawalerka/rodzice/inne miasto), pierwszy ruch zawodowy (oferta korepetycji vs własna działalność). Bohater: Jake (amerykański kumpel). Rejestr: codzienny peer. Apka → M5.", "status": "w realizacji" },
+    { "id": "m1", "tytul": "Co dalej ze mną — powrót z Norwegii", "temat": "Domykanie roboty w Norwegii, powrót do Polski, gdzie zamieszkać (Kraków: pokój/kawalerka/rodzice/inne miasto), pierwszy ruch zawodowy (oferta korepetycji vs własna działalność). Bohater: Jake (amerykański kumpel). Rejestr: codzienny peer. Apka → M5.", "status": "wygenerowany (01-11)" },
     { "id": "m2", "tytul": "Szukanie pracy i rozmowy", "temat": "Networking, aplikacje, rozmowy kwalifikacyjne, oferta, negocjacje", "status": "szkic" },
     { "id": "m3", "tytul": "Mieszkanie i codzienność", "temat": "Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna", "status": "szkic" },
     { "id": "m4", "tytul": "Ludzie i rozmowy", "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia", "status": "szkic" },

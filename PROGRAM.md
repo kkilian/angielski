@@ -161,5 +161,6 @@ przeglądu poprzedniego — dokładnie to, o co prosiłeś („niech to wróci w
 - [x] Reguły metody zaktualizowane (`METODA-C1.md`, `SKILL.md`).
 - [x] Syllabus (ten plik) + rejestr (`slownik.json`).
 - [x] **Akceptacja:** temat M1 wybrany przez Krzyśka (powrót z Norwegii; bohater Jake; rejestr peer; apka→M5).
-- [ ] **Metoda v2** (2026-06-23): ~11 działów/minikurs, twardy recykling (≥5 wydobyć/klocek, `check-recykling.js`), gruba druga połowa, warstwa wymowy. Stary M1 (01–06) SKASOWANY; nowy M1 (01–11) w realizacji. [ ] checkpoint po d1–3 + próbka drugiej połowy.
-- [ ] Twoja ocena (cel ≥ 4+) → finalizacja list M2–M5 → generacja reszty.
+- [x] **Metoda v2** (2026-06-23): 11 działów/minikurs, twardy recykling (≥5 wydobyć/klocek, `check-recykling.js`), gruba druga połowa, warstwa wymowy. Stary M1 (01–06) SKASOWANY.
+- [x] **M1 KOMPLETNY (01–11)** wygenerowany pipeline'em opus (pisarz + checker recyklingu + 3 recenzentów A/B/C + fixer per dział). Audit: wszystkie klocki 11–56 wydobyć (próg ≥5/≥3). Wierność PL↔EN naprawiona (with my parents, nie someone). Tekst+PDF live; audio OpenAI nova/alloy.
+- [ ] **Twoja ocena M1 (cel ≥ 4+)** → finalizacja list M2–M5 → generacja reszty (numeracja M2=12–22, M3=23–33, M4=34–44, M5=45–55).

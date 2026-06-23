@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T14:21:59.741Z",
+  "generatedAt": "2026-06-23T14:41:39.361Z",
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
@@ -105,8 +105,34 @@
       "titlePl": "M1 · Dział 4: Przegadać i przespać",
       "titleEn": "M1 · Part 4: Talk It Over and Sleep On It",
       "pdf": "04-m1d4-przegadac-i-przespac/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "04-m1d4-przegadac-i-przespac/grupa-1.mp3?v=1782224620253"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "04-m1d4-przegadac-i-przespac/grupa-2.mp3?v=1782224649520"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "04-m1d4-przegadac-i-przespac/grupa-3.mp3?v=1782224688904"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "04-m1d4-przegadac-i-przespac/grupa-4.mp3?v=1782224721130"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "04-m1d4-przegadac-i-przespac/grupa-5.mp3?v=1782224730214"
+        }
+      ]
     },
     {
       "id": "05-m1d5-rozpoznawanie-ze-sluchu",
@@ -116,8 +142,24 @@
       "titlePl": "M1 · Dział 5: Rozpoznawanie ze słuchu",
       "titleEn": "M1 · Part 5: Listening It Back",
       "pdf": "05-m1d5-rozpoznawanie-ze-sluchu/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782224778291"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782224846126"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782224932462"
+        }
+      ]
     },
     {
       "id": "06-m1d6-swobodne-wymiany",
@@ -127,8 +169,24 @@
       "titlePl": "M1 · Dział 6: Swobodne wymiany",
       "titleEn": "M1 · Part 6: Easy Back-and-Forth",
       "pdf": "06-m1d6-swobodne-wymiany/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "06-m1d6-swobodne-wymiany/grupa-1.mp3?v=1782225004784"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "06-m1d6-swobodne-wymiany/grupa-2.mp3?v=1782225070724"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "06-m1d6-swobodne-wymiany/grupa-3.mp3?v=1782225084288"
+        }
+      ]
     },
     {
       "id": "07-m1d7-wszystko-naraz",
@@ -138,8 +196,34 @@
       "titlePl": "M1 · Dział 7: Wszystko naraz",
       "titleEn": "M1 · Part 7: All at Once",
       "pdf": "07-m1d7-wszystko-naraz/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "07-m1d7-wszystko-naraz/grupa-1.mp3?v=1782225122333"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "07-m1d7-wszystko-naraz/grupa-2.mp3?v=1782225164174"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "07-m1d7-wszystko-naraz/grupa-3.mp3?v=1782225216587"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "07-m1d7-wszystko-naraz/grupa-4.mp3?v=1782225261448"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "07-m1d7-wszystko-naraz/grupa-5.mp3?v=1782225275408"
+        }
+      ]
     },
     {
       "id": "08-m1d8-trudniejsze-sploty",
@@ -149,8 +233,29 @@
       "titlePl": "M1 · Dział 8: Trudniejsze sploty",
       "titleEn": "M1 · Part 8: Tighter Braids",
       "pdf": "08-m1d8-trudniejsze-sploty/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "08-m1d8-trudniejsze-sploty/grupa-1.mp3?v=1782225315951"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "08-m1d8-trudniejsze-sploty/grupa-2.mp3?v=1782225357655"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "08-m1d8-trudniejsze-sploty/grupa-3.mp3?v=1782225399869"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "08-m1d8-trudniejsze-sploty/grupa-4.mp3?v=1782225412153"
+        }
+      ]
     },
     {
       "id": "09-m1d9-pelne-splatanie",
@@ -160,8 +265,29 @@
       "titlePl": "M1 · Dział 9: Pełne splatanie",
       "titleEn": "M1 · Part 9: The Full Braid",
       "pdf": "09-m1d9-pelne-splatanie/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "09-m1d9-pelne-splatanie/grupa-1.mp3?v=1782225450061"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "09-m1d9-pelne-splatanie/grupa-2.mp3?v=1782225486481"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "09-m1d9-pelne-splatanie/grupa-3.mp3?v=1782225526170"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "09-m1d9-pelne-splatanie/grupa-4.mp3?v=1782225581855"
+        }
+      ]
     },
     {
       "id": "10-m1d10-ostatnie-dwa-tygodnie",
@@ -171,8 +297,24 @@
       "titlePl": "M1 · Dział 10: Słuchanka: Ostatnie dwa tygodnie",
       "titleEn": "M1 · Part 10: The Last Two Weeks",
       "pdf": "10-m1d10-ostatnie-dwa-tygodnie/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "10-m1d10-ostatnie-dwa-tygodnie/grupa-1.mp3?v=1782225597845"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "10-m1d10-ostatnie-dwa-tygodnie/grupa-2.mp3?v=1782225613110"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "10-m1d10-ostatnie-dwa-tygodnie/grupa-3.mp3?v=1782225630375"
+        }
+      ]
     },
     {
       "id": "11-m1d11-so-whats-next",
@@ -182,8 +324,24 @@
       "titlePl": "M1 · Dział 11: Egzamin — So what's next?",
       "titleEn": "M1 · Part 11: Final Exam — So What's Next?",
       "pdf": "11-m1d11-so-whats-next/rozdzial.pdf",
-      "hasAudio": false,
-      "groups": []
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "11-m1d11-so-whats-next/grupa-1.mp3?v=1782225647481"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "11-m1d11-so-whats-next/grupa-2.mp3?v=1782225664759"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "11-m1d11-so-whats-next/grupa-3.mp3?v=1782225675015"
+        }
+      ]
     }
   ]
 }
