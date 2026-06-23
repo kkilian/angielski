@@ -23,11 +23,11 @@ PDF, audio powstają dopiero po Twojej zgodzie). Metoda i reguły: patrz
 
 ### Struktura (do potwierdzenia)
 ```
-minikurs (temat)  →  działy (6, etapy I–V)  →  grupy (## Grupa N = pliki mp3, ~12–18 par)
+minikurs (temat)  →  działy (~11, etapy I–V)  →  grupy (## Grupa N = pliki mp3, ~12–18 par)
 ```
 - **dział** = jeden folder/`rozdzial.md` + PDF + kilka `grupa-N.mp3` (jak dziś „rozdział").
-- **minikurs** = 6 działów na jeden temat, przeprowadzonych przez 5 etapów.
-- „5 odcinków po 6 działów" = **5 minikursów × 6 działów = 30 działów**.
+- **minikurs** = ~11 działów na jeden temat (Etap I:4, II:2, III:3, IV:1, V:1).
+- „5 odcinków" = **5 minikursów × ~11 działów = ~55 działów**.
 
 ---
 
@@ -42,7 +42,7 @@ minikurs (temat)  →  działy (6, etapy I–V)  →  grupy (## Grupa N = pliki 
 | **V** | 6 | **Egzamin** — pytania po angielsku, odpowiadasz po angielsku | EN-only |
 
 **Przeplatanie:** rejestr `slownik.json` pilnuje, że każde wyrażenie wraca wg
-harmonogramu (+1, +3, +6 działów, oraz Etap II/III tego minikursu i Etap I–III
+harmonogramu (interwały rozszerzające +2/+4/+8, oraz Etap II–V tego minikursu i Etap I–III
 następnego). To jest naprawa „silosowania" — głównej słabości oryginału.
 
 ---
@@ -59,7 +59,7 @@ następnego). To jest naprawa „silosowania" — głównej słabości oryginał
 
 > Pełny rozkład poniżej jest gotowy dla **M1**. M2–M5 mają temat, łuk i rodziny
 > wyrażeń; konkretne listy wyrażeń finalizujemy PO walidacji M1 (żeby nie
-> produkować 30 działów w ciemno, gdyby metoda wymagała korekty).
+> produkować ~55 działów w ciemno, gdyby metoda wymagała korekty).
 
 ---
 
@@ -74,70 +74,40 @@ Bohater wracający w każdym dziale: **Jake** — amerykański kumpel z Norwegii
 peer** (bez slangu na siłę). Apka („kopilot matematyczny") świadomie odłożona do
 **M5** (capstone — tam słownictwo pod biznes i ryzyko).
 
-### Dział 1 (01) — Etap I (PL→EN) — „Domykanie i powrót / Wrapping Up and Heading Home"
-Nowe wyrażenia (4), każde wałkowane 8–12 zdaniami:
+### Rozkład 11 działów (klocki wg `slownik.json`)
 
-| klocek | PL | EN |
-|---|---|---|
-| 1 | kończyć / domykać (robotę) | **to wrap up** |
-| 2 | wracać (do kraju / do domu) | **to head back / to head home** |
-| 3 | na stałe / na dobre | **for good** |
-| 4 | mieć mieszane uczucia (co do) | **to have mixed feelings (about)** |
+**Etap I — fundament (PL→EN), 2–3 nowe klocki/dział, dryl 8–12 zdań, recykling jako WYDOBYCIE:**
 
-Partnerzy kolokacyjni do drylu: *wrap up a project / wrap things up / wrap up loose
-ends*; *head back home / head back to Poland*; *back for good / gone for good*;
-*mixed feelings about leaving / about it*.
+| Dział | Temat | Nowe klocki | Dodatkowo |
+|---|---|---|---|
+| 01 (d1) | Domykanie i powrót | *wrap up · head back · for good* | — (start) |
+| 02 (d2) | Gdzie zamieszkać | *mixed feelings · on the fence · move back in with my parents* | produkcja swobodna; recykling d1 |
+| 03 (d3) | Pierwszy ruch | *figure out · go out on my own* | + quick-check; recykling d1–2 |
+| 04 (d4) | Przegadać i przespać | *talk it over · sleep on it · second-guess* | + quick-check; recykling d1–3 |
 
-### Dział 2 (02) — Etap I (PL→EN) — „Gdzie zamieszkać i pierwszy ruch / Where to Live and the First Move"
-Nowe (4):
+**Etap II — powtórka konwersacyjna (EN→PL):**
 
-| klocek | PL | EN |
-|---|---|---|
-| 5 | wahać się (co do) | **to be on the fence (about)** |
-| 6 | wprowadzić się z powrotem do rodziców | **to move back in with my parents** |
-| 7 | rozkminić / dojść do tego / wymyślić | **to figure out** |
-| 8 | działać na swoim / iść na swoje | **to go out on my own** |
+| 05 (d5) | Rozpoznawanie ze słuchu | — | recykling całego Etapu I, kierunek EN→PL |
+| 06 (d6) | Swobodne wymiany | — | + mini-narracja (rozgrzewka słuchanki) |
 
-Wraca z d1 (+1): *wrap up, head back, mixed feelings* — w nowych zdaniach.
-Partnerzy: *sit on the fence / come off the fence / still on the fence*; *move back
-in with my folks*; *figure it out / figure out what to do*; *go out on my own /
-do my own thing*. **Wierność:** rodziców → *my parents* (nie „someone" — naprawa błędu z 07).
+**Etap III — składanie + gramatyka C1 (PL→EN):**
 
-### Dział 3 (03) — Etap II (EN→PL) — „Przegadać to z Jakiem / Talking It Over with Jake"
-Powtórka konwersacyjna + rozpoznawanie ze słuchu (kierunek EN→PL). Nowe lekkie (3):
+| 07 (d7) | Wszystko naraz | **intro gramatyki** (niżej) | splot 2–3 klocków |
+| 08 (d8) | Trudniejsze sploty | — | + quick-check |
+| 09 (d9) | Pełne splatanie | — | cały minikurs w jednym splocie |
 
-| klocek | PL | EN |
-|---|---|---|
-| 9 | przegadać coś (z kimś) | **to talk it over (with someone)** |
-| 10 | przespać się z decyzją | **to sleep on it** |
-| 11 | wątpić we własną decyzję | **to second-guess (myself)** |
+**Etap IV/V:**
 
-Wraca (Etap II — obowiązkowo): *wrap up, head back, for good, mixed feelings,
-on the fence, move back in with my parents, figure out, go out on my own* —
-w swobodnych wymianach i wierszach EN→PL.
+| 10 (d10) | Słuchanka „Ostatnie dwa tygodnie" | — | 2–3 sceny (~400–600 słów), EN ciągłe + PL w PDF |
+| 11 (d11) | Egzamin „So what's next?" | — | EN-only: pytanie → cisza → wzorcowa odpowiedź |
 
-### Dział 4 (04) — Etap III (PL→EN) — „Wszystko naraz / Putting It All Together"
-Łączenie 2–3 znanych klocków + gramatyka C1 (bez reguł, przez przykłady):
-
+**Gramatyka C1** (intro d7, użycie d7–d11, bez reguł — przez przykłady):
 - **mixed conditional / inwersja:** *Had I figured this out sooner, I wouldn't be on the fence now.*
 - **Not only… (inwersja):** *Not only am I wrapping up here, I'm heading back for good.*
 - **cleft:** *What I can't figure out is whether to move back in with my parents or go out on my own.*
 - **Turns out…:** *Turns out wrapping up the job was the easy part.*
 
-Wraca: całe M1 (d1–d3). Nowych wyrażeń brak — nowa jest STRUKTURA.
-
-### Dział 5 (05) — Etap IV (słuchanka) — „Ostatnie dwa tygodnie / The Last Two Weeks"
-Spójny dialog/monolog z Jakiem (~180–220 słów) używający WSZYSTKICH wyrażeń M1
-w naturalnym kontekście (domykanie pracy, powrót na stałe, mieszane uczucia,
-wahanie co do mieszkania, próby rozkminienia, przegadanie z Jakiem, „prześpię się
-z tym"). Audio: EN ciągłe; PDF: EN + PL pod spodem.
-
-### Dział 6 (06) — Etap V (EN-only) — „No to co dalej? / So What's Next?"
-Jake pyta po angielsku, Ty odpowiadasz po angielsku (wzorcowe odpowiedzi), np.:
-- *So what are you wrapping up over there, and how do you feel about heading back?*
-- *Are you on the fence about where to live once you're back?*
-- *What's the first move — taking the tutoring offer or going out on your own?*
-- *What's something you still haven't figured out?*
+Bohater wracający: **Jake** (amerykański kumpel). **Wierność:** rodziców → *my parents* (nie „someone").
 
 ---
 
@@ -175,9 +145,9 @@ co wraca z wcześniejszych minikursów.
 ## 6. Harmonogram przeplatania (zasada)
 
 Dla każdego wyrażenia rejestr `slownik.json` zapisuje `intro` i `review[]`:
-- **+1 dział** — szybkie utrwalenie następnego dnia.
-- **+3 działy** — drugie spotkanie po przerwie.
-- **+6 działów** — zwykle już w kolejnym minikursie (transfer do nowego tematu).
+- **+2 działy** — pierwszy powrót (po przespanej nocy).
+- **+4, +8 działów** — kolejne spotkania (interwały rozszerzające).
+- **następny minikurs** — transfer do nowego tematu (późne klocki dobijają tu budżet).
 - **obowiązkowo:** Etap II i III bieżącego minikursu (powtórka + łączenie),
   oraz Etap I–III następnego minikursu.
 
@@ -191,5 +161,5 @@ przeglądu poprzedniego — dokładnie to, o co prosiłeś („niech to wróci w
 - [x] Reguły metody zaktualizowane (`METODA-C1.md`, `SKILL.md`).
 - [x] Syllabus (ten plik) + rejestr (`slownik.json`).
 - [x] **Akceptacja:** temat M1 wybrany przez Krzyśka (powrót z Norwegii; bohater Jake; rejestr peer; apka→M5).
-- [x] Generacja **Minikursu 1** (działy 01–06: md → 3 recenzentów → PDF → audio) — **GOTOWE**. Stary kurs (01–07) usunięty; M1 przenumerowany na 01–06.
+- [ ] **Metoda v2** (2026-06-23): ~11 działów/minikurs, twardy recykling (≥5 wydobyć/klocek, `check-recykling.js`), gruba druga połowa, warstwa wymowy. Stary M1 (01–06) SKASOWANY; nowy M1 (01–11) w realizacji. [ ] checkpoint po d1–3 + próbka drugiej połowy.
 - [ ] Twoja ocena (cel ≥ 4+) → finalizacja list M2–M5 → generacja reszty.
