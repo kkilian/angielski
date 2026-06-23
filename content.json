@@ -1,4 +1,37 @@
 {
-  "generatedAt": "2026-06-23T04:39:10.912Z",
-  "chapters": []
+  "generatedAt": "2026-06-23T04:48:35.396Z",
+  "chapters": [
+    {
+      "id": "01-m1d1-domykanie-i-powrot",
+      "slug": "01-m1d1-domykanie-i-powrot",
+      "number": 1,
+      "title": "M1 · Dział 1: Domykanie i powrót / M1 · Part 1: Wrapping Up and Heading Home",
+      "titlePl": "M1 · Dział 1: Domykanie i powrót",
+      "titleEn": "M1 · Part 1: Wrapping Up and Heading Home",
+      "pdf": "01-m1d1-domykanie-i-powrot/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "01-m1d1-domykanie-i-powrot/grupa-1.mp3?v=1782190012973"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "01-m1d1-domykanie-i-powrot/grupa-2.mp3?v=1782190042052"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "01-m1d1-domykanie-i-powrot/grupa-3.mp3?v=1782190067866"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "01-m1d1-domykanie-i-powrot/grupa-4.mp3?v=1782190090989"
+        }
+      ]
+    }
+  ]
 }
