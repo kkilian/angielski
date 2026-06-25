@@ -15,6 +15,17 @@ const seek = document.getElementById('p-seek');
 const ART_SIZES = [96, 128, 192, 256, 384, 512];
 const REPEAT_LABEL = { off: 'wył', one: 'jedna', all: 'cały' };
 
+// Znacznik wersji (widoczny w stopce — potwierdza deploy).
+const BUILD = 'M1 · v2 · 2026-06-25 · zasiew→splot';
+// Etap minikursu wg pozycji części (METODA §3.1: I:4, II:2, III:3, IV:1, V:1).
+const STAGES = [
+  'Etap I · Fundament', 'Etap I · Fundament', 'Etap I · Fundament', 'Etap I · Fundament',
+  'Etap II · Powtórka', 'Etap II · Powtórka',
+  'Etap III · Splot', 'Etap III · Splot', 'Etap III · Splot',
+  'Etap IV · Słuchanka', 'Etap V · Egzamin',
+];
+const stageFor = (n) => STAGES[((n - 1) % 11 + 11) % 11] || '';
+
 let DATA = null;
 let renderedChapterId = null;
 let seeking = false;
@@ -44,6 +55,17 @@ function plural(n, one, few, many) {
   if (n === 1) return one;
   const m10 = n % 10, m100 = n % 100;
   return (m10 >= 2 && m10 <= 4 && !(m100 >= 12 && m100 <= 14)) ? few : many;
+}
+// Tytuł do wyświetlenia bez prefiksu „M1 · Dział N: " / „M1 · Part N: "
+// (numer i etap pokazujemy osobno; pełny tytuł zostaje na ekranie blokady).
+const cleanTitle = (s) => String(s).replace(/^M\d+\s*·\s*(Dział|Part)\s*\d+:\s*/i, '');
+// data builda z content.json (generatedAt) → „YYYY-MM-DD HH:MM"
+function fmtBuild(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return iso;
+  const p = (x) => String(x).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 
 /* ---------- silnik audio ---------- */
@@ -154,7 +176,7 @@ function updatePositionState() {
 function renderPlayer() {
   if (!state.chapter) {
     playerEl.hidden = true;
-    document.body.classList.remove('with-player');
+    document.body.classList.remove('with-player', 'playing');
     return;
   }
   playerEl.hidden = false;
@@ -164,6 +186,7 @@ function renderPlayer() {
   setText('p-group', g.label);
   setText('p-chapter', state.chapter.titlePl);
   setText('p-play', audio.paused ? '▶' : '⏸');
+  document.body.classList.toggle('playing', !audio.paused); // szpula + puls przycisku
 
   const rep = byId('p-repeat');
   rep.classList.remove('rep-off', 'rep-one', 'rep-all');
@@ -176,6 +199,7 @@ function renderPlayer() {
 function updateSeekUI() {
   const d = audio.duration;
   if (!seeking) seek.value = (isFinite(d) && d > 0) ? Math.round((audio.currentTime / d) * 1000) : 0;
+  seek.style.setProperty('--fill', (Number(seek.value) / 10) + '%'); // wypełnienie „taśmy"
   setText('p-cur', fmt(audio.currentTime));
   setText('p-dur', fmt(isFinite(d) ? d : 0));
 }
@@ -198,7 +222,7 @@ function renderHome() {
   backBtn.hidden = true;
   setText('topbar-title', 'Angielski');
 
-  const withAudio = DATA.chapters.filter((c) => c.hasAudio).length;
+  const totalAudio = DATA.chapters.reduce((s, c) => s + c.groups.length, 0);
   const items = DATA.chapters.map((c) => {
     const meta = c.hasAudio
       ? `${c.groups.length} ${plural(c.groups.length, 'grupa', 'grupy', 'grup')}`
@@ -207,8 +231,9 @@ function renderHome() {
       <button class="chapter${c.hasAudio ? '' : ' no-audio'}" data-nav="${esc(c.id)}">
         <span class="chapter-num">${String(c.number).padStart(2, '0')}</span>
         <span class="chapter-body">
-          <span class="chapter-title">${esc(c.titlePl)}</span>
-          <span class="chapter-sub">${esc(c.titleEn)}</span>
+          <span class="chapter-stage">${esc(stageFor(c.number))}</span>
+          <span class="chapter-title">${esc(cleanTitle(c.titlePl))}</span>
+          <span class="chapter-sub">${esc(cleanTitle(c.titleEn))}</span>
         </span>
         <span class="chapter-meta">${meta}<span class="chev">›</span></span>
       </button>`;
@@ -216,11 +241,15 @@ function renderHome() {
 
   view.innerHTML = `
     <section class="hero">
-      <div class="kicker">Nauka angielskiego</div>
-      <h1>Rozdziały</h1>
-      <p class="sub">${DATA.chapters.length} ${plural(DATA.chapters.length, 'rozdział', 'rozdziały', 'rozdziałów')} · ${withAudio} z audio</p>
+      <div class="kicker">B2 → C1 · gadane, nie pisane</div>
+      <h1>Minikurs 1:<br>Powrót do domu</h1>
+      <p class="sub">${DATA.chapters.length} ${plural(DATA.chapters.length, 'część', 'części', 'części')} · ${totalAudio} ${plural(totalAudio, 'nagranie', 'nagrania', 'nagrań')} · słuchaj i powtarzaj na głos</p>
     </section>
-    ${items}`;
+    ${items}
+    <footer class="site-foot">
+      <div><b>Angielski · Studio</b> — ${esc(BUILD)}</div>
+      <div>build ${esc(fmtBuild(DATA.generatedAt))}</div>
+    </footer>`;
   updateActiveUI();
   window.scrollTo(0, 0);
 }
@@ -241,9 +270,10 @@ function renderChapter(ch) {
 
   view.innerHTML = `
     <section class="chapter-head">
-      <div class="kicker">Rozdział ${String(ch.number).padStart(2, '0')}</div>
-      <h1>${esc(ch.titlePl)}</h1>
-      <div class="en">${esc(ch.titleEn)}</div>
+      <div class="kicker">Część ${String(ch.number).padStart(2, '0')}</div>
+      <h1>${esc(cleanTitle(ch.titlePl))}</h1>
+      <div class="en">${esc(cleanTitle(ch.titleEn))}</div>
+      <span class="stage-tag">${esc(stageFor(ch.number))}</span>
     </section>
     ${ch.hasAudio
       ? `<div class="groups">${rows}</div>`
@@ -306,6 +336,7 @@ function wire() {
 
   seek.addEventListener('input', () => {
     seeking = true;
+    seek.style.setProperty('--fill', (Number(seek.value) / 10) + '%');
     setText('p-cur', fmt((seek.value / 1000) * (audio.duration || 0)));
   });
   seek.addEventListener('change', () => {

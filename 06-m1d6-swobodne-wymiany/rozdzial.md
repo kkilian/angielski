@@ -16,7 +16,7 @@
 | Serio chcesz iść na swoje od razu po powrocie? | You really want to go out on your own right after you get back? |
 | Muszę to z kimś przegadać, zanim cokolwiek zdecyduję. | I need to talk it over with someone before I decide anything. |
 | To przegadaj to ze mną teraz przy piwie. | So talk it over with me right now over this beer. |
-| (luźno) Wiesz co, prześpię się z tym i ci powiem. | You know what, I'll sleep on it and let you know. |
+| Wiesz co, prześpię się z tym i ci powiem. | You know what, I'll sleep on it and let you know. |
 | Tylko nie zacznij potem w to wszystko wątpić. | Just don't start second-guessing the whole thing afterward. |
 
 ## Grupa 2
@@ -32,8 +32,7 @@
 | Przegadaj to z Jakiem, zanim podejmiesz decyzję. | Talk it over with Jake before you make the call. |
 | Już to przegadałem ze starymi ze sto razy. | I've talked it over with my folks like a hundred times. |
 | Prześpij się z tym jeszcze jedną noc, nie pal się. | Sleep on it one more night, there's no rush. |
-| (sztywno) Nie powinienem kwestionować własnej decyzji. | I shouldn't question my own decision. |
-| (luźno) Tylko nie zacznij potem w to wątpić. | Just don't go second-guessing yourself later. |
+| Tylko nie zacznij potem w to wątpić. | Just don't go second-guessing yourself later. |
 | Gdybym to rozkminił wcześniej, nie wahałbym się teraz. | Had I figured this out sooner, I wouldn't be on the fence now. |
 
 ## Grupa 3

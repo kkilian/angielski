@@ -1,51 +1,56 @@
 # M1 · Dział 2: Gdzie zamieszkać / M1 · Part 2: Where to Live
 
 ## Grupa 1
+<!-- zasiew: każdy nowy zwrot 3 wiersze pod rząd, żeby wszedł do ust -->
 | polski | angielski |
 |---|---|
 | mieć mieszane uczucia (co do) | to have mixed feelings (about) |
 | Mam mieszane uczucia. | I have mixed feelings. |
 | Mam mieszane uczucia co do powrotu. | I have mixed feelings about heading back. |
-| Mam co do tego naprawdę mieszane uczucia. | I have really mixed feelings about it. |
-| Mam mieszane uczucia co do powrotu na stałe. | I have mixed feelings about going back for good. |
-| A ty nie masz mieszanych uczuć co do powrotu? | Don't you have mixed feelings about heading back? |
-| Mam mieszane uczucia, odkąd zacząłem domykać robotę. | I've had mixed feelings ever since I started wrapping up the job. |
-| (sztywno) Nie jestem pewien, co czuję w związku z wyjazdem. | I'm not sure how I feel about leaving. |
-| (luźno) Sam nie wiem — mam z tym wszystkim strasznie mieszane uczucia. | Honestly, I've got really mixed feelings about the whole thing. |
-| To nie tak, że nie chcę wracać — po prostu mam mieszane uczucia. | It's not that I don't want to head back — I've just got mixed feelings. |
-| Powiedziałem Jake'owi wprost, że mam mieszane uczucia co do całego tego powrotu. | I told Jake straight up that I have mixed feelings about this whole heading-back thing. |
-
-## Grupa 2
-| polski | angielski |
-|---|---|
 | wahać się (co do) | to be on the fence (about) |
 | Naprawdę się waham. | I'm really on the fence. |
 | Waham się co do Krakowa. | I'm on the fence about Kraków. |
-| Waham się, czy w ogóle wracać do Krakowa. | I'm on the fence about whether to move back to Kraków at all. |
-| Waham się z tym od tygodni. | I've been on the fence about it for weeks. |
-| Przestań się wahać i po prostu wybierz. | Stop sitting on the fence and just pick one. |
-| W końcu przestał się wahać i powiedział tak. | He finally got off the fence and said yes. |
-| Już się nie waham — zdecydowałem. | I'm not on the fence anymore — I've made up my mind. |
-| (sztywno) Nie mogę się zdecydować co do Krakowa. | I can't decide about Kraków. |
-| (luźno) Kompletnie się waham, jeśli chodzi o Kraków. | I'm totally on the fence about Kraków. |
-| Domykam robotę, ale co do reszty wciąż się waham. | I'm wrapping up the job, but I'm still on the fence about everything else. |
-
-## Grupa 3
-| polski | angielski |
-|---|---|
 | wprowadzić się z powrotem do rodziców | to move back in with my parents |
 | Może wprowadzę się z powrotem do rodziców. | Maybe I'll move back in with my parents. |
 | Myślę, żeby na jakiś czas wrócić do rodziców. | I'm thinking about moving back in with my parents for a while. |
+
+## Grupa 2
+<!-- splot runda 1: rotacja A-B-C, pełniejsze zdania i pierwsze pytania -->
+| polski | angielski |
+|---|---|
+| Mam co do tego naprawdę mieszane uczucia. | I have really mixed feelings about it. |
+| Waham się, czy w ogóle wracać do Krakowa. | I'm on the fence about whether to move back to Kraków at all. |
 | Wprowadzam się z powrotem do rodziców, dopóki się nie ogarnę. | I'm moving back in with my parents until I get on my feet. |
-| (luźno) Może na razie wprowadzę się z powrotem do starych. | Maybe I'll move back in with my folks for now. |
-| (sztywno) Prawdopodobnie znów zamieszkam z rodzicami. | I'll probably live with my parents again. |
+| Mam mieszane uczucia co do powrotu na stałe. | I have mixed feelings about going back for good. |
+| Waham się z tym od tygodni. | I've been on the fence about it for weeks. |
+| Może na razie wprowadzę się z powrotem do starych. | Maybe I'll move back in with my folks for now. |
+| A ty nie masz mieszanych uczuć co do powrotu? | Don't you have mixed feelings about heading back? |
+
+## Grupa 3
+<!-- splot runda 2: rotacja A-B-C, pytania, przeczenia, nowy partner kolokacyjny (sit / get off the fence) -->
+| polski | angielski |
+|---|---|
+| Mam mieszane uczucia, odkąd zacząłem domykać robotę. | I've had mixed feelings ever since I started wrapping up the job. |
+| Przestań się wahać i po prostu wybierz. | Stop sitting on the fence and just pick one. |
 | Naprawdę chcesz wracać do rodziców? | Do you really want to move back in with your parents? |
+| Sam nie wiem — mam z tym wszystkim strasznie mieszane uczucia. | Honestly, I've got really mixed feelings about the whole thing. |
+| Już się nie waham — zdecydowałem. | I'm not on the fence anymore — I've made up my mind. |
 | Nie chcę wracać do rodziców na stałe. | I don't want to move back in with my parents for good. |
-| Mam co do tego mieszane uczucia, ale chyba wrócę do rodziców. | I've got mixed feelings about it, but I think I'll move back in with my parents. |
-| Jake nie mógł uwierzyć, że w wieku trzydziestu lat wracam do rodziców. | Jake couldn't believe I'm moving back in with my parents at thirty. |
+| W końcu przestał się wahać i powiedział tak. | He finally got off the fence and said yes. |
 
 ## Grupa 4
-<!-- produkcja swobodna -->
+<!-- splot runda 3: struktury C1, szczyt trudności -->
+| polski | angielski |
+|---|---|
+| To nie tak, że nie chcę wracać — po prostu mam mieszane uczucia. | It's not that I don't want to head back — I've just got mixed feelings. |
+| Kompletnie się waham, jeśli chodzi o Kraków. | I'm totally on the fence about Kraków. |
+| Mam co do tego mieszane uczucia, ale chyba wrócę do rodziców. | I've got mixed feelings about it, but I think I'll move back in with my parents. |
+| Powiedziałem Jake'owi wprost, że mam mieszane uczucia co do całego tego powrotu. | I told Jake straight up that I have mixed feelings about this whole heading-back thing. |
+| Domykam robotę, ale co do reszty wciąż się waham. | I'm wrapping up the job, but I'm still on the fence about everything else. |
+| Jake nie mógł uwierzyć, że w wieku trzydziestu lat wracam do rodziców. | Jake couldn't believe I'm moving back in with my parents at thirty. |
+
+## Grupa 5
+<!-- domknięcie: składanka 2-3 klocków w jedno zdanie; ostatnie pary najtrudniejsze -->
 | polski | angielski |
 |---|---|
 | Domykam robotę i wracam do domu — ale waham się, gdzie zamieszkać. | I'm wrapping up and heading home — but I'm on the fence about where to live. |
@@ -63,7 +68,7 @@
 | wahać się (co do) | to be on the fence (about) |
 | siedzieć okrakiem / zejść z płotu (warianty) | to sit on the fence / to get off the fence |
 | wprowadzić się z powrotem do rodziców | to move back in with my parents |
-| (luźno) wrócić do starych | to move back in with my folks |
+| wrócić do starych | to move back in with my folks |
 | (recykling d1) | to wrap up · to head back · for good |
 
 **Wymowa (pułapki):**

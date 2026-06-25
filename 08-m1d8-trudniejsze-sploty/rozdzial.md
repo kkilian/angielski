@@ -1,55 +1,60 @@
 # M1 · Dział 8: Trudniejsze sploty / M1 · Part 8: Tighter Braids
 
 ## Grupa 1
+<!-- mode: zasiew — każda nowa struktura 3 wiersze pod rząd, żeby weszła do ust -->
 | polski | angielski |
 |---|---|
 | Tego właśnie nie umiem rozkminić: wrócić do rodziców czy iść na swoje. | What I can't figure out is whether to move back in with my parents or go out on my own. |
 | Tego wciąż nie rozkminiłem: domknąć tu robotę czy zostać jeszcze rok. | What I still haven't figured out is whether to wrap up here or stay another year. |
 | Tego nie mogę rozkminić: wracać na stałe czy zostawić sobie furtkę. | What I can't figure out is whether to head back for good or keep my options open. |
-| Tego naprawdę nie umiem rozkminić: przespać się z tym czy decydować od ręki. | What I really can't figure out is whether to sleep on it or just decide on the spot. |
 | Gdybym rozkminił to wcześniej, nie wahałbym się teraz. | Had I figured this out sooner, I wouldn't be on the fence now. |
-| Gdybym przegadał to z Jakiem wcześniej, dawno bym przestał się wahać. | Had I talked it over with Jake sooner, I'd have gotten off the fence ages ago. |
 | Gdybym się z tym przespał, nie kwestionowałbym teraz własnej decyzji. | Had I slept on it, I wouldn't be second-guessing myself now. |
+| Gdybym przegadał to z Jakiem wcześniej, dawno bym przestał się wahać. | Had I talked it over with Jake sooner, I'd have gotten off the fence ages ago. |
 | Okazuje się, że domknięcie roboty było najłatwiejszą częścią. | Turns out wrapping up the job was the easy part. |
 | Okazuje się, że to powrót na stałe wciąż nie daje mi spokoju. | Turns out heading back for good is the part I still can't get my head around. |
+| Okazuje się, że pójście na swoje to było łatwe; trudniej przestać wątpić. | Turns out going out on my own was the easy part; the hard part is not second-guessing it. |
 | Nie dość, że domykam tu robotę — wracam też na stałe. | Not only am I wrapping up here, I'm also heading back for good. |
 | Nie dość, że waham się co do mieszkania — kwestionuję też cały ten powrót. | Not only am I on the fence about where to live, I'm also second-guessing this whole move. |
-| (sztywno) Nie umiem zdecydować, czy wrócić do rodziców, więc się waham. | I can't decide whether to move back in with my parents, so I keep hesitating. |
-| (luźno) Wciąż się waham, więc przegadam to z Jakiem i prześpię się z tym. | I'm still on the fence, so I'll talk it over with Jake and sleep on it. |
+| Nie dość, że waham się co do powrotu na stałe — kwestionuję też każdy ruch. | Not only am I on the fence about heading back for good, I'm also second-guessing every move. |
 
 ## Grupa 2
+<!-- mode: splot runda 1 — rotacja A-B-C-D, pełniejsze zdania i przeczenia -->
 | polski | angielski |
 |---|---|
-| Tego nie umiem rozkminić: przegadać to z rodzicami czy najpierw się z tym przespać. | What I can't figure out is whether to talk it over with my parents or sleep on it first. |
+| Tego naprawdę nie umiem rozkminić: przespać się z tym czy decydować od ręki. | What I really can't figure out is whether to sleep on it or just decide on the spot. |
 | Gdybym wiedział to wcześniej, nie kwestionowałbym teraz każdej decyzji. | Had I known this sooner, I wouldn't be second-guessing every decision now. |
-| Nie dość, że waham się co do powrotu na stałe — kwestionuję też każdy ruch. | Not only am I on the fence about heading back for good, I'm also second-guessing every move. |
-| Okazuje się, że pójście na swoje to było łatwe; trudniej przestać wątpić. | Turns out going out on my own was the easy part; the hard part is not second-guessing it. |
-| Tego wciąż nie rozkminiłem: iść na swoje czy wrócić do rodziców, żeby się ogarnąć. | What I still haven't figured out is whether to go out on my own or move back in with my parents to get on my feet. |
-| Przespałem się z tym, przegadałem to z Jakiem i wciąż się waham. | I slept on it, talked it over with Jake, and I'm still on the fence. |
-| (sztywno) Powinienem to przemyśleć i porozmawiać o tym, zanim wrócę na stałe. | I should think it over and discuss it before I go back for good. |
-| (luźno) Prześpię się z tym, przegadam to z Jakiem i wtedy wracam na stałe. | I'll sleep on it, talk it over with Jake, and then I'm heading back for good. |
-| Gdybym się z tym przespał, zamiast decydować od ręki, nie wątpiłbym teraz. | Had I slept on it instead of deciding on the spot, I wouldn't be second-guessing it now. |
+| Okazuje się, że pójście na swoje to żaden problem; gorzej przestać kwestionować tę decyzję. | Turns out going out on my own is no big deal; the harder part is not second-guessing that call. |
 | Nie dość, że domknąłem tu robotę — wracam też na dobre i idę na swoje. | Not only have I wrapped up here, I'm also heading back for good and going out on my own. |
-| Jake złapał mnie wczoraj i zapytał, co dalej. | Jake caught me yesterday and asked what's next. |
-| Powiedziałem mu, że okazuje się, że najtrudniejsze dopiero przede mną. | I told him it turns out the hard part is still ahead of me. |
+| Tego nie umiem rozkminić: przegadać to z rodzicami czy najpierw się z tym przespać. | What I can't figure out is whether to talk it over with my parents or sleep on it first. |
+| Gdybym się z tym przespał, zamiast decydować od ręki, nie wątpiłbym teraz. | Had I slept on it instead of deciding on the spot, I wouldn't be second-guessing it now. |
+| Nie dość, że domykam tu robotę i wracam na stałe — wciąż się waham, czy iść na swoje. | Not only am I wrapping up here and heading back for good, I'm also still on the fence about going out on my own. |
 
 ## Grupa 3
+<!-- mode: splot runda 2 — rotacja A-B-C-D, szczyt trudności -->
 | polski | angielski |
 |---|---|
-| Tego właśnie nie umiem rozkminić: wracać na stałe czy zostawić sobie furtkę i wahać się dalej. | What I can't figure out is whether to head back for good or keep my options open and stay on the fence. |
+| Tego wciąż nie rozkminiłem: iść na swoje czy wrócić do rodziców, żeby się ogarnąć. | What I still haven't figured out is whether to go out on my own or move back in with my parents to get on my feet. |
 | Gdybym wiedział to, zanim domknąłem tu robotę, dawno bym przestał wątpić we własną decyzję. | Had I known this before I wrapped up here, I'd have stopped second-guessing my decision long ago. |
-| Nie dość, że domykam tu robotę i wracam na stałe — wciąż się waham, czy iść na swoje. | Not only am I wrapping up here and heading back for good, I'm also still on the fence about going out on my own. |
-| Okazuje się, że pójście na swoje to żaden problem; gorzej przestać kwestionować tę decyzję. | Turns out going out on my own is no big deal; the harder part is not second-guessing that call. |
-| Tego wciąż nie rozkminiłem: wprowadzić się z powrotem do rodziców czy od razu iść na swoje. | What I still haven't figured out is whether to move back in with my parents or go out on my own right away. |
-| Gdybym się z tym przespał, zamiast się wahać, dawno bym to rozkminił i wrócił na dobre. | Had I slept on it instead of sitting on the fence, I'd have figured it out and headed back for good by now. |
-| Nie dość, że waham się, gdzie zamieszkać — kwestionuję też, czy w ogóle wracać na stałe. | Not only am I on the fence about where to live, I'm also second-guessing whether to head back for good at all. |
 | Okazuje się, że to nie powrót mnie blokuje, tylko to, że wciąż wątpię we własną decyzję. | Turns out it's not the move that's holding me up — it's that I keep second-guessing my decision. |
-| Powiedziałem Jake'owi, że to przegadam, prześpię się z tym i wtedy rozkminię, czy iść na swoje. | I told Jake I'd talk it over, sleep on it, and then figure out whether to go out on my own. |
-| (sztywno) Wciąż nie jestem pewien, czy wrócić do rodziców, więc to przemyślę. | I'm still not sure whether to move back in with my parents, so I'll think it over. |
-| (luźno) Tego nie ogarniam: rodzice czy własny kąt — przegadam to z Jakiem i prześpię się z tym. | What I can't figure out is parents or my own place — I'll talk it over with Jake and sleep on it. |
-| Najdziwniejsze jest to, że domykam tu całe życie, wracam na dobre i wciąż się waham. | The strangest part is that I'm wrapping up a whole life here, heading back for good, and still on the fence. |
+| Nie dość, że waham się, gdzie zamieszkać — kwestionuję też, czy w ogóle wracać na stałe. | Not only am I on the fence about where to live, I'm also second-guessing whether to head back for good at all. |
+| Tego właśnie nie umiem rozkminić: wracać na stałe czy zostawić sobie furtkę i wahać się dalej. | What I can't figure out is whether to head back for good or keep my options open and stay on the fence. |
+| Gdybym się z tym przespał, zamiast się wahać, dawno bym to rozkminił i wrócił na dobre. | Had I slept on it instead of sitting on the fence, I'd have figured it out and headed back for good by now. |
+| Tego wciąż nie rozkminiłem: wprowadzić się z powrotem do rodziców czy od razu iść na swoje. | What I still haven't figured out is whether to move back in with my parents or go out on my own right away. |
 
 ## Grupa 4
+<!-- mode: składanka — 2-3 struktury splecione w jedno zdanie, ostatnie pary najtrudniejsze -->
+| polski | angielski |
+|---|---|
+| Jake złapał mnie wczoraj i zapytał, co dalej. | Jake caught me yesterday and asked what's next. |
+| Powiedziałem mu, że okazuje się, że najtrudniejsze dopiero przede mną. | I told him it turns out the hard part is still ahead of me. |
+| Przespałem się z tym, przegadałem to z Jakiem i wciąż się waham. | I slept on it, talked it over with Jake, and I'm still on the fence. |
+| Wciąż się waham, więc przegadam to z Jakiem i prześpię się z tym. | I'm still on the fence, so I'll talk it over with Jake and sleep on it. |
+| Prześpię się z tym, przegadam to z Jakiem i wtedy wracam na stałe. | I'll sleep on it, talk it over with Jake, and then I'm heading back for good. |
+| Tego nie ogarniam: rodzice czy własny kąt — przegadam to z Jakiem i prześpię się z tym. | What I can't figure out is parents or my own place — I'll talk it over with Jake and sleep on it. |
+| Powiedziałem Jake'owi, że to przegadam, prześpię się z tym i wtedy rozkminię, czy iść na swoje. | I told Jake I'd talk it over, sleep on it, and then figure out whether to go out on my own. |
+| Najdziwniejsze jest to, że domykam tu całe życie, wracam na dobre i wciąż się waham. | The strangest part is that I'm wrapping up a whole life here, heading back for good, and still on the fence. |
+
+## Grupa 5
 <!-- mode: EN-only -->
 | polski | angielski |
 |---|---|
