@@ -1,12 +1,12 @@
 {
   "$opis": "Rejestr wyrażeń kursu B2->C1 — silnik przeplatania. Każdy wpis ma intro (dział wprowadzenia) i review[] (działy, w których wyrażenie MA wrócić). Długość review[] = budżet powrotów (rdzeniowe ≥10, gramatyka ≥6). Generator czyta to przed tworzeniem działu; check-recykling.js egzekwuje. Reguły: METODA-C1.md §3.2 + §6.5. Schemat: {id, pl, en, typ, intro, review[]} — bez innych pól (status ignorowany).",
-  "wersja": "2026-06-23",
+  "wersja": "2026-06-26",
   "naming": "id działu = m<numer-minikursu>-d<numer-działu>, np. m1-d3 = minikurs 1, dział 3. Minikurs = ~11 działów (Etap I:1-4, II:5-6, III:7-9, IV:10, V:11).",
   "harmonogram": "Interwały rozszerzające: +2/+4/+8 od intro, oraz obowiązkowo Etap II-V bieżącego minikursu i Etap I-III następnego. Żadna luka > ~4 działy. Późne klocki dobijają budżet w następnym minikursie. Etap IV (słuchanka) i V (egzamin) recyklingują całość.",
   "typy": ["phrasal", "kolokacja", "idiom", "gramatyka"],
   "minikursy": [
     { "id": "m1", "tytul": "Co dalej ze mną — powrót z Norwegii", "temat": "Domykanie roboty w Norwegii, powrót do Polski, gdzie zamieszkać (Kraków: pokój/kawalerka/rodzice/inne miasto), pierwszy ruch zawodowy (oferta korepetycji vs własna działalność). Bohater: Jake (amerykański kumpel). Rejestr: codzienny peer. Apka → M5.", "status": "wygenerowany (01-11)" },
-    { "id": "m2", "tytul": "Szukanie pracy i rozmowy", "temat": "Networking, aplikacje, rozmowy kwalifikacyjne, oferta, negocjacje", "status": "szkic" },
+    { "id": "m2", "tytul": "Wyjście na swoje", "temat": "Decyzja, żeby ruszyć na swoje (MadreM — własne korepetycje + darmowy kurs matematyki na YouTube): przesądzić sprawę i pójść na całość, postawić kanał i wypluwać treści, tłumaczyć/uczyć na kamerze, i grać z głową (dyscyplina, rozliczalność, pułapka porównań w wieku 27 lat, maska „niby coś robię”). Powrót z Norwegii i wprowadzka do rodziców na „runway”. Bohater: Jake (kumpel, któremu mówisz, że idziesz na swoje). Rejestr: codzienny peer. Oparte na realnej rozmowie Krzyśka.", "status": "w generacji" },
     { "id": "m3", "tytul": "Mieszkanie i codzienność", "temat": "Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna", "status": "szkic" },
     { "id": "m4", "tytul": "Ludzie i rozmowy", "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia", "status": "szkic" },
     { "id": "m5", "tytul": "Pieniądze, ryzyko, decyzje", "temat": "Finanse, pomysł na apkę, ważenie ryzyka, duże decyzje (capstone)", "status": "szkic" }
@@ -28,11 +28,30 @@
     { "id": "cleft-what", "pl": "cleft / zdanie rozszczepione", "en": "What I can't figure out is...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m3-d8", "m5-d4"], "status": "zaplanowane" },
     { "id": "turns-out", "pl": "okazuje się, że...", "en": "Turns out...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m4-d3", "m5-d3"], "status": "zaplanowane" },
 
-    { "id": "reach-out", "pl": "odezwać się / nawiązać kontakt", "en": "to reach out (to)", "typ": "phrasal", "intro": "m2-d1", "review": ["m2-d3", "m2-d4", "m4-d1"], "status": "szkic" },
-    { "id": "follow-up", "pl": "dopytać / wrócić do tematu", "en": "to follow up (on)", "typ": "phrasal", "intro": "m2-d1", "review": ["m2-d3", "m2-d4"], "status": "szkic" },
-    { "id": "land-a-job", "pl": "załapać się na / zdobyć (pracę, rozmowę)", "en": "to land (a job / an interview)", "typ": "kolokacja", "intro": "m2-d1", "review": ["m2-d3", "m5-d1"], "status": "szkic" },
-    { "id": "touch-base", "pl": "zsynchronizować się / dać znać", "en": "to touch base", "typ": "phrasal", "intro": "m2-d2", "review": ["m2-d4", "m4-d1"], "status": "szkic" },
-    { "id": "keep-posted", "pl": "informować na bieżąco", "en": "to keep someone posted", "typ": "kolokacja", "intro": "m2-d2", "review": ["m2-d4", "m3-d3"], "status": "szkic" },
+    { "id": "make-a-call", "pl": "zdecydować / przesądzić sprawę", "en": "to call it / to make a call", "typ": "kolokacja", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "go-all-in", "pl": "iść na całość / postawić wszystko na jedną kartę", "en": "all in (on) / to go all in", "typ": "idiom", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "get-off-the-fence", "pl": "przestać się wahać / zejść z płotu", "en": "to get off the fence", "typ": "idiom", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "pull-the-trigger", "pl": "w końcu się zdecydować / odpalić (coś)", "en": "to pull the trigger (on)", "typ": "idiom", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+
+    { "id": "set-up", "pl": "ustawić / postawić (kanał, sprzęt do nagrywania)", "en": "to set up (a channel)", "typ": "phrasal", "intro": "m2-d2", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d1", "m3-d2", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "put-together", "pl": "sklecić / poskładać (kurs, materiał)", "en": "to put together (a course)", "typ": "phrasal", "intro": "m2-d2", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d1", "m3-d2", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "crank-out", "pl": "produkować masowo / wypluwać (filmy)", "en": "to crank out (videos)", "typ": "phrasal", "intro": "m2-d2", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d1", "m3-d2", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "put-it-out-there", "pl": "wrzucić w świat / opublikować i się nie bać", "en": "to put it out there", "typ": "idiom", "intro": "m2-d2", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d1", "m3-d2", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+
+    { "id": "walk-through", "pl": "przeprowadzić kogoś przez / objaśnić krok po kroku", "en": "to walk (someone) through", "typ": "phrasal", "intro": "m2-d3", "review": ["m2-d5", "m2-d8", "m2-d10", "m2-d11", "m3-d2", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "come-across-as", "pl": "sprawiać wrażenie / wypaść jako (pewny siebie)", "en": "to come across as (confident)", "typ": "phrasal", "intro": "m2-d3", "review": ["m2-d5", "m2-d8", "m2-d10", "m2-d11", "m3-d2", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "think-on-your-feet", "pl": "szybko reagować / kombinować w biegu", "en": "to think on your feet", "typ": "idiom", "intro": "m2-d3", "review": ["m2-d5", "m2-d8", "m2-d10", "m2-d11", "m3-d2", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "back-up-examples", "pl": "poprzeć (przykładami) / podeprzeć", "en": "to back up (with examples)", "typ": "phrasal", "intro": "m2-d3", "review": ["m2-d5", "m2-d8", "m2-d10", "m2-d11", "m3-d2", "m3-d3", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+
+    { "id": "hold-accountable", "pl": "rozliczać (się) / trzymać za słowo", "en": "to hold (someone) accountable", "typ": "kolokacja", "intro": "m2-d4", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d2", "m3-d4", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "slack-off", "pl": "obijać się / odpuszczać", "en": "to slack off", "typ": "phrasal", "intro": "m2-d4", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d2", "m3-d4", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "kid-yourself", "pl": "oszukiwać samego siebie / łudzić się", "en": "to kid (yourself)", "typ": "idiom", "intro": "m2-d4", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d2", "m3-d4", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+    { "id": "fall-behind", "pl": "zostawać w tyle (za innymi)", "en": "to fall behind", "typ": "phrasal", "intro": "m2-d4", "review": ["m2-d6", "m2-d9", "m2-d10", "m2-d11", "m3-d2", "m3-d4", "m3-d7", "m3-d8", "m3-d9", "m3-d10"], "status": "w generacji" },
+
+    { "id": "it-cleft", "pl": "to właśnie ... (zdanie rozszczepione)", "en": "It was ... that ... (cleft)", "typ": "gramatyka", "intro": "m2-d7", "review": ["m2-d8", "m2-d9", "m2-d11", "m3-d7", "m3-d8", "m3-d9"], "status": "w generacji" },
+    { "id": "only-inversion", "pl": "dopiero gdy / inwersja po Only", "en": "Only ... did ... (inwersja po Only)", "typ": "gramatyka", "intro": "m2-d7", "review": ["m2-d8", "m2-d9", "m2-d11", "m3-d7", "m3-d8", "m3-d9"], "status": "w generacji" },
+    { "id": "reported-question", "pl": "pytanie zależne (zapytali, czy...)", "en": "... asked whether ... (pytanie zależne)", "typ": "gramatyka", "intro": "m2-d7", "review": ["m2-d8", "m2-d9", "m2-d11", "m3-d7", "m3-d8", "m3-d9"], "status": "w generacji" },
+    { "id": "hedging", "pl": "asekuracja / łagodzenie sądu (powiedziałbym, że...)", "en": "if anything ... / I'd argue that ... (hedging)", "typ": "gramatyka", "intro": "m2-d7", "review": ["m2-d8", "m2-d9", "m2-d11", "m3-d7", "m3-d8", "m3-d9"], "status": "w generacji" },
 
     { "id": "settle-in", "pl": "zadomowić się / urządzić się", "en": "to settle in", "typ": "phrasal", "intro": "m3-d1", "review": ["m3-d3", "m3-d4", "m4-d1"], "status": "szkic" },
     { "id": "get-around-to", "pl": "wziąć się wreszcie za", "en": "to get around to (doing)", "typ": "phrasal", "intro": "m3-d1", "review": ["m3-d3", "m5-d1"], "status": "szkic" },

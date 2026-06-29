@@ -1,10 +1,64 @@
 {
-  "generatedAt": "2026-06-25T18:53:18.362Z",
+  "generatedAt": "2026-06-29T03:49:22.747Z",
+  "minikursy": [
+    {
+      "num": 1,
+      "id": "m1",
+      "tytul": "Co dalej ze mną — powrót z Norwegii",
+      "temat": "Domykanie roboty w Norwegii, powrót do Polski, gdzie zamieszkać (Kraków: pokój/kawalerka/rodzice/inne miasto), pierwszy ruch zawodowy (oferta korepetycji vs własna działalność). Bohater: Jake (amerykański kumpel). Rejestr: codzienny peer. Apka → M5.",
+      "status": "wygenerowany (01-11)",
+      "count": 11,
+      "audioCount": 46,
+      "generated": true
+    },
+    {
+      "num": 2,
+      "id": "m2",
+      "tytul": "Wyjście na swoje",
+      "temat": "Decyzja, żeby ruszyć na swoje (MadreM — własne korepetycje + darmowy kurs matematyki na YouTube): przesądzić sprawę i pójść na całość, postawić kanał i wypluwać treści, tłumaczyć/uczyć na kamerze, i grać z głową (dyscyplina, rozliczalność, pułapka porównań w wieku 27 lat, maska „niby coś robię”). Powrót z Norwegii i wprowadzka do rodziców na „runway”. Bohater: Jake (kumpel, któremu mówisz, że idziesz na swoje). Rejestr: codzienny peer. Oparte na realnej rozmowie Krzyśka.",
+      "status": "w generacji",
+      "count": 11,
+      "audioCount": 55,
+      "generated": true
+    },
+    {
+      "num": 3,
+      "id": "m3",
+      "tytul": "Mieszkanie i codzienność",
+      "temat": "Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna",
+      "status": "szkic",
+      "count": 0,
+      "audioCount": 0,
+      "generated": false
+    },
+    {
+      "num": 4,
+      "id": "m4",
+      "tytul": "Ludzie i rozmowy",
+      "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia",
+      "status": "szkic",
+      "count": 0,
+      "audioCount": 0,
+      "generated": false
+    },
+    {
+      "num": 5,
+      "id": "m5",
+      "tytul": "Pieniądze, ryzyko, decyzje",
+      "temat": "Finanse, pomysł na apkę, ważenie ryzyka, duże decyzje (capstone)",
+      "status": "szkic",
+      "count": 0,
+      "audioCount": 0,
+      "generated": false
+    }
+  ],
   "chapters": [
     {
       "id": "01-m1d1-domykanie-i-powrot",
       "slug": "01-m1d1-domykanie-i-powrot",
       "number": 1,
+      "minikurs": 1,
+      "localNumber": 1,
       "title": "M1 · Dział 1: Domykanie i powrót / M1 · Part 1: Wrapping Up and Heading Home",
       "titlePl": "M1 · Dział 1: Domykanie i powrót",
       "titleEn": "M1 · Part 1: Wrapping Up and Heading Home",
@@ -42,6 +96,8 @@
       "id": "02-m1d2-gdzie-zamieszkac",
       "slug": "02-m1d2-gdzie-zamieszkac",
       "number": 2,
+      "minikurs": 1,
+      "localNumber": 2,
       "title": "M1 · Dział 2: Gdzie zamieszkać / M1 · Part 2: Where to Live",
       "titlePl": "M1 · Dział 2: Gdzie zamieszkać",
       "titleEn": "M1 · Part 2: Where to Live",
@@ -79,6 +135,8 @@
       "id": "03-m1d3-pierwszy-ruch",
       "slug": "03-m1d3-pierwszy-ruch",
       "number": 3,
+      "minikurs": 1,
+      "localNumber": 3,
       "title": "M1 · Dział 3: Pierwszy ruch / M1 · Part 3: The First Move",
       "titlePl": "M1 · Dział 3: Pierwszy ruch",
       "titleEn": "M1 · Part 3: The First Move",
@@ -116,6 +174,8 @@
       "id": "04-m1d4-przegadac-i-przespac",
       "slug": "04-m1d4-przegadac-i-przespac",
       "number": 4,
+      "minikurs": 1,
+      "localNumber": 4,
       "title": "M1 · Dział 4: Przegadać i przespać / M1 · Part 4: Talk It Over and Sleep On It",
       "titlePl": "M1 · Dział 4: Przegadać i przespać",
       "titleEn": "M1 · Part 4: Talk It Over and Sleep On It",
@@ -153,6 +213,8 @@
       "id": "05-m1d5-rozpoznawanie-ze-sluchu",
       "slug": "05-m1d5-rozpoznawanie-ze-sluchu",
       "number": 5,
+      "minikurs": 1,
+      "localNumber": 5,
       "title": "M1 · Dział 5: Rozpoznawanie ze słuchu / M1 · Part 5: Listening It Back",
       "titlePl": "M1 · Dział 5: Rozpoznawanie ze słuchu",
       "titleEn": "M1 · Part 5: Listening It Back",
@@ -180,6 +242,8 @@
       "id": "06-m1d6-swobodne-wymiany",
       "slug": "06-m1d6-swobodne-wymiany",
       "number": 6,
+      "minikurs": 1,
+      "localNumber": 6,
       "title": "M1 · Dział 6: Swobodne wymiany / M1 · Part 6: Easy Back-and-Forth",
       "titlePl": "M1 · Dział 6: Swobodne wymiany",
       "titleEn": "M1 · Part 6: Easy Back-and-Forth",
@@ -207,6 +271,8 @@
       "id": "07-m1d7-wszystko-naraz",
       "slug": "07-m1d7-wszystko-naraz",
       "number": 7,
+      "minikurs": 1,
+      "localNumber": 7,
       "title": "M1 · Dział 7: Wszystko naraz / M1 · Part 7: All at Once",
       "titlePl": "M1 · Dział 7: Wszystko naraz",
       "titleEn": "M1 · Part 7: All at Once",
@@ -244,6 +310,8 @@
       "id": "08-m1d8-trudniejsze-sploty",
       "slug": "08-m1d8-trudniejsze-sploty",
       "number": 8,
+      "minikurs": 1,
+      "localNumber": 8,
       "title": "M1 · Dział 8: Trudniejsze sploty / M1 · Part 8: Tighter Braids",
       "titlePl": "M1 · Dział 8: Trudniejsze sploty",
       "titleEn": "M1 · Part 8: Tighter Braids",
@@ -281,6 +349,8 @@
       "id": "09-m1d9-pelne-splatanie",
       "slug": "09-m1d9-pelne-splatanie",
       "number": 9,
+      "minikurs": 1,
+      "localNumber": 9,
       "title": "M1 · Dział 9: Pełne splatanie / M1 · Part 9: The Full Braid",
       "titlePl": "M1 · Dział 9: Pełne splatanie",
       "titleEn": "M1 · Part 9: The Full Braid",
@@ -313,6 +383,8 @@
       "id": "10-m1d10-ostatnie-dwa-tygodnie",
       "slug": "10-m1d10-ostatnie-dwa-tygodnie",
       "number": 10,
+      "minikurs": 1,
+      "localNumber": 10,
       "title": "M1 · Dział 10: Słuchanka: Ostatnie dwa tygodnie / M1 · Part 10: The Last Two Weeks",
       "titlePl": "M1 · Dział 10: Słuchanka: Ostatnie dwa tygodnie",
       "titleEn": "M1 · Part 10: The Last Two Weeks",
@@ -340,6 +412,8 @@
       "id": "11-m1d11-so-whats-next",
       "slug": "11-m1d11-so-whats-next",
       "number": 11,
+      "minikurs": 1,
+      "localNumber": 11,
       "title": "M1 · Dział 11: Egzamin — So what's next? / M1 · Part 11: Final Exam — So What's Next?",
       "titlePl": "M1 · Dział 11: Egzamin — So what's next?",
       "titleEn": "M1 · Part 11: Final Exam — So What's Next?",
@@ -360,6 +434,435 @@
           "n": 3,
           "label": "Grupa 3",
           "src": "11-m1d11-so-whats-next/grupa-3.mp3?v=1782413085825"
+        }
+      ]
+    },
+    {
+      "id": "12-m2d1-decyzja",
+      "slug": "12-m2d1-decyzja",
+      "number": 12,
+      "minikurs": 2,
+      "localNumber": 1,
+      "title": "M2 · Dział 1: Decyzja / M2 · Part 1: Making the Call",
+      "titlePl": "M2 · Dział 1: Decyzja",
+      "titleEn": "M2 · Part 1: Making the Call",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "12-m2d1-decyzja/grupa-1.mp3?v=1782627478877"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "12-m2d1-decyzja/grupa-2.mp3?v=1782627506293"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "12-m2d1-decyzja/grupa-3.mp3?v=1782627533069"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "12-m2d1-decyzja/grupa-4.mp3?v=1782627562626"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "12-m2d1-decyzja/grupa-5.mp3?v=1782627585756"
+        }
+      ]
+    },
+    {
+      "id": "13-m2d2-budowanie-kanalu",
+      "slug": "13-m2d2-budowanie-kanalu",
+      "number": 13,
+      "minikurs": 2,
+      "localNumber": 2,
+      "title": "M2 · Dział 2: Budowanie kanału / M2 · Part 2: Building the Channel",
+      "titlePl": "M2 · Dział 2: Budowanie kanału",
+      "titleEn": "M2 · Part 2: Building the Channel",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "13-m2d2-budowanie-kanalu/grupa-1.mp3?v=1782627629129"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "13-m2d2-budowanie-kanalu/grupa-2.mp3?v=1782627659880"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "13-m2d2-budowanie-kanalu/grupa-3.mp3?v=1782627687514"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "13-m2d2-budowanie-kanalu/grupa-4.mp3?v=1782627715988"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "13-m2d2-budowanie-kanalu/grupa-5.mp3?v=1782627746201"
+        }
+      ]
+    },
+    {
+      "id": "14-m2d3-tlumaczenie-na-kamerze",
+      "slug": "14-m2d3-tlumaczenie-na-kamerze",
+      "number": 14,
+      "minikurs": 2,
+      "localNumber": 3,
+      "title": "M2 · Dział 3: Tłumaczenie na kamerze / M2 · Part 3: Teaching on Camera",
+      "titlePl": "M2 · Dział 3: Tłumaczenie na kamerze",
+      "titleEn": "M2 · Part 3: Teaching on Camera",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-1.mp3?v=1782627777239"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-2.mp3?v=1782627808827"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-3.mp3?v=1782627839443"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-4.mp3?v=1782627873277"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-5.mp3?v=1782627907654"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "14-m2d3-tlumaczenie-na-kamerze/grupa-6.mp3?v=1782627916132"
+        }
+      ]
+    },
+    {
+      "id": "15-m2d4-granie-z-glowa",
+      "slug": "15-m2d4-granie-z-glowa",
+      "number": 15,
+      "minikurs": 2,
+      "localNumber": 4,
+      "title": "M2 · Dział 4: Granie z głową / M2 · Part 4: Playing It Smart",
+      "titlePl": "M2 · Dział 4: Granie z głową",
+      "titleEn": "M2 · Part 4: Playing It Smart",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "15-m2d4-granie-z-glowa/grupa-1.mp3?v=1782627947891"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "15-m2d4-granie-z-glowa/grupa-2.mp3?v=1782627975096"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "15-m2d4-granie-z-glowa/grupa-3.mp3?v=1782628003483"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "15-m2d4-granie-z-glowa/grupa-4.mp3?v=1782628030594"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "15-m2d4-granie-z-glowa/grupa-5.mp3?v=1782628044968"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "15-m2d4-granie-z-glowa/grupa-6.mp3?v=1782628053096"
+        }
+      ]
+    },
+    {
+      "id": "16-m2d5-rozpoznawanie-ze-sluchu",
+      "slug": "16-m2d5-rozpoznawanie-ze-sluchu",
+      "number": 16,
+      "minikurs": 2,
+      "localNumber": 5,
+      "title": "M2 · Dział 5: Rozpoznawanie ze słuchu / M2 · Part 5: Tuning Your Ear",
+      "titlePl": "M2 · Dział 5: Rozpoznawanie ze słuchu",
+      "titleEn": "M2 · Part 5: Tuning Your Ear",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782628086094"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782628120227"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782628153262"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-4.mp3?v=1782628185471"
+        }
+      ]
+    },
+    {
+      "id": "17-m2d6-swobodne-wymiany",
+      "slug": "17-m2d6-swobodne-wymiany",
+      "number": 17,
+      "minikurs": 2,
+      "localNumber": 6,
+      "title": "M2 · Dział 6: Swobodne wymiany / M2 · Part 6: Free Exchanges",
+      "titlePl": "M2 · Dział 6: Swobodne wymiany",
+      "titleEn": "M2 · Part 6: Free Exchanges",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "17-m2d6-swobodne-wymiany/grupa-1.mp3?v=1782628197811"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "17-m2d6-swobodne-wymiany/grupa-2.mp3?v=1782628232897"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "17-m2d6-swobodne-wymiany/grupa-3.mp3?v=1782628271990"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "17-m2d6-swobodne-wymiany/grupa-4.mp3?v=1782628314338"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "17-m2d6-swobodne-wymiany/grupa-5.mp3?v=1782628353108"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "17-m2d6-swobodne-wymiany/grupa-6.mp3?v=1782628394451"
+        }
+      ]
+    },
+    {
+      "id": "18-m2d7-wszystko-naraz",
+      "slug": "18-m2d7-wszystko-naraz",
+      "number": 18,
+      "minikurs": 2,
+      "localNumber": 7,
+      "title": "M2 · Dział 7: Wszystko naraz / M2 · Part 7: Putting It Together",
+      "titlePl": "M2 · Dział 7: Wszystko naraz",
+      "titleEn": "M2 · Part 7: Putting It Together",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "18-m2d7-wszystko-naraz/grupa-1.mp3?v=1782628426833"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "18-m2d7-wszystko-naraz/grupa-2.mp3?v=1782628454338"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "18-m2d7-wszystko-naraz/grupa-3.mp3?v=1782628481931"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "18-m2d7-wszystko-naraz/grupa-4.mp3?v=1782628510280"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "18-m2d7-wszystko-naraz/grupa-5.mp3?v=1782628518668"
+        }
+      ]
+    },
+    {
+      "id": "19-m2d8-trudniejsze-sploty",
+      "slug": "19-m2d8-trudniejsze-sploty",
+      "number": 19,
+      "minikurs": 2,
+      "localNumber": 8,
+      "title": "M2 · Dział 8: Trudniejsze sploty / M2 · Part 8: Tighter Weaves",
+      "titlePl": "M2 · Dział 8: Trudniejsze sploty",
+      "titleEn": "M2 · Part 8: Tighter Weaves",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "19-m2d8-trudniejsze-sploty/grupa-1.mp3?v=1782704463314"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "19-m2d8-trudniejsze-sploty/grupa-2.mp3?v=1782704503996"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "19-m2d8-trudniejsze-sploty/grupa-3.mp3?v=1782704543950"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "19-m2d8-trudniejsze-sploty/grupa-4.mp3?v=1782704594187"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "19-m2d8-trudniejsze-sploty/grupa-5.mp3?v=1782704609577"
+        }
+      ]
+    },
+    {
+      "id": "20-m2d9-pelne-splatanie",
+      "slug": "20-m2d9-pelne-splatanie",
+      "number": 20,
+      "minikurs": 2,
+      "localNumber": 9,
+      "title": "M2 · Dział 9: Pełne splatanie / M2 · Part 9: Full Braid",
+      "titlePl": "M2 · Dział 9: Pełne splatanie",
+      "titleEn": "M2 · Part 9: Full Braid",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "20-m2d9-pelne-splatanie/grupa-1.mp3?v=1782704650498"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "20-m2d9-pelne-splatanie/grupa-2.mp3?v=1782704686967"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "20-m2d9-pelne-splatanie/grupa-3.mp3?v=1782704726590"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "20-m2d9-pelne-splatanie/grupa-4.mp3?v=1782704767016"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "20-m2d9-pelne-splatanie/grupa-5.mp3?v=1782704776494"
+        }
+      ]
+    },
+    {
+      "id": "21-m2d10-sluchanka-madrem",
+      "slug": "21-m2d10-sluchanka-madrem",
+      "number": 21,
+      "minikurs": 2,
+      "localNumber": 10,
+      "title": "M2 · Dział 10: Słuchanka — MadreM / M2 · Part 10: The MadreM Story",
+      "titlePl": "M2 · Dział 10: Słuchanka — MadreM",
+      "titleEn": "M2 · Part 10: The MadreM Story",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "21-m2d10-sluchanka-madrem/grupa-1.mp3?v=1782704795539"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "21-m2d10-sluchanka-madrem/grupa-2.mp3?v=1782704819482"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "21-m2d10-sluchanka-madrem/grupa-3.mp3?v=1782704841648"
+        }
+      ]
+    },
+    {
+      "id": "22-m2d11-egzamin-tell-me-about",
+      "slug": "22-m2d11-egzamin-tell-me-about",
+      "number": 22,
+      "minikurs": 2,
+      "localNumber": 11,
+      "title": "M2 · Dział 11: Egzamin: opowiedz o sobie / M2 · Part 11: Exam: Tell Me About Yourself",
+      "titlePl": "M2 · Dział 11: Egzamin: opowiedz o sobie",
+      "titleEn": "M2 · Part 11: Exam: Tell Me About Yourself",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "22-m2d11-egzamin-tell-me-about/grupa-1.mp3?v=1782704862647"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "22-m2d11-egzamin-tell-me-about/grupa-2.mp3?v=1782704886287"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "22-m2d11-egzamin-tell-me-about/grupa-3.mp3?v=1782704905889"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "22-m2d11-egzamin-tell-me-about/grupa-4.mp3?v=1782704925711"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "22-m2d11-egzamin-tell-me-about/grupa-5.mp3?v=1782704943855"
         }
       ]
     }

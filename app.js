@@ -16,7 +16,7 @@ const ART_SIZES = [96, 128, 192, 256, 384, 512];
 const REPEAT_LABEL = { off: 'wył', one: 'jedna', all: 'cały' };
 
 // Znacznik wersji (widoczny w stopce — potwierdza deploy).
-const BUILD = 'M1 · v2 · 2026-06-25 · zasiew→splot';
+const BUILD = 'M2 · v3 · 2026-06-26 · minikursy';
 // Etap minikursu wg pozycji części (METODA §3.1: I:4, II:2, III:3, IV:1, V:1).
 const STAGES = [
   'Etap I · Fundament', 'Etap I · Fundament', 'Etap I · Fundament', 'Etap I · Fundament',
@@ -29,6 +29,11 @@ const stageFor = (n) => STAGES[((n - 1) % 11 + 11) % 11] || '';
 let DATA = null;
 let renderedChapterId = null;
 let seeking = false;
+let backHash = '#/'; // cel przycisku „wstecz" zależny od widoku (dział → minikurs → home)
+
+// minikurs/numer lokalny rozdziału — z content.json, z fallbackiem dla starych danych
+const mkOf = (c) => (c.minikurs != null ? c.minikurs : Math.floor((c.number - 1) / 11) + 1);
+const localOf = (c) => (c.localNumber != null ? c.localNumber : ((c.number - 1) % 11) + 1);
 
 const state = {
   chapter: null,
@@ -217,35 +222,51 @@ function updateActiveUI() {
 }
 
 /* ---------- render: widoki ---------- */
-function renderHome() {
+// POZIOM 1 — kafle minikursów (home)
+function renderMinikursy() {
   renderedChapterId = null;
+  backHash = '#/';
   backBtn.hidden = true;
   setText('topbar-title', 'Angielski');
 
+  const mks = (DATA.minikursy && DATA.minikursy.length)
+    ? DATA.minikursy
+    : [{ num: 1, tytul: 'Minikurs 1', temat: '', count: DATA.chapters.length, audioCount: 0, generated: true }];
   const totalAudio = DATA.chapters.reduce((s, c) => s + c.groups.length, 0);
-  const items = DATA.chapters.map((c) => {
-    const meta = c.hasAudio
-      ? `${c.groups.length} ${plural(c.groups.length, 'grupa', 'grupy', 'grup')}`
-      : 'tylko PDF';
+  const genCount = mks.filter((m) => m.generated).length;
+
+  const tiles = mks.map((m) => {
+    if (m.generated) {
+      const meta = `${m.count} ${plural(m.count, 'dział', 'działy', 'działów')} · ${m.audioCount} ${plural(m.audioCount, 'nagranie', 'nagrania', 'nagrań')}`;
+      return `
+        <button class="mk" data-mk="${m.num}">
+          <span class="mk-num">M${m.num}</span>
+          <span class="mk-body">
+            <span class="mk-title">${esc(m.tytul)}</span>
+            ${m.temat ? `<span class="mk-sub">${esc(m.temat)}</span>` : ''}
+            <span class="mk-meta">${meta}</span>
+          </span>
+          <span class="mk-chev">›</span>
+        </button>`;
+    }
     return `
-      <button class="chapter${c.hasAudio ? '' : ' no-audio'}" data-nav="${esc(c.id)}">
-        <span class="chapter-num">${String(c.number).padStart(2, '0')}</span>
-        <span class="chapter-body">
-          <span class="chapter-stage">${esc(stageFor(c.number))}</span>
-          <span class="chapter-title">${esc(cleanTitle(c.titlePl))}</span>
-          <span class="chapter-sub">${esc(cleanTitle(c.titleEn))}</span>
+      <div class="mk mk-locked" aria-disabled="true">
+        <span class="mk-num">M${m.num}</span>
+        <span class="mk-body">
+          <span class="mk-title">${esc(m.tytul)}</span>
+          ${m.temat ? `<span class="mk-sub">${esc(m.temat)}</span>` : ''}
+          <span class="mk-meta mk-soon">⌛ wkrótce</span>
         </span>
-        <span class="chapter-meta">${meta}<span class="chev">›</span></span>
-      </button>`;
+      </div>`;
   }).join('');
 
   view.innerHTML = `
     <section class="hero">
-      <div class="kicker">B2 → C1 · gadane, nie pisane</div>
-      <h1>Minikurs 1:<br>Powrót do domu</h1>
-      <p class="sub">${DATA.chapters.length} ${plural(DATA.chapters.length, 'część', 'części', 'części')} · ${totalAudio} ${plural(totalAudio, 'nagranie', 'nagrania', 'nagrań')} · słuchaj i powtarzaj na głos</p>
+      <div class="kicker">B2 → C1 · American English</div>
+      <h1>Angielski</h1>
+      <p class="sub">${genCount} ${plural(genCount, 'minikurs', 'minikursy', 'minikursów')} · ${totalAudio} ${plural(totalAudio, 'nagranie', 'nagrania', 'nagrań')} · słuchaj i powtarzaj na głos</p>
     </section>
-    ${items}
+    <div class="mk-list">${tiles}</div>
     <footer class="site-foot">
       <div><b>Angielski · Studio</b> — ${esc(BUILD)}</div>
       <div>build ${esc(fmtBuild(DATA.generatedAt))}</div>
@@ -254,10 +275,51 @@ function renderHome() {
   window.scrollTo(0, 0);
 }
 
+// POZIOM 2 — działy jednego minikursu
+function renderMinikurs(num) {
+  renderedChapterId = null;
+  backHash = '#/';
+  backBtn.hidden = false;
+  const mk = (DATA.minikursy || []).find((m) => m.num === num);
+  setText('topbar-title', mk ? mk.tytul : `Minikurs ${num}`);
+
+  const chs = DATA.chapters
+    .filter((c) => mkOf(c) === num)
+    .sort((a, b) => localOf(a) - localOf(b));
+
+  const items = chs.map((c) => {
+    const ln = localOf(c);
+    const meta = c.hasAudio
+      ? `${c.groups.length} ${plural(c.groups.length, 'grupa', 'grupy', 'grup')}`
+      : 'tylko PDF';
+    return `
+      <button class="chapter${c.hasAudio ? '' : ' no-audio'}" data-nav="${esc(c.id)}">
+        <span class="chapter-num">${String(ln).padStart(2, '0')}</span>
+        <span class="chapter-body">
+          <span class="chapter-stage">${esc(stageFor(ln))}</span>
+          <span class="chapter-title">${esc(cleanTitle(c.titlePl))}</span>
+          <span class="chapter-sub">${esc(cleanTitle(c.titleEn))}</span>
+        </span>
+        <span class="chapter-meta">${meta}<span class="chev">›</span></span>
+      </button>`;
+  }).join('');
+
+  view.innerHTML = `
+    <section class="hero mk-head">
+      <div class="kicker">Minikurs ${num}</div>
+      <h1>${esc(mk ? mk.tytul : '')}</h1>
+      ${mk && mk.temat ? `<p class="sub mk-head-temat">${esc(mk.temat)}</p>` : ''}
+    </section>
+    ${items}`;
+  updateActiveUI();
+  window.scrollTo(0, 0);
+}
+
 function renderChapter(ch) {
   renderedChapterId = ch.id;
+  backHash = `#/m/${mkOf(ch)}`;
   backBtn.hidden = false;
-  setText('topbar-title', ch.titlePl);
+  setText('topbar-title', cleanTitle(ch.titlePl));
 
   const rows = ch.groups.map((g, i) => `
     <div class="group" data-index="${i}">
@@ -270,10 +332,10 @@ function renderChapter(ch) {
 
   view.innerHTML = `
     <section class="chapter-head">
-      <div class="kicker">Część ${String(ch.number).padStart(2, '0')}</div>
+      <div class="kicker">Dział ${String(localOf(ch)).padStart(2, '0')}</div>
       <h1>${esc(cleanTitle(ch.titlePl))}</h1>
       <div class="en">${esc(cleanTitle(ch.titleEn))}</div>
-      <span class="stage-tag">${esc(stageFor(ch.number))}</span>
+      <span class="stage-tag">${esc(stageFor(localOf(ch)))}</span>
     </section>
     ${ch.hasAudio
       ? `<div class="groups">${rows}</div>`
@@ -286,12 +348,20 @@ function renderChapter(ch) {
 }
 
 function route() {
-  const m = (location.hash || '').match(/^#\/c\/(.+)$/);
-  if (m) {
+  const h = location.hash || '';
+  let m;
+  if ((m = h.match(/^#\/c\/(.+)$/))) {
     const ch = DATA.chapters.find((c) => c.id === decodeURIComponent(m[1]));
     if (ch) return renderChapter(ch);
   }
-  renderHome();
+  if ((m = h.match(/^#\/m\/(\d+)$/))) {
+    const num = Number(m[1]);
+    if ((DATA.minikursy || []).some((mk) => mk.num === num && mk.generated)
+        || DATA.chapters.some((c) => mkOf(c) === num)) {
+      return renderMinikurs(num);
+    }
+  }
+  renderMinikursy();
 }
 
 /* ---------- przywróć ostatnio słuchaną grupę (bez auto-odtwarzania) ---------- */
@@ -316,6 +386,8 @@ function restoreLast() {
 function wire() {
   // nawigacja + sterowanie grupami (delegacja kliknięć — działa po każdym re-renderze)
   view.addEventListener('click', (e) => {
+    const mk = e.target.closest('[data-mk]');
+    if (mk) { location.hash = `#/m/${mk.dataset.mk}`; return; }
     const nav = e.target.closest('[data-nav]');
     if (nav) { location.hash = `#/c/${encodeURIComponent(nav.dataset.nav)}`; return; }
     const act = e.target.closest('[data-action]');
@@ -327,7 +399,7 @@ function wire() {
     }
   });
 
-  backBtn.addEventListener('click', () => { location.hash = '#/'; });
+  backBtn.addEventListener('click', () => { location.hash = backHash; });
 
   byId('p-play').addEventListener('click', togglePlay);
   byId('p-prev').addEventListener('click', prev);
