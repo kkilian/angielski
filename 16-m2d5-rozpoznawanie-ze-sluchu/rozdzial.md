@@ -1,71 +1,68 @@
 # M2 · Dział 5: Rozpoznawanie ze słuchu / M2 · Part 5: Tuning Your Ear
 
 ## Grupa 1
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| domykam Norwegię, za tydzień wracam do Krakowa | I'm wrapping up in Norway, so I'm heading back to Kraków in about a week. |
-| (Jake) czyli wracasz na dobre? | So you're heading back home for good this time? |
-| szczerze, co do MadreM ciągle się waham | Honestly, I'm still on the fence about this whole MadreM thing. |
-| nie chodzi o to, że nie chcę — po prostu się waham co do terminu | It's not that I don't want to do it — I'm just on the fence about the timing. |
-| (Jake) gadałeś już o tym z rodzicami? | Have you talked it over with your folks yet? |
-| chcę to przegadać z paroma osobami, zanim cokolwiek ruszę | I want to talk it over with a few people before I make any moves. |
-| wracam do Krakowa, ale wciąż się waham, czy iść na swoje | I'm heading back to Kraków, but I'm still on the fence about going out on my own. |
-| przegadałem to z mamą i trochę mi się przejaśniło w głowie | I talked it over with my mom, and it kind of cleared my head. |
-| (Jake) długo jeszcze będziesz tak tkwił na płocie? | How long are you gonna sit on the fence about this? |
-| wracam, przegadam to z rodzicami i wtedy przesądzę sprawę | I'll head back, talk it over with my parents, and then I'll make the call. |
-| nie chcę wrócić i przez pół roku dalej się wahać | I don't want to head back and stay on the fence for another six months. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So what's next once you wrap up in Norway? | Powiedz, że za jakiś tydzień wracasz do Krakowa. | I'm heading back to Kraków in about a week. |
+| Is this a permanent thing or just a visit? | Powiedz, że tym razem wracasz na dobre. | I'm heading home for good this time. |
+| Have you decided about the MadreM channel? | Przyznaj, że wciąż się wahasz co do całego MadreM. | I'm still on the fence about this whole MadreM thing. |
+| So you don't actually want to do it? | Zaprzecz — powiedz, że po prostu wahasz się co do terminu. | It's not that — I'm just on the fence about the timing. |
+| What do you want to do before you commit? | Powiedz, że chcesz to przegadać z paroma osobami, zanim cokolwiek ruszysz. | I want to talk it over with a few people before I make any moves. |
+| Did anything help you get some clarity? | Powiedz, że przegadałeś to z mamą i trochę ci się przejaśniło w głowie. | I talked it over with my mom, and it kind of cleared my head. |
+| How are you feeling about going solo? | Powiedz, że wracasz do Krakowa, ale wciąż wahasz się, czy iść na swoje. | I'm heading back to Kraków, but I'm still on the fence about going out on my own. |
+| So what's the actual plan? | Powiedz, że wrócisz, przegadasz to z rodzicami i wtedy przesądzisz sprawę. | I'll head back, talk it over with my parents, and then I'll make the call. |
+| Worried you'll just keep flip-flopping? | Przyznaj, że nie chcesz wrócić i przez pół roku dalej się wahać. | I don't want to head back and stay on the fence for another six months. |
+| Have you run this by your parents at all? | Powiedz, że chcesz to najpierw przegadać z nimi twarzą w twarz. | I want to talk it over with them face to face first. |
+| At some point you just have to decide, right? | Zgódź się — powiedz, że w końcu musisz przesądzić sprawę. | At some point I just have to make the call. |
 
 ## Grupa 2
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| w końcu zszedłem z płotu i przesądziłem sprawę | I finally got off the fence and made the call. |
-| (Jake) no i co, zdecydowałeś czy nie? | So did you make a call or not? |
-| odpaliłem to — ruszam z MadreM we wrześniu | I pulled the trigger — I'm launching MadreM in September. |
-| długo to odkładałem, ale w końcu się zdecydowałem | I sat on it for weeks, but I finally pulled the trigger. |
-| jak już w to wchodzę, to na całość | If I'm doing this, I'm going all in. |
-| idę na całość: dwa filmy dziennie przez dwa miesiące | I'm going all in — two videos a day for two months. |
-| (Jake) serio stawiasz wszystko na jedną kartę? | So you're really going all in on this tutoring thing? |
-| przestałem się wahać i po prostu odpaliłem kanał | I got off the fence and just pulled the trigger on the channel. |
-| przegadałem to, przesądziłem i poszedłem na całość | I talked it over, made the call, and went all in. |
-| (Jake) co cię w końcu pchnęło do decyzji? | So what finally got you off the fence? |
-| albo przesądzasz sprawę, albo dalej tkwisz w miejscu | At some point you either make the call or you stay stuck. |
-| zszedłem z płotu, odpaliłem to i idę na całość | I got off the fence, pulled the trigger, and now I'm all in. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So you finally figured it out? | Powiedz, że w końcu zszedłeś z płotu i przesądziłeś sprawę. | I finally got off the fence and made the call. |
+| So what's the verdict — yes or no? | Powiedz, że to odpaliłeś — ruszasz z MadreM we wrześniu. | I pulled the trigger — I'm launching MadreM in September. |
+| Took you a while to commit, huh? | Przyznaj, że długo to odkładałeś, ale w końcu się zdecydowałeś. | I sat on it for weeks, but I finally pulled the trigger. |
+| Are you gonna do this halfway or for real? | Powiedz, że jak już w to wchodzisz, to na całość. | If I'm doing this, I'm going all in. |
+| How hard are you planning to push? | Powiedz, że idziesz na całość: dwa filmy dziennie przez dwa miesiące. | I'm going all in — two videos a day for two months. |
+| So you're betting everything on the tutoring? | Potwierdź — idziesz na całość z tym korepetytorstwem. | Yeah, I'm going all in on this tutoring thing. |
+| What did you actually end up doing? | Powiedz, że przestałeś się wahać i po prostu odpaliłeś kanał. | I got off the fence and just pulled the trigger on the channel. |
+| So how did the whole thing go down? | Powiedz, że przegadałeś to, przesądziłeś sprawę i poszedłeś na całość. | I talked it over, made the call, and went all in. |
+| So what finally pushed you to decide? | Powiedz, że to rozmowa z mamą zepchnęła cię z płotu. | That talk with my mom got me off the fence. |
+| Why not just keep thinking about it longer? | Powiedz, że albo przesądzasz sprawę, albo dalej tkwisz w miejscu. | At some point you either make the call or you stay stuck. |
+| Where are you at with it now? | Powiedz, że zszedłeś z płotu, odpaliłeś to i idziesz na całość. | I got off the fence, pulled the trigger, and now I'm all in. |
 
 ## Grupa 3
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| w każdym filmie tłumaczę jedno zadanie krok po kroku | In every video I walk them through one problem step by step. |
-| (Jake) a jak prowadzisz ich przez te trudniejsze rzeczy? | So how do you walk people through the hard stuff? |
-| zależy mi, żeby wypaść jasno i wiarygodnie | I really want to come across as clear and trustworthy. |
-| bez lania wody — chcę wypaść jak ktoś, kto ten materiał ogarnia | No fluff — I want to come across as someone who actually knows the material. |
-| czasem ktoś rzuci pytanie z boku i muszę kombinować w biegu | Sometimes a kid asks something random and I've got to think on my feet. |
-| jak uczysz na żywo, musisz szybko reagować | Teaching live, you've got to think on your feet. |
-| nie rzucam tez bez pokrycia — wszystko podpieram przykładami | I don't just make claims — I back everything up with examples. |
-| każdą regułę popieram konkretnym przykładem | I back up every rule with a concrete example. |
-| (Jake) i to wystarcza, żeby wyjść wiarygodnie? | And that's enough to come across as legit? |
-| tłumaczę krok po kroku i podpieram to przykładami | I walk them through it and back it up with examples. |
-| jak ktoś mnie zaskoczy, kombinuję w biegu i dalej wypadam spokojnie | When someone throws me off, I think on my feet and still come across as calm. |
-| dobre, czyste tłumaczenie obroni się samo | A clean, solid walk-through sells itself. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So what's the format of each video? | Powiedz, że w każdym filmie tłumaczysz jedno zadanie krok po kroku. | In every video I walk them through one problem step by step. |
+| How do you handle the tougher topics? | Powiedz, że prowadzisz ich przez trudniejsze rzeczy powoli. | I just walk them through the hard stuff slowly. |
+| What matters most to you on camera? | Powiedz, że zależy ci, żeby wypaść jasno i wiarygodnie. | I really want to come across as clear and credible. |
+| What impression are you going for? | Powiedz, że chcesz wypaść jak ktoś, kto ten materiał naprawdę ogarnia. | I want to come across as someone who actually knows the material. |
+| What happens when a kid asks something random? | Powiedz, że musisz wtedy kombinować w biegu. | When that happens, I've got to think on my feet. |
+| Is teaching live stressful? | Powiedz, że ucząc na żywo, musisz szybko reagować w biegu. | Teaching live, you've got to think on your feet. |
+| Do you just state the rules and move on? | Zaprzecz — powiedz, że wszystko podpierasz przykładami. | No, I back everything up with examples. |
+| How do you make a rule stick? | Powiedz, że każdą regułę popierasz konkretnym przykładem. | I back up every rule with a concrete example. |
+| And that's enough to seem legit? | Potwierdź — tłumaczysz krok po kroku i podpierasz to przykładami. | I walk them through it and back it up with examples. |
+| What if someone throws you off mid-lesson? | Powiedz, że kombinujesz w biegu i dalej wypadasz spokojnie. | I think on my feet and still come across as calm. |
+| Do you need fancy editing to make it land? | Zaprzecz — powiedz, że dobre, czyste tłumaczenie krok po kroku obroni się samo. | No, a clean, solid walk-through sells itself. |
 
 ## Grupa 4
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| wracam do Krakowa i od razu odpalam kanał | I'm heading back to Kraków and putting the channel up right away. |
-| już się nie waham — przesądziłem sprawę | I'm not on the fence anymore — I made the call. |
-| (Jake) to kiedy w końcu to odpaliłeś? | So when did you finally pull the trigger? |
-| przegadałem to z tobą i po prostu poszedłem na całość | I talked it over with you and just went all in. |
-| wracam, schodzę z płotu i ruszam | I head back, get off the fence, and get moving. |
-| na kamerze tłumaczę krok po kroku i kombinuję w biegu | On camera I walk them through it and think on my feet. |
-| chcę wypaść wiarygodnie, więc wszystko podpieram przykładami | I want to come across as solid, so I back it all up with examples. |
-| (Jake) czyli zszedłeś z płotu na dobre? | So you're off the fence for good now? |
-| wracałem do kraju ciągle się wahając, ale w końcu odpaliłem | I headed back home still on the fence, but I finally pulled the trigger. |
-| przegadałem to, przesądziłem i już nie siedzę na płocie | I talked it over, made the call, and I'm done sitting on the fence. |
-| idę na całość: tłumaczę jasno, podpieram przykładami i nie zwlekam | I'm all in — I teach it clearly, back it up with examples, and I don't stall. |
-| wróciłem, zszedłem z płotu i poszedłem na swoje na całość | I headed back, got off the fence, and went all in on my own thing. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So what happens the moment you land? | Powiedz, że wracasz do Krakowa i od razu odpalasz kanał. | I'm heading back to Kraków and pulling the trigger on the channel right away. |
+| Still wavering on it? | Zaprzecz — powiedz, że już się nie wahasz, przesądziłeś sprawę. | I'm not on the fence anymore — I made the call. |
+| So when did you finally commit? | Powiedz, że odpaliłeś to zaraz po powrocie. | I pulled the trigger right after I got back. |
+| How did you land on doing it? | Powiedz, że przegadałeś to ze mną i po prostu poszedłeś na całość. | I talked it over with you and just went all in. |
+| What's the move now? | Powiedz, że wracasz, schodzisz z płotu i ruszasz. | I head back, get off the fence, and get moving. |
+| What's it actually like on camera? | Powiedz, że na kamerze tłumaczysz krok po kroku i kombinujesz w biegu. | On camera I walk them through it and think on my feet. |
+| How do you keep it convincing? | Powiedz, że chcesz wypaść wiarygodnie, więc wszystko podpierasz przykładami. | I want to come across as credible, so I back it all up with examples. |
+| So you're done wavering for good? | Potwierdź, że zszedłeś z płotu na dobre. | Yeah, I'm off the fence for good now. |
+| Were you sure about it the whole time? | Przyznaj, że wracałeś do kraju ciągle się wahając, ale w końcu odpaliłeś. | I headed back home still on the fence, but I finally pulled the trigger. |
+| Recap it for me — how'd you get here? | Powiedz, że przegadałeś to, przesądziłeś sprawę i już nie tkwisz na płocie. | I talked it over, made the call, and I'm done sitting on the fence. |
+| So what's your whole approach in one line? | Powiedz, że idziesz na całość: tłumaczysz jasno, podpierasz przykładami i nie zwlekasz. | I'm all in — I walk them through it clearly, back it up with examples, and I don't stall. |
 
 ## Nowe słowa i struktury
 | polski | angielski |
@@ -82,9 +79,9 @@
 | szybko reagować / kombinować w biegu | to think on your feet |
 | poprzeć (przykładami) / podeprzeć | to back (something) up with examples |
 
-**Jak to działa (Etap II — rozpoznawanie ze słuchu):**
-- Słyszysz naturalne, dłuższe zdanie po angielsku → w pauzie potwierdzasz sobie polskie znaczenie (kolumna 1). Cel: łapać znane klocki w szybszej, mówionej mowie, nie tłumaczyć słowo w słowo.
-- To dział powtórkowy — żadnego nowego materiału. Te same klocki z decyzji (head back ↔ on the fence ↔ make the call ↔ pull the trigger ↔ go all in ↔ get off the fence) i z uczenia na kamerze (walk through ↔ come across as ↔ think on your feet ↔ back up with examples) krążą wymieszane, dokładnie tak, jak padają w prawdziwej rozmowie z Jakiem.
+**Jak to działa (Etap II — scenka z podpowiedzią):**
+- Słyszysz naturalne pytanie po angielsku (kolumna 1) → polska podpowiedź mówi ci, CO masz odpowiedzieć (kolumna 2) → w pauzie sam budujesz odpowiedź po angielsku → dopiero potem leci wzorcowa odpowiedź (kolumna 3). Cel: nie rozpoznać, lecz PRODUKOWAĆ klocek w mowie, pod presją czasu.
+- To dział powtórkowy — żadnego nowego materiału. Te same klocki z decyzji (head back ↔ on the fence ↔ talk it over ↔ make the call ↔ pull the trigger ↔ go all in ↔ get off the fence) i z uczenia na kamerze (walk through ↔ come across as ↔ think on your feet ↔ back up with examples) krążą wymieszane, dokładnie tak, jak padają w prawdziwej rozmowie z Jakiem.
 
 **Wymowa (akcent wyrazowy + pułapki — z mowy potocznej):**
 - *pull the trigger* — akcent na TRIG-ger; w szybkiej mowie *the* zlewa się prawie do „th'": „pull-th'-TRIG-ger". To idiom — nie ma tu żadnej broni, znaczy „w końcu się zdecydować / odpalić coś".

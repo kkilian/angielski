@@ -57,9 +57,15 @@ function parse(md) {
       continue;
     }
     if (/^\|/.test(ln)) {
-      if (/^\|\s*polski/i.test(ln) || /^\|\s*-+/.test(ln)) continue;
+      if (/^\|\s*-+/.test(ln) || !cur) continue;
       const cells = ln.split('|').slice(1, -1).map((x) => x.trim());
-      if (cells.length >= 2 && cur) cur.rows.push({ pl: cells[0], en: cells.slice(1).join(' | ') });
+      if (cur.mode === 'scenka') {
+        if (/^pytanie/i.test(cells[0] || '')) continue; // nagłówek
+        if (cells.length >= 3) cur.rows.push({ q: cells[0], prompt: cells[1], a: cells[2] });
+      } else {
+        if (/^polski/i.test(cells[0] || '')) continue; // nagłówek
+        if (cells.length >= 2) cur.rows.push({ pl: cells[0], en: cells.slice(1).join(' | ') });
+      }
     }
   }
   return { title, groups, extra };
@@ -87,6 +93,7 @@ function renderExtra(lines) {
 
 function tag(g) {
   const c = (g.cap || '').toLowerCase();
+  if (g.mode === 'scenka') return ['mode scenka', 'Scenka'];
   if (g.mode) return ['mode', g.mode];
   if (c.includes('zasiew')) return ['seed', 'Zasiew'];
   if (c.includes('splot')) return ['splot', 'Splot'];
@@ -232,6 +239,19 @@ for (const mk of minikursy) {
       const [cls, label] = tag(g);
       let rows = '';
       for (const r of g.rows) {
+        if (g.mode === 'scenka') {
+          // scenka: pytanie EN | podpowiedź PL | odpowiedź EN. Eksport/powtórka
+          // używa promptu (PL) jako strony polskiej i odpowiedzi (EN) jako luki.
+          const plEN = plain(r.a), plPL = plain(r.prompt);
+          const k = (r.prompt + ' ||| ' + r.a).replace(/"/g, '&quot;');
+          const tgts = findTargets(plEN, it.blocks);
+          const targets = JSON.stringify(tgts.map((t) => t.text));
+          const blocks = JSON.stringify([...new Set(tgts.map((t) => t.block))]);
+          rows += `<tr data-k="${k}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-mk="${it.mk}" data-d="${it.ln}">`
+            + `<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>`
+            + `<td class="q">${inline(r.q)}</td><td class="prompt">${inline(r.prompt)}</td><td class="en">${inline(r.a)}</td></tr>`;
+          continue;
+        }
         const k = (r.pl + ' ||| ' + r.en).replace(/"/g, '&quot;');
         const plEN = plain(r.en), plPL = plain(r.pl);
         const tgts = findTargets(plEN, it.blocks);
@@ -359,6 +379,9 @@ tr:first-child td{border-top:none}
 td.star{width:34px;text-align:center;padding-left:8px;padding-right:0}
 td.pl{width:46%;color:#374151}
 td.en{width:50%;font-weight:600}
+td.q{color:#1f2328;font-weight:600}
+td.prompt{color:#8a5a00;font-style:italic}
+.scenka td.q{width:33%}.scenka td.prompt{width:29%}.scenka td.en{width:34%}
 body.study td.en{filter:blur(5px);cursor:pointer;transition:filter .12s}
 body.study td.en.show{filter:none}
 .star-btn{background:none;border:none;padding:2px 4px;border-radius:8px;font-size:17px;line-height:1;cursor:pointer;color:#c2c7cf;opacity:.7;transition:transform .1s,opacity .1s}
@@ -461,7 +484,8 @@ function buildReview(){
   const tb=document.getElementById('review-body'); tb.innerHTML='';
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
     if(!stars.has(rowKey(tr))) return;
-    const pl=tr.querySelector('td.pl').innerHTML, en=tr.querySelector('td.en').innerHTML;
+    const plCell=tr.querySelector('td.pl')||tr.querySelector('td.prompt');
+    const pl=plCell?plCell.innerHTML:'', en=tr.querySelector('td.en').innerHTML;
     const k=tr.getAttribute('data-k');
     const row=document.createElement('tr'); row.setAttribute('data-k',k);
     row.innerHTML='<td class="star"><button class="star-btn on">⭐</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';

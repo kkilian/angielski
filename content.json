@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T03:49:22.747Z",
+  "generatedAt": "2026-06-29T04:32:06.378Z",
   "minikursy": [
     {
       "num": 1,
@@ -224,17 +224,17 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782412940322"
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782707045813"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782412978617"
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782707094809"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782413012315"
+          "src": "05-m1d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782707143260"
         }
       ]
     },
@@ -253,17 +253,17 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "06-m1d6-swobodne-wymiany/grupa-1.mp3?v=1782412948748"
+          "src": "06-m1d6-swobodne-wymiany/grupa-1.mp3?v=1782707188387"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "06-m1d6-swobodne-wymiany/grupa-2.mp3?v=1782412979132"
+          "src": "06-m1d6-swobodne-wymiany/grupa-2.mp3?v=1782707238015"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "06-m1d6-swobodne-wymiany/grupa-3.mp3?v=1782412994161"
+          "src": "06-m1d6-swobodne-wymiany/grupa-3.mp3?v=1782707251316"
         }
       ]
     },
@@ -446,7 +446,7 @@
       "title": "M2 · Dział 1: Decyzja / M2 · Part 1: Making the Call",
       "titlePl": "M2 · Dział 1: Decyzja",
       "titleEn": "M2 · Part 1: Making the Call",
-      "pdf": null,
+      "pdf": "12-m2d1-decyzja/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -485,7 +485,7 @@
       "title": "M2 · Dział 2: Budowanie kanału / M2 · Part 2: Building the Channel",
       "titlePl": "M2 · Dział 2: Budowanie kanału",
       "titleEn": "M2 · Part 2: Building the Channel",
-      "pdf": null,
+      "pdf": "13-m2d2-budowanie-kanalu/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -524,7 +524,7 @@
       "title": "M2 · Dział 3: Tłumaczenie na kamerze / M2 · Part 3: Teaching on Camera",
       "titlePl": "M2 · Dział 3: Tłumaczenie na kamerze",
       "titleEn": "M2 · Part 3: Teaching on Camera",
-      "pdf": null,
+      "pdf": "14-m2d3-tlumaczenie-na-kamerze/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -568,7 +568,7 @@
       "title": "M2 · Dział 4: Granie z głową / M2 · Part 4: Playing It Smart",
       "titlePl": "M2 · Dział 4: Granie z głową",
       "titleEn": "M2 · Part 4: Playing It Smart",
-      "pdf": null,
+      "pdf": "15-m2d4-granie-z-glowa/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -612,28 +612,28 @@
       "title": "M2 · Dział 5: Rozpoznawanie ze słuchu / M2 · Part 5: Tuning Your Ear",
       "titlePl": "M2 · Dział 5: Rozpoznawanie ze słuchu",
       "titleEn": "M2 · Part 5: Tuning Your Ear",
-      "pdf": null,
+      "pdf": "16-m2d5-rozpoznawanie-ze-sluchu/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782628086094"
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-1.mp3?v=1782707103108"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782628120227"
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-2.mp3?v=1782707149236"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782628153262"
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-3.mp3?v=1782707197474"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-4.mp3?v=1782628185471"
+          "src": "16-m2d5-rozpoznawanie-ze-sluchu/grupa-4.mp3?v=1782707240661"
         }
       ]
     },
@@ -646,38 +646,38 @@
       "title": "M2 · Dział 6: Swobodne wymiany / M2 · Part 6: Free Exchanges",
       "titlePl": "M2 · Dział 6: Swobodne wymiany",
       "titleEn": "M2 · Part 6: Free Exchanges",
-      "pdf": null,
+      "pdf": "17-m2d6-swobodne-wymiany/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "17-m2d6-swobodne-wymiany/grupa-1.mp3?v=1782628197811"
+          "src": "17-m2d6-swobodne-wymiany/grupa-1.mp3?v=1782707252654"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "17-m2d6-swobodne-wymiany/grupa-2.mp3?v=1782628232897"
+          "src": "17-m2d6-swobodne-wymiany/grupa-2.mp3?v=1782707301630"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "17-m2d6-swobodne-wymiany/grupa-3.mp3?v=1782628271990"
+          "src": "17-m2d6-swobodne-wymiany/grupa-3.mp3?v=1782707352353"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "17-m2d6-swobodne-wymiany/grupa-4.mp3?v=1782628314338"
+          "src": "17-m2d6-swobodne-wymiany/grupa-4.mp3?v=1782707402748"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "17-m2d6-swobodne-wymiany/grupa-5.mp3?v=1782628353108"
+          "src": "17-m2d6-swobodne-wymiany/grupa-5.mp3?v=1782707464450"
         },
         {
           "n": 6,
           "label": "Grupa 6",
-          "src": "17-m2d6-swobodne-wymiany/grupa-6.mp3?v=1782628394451"
+          "src": "17-m2d6-swobodne-wymiany/grupa-6.mp3?v=1782707514061"
         }
       ]
     },
@@ -690,7 +690,7 @@
       "title": "M2 · Dział 7: Wszystko naraz / M2 · Part 7: Putting It Together",
       "titlePl": "M2 · Dział 7: Wszystko naraz",
       "titleEn": "M2 · Part 7: Putting It Together",
-      "pdf": null,
+      "pdf": "18-m2d7-wszystko-naraz/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -729,7 +729,7 @@
       "title": "M2 · Dział 8: Trudniejsze sploty / M2 · Part 8: Tighter Weaves",
       "titlePl": "M2 · Dział 8: Trudniejsze sploty",
       "titleEn": "M2 · Part 8: Tighter Weaves",
-      "pdf": null,
+      "pdf": "19-m2d8-trudniejsze-sploty/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -768,7 +768,7 @@
       "title": "M2 · Dział 9: Pełne splatanie / M2 · Part 9: Full Braid",
       "titlePl": "M2 · Dział 9: Pełne splatanie",
       "titleEn": "M2 · Part 9: Full Braid",
-      "pdf": null,
+      "pdf": "20-m2d9-pelne-splatanie/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -807,7 +807,7 @@
       "title": "M2 · Dział 10: Słuchanka — MadreM / M2 · Part 10: The MadreM Story",
       "titlePl": "M2 · Dział 10: Słuchanka — MadreM",
       "titleEn": "M2 · Part 10: The MadreM Story",
-      "pdf": null,
+      "pdf": "21-m2d10-sluchanka-madrem/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {
@@ -836,7 +836,7 @@
       "title": "M2 · Dział 11: Egzamin: opowiedz o sobie / M2 · Part 11: Exam: Tell Me About Yourself",
       "titlePl": "M2 · Dział 11: Egzamin: opowiedz o sobie",
       "titleEn": "M2 · Part 11: Exam: Tell Me About Yourself",
-      "pdf": null,
+      "pdf": "22-m2d11-egzamin-tell-me-about/rozdzial.pdf",
       "hasAudio": true,
       "groups": [
         {

@@ -1,39 +1,38 @@
 # M1 · Dział 6: Swobodne wymiany / M1 · Part 6: Easy Back-and-Forth
 
 ## Grupa 1
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| Idziesz na to piwo na pożegnanie? | You coming out for that going-away beer? |
-| No to kiedy w końcu wracasz do Polski? | So when are you finally heading back to Poland? |
-| Za jakieś dwa tygodnie wracam na stałe. | I'm heading home for good in about two weeks. |
-| Czekaj, na stałe? Naprawdę tym razem koniec? | Wait, for good? Like, that's really it this time? |
-| Wciąż się waham, gdzie zamieszkać. | I'm still on the fence about where to live. |
-| Powaha się jeszcze pewnie z tydzień, znam cię. | You'll be on the fence about it for another week, knowing you. |
-| Jeszcze nie rozkminiłem, co potem. | I haven't figured out what comes next yet. |
-| Spokojnie, w końcu to rozkminisz. | Relax, you'll figure it out eventually. |
-| Część mnie chce w końcu pójść na swoje. | Part of me wants to go out on my own for once. |
-| Serio chcesz iść na swoje od razu po powrocie? | You really want to go out on your own right after you get back? |
-| Muszę to z kimś przegadać, zanim cokolwiek zdecyduję. | I need to talk it over with someone before I decide anything. |
-| To przegadaj to ze mną teraz przy piwie. | So talk it over with me right now over this beer. |
-| Wiesz co, prześpię się z tym i ci powiem. | You know what, I'll sleep on it and let you know. |
-| Tylko nie zacznij potem w to wszystko wątpić. | Just don't start second-guessing the whole thing afterward. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So what's the plan once your contract here wraps up? | Powiedz, że za jakieś dwa tygodnie wracasz do domu. | I'm heading home in about two weeks. |
+| And then you'll be back in Norway by fall, right? | Sprostuj — tym razem wracasz na stałe. | No, this time it's for good. |
+| Have you decided where you're going to live yet? | Przyznaj, że ciągle się wahasz, gdzie zamieszkać. | I'm still on the fence about where to live. |
+| Do you know what you're doing for work back there? | Powiedz, że jeszcze nie rozkminiłeś, co dalej. | I haven't figured out what comes next yet. |
+| Are you going to look for a regular job? | Powiedz, że część ciebie chce w końcu iść na swoje. | Part of me wants to go out on my own for once. |
+| How are you going to make this call? | Powiedz, że musisz to z kimś przegadać, zanim cokolwiek zdecydujesz. | I need to talk it over with someone before I decide anything. |
+| So, room or studio — what's it gonna be? | Powiedz, że prześpisz się z tym i dasz znać. | I'll sleep on it and let you know. |
+| You sound pretty set on it now. | Przyznaj, że boisz się, że potem zaczniesz wątpić we własną decyzję. | I'm worried I'll second-guess myself later. |
+| When do you actually fly out? | Powiedz, że wracasz do Polski za jakieś dwa tygodnie. | I'm heading back to Poland in about two weeks. |
+| Wait, you keep saying that every year. | Zapewnij go, że tym razem naprawdę koniec — wracasz na dobre. | This time it's really it — I'm back for good. |
+| So you've picked a neighborhood at least? | Przyznaj, że wahasz się między pokojem a kawalerką. | I'm on the fence between a room and a studio. |
+| Relax, you've got time to sort all this out. | Zgódź się — w końcu to rozkminisz. | Yeah, I'll figure it out eventually. |
 
 ## Grupa 2
-<!-- mode: EN→PL -->
-| polski | angielski |
-|---|---|
-| Też miałbym mieszane uczucia, gdybym wracał na stałe. | I'd have mixed feelings too if I were heading back for good. |
-| Czyli wracasz do domu i nadal nie wiesz, gdzie wylądujesz? | So you're heading home and you still don't know where you'll land? |
-| Waham się między pokojem a kawalerką. | I'm on the fence between a room and a studio. |
-| Najpierw rozkmiń budżet, reszta sama się ułoży. | Figure out the budget first, the rest falls into place. |
-| Nie umiem rozkminić, czy iść na swoje, czy wziąć etat. | What I can't figure out is whether to go out on my own or take a steady job. |
-| Gdybyś poszedł na swoje, robiłbyś po swojemu. | If you went out on your own, you'd do things your way. |
-| Przegadaj to z Jakiem, zanim podejmiesz decyzję. | Talk it over with Jake before you make the call. |
-| Już to przegadałem ze starymi ze sto razy. | I've talked it over with my folks like a hundred times. |
-| Prześpij się z tym jeszcze jedną noc, nie pal się. | Sleep on it one more night, there's no rush. |
-| Tylko nie zacznij potem w to wątpić. | Just don't go second-guessing yourself later. |
-| Gdybym to rozkminił wcześniej, nie wahałbym się teraz. | Had I figured this out sooner, I wouldn't be on the fence now. |
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So you'd take the safe office job? | Powiedz, że nie — że chcesz iść na swoje i robić po swojemu. | No, I want to go out on my own and do things my way. |
+| Have you run any of this past your folks? | Powiedz, że przegadałeś to ze starymi już ze sto razy. | I've talked it over with my folks like a hundred times. |
+| You don't have to decide tonight, you know. | Zgódź się — prześpisz się z tym jeszcze jedną noc. | Yeah, I'll sleep on it one more night. |
+| You seem confident about the move now. | Powiedz, że starasz się nie wątpić we własną decyzję. | I'm trying not to second-guess my own decision. |
+| Big day Saturday, huh? | Przyznaj, że trochę dziwnie jest wracać do domu po tylu latach. | It feels a little strange heading home after all these years. |
+| Just a long visit, or...? | Wyjaśnij, że nie — że tym razem wracasz na stałe. | No, this time I'm coming back for good. |
+| Did you sign a lease yet? | Przyznaj, że wciąż się wahasz, więc nic nie podpisałeś. | I'm still on the fence, so I haven't signed anything. |
+| Do you at least know your budget? | Powiedz, że najpierw musisz rozkminić budżet. | I need to figure out the budget first. |
+| And if the freelance thing flops? | Powiedz, że i tak wolisz spróbować iść na swoje. | I'd rather try to go out on my own anyway. |
+| Anyone else weighing in on this? | Powiedz, że chcesz to jeszcze przegadać z bratem. | I want to talk it over with my brother first. |
+| So what did you decide in the end? | Powiedz, że nic — że postanowiłeś się z tym przespać. | Nothing — I decided to sleep on it. |
+| Once you commit, that's it, no backing out. | Przyznaj, że właśnie dlatego ciągle wątpisz we własne decyzje. | That's exactly why I keep second-guessing myself. |
 
 ## Grupa 3
 <!-- mode: słuchanka -->
