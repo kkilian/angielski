@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T04:32:06.378Z",
+  "generatedAt": "2026-07-03T12:25:59.025Z",
   "minikursy": [
     {
       "num": 1,
@@ -50,6 +50,16 @@
       "count": 0,
       "audioCount": 0,
       "generated": false
+    },
+    {
+      "num": 9,
+      "id": "m9",
+      "tytul": "Specjał — recepcja i check-in",
+      "temat": "Praktyczny angielski na check-in w miejscu noclegowym: rezerwacja, w którym budynku i pokoju, jak dojść, śniadanie i Wi-Fi.",
+      "status": "specjał",
+      "count": 2,
+      "audioCount": 5,
+      "generated": true
     }
   ],
   "chapters": [
@@ -863,6 +873,59 @@
           "n": 5,
           "label": "Grupa 5",
           "src": "22-m2d11-egzamin-tell-me-about/grupa-5.mp3?v=1782704943855"
+        }
+      ]
+    },
+    {
+      "id": "56-m9d1-recepcja-b-and-b",
+      "slug": "56-m9d1-recepcja-b-and-b",
+      "number": 56,
+      "minikurs": 9,
+      "localNumber": 1,
+      "title": "M9 · Specjał — Dział 1: Recepcja i check-in / M-Special · Part 1: Reception & Check-in",
+      "titlePl": "M9 · Specjał — Dział 1: Recepcja i check-in",
+      "titleEn": "M-Special · Part 1: Reception & Check-in",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "56-m9d1-recepcja-b-and-b/grupa-1.mp3?v=1783080758845"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "56-m9d1-recepcja-b-and-b/grupa-2.mp3?v=1783081132118"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "56-m9d1-recepcja-b-and-b/grupa-3.mp3?v=1783080808276"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "56-m9d1-recepcja-b-and-b/grupa-4.mp3?v=1783080829267"
+        }
+      ]
+    },
+    {
+      "id": "57-m9d5-scenka-check-in",
+      "slug": "57-m9d5-scenka-check-in",
+      "number": 57,
+      "minikurs": 9,
+      "localNumber": 5,
+      "title": "M9 · Specjał — Dział 2: Scenka na recepcji / M-Special · Part 2: The Check-in Scene",
+      "titlePl": "M9 · Specjał — Dział 2: Scenka na recepcji",
+      "titleEn": "M-Special · Part 2: The Check-in Scene",
+      "pdf": null,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "57-m9d5-scenka-check-in/grupa-1.mp3?v=1783080885023"
         }
       ]
     }

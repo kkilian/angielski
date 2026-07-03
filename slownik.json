@@ -9,7 +9,8 @@
     { "id": "m2", "tytul": "Wyjście na swoje", "temat": "Decyzja, żeby ruszyć na swoje (MadreM — własne korepetycje + darmowy kurs matematyki na YouTube): przesądzić sprawę i pójść na całość, postawić kanał i wypluwać treści, tłumaczyć/uczyć na kamerze, i grać z głową (dyscyplina, rozliczalność, pułapka porównań w wieku 27 lat, maska „niby coś robię”). Powrót z Norwegii i wprowadzka do rodziców na „runway”. Bohater: Jake (kumpel, któremu mówisz, że idziesz na swoje). Rejestr: codzienny peer. Oparte na realnej rozmowie Krzyśka.", "status": "w generacji" },
     { "id": "m3", "tytul": "Mieszkanie i codzienność", "temat": "Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna", "status": "szkic" },
     { "id": "m4", "tytul": "Ludzie i rozmowy", "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia", "status": "szkic" },
-    { "id": "m5", "tytul": "Pieniądze, ryzyko, decyzje", "temat": "Finanse, pomysł na apkę, ważenie ryzyka, duże decyzje (capstone)", "status": "szkic" }
+    { "id": "m5", "tytul": "Pieniądze, ryzyko, decyzje", "temat": "Finanse, pomysł na apkę, ważenie ryzyka, duże decyzje (capstone)", "status": "szkic" },
+    { "id": "m9", "tytul": "Specjał — recepcja i check-in", "temat": "Praktyczny angielski na check-in w miejscu noclegowym: rezerwacja, w którym budynku i pokoju, jak dojść, śniadanie i Wi-Fi.", "status": "specjał" }
   ],
   "wyrazenia": [
     { "id": "wrap-up", "pl": "kończyć / domykać (robotę)", "en": "to wrap up", "typ": "phrasal", "intro": "m1-d1", "review": ["m1-d3", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d1", "m2-d3", "m2-d6", "m2-d9"], "status": "zaplanowane" },
@@ -65,6 +66,12 @@
     { "id": "set-aside", "pl": "odłożyć (pieniądze)", "en": "to set aside / put aside", "typ": "phrasal", "intro": "m5-d1", "review": ["m5-d3", "m5-d4"], "status": "szkic" },
     { "id": "break-even", "pl": "wyjść na zero", "en": "to break even", "typ": "idiom", "intro": "m5-d1", "review": ["m5-d3", "m5-d4"], "status": "szkic" },
     { "id": "take-a-shot-at", "pl": "spróbować (czegoś trudnego)", "en": "to take a shot at", "typ": "kolokacja", "intro": "m5-d2", "review": ["m5-d4"], "status": "szkic" },
-    { "id": "weigh-the-risks", "pl": "rozważyć ryzyko", "en": "to weigh the risks", "typ": "kolokacja", "intro": "m5-d2", "review": ["m5-d4"], "status": "szkic" }
+    { "id": "weigh-the-risks", "pl": "rozważyć ryzyko", "en": "to weigh the risks", "typ": "kolokacja", "intro": "m5-d2", "review": ["m5-d4"], "status": "szkic" },
+
+    { "id": "booked-through", "pl": "załatwiony / zarezerwowany (przez)", "en": "booked through", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "under-the-name", "pl": "(rezerwacja) na nazwisko…", "en": "under the name", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "which-building", "pl": "w którym budynku (ona jest)", "en": "which building", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "point-right-direction", "pl": "nakierować nas / wskazać drogę", "en": "to point us in the right direction", "typ": "idiom", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "set-times", "pl": "stałe godziny (śniadania)", "en": "set times", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" }
   ]
 }
