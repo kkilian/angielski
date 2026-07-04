@@ -16,7 +16,7 @@
 | Mamy pokój przez NIBIO, na nazwisko Kilian. | We've got a room booked through NIBIO, under the name Kilian. |
 
 ## Grupa 2
-<!-- zasiew + splot: który budynek / gdzie pokój / jak dojść (rotacja A-B-C) -->
+<!-- zasiew + splot: który budynek / jak dojść / podjechać autem (rotacja A-B-C) -->
 | polski | angielski |
 |---|---|
 | w którym budynku (ona jest) | which building (she's in) |
@@ -29,21 +29,24 @@
 | A jak tam dojść? | And how do we get there? |
 | Mamy pokój przez NIBIO — w którym ona jest budynku? | We've got a room through NIBIO — which building is she in? |
 | Nie możemy trafić — nakieruje nas Pani? | We can't find it — could you point us in the right direction? |
+| podjechać (pod coś) i zaparkować | to drive up and park |
+| Możemy podjechać pod sam budynek? | Can we drive up to the building? |
+| Możemy podjechać i tam zaparkować? | Can we drive up and park there? |
 
 ## Grupa 3
-<!-- splot + praktyczne: śniadanie / Wi-Fi / parking / recepcja -->
+<!-- zasiew + splot: bagaże / klucz / które piętro -->
 | polski | angielski |
 |---|---|
-| O której jest śniadanie? | What time's breakfast? |
-| stałe godziny (śniadania) | set times (for breakfast) |
-| Są stałe godziny śniadania? | Are there set times for breakfast? |
-| Śniadanie jest w stałych godzinach? | Is breakfast at set times? |
-| Jest Wi-Fi? Jakie jest hasło? | Is there Wi-Fi? What's the password? |
-| Gdzie mogę zaparkować? | Where can I park? |
-| Do której czynna jest recepcja? | What time's reception open till? |
-| Do kogo dzwonić po godzinach? | Who do we call after hours? |
-| Mamy pokój na nazwisko Kilian — są stałe godziny śniadania? | We've got a room under the name Kilian — are there set times for breakfast? |
-| Możemy dostać klucz? | Could we get the key? |
+| rzucić bagaże | to drop the bags off |
+| Pójdziemy tylko rzucić bagaże. | We'll just go drop the bags off. |
+| Możemy tu gdzieś zostawić bagaże przed zameldowaniem? | Can we leave the bags here somewhere before check-in? |
+| zapasowy klucz | a spare key |
+| Da się dostać zapasowy klucz? | Could we get a spare key? |
+| Możemy dostać klucz do jej pokoju? | Could we get the key to her room? |
+| Na którym piętrze jest jej pokój? | Which floor is her room on? |
+| To na górze czy na parterze? | Is it upstairs or on the ground floor? |
+| Mamy pokój na nazwisko Kilian — możemy odebrać klucz? | We've got a room under the name Kilian — could we get the key? |
+| Rzucimy bagaże i zaraz wrócimy. | We'll drop the bags off and be right back. |
 
 ## Grupa 4
 <!-- domknięcie: składanka 2-3 klocków + telefon (uprzedzić przyjazd) -->
@@ -51,9 +54,11 @@
 |---|---|
 | Przyjechaliśmy zameldować siostrę — pokój był załatwiony przez NIBIO, na nazwisko Kilian. | We're here to check in my sister — the room was booked through NIBIO, under the name Kilian. |
 | Mamy pokój przez NIBIO — w którym jest budynku i jak tam dojść? | We've got a room booked through NIBIO — which building is she in, and how do we get there? |
-| Nie wiemy, gdzie iść — nakieruje nas Pani i powie, o której śniadanie? | We're not sure where to go — could you point us in the right direction, and are there set times for breakfast? |
+| Nie wiemy, gdzie iść — nakieruje nas Pani? Chcemy tylko rzucić bagaże. | We're not sure where to go — could you point us in the right direction? We just want to drop the bags off. |
+| Rzucimy tylko bagaże — możemy podjechać i zaparkować przed budynkiem? | We'll just drop the bags off — can we drive up and park in front of the building? |
 | (telefon) Dzwonię w sprawie pokoju załatwionego przez NIBIO. | (on the phone) I'm calling about a room booked through NIBIO. |
 | Jesteśmy w drodze — będziemy za jakieś pół godziny. | We're on our way — we'll be there in about half an hour. |
+| (telefon) Da się podjechać pod budynek i zaparkować? | (on the phone) Can we drive up to the building and park? |
 | Chciałem tylko upewnić się, że ktoś będzie na recepcji. | I just wanted to make sure someone'll be at reception. |
 | Rezerwacja jest na nazwisko Kilian — znajdzie to Pani? | The booking's under the name Kilian — can you find it? |
 
@@ -64,15 +69,17 @@
 | (rezerwacja) na nazwisko… | under the name… |
 | w którym budynku (ona jest) | which building (she's in) |
 | nakierować nas / wskazać nam drogę | to point us in the right direction |
-| stałe godziny (śniadania) | set times (for breakfast) |
+| podjechać (pod coś) i zaparkować | to drive up and park |
+| rzucić bagaże | to drop the bags off |
+| zapasowy klucz | a spare key |
+| na którym piętrze | which floor |
 | zameldować (się) / odebrać klucz | to check in / to get the key |
-| po godzinach | after hours |
 
 **Wymowa (pułapki):**
 - **through** /θruː/ — „th" bezdźwięczne + „r", całość brzmi jak „thru"; NIE „tru" ani „trof". Najtrudniejsze słowo tej scenki — poćwicz osobno.
 - **building** /ˈbɪldɪŋ/ — „u" jest NIEME: „BIL-ding", nie „bu-il-ding".
 - **booked** /bʊkt/ — „oo" krótkie jak w „book", a „-ed" = /t/: „bukt", nie „bu-ked".
-- **breakfast** /ˈbrekfəst/ — „ea" jak „e": „BREK-fəst", nie „break-fast".
+- **drive up** — „up" NIE znaczy tu „do góry", tylko zbliżenie: podjechać POD coś (jak *walk up to* = podejść). Akcent pada na „up": drive UP and park.
 - akcent: re-CEP-tion (na drugą sylabę), NI-something — nazwę firmy mów jak zawsze.
 
 **Typowe błędy Polaka:**

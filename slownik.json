@@ -72,6 +72,7 @@
     { "id": "under-the-name", "pl": "(rezerwacja) na nazwisko…", "en": "under the name", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
     { "id": "which-building", "pl": "w którym budynku (ona jest)", "en": "which building", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
     { "id": "point-right-direction", "pl": "nakierować nas / wskazać drogę", "en": "to point us in the right direction", "typ": "idiom", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
-    { "id": "set-times", "pl": "stałe godziny (śniadania)", "en": "set times", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" }
+    { "id": "drive-up-park", "pl": "podjechać (autem) i zaparkować", "en": "to drive up and park", "typ": "phrasal", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "drop-bags-off", "pl": "rzucić bagaże", "en": "to drop the bags off", "typ": "phrasal", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" }
   ]
 }
