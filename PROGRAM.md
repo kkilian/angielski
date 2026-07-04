@@ -53,7 +53,7 @@ następnego). To jest naprawa „silosowania" — głównej słabości oryginał
 |---|---|---|---|---|
 | **M1** | Co dalej ze mną (powrót z Norwegii) | Domykanie roboty w Norwegii, powrót, gdzie zamieszkać, pierwszy ruch zawodowy (apka→M5) | phrasal verbs codzienne + idiomy decyzji | — (start) |
 | **M2** | Szukanie pracy i rozmowy | Networking, aplikacje, rozmowy kwalifikacyjne, oferta, negocjacje | phrasal verbs zawodowe + kolokacje | M1 (decyzje, „figure out", „on the fence") |
-| **M3** | Mieszkanie i codzienność | Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna | kolokacje czasownikowe + rejestr formal↔casual | M1–M2 |
+| **M3** | Rozkręcam to — budowanie MadreM | Łapanie uczniów, kanał, wpadki/sucha passa, ważenie ryzyka i duże decyzje (temat „ryzyko" ściągnięty z M5) | irrealis (2nd/3rd/mixed cond, modal perfects, wish) + rodzajniki | M1–M2 |
 | **M4** | Ludzie i rozmowy | Odnawianie kontaktów, small talk, plany, randki, drobne spięcia | idiomy konwersacyjne + discourse markers | M1–M3 |
 | **M5** | Pieniądze, ryzyko, decyzje | Finanse, pomysł na apkę/startup, ważenie ryzyka, duże decyzje | gramatyka C1 (cleft, inwersje, subjunctive) + mix | M1–M4 (capstone) |
 
@@ -124,10 +124,14 @@ co wraca z wcześniejszych minikursów.
 - d5 (IV): słuchanka — rozmowa kwalifikacyjna / follow-up
 - d6 (V): egzamin EN-only — „Tell me about a time you…"
 
-### M3 — Mieszkanie i codzienność
-- d1–2 (I): *to settle in, to move in/out, to get around to, to deal with (paperwork), to run errands*
-- kolokacje: *make an appointment, set up (utilities), sort out, pick up the keys*
-- d3 (II) recykling M1–M2; d4 (III) C1 (participle clauses „Having moved in…"); d5 słuchanka; d6 egzamin
+### M3 — Rozkręcam to / budowanie MadreM (PRZEPROJEKTOWANE 2026-07-04, diagnoza-driven)
+Stary temat „mieszkanie i codzienność" ODRZUCONY. M3 = realny łuk (środek wchodzenia na
+swoje: uczniowie, kanał, sucha passa, ryzyko, decyzje). Fokus: **irrealis** jako czerwona
+nić (w diagnozie uczeń UNIKAŁ 2nd/3rd cond — automatyzm, nie wiedza) + mikro-dryl rodzajników;
+recykling **umiarkowany** (~2–3/klocek, w dół z ≥5 — naprawa „za dużo wałkowania"). Bohaterowie:
+Jake + sceptyczny brat (silnik hipotez). Struktura 11 działów: I d1–3, II(scenka) d4–5,
+III d6–8, **+d9 „siłownia conditionali"**, IV słuchanka d10, V egzamin „What if" d11.
+Pełny projekt: `docs/superpowers/specs/2026-07-04-m3-design.md`; plan: `docs/superpowers/plans/2026-07-04-m3-implementation.md`.
 
 ### M4 — Ludzie i rozmowy
 - d1–2 (I): *to catch up (with), to hit it off, to drift apart, to run into, to make plans, to bail (luźno)*
@@ -163,4 +167,6 @@ przeglądu poprzedniego — dokładnie to, o co prosiłeś („niech to wróci w
 - [x] **Akceptacja:** temat M1 wybrany przez Krzyśka (powrót z Norwegii; bohater Jake; rejestr peer; apka→M5).
 - [x] **Metoda v2** (2026-06-23): 11 działów/minikurs, twardy recykling (≥5 wydobyć/klocek, `check-recykling.js`), gruba druga połowa, warstwa wymowy. Stary M1 (01–06) SKASOWANY.
 - [x] **M1 KOMPLETNY (01–11)** wygenerowany pipeline'em opus (pisarz + checker recyklingu + 3 recenzentów A/B/C + fixer per dział). Audit: wszystkie klocki 11–56 wydobyć (próg ≥5/≥3). Wierność PL↔EN naprawiona (with my parents, nie someone). Tekst+PDF live; audio OpenAI nova/alloy.
-- [ ] **Twoja ocena M1 (cel ≥ 4+)** → finalizacja list M2–M5 → generacja reszty (numeracja M2=12–22, M3=23–33, M4=34–44, M5=45–55).
+- [x] **M1 (01–11), M2 (12–22) KOMPLETNE & live.** M9 specjał (56–57).
+- [x] **M3 (23–33) KOMPLETNY** (2026-07-04): przeprojektowany pod diagnozę B2→C1 (irrealis + rodzajniki, recykling umiarkowany). Tekst+PDF+audio; pipeline: pisarz (subagenci) + `check-recykling.js` + recenzenci opus. Checker dostał flagę `--min-core/--min-gram` (audyt M3: `--min-core 3 --min-gram 2`). Projekt/plan w `docs/superpowers/`.
+- [ ] **Ocena M3 przez Krzyśka (≥4+)** → rewizja M4/M5 (temat „ryzyko/decyzje" przeniesiony do M3; „mieszkanie/codzienność" do ewentualnego przeniesienia). Numeracja: M4=34–44, M5=45–55.
