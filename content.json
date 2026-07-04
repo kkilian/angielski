@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T04:45:02.132Z",
+  "generatedAt": "2026-07-04T07:09:57.009Z",
   "minikursy": [
     {
       "num": 1,
@@ -24,12 +24,12 @@
     {
       "num": 3,
       "id": "m3",
-      "tytul": "Mieszkanie i codzienność",
-      "temat": "Szukanie mieszkania, przeprowadzka, urzędy, sąsiedzi, rutyna",
-      "status": "szkic",
-      "count": 0,
-      "audioCount": 0,
-      "generated": false
+      "tytul": "Rozkręcam to — budowanie MadreM",
+      "temat": "Środek wchodzenia na swoje: łapanie uczniów, kanał, wpadki i sucha passa, ważenie ryzyka i duże decyzje. Bohaterowie: Jake (kumpel z zagranicy), sceptyczny brat (silnik hipotez). Fokus: irrealis (2nd/3rd/mixed cond, modal perfects, wish/if only) + rodzajniki. Rejestr: neutralny peer. Diagnoza-driven 2026-07-04.",
+      "status": "w produkcji (23-33)",
+      "count": 11,
+      "audioCount": 50,
+      "generated": true
     },
     {
       "num": 4,
@@ -45,7 +45,7 @@
       "num": 5,
       "id": "m5",
       "tytul": "Pieniądze, ryzyko, decyzje",
-      "temat": "Finanse, pomysł na apkę, ważenie ryzyka, duże decyzje (capstone)",
+      "temat": "Finanse, pomysł na apkę, duże decyzje (capstone). Uwaga: część rodziny 'ryzyko' przeniesiona do M3; M4/M5 do rewizji po walidacji M3.",
       "status": "szkic",
       "count": 0,
       "audioCount": 0,
@@ -873,6 +873,410 @@
           "n": 5,
           "label": "Grupa 5",
           "src": "22-m2d11-egzamin-tell-me-about/grupa-5.mp3?v=1782704943855"
+        }
+      ]
+    },
+    {
+      "id": "23-m3d1-lapanie-uczniow",
+      "slug": "23-m3d1-lapanie-uczniow",
+      "number": 23,
+      "minikurs": 3,
+      "localNumber": 1,
+      "title": "M3 · Dział 1: Łapanie uczniów / M3 · Part 1: Lining Up Students",
+      "titlePl": "M3 · Dział 1: Łapanie uczniów",
+      "titleEn": "M3 · Part 1: Lining Up Students",
+      "pdf": "23-m3d1-lapanie-uczniow/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "23-m3d1-lapanie-uczniow/grupa-1.mp3?v=1783141140954"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "23-m3d1-lapanie-uczniow/grupa-2.mp3?v=1783141166980"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "23-m3d1-lapanie-uczniow/grupa-3.mp3?v=1783141194134"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "23-m3d1-lapanie-uczniow/grupa-4.mp3?v=1783141214952"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "23-m3d1-lapanie-uczniow/grupa-5.mp3?v=1783141238251"
+        }
+      ]
+    },
+    {
+      "id": "24-m3d2-kanal-rusza",
+      "slug": "24-m3d2-kanal-rusza",
+      "number": 24,
+      "minikurs": 3,
+      "localNumber": 2,
+      "title": "M3 · Dział 2: Kanał rusza / M3 · Part 2: Getting the Channel Off the Ground",
+      "titlePl": "M3 · Dział 2: Kanał rusza",
+      "titleEn": "M3 · Part 2: Getting the Channel Off the Ground",
+      "pdf": "24-m3d2-kanal-rusza/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "24-m3d2-kanal-rusza/grupa-1.mp3?v=1783147914773"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "24-m3d2-kanal-rusza/grupa-2.mp3?v=1783147941628"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "24-m3d2-kanal-rusza/grupa-3.mp3?v=1783147994456"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "24-m3d2-kanal-rusza/grupa-4.mp3?v=1783148013206"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "24-m3d2-kanal-rusza/grupa-5.mp3?v=1783148042109"
+        }
+      ]
+    },
+    {
+      "id": "25-m3d3-sucha-passa",
+      "slug": "25-m3d3-sucha-passa",
+      "number": 25,
+      "minikurs": 3,
+      "localNumber": 3,
+      "title": "M3 · Dział 3: Sucha passa / M3 · Part 3: The Dry Spell",
+      "titlePl": "M3 · Dział 3: Sucha passa",
+      "titleEn": "M3 · Part 3: The Dry Spell",
+      "pdf": "25-m3d3-sucha-passa/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "25-m3d3-sucha-passa/grupa-1.mp3?v=1783148070580"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "25-m3d3-sucha-passa/grupa-2.mp3?v=1783148097263"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "25-m3d3-sucha-passa/grupa-3.mp3?v=1783148125327"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "25-m3d3-sucha-passa/grupa-4.mp3?v=1783148145212"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "25-m3d3-sucha-passa/grupa-5.mp3?v=1783148152675"
+        }
+      ]
+    },
+    {
+      "id": "26-m3d4-sceptyczny-brat",
+      "slug": "26-m3d4-sceptyczny-brat",
+      "number": 26,
+      "minikurs": 3,
+      "localNumber": 4,
+      "title": "M3 · Dział 4: Sceptyczny brat / M3 · Part 4: My Skeptical Brother",
+      "titlePl": "M3 · Dział 4: Sceptyczny brat",
+      "titleEn": "M3 · Part 4: My Skeptical Brother",
+      "pdf": "26-m3d4-sceptyczny-brat/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "26-m3d4-sceptyczny-brat/grupa-1.mp3?v=1783148164902"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "26-m3d4-sceptyczny-brat/grupa-2.mp3?v=1783148177288"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "26-m3d4-sceptyczny-brat/grupa-3.mp3?v=1783148190134"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "26-m3d4-sceptyczny-brat/grupa-4.mp3?v=1783148203745"
+        }
+      ]
+    },
+    {
+      "id": "27-m3d5-swobodne-wymiany",
+      "slug": "27-m3d5-swobodne-wymiany",
+      "number": 27,
+      "minikurs": 3,
+      "localNumber": 5,
+      "title": "M3 · Dział 5: Swobodne wymiany / M3 · Part 5: Easy Back-and-Forth",
+      "titlePl": "M3 · Dział 5: Swobodne wymiany",
+      "titleEn": "M3 · Part 5: Easy Back-and-Forth",
+      "pdf": "27-m3d5-swobodne-wymiany/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "27-m3d5-swobodne-wymiany/grupa-1.mp3?v=1783148244597"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "27-m3d5-swobodne-wymiany/grupa-2.mp3?v=1783148285772"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "27-m3d5-swobodne-wymiany/grupa-3.mp3?v=1783148326138"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "27-m3d5-swobodne-wymiany/grupa-4.mp3?v=1783148366937"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "27-m3d5-swobodne-wymiany/grupa-5.mp3?v=1783148408549"
+        }
+      ]
+    },
+    {
+      "id": "28-m3d6-decyzje-i-ryzyko",
+      "slug": "28-m3d6-decyzje-i-ryzyko",
+      "number": 28,
+      "minikurs": 3,
+      "localNumber": 6,
+      "title": "M3 · Dział 6: Decyzje i ryzyko / M3 · Part 6: Decisions and Risk",
+      "titlePl": "M3 · Dział 6: Decyzje i ryzyko",
+      "titleEn": "M3 · Part 6: Decisions and Risk",
+      "pdf": "28-m3d6-decyzje-i-ryzyko/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-1.mp3?v=1783148438053"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-2.mp3?v=1783148466979"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-3.mp3?v=1783148498241"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-4.mp3?v=1783148530940"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-5.mp3?v=1783148563575"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-6.mp3?v=1783148573342"
+        }
+      ]
+    },
+    {
+      "id": "29-m3d7-trudniejsze-sploty",
+      "slug": "29-m3d7-trudniejsze-sploty",
+      "number": 29,
+      "minikurs": 3,
+      "localNumber": 7,
+      "title": "M3 · Dział 7: Trudniejsze sploty / M3 · Part 7: Tighter Braids",
+      "titlePl": "M3 · Dział 7: Trudniejsze sploty",
+      "titleEn": "M3 · Part 7: Tighter Braids",
+      "pdf": "29-m3d7-trudniejsze-sploty/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "29-m3d7-trudniejsze-sploty/grupa-1.mp3?v=1783148603896"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "29-m3d7-trudniejsze-sploty/grupa-2.mp3?v=1783148626290"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "29-m3d7-trudniejsze-sploty/grupa-3.mp3?v=1783148664531"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "29-m3d7-trudniejsze-sploty/grupa-4.mp3?v=1783148687803"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "29-m3d7-trudniejsze-sploty/grupa-5.mp3?v=1783148695619"
+        }
+      ]
+    },
+    {
+      "id": "30-m3d8-pelne-splatanie",
+      "slug": "30-m3d8-pelne-splatanie",
+      "number": 30,
+      "minikurs": 3,
+      "localNumber": 8,
+      "title": "M3 · Dział 8: Pełne splatanie / M3 · Part 8: Full Braid",
+      "titlePl": "M3 · Dział 8: Pełne splatanie",
+      "titleEn": "M3 · Part 8: Full Braid",
+      "pdf": "30-m3d8-pelne-splatanie/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "30-m3d8-pelne-splatanie/grupa-1.mp3?v=1783148720599"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "30-m3d8-pelne-splatanie/grupa-2.mp3?v=1783148744875"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "30-m3d8-pelne-splatanie/grupa-3.mp3?v=1783148766300"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "30-m3d8-pelne-splatanie/grupa-4.mp3?v=1783148785608"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "30-m3d8-pelne-splatanie/grupa-5.mp3?v=1783148794452"
+        }
+      ]
+    },
+    {
+      "id": "31-m3d9-silownia-conditionali",
+      "slug": "31-m3d9-silownia-conditionali",
+      "number": 31,
+      "minikurs": 3,
+      "localNumber": 9,
+      "title": "M3 · Dział 9: Siłownia conditionali / M3 · Part 9: Conditional Gym",
+      "titlePl": "M3 · Dział 9: Siłownia conditionali",
+      "titleEn": "M3 · Part 9: Conditional Gym",
+      "pdf": "31-m3d9-silownia-conditionali/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "31-m3d9-silownia-conditionali/grupa-1.mp3?v=1783148811827"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "31-m3d9-silownia-conditionali/grupa-2.mp3?v=1783148830099"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "31-m3d9-silownia-conditionali/grupa-3.mp3?v=1783148847261"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "31-m3d9-silownia-conditionali/grupa-4.mp3?v=1783148865817"
+        }
+      ]
+    },
+    {
+      "id": "32-m3d10-sluchanka-make-or-break",
+      "slug": "32-m3d10-sluchanka-make-or-break",
+      "number": 32,
+      "minikurs": 3,
+      "localNumber": 10,
+      "title": "M3 · Dział 10: Słuchanka — decydujący miesiąc / M3 · Part 10: The Make-or-Break Month",
+      "titlePl": "M3 · Dział 10: Słuchanka — decydujący miesiąc",
+      "titleEn": "M3 · Part 10: The Make-or-Break Month",
+      "pdf": "32-m3d10-sluchanka-make-or-break/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-1.mp3?v=1783148876149"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-2.mp3?v=1783148915208"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-3.mp3?v=1783148925998"
+        }
+      ]
+    },
+    {
+      "id": "33-m3d11-egzamin-what-if",
+      "slug": "33-m3d11-egzamin-what-if",
+      "number": 33,
+      "minikurs": 3,
+      "localNumber": 11,
+      "title": "M3 · Dział 11: Egzamin „What if…\" / M3 · Part 11: The \"What If\" Exam",
+      "titlePl": "M3 · Dział 11: Egzamin „What if…\"",
+      "titleEn": "M3 · Part 11: The \"What If\" Exam",
+      "pdf": "33-m3d11-egzamin-what-if/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "33-m3d11-egzamin-what-if/grupa-1.mp3?v=1783148944381"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "33-m3d11-egzamin-what-if/grupa-2.mp3?v=1783148974093"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "33-m3d11-egzamin-what-if/grupa-3.mp3?v=1783148982879"
         }
       ]
     },
