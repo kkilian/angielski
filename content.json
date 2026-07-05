@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T04:25:04.052Z",
+  "generatedAt": "2026-07-05T05:57:22.129Z",
   "minikursy": [
     {
       "num": 1,
@@ -65,7 +65,7 @@
       "num": 10,
       "id": "m10",
       "tytul": "🛬🏡 Specjał — powrót do domu",
-      "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland, lot, powrót do domu.",
+      "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland tylko godzinę przed wylotem (13:45) — wszystko na styk, powrót do domu.",
       "status": "specjał",
       "count": 1,
       "audioCount": 6,
@@ -1358,32 +1358,32 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "58-m10d1-powrot-do-domu/grupa-1.mp3?v=1783225307710"
+          "src": "58-m10d1-powrot-do-domu/grupa-1.mp3?v=1783230808838"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "58-m10d1-powrot-do-domu/grupa-2.mp3?v=1783225347117"
+          "src": "58-m10d1-powrot-do-domu/grupa-2.mp3?v=1783230854484"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "58-m10d1-powrot-do-domu/grupa-3.mp3?v=1783225382963"
+          "src": "58-m10d1-powrot-do-domu/grupa-3.mp3?v=1783230901853"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "58-m10d1-powrot-do-domu/grupa-4.mp3?v=1783225423827"
+          "src": "58-m10d1-powrot-do-domu/grupa-4.mp3?v=1783230958313"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "58-m10d1-powrot-do-domu/grupa-5.mp3?v=1783225459505"
+          "src": "58-m10d1-powrot-do-domu/grupa-5.mp3?v=1783230999488"
         },
         {
           "n": 6,
           "label": "Grupa 6",
-          "src": "58-m10d1-powrot-do-domu/grupa-6.mp3?v=1783225487462"
+          "src": "58-m10d1-powrot-do-domu/grupa-6.mp3?v=1783231034880"
         }
       ]
     }

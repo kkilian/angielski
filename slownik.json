@@ -11,7 +11,7 @@
     { "id": "m4", "tytul": "Ludzie i rozmowy", "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia", "status": "szkic" },
     { "id": "m5", "tytul": "Pieniądze, ryzyko, decyzje", "temat": "Finanse, pomysł na apkę, duże decyzje (capstone). Uwaga: część rodziny 'ryzyko' przeniesiona do M3; M4/M5 do rewizji po walidacji M3.", "status": "szkic" },
     { "id": "m9", "tytul": "Specjał — recepcja i check-in", "temat": "Praktyczny angielski na check-in w miejscu noclegowym: rezerwacja, w którym budynku i pokoju, jak dojść, śniadanie i Wi-Fi.", "status": "specjał" },
-    { "id": "m10", "tytul": "🛬🏡 Specjał — powrót do domu", "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland, lot, powrót do domu.", "status": "specjał" }
+    { "id": "m10", "tytul": "🛬🏡 Specjał — powrót do domu", "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland tylko godzinę przed wylotem (13:45) — wszystko na styk, powrót do domu.", "status": "specjał" }
   ],
   "wyrazenia": [
     { "id": "wrap-up", "pl": "kończyć / domykać (robotę)", "en": "to wrap up", "typ": "phrasal", "intro": "m1-d1", "review": ["m10-d1", "m1-d3", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d1", "m2-d3", "m2-d6", "m2-d9"], "status": "zaplanowane" },
@@ -90,6 +90,7 @@
     { "id": "drive-up-park", "pl": "podjechać (autem) i zaparkować", "en": "to drive up and park", "typ": "phrasal", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
     { "id": "drop-bags-off", "pl": "rzucić bagaże", "en": "to drop the bags off", "typ": "phrasal", "intro": "m9-d1", "review": ["m10-d1", "m9-d5"], "status": "specjał" },
     { "id": "catch-the-bus", "pl": "zdążyć na (autobus) / złapać (autobus)", "en": "to catch the bus", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "cut-it-close", "pl": "być na styk / ledwo się wyrobić", "en": "to cut it close", "typ": "idiom", "intro": "m10-d1", "review": [], "status": "specjał" },
     { "id": "kill-time", "pl": "zabić czas / mieć czas do zabicia", "en": "to kill time", "typ": "idiom", "intro": "m10-d1", "review": [], "status": "specjał" },
     { "id": "make-the-connection", "pl": "zdążyć z przesiadką", "en": "to make the connection", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
     { "id": "check-a-bag", "pl": "nadać bagaż", "en": "to check a bag", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
