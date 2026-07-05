@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T13:48:34.258Z",
+  "generatedAt": "2026-07-05T04:25:04.052Z",
   "minikursy": [
     {
       "num": 1,
@@ -59,6 +59,16 @@
       "status": "specjał",
       "count": 2,
       "audioCount": 5,
+      "generated": true
+    },
+    {
+      "num": 10,
+      "id": "m10",
+      "tytul": "🛬🏡 Specjał — powrót do domu",
+      "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland, lot, powrót do domu.",
+      "status": "specjał",
+      "count": 1,
+      "audioCount": 6,
       "generated": true
     }
   ],
@@ -1330,6 +1340,50 @@
           "n": 1,
           "label": "Grupa 1",
           "src": "57-m9d5-scenka-check-in/grupa-1.mp3?v=1783080885023"
+        }
+      ]
+    },
+    {
+      "id": "58-m10d1-powrot-do-domu",
+      "slug": "58-m10d1-powrot-do-domu",
+      "number": 58,
+      "minikurs": 10,
+      "localNumber": 1,
+      "title": "M10 · Specjał — Dział 1: Powrót do domu / M-Special · Part 1: Coming Home",
+      "titlePl": "M10 · Specjał — Dział 1: Powrót do domu",
+      "titleEn": "M-Special · Part 1: Coming Home",
+      "pdf": "58-m10d1-powrot-do-domu/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "58-m10d1-powrot-do-domu/grupa-1.mp3?v=1783225307710"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "58-m10d1-powrot-do-domu/grupa-2.mp3?v=1783225347117"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "58-m10d1-powrot-do-domu/grupa-3.mp3?v=1783225382963"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "58-m10d1-powrot-do-domu/grupa-4.mp3?v=1783225423827"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "58-m10d1-powrot-do-domu/grupa-5.mp3?v=1783225459505"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "58-m10d1-powrot-do-domu/grupa-6.mp3?v=1783225487462"
         }
       ]
     }

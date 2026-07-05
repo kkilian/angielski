@@ -637,3 +637,21 @@ body.playing .pc-main { animation: pulse 2.4s ease-in-out infinite; }
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ===== motyw specjalny: M10 „Powrót do domu" — świt (dawn) ===== */
+/* app.js przełącza body[data-theme="dawn"] w sekcji i działach m10. */
+body[data-theme="dawn"] {
+  --amber: #f59e0b;
+  --amber-2: #fb7185;
+  --amber-soft: rgba(245, 158, 11, 0.14);
+  --amber-line: rgba(245, 158, 11, 0.45);
+  background:
+    radial-gradient(120% 60% at 50% -10%, #38200f 0%, #241410 40%, var(--bg) 72%) fixed;
+}
+/* kafel specjału na home — świt widoczny już z listy minikursów */
+.mk[data-mk="10"] {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.10), rgba(251, 113, 133, 0.07)), var(--bg-2);
+}
+.mk[data-mk="10"]:hover { border-color: #f59e0b; }
+.mk[data-mk="10"] .mk-num { color: #f59e0b; }

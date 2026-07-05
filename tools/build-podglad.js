@@ -403,6 +403,10 @@ body.review-mode .review{display:block}
 .extra ul{margin:6px 0;padding-left:20px}.extra li{margin:3px 0;font-size:14.5px}
 .extra td{font-size:14px}.extra td.enx{color:var(--seed);font-weight:600}
 .extra code{background:#f1ede5;padding:1px 4px;border-radius:4px}
+/* motyw specjalny m10 „Powrót do domu" — świt (dawn): kafelek + sekcja + sidenav */
+.tile[data-go="10"]{--accent:#b45309;border-color:#f59e0b;background:linear-gradient(135deg,#fff7ed,#ffe4e6)}
+.tile[data-go="10"]:hover{border-color:#b45309}
+.mk-view[data-mk="10"],.navgroup[data-mk="10"]{--accent:#b45309}
 @media(max-width:760px){#sidenav{display:none!important}}
 </style></head>
 <body>

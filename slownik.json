@@ -10,13 +10,14 @@
     { "id": "m3", "tytul": "Rozkręcam to — budowanie MadreM", "temat": "Środek wchodzenia na swoje: łapanie uczniów, kanał, wpadki i sucha passa, ważenie ryzyka i duże decyzje. Bohaterowie: Jake (kumpel z zagranicy), sceptyczny brat (silnik hipotez). Fokus: irrealis (2nd/3rd/mixed cond, modal perfects, wish/if only) + rodzajniki. Rejestr: neutralny peer. Diagnoza-driven 2026-07-04.", "status": "w produkcji (23-33)" },
     { "id": "m4", "tytul": "Ludzie i rozmowy", "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia", "status": "szkic" },
     { "id": "m5", "tytul": "Pieniądze, ryzyko, decyzje", "temat": "Finanse, pomysł na apkę, duże decyzje (capstone). Uwaga: część rodziny 'ryzyko' przeniesiona do M3; M4/M5 do rewizji po walidacji M3.", "status": "szkic" },
-    { "id": "m9", "tytul": "Specjał — recepcja i check-in", "temat": "Praktyczny angielski na check-in w miejscu noclegowym: rezerwacja, w którym budynku i pokoju, jak dojść, śniadanie i Wi-Fi.", "status": "specjał" }
+    { "id": "m9", "tytul": "Specjał — recepcja i check-in", "temat": "Praktyczny angielski na check-in w miejscu noclegowym: rezerwacja, w którym budynku i pokoju, jak dojść, śniadanie i Wi-Fi.", "status": "specjał" },
+    { "id": "m10", "tytul": "🛬🏡 Specjał — powrót do domu", "temat": "Podróż powrotna z Norwegii: świt i pakowanie, bus 990 przez Eidfjord, przesiadka w Voss (10:40, peron A), lotnisko Bergen-Flesland, lot, powrót do domu.", "status": "specjał" }
   ],
   "wyrazenia": [
-    { "id": "wrap-up", "pl": "kończyć / domykać (robotę)", "en": "to wrap up", "typ": "phrasal", "intro": "m1-d1", "review": ["m1-d3", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d1", "m2-d3", "m2-d6", "m2-d9"], "status": "zaplanowane" },
-    { "id": "head-back", "pl": "wracać (do kraju / do domu)", "en": "to head back / to head home", "typ": "phrasal", "intro": "m1-d1", "review": ["m1-d3", "m1-d5", "m1-d6", "m1-d8", "m1-d10", "m1-d11", "m2-d2", "m2-d5", "m2-d8"], "status": "zaplanowane" },
-    { "id": "for-good", "pl": "na stałe / na dobre", "en": "for good", "typ": "kolokacja", "intro": "m1-d1", "review": ["m1-d4", "m1-d6", "m1-d8", "m1-d10", "m1-d11", "m2-d3", "m2-d7", "m3-d4", "m4-d1"], "status": "zaplanowane" },
-    { "id": "mixed-feelings", "pl": "mieć mieszane uczucia (co do)", "en": "to have mixed feelings (about)", "typ": "kolokacja", "intro": "m1-d2", "review": ["m1-d4", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d4", "m2-d8", "m4-d1", "m4-d4"], "status": "zaplanowane" },
+    { "id": "wrap-up", "pl": "kończyć / domykać (robotę)", "en": "to wrap up", "typ": "phrasal", "intro": "m1-d1", "review": ["m10-d1", "m1-d3", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d1", "m2-d3", "m2-d6", "m2-d9"], "status": "zaplanowane" },
+    { "id": "head-back", "pl": "wracać (do kraju / do domu)", "en": "to head back / to head home", "typ": "phrasal", "intro": "m1-d1", "review": ["m10-d1", "m1-d3", "m1-d5", "m1-d6", "m1-d8", "m1-d10", "m1-d11", "m2-d2", "m2-d5", "m2-d8"], "status": "zaplanowane" },
+    { "id": "for-good", "pl": "na stałe / na dobre", "en": "for good", "typ": "kolokacja", "intro": "m1-d1", "review": ["m10-d1", "m1-d4", "m1-d6", "m1-d8", "m1-d10", "m1-d11", "m2-d3", "m2-d7", "m3-d4", "m4-d1"], "status": "zaplanowane" },
+    { "id": "mixed-feelings", "pl": "mieć mieszane uczucia (co do)", "en": "to have mixed feelings (about)", "typ": "kolokacja", "intro": "m1-d2", "review": ["m10-d1", "m1-d4", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d4", "m2-d8", "m4-d1", "m4-d4"], "status": "zaplanowane" },
     { "id": "on-the-fence", "pl": "wahać się (co do)", "en": "to be on the fence (about)", "typ": "idiom", "intro": "m1-d2", "review": ["m1-d4", "m1-d6", "m1-d8", "m1-d9", "m1-d11", "m2-d1", "m2-d5", "m2-d9", "m3-d6", "m5-d2"], "status": "zaplanowane" },
     { "id": "move-back-in-parents", "pl": "wprowadzić się z powrotem do rodziców", "en": "to move back in with my parents", "typ": "phrasal", "intro": "m1-d2", "review": ["m1-d4", "m1-d5", "m1-d7", "m1-d9", "m1-d10", "m1-d11", "m2-d6", "m3-d1", "m3-d4"], "status": "zaplanowane" },
     { "id": "figure-out", "pl": "rozkminić / dojść do tego / wymyślić", "en": "to figure out", "typ": "phrasal", "intro": "m1-d3", "review": ["m1-d5", "m1-d6", "m1-d8", "m1-d10", "m1-d11", "m2-d1", "m2-d4", "m2-d7", "m3-d3", "m3-d7"], "status": "zaplanowane" },
@@ -27,7 +28,7 @@
     { "id": "mixed-conditional-had", "pl": "warunek mieszany / inwersja warunkowa", "en": "Had I known... / Had I figured this out sooner...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m2-d8", "m3-d9"], "status": "zaplanowane" },
     { "id": "not-only-inversion", "pl": "inwersja z Not only", "en": "Not only am I..., I'm also...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m2-d8", "m5-d4"], "status": "zaplanowane" },
     { "id": "cleft-what", "pl": "cleft / zdanie rozszczepione", "en": "What I can't figure out is...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m3-d8", "m5-d4"], "status": "zaplanowane" },
-    { "id": "turns-out", "pl": "okazuje się, że...", "en": "Turns out...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m1-d8", "m1-d9", "m1-d10", "m1-d11", "m4-d3", "m5-d3"], "status": "zaplanowane" },
+    { "id": "turns-out", "pl": "okazuje się, że...", "en": "Turns out...", "typ": "gramatyka", "intro": "m1-d7", "review": ["m10-d1", "m1-d8", "m1-d9", "m1-d10", "m1-d11", "m4-d3", "m5-d3"], "status": "zaplanowane" },
 
     { "id": "make-a-call", "pl": "zdecydować / przesądzić sprawę", "en": "to call it / to make a call", "typ": "kolokacja", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d6"], "status": "w generacji" },
     { "id": "go-all-in", "pl": "iść na całość / postawić wszystko na jedną kartę", "en": "all in (on) / to go all in", "typ": "idiom", "intro": "m2-d1", "review": ["m2-d5", "m2-d7", "m2-d10", "m2-d11", "m3-d1", "m3-d6"], "status": "w generacji" },
@@ -82,11 +83,17 @@
     { "id": "drift-apart", "pl": "oddalić się od siebie", "en": "to drift apart", "typ": "phrasal", "intro": "m4-d2", "review": ["m4-d4", "m5-d3"], "status": "szkic" },
     { "id": "at-the-end-of-the-day", "pl": "koniec końców", "en": "at the end of the day", "typ": "idiom", "intro": "m4-d2", "review": ["m4-d4", "m5-d4"], "status": "szkic" },
 
-    { "id": "booked-through", "pl": "załatwiony / zarezerwowany (przez)", "en": "booked through", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
-    { "id": "under-the-name", "pl": "(rezerwacja) na nazwisko…", "en": "under the name", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
+    { "id": "booked-through", "pl": "załatwiony / zarezerwowany (przez)", "en": "booked through", "typ": "kolokacja", "intro": "m9-d1", "review": ["m10-d1", "m9-d5"], "status": "specjał" },
+    { "id": "under-the-name", "pl": "(rezerwacja) na nazwisko…", "en": "under the name", "typ": "kolokacja", "intro": "m9-d1", "review": ["m10-d1", "m9-d5"], "status": "specjał" },
     { "id": "which-building", "pl": "w którym budynku (ona jest)", "en": "which building", "typ": "kolokacja", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
     { "id": "point-right-direction", "pl": "nakierować nas / wskazać drogę", "en": "to point us in the right direction", "typ": "idiom", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
     { "id": "drive-up-park", "pl": "podjechać (autem) i zaparkować", "en": "to drive up and park", "typ": "phrasal", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" },
-    { "id": "drop-bags-off", "pl": "rzucić bagaże", "en": "to drop the bags off", "typ": "phrasal", "intro": "m9-d1", "review": ["m9-d5"], "status": "specjał" }
+    { "id": "drop-bags-off", "pl": "rzucić bagaże", "en": "to drop the bags off", "typ": "phrasal", "intro": "m9-d1", "review": ["m10-d1", "m9-d5"], "status": "specjał" },
+    { "id": "catch-the-bus", "pl": "zdążyć na (autobus) / złapać (autobus)", "en": "to catch the bus", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "kill-time", "pl": "zabić czas / mieć czas do zabicia", "en": "to kill time", "typ": "idiom", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "make-the-connection", "pl": "zdążyć z przesiadką", "en": "to make the connection", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "check-a-bag", "pl": "nadać bagaż", "en": "to check a bag", "typ": "kolokacja", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "settle-back-in", "pl": "ogarnąć się z powrotem (po powrocie)", "en": "to settle back in", "typ": "phrasal", "intro": "m10-d1", "review": [], "status": "specjał" },
+    { "id": "future-perfect-by-the-time", "pl": "zanim…, (już) będę / zdążę (future perfect)", "en": "By the time we land, I'll have been traveling for over twelve hours.", "typ": "gramatyka", "intro": "m10-d1", "review": [], "status": "specjał" }
   ]
 }

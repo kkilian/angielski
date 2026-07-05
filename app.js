@@ -26,6 +26,15 @@ const STAGES = [
 ];
 const stageFor = (n) => STAGES[((n - 1) % 11 + 11) % 11] || '';
 
+// Motyw specjalny minikursu (m10 „Powrót do domu" = świt). Ustawiamy data-theme na <body>;
+// celowo NIE data-mk — delegacja kliknięć nawigacji łapie każdy [data-mk] (closest).
+const MK_THEME = { 10: 'dawn' };
+function setTheme(num) {
+  const t = MK_THEME[num];
+  if (t) document.body.dataset.theme = t;
+  else delete document.body.dataset.theme;
+}
+
 let DATA = null;
 let renderedChapterId = null;
 let seeking = false;
@@ -227,6 +236,7 @@ function renderMinikursy() {
   renderedChapterId = null;
   backHash = '#/';
   backBtn.hidden = true;
+  setTheme(null);
   setText('topbar-title', 'Angielski');
 
   const mks = (DATA.minikursy && DATA.minikursy.length)
@@ -280,6 +290,7 @@ function renderMinikurs(num) {
   renderedChapterId = null;
   backHash = '#/';
   backBtn.hidden = false;
+  setTheme(num);
   const mk = (DATA.minikursy || []).find((m) => m.num === num);
   setText('topbar-title', mk ? mk.tytul : `Minikurs ${num}`);
 
@@ -319,6 +330,7 @@ function renderChapter(ch) {
   renderedChapterId = ch.id;
   backHash = `#/m/${mkOf(ch)}`;
   backBtn.hidden = false;
+  setTheme(mkOf(ch));
   setText('topbar-title', cleanTitle(ch.titlePl));
 
   const rows = ch.groups.map((g, i) => `
