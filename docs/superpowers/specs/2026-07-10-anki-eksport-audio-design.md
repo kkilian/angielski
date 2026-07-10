@@ -19,7 +19,7 @@ Data: 2026-07-10 · Status: zatwierdzony projekt (przed implementacją)
 - Audio: tylko angielskie zdanie, gra dopiero po odsłonięciu odpowiedzi (pole `Extra`).
 - Źródło audio: świeży TTS per zdanie tym samym mechanizmem co kurs (koszt groszowy),
   nie wycinanie ze sklejek.
-- Głos: env `ANG_VOICE_EN` z domyślnym `marin` (kurs właśnie przechodzi na nowe głosy
+- Głos: env `ANG_VOICE_EN` z domyślnym `cedar` — głos EN kursu od M3; PL kursu to marin (nowe głosy
   OpenAI, snapshot gpt-4o-mini-tts-2025-12-15); instrukcje akcentu z `ANG_INSTR_EN`.
 
 ## Część A — podgląd (`tools/build-podglad.js`)
@@ -43,7 +43,7 @@ Data: 2026-07-10 · Status: zatwierdzony projekt (przed implementacją)
 
 - Przy właściwym uruchomieniu (nie `--dry-run`), dla każdej karty z luką:
   1. TTS zdania `en`: `fetch` do `https://api.openai.com/v1/audio/speech`
-     (model `gpt-4o-mini-tts`, `voice = ANG_VOICE_EN || 'marin'`,
+     (model `gpt-4o-mini-tts`, `voice = ANG_VOICE_EN || 'cedar'`,
      `instructions = ANG_INSTR_EN || <domyślne z kursu>`, `response_format: 'mp3'`),
      retry ×4 z backoffem jak w `assemble-audio.js`. Klucz: `OPENAI_API_KEY` albo
      fallback z `~/Desktop/coach-2.0/main.js` (jak w kursie). Bez SDK — goły fetch,

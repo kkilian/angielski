@@ -13,7 +13,7 @@
 ## Global Constraints
 
 - Zero nowych zależności npm; `add-cards.cjs` woła OpenAI gołym `fetch` (Node ≥18).
-- Głos TTS: `process.env.ANG_VOICE_EN || 'marin'`; instrukcje: `process.env.ANG_INSTR_EN || 'Speak in natural, native General American English. Calm and clear tone, medium pace. Conversational, not theatrical.'`.
+- Głos TTS: `process.env.ANG_VOICE_EN || 'cedar'`; instrukcje: `process.env.ANG_INSTR_EN || 'Speak in natural, native General American English. Calm and clear tone, medium pace. Conversational, not theatrical.'`.
 - Klucz OpenAI: `process.env.OPENAI_API_KEY` albo fallback z `~/Desktop/coach-2.0/main.js` (wzorzec `const OPENAI_API_KEY = '…'`).
 - Format eksportowanego JSON-a bez zmian: `{source, deck, exportedAt, cards:[{pl,en,targets,blocks,mk,d}]}`.
 - `podglad.html` jest gitignorowany — commitujemy tylko `tools/build-podglad.js` (repo `~/angielski`) oraz pliki skilla (repo `~/.claude`).
@@ -307,7 +307,7 @@ na:
 //   node add-cards.cjs <plik.json> --deck "moja talia"             # inna talia
 //   node add-cards.cjs <plik.json> --no-audio                      # bez generowania audio
 //
-// Audio: OpenAI gpt-4o-mini-tts (goły fetch), głos ANG_VOICE_EN (domyślnie marin, jak nowe głosy kursu),
+// Audio: OpenAI gpt-4o-mini-tts (goły fetch), głos ANG_VOICE_EN (domyślnie cedar, jak nowe głosy kursu),
 // instrukcje ANG_INSTR_EN. Plik idzie do mediów Anki (storeMediaFile) pod deterministyczną nazwą,
 // [sound:…] trafia do pola Extra → gra po odsłonięciu odpowiedzi.
 ```
@@ -344,7 +344,7 @@ Po linii `const esc = (s) => …;` wstaw:
 
 ```js
 // --- audio EN: ten sam mechanizm co kurs (assemble-audio.js), ale gołym fetchem, bez SDK ---
-const VOICE_EN = process.env.ANG_VOICE_EN || 'marin';
+const VOICE_EN = process.env.ANG_VOICE_EN || 'cedar';
 const INSTR_EN = process.env.ANG_INSTR_EN || 'Speak in natural, native General American English. Calm and clear tone, medium pace. Conversational, not theatrical.';
 
 function readKeyFromCoach() {
@@ -550,7 +550,7 @@ na:
 ```
 Talia domyślnie **`angielski`** (osobna od coachowej „ulepszenia"). Model: wbudowany **Cloze**,
 pola `Text`/`Extra`. **Audio EN** generowane automatycznie (OpenAI `gpt-4o-mini-tts`, głos
-`ANG_VOICE_EN` — domyślnie `marin`, jak nowe głosy kursu) i wgrywane do mediów Anki; `[sound:…]`
+`ANG_VOICE_EN` — domyślnie `cedar`, jak nowe głosy kursu) i wgrywane do mediów Anki; `[sound:…]`
 siedzi w polu `Extra`, więc gra dopiero po odsłonięciu odpowiedzi. Duplikaty pomijane
 (`allowDuplicate:false`). Flaga `--no-audio` wyłącza dźwięk; wymaga klucza OpenAI
 (`OPENAI_API_KEY` albo coach-2.0). Podgląd oznacza wyeksportowane zdania jako ✅ i kolejny
@@ -587,7 +587,7 @@ Expected: karta w talii test-audio z `[sound:…]` w Extra, plik w mediach; po c
 
 - [ ] **Step 3: Aktualizacja pamięci projektu**
 
-W `~/.claude/projects/-Users-krzysztofkilian-angielski/memory/angielski-powtorki-anki-pipeline.md` zaktualizuj treść tak, by odzwierciedlała: gwiazdki ⭐→✅ (klucz `kurs.exported`, eksport tylko nowych, odklik czyści oba zbiory) oraz audio EN na tyle karty (`gpt-4o-mini-tts`, `ANG_VOICE_EN`||`marin`, `[sound:]` w `Extra`, `--no-audio`, `ANKI_URL` do testów). Jeżeli zmieni się jednolinijkowy „hook" — popraw też wpis w `MEMORY.md`.
+W `~/.claude/projects/-Users-krzysztofkilian-angielski/memory/angielski-powtorki-anki-pipeline.md` zaktualizuj treść tak, by odzwierciedlała: gwiazdki ⭐→✅ (klucz `kurs.exported`, eksport tylko nowych, odklik czyści oba zbiory) oraz audio EN na tyle karty (`gpt-4o-mini-tts`, `ANG_VOICE_EN`||`cedar`, `[sound:]` w `Extra`, `--no-audio`, `ANKI_URL` do testów). Jeżeli zmieni się jednolinijkowy „hook" — popraw też wpis w `MEMORY.md`.
 
 - [ ] **Step 4: Commit dokumentacji w `~/.claude`**
 
