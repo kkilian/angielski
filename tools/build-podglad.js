@@ -387,6 +387,7 @@ body.study td.en.show{filter:none}
 .star-btn{background:none;border:none;padding:2px 4px;border-radius:8px;font-size:17px;line-height:1;cursor:pointer;color:#c2c7cf;opacity:.7;transition:transform .1s,opacity .1s}
 .star-btn:hover{opacity:1;transform:scale(1.15)}
 .star-btn.on{opacity:1;color:var(--accent)}
+.review tr.was-exported td{opacity:.55}
 .review{display:none;margin:0 0 22px}
 .review .rhead{display:flex;align-items:baseline;gap:10px;margin:6px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--accent);flex-wrap:wrap}
 .review .rhead h2{margin:0;font-size:21px;color:var(--accent)}
@@ -420,10 +421,10 @@ body.review-mode .review{display:block}
     <button id="review-toggle">⭐ Powtórki (<span id="review-toggle-count">0</span>)</button>
     <button id="export-json" title="Pobierz gwiazdkowane zdania jako JSON do Anki">⬇ Wyeksportuj JSON</button>
   </div>
-  <p class="intro">📋 Podgląd tekstu kursu. Wybierz minikurs (M1 / M2). „🙈 Ukryj angielski" → kolumna EN się rozmazuje, klikasz pojedyncze zdanie, żeby je odsłonić (mów na głos, sprawdzaj się). ☆ przy zdaniu wrzuca je do <b>⭐ Powtórki</b> (wspólne dla całego kursu). W Powtórkach „⬇ Wyeksportuj JSON" pobiera oznaczone zdania → dajesz mi JSON, a skill <b>przejmij-json</b> robi z nich karty Anki (luka C1: PL u góry, EN z luką).</p>
+  <p class="intro">📋 Podgląd tekstu kursu. Wybierz minikurs (M1 / M2). „🙈 Ukryj angielski" → kolumna EN się rozmazuje, klikasz pojedyncze zdanie, żeby je odsłonić (mów na głos, sprawdzaj się). ☆ przy zdaniu wrzuca je do <b>⭐ Powtórki</b> (wspólne dla całego kursu). „⬇ Wyeksportuj JSON" pobiera tylko <b>nowe</b> ⭐ (po eksporcie zmieniają się w ✅ i nie wchodzą do kolejnych eksportów) → dajesz mi JSON, a skill <b>przejmij-json</b> robi z nich karty Anki z audio (luka C1: PL u góry, EN z luką).</p>
   <div class="legend"><span><u class="new">podkreślone</u> = nowe klocki w TYM dziale</span></div>
   <section class="review">
-    <div class="rhead"><h2>⭐ Powtórki</h2><span class="rcount" id="review-count">0 par</span><span class="rhint">Kliknij „⬇ Wyeksportuj JSON" u góry, żeby zrobić z nich karty Anki.</span></div>
+    <div class="rhead"><h2>⭐ Powtórki</h2><span class="rcount" id="review-count">0 par</span><span class="rhint">„⬇ Wyeksportuj JSON" u góry pobiera tylko nowe ⭐ · ✅ = już wyeksportowane do Anki.</span></div>
     <div class="group plain" id="review-box"><table><tbody id="review-body"></tbody></table></div>
     <p id="review-empty">Oznacz pary gwiazdką (☆) przy zdaniach, które sprawiły kłopot — wylądują tutaj do powtórki.</p>
   </section>
@@ -468,20 +469,29 @@ document.addEventListener('click',e=>{
   if(td && (body.classList.contains('study')||body.classList.contains('review-mode'))) td.classList.toggle('show');
 });
 // ---- ⭐ Powtórki (jeden wspólny zbiór gwiazdek dla całego kursu) ----
+// kurs.stars = oznaczone; kurs.exported = podzbiór już wyeksportowany do Anki (✅).
 const KEY='kurs.stars';
+const KEY_EXP='kurs.exported';
 let stars; try{ stars=new Set(JSON.parse(localStorage.getItem(KEY)||'[]')); }catch(e){ stars=new Set(); }
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify([...stars])); }catch(e){} }
+let exported; try{ exported=new Set(JSON.parse(localStorage.getItem(KEY_EXP)||'[]')); }catch(e){ exported=new Set(); }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify([...stars])); localStorage.setItem(KEY_EXP, JSON.stringify([...exported])); }catch(e){} }
 function rowKey(tr){ return tr.getAttribute('data-k'); }
+function freshKeys(){ return [...stars].filter(k=>!exported.has(k)); }
 function refreshCounts(){
-  const n=stars.size;
+  const n=stars.size, f=freshKeys().length;
   document.getElementById('review-toggle-count').textContent=n;
-  document.getElementById('review-count').textContent=n+' '+(n===1?'para':(n%10>=2&&n%10<=4&&!(n%100>=12&&n%100<=14)?'pary':'par'));
+  const pary=n+' '+(n===1?'para':(n%10>=2&&n%10<=4&&!(n%100>=12&&n%100<=14)?'pary':'par'));
+  const nowe=f===1?'nowa':(f%10>=2&&f%10<=4&&!(f%100>=12&&f%100<=14)?'nowe':'nowych');
+  document.getElementById('review-count').textContent=f?pary+' · '+f+' '+nowe:pary;
   document.getElementById('review-empty').style.display=n?'none':'block';
 }
+function starFace(k){ return exported.has(k)?'✅':'⭐'; }
 function markStars(){
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
     const b=tr.querySelector('.star-btn'); if(!b) return;
-    const on=stars.has(rowKey(tr)); b.classList.toggle('on',on); b.textContent=on?'⭐':'☆';
+    const k=rowKey(tr), on=stars.has(k);
+    b.classList.toggle('on',on);
+    b.textContent=on?starFace(k):'☆';
   });
 }
 function buildReview(){
@@ -492,7 +502,8 @@ function buildReview(){
     const pl=plCell?plCell.innerHTML:'', en=tr.querySelector('td.en').innerHTML;
     const k=tr.getAttribute('data-k');
     const row=document.createElement('tr'); row.setAttribute('data-k',k);
-    row.innerHTML='<td class="star"><button class="star-btn on">⭐</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';
+    if(exported.has(k)) row.className='was-exported';
+    row.innerHTML='<td class="star"><button class="star-btn on">'+starFace(k)+'</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';
     tb.appendChild(row);
   });
 }
@@ -500,7 +511,7 @@ document.addEventListener('click',e=>{
   const b=e.target.closest('.star-btn'); if(!b) return;
   const tr=b.closest('tr[data-k]'); if(!tr) return;
   const k=rowKey(tr);
-  if(stars.has(k)) stars.delete(k); else stars.add(k);
+  if(stars.has(k)){ stars.delete(k); exported.delete(k); } else stars.add(k);
   save(); markStars(); refreshCounts();
   if(body.classList.contains('review-mode')) buildReview();
 });
@@ -510,23 +521,29 @@ document.getElementById('review-toggle').addEventListener('click',()=>{
   if(on){ buildReview(); window.scrollTo(0,0); }
 });
 // ---- ⬇ Eksport JSON (gwiazdkowane → karty Anki przez skill przejmij-json) ----
+// Bierze tylko NOWE gwiazdki (⭐ bez ✅); po pobraniu pliku oznacza je jako wyeksportowane.
 function collectStarredCards(){
-  const cards=[];
+  const cards=[], keys=[];
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
-    if(!stars.has(rowKey(tr))) return;
+    const k=rowKey(tr);
+    if(!stars.has(k)||exported.has(k)) return;
     let targets=[], blocks=[];
     try{ targets=JSON.parse(tr.dataset.targets||'[]'); }catch(e){}
     try{ blocks=JSON.parse(tr.dataset.blocks||'[]'); }catch(e){}
     cards.push({ pl:tr.dataset.pl, en:tr.dataset.en, targets, blocks,
                  mk:Number(tr.dataset.mk), d:Number(tr.dataset.d) });
+    keys.push(k);
   });
-  return cards;
+  return { cards, keys };
 }
 window.collectStarredCards = collectStarredCards; // hook do weryfikacji headless
 document.getElementById('export-json').addEventListener('click',()=>{
-  const cards=collectStarredCards();
-  if(!cards.length){ alert('Najpierw oznacz zdania gwiazdką (☆).'); return; }
-  const out={ source:'angielski-podglad', deck:'angielski', exportedAt:new Date().toISOString(), cards };
+  const picked=collectStarredCards();
+  if(!picked.cards.length){
+    alert(stars.size?'Wszystkie gwiazdki są już wyeksportowane (✅). Oznacz nowe zdania, żeby mieć co eksportować.':'Najpierw oznacz zdania gwiazdką (☆).');
+    return;
+  }
+  const out={ source:'angielski-podglad', deck:'angielski', exportedAt:new Date().toISOString(), cards:picked.cards };
   const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');
@@ -534,6 +551,9 @@ document.getElementById('export-json').addEventListener('click',()=>{
   a.href=url; a.download='powtorki-angielski-'+dt.getFullYear()+pad(dt.getMonth()+1)+pad(dt.getDate())+'.json';
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),1500);
+  picked.keys.forEach(k=>exported.add(k));
+  save(); markStars(); refreshCounts();
+  if(body.classList.contains('review-mode')) buildReview();
 });
 // ---- ▶︎ Audio: kolejka grup (grupa-1 → grupa-2 → …) na jednym <audio> ----
 const player=document.getElementById('player');
