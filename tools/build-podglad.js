@@ -181,6 +181,45 @@ function audioForDir(dir) {
   return [...found.keys()].sort((a, b) => a - b).map((n) => found.get(n));
 }
 
+// ---- egzamin głosowy: historia podejść (egzaminy/mN/*/werdykt.json) ----
+function egzaminPodejscia(mk) {
+  const baza = path.join(ROOT, 'egzaminy', `m${mk}`);
+  if (!fs.existsSync(baza)) return [];
+  const out = [];
+  for (const d of fs.readdirSync(baza).sort()) {
+    try {
+      const w = JSON.parse(fs.readFileSync(path.join(baza, d, 'werdykt.json'), 'utf8'));
+      out.push({ dir: d, ...w });
+    } catch { /* podejście bez werdyktu (przerwane/w toku) — pomijamy */ }
+  }
+  return out;
+}
+
+function egzaminPanel(mk) {
+  const egz = egzaminPodejscia(mk);
+  const ost = egz[egz.length - 1];
+  const badge = ost
+    ? (ost.zdane ? '<span class="egz-badge zdane">ZDANE</span>' : '<span class="egz-badge oblane">OBLANE</span>')
+    : '<span class="egz-badge brak">jeszcze bez podejścia</span>';
+  const rows = egz.map((w) => {
+    const kiedy = w.dir.replace(/-podejscie-/, ' · podejście ');
+    const osB = w.osB ? `${w.osB.plynnosc}·${w.osB.zakres}·${w.osB.poprawnosc}·${w.osB.spojnosc}` : '—';
+    const czas = w.czasSek ? `${Math.floor(w.czasSek / 60)}:${String(w.czasSek % 60).padStart(2, '0')}` : '—';
+    return `<tr><td>${H(kiedy)}</td><td>${w.zdane ? '✅ ZDANE' : '❌ OBLANE'}</td>`
+      + `<td>${w.osA ? H(w.osA.procent + '% okazji') : '—'}</td><td>${H(osB)}</td><td>${H(czas)}</td></tr>`;
+  }).join('');
+  return `<article class="dzial egz" id="m${mk}-egzamin" data-id="m${mk}-egzamin">
+    <div class="dhead">
+      <div class="detap">M${mk} · Egzamin głosowy (interaktywny)</div>
+      <h3>🎙 ${mk === 3 ? 'Egzamin — bramka M3 → M4' : `Egzamin — test kontrolny M${mk}`} ${badge}</h3>
+      <div class="dmeta">pytania generowane na żywo, tylko ze słuchu · 4 bloki + follow-upy · werdykt: materiał (oś A) + mowa (oś B)</div>
+    </div>
+    ${rows ? `<section class="group plain"><div class="ghead"><span class="gtag">Podejścia</span><span class="gname">stan z momentu buildu podglądu</span></div><table class="egz-t"><tr><th>kiedy</th><th>werdykt</th><th>oś A</th><th>oś B (płyn·zakr·popr·spój)</th><th>czas</th></tr>${rows}</table></section>` : ''}
+    <p class="egz-go"><a href="http://127.0.0.1:8124/" target="_blank" rel="noopener">▶ Wejdź do egzaminu</a>
+    <span>— najpierw odpal serwer: <code>npm run egzamin</code>. Oblanie = zadanie na jutro w raporcie, retake następnego dnia.</span></p>
+  </article>`;
+}
+
 // ---- zbierz działy ze wszystkich minikursów ----
 const dirs = fs.readdirSync(ROOT)
   .filter((n) => /^(\d{2})-m(\d+)d(\d+)-/.test(n) && fs.existsSync(path.join(ROOT, n, 'rozdzial.md')))
@@ -279,6 +318,11 @@ for (const mk of minikursy) {
       <details class="extra"><summary>Nowe słowa i struktury · wymowa · typowe błędy</summary>${renderExtra(P.extra)}</details>
     </article>`;
   }
+  // panel egzaminu tylko dla minikursów z briefem (specjały M9/M10 nie mają egzaminu)
+  if (fs.existsSync(path.join(ROOT, 'tools', 'egzamin', `minikurs-m${mk}.md`))) {
+    articles += egzaminPanel(mk);
+    navLinks += `<a href="#m${mk}-egzamin">🎙 Egzamin głosowy</a>`;
+  }
   const mkAudio = items.filter((x) => x.mk === mk).flatMap((x) => x.audio);
   const mkPlay = mkAudio.length
     ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(mkAudio))}" data-label="${A('Cały M' + mk)}">▶︎ Odtwórz cały minikurs · ${mkAudio.length} grup</button></div>`
@@ -310,6 +354,15 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.55 -apple-syst
 #sidenav a{display:block;color:#374151;text-decoration:none;padding:5px 8px;border-radius:7px;line-height:1.3}
 #sidenav a:hover{background:#e3ded3}
 .navgroup{display:none}.navgroup.is-active{display:block}
+/* egzamin głosowy — panel */
+.egz .dhead h3{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.egz-badge{font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;letter-spacing:.04em}
+.egz-badge.zdane{background:#dcf3e4;color:#1e7d45}
+.egz-badge.oblane{background:#fdecea;color:#c0392b}
+.egz-badge.brak{background:#ece9e1;color:var(--muted)}
+.egz-t th{text-align:left;font-size:12px;color:var(--muted);padding:6px 10px;border-bottom:1px solid var(--line)}
+.egz-go{margin:14px 2px 2px}.egz-go a{color:var(--accent);font-weight:700;text-decoration:none}
+.egz-go a:hover{text-decoration:underline}.egz-go span{color:var(--muted);font-size:13.5px}
 /* home (wybór minikursu) + widoki minikursów */
 .home,.mk-view{display:none}
 .home.is-active,.mk-view.is-active{display:block}
