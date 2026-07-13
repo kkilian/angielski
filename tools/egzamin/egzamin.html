@@ -70,7 +70,10 @@
 
   <!-- PYTANIE / NAGRYWANIE -->
   <section id="s-pytanie" class="ukryte">
-    <h2 id="naglowek-pytania">Pytanie</h2>
+    <div class="rzad" style="justify-content:space-between; margin-bottom:14px">
+      <h2 id="naglowek-pytania" style="margin:0">Pytanie</h2>
+      <span id="zegar-sesji" class="hint" style="font-variant-numeric:tabular-nums"></span>
+    </div>
     <div class="rzad">
       <button id="b-graj">▶ Odtwórz pytanie</button>
       <button id="b-powtorz" class="drugi" disabled>🔁 Powtórz (1×)</button>
@@ -90,13 +93,10 @@
     <p><span class="kropka" style="background:var(--szary)"></span> &nbsp;Przetwarzam odpowiedź…</p>
   </section>
 
-  <!-- WYNIK v1 (szkielet) -->
-  <section id="s-wynik" class="ukryte">
-    <h2>Transkrypt</h2>
-    <div id="w-transkrypt" class="transkrypt"></div>
-    <div id="w-metryki" class="metryki"></div>
-    <h2 style="margin-top:22px">Komentarz egzaminatora (szkielet v1)</h2>
-    <div id="w-komentarz" class="transkrypt"></div>
+  <!-- KONIEC / OCENIANIE -->
+  <section id="s-koniec" class="ukryte">
+    <p><b>Egzamin zakończony.</b> <span class="kropka" style="background:var(--szary)"></span>
+    &nbsp;Sędzia ocenia całość — raport za chwilę…</p>
   </section>
 
   <p id="komunikat-bledu" class="blad ukryte"></p>
@@ -116,6 +116,15 @@ let pytanieAudio = new Audio();
 let odtworzenia = 0;
 let rec = null, chunki = [], strumien = null;
 let timerInt = null, timerStart = 0;
+let sesjaStart = 0, zegarInt = null;
+
+function mmss(s) { return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
+function startZegaraSesji() {
+  sesjaStart = Date.now();
+  zegarInt = setInterval(() => {
+    $('zegar-sesji').textContent = '⏱ ' + mmss(Math.floor((Date.now() - sesjaStart) / 1000));
+  }, 1000);
+}
 
 function blad(msg) { $('komunikat-bledu').textContent = '⚠ ' + msg; pokaz('komunikat-bledu'); }
 function czysc() { schowaj('komunikat-bledu'); }
@@ -158,14 +167,19 @@ $('b-start').onclick = async () => {
     if (!r.ok) throw new Error(j.blad || r.status);
     sesjaId = j.sesjaId;
     schowaj('s-start');
-    ustawPytanie(j.pytanieAudio);
+    startZegaraSesji();
+    ustawPytanie(j.pytanieAudio, j.blok, j.typ);
   } catch (e) {
     blad('Nie udało się wystartować: ' + e.message);
     $('b-start').disabled = false; $('b-start').textContent = 'START EGZAMINU';
   }
 };
 
-function ustawPytanie(srcAudio) {
+function ustawPytanie(srcAudio, blok, typ) {
+  if (blok) {
+    $('naglowek-pytania').textContent =
+      `Blok ${blok.idx}/${blok.z}` + (typ === 'followup' ? ' · follow-up' : ' · pytanie główne');
+  }
   pytanieAudio = new Audio(srcAudio);
   odtworzenia = 0;
   $('b-graj').disabled = false;
@@ -225,8 +239,8 @@ async function wyslij() {
     const j = await r.json();
     if (!r.ok) throw new Error(j.blad || r.status);
     schowaj('s-przetwarzam');
-    if (j.koniec) return pokazWynikV1(j);
-    ustawPytanie(j.nastepnePytanieAudio);   // przyszłość (Task 5)
+    if (j.koniec) return koniecEgzaminu();
+    ustawPytanie(j.pytanieAudio, j.blok, j.typ);
   } catch (e) {
     schowaj('s-przetwarzam');
     pokaz('s-pytanie');
@@ -234,13 +248,10 @@ async function wyslij() {
   }
 }
 
-function pokazWynikV1(j) {
-  $('w-transkrypt').textContent = j.transkrypt;
-  const m = j.metryki || {};
-  $('w-metryki').textContent =
-    `${m.liczbaSlow ?? '?'} słów · tempo netto ${m.tempoNetto ?? '?'} wpm · pauzy ≥2 s: ${(m.pauzy || []).length}`;
-  $('w-komentarz').textContent = j.komentarz || '';
-  pokaz('s-wynik');
+function koniecEgzaminu() {
+  clearInterval(zegarInt);
+  pokaz('s-koniec');
+  // Task 6: tu wołamy /api/zakoncz i renderujemy raport.
 }
 </script>
 </body>

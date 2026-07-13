@@ -4,7 +4,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { klucze, ttsMp3, transkrybuj, claude } from './api.mjs';
+import { klucze, ttsMp3, transkrybuj, claudeJson } from './api.mjs';
 import { metryki } from './metryki.mjs';
 
 const TU = path.dirname(fileURLToPath(import.meta.url));           // tools/egzamin/
@@ -27,7 +27,8 @@ function nowaSesja(minikurs = 'm3') {
   const id = `${dzis}-podejscie-${n}`;
   const dir = path.join(baza, id);
   fs.mkdirSync(dir, { recursive: true });
-  const s = { id, dir, minikurs, nrPytania: 0, wymiany: [], start: Date.now() };
+  const s = { id, dir, minikurs, nrPytania: 0, blokIdx: 0, followupyWBloku: 0,
+              plan: null, wymiany: [], start: Date.now() };
   sesje.set(id, s);
   return s;
 }
@@ -37,11 +38,11 @@ function zapisz(s, nazwa, dane) {
     Buffer.isBuffer(dane) ? dane : JSON.stringify(dane, null, 2));
 }
 
-async function zadajPytanie(s, tekst) {
+async function zadajPytanie(s, tekst, typ) {
   s.nrPytania += 1;
   const mp3 = await ttsMp3(tekst);
   zapisz(s, `pytanie-${s.nrPytania}.mp3`, mp3);
-  s.wymiany.push({ nr: s.nrPytania, pytanie: tekst });
+  s.wymiany.push({ nr: s.nrPytania, blok: s.blokIdx + 1, typ, pytanie: tekst });
   zapisz(s, 'wymiany.json', s.wymiany);
   return `/api/audio/${s.id}/pytanie-${s.nrPytania}.mp3`;
 }
@@ -60,12 +61,67 @@ function czytajBody(req, limitMB = 50) {
   });
 }
 
-// v1 (szkielet): jedno zahardcodowane pytanie i komentarz sędziego do jednej odpowiedzi.
-const PYTANIE_V1 = 'Tell me about your channel. What would happen if your next three videos completely flopped?';
-const SEDZIA_V1 = `Jesteś surowym, ale konkretnym egzaminatorem ustnego angielskiego (poziom docelowy C1, uczeń ~B2.2).
-Dostajesz transkrypt JEDNEJ odpowiedzi na pytanie egzaminacyjne. Skomentuj po polsku w 2-4 zdaniach:
-czy odpowiedź używa conditionali (pytanie ich wymaga), zacytuj verbatim jeden błąd lub słabość i podaj poprawkę,
-oraz jedną rzecz zrobioną dobrze. Ignoruj artefakty transkrypcji mowy (interpunkcja, drobne literówki ASR).`;
+// ── Prompty i brief (pliki obok — kalibracja bez ruszania kodu) ─────────
+const PROMPT = n => fs.readFileSync(path.join(TU, 'prompty', `${n}.md`), 'utf8');
+const BRIEF = fs.readFileSync(path.join(TU, 'minikurs-m3.md'), 'utf8');
+const LICZBA_BLOKOW = 4;
+const MAX_FOLLOWUPY = 2;
+
+function starePytania(minikurs) {
+  const baza = path.join(EGZAMINY, minikurs);
+  if (!fs.existsSync(baza)) return [];
+  const pytania = [];
+  for (const d of fs.readdirSync(baza)) {
+    try {
+      const plan = JSON.parse(fs.readFileSync(path.join(baza, d, 'plan.json'), 'utf8'));
+      for (const b of plan.bloki || []) if (b.pytanie) pytania.push(b.pytanie);
+    } catch { /* podejście bez planu — pomijamy */ }
+  }
+  return pytania;
+}
+
+function oblanyDzis(minikurs) {
+  const baza = path.join(EGZAMINY, minikurs);
+  if (!fs.existsSync(baza)) return false;
+  const dzis = new Date().toISOString().slice(0, 10);
+  return fs.readdirSync(baza).some(d => {
+    if (!d.startsWith(dzis)) return false;
+    try {
+      const w = JSON.parse(fs.readFileSync(path.join(baza, d, 'werdykt.json'), 'utf8'));
+      return w.zdane === false;
+    } catch { return false; }
+  });
+}
+
+async function generujPlan(minikurs) {
+  const stare = starePytania(minikurs);
+  const plan = await claudeJson({
+    system: PROMPT('generator'),
+    messages: [{ role: 'user', content:
+      `BRIEF MINIKURSU:\n${BRIEF}\n\nPYTANIA GŁÓWNE Z POPRZEDNICH PODEJŚĆ (unikaj):\n` +
+      (stare.length ? stare.map(p => `- ${p}`).join('\n') : '(brak — to pierwsze podejście)') }],
+    maxTokens: 6000,
+  });
+  if (!plan.bloki || plan.bloki.length !== LICZBA_BLOKOW) {
+    throw new Error(`Generator zwrócił ${plan.bloki?.length ?? 0} bloków zamiast ${LICZBA_BLOKOW}`);
+  }
+  return plan;
+}
+
+async function decyzjaFollowup(s) {
+  const blok = s.plan.bloki[s.blokIdx];
+  const wymianyBloku = s.wymiany.filter(w => w.blok === s.blokIdx + 1)
+    .map(w => `PYTANIE: ${w.pytanie}\nODPOWIEDŹ (transkrypt): ${w.transkrypt || '(brak)'}`)
+    .join('\n\n');
+  return claudeJson({
+    system: PROMPT('followup'),
+    messages: [{ role: 'user', content:
+      `AKTUALNY BLOK (${s.blokIdx + 1}/${LICZBA_BLOKOW}):\n${JSON.stringify(blok, null, 2)}\n\n` +
+      `WYMIANY W TYM BLOKU:\n${wymianyBloku}\n\n` +
+      `ZADANE FOLLOW-UPY W TYM BLOKU: ${s.followupyWBloku} (limit ${MAX_FOLLOWUPY})` }],
+    maxTokens: 500,
+  });
+}
 
 function json(res, status, obj) {
   const body = JSON.stringify(obj);
@@ -96,9 +152,17 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (url === '/api/start' && req.method === 'POST') {
+      if (oblanyDzis('m3')) {
+        return json(res, 403, { blad: 'Dziś już oblane. Zrób zadanie na jutro — retake najwcześniej jutro.' });
+      }
       const s = nowaSesja();
-      const pytanieAudio = await zadajPytanie(s, PYTANIE_V1);
-      return json(res, 200, { sesjaId: s.id, pytanieAudio });
+      s.plan = await generujPlan(s.minikurs);
+      zapisz(s, 'plan.json', s.plan);
+      const pytanieAudio = await zadajPytanie(s, s.plan.bloki[0].pytanie, 'glowne');
+      return json(res, 200, {
+        sesjaId: s.id, pytanieAudio, typ: 'glowne',
+        blok: { idx: 1, z: LICZBA_BLOKOW, temat: s.plan.bloki[0].temat },
+      });
     }
 
     if (url === '/api/odpowiedz' && req.method === 'POST') {
@@ -115,13 +179,31 @@ const server = http.createServer(async (req, res) => {
       const wymiana = s.wymiany[s.wymiany.length - 1];
       Object.assign(wymiana, { transkrypt: t.text, words: t.words, metryki: m });
       zapisz(s, 'wymiany.json', s.wymiany);
-      // v1: komentarz do jednej odpowiedzi zamiast pełnego egzaminu
-      const komentarz = await claude({
-        system: SEDZIA_V1,
-        messages: [{ role: 'user', content: `Pytanie: ${wymiana.pytanie}\n\nTranskrypt odpowiedzi: ${t.text}` }],
-        maxTokens: 500,
+
+      // Follow-up czy następny blok?
+      let decyzja = { next: true };
+      if (s.followupyWBloku < MAX_FOLLOWUPY) {
+        try { decyzja = await decyzjaFollowup(s); }
+        catch (e) { console.error('[followup]', e.message); /* awaria decyzji ≠ koniec egzaminu */ }
+      }
+      if (decyzja.followup) {
+        s.followupyWBloku += 1;
+        const pytanieAudio = await zadajPytanie(s, decyzja.followup, 'followup');
+        return json(res, 200, {
+          transkrypt: t.text, pytanieAudio, typ: 'followup',
+          blok: { idx: s.blokIdx + 1, z: LICZBA_BLOKOW, temat: s.plan.bloki[s.blokIdx].temat },
+        });
+      }
+      s.blokIdx += 1;
+      s.followupyWBloku = 0;
+      if (s.blokIdx >= LICZBA_BLOKOW) {
+        return json(res, 200, { transkrypt: t.text, koniec: true });
+      }
+      const pytanieAudio = await zadajPytanie(s, s.plan.bloki[s.blokIdx].pytanie, 'glowne');
+      return json(res, 200, {
+        transkrypt: t.text, pytanieAudio, typ: 'glowne',
+        blok: { idx: s.blokIdx + 1, z: LICZBA_BLOKOW, temat: s.plan.bloki[s.blokIdx].temat },
       });
-      return json(res, 200, { transkrypt: t.text, metryki: m, komentarz, koniec: true });
     }
 
     if (url.startsWith('/api/audio/') && req.method === 'GET') {
