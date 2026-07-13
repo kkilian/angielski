@@ -61,7 +61,10 @@ B1 — rodzajniki a/an/the/∅, past simple vs present perfect — jeśli NAGMIN
 
 **Błędy.** Wypisz najważniejsze błędy (typ "error") i ulepszenia na C1 (typ
 "upgrade") — cytat verbatim + poprawka. Ignoruj artefakty transkrypcji ASR
-(interpunkcja, zlepki, wielkość liter). Nie wymyślaj problemów — mniej,
+(interpunkcja, zlepki, wielkość liter). Jeśli zdający SAM skorygował błąd
+w tej samej wypowiedzi (np. „I didn't run any ads so far… I haven't run any
+ads so far"), to jest samokorekta — odnotuj ją co najwyżej jako plus przy
+płynności/poprawności, NIE jako błąd. Nie wymyślaj problemów — mniej,
 a trafnie.
 
 **Zadanie na jutro.** ZAWSZE wypełnij (kod pokaże je tylko przy oblaniu):

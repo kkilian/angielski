@@ -36,3 +36,7 @@ Zasady:
 - ZERO powtórek: nie zadawaj pytań z listy poprzednich podejść ani ich
   wariantów różniących się kosmetyką. Świeże kąty, świeże sytuacje.
 - Różnicuj bloki tematycznie (nie cztery pytania o kanale).
+- NIE zakładaj faktów z życia zdającego, których nie ma w briefie (np. że
+  prowadził kampanię reklamową, że coś już zrobił). Jeśli chcesz wejść na
+  taki teren — pytaj otwarcie („have you…? and if you did…") albo jawnie
+  hipotetycznie („imagine you had…").
