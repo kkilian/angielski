@@ -114,6 +114,11 @@
     &nbsp;Sędzia ocenia całość — raport za chwilę…</p>
   </section>
 
+  <!-- RETRY OCENY (nagrania są na dysku — sama ocena może się nie udać przejściowo) -->
+  <section id="s-retry" class="ukryte">
+    <button id="b-retry">Spróbuj ocenić ponownie</button>
+  </section>
+
   <!-- RAPORT -->
   <div id="s-raport" class="ukryte"></div>
 
@@ -216,7 +221,15 @@ function graj() {
   $('b-graj').disabled = true;
   $('b-powtorz').disabled = true;
   pytanieAudio.currentTime = 0;
-  pytanieAudio.play().catch(e => blad('Audio: ' + e.message));
+  pytanieAudio.onerror = () => awariaAudio('nie udało się załadować pytania');
+  pytanieAudio.play().catch(e => awariaAudio(e.message));
+}
+function awariaAudio(msg) {
+  // Nieudane odtworzenie nie zużywa limitu i nie może zablokować egzaminu.
+  odtworzenia = Math.max(0, odtworzenia - 1);
+  $('b-graj').disabled = false;
+  $('b-powtorz').disabled = odtworzenia < 1;
+  blad('Audio: ' + msg + ' — spróbuj odtworzyć jeszcze raz.');
 }
 $('b-graj').onclick = graj;
 $('b-powtorz').onclick = () => { if (odtworzenia < 2) graj(); };
@@ -275,8 +288,13 @@ async function koniecEgzaminu() {
     if (!r.ok) throw new Error(j.blad || r.status);
     schowaj('s-koniec');
     renderRaport(j);
-  } catch (e) { blad('Ocena nie doszła do skutku: ' + e.message + ' — nagrania są zapisane, podejście nieważne.'); }
+  } catch (e) {
+    schowaj('s-koniec');
+    blad('Ocena nie doszła do skutku: ' + e.message + ' — nagrania są zapisane.');
+    pokaz('s-retry');
+  }
 }
+$('b-retry') && ($('b-retry').onclick = () => { czysc(); schowaj('s-retry'); koniecEgzaminu(); });
 
 // ── Raport ──
 const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
@@ -319,7 +337,7 @@ function renderRaport(r) {
   h += `<section><h2>Oś B — jakość mówienia</h2><table class="rap">` +
     KRYT.map(([k, n]) => {
       const x = o.osB?.[k] || {};
-      return `<tr><td style="white-space:nowrap"><b>${n}</b> ${x.ocena ?? '?'} / 5</td>
+      return `<tr><td style="white-space:nowrap"><b>${n}</b> ${esc(x.ocena ?? '?')} / 5</td>
         <td>${esc(x.komentarz || '')}${(x.cytaty || []).map(c => `<br><span class="cytat">„${esc(c)}"</span>`).join('')}</td></tr>`;
     }).join('') + `</table></section>`;
 

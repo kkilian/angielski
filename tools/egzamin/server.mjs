@@ -21,8 +21,14 @@ const TYPES = {
 // ── Sesje ────────────────────────────────────────────────────────────────
 const sesje = new Map();
 
+// Dzień LOKALNY (nie UTC) — inaczej blokada retake trzyma jeszcze ~2h po północy.
+function dzisLokalnie() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 function nowaSesja(minikurs = 'm3') {
-  const dzis = new Date().toISOString().slice(0, 10);
+  const dzis = dzisLokalnie();
   const baza = path.join(EGZAMINY, minikurs);
   fs.mkdirSync(baza, { recursive: true });
   const n = fs.readdirSync(baza).filter(d => d.startsWith(dzis)).length + 1;
@@ -91,7 +97,7 @@ function starePytania(minikurs) {
 function oblanyDzis(minikurs) {
   const baza = path.join(EGZAMINY, minikurs);
   if (!fs.existsSync(baza)) return false;
-  const dzis = new Date().toISOString().slice(0, 10);
+  const dzis = dzisLokalnie();
   return fs.readdirSync(baza).some(d => {
     if (!d.startsWith(dzis)) return false;
     try {
@@ -142,11 +148,24 @@ function bladem(res, e) {
   json(res, 500, { blad: String(e?.message || e) });
 }
 
-function statyczny(res, fp) {
+// Byte-range (206) jak w tools/serve.mjs — bez tego Safari nie odtwarza audio.
+function statyczny(req, res, fp) {
   fs.stat(fp, (err, st) => {
     if (err || !st.isFile()) { res.writeHead(404); return res.end('not found'); }
     const type = TYPES[path.extname(fp).toLowerCase()] || 'application/octet-stream';
-    res.writeHead(200, { 'Content-Type': type, 'Content-Length': st.size });
+    const range = req.headers.range;
+    if (range) {
+      const m = /bytes=(\d*)-(\d*)/.exec(range);
+      let start = m && m[1] ? parseInt(m[1], 10) : 0;
+      let end = m && m[2] ? parseInt(m[2], 10) : st.size - 1;
+      if (start > end || end >= st.size) end = st.size - 1;
+      res.writeHead(206, {
+        'Content-Type': type, 'Accept-Ranges': 'bytes',
+        'Content-Range': `bytes ${start}-${end}/${st.size}`, 'Content-Length': end - start + 1,
+      });
+      return fs.createReadStream(fp, { start, end }).pipe(res);
+    }
+    res.writeHead(200, { 'Content-Type': type, 'Accept-Ranges': 'bytes', 'Content-Length': st.size });
     fs.createReadStream(fp).pipe(res);
   });
 }
@@ -247,13 +266,13 @@ const server = http.createServer(async (req, res) => {
       const [, , , sesjaId, plik] = url.split('/');
       const s = sesje.get(sesjaId);
       if (!s || !/^[\w.-]+\.(mp3|webm|mp4)$/.test(plik || '')) { res.writeHead(404); return res.end('not found'); }
-      return statyczny(res, path.join(s.dir, plik));
+      return statyczny(req, res, path.join(s.dir, plik));
     }
     // Statyczne: tylko z tools/egzamin/
     let p = url === '/' ? '/egzamin.html' : url;
     const fp = path.normalize(path.join(TU, p));
     if (!fp.startsWith(TU)) { res.writeHead(403); return res.end('forbidden'); }
-    return statyczny(res, fp);
+    return statyczny(req, res, fp);
   } catch (e) { return bladem(res, e); }
 });
 
