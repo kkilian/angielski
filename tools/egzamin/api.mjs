@@ -97,6 +97,7 @@ export function claude({ system, messages, maxTokens = 4000 }) {
     });
     if (!resp.ok) throw new Error(`Claude ${resp.status}: ${(await resp.text()).slice(0, 200)}`);
     const j = await resp.json();
+    if (j.stop_reason === 'max_tokens') throw new Error('Claude: odpowiedź ucięta — podnieś maxTokens');
     return (j.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
   }, 'Claude');
 }
