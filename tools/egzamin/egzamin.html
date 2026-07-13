@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egzamin głosowy — angielski</title>
+<style>
+  :root { --tusz:#1a1a1a; --szary:#6b6b6b; --tlo:#fafaf7; --linia:#e2e0da; --rec:#c0392b; --ok:#1e7d45; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font: 17px/1.55 -apple-system, "Segoe UI", sans-serif; color: var(--tusz);
+         background: var(--tlo); display: flex; justify-content: center; min-height: 100vh; }
+  main { width: min(680px, 92vw); padding: 48px 0 80px; }
+  h1 { font-size: 26px; letter-spacing: -0.02em; margin-bottom: 4px; }
+  .pod { color: var(--szary); margin-bottom: 32px; }
+  section { background: #fff; border: 1px solid var(--linia); border-radius: 10px;
+            padding: 28px; margin-bottom: 16px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em;
+       color: var(--szary); margin-bottom: 14px; }
+  button { font: inherit; font-weight: 600; padding: 12px 22px; border-radius: 8px;
+           border: 1.5px solid var(--tusz); background: var(--tusz); color: #fff; cursor: pointer; }
+  button.drugi { background: #fff; color: var(--tusz); }
+  button:disabled { opacity: 0.35; cursor: default; }
+  button.rec { background: var(--rec); border-color: var(--rec); }
+  .rzad { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .timer { font-variant-numeric: tabular-nums; font-size: 32px; font-weight: 700; }
+  .hint { color: var(--szary); font-size: 14px; }
+  .kropka { display: inline-block; width: 12px; height: 12px; border-radius: 50%;
+            background: var(--rec); animation: puls 1.2s infinite; vertical-align: baseline; }
+  @keyframes puls { 50% { opacity: 0.25; } }
+  .ukryte { display: none; }
+  .transkrypt { background: var(--tlo); border-radius: 8px; padding: 16px;
+                font-size: 16px; margin-top: 10px; white-space: pre-wrap; }
+  .metryki { color: var(--szary); font-size: 14px; margin-top: 10px; }
+  .blad { color: var(--rec); font-weight: 600; }
+  ul.poprzeczka { margin: 0 0 6px 20px; }
+  audio { width: 100%; margin-top: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Egzamin głosowy · M3</h1>
+  <p class="pod">Bramka M3 → M4. Pytania tylko ze słuchu. To jest egzamin — nie ćwiczenie.</p>
+
+  <!-- INTRO: poprzeczka + test mikrofonu -->
+  <section id="s-intro">
+    <h2>Poprzeczka (jawna)</h2>
+    <ul class="poprzeczka">
+      <li><b>Materiał M3:</b> nie uciekasz od hipotez — 2nd/3rd/mixed conditional, wish/if only, modal perfects, użyte spontanicznie i poprawnie.</li>
+      <li><b>Mowa:</b> solidne B2 w każdym z kryteriów: płynność, zakres, poprawność, spójność — bez skostniałych błędów (rodzajniki, past vs present perfect).</li>
+    </ul>
+    <p class="hint">4 bloki tematyczne, ~20 minut, follow-upy z Twoich odpowiedzi. Oblanie = zadanie na jutro, retake najwcześniej jutro.</p>
+    <h2 style="margin-top:22px">Test mikrofonu</h2>
+    <div class="rzad">
+      <button id="b-mictest">🎙 Nagraj 3 sekundy</button>
+      <span id="mictest-info" class="hint"></span>
+    </div>
+    <audio id="mictest-audio" controls class="ukryte"></audio>
+    <div id="mictest-ok" class="rzad ukryte" style="margin-top:12px">
+      <button id="b-gotowy" class="drugi">✓ Słychać mnie — jestem gotowy</button>
+    </div>
+  </section>
+
+  <!-- START -->
+  <section id="s-start" class="ukryte">
+    <div class="rzad">
+      <button id="b-start">START EGZAMINU</button>
+      <span class="hint">Od kliknięcia pytania generują się na żywo. Nie da się ich znać wcześniej.</span>
+    </div>
+  </section>
+
+  <!-- PYTANIE / NAGRYWANIE -->
+  <section id="s-pytanie" class="ukryte">
+    <h2 id="naglowek-pytania">Pytanie</h2>
+    <div class="rzad">
+      <button id="b-graj">▶ Odtwórz pytanie</button>
+      <button id="b-powtorz" class="drugi" disabled>🔁 Powtórz (1×)</button>
+      <span id="info-pytania" class="hint"></span>
+    </div>
+    <div class="rzad" style="margin-top:18px">
+      <button id="b-nagraj" disabled>🎙 Odpowiadam</button>
+      <button id="b-stop" class="rec ukryte">■ Koniec odpowiedzi</button>
+      <span id="rec-znak" class="ukryte"><span class="kropka"></span></span>
+      <span id="timer" class="timer ukryte">0:00</span>
+    </div>
+    <p class="hint" style="margin-top:8px">Sugerowana długość odpowiedzi: 1–2 minuty.</p>
+  </section>
+
+  <!-- PRZETWARZANIE -->
+  <section id="s-przetwarzam" class="ukryte">
+    <p><span class="kropka" style="background:var(--szary)"></span> &nbsp;Przetwarzam odpowiedź…</p>
+  </section>
+
+  <!-- WYNIK v1 (szkielet) -->
+  <section id="s-wynik" class="ukryte">
+    <h2>Transkrypt</h2>
+    <div id="w-transkrypt" class="transkrypt"></div>
+    <div id="w-metryki" class="metryki"></div>
+    <h2 style="margin-top:22px">Komentarz egzaminatora (szkielet v1)</h2>
+    <div id="w-komentarz" class="transkrypt"></div>
+  </section>
+
+  <p id="komunikat-bledu" class="blad ukryte"></p>
+</main>
+
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const pokaz = id => $(id).classList.remove('ukryte');
+const schowaj = id => $(id).classList.add('ukryte');
+
+const MIME = MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus'
+           : MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4';
+
+let sesjaId = null;
+let pytanieAudio = new Audio();
+let odtworzenia = 0;
+let rec = null, chunki = [], strumien = null;
+let timerInt = null, timerStart = 0;
+
+function blad(msg) { $('komunikat-bledu').textContent = '⚠ ' + msg; pokaz('komunikat-bledu'); }
+function czysc() { schowaj('komunikat-bledu'); }
+
+async function mikrofon() {
+  if (strumien) return strumien;
+  strumien = await navigator.mediaDevices.getUserMedia({ audio: true });
+  return strumien;
+}
+
+// ── Test mikrofonu ──
+$('b-mictest').onclick = async () => {
+  czysc();
+  try {
+    const st = await mikrofon();
+    const r = new MediaRecorder(st, { mimeType: MIME });
+    const cz = [];
+    r.ondataavailable = e => cz.push(e.data);
+    r.onstop = () => {
+      const blob = new Blob(cz, { type: MIME });
+      $('mictest-audio').src = URL.createObjectURL(blob);
+      pokaz('mictest-audio'); pokaz('mictest-ok');
+      $('mictest-info').textContent = 'Odsłuchaj — słychać Cię wyraźnie?';
+    };
+    r.start();
+    $('mictest-info').textContent = 'Nagrywam… mów coś.';
+    setTimeout(() => r.stop(), 3000);
+  } catch (e) { blad('Brak dostępu do mikrofonu: ' + e.message); }
+};
+$('b-gotowy').onclick = () => { schowaj('s-intro'); pokaz('s-start'); };
+
+// ── Start egzaminu ──
+$('b-start').onclick = async () => {
+  czysc();
+  $('b-start').disabled = true;
+  $('b-start').textContent = 'Generuję pytania…';
+  try {
+    const r = await fetch('/api/start', { method: 'POST' });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.blad || r.status);
+    sesjaId = j.sesjaId;
+    schowaj('s-start');
+    ustawPytanie(j.pytanieAudio);
+  } catch (e) {
+    blad('Nie udało się wystartować: ' + e.message);
+    $('b-start').disabled = false; $('b-start').textContent = 'START EGZAMINU';
+  }
+};
+
+function ustawPytanie(srcAudio) {
+  pytanieAudio = new Audio(srcAudio);
+  odtworzenia = 0;
+  $('b-graj').disabled = false;
+  $('b-powtorz').disabled = true;
+  $('b-nagraj').disabled = true;
+  $('info-pytania').textContent = '';
+  pokaz('s-pytanie');
+  pytanieAudio.onended = () => {
+    $('b-nagraj').disabled = false;
+    $('b-powtorz').disabled = odtworzenia >= 2;
+  };
+}
+
+function graj() {
+  odtworzenia += 1;
+  $('b-graj').disabled = true;
+  $('b-powtorz').disabled = true;
+  pytanieAudio.currentTime = 0;
+  pytanieAudio.play().catch(e => blad('Audio: ' + e.message));
+}
+$('b-graj').onclick = graj;
+$('b-powtorz').onclick = () => { if (odtworzenia < 2) graj(); };
+
+// ── Nagrywanie odpowiedzi ──
+$('b-nagraj').onclick = async () => {
+  czysc();
+  const st = await mikrofon();
+  chunki = [];
+  rec = new MediaRecorder(st, { mimeType: MIME });
+  rec.ondataavailable = e => chunki.push(e.data);
+  rec.onstop = wyslij;
+  rec.start();
+  $('b-nagraj').classList.add('ukryte');
+  $('b-graj').disabled = true; $('b-powtorz').disabled = true;
+  pokaz('b-stop'); pokaz('rec-znak'); pokaz('timer');
+  timerStart = Date.now();
+  timerInt = setInterval(() => {
+    const s = Math.floor((Date.now() - timerStart) / 1000);
+    $('timer').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+  }, 250);
+};
+
+$('b-stop').onclick = () => { if (rec && rec.state === 'recording') rec.stop(); };
+
+async function wyslij() {
+  clearInterval(timerInt);
+  schowaj('s-pytanie'); schowaj('b-stop'); schowaj('rec-znak'); schowaj('timer');
+  $('b-nagraj').classList.remove('ukryte');
+  pokaz('s-przetwarzam');
+  try {
+    const blob = new Blob(chunki, { type: MIME });
+    const r = await fetch('/api/odpowiedz', {
+      method: 'POST',
+      headers: { 'X-Sesja': sesjaId, 'Content-Type': MIME },
+      body: blob,
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.blad || r.status);
+    schowaj('s-przetwarzam');
+    if (j.koniec) return pokazWynikV1(j);
+    ustawPytanie(j.nastepnePytanieAudio);   // przyszłość (Task 5)
+  } catch (e) {
+    schowaj('s-przetwarzam');
+    pokaz('s-pytanie');
+    blad('Nie udało się wysłać odpowiedzi: ' + e.message);
+  }
+}
+
+function pokazWynikV1(j) {
+  $('w-transkrypt').textContent = j.transkrypt;
+  const m = j.metryki || {};
+  $('w-metryki').textContent =
+    `${m.liczbaSlow ?? '?'} słów · tempo netto ${m.tempoNetto ?? '?'} wpm · pauzy ≥2 s: ${(m.pauzy || []).length}`;
+  $('w-komentarz').textContent = j.komentarz || '';
+  pokaz('s-wynik');
+}
+</script>
+</body>
+</html>
