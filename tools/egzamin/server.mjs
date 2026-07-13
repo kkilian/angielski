@@ -3,6 +3,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { klucze, ttsMp3, transkrybuj, claudeJson } from './api.mjs';
 import { metryki } from './metryki.mjs';
@@ -261,6 +262,10 @@ const server = http.createServer(async (req, res) => {
       const w = werdykt(ocena, PROGI[s.minikurs]);
       const wynik = { ...w, kiedy: new Date().toISOString(), czasSek: Math.round((Date.now() - s.start) / 1000) };
       zapisz(s, 'werdykt.json', wynik);
+
+      // panel egzaminu w podglad.html czyta werdykty przy buildzie — odśwież go w tle
+      spawn('node', [path.join(REPO, 'tools', 'build-podglad.js')], { stdio: 'ignore' })
+        .on('error', e => console.error('[podglad rebuild]', e.message));
 
       const wymianyLekkie = s.wymiany.map(({ words, ...reszta }) => reszta);
       const raport = { werdykt: wynik, ocena, wymiany: wymianyLekkie, sesjaId: s.id, minikurs: s.minikurs, progi: PROGI[s.minikurs] };
