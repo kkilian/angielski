@@ -34,6 +34,21 @@
   .blad { color: var(--rec); font-weight: 600; }
   ul.poprzeczka { margin: 0 0 6px 20px; }
   audio { width: 100%; margin-top: 10px; }
+  .banner { border-radius: 10px; padding: 22px 28px; margin-bottom: 16px; color: #fff; }
+  .banner.zdane { background: var(--ok); }
+  .banner.oblane { background: var(--rec); }
+  .banner h2 { color: rgba(255,255,255,0.85); }
+  .banner ul { margin: 8px 0 0 20px; }
+  table.rap { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 6px; }
+  table.rap th, table.rap td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--linia); vertical-align: top; }
+  table.rap th { color: var(--szary); font-weight: 600; font-size: 13px; }
+  .cytat { font-style: italic; color: var(--szary); }
+  mark { background: #ffe2a8; border-radius: 3px; padding: 0 2px; }
+  .badge { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+  .badge.error { background: #fdecea; color: var(--rec); }
+  .badge.upgrade { background: #eaf3ff; color: #1a5fa8; }
+  .q { font-weight: 600; margin-top: 16px; }
+  .q .hint { font-weight: 400; }
 </style>
 </head>
 <body>
@@ -98,6 +113,9 @@
     <p><b>Egzamin zakończony.</b> <span class="kropka" style="background:var(--szary)"></span>
     &nbsp;Sędzia ocenia całość — raport za chwilę…</p>
   </section>
+
+  <!-- RAPORT -->
+  <div id="s-raport" class="ukryte"></div>
 
   <p id="komunikat-bledu" class="blad ukryte"></p>
 </main>
@@ -248,10 +266,93 @@ async function wyslij() {
   }
 }
 
-function koniecEgzaminu() {
+async function koniecEgzaminu() {
   clearInterval(zegarInt);
   pokaz('s-koniec');
-  // Task 6: tu wołamy /api/zakoncz i renderujemy raport.
+  try {
+    const r = await fetch('/api/zakoncz', { method: 'POST', headers: { 'X-Sesja': sesjaId } });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.blad || r.status);
+    schowaj('s-koniec');
+    renderRaport(j);
+  } catch (e) { blad('Ocena nie doszła do skutku: ' + e.message + ' — nagrania są zapisane, podejście nieważne.'); }
+}
+
+// ── Raport ──
+const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+
+function zaznaczBledy(tekst, bledy) {
+  let html = esc(tekst);
+  for (const b of bledy) {
+    if (!b.cytat) continue;
+    const cel = esc(b.cytat);
+    if (html.includes(cel)) {
+      html = html.replace(cel, `<mark title="${esc(b.poprawka || '')}">${cel}</mark>`);
+    }
+  }
+  return html;
+}
+
+function renderRaport(r) {
+  const w = r.werdykt, o = r.ocena;
+  const el = $('s-raport');
+  const czas = mmss(w.czasSek || 0);
+  let h = '';
+
+  h += `<div class="banner ${w.zdane ? 'zdane' : 'oblane'}">
+    <h2>Werdykt</h2>
+    <div style="font-size:30px;font-weight:800">${w.zdane ? 'ZDANE ✓' : 'OBLANE ✗'}</div>
+    <div style="margin-top:4px">Oś A: ${w.osA.wykorzystane}/${w.osA.wszystkie} okazji (${w.osA.procent}%) ·
+      Oś B: płynność ${w.osB.plynnosc}, zakres ${w.osB.zakres}, poprawność ${w.osB.poprawnosc}, spójność ${w.osB.spojnosc} · czas ${czas}</div>
+    ${w.powody.length ? '<ul>' + w.powody.map(p => `<li>${esc(p)}</li>`).join('') + '</ul>' : ''}
+  </div>`;
+
+  h += `<section><h2>Oś A — materiał minikursu (okazje → użycia)</h2>
+    <table class="rap"><tr><th>Blok</th><th>Rodzina</th><th>Użyta</th><th>OK</th><th>Cytat / komentarz</th></tr>` +
+    (o.osA?.okazje || []).map(x => `<tr>
+      <td>${esc(x.blok)}</td><td>${esc(x.rodzina)}</td>
+      <td>${x.wykorzystana ? '✓' : '✗'}</td><td>${x.wykorzystana ? (x.poprawne ? '✓' : '✗') : '—'}</td>
+      <td>${x.cytat ? `<span class="cytat">„${esc(x.cytat)}"</span><br>` : ''}${esc(x.komentarz || '')}</td>
+    </tr>`).join('') + `</table></section>`;
+
+  const KRYT = [['plynnosc', 'Płynność'], ['zakres', 'Zakres'], ['poprawnosc', 'Poprawność'], ['spojnosc', 'Spójność']];
+  h += `<section><h2>Oś B — jakość mówienia</h2><table class="rap">` +
+    KRYT.map(([k, n]) => {
+      const x = o.osB?.[k] || {};
+      return `<tr><td style="white-space:nowrap"><b>${n}</b> ${x.ocena ?? '?'} / 5</td>
+        <td>${esc(x.komentarz || '')}${(x.cytaty || []).map(c => `<br><span class="cytat">„${esc(c)}"</span>`).join('')}</td></tr>`;
+    }).join('') + `</table></section>`;
+
+  if ((o.bledy || []).length) {
+    h += `<section><h2>Błędy i ulepszenia</h2><table class="rap">` +
+      o.bledy.map(b => `<tr>
+        <td><span class="badge ${b.typ === 'upgrade' ? 'upgrade' : 'error'}">${b.typ === 'upgrade' ? 'C1' : 'BŁĄD'}</span></td>
+        <td><span class="cytat">„${esc(b.cytat)}"</span> → <b>${esc(b.poprawka)}</b><br>${esc(b.wyjasnienie || '')}</td>
+      </tr>`).join('') + `</table></section>`;
+  }
+
+  h += `<section><h2>Przebieg — transkrypt i nagrania</h2>` +
+    (r.wymiany || []).map(x => `
+      <p class="q">Blok ${x.blok} · ${x.typ === 'followup' ? 'follow-up' : 'pytanie'}: ${esc(x.pytanie)}
+        <span class="hint">(${x.metryki?.liczbaSlow ?? 0} słów · ${x.metryki?.tempoNetto ?? 0} wpm · pauzy ≥2s: ${x.metryki?.pauzy?.length ?? 0})</span></p>
+      <div class="transkrypt">${zaznaczBledy(x.transkrypt || '', o.bledy || [])}</div>
+      ${x.plikOdpowiedzi ? `<audio controls preload="none" src="/api/audio/${r.sesjaId}/${x.plikOdpowiedzi}"></audio>` : ''}
+    `).join('') + `</section>`;
+
+  if (!w.zdane && o.zadanieNaJutro) {
+    const z = o.zadanieNaJutro;
+    h += `<section><h2>Zadanie na jutro — ${esc(z.struktura)}</h2>
+      <p>${esc(z.opis)}</p>
+      <table class="rap"><tr><th>PL</th><th>EN (wzorzec — zakryj i mów)</th></tr>` +
+      (z.dryl || []).map(d => `<tr><td>${esc(d.pl)}</td><td>${esc(d.en)}</td></tr>`).join('') +
+      `</table>
+      <p class="q" style="margin-top:14px">Scenka — odpowiedz jutro na głos:</p>
+      <ul class="poprzeczka">${(z.scenka || []).map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+      <p class="hint">Retake najwcześniej jutro — serwer pilnuje.</p></section>`;
+  }
+
+  el.innerHTML = h;
+  pokaz('s-raport');
 }
 </script>
 </body>

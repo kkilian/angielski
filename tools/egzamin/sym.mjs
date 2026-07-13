@@ -46,16 +46,35 @@ while (!j.koniec) {
   console.log(`    transkrypt: "${(j.transkrypt || '').slice(0, 60)}…"`);
 }
 console.log(`\n— KONIEC po ${n} odpowiedziach (follow-upów: ${followupy}) —`);
+console.log('Sędzia ocenia…');
+const raport = await post('/api/zakoncz', { headers: { 'X-Sesja': sesjaId } });
+const w = raport.werdykt;
+console.log(`WERDYKT: ${w.zdane ? 'ZDANE' : 'OBLANE'} · oś A ${w.osA.procent}% · oś B ${JSON.stringify(w.osB)}`);
+for (const p of w.powody) console.log('  powód:', p);
 
 // Asserty na artefaktach
 const dir = path.join(REPO, 'egzaminy', 'm3', sesjaId);
-const musi = ['plan.json', 'wymiany.json', 'pytanie-1.mp3', 'odpowiedz-1.mp3'];
+const musi = ['plan.json', 'wymiany.json', 'pytanie-1.mp3', 'odpowiedz-1.mp3',
+              'ocena.json', 'werdykt.json', 'raport.json'];
 for (const f of musi) {
   if (!fs.existsSync(path.join(dir, f))) throw new Error(`Brak artefaktu: ${f}`);
 }
 const wymiany = JSON.parse(fs.readFileSync(path.join(dir, 'wymiany.json'), 'utf8'));
 if (wymiany.length !== n) throw new Error(`wymiany.json ma ${wymiany.length} wpisów, odpowiedzi było ${n}`);
-if (!wymiany.every(w => w.transkrypt && w.metryki)) throw new Error('Wymiana bez transkryptu/metryk');
+if (!wymiany.every(x => x.transkrypt && x.metryki)) throw new Error('Wymiana bez transkryptu/metryk');
 if (n < 4) throw new Error('Mniej niż 4 wypowiedzi');
 if (followupy < 1) throw new Error('Zero follow-upów — ucieczka w 1st cond powinna wymusić follow-up');
-console.log('SYM OK:', { odpowiedzi: n, followupy, sesjaId });
+if (typeof w.zdane !== 'boolean' || !Array.isArray(w.powody)) throw new Error('Werdykt bez zdane/powody');
+const o = raport.ocena;
+if (!(o.osA?.okazje?.length >= 4)) throw new Error('Sędzia: za mało okazji w osA');
+for (const k of ['plynnosc', 'zakres', 'poprawnosc', 'spojnosc']) {
+  if (!(o.osB?.[k]?.ocena >= 1 && o.osB[k].ocena <= 5)) throw new Error(`Sędzia: brak oceny ${k}`);
+}
+if (!(o.zadanieNaJutro?.dryl?.length === 10)) throw new Error(`Zadanie na jutro: dryl ma ${o.zadanieNaJutro?.dryl?.length ?? 0} par zamiast 10`);
+if (!(o.zadanieNaJutro?.scenka?.length === 3)) throw new Error('Zadanie na jutro: scenka nie ma 3 pytań');
+
+// Symulacja nie może blokować prawdziwego retake'u — przenieś podejście poza m3/
+const symDir = path.join(REPO, 'egzaminy', 'sym');
+fs.mkdirSync(symDir, { recursive: true });
+fs.renameSync(dir, path.join(symDir, sesjaId));
+console.log('SYM OK:', { odpowiedzi: n, followupy, werdykt: w.zdane ? 'ZDANE' : 'OBLANE', przeniesione: `egzaminy/sym/${sesjaId}` });

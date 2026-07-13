@@ -6,6 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { klucze, ttsMp3, transkrybuj, claudeJson } from './api.mjs';
 import { metryki } from './metryki.mjs';
+import { werdykt } from './werdykt.mjs';
 
 const TU = path.dirname(fileURLToPath(import.meta.url));           // tools/egzamin/
 const REPO = path.dirname(path.dirname(TU));                        // repo root
@@ -14,6 +15,7 @@ const PORT = Number(process.env.PORT) || 8124;
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css',
   '.json': 'application/json', '.mp3': 'audio/mpeg', '.md': 'text/plain; charset=utf-8',
+  '.webm': 'audio/webm', '.mp4': 'audio/mp4',
 };
 
 // ── Sesje ────────────────────────────────────────────────────────────────
@@ -66,6 +68,12 @@ const PROMPT = n => fs.readFileSync(path.join(TU, 'prompty', `${n}.md`), 'utf8')
 const BRIEF = fs.readFileSync(path.join(TU, 'minikurs-m3.md'), 'utf8');
 const LICZBA_BLOKOW = 4;
 const MAX_FOLLOWUPY = 2;
+// Progi M3 (specka 2026-07-13): oś A ≥60% okazji + każda rodzina ≥1 poprawnie; oś B każde ≥3/5.
+const PROGI_M3 = {
+  rodziny: ['2nd-cond', '3rd-cond', 'wish-if-only', 'modal-perfect'],
+  progProcent: 60,
+  progOsB: 3,
+};
 
 function starePytania(minikurs) {
   const baza = path.join(EGZAMINY, minikurs);
@@ -174,6 +182,7 @@ const server = http.createServer(async (req, res) => {
       const ext = mime.includes('mp4') ? 'mp4' : mime.includes('mpeg') ? 'mp3' : 'webm';
       const nr = s.nrPytania;
       zapisz(s, `odpowiedz-${nr}.${ext}`, buf);
+      s.wymiany[s.wymiany.length - 1].plikOdpowiedzi = `odpowiedz-${nr}.${ext}`;
       const t = await transkrybuj(buf, mime);
       const m = metryki(t.words, t.durationSek);
       const wymiana = s.wymiany[s.wymiany.length - 1];
@@ -206,10 +215,38 @@ const server = http.createServer(async (req, res) => {
       });
     }
 
+    if (url === '/api/zakoncz' && req.method === 'POST') {
+      const s = sesje.get(req.headers['x-sesja']);
+      if (!s) return json(res, 400, { blad: 'Nieznana sesja' });
+      if (s.blokIdx < LICZBA_BLOKOW) return json(res, 400, { blad: 'Egzamin nieukończony' });
+
+      const zapis = s.wymiany.map(w =>
+        `[blok ${w.blok} · ${w.typ}]\nPYTANIE: ${w.pytanie}\nODPOWIEDŹ (transkrypt): ${w.transkrypt || '(brak)'}\n` +
+        `METRYKI: ${w.metryki?.liczbaSlow ?? 0} słów, tempo netto ${w.metryki?.tempoNetto ?? 0} wpm, pauzy ≥2s: ${w.metryki?.pauzy?.length ?? 0}`
+      ).join('\n\n');
+      const ocena = await claudeJson({
+        system: PROMPT('sedzia'),
+        messages: [{ role: 'user', content:
+          `BRIEF MINIKURSU:\n${BRIEF}\n\nPLAN EGZAMINU (bloki + okazje):\n${JSON.stringify(s.plan, null, 2)}\n\n` +
+          `PEŁNY ZAPIS WYMIAN:\n${zapis}` }],
+        maxTokens: 16000,
+      });
+      zapisz(s, 'ocena.json', ocena);
+
+      const w = werdykt(ocena, PROGI_M3);
+      const wynik = { ...w, kiedy: new Date().toISOString(), czasSek: Math.round((Date.now() - s.start) / 1000) };
+      zapisz(s, 'werdykt.json', wynik);
+
+      const wymianyLekkie = s.wymiany.map(({ words, ...reszta }) => reszta);
+      const raport = { werdykt: wynik, ocena, wymiany: wymianyLekkie, sesjaId: s.id, progi: PROGI_M3 };
+      zapisz(s, 'raport.json', raport);
+      return json(res, 200, raport);
+    }
+
     if (url.startsWith('/api/audio/') && req.method === 'GET') {
       const [, , , sesjaId, plik] = url.split('/');
       const s = sesje.get(sesjaId);
-      if (!s || !/^[\w.-]+\.mp3$/.test(plik || '')) { res.writeHead(404); return res.end('not found'); }
+      if (!s || !/^[\w.-]+\.(mp3|webm|mp4)$/.test(plik || '')) { res.writeHead(404); return res.end('not found'); }
       return statyczny(res, path.join(s.dir, plik));
     }
     // Statyczne: tylko z tools/egzamin/
