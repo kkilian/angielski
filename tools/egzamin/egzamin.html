@@ -153,7 +153,8 @@ function blad(msg) { $('komunikat-bledu').textContent = '⚠ ' + msg; pokaz('kom
 function czysc() { schowaj('komunikat-bledu'); }
 
 async function mikrofon() {
-  if (strumien) return strumien;
+  // Strumień z testu mikrofonu mógł umrzeć (inna apka przejęła wejście itp.) — wtedy bierzemy świeży.
+  if (strumien && strumien.getTracks().some(t => t.readyState === 'live')) return strumien;
   strumien = await navigator.mediaDevices.getUserMedia({ audio: true });
   return strumien;
 }
@@ -237,20 +238,25 @@ $('b-powtorz').onclick = () => { if (odtworzenia < 2) graj(); };
 // ── Nagrywanie odpowiedzi ──
 $('b-nagraj').onclick = async () => {
   czysc();
-  const st = await mikrofon();
-  chunki = [];
-  rec = new MediaRecorder(st, { mimeType: MIME });
-  rec.ondataavailable = e => chunki.push(e.data);
-  rec.onstop = wyslij;
-  rec.start();
-  $('b-nagraj').classList.add('ukryte');
-  $('b-graj').disabled = true; $('b-powtorz').disabled = true;
-  pokaz('b-stop'); pokaz('rec-znak'); pokaz('timer');
-  timerStart = Date.now();
-  timerInt = setInterval(() => {
-    const s = Math.floor((Date.now() - timerStart) / 1000);
-    $('timer').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
-  }, 250);
+  try {
+    const st = await mikrofon();
+    chunki = [];
+    rec = new MediaRecorder(st, { mimeType: MIME });
+    rec.ondataavailable = e => chunki.push(e.data);
+    rec.onstop = wyslij;
+    rec.onerror = e => blad('Nagrywanie: ' + (e.error?.message || 'błąd MediaRecorder'));
+    rec.start();
+    $('b-nagraj').classList.add('ukryte');
+    $('b-graj').disabled = true; $('b-powtorz').disabled = true;
+    pokaz('b-stop'); pokaz('rec-znak'); pokaz('timer');
+    timerStart = Date.now();
+    timerInt = setInterval(() => {
+      const s = Math.floor((Date.now() - timerStart) / 1000);
+      $('timer').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }, 250);
+  } catch (e) {
+    blad(`Nagrywanie nie wystartowało [${e.name || '?'}]: ${e.message} — sprawdź, czy inna aplikacja nie trzyma mikrofonu, i kliknij „Odpowiadam" jeszcze raz.`);
+  }
 };
 
 $('b-stop').onclick = () => { if (rec && rec.state === 'recording') rec.stop(); };
