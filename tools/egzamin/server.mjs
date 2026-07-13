@@ -71,14 +71,16 @@ function czytajBody(req, limitMB = 50) {
 
 // ── Prompty i brief (pliki obok — kalibracja bez ruszania kodu) ─────────
 const PROMPT = n => fs.readFileSync(path.join(TU, 'prompty', `${n}.md`), 'utf8');
-const BRIEF = fs.readFileSync(path.join(TU, 'minikurs-m3.md'), 'utf8');
+const BRIEFY = {};
+const brief = mk => (BRIEFY[mk] ??= fs.readFileSync(path.join(TU, `minikurs-${mk}.md`), 'utf8'));
 const LICZBA_BLOKOW = 4;
-const MAX_FOLLOWUPY = 2;
-// Progi M3 (specka 2026-07-13): oś A ≥60% okazji + każda rodzina ≥1 poprawnie; oś B każde ≥3/5.
-const PROGI_M3 = {
-  rodziny: ['2nd-cond', '3rd-cond', 'wish-if-only', 'modal-perfect'],
-  progProcent: 60,
-  progOsB: 3,
+const MAX_FOLLOWUPY = 3;   // 3. follow-up tylko gdy naprawdę potrzebny (prompt followup.md)
+// Progi (specka 2026-07-13): oś A ≥60% okazji + każda rodzina ≥1 poprawnie; oś B każde ≥3/5.
+// M3 = bramka M3→M4; M1/M2 = testy kontrolne fundamentu (ta sama mechanika).
+const PROGI = {
+  m1: { rodziny: ['had-i-known', 'not-only', 'what-cleft', 'turns-out'], progProcent: 60, progOsB: 3 },
+  m2: { rodziny: ['cleft', 'only-inwersja', 'pytanie-zalezne', 'hedging'], progProcent: 60, progOsB: 3 },
+  m3: { rodziny: ['2nd-cond', '3rd-cond', 'wish-if-only', 'modal-perfect'], progProcent: 60, progOsB: 3 },
 };
 
 function starePytania(minikurs) {
@@ -112,7 +114,7 @@ async function generujPlan(minikurs) {
   const plan = await claudeJson({
     system: PROMPT('generator'),
     messages: [{ role: 'user', content:
-      `BRIEF MINIKURSU:\n${BRIEF}\n\nPYTANIA GŁÓWNE Z POPRZEDNICH PODEJŚĆ (unikaj):\n` +
+      `BRIEF MINIKURSU:\n${brief(minikurs)}\n\nPYTANIA GŁÓWNE Z POPRZEDNICH PODEJŚĆ (unikaj):\n` +
       (stare.length ? stare.map(p => `- ${p}`).join('\n') : '(brak — to pierwsze podejście)') }],
     maxTokens: 6000,
   });
@@ -179,10 +181,14 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (url === '/api/start' && req.method === 'POST') {
-      if (oblanyDzis('m3')) {
-        return json(res, 403, { blad: 'Dziś już oblane. Zrób zadanie na jutro — retake najwcześniej jutro.' });
+      let minikurs = 'm3';
+      try { minikurs = JSON.parse((await czytajBody(req, 1)).toString() || '{}').minikurs || 'm3'; }
+      catch { /* brak/zepsute body → domyślnie m3 */ }
+      if (!PROGI[minikurs]) return json(res, 400, { blad: `Nieznany minikurs: ${minikurs}` });
+      if (oblanyDzis(minikurs)) {
+        return json(res, 403, { blad: `Dziś już oblane (${minikurs}). Zrób zadanie na jutro — retake najwcześniej jutro.` });
       }
-      const s = nowaSesja();
+      const s = nowaSesja(minikurs);
       s.plan = await generujPlan(s.minikurs);
       zapisz(s, 'plan.json', s.plan);
       const pytanieAudio = await zadajPytanie(s, s.plan.bloki[0].pytanie, 'glowne');
@@ -246,18 +252,18 @@ const server = http.createServer(async (req, res) => {
       const ocena = await claudeJson({
         system: PROMPT('sedzia'),
         messages: [{ role: 'user', content:
-          `BRIEF MINIKURSU:\n${BRIEF}\n\nPLAN EGZAMINU (bloki + okazje):\n${JSON.stringify(s.plan, null, 2)}\n\n` +
+          `BRIEF MINIKURSU:\n${brief(s.minikurs)}\n\nPLAN EGZAMINU (bloki + okazje):\n${JSON.stringify(s.plan, null, 2)}\n\n` +
           `PEŁNY ZAPIS WYMIAN:\n${zapis}` }],
         maxTokens: 16000,
       });
       zapisz(s, 'ocena.json', ocena);
 
-      const w = werdykt(ocena, PROGI_M3);
+      const w = werdykt(ocena, PROGI[s.minikurs]);
       const wynik = { ...w, kiedy: new Date().toISOString(), czasSek: Math.round((Date.now() - s.start) / 1000) };
       zapisz(s, 'werdykt.json', wynik);
 
       const wymianyLekkie = s.wymiany.map(({ words, ...reszta }) => reszta);
-      const raport = { werdykt: wynik, ocena, wymiany: wymianyLekkie, sesjaId: s.id, progi: PROGI_M3 };
+      const raport = { werdykt: wynik, ocena, wymiany: wymianyLekkie, sesjaId: s.id, minikurs: s.minikurs, progi: PROGI[s.minikurs] };
       zapisz(s, 'raport.json', raport);
       return json(res, 200, raport);
     }

@@ -7,7 +7,9 @@ Zdecyduj: zadać follow-up czy przejść do następnego bloku. Zwróć WYŁĄCZN
 `{"followup": "pytanie po angielsku"}` ALBO `{"next": true}`.
 
 Zasady:
-- Maksymalnie 2 follow-upy na blok. Jeśli limit osiągnięty → `{"next": true}`.
+- Maksymalnie 3 follow-upy na blok, ale STANDARDEM są 1–2. Trzeci zadaj
+  TYLKO, gdy zdający wciąż ucieka od struktury-celu bloku albo odpowiedź
+  nadal jest wymijająca. Jeśli limit osiągnięty → `{"next": true}`.
 - Follow-up MUSI zaczepiać się o KONKRETNY szczegół z ostatniej odpowiedzi
   (nazwij go), nie może być pytaniem ogólnym, które pasowałoby do każdego.
 - Priorytety (w tej kolejności):
