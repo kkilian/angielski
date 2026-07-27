@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T05:57:22.129Z",
+  "generatedAt": "2026-07-27T12:19:44.975Z",
   "minikursy": [
     {
       "num": 1,
@@ -35,11 +35,11 @@
       "num": 4,
       "id": "m4",
       "tytul": "Ludzie i rozmowy",
-      "temat": "Odnawianie kontaktów, small talk, plany, randki, drobne spięcia",
-      "status": "szkic",
-      "count": 0,
-      "audioCount": 0,
-      "generated": false
+      "temat": "Pierwsza lekcja z lektorką: mówienie o sobie i swojej robocie (apki i kursy do matury z matematyki), siłownia, szachy, ciekawostki. Fokus: domykanie myśli zamiast urywania, miękki angielski (would/could/should have) i ratunek, gdy brakuje słowa. Trzydniowy moduł zbudowany z realnych błędów z próbnej lekcji 2026-07-27.",
+      "status": "w produkcji (34-36)",
+      "count": 3,
+      "audioCount": 12,
+      "generated": true
     },
     {
       "num": 5,
@@ -901,27 +901,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "23-m3d1-lapanie-uczniow/grupa-1.mp3?v=1783172910234"
+          "src": "23-m3d1-lapanie-uczniow/grupa-1.mp3?v=1783923173962"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "23-m3d1-lapanie-uczniow/grupa-2.mp3?v=1783172910237"
+          "src": "23-m3d1-lapanie-uczniow/grupa-2.mp3?v=1783923173964"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "23-m3d1-lapanie-uczniow/grupa-3.mp3?v=1783172910240"
+          "src": "23-m3d1-lapanie-uczniow/grupa-3.mp3?v=1783923173966"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "23-m3d1-lapanie-uczniow/grupa-4.mp3?v=1783172910242"
+          "src": "23-m3d1-lapanie-uczniow/grupa-4.mp3?v=1783923173967"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "23-m3d1-lapanie-uczniow/grupa-5.mp3?v=1783172910244"
+          "src": "23-m3d1-lapanie-uczniow/grupa-5.mp3?v=1783923173969"
         }
       ]
     },
@@ -940,27 +940,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "24-m3d2-kanal-rusza/grupa-1.mp3?v=1783172910248"
+          "src": "24-m3d2-kanal-rusza/grupa-1.mp3?v=1783923173971"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "24-m3d2-kanal-rusza/grupa-2.mp3?v=1783172910252"
+          "src": "24-m3d2-kanal-rusza/grupa-2.mp3?v=1783923173973"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "24-m3d2-kanal-rusza/grupa-3.mp3?v=1783172910255"
+          "src": "24-m3d2-kanal-rusza/grupa-3.mp3?v=1783923173975"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "24-m3d2-kanal-rusza/grupa-4.mp3?v=1783172910258"
+          "src": "24-m3d2-kanal-rusza/grupa-4.mp3?v=1783923173977"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "24-m3d2-kanal-rusza/grupa-5.mp3?v=1783172910261"
+          "src": "24-m3d2-kanal-rusza/grupa-5.mp3?v=1783923173979"
         }
       ]
     },
@@ -979,27 +979,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "25-m3d3-sucha-passa/grupa-1.mp3?v=1783172910265"
+          "src": "25-m3d3-sucha-passa/grupa-1.mp3?v=1783923173980"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "25-m3d3-sucha-passa/grupa-2.mp3?v=1783172910269"
+          "src": "25-m3d3-sucha-passa/grupa-2.mp3?v=1783923173982"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "25-m3d3-sucha-passa/grupa-3.mp3?v=1783172910272"
+          "src": "25-m3d3-sucha-passa/grupa-3.mp3?v=1783923173984"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "25-m3d3-sucha-passa/grupa-4.mp3?v=1783172910275"
+          "src": "25-m3d3-sucha-passa/grupa-4.mp3?v=1783923173986"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "25-m3d3-sucha-passa/grupa-5.mp3?v=1783172910276"
+          "src": "25-m3d3-sucha-passa/grupa-5.mp3?v=1783923173987"
         }
       ]
     },
@@ -1018,22 +1018,22 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "26-m3d4-sceptyczny-brat/grupa-1.mp3?v=1783172910279"
+          "src": "26-m3d4-sceptyczny-brat/grupa-1.mp3?v=1783923173988"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "26-m3d4-sceptyczny-brat/grupa-2.mp3?v=1783172910281"
+          "src": "26-m3d4-sceptyczny-brat/grupa-2.mp3?v=1783923173989"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "26-m3d4-sceptyczny-brat/grupa-3.mp3?v=1783172910283"
+          "src": "26-m3d4-sceptyczny-brat/grupa-3.mp3?v=1783923173990"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "26-m3d4-sceptyczny-brat/grupa-4.mp3?v=1783172910285"
+          "src": "26-m3d4-sceptyczny-brat/grupa-4.mp3?v=1783923173991"
         }
       ]
     },
@@ -1052,27 +1052,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "27-m3d5-swobodne-wymiany/grupa-1.mp3?v=1783172910292"
+          "src": "27-m3d5-swobodne-wymiany/grupa-1.mp3?v=1783923173994"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "27-m3d5-swobodne-wymiany/grupa-2.mp3?v=1783172910298"
+          "src": "27-m3d5-swobodne-wymiany/grupa-2.mp3?v=1783923173997"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "27-m3d5-swobodne-wymiany/grupa-3.mp3?v=1783172910302"
+          "src": "27-m3d5-swobodne-wymiany/grupa-3.mp3?v=1783923174003"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "27-m3d5-swobodne-wymiany/grupa-4.mp3?v=1783172910309"
+          "src": "27-m3d5-swobodne-wymiany/grupa-4.mp3?v=1783923174006"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "27-m3d5-swobodne-wymiany/grupa-5.mp3?v=1783172910315"
+          "src": "27-m3d5-swobodne-wymiany/grupa-5.mp3?v=1783923174010"
         }
       ]
     },
@@ -1091,32 +1091,32 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-1.mp3?v=1783172910323"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-1.mp3?v=1783923174013"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-2.mp3?v=1783172910327"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-2.mp3?v=1783923174016"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-3.mp3?v=1783172910332"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-3.mp3?v=1783923174021"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-4.mp3?v=1783172910337"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-4.mp3?v=1783923174024"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-5.mp3?v=1783172910342"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-5.mp3?v=1783923174027"
         },
         {
           "n": 6,
           "label": "Grupa 6",
-          "src": "28-m3d6-decyzje-i-ryzyko/grupa-6.mp3?v=1783172910344"
+          "src": "28-m3d6-decyzje-i-ryzyko/grupa-6.mp3?v=1783923174028"
         }
       ]
     },
@@ -1135,27 +1135,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "29-m3d7-trudniejsze-sploty/grupa-1.mp3?v=1783172910349"
+          "src": "29-m3d7-trudniejsze-sploty/grupa-1.mp3?v=1783923174030"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "29-m3d7-trudniejsze-sploty/grupa-2.mp3?v=1783172910353"
+          "src": "29-m3d7-trudniejsze-sploty/grupa-2.mp3?v=1783923174032"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "29-m3d7-trudniejsze-sploty/grupa-3.mp3?v=1783172910357"
+          "src": "29-m3d7-trudniejsze-sploty/grupa-3.mp3?v=1783923174034"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "29-m3d7-trudniejsze-sploty/grupa-4.mp3?v=1783172910362"
+          "src": "29-m3d7-trudniejsze-sploty/grupa-4.mp3?v=1783923174036"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "29-m3d7-trudniejsze-sploty/grupa-5.mp3?v=1783172910363"
+          "src": "29-m3d7-trudniejsze-sploty/grupa-5.mp3?v=1783923174037"
         }
       ]
     },
@@ -1174,27 +1174,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "30-m3d8-pelne-splatanie/grupa-1.mp3?v=1783172910368"
+          "src": "30-m3d8-pelne-splatanie/grupa-1.mp3?v=1783923174039"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "30-m3d8-pelne-splatanie/grupa-2.mp3?v=1783172910370"
+          "src": "30-m3d8-pelne-splatanie/grupa-2.mp3?v=1783923174041"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "30-m3d8-pelne-splatanie/grupa-3.mp3?v=1783172910372"
+          "src": "30-m3d8-pelne-splatanie/grupa-3.mp3?v=1783923174042"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "30-m3d8-pelne-splatanie/grupa-4.mp3?v=1783172910374"
+          "src": "30-m3d8-pelne-splatanie/grupa-4.mp3?v=1783923174044"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "30-m3d8-pelne-splatanie/grupa-5.mp3?v=1783172910376"
+          "src": "30-m3d8-pelne-splatanie/grupa-5.mp3?v=1783923174045"
         }
       ]
     },
@@ -1213,22 +1213,22 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "31-m3d9-silownia-conditionali/grupa-1.mp3?v=1783172910379"
+          "src": "31-m3d9-silownia-conditionali/grupa-1.mp3?v=1783923174047"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "31-m3d9-silownia-conditionali/grupa-2.mp3?v=1783172910381"
+          "src": "31-m3d9-silownia-conditionali/grupa-2.mp3?v=1783923174048"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "31-m3d9-silownia-conditionali/grupa-3.mp3?v=1783172910385"
+          "src": "31-m3d9-silownia-conditionali/grupa-3.mp3?v=1783923174049"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "31-m3d9-silownia-conditionali/grupa-4.mp3?v=1783172910387"
+          "src": "31-m3d9-silownia-conditionali/grupa-4.mp3?v=1783923174051"
         }
       ]
     },
@@ -1247,17 +1247,17 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "32-m3d10-sluchanka-make-or-break/grupa-1.mp3?v=1783172910389"
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-1.mp3?v=1783923174052"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "32-m3d10-sluchanka-make-or-break/grupa-2.mp3?v=1783172910390"
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-2.mp3?v=1783923174053"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "32-m3d10-sluchanka-make-or-break/grupa-3.mp3?v=1783172910392"
+          "src": "32-m3d10-sluchanka-make-or-break/grupa-3.mp3?v=1783923174054"
         }
       ]
     },
@@ -1276,17 +1276,119 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "33-m3d11-egzamin-what-if/grupa-1.mp3?v=1783172910399"
+          "src": "33-m3d11-egzamin-what-if/grupa-1.mp3?v=1783923174056"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "33-m3d11-egzamin-what-if/grupa-2.mp3?v=1783172910404"
+          "src": "33-m3d11-egzamin-what-if/grupa-2.mp3?v=1783923174059"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "33-m3d11-egzamin-what-if/grupa-3.mp3?v=1783172910410"
+          "src": "33-m3d11-egzamin-what-if/grupa-3.mp3?v=1783923174060"
+        }
+      ]
+    },
+    {
+      "id": "34-m4d1-domknij-mysl",
+      "slug": "34-m4d1-domknij-mysl",
+      "number": 34,
+      "minikurs": 4,
+      "localNumber": 1,
+      "title": "M4 · Dział 1: Domknij myśl / M4 · Part 1: Land the Plane",
+      "titlePl": "M4 · Dział 1: Domknij myśl",
+      "titleEn": "M4 · Part 1: Land the Plane",
+      "pdf": "34-m4d1-domknij-mysl/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "34-m4d1-domknij-mysl/grupa-1.mp3?v=1785154267762"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "34-m4d1-domknij-mysl/grupa-2.mp3?v=1785154298138"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "34-m4d1-domknij-mysl/grupa-3.mp3?v=1785154334516"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "34-m4d1-domknij-mysl/grupa-4.mp3?v=1785154377836"
+        }
+      ]
+    },
+    {
+      "id": "35-m4d2-miekki-angielski",
+      "slug": "35-m4d2-miekki-angielski",
+      "number": 35,
+      "minikurs": 4,
+      "localNumber": 2,
+      "title": "M4 · Dział 2: Miękki angielski / M4 · Part 2: Softening It",
+      "titlePl": "M4 · Dział 2: Miękki angielski",
+      "titleEn": "M4 · Part 2: Softening It",
+      "pdf": "35-m4d2-miekki-angielski/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "35-m4d2-miekki-angielski/grupa-1.mp3?v=1785154413410"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "35-m4d2-miekki-angielski/grupa-2.mp3?v=1785154448901"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "35-m4d2-miekki-angielski/grupa-3.mp3?v=1785154489252"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "35-m4d2-miekki-angielski/grupa-4.mp3?v=1785154531211"
+        }
+      ]
+    },
+    {
+      "id": "36-m4d3-pierwsza-lekcja",
+      "slug": "36-m4d3-pierwsza-lekcja",
+      "number": 36,
+      "minikurs": 4,
+      "localNumber": 3,
+      "title": "M4 · Dział 3: Pierwsza lekcja / M4 · Part 3: The First Lesson",
+      "titlePl": "M4 · Dział 3: Pierwsza lekcja",
+      "titleEn": "M4 · Part 3: The First Lesson",
+      "pdf": "36-m4d3-pierwsza-lekcja/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "36-m4d3-pierwsza-lekcja/grupa-1.mp3?v=1785154589175"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "36-m4d3-pierwsza-lekcja/grupa-2.mp3?v=1785154638769"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "36-m4d3-pierwsza-lekcja/grupa-3.mp3?v=1785154693501"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "36-m4d3-pierwsza-lekcja/grupa-4.mp3?v=1785154758581"
         }
       ]
     },

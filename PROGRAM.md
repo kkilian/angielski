@@ -54,7 +54,7 @@ następnego). To jest naprawa „silosowania" — głównej słabości oryginał
 | **M1** | Co dalej ze mną (powrót z Norwegii) | Domykanie roboty w Norwegii, powrót, gdzie zamieszkać, pierwszy ruch zawodowy (apka→M5) | phrasal verbs codzienne + idiomy decyzji | — (start) |
 | **M2** | Szukanie pracy i rozmowy | Networking, aplikacje, rozmowy kwalifikacyjne, oferta, negocjacje | phrasal verbs zawodowe + kolokacje | M1 (decyzje, „figure out", „on the fence") |
 | **M3** | Rozkręcam to — budowanie MadreM | Łapanie uczniów, kanał, wpadki/sucha passa, ważenie ryzyka i duże decyzje (temat „ryzyko" ściągnięty z M5) | irrealis (2nd/3rd/mixed cond, modal perfects, wish) + rodzajniki | M1–M2 |
-| **M4** | Ludzie i rozmowy | Odnawianie kontaktów, small talk, plany, randki, drobne spięcia | idiomy konwersacyjne + discourse markers | M1–M3 |
+| **M4** | Ludzie i rozmowy (mini, 3 działy) | Pierwsza lekcja z lektorką: mówienie o sobie i o robocie, hobby, ciekawostki | domykanie myśli + miękki angielski (would/could/should have) + ratunek przy braku słowa | M1–M3 |
 | **M5** | Pieniądze, ryzyko, decyzje | Finanse, pomysł na apkę/startup, ważenie ryzyka, duże decyzje | gramatyka C1 (cleft, inwersje, subjunctive) + mix | M1–M4 (capstone) |
 
 > Pełny rozkład poniżej jest gotowy dla **M1**. M2–M5 mają temat, łuk i rodziny
@@ -133,10 +133,26 @@ Jake + sceptyczny brat (silnik hipotez). Struktura 11 działów: I d1–3, II(sc
 III d6–8, **+d9 „siłownia conditionali"**, IV słuchanka d10, V egzamin „What if" d11.
 Pełny projekt: `docs/superpowers/specs/2026-07-04-m3-design.md`; plan: `docs/superpowers/plans/2026-07-04-m3-implementation.md`.
 
-### M4 — Ludzie i rozmowy
-- d1–2 (I): *to catch up (with), to hit it off, to drift apart, to run into, to make plans, to bail (luźno)*
-- discourse markers: *that said, mind you, to be fair, at the end of the day*
-- d3 (II) recykling M1–M3; d4 (III) C1 (reported speech, hedging); d5 słuchanka (spotkanie po latach); d6 egzamin
+### M4 — Ludzie i rozmowy (mini, 3 działy: 34–36) — ZBUDOWANY 2026-07-27
+**Przeprojektowany z transkrypcji realnej lekcji próbnej z lektorką (2026-07-27).** Stary szkic
+(6 działów, *catch up / hit it off / drift apart* + discourse markers) **odrzucony**: discourse markers
+diagnoza CEFR klasyfikuje jako MOCNĄ stronę i odradza re-drylowanie, a temat „odnawianie kontaktów"
+nie był tym, co realnie się posypało. Klocki `catch-up`, `hit-it-off`, `drift-apart`,
+`at-the-end-of-the-day` przeniesione do M5.
+
+Trzy osie wprost z jego błędów w tej rozmowie:
+- **d1 (34) „Domknij myśl"** — urywanie zdań (*„…it will be useful and…"*) + brak ratunku przy braku
+  słowa (*„What's the word? I forgot the word."*): `long story short`, `to get my point across`,
+  `I'm blanking on the word`, `It's sort of like…`
+- **d2 (35) „Miękki angielski"** — ucieczka od irrealis (*„I was thinking that we **can**"*, *„it **will**
+  be useful"*, *„sorry, I didn't mention it"*): `I was thinking we could…`, `Would it be OK if I…`,
+  `I should have mentioned…`, `I'd say…`. **Zarazem materiał naprawczy na oblaną bramkę M3**
+  (modal perfect — zero użyć na egzaminie).
+- **d3 (36) „Pierwsza lekcja"** — scenka (`mode: scenka`) na realnych pytaniach lektorki; splot d1+d2,
+  zero nowych klocków.
+
+Rodzajniki (przeciek nr 1 z diagnozy) wplecione w tle wszystkich trzech dni, bez osobnego działu.
+Moduł zamknięty — bez słuchanki i bez egzaminu. Sloty 37–44 zostają wolne.
 
 ### M5 — Pieniądze, ryzyko, decyzje (capstone)
 - d1–2 (I): *to set aside / put aside (money), to break even, to take a shot at, to weigh the risks, to go all in (luźno)*
@@ -169,4 +185,5 @@ przeglądu poprzedniego — dokładnie to, o co prosiłeś („niech to wróci w
 - [x] **M1 KOMPLETNY (01–11)** wygenerowany pipeline'em opus (pisarz + checker recyklingu + 3 recenzentów A/B/C + fixer per dział). Audit: wszystkie klocki 11–56 wydobyć (próg ≥5/≥3). Wierność PL↔EN naprawiona (with my parents, nie someone). Tekst+PDF live; audio OpenAI nova/alloy.
 - [x] **M1 (01–11), M2 (12–22) KOMPLETNE & live.** M9 specjał (56–57).
 - [x] **M3 (23–33) KOMPLETNY** (2026-07-04): przeprojektowany pod diagnozę B2→C1 (irrealis + rodzajniki, recykling umiarkowany). Tekst+PDF+audio; pipeline: pisarz (subagenci) + `check-recykling.js` + recenzenci opus. Checker dostał flagę `--min-core/--min-gram` (audyt M3: `--min-core 3 --min-gram 2`). Projekt/plan w `docs/superpowers/`.
-- [ ] **Ocena M3 przez Krzyśka (≥4+)** → rewizja M4/M5 (temat „ryzyko/decyzje" przeniesiony do M3; „mieszkanie/codzienność" do ewentualnego przeniesienia). Numeracja: M4=34–44, M5=45–55.
+- [ ] **Ocena M3 przez Krzyśka (≥4+)**. Bramka egzaminacyjna M3 formalnie **oblana** (2026-07-13: 40% osi A przy progu 60%, rodziny `wish-if-only` i `modal-perfect` bez ani jednego użycia) — do ponownego podejścia.
+- [x] **M4 (34–36) ZBUDOWANY 2026-07-27** jako moduł mini, przeprojektowany z transkrypcji realnej lekcji próbnej z lektorką (patrz §5). Trzy osie z jego błędów; d2 jest zarazem materiałem naprawczym na `modal-perfect` z oblanej bramki M3. Numeracja: M4=34–36 (37–44 wolne), M5=45–55.
