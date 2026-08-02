@@ -16,7 +16,7 @@ jest `K/slownik-k.json`.
 - Mało targetów, dużo wydobyć: zasiew -> splot -> składanka.
 - Polska kolumna wywołuje konkretną, naturalną odpowiedź po angielsku.
 - Sztywne lub błędne wersje trafiają do notki `Typowe błędy Polaka`, nie do audio.
-- Ostatnia grupa odtwarza realną rozmowę: pytanie EN -> podpowiedź PL -> odpowiedź EN.
+- Ostatnia grupa odtwarza lub symuluje realną rozmowę: pytanie EN -> podpowiedź PL -> odpowiedź EN.
 - Id działów są liniowe: `k1`, `k2`, `k3` itd.
 
 ## K1 - Powiedz to jasno za pierwszym razem / Say It Clearly the First Time
@@ -46,16 +46,17 @@ ciekawostki oraz sposób prowadzenia lekcji.
 
 **Źródło:** worksheet `esl_worksheet_kintsugi_b1_b2.pdf`.
 
-**Cel:** podnieść materiał B1/B2 do mówionego B2 -> C1 i przygotować gotowe,
-osobiste odpowiedzi do dyskusji z lektorem.
+**Cel:** podnieść materiał B1/B2 do mówionego B2 -> C1, aktywnie opanować całe
+słownictwo wyróżnione w worksheetcie i przygotować pełne, osobiste odpowiedzi na
+wszystkie siedem pytań z Exercise 2 i Exercise 3.
 
-**Nowe targety:**
+**Nowe targety z worksheetu:**
 
-- `to piece something back together`
-- `to draw attention to something`
-- `to embrace imperfection`
-- `to be a testament to something`
-- `to come out stronger`
+- `to shatter into pieces`
+- `a crude repair`
+- `aesthetic value`
+- `the transience of things`
+- `mental resilience`
 
 **Obowiązkowe powroty z K1:**
 
@@ -66,8 +67,10 @@ osobiste odpowiedzi do dyskusji z lektorem.
 - `I'd say...`
 - `What ... most is ...`
 
-**Łuk działu:** naprawa ceramiki -> wabi-sabi -> odporność psychiczna ->
-perfekcjonizm -> konsumpcja i odpady -> rozmowa z lektorem.
+**Łuk działu:** pięć definicji z worksheetu -> historia naprawy i legenda o
+Ashikadze Yoshimasie -> wabi-sabi -> odporność psychiczna i ukrywanie porażek ->
+perfekcjonizm -> konsumpcja i odpady -> próbna rozmowa z siedmioma pytaniami z
+PDF-u i trzema nieprzewidywalnymi follow-upami.
 
 ## Dalszy rozwój
 

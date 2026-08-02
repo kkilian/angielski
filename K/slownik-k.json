@@ -96,41 +96,41 @@
       "review": ["k2", "k4", "k6", "k8", "k10", "k13"]
     },
     {
-      "id": "piece-back-together",
-      "pl": "poskładać coś z powrotem",
-      "en": "to piece (something) back together",
-      "typ": "phrasal",
-      "intro": "k2",
-      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
-    },
-    {
-      "id": "draw-attention-to",
-      "pl": "zwracać uwagę na coś / uwydatniać coś",
-      "en": "to draw attention to (something)",
+      "id": "shatter-into-pieces",
+      "pl": "roztrzaskać się na kawałki",
+      "en": "to shatter into pieces",
       "typ": "kolokacja",
       "intro": "k2",
       "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
     },
     {
-      "id": "embrace-imperfection",
-      "pl": "zaakceptować niedoskonałość",
-      "en": "to embrace imperfection",
+      "id": "crude-repair",
+      "pl": "prymitywna, niewyszukana naprawa",
+      "en": "a crude repair",
       "typ": "kolokacja",
       "intro": "k2",
       "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
     },
     {
-      "id": "testament-to",
-      "pl": "być świadectwem czegoś",
-      "en": "to be a testament to (something)",
+      "id": "aesthetic-value",
+      "pl": "wartość estetyczna",
+      "en": "aesthetic value",
+      "typ": "kolokacja",
+      "intro": "k2",
+      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "transience-of-things",
+      "pl": "przemijanie rzeczy",
+      "en": "the transience of things",
       "typ": "kolokacja",
       "intro": "k2",
       "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
     },
     {
-      "id": "come-out-stronger",
-      "pl": "wyjść z czegoś silniejszym",
-      "en": "to come out of (something) stronger",
+      "id": "mental-resilience",
+      "pl": "odporność psychiczna",
+      "en": "mental resilience",
       "typ": "kolokacja",
       "intro": "k2",
       "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
