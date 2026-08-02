@@ -47,3 +47,15 @@ test('K review storage and export are isolated from M', () => {
   assert.match(html, /course:'K',chapter:tr\.dataset\.chapter/);
   assert.match(html, /deck:activeCourse==='k'\?'angielski-k':'angielski'/);
 });
+
+test('K uses the complete study UI and a distinct visual theme', () => {
+  const html = buildPreview();
+  assert.match(html, /\.course-k\{--accent:#a66a19/);
+  assert.match(html, /aria-label="Odsłoń angielskie zdanie"/);
+  assert.match(html, /tabindex="0"/);
+  assert.match(html, /function showView\(viewId\)/);
+  assert.match(html, /setActiveCourse\(view\.dataset\.course\)/);
+  assert.match(html, /#sidenav a\[href\^="#"\]/);
+  assert.match(html, /K1 · Powiedz to jasno za pierwszym razem/);
+  assert.match(html, /K2 · Kintsugi: siła niedoskonałości/);
+});

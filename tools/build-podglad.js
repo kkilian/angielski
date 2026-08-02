@@ -298,7 +298,7 @@ function renderRows(item, group) {
       const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
       rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
         + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
-        + `<td class="q">${inline(row.q)}</td><td class="prompt">${inline(row.prompt)}</td><td class="en">${inline(row.a)}</td></tr>`;
+        + `<td class="q">${inline(row.q)}</td><td class="prompt">${inline(row.prompt)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.a)}</td></tr>`;
       continue;
     }
     const plEN = plain(row.en), plPL = plain(row.pl);
@@ -308,7 +308,7 @@ function renderRows(item, group) {
     const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
     rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
       + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
-      + `<td class="pl">${inline(row.pl)}</td><td class="en">${inline(row.en)}</td></tr>`;
+      + `<td class="pl">${inline(row.pl)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.en)}</td></tr>`;
   }
   return rows;
 }
@@ -400,7 +400,7 @@ const totalSent = allItems.reduce((a, b) => a + b.sentenceCount, 0);
 
 const html = `<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Podgląd kursu — M1 + M2 (nauka + eksport do Anki)</title>
+<title>Podgląd kursów M i K — nauka i eksport do Anki</title>
 <style>
 :root{--bg:#f6f4ef;--card:#fff;--ink:#1f2328;--muted:#6b7280;--line:#e7e3da;--accent:#b4541f;
 --seed:#2f7d57;--splot:#3060a8;--skladanka:#7a5bb0;--mode:#b8860b}
@@ -431,6 +431,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.55 -apple-syst
 .home-hero .kicker{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
 .home-hero h1{margin:4px 0 4px;font-size:26px}
 .home-hero p{margin:0;color:var(--muted);font-size:14px}
+.course-section{margin-top:22px}
+.course-section-title{margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
 .tiles{display:flex;flex-direction:column;gap:12px}
 .tile{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .tile:hover{border-color:var(--accent)}
@@ -488,7 +490,7 @@ u.new{text-decoration:none;background:linear-gradient(transparent 62%,#ffe08a 62
 .mode .gtag{background:var(--mode)}.mode{border-left:4px solid var(--mode)}
 .plain .gtag{background:#9aa0a6}.plain{border-left:4px solid #9aa0a6}
 table{width:100%;border-collapse:collapse}
-td{padding:8px 15px;vertical-align:top;border-top:1px solid var(--line)}
+td{padding:8px 15px;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:anywhere}
 tr:first-child td{border-top:none}
 td.star{width:34px;text-align:center;padding-left:8px;padding-right:0}
 td.pl{width:46%;color:#374151}
@@ -498,6 +500,7 @@ td.prompt{color:#8a5a00;font-style:italic}
 .scenka td.q{width:33%}.scenka td.prompt{width:29%}.scenka td.en{width:34%}
 body.study td.en{filter:blur(5px);cursor:pointer;transition:filter .12s}
 body.study td.en.show{filter:none}
+td.en:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:-3px}
 .star-btn{background:none;border:none;padding:2px 4px;border-radius:8px;font-size:17px;line-height:1;cursor:pointer;color:#c2c7cf;opacity:.7;transition:transform .1s,opacity .1s}
 .star-btn:hover{opacity:1;transform:scale(1.15)}
 .star-btn.on{opacity:1;color:var(--accent)}
@@ -518,10 +521,17 @@ body.review-mode .review{display:block}
 .extra ul{margin:6px 0;padding-left:20px}.extra li{margin:3px 0;font-size:14.5px}
 .extra td{font-size:14px}.extra td.enx{color:var(--seed);font-weight:600}
 .extra code{background:#f1ede5;padding:1px 4px;border-radius:4px}
+/* Kurs K — ciepły notatnik konwersacyjny */
+.tile[data-go="k"]{border-color:#d9bd87;background:linear-gradient(135deg,#fffaf0,#f5ead4)}
+.tile[data-go="k"] .t-num{color:#8a5817}
+.course-k{--accent:#a66a19;--line:#e4d5b8}
+.course-k .mkhead{background:linear-gradient(135deg,rgba(255,250,240,.8),rgba(238,224,194,.45));padding:18px;border-radius:14px}
+.course-k .chip{background:#f6eddc;border-color:#dfc99d;color:#704816}
+.navgroup[data-view="k"]{--accent:#a66a19}
 /* motyw specjalny m10 „Powrót do domu" — świt (dawn): kafelek + sekcja + sidenav */
-.tile[data-go="10"]{--accent:#b45309;border-color:#f59e0b;background:linear-gradient(135deg,#fff7ed,#ffe4e6)}
-.tile[data-go="10"]:hover{border-color:#b45309}
-.mk-view[data-mk="10"],.navgroup[data-mk="10"]{--accent:#b45309}
+.tile[data-go="m10"]{--accent:#b45309;border-color:#f59e0b;background:linear-gradient(135deg,#fff7ed,#ffe4e6)}
+.tile[data-go="m10"]:hover{border-color:#b45309}
+.mk-view[data-view="m10"],.navgroup[data-view="m10"]{--accent:#b45309}
 @media(max-width:760px){#sidenav{display:none!important}}
 </style></head>
 <body>
@@ -535,7 +545,7 @@ body.review-mode .review{display:block}
     <button id="review-toggle">⭐ Powtórki <span id="review-course">M</span> (<span id="review-toggle-count">0</span>)</button>
     <button id="export-json" title="Pobierz gwiazdkowane zdania jako JSON do Anki">⬇ Eksport M do Anki</button>
   </div>
-  <p class="intro">📋 Podgląd tekstu kursu. Wybierz minikurs (M1 / M2). „🙈 Ukryj angielski" → kolumna EN się rozmazuje, klikasz pojedyncze zdanie, żeby je odsłonić (mów na głos, sprawdzaj się). ☆ przy zdaniu wrzuca je do <b>⭐ Powtórki</b> (wspólne dla całego kursu). „⬇ Wyeksportuj JSON" pobiera tylko <b>nowe</b> ⭐ (po eksporcie zmieniają się w ✅ i nie wchodzą do kolejnych eksportów) → dajesz mi JSON, a skill <b>przejmij-json</b> robi z nich karty Anki z audio (luka C1: PL u góry, EN z luką).</p>
+  <p class="intro">📋 Wybierz Kurs M albo niezależny Kurs K. „🙈 Ukryj angielski" rozmywa kolumnę EN; kliknij zdanie lub użyj Enter, żeby je odsłonić i powiedzieć na głos. ☆ zapisuje zdanie w powtórkach aktywnego kursu. Eksport pobiera tylko nowe ⭐, a po eksporcie oznacza je jako ✅. Zbiory M i K nigdy się nie mieszają.</p>
   <div class="legend"><span><u class="new">podkreślone</u> = nowe klocki w TYM dziale</span></div>
   <section class="review">
     <div class="rhead"><h2>⭐ Powtórki <span id="review-title-course">M</span></h2><span class="rcount" id="review-count">0 par</span><span class="rhint">Przycisk eksportu u góry pobiera tylko nowe ⭐ · ✅ = już wyeksportowane do Anki.</span></div>
@@ -545,8 +555,8 @@ body.review-mode .review{display:block}
   <section class="home" id="home">
     <div class="home-hero">
       <div class="kicker">B2 → C1 · American English</div>
-      <h1>Wybierz minikurs</h1>
-      <p>⭐ Powtórki i eksport do Anki działają na cały kurs — niezależnie od tego, który minikurs otworzysz.</p>
+      <h1>Wybierz kurs</h1>
+      <p>Każdy kurs ma własne zależności, gwiazdki, powtórki i eksport do Anki.</p>
     </div>
     <section class="course-section"><h2 class="course-section-title">Kurs M</h2><div class="tiles">${tiles}${lockedTiles}</div></section>
     <section class="course-section"><h2 class="course-section-title">Kurs K · Conversation Lab</h2><div class="tiles">${kTile}</div></section>
@@ -579,9 +589,16 @@ btn.addEventListener('click',()=>{
   btn.textContent = on?'👁 Pokaż angielski':'🙈 Ukryj angielski';
   if(!on) document.querySelectorAll('td.en.show').forEach(e=>e.classList.remove('show'));
 });
-document.addEventListener('click',e=>{
-  const td=e.target.closest('td.en');
-  if(td && (body.classList.contains('study')||body.classList.contains('review-mode'))) td.classList.toggle('show');
+function revealEnglish(target){
+  const td=target.closest('td.en');
+  if(td&&(body.classList.contains('study')||body.classList.contains('review-mode'))) td.classList.toggle('show');
+}
+document.addEventListener('click',e=>revealEnglish(e.target));
+document.addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches('td.en')){
+    e.preventDefault();
+    revealEnglish(e.target);
+  }
 });
 // ---- ⭐ Powtórki: osobny stan dla Kursu M i Kursu K ----
 const STORE_KEYS={m:{stars:'kurs.stars',exported:'kurs.exported'},k:{stars:'kurs.k.stars',exported:'kurs.k.exported'}};
@@ -640,7 +657,7 @@ function buildReview(){
     const k=tr.getAttribute('data-k');
     const row=document.createElement('tr'); row.setAttribute('data-k',k); row.dataset.course=activeCourse;
     if(exported.has(k)) row.className='was-exported';
-    row.innerHTML='<td class="star"><button class="star-btn on">'+starFace(k,activeCourse)+'</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';
+    row.innerHTML='<td class="star"><button class="star-btn on">'+starFace(k,activeCourse)+'</button></td><td class="pl">'+pl+'</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">'+en+'</td>';
     tb.appendChild(row);
   });
 }
@@ -743,12 +760,15 @@ document.addEventListener('click',e=>{
 document.getElementById('audio-close').addEventListener('click',()=>{
   player.pause(); audiobar.hidden=true; setActiveBtn(null);
 });
-// ---- nawigacja dwupoziomowa: home (wybór minikursu) → widok minikursu ----
+// ---- nawigacja dwupoziomowa: home (wybór kursu) → widok M lub K ----
 const sidenav=document.getElementById('sidenav');
 const backHomeBtn=document.getElementById('back-home');
 const titleEl=document.getElementById('topbar-title');
-const MK_TITLES={};
-document.querySelectorAll('.mk-view').forEach(v=>{ const h=v.querySelector('.mkhead h2'); MK_TITLES[v.dataset.mk]=h?h.textContent:('M'+v.dataset.mk); });
+const VIEW_TITLES={};
+document.querySelectorAll('.mk-view').forEach(v=>{
+  const h=v.querySelector('.mkhead h2');
+  VIEW_TITLES[v.dataset.view]=h?h.textContent:'Angielski — podgląd';
+});
 function showHome(){
   document.querySelectorAll('.mk-view').forEach(v=>v.classList.remove('is-active'));
   document.getElementById('home').classList.add('is-active');
@@ -758,29 +778,29 @@ function showHome(){
   titleEl.textContent='Angielski — podgląd';
   window.scrollTo(0,0);
 }
-function showMk(n){
-  n=String(n);
-  const view=document.querySelector('.mk-view[data-mk="'+n+'"]'); if(!view) return;
+function showView(viewId){
+  const view=document.querySelector('.mk-view[data-view="'+viewId+'"]'); if(!view) return;
   document.getElementById('home').classList.remove('is-active');
   document.querySelectorAll('.mk-view').forEach(v=>v.classList.toggle('is-active', v===view));
-  document.querySelectorAll('.navgroup').forEach(g=>g.classList.toggle('is-active', g.dataset.mk===n));
+  document.querySelectorAll('.navgroup').forEach(g=>g.classList.toggle('is-active', g.dataset.view===viewId));
+  setActiveCourse(view.dataset.course);
   sidenav.classList.add('is-active');
   backHomeBtn.hidden=false;
-  titleEl.textContent=MK_TITLES[n]||('M'+n);
+  titleEl.textContent=VIEW_TITLES[viewId]||'Angielski — podgląd';
   window.scrollTo(0,0);
 }
 document.addEventListener('click',e=>{
-  const tile=e.target.closest('.tile[data-go]'); if(tile){ showMk(tile.dataset.go); }
+  const tile=e.target.closest('.tile[data-go]'); if(tile){ showView(tile.dataset.go); }
 });
 backHomeBtn.addEventListener('click',e=>{ e.preventDefault(); if(body.classList.contains('review-mode')) document.getElementById('review-toggle').click(); showHome(); });
 document.getElementById('nav-home').addEventListener('click',e=>{ e.preventDefault(); showHome(); });
 document.addEventListener('click',e=>{
-  const a=e.target.closest('#sidenav a[href^="#m"]'); if(!a) return;
+  const a=e.target.closest('#sidenav a[href^="#"]:not(#nav-home)'); if(!a) return;
   const id=a.getAttribute('href').slice(1), art=document.getElementById(id);
-  if(art){ const mkv=art.closest('.mk-view'); if(mkv) showMk(mkv.dataset.mk); setTimeout(()=>art.scrollIntoView({behavior:'smooth'}),0); }
+  if(art){ const view=art.closest('.mk-view'); if(view) showView(view.dataset.view); setTimeout(()=>art.scrollIntoView({behavior:'smooth'}),0); }
 });
 
-markStars(); refreshCounts(); showHome();
+setActiveCourse('m'); showHome();
 </script>
 </body></html>`;
 
