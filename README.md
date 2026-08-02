@@ -6,10 +6,13 @@ komputera. Estetyka jak `~/Desktop/plan`.
 ## Lokalnie
 
 ```bash
-npm run serve     # generuje content.json i serwuje na http://localhost:8000
+npm run serve     # generuje oba manifesty i serwuje na http://localhost:8000
 # albo:
-node tools/generate.js   # tylko odśwież content.json
+npm run build:k   # tylko odśwież k-content.json
 ```
+
+Kurs M działa pod `index.html`. Niezależny Kurs K działa pod `k.html` i korzysta wyłącznie
+z katalogu `K/`, rejestru `K/slownik-k.json` oraz manifestu `k-content.json`.
 
 ## Dodanie nowego rozdziału
 
@@ -33,7 +36,7 @@ git init && git add -A && git commit -m "init: odtwarzacz audio"
 Na Render: **New → Blueprint** (wykryje `render.yaml`) albo **New → Static Site** ręcznie:
 
 - Publish Directory: `.`
-- Build Command: `node tools/generate.js`
+- Build Command: `npm run build`
 
 Render serwuje HTML, `content.json`, MP3 i PDF-y. Strona jest **publiczna** (każdy z linkiem wejdzie).
 
@@ -54,6 +57,8 @@ app.js                  router + silnik audio + Media Session
 style.css               estetyka (te same tokeny co ~/Desktop/plan)
 content.json            GENEROWANY manifest rozdziałów (nie edytuj ręcznie)
 tools/generate.js       skaner folderów -> content.json
+tools/generate-k.js     skaner katalogu K -> k-content.json
+k.html / k-app.js       osobny interfejs i odtwarzacz Kursu K
 tools/make-icons.js     generator ikon PNG (uruchom przy zmianie ikony)
 manifest.webmanifest    nazwa + ikony (PWA)
 icons/                  ikony PNG (ekran główny + okładka na ekranie blokady)

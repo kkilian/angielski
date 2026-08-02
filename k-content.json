@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-02T12:17:23.381Z",
+  "course": {
+    "id": "k",
+    "title": "Kurs K - Conversation Lab",
+    "description": "Rozwojowa ścieżka B2 -> C1 z realnych rozmów i materiałów od lektora."
+  },
+  "chapters": [
+    {
+      "id": "k1",
+      "slug": "K/01-k1-powiedz-to-raz",
+      "localNumber": 1,
+      "title": "K1 · Powiedz to jasno za pierwszym razem / K1 · Say It Clearly the First Time",
+      "titlePl": "K1 · Powiedz to jasno za pierwszym razem",
+      "titleEn": "K1 · Say It Clearly the First Time",
+      "description": "Domykanie myśli, ratowanie brakującego słowa i naturalne prowadzenie rozmowy.",
+      "pdf": "K/01-k1-powiedz-to-raz/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "K/01-k1-powiedz-to-raz/grupa-1.mp3?v=1785672229750"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "K/01-k1-powiedz-to-raz/grupa-2.mp3?v=1785672261997"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "K/01-k1-powiedz-to-raz/grupa-3.mp3?v=1785672297086"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "K/01-k1-powiedz-to-raz/grupa-4.mp3?v=1785672332700"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "K/01-k1-powiedz-to-raz/grupa-5.mp3?v=1785672376593"
+        }
+      ]
+    },
+    {
+      "id": "k2",
+      "slug": "K/02-k2-kintsugi",
+      "localNumber": 2,
+      "title": "K2 · Kintsugi: siła niedoskonałości / K2 · Kintsugi: The Strength of Imperfection",
+      "titlePl": "K2 · Kintsugi: siła niedoskonałości",
+      "titleEn": "K2 · Kintsugi: The Strength of Imperfection",
+      "description": "Kintsugi, wabi-sabi, odporność psychiczna, perfekcjonizm i konsumpcja.",
+      "pdf": "K/02-k2-kintsugi/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "K/02-k2-kintsugi/grupa-1.mp3?v=1785672414214"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "K/02-k2-kintsugi/grupa-2.mp3?v=1785672452763"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "K/02-k2-kintsugi/grupa-3.mp3?v=1785672492419"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "K/02-k2-kintsugi/grupa-4.mp3?v=1785672530353"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "K/02-k2-kintsugi/grupa-5.mp3?v=1785672579056"
+        }
+      ]
+    }
+  ]
+}

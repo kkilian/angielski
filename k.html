@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Kurs K — osobne ćwiczenia B2–C1 z prawdziwych rozmów, z audio i materiałami PDF.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d1930">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kurs K">
+  <title>Kurs K — Conversation Lab</title>
+  <link rel="stylesheet" href="k-style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="back" id="back" type="button" hidden aria-label="Wstecz">←</button>
+    <a class="wordmark" href="#/" aria-label="Strona główna Kursu K">
+      <span class="wordmark-k">K</span>
+      <span class="wordmark-copy">Conversation Lab</span>
+    </a>
+    <span class="topbar-context" id="topbar-context">Kurs K</span>
+  </header>
+
+  <main class="view" id="view"></main>
+
+  <section class="player" id="player" hidden aria-label="Odtwarzacz audio">
+    <div class="player-inner">
+      <div class="player-meta">
+        <span class="now-mark" aria-hidden="true"></span>
+        <div class="now-copy">
+          <strong id="p-group">Grupa 1</strong>
+          <span id="p-chapter">—</span>
+        </div>
+        <button class="repeat" id="p-repeat" type="button" aria-label="Tryb pętli: jedna. Zmień tryb">
+          <span aria-hidden="true">↻</span>
+          <span id="p-repeat-label">jedna</span>
+        </button>
+      </div>
+
+      <div class="timeline">
+        <span id="p-current">0:00</span>
+        <input id="p-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Postęp odtwarzania">
+        <span id="p-duration">0:00</span>
+      </div>
+
+      <div class="transport">
+        <button id="p-prev" type="button" aria-label="Poprzednia grupa">↤</button>
+        <button class="play" id="p-play" type="button" aria-label="Odtwórz lub wstrzymaj">▶</button>
+        <button id="p-next" type="button" aria-label="Następna grupa">↦</button>
+      </div>
+    </div>
+  </section>
+
+  <audio id="audio" playsinline preload="metadata"></audio>
+  <script src="k-app.js" type="module"></script>
+</body>
+</html>

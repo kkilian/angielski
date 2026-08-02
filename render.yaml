@@ -2,7 +2,7 @@ services:
   - type: web
     name: angielski-audio
     runtime: static
-    buildCommand: node tools/generate.js
+    buildCommand: npm run build
     staticPublishPath: .
     headers:
       - path: /*.mp3

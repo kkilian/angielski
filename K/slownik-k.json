@@ -1,0 +1,139 @@
+{
+  "$opis": "Niezależny rejestr kursu K. Id działów: k1, k2, k3... Kurs nie korzysta z rejestru M.",
+  "wersja": "2026-08-02",
+  "kurs": {
+    "id": "k",
+    "tytul": "Kurs K - Conversation Lab",
+    "opis": "Rozwojowa ścieżka B2 -> C1 z realnych rozmów i materiałów od lektora."
+  },
+  "dzialy": [
+    {
+      "id": "k1",
+      "folder": "01-k1-powiedz-to-raz",
+      "tytulPl": "Powiedz to jasno za pierwszym razem",
+      "tytulEn": "Say It Clearly the First Time",
+      "opis": "Domykanie myśli, ratowanie brakującego słowa i naturalne prowadzenie rozmowy."
+    },
+    {
+      "id": "k2",
+      "folder": "02-k2-kintsugi",
+      "tytulPl": "Kintsugi: siła niedoskonałości",
+      "tytulEn": "Kintsugi: The Strength of Imperfection",
+      "opis": "Kintsugi, wabi-sabi, odporność psychiczna, perfekcjonizm i konsumpcja."
+    }
+  ],
+  "wyrazenia": [
+    {
+      "id": "get-point-across",
+      "pl": "jasno przekazać, o co mi chodzi / powiedzieć, o co mi chodzi",
+      "en": "to get my point across",
+      "typ": "kolokacja",
+      "intro": "k1",
+      "review": ["k2", "k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k20"]
+    },
+    {
+      "id": "what-i-mean-is",
+      "pl": "chodzi mi o to, że... / mam na myśli to, że...",
+      "en": "What I mean is...",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k2", "k3", "k5", "k7", "k9", "k12"]
+    },
+    {
+      "id": "blanking-on-word",
+      "pl": "wyleciało mi słowo / mam pustkę — nie mogę sobie przypomnieć słowa",
+      "en": "I'm blanking on the word",
+      "typ": "idiom",
+      "intro": "k1",
+      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "sort-of-like",
+      "pl": "to coś w stylu... / to trochę jak...",
+      "en": "It's sort of like...",
+      "typ": "kolokacja",
+      "intro": "k1",
+      "review": ["k2", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "i-was-thinking-we-could",
+      "pl": "myślałem, że moglibyśmy... (miękka propozycja)",
+      "en": "I was thinking we could...",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k3", "k5", "k7", "k9", "k12", "k15"]
+    },
+    {
+      "id": "would-it-be-ok-if",
+      "pl": "czy byłoby OK, gdybym...?",
+      "en": "Would it be OK if I...?",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k3", "k5", "k7", "k9", "k12", "k15"]
+    },
+    {
+      "id": "should-have-mentioned",
+      "pl": "powinienem był wspomnieć...",
+      "en": "I should have mentioned...",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k2", "k4", "k6", "k8", "k10", "k13"]
+    },
+    {
+      "id": "id-say",
+      "pl": "powiedziałbym, że... / powiedziałbym raczej...",
+      "en": "I'd say...",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k2", "k3", "k5", "k7", "k9", "k12"]
+    },
+    {
+      "id": "what-most-is",
+      "pl": "to, co… najbardziej, to…",
+      "en": "What ... most is ...",
+      "typ": "gramatyka",
+      "intro": "k1",
+      "review": ["k2", "k4", "k6", "k8", "k10", "k13"]
+    },
+    {
+      "id": "piece-back-together",
+      "pl": "poskładać coś z powrotem",
+      "en": "to piece (something) back together",
+      "typ": "phrasal",
+      "intro": "k2",
+      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "draw-attention-to",
+      "pl": "zwracać uwagę na coś / uwydatniać coś",
+      "en": "to draw attention to (something)",
+      "typ": "kolokacja",
+      "intro": "k2",
+      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "embrace-imperfection",
+      "pl": "zaakceptować niedoskonałość",
+      "en": "to embrace imperfection",
+      "typ": "kolokacja",
+      "intro": "k2",
+      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+    },
+    {
+      "id": "testament-to",
+      "pl": "być świadectwem czegoś",
+      "en": "to be a testament to (something)",
+      "typ": "kolokacja",
+      "intro": "k2",
+      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "come-out-stronger",
+      "pl": "wyjść z czegoś silniejszym",
+      "en": "to come out of (something) stronger",
+      "typ": "kolokacja",
+      "intro": "k2",
+      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    }
+  ]
+}

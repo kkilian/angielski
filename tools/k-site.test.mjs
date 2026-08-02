@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+
+import { cleanTitle, cycleRepeat, fmt, nextIndex } from '../k-app.js';
+
+test('k.html is isolated from the M site and exposes one native audio element', () => {
+  const html = fs.readFileSync(new URL('../k.html', import.meta.url), 'utf8');
+  assert.equal((html.match(/<audio\b/g) || []).length, 1);
+  assert.match(html, /href="k-style\.css"/);
+  assert.match(html, /src="k-app\.js"/);
+  assert.doesNotMatch(html, /(?:^|["'])content\.json/);
+  assert.match(html, /aria-label="Wstecz"/);
+  assert.match(html, /aria-label="Postęp odtwarzania"/);
+  assert.match(html, /<meta name="description" content="[^"]+">/);
+});
+
+test('player helpers keep K playback behavior predictable', () => {
+  assert.equal(fmt(0), '0:00');
+  assert.equal(fmt(65.8), '1:05');
+  assert.equal(cycleRepeat('off'), 'one');
+  assert.equal(cycleRepeat('one'), 'all');
+  assert.equal(cycleRepeat('all'), 'off');
+  assert.equal(nextIndex(0, 2), 1);
+  assert.equal(nextIndex(1, 2), 0);
+  assert.equal(cleanTitle('K2 · Kintsugi: siła niedoskonałości'), 'Kintsugi: siła niedoskonałości');
+});
+
+test('K storage uses its own namespace', () => {
+  const app = fs.readFileSync(new URL('../k-app.js', import.meta.url), 'utf8');
+  assert.match(app, /ang\.k\.repeat/);
+  assert.match(app, /ang\.k\.last/);
+  assert.match(app, /k-content\.json/);
+  assert.match(app, /Tryb pętli:.*Zmień tryb/);
+  assert.doesNotMatch(app, /fetch\(['"]content\.json/);
+});

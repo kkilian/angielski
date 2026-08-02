@@ -5,8 +5,9 @@
   "type": "module",
   "description": "Odtwarzacz audio do nauki angielskiego — statyczna strona (Render).",
   "scripts": {
-    "build": "node tools/generate.js",
-    "serve": "node tools/generate.js && python3 -m http.server 8000",
+    "build": "node tools/build-all.js",
+    "build:k": "node tools/generate-k.js",
+    "serve": "npm run build && python3 -m http.server 8000",
     "egzamin": "node tools/egzamin/server.mjs"
   }
 }
