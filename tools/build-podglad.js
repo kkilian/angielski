@@ -1,7 +1,6 @@
-// build-podglad.js — lokalne narzędzie do nauki: jeden wspólny podgląd WSZYSTKICH minikursów
-// (M1, M2, … gdy powstaną) w stylu „html z blurrem". Angielski rozmazany dopóki nie klikniesz,
-// tagi Zasiew/Splot/Składanka, chipsy nowych klocków, jedna zakładka ⭐ Powtórki (klucz `kurs.stars`)
-// oraz przycisk „⬇ Wyeksportuj JSON" — eksport gwiazdkowanych zdań do kart Anki (skill `przejmij-json`).
+// build-podglad.js — lokalne narzędzie do nauki: jeden podgląd Kursu M i Kursu K.
+// Angielski pozostaje rozmazany do kliknięcia, a każdy kurs ma osobne gwiazdki,
+// powtórki i eksport do kart Anki (skill `przejmij-json`).
 //
 // Zero zależności. Uruchom: `node tools/build-podglad.js` → ~/angielski/podglad.html
 // Plik wyjściowy jest lokalny (w .gitignore); commitujemy renderer, nie wynik.
@@ -13,9 +12,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'podglad.html');
-const slownik = JSON.parse(fs.readFileSync(path.join(ROOT, 'slownik.json'), 'utf8'));
+const mRegistry = JSON.parse(fs.readFileSync(path.join(ROOT, 'slownik.json'), 'utf8'));
+const kRegistry = JSON.parse(fs.readFileSync(path.join(ROOT, 'K', 'slownik-k.json'), 'utf8'));
 const mkTitle = (mk) => {
-  const e = (slownik.minikursy || []).find((m) => m.id === `m${mk}`);
+  const e = (mRegistry.minikursy || []).find((m) => m.id === `m${mk}`);
   return e ? { tytul: e.tytul, temat: e.temat || '' } : { tytul: `Minikurs ${mk}`, temat: '' };
 };
 
@@ -23,9 +23,9 @@ const etapFromLocal = (n) => (n <= 4 ? 'I' : n <= 6 ? 'II' : n <= 9 ? 'III' : n 
 const ETAPN = { I: 'Etap I · fundament (PL→EN)', II: 'Etap II · powtórka (EN→PL)', III: 'Etap III · splatanie + gramatyka C1', IV: 'Etap IV · słuchanka', V: 'Etap V · egzamin (EN-only)' };
 
 // nowe zwroty wprowadzane w danym dziale (Etap II/IV/V tylko recyklingują → brak chipsów)
-function newExprFor(dzialId, etap) {
-  if (['II', 'IV', 'V'].includes(etap)) return [];
-  return slownik.wyrazenia.filter((e) => e.intro === dzialId).map((e) => e.en);
+function newExprFor(registry, dzialId, etap = null) {
+  if (etap && ['II', 'IV', 'V'].includes(etap)) return [];
+  return (registry.wyrazenia || []).filter((e) => e.intro === dzialId).map((e) => e.en);
 }
 
 const H = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -136,9 +136,9 @@ function termSources(exprs) {
 }
 
 // ---- dopasowanie klocków w zdaniu (do cloze) — leksykalne klocki dla danego działu ----
-const LEX = (slownik.wyrazenia || []).filter((e) => e.typ !== 'gramatyka');
-function blocksForDzial(id) {
-  return LEX.filter((e) => e.intro === id || (e.review || []).includes(id))
+function blocksForDzial(registry, id) {
+  return (registry.wyrazenia || []).filter((e) => e.typ !== 'gramatyka')
+    .filter((e) => e.intro === id || (e.review || []).includes(id))
     .map((e) => { let re = null; try { re = new RegExp('(' + termSourcesFor(e.en).join('|') + ')', 'i'); } catch { } return { id: e.id, re }; })
     .filter((b) => b.re);
 }
@@ -220,12 +220,12 @@ function egzaminPanel(mk) {
   </article>`;
 }
 
-// ---- zbierz działy ze wszystkich minikursów ----
-const dirs = fs.readdirSync(ROOT)
+// ---- zbierz działy obu niezależnych kursów ----
+const mDirs = fs.readdirSync(ROOT)
   .filter((n) => /^(\d{2})-m(\d+)d(\d+)-/.test(n) && fs.existsSync(path.join(ROOT, n, 'rozdzial.md')))
   .sort((a, b) => parseInt(a) - parseInt(b));
 
-const items = dirs.map((dir) => {
+const mItems = mDirs.map((dir) => {
   const m = dir.match(/^(\d{2})-m(\d+)d(\d+)-/);
   const mk = Number(m[2]), ln = Number(m[3]);
   const md = fs.readFileSync(path.join(ROOT, dir, 'rozdzial.md'), 'utf8');
@@ -233,26 +233,47 @@ const items = dirs.map((dir) => {
   const id = `m${mk}-d${ln}`;
   const P = parse(md);
   return {
-    id, mk, ln, dir, etap, parsed: P, title: P.title,
+    course: 'm', id, mk, ln, chapter: `M${mk}D${ln}`, label: `M${mk} · D${ln}`,
+    dir, etap, parsed: P, title: P.title,
     sentenceCount: P.groups.reduce((s, g) => s + g.rows.length, 0),
-    newExpressions: newExprFor(id, etap),
-    blocks: blocksForDzial(id),
+    newExpressions: newExprFor(mRegistry, id, etap),
+    blocks: blocksForDzial(mRegistry, id),
     audio: audioForDir(dir),
   };
 });
 
-const minikursy = [...new Set(items.map((it) => it.mk))].sort((a, b) => a - b);
+const kRoot = path.join(ROOT, 'K');
+const kDirs = fs.readdirSync(kRoot)
+  .filter((name) => /^(\d{2})-k(\d+)-/.test(name) && fs.existsSync(path.join(kRoot, name, 'rozdzial.md')))
+  .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10));
+
+const kItems = kDirs.map((name) => {
+  const chapter = Number(name.match(/^(\d{2})-k(\d+)-/)[2]);
+  const id = `k${chapter}`;
+  const dir = `K/${name}`;
+  const parsed = parse(fs.readFileSync(path.join(ROOT, dir, 'rozdzial.md'), 'utf8'));
+  return {
+    course: 'k', id, chapter, label: `K${chapter}`, dir, parsed, title: parsed.title,
+    sentenceCount: parsed.groups.reduce((sum, group) => sum + group.rows.length, 0),
+    newExpressions: newExprFor(kRegistry, id),
+    blocks: blocksForDzial(kRegistry, id),
+    audio: audioForDir(dir),
+  };
+});
+
+const allItems = [...mItems, ...kItems];
+const minikursy = [...new Set(mItems.map((it) => it.mk))].sort((a, b) => a - b);
 const TERMS = {};
-for (const it of items) TERMS[it.id] = termSources(it.newExpressions);
+for (const it of allItems) TERMS[it.id] = termSources(it.newExpressions);
 
 // ---- buduj: kafle (home), nav per-minikurs, widoki minikursów ----
 const mkMeta = {};
 for (const mk of minikursy) {
-  const its = items.filter((x) => x.mk === mk);
+  const its = mItems.filter((x) => x.mk === mk);
   mkMeta[mk] = { ...mkTitle(mk), dz: its.length, zd: its.reduce((s, i) => s + i.sentenceCount, 0) };
 }
 const presentSet = new Set(minikursy.map((m) => 'm' + m));
-const lockedMk = (slownik.minikursy || []).filter((m) => !presentSet.has(m.id))
+const lockedMk = (mRegistry.minikursy || []).filter((m) => !presentSet.has(m.id))
   .map((m) => ({ num: Number(String(m.id).replace(/^m/, '')), tytul: m.tytul, temat: m.temat || '' }))
   .filter((m) => m.num).sort((a, b) => a.num - b.num);
 const clip = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n - 1).trim() + '…' : s; };
@@ -260,82 +281,122 @@ const clip = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n
 let tiles = '';
 let navGroups = '';
 let mkViews = '';
-for (const mk of minikursy) {
-  const meta = mkMeta[mk];
-  tiles += `<button class="tile" data-go="${mk}"><span class="t-num">M${mk}</span><span class="t-body"><span class="t-title">${H(meta.tytul)}</span>${meta.temat ? `<span class="t-sub">${H(clip(meta.temat, 120))}</span>` : ''}<span class="t-meta">${meta.dz} ${meta.dz === 1 ? 'dział' : 'działów'} · ${meta.zd} zdań</span></span><span class="t-chev">›</span></button>`;
-  let navLinks = '';
-  let articles = '';
-  for (const it of items.filter((x) => x.mk === mk)) {
-    const P = it.parsed;
-    const navTitle = P.title.split('/')[0].replace(/^M\d+\s*·\s*Dział\s*\d+:\s*/, '').trim();
-    navLinks += `<a href="#${it.id}">D${it.ln} · ${H(navTitle)}</a>`;
-    const dPlay = it.audio.length
-      ? `<button class="play-btn" data-audio="${A(JSON.stringify(it.audio))}" data-label="${A('D' + it.ln + ' · ' + navTitle)}">▶︎ Odtwórz audio${it.audio.length > 1 ? ` · ${it.audio.length} grup` : ''}</button>`
+
+function rowData(item, plPL, plEN, key, targets, blocks) {
+  const legacy = item.course === 'm' ? ` data-mk="${item.mk}" data-d="${item.ln}"` : '';
+  return `data-k="${key}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-course="${item.course}" data-chapter="${item.chapter}"${legacy}`;
+}
+
+function renderRows(item, group) {
+  let rows = '';
+  for (const row of group.rows) {
+    if (group.mode === 'scenka') {
+      const plEN = plain(row.a), plPL = plain(row.prompt);
+      const key = A(row.prompt + ' ||| ' + row.a);
+      const hits = findTargets(plEN, item.blocks);
+      const targets = JSON.stringify(hits.map((target) => target.text));
+      const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
+      rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
+        + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
+        + `<td class="q">${inline(row.q)}</td><td class="prompt">${inline(row.prompt)}</td><td class="en">${inline(row.a)}</td></tr>`;
+      continue;
+    }
+    const plEN = plain(row.en), plPL = plain(row.pl);
+    const key = A(row.pl + ' ||| ' + row.en);
+    const hits = findTargets(plEN, item.blocks);
+    const targets = JSON.stringify(hits.map((target) => target.text));
+    const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
+    rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
+      + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
+      + `<td class="pl">${inline(row.pl)}</td><td class="en">${inline(row.en)}</td></tr>`;
+  }
+  return rows;
+}
+
+function renderArticle(item) {
+  const P = item.parsed;
+  const navTitle = P.title.split('/')[0]
+    .replace(/^M\d+\s*·\s*Dział\s*\d+:\s*/, '')
+    .replace(/^K\d+\s*·\s*/, '')
+    .trim();
+  const shortLabel = item.course === 'k' ? item.label : `D${item.ln}`;
+  const dPlay = item.audio.length
+    ? `<button class="play-btn" data-audio="${A(JSON.stringify(item.audio))}" data-label="${A(shortLabel + ' · ' + navTitle)}">▶︎ Odtwórz audio${item.audio.length > 1 ? ` · ${item.audio.length} grup` : ''}</button>`
+    : '';
+  const chips = item.newExpressions.map((expression) => `<span class="chip">${H(expression)}</span>`).join('');
+  let groupsHtml = '';
+  P.groups.forEach((group, groupIndex) => {
+    const [cls, tagLabel] = tag(group);
+    const groupAudio = item.audio[groupIndex];
+    const groupType = tagLabel && tagLabel !== 'Grupa' ? ` · ${tagLabel}` : '';
+    const groupPlay = groupAudio
+      ? `<button class="play-btn gplay" data-audio="${A(JSON.stringify([groupAudio]))}" data-label="${A(shortLabel + ' · ' + group.name + groupType)}" title="Odtwórz tę grupę">▶︎</button>`
       : '';
-    const chips = it.newExpressions.map((e) => `<span class="chip">${H(e)}</span>`).join('');
-    let groupsHtml = '';
-    P.groups.forEach((g, gi) => {
-      const [cls, label] = tag(g);
-      let rows = '';
-      for (const r of g.rows) {
-        if (g.mode === 'scenka') {
-          // scenka: pytanie EN | podpowiedź PL | odpowiedź EN. Eksport/powtórka
-          // używa promptu (PL) jako strony polskiej i odpowiedzi (EN) jako luki.
-          const plEN = plain(r.a), plPL = plain(r.prompt);
-          const k = (r.prompt + ' ||| ' + r.a).replace(/"/g, '&quot;');
-          const tgts = findTargets(plEN, it.blocks);
-          const targets = JSON.stringify(tgts.map((t) => t.text));
-          const blocks = JSON.stringify([...new Set(tgts.map((t) => t.block))]);
-          rows += `<tr data-k="${k}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-mk="${it.mk}" data-d="${it.ln}">`
-            + `<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>`
-            + `<td class="q">${inline(r.q)}</td><td class="prompt">${inline(r.prompt)}</td><td class="en">${inline(r.a)}</td></tr>`;
-          continue;
-        }
-        const k = (r.pl + ' ||| ' + r.en).replace(/"/g, '&quot;');
-        const plEN = plain(r.en), plPL = plain(r.pl);
-        const tgts = findTargets(plEN, it.blocks);
-        const targets = JSON.stringify(tgts.map((t) => t.text));
-        const blocks = JSON.stringify([...new Set(tgts.map((t) => t.block))]);
-        rows += `<tr data-k="${k}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-mk="${it.mk}" data-d="${it.ln}">`
-          + `<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>`
-          + `<td class="pl">${inline(r.pl)}</td><td class="en">${inline(r.en)}</td></tr>`;
-      }
-      // grupy zdań mapują się 1:1 na grupa-(gi+1).mp3 (P.groups w kolejności dokumentu)
-      const gAudio = it.audio[gi];
-      const gTyp = (label && label !== 'Grupa') ? ' · ' + label : '';
-      const gPlay = gAudio ? `<button class="play-btn gplay" data-audio="${A(JSON.stringify([gAudio]))}" data-label="${A('D' + it.ln + ' · ' + g.name + gTyp)}" title="Odtwórz tę grupę">▶︎</button>` : '';
-      groupsHtml += `<section class="group ${cls}"><div class="ghead"><span class="gtag">${H(label)}</span><span class="gname">${H(g.name)}</span>${gPlay}</div>${g.cap ? `<div class="gcap">${H(g.cap)}</div>` : ''}<table>${rows}</table></section>`;
-    });
-    articles += `<article class="dzial" id="${it.id}" data-id="${it.id}">
+    groupsHtml += `<section class="group ${cls}"><div class="ghead"><span class="gtag">${H(tagLabel)}</span><span class="gname">${H(group.name)}</span>${groupPlay}</div>${group.cap ? `<div class="gcap">${H(group.cap)}</div>` : ''}<table>${renderRows(item, group)}</table></section>`;
+  });
+  const stage = item.course === 'k'
+    ? `${item.label} · Conversation Lab`
+    : `M${item.mk} · ${ETAPN[item.etap] || ('Etap ' + item.etap)}`;
+  return `<article class="dzial" id="${item.id}" data-id="${item.id}">
       <div class="dhead">
-        <div class="detap">M${it.mk} · ${H(ETAPN[it.etap] || ('Etap ' + it.etap))}</div>
+        <div class="detap">${H(stage)}</div>
         <h3>${H(P.title)}</h3>
-        <div class="dmeta">${it.sentenceCount} zdań${it.newExpressions.length ? ` · ${it.newExpressions.length} nowych zwrotów` : ''}</div>
+        <div class="dmeta">${item.sentenceCount} zdań${item.newExpressions.length ? ` · ${item.newExpressions.length} nowych zwrotów` : ''}</div>
         ${dPlay ? `<div class="dplay">${dPlay}</div>` : ''}
         ${chips ? `<div class="chips"><span class="cl">nowe:</span> ${chips}</div>` : ''}
       </div>
       ${groupsHtml}
       <details class="extra"><summary>Nowe słowa i struktury · wymowa · typowe błędy</summary>${renderExtra(P.extra)}</details>
     </article>`;
+}
+
+for (const mk of minikursy) {
+  const meta = mkMeta[mk];
+  tiles += `<button class="tile" data-go="m${mk}"><span class="t-num">M${mk}</span><span class="t-body"><span class="t-title">${H(meta.tytul)}</span>${meta.temat ? `<span class="t-sub">${H(clip(meta.temat, 120))}</span>` : ''}<span class="t-meta">${meta.dz} ${meta.dz === 1 ? 'dział' : 'działów'} · ${meta.zd} zdań</span></span><span class="t-chev">›</span></button>`;
+  let navLinks = '';
+  let articles = '';
+  for (const it of mItems.filter((x) => x.mk === mk)) {
+    const P = it.parsed;
+    const navTitle = P.title.split('/')[0].replace(/^M\d+\s*·\s*Dział\s*\d+:\s*/, '').trim();
+    navLinks += `<a href="#${it.id}">D${it.ln} · ${H(navTitle)}</a>`;
+    articles += renderArticle(it);
   }
   // panel egzaminu tylko dla minikursów z briefem (specjały M9/M10 nie mają egzaminu)
   if (fs.existsSync(path.join(ROOT, 'tools', 'egzamin', `minikurs-m${mk}.md`))) {
     articles += egzaminPanel(mk);
     navLinks += `<a href="#m${mk}-egzamin">🎙 Egzamin głosowy</a>`;
   }
-  const mkAudio = items.filter((x) => x.mk === mk).flatMap((x) => x.audio);
+  const mkAudio = mItems.filter((x) => x.mk === mk).flatMap((x) => x.audio);
   const mkPlay = mkAudio.length
     ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(mkAudio))}" data-label="${A('Cały M' + mk)}">▶︎ Odtwórz cały minikurs · ${mkAudio.length} grup</button></div>`
     : '';
-  navGroups += `<div class="navgroup" data-mk="${mk}"><div class="navmk">M${mk} — ${H(meta.tytul)}</div>${navLinks}</div>`;
-  mkViews += `<section class="mk-view" data-mk="${mk}">
+  navGroups += `<div class="navgroup" data-view="m${mk}"><div class="navmk">M${mk} — ${H(meta.tytul)}</div>${navLinks}</div>`;
+  mkViews += `<section class="mk-view" data-view="m${mk}" data-course="m">
     <div class="mkhead"><h2>M${mk} — ${H(meta.tytul)}</h2>${meta.temat ? `<p>${H(meta.temat)}</p>` : ''}${mkPlay}</div>
     ${articles}
   </section>`;
 }
 const lockedTiles = lockedMk.map((m) => `<div class="tile tile-locked"><span class="t-num">M${m.num}</span><span class="t-body"><span class="t-title">${H(m.tytul)}</span><span class="t-meta t-soon">⌛ wkrótce</span></span></div>`).join('');
 
-const totalSent = items.reduce((a, b) => a + b.sentenceCount, 0);
+const kCourseTitle = String(kRegistry.kurs?.tytul || 'Kurs K · Conversation Lab').replace(/\s+-\s+/, ' · ');
+const kDescription = kRegistry.kurs?.opis || 'Rozwojowa ścieżka B2 → C1 z realnych rozmów i materiałów od lektora.';
+const kSentenceCount = kItems.reduce((sum, item) => sum + item.sentenceCount, 0);
+const kAudio = kItems.flatMap((item) => item.audio);
+const kTile = `<button class="tile" data-go="k"><span class="t-num">K</span><span class="t-body"><span class="t-title">${H(kCourseTitle)}</span><span class="t-sub">${H(clip(kDescription, 140))}</span><span class="t-meta">${kItems.length} działy · ${kSentenceCount} zdań · ${kAudio.length} grup audio</span></span><span class="t-chev">›</span></button>`;
+const kNavLinks = kItems.map((item) => {
+  const title = item.parsed.title.split('/')[0].replace(/^K\d+\s*·\s*/, '').trim();
+  return `<a href="#${item.id}">${item.label} · ${H(title)}</a>`;
+}).join('');
+const kPlay = kAudio.length
+  ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(kAudio))}" data-label="Cały Kurs K">▶︎ Odtwórz cały Kurs K · ${kAudio.length} grup</button></div>`
+  : '';
+navGroups += `<div class="navgroup" data-view="k"><div class="navmk">${H(kCourseTitle)}</div>${kNavLinks}</div>`;
+mkViews += `<section class="mk-view course-k" data-view="k" data-course="k">
+  <div class="mkhead"><h2>${H(kCourseTitle)}</h2><p>${H(kDescription)}</p>${kPlay}</div>
+  ${kItems.map(renderArticle).join('')}
+</section>`;
+
+const totalSent = allItems.reduce((a, b) => a + b.sentenceCount, 0);
 
 const html = `<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -487,10 +548,11 @@ body.review-mode .review{display:block}
       <h1>Wybierz minikurs</h1>
       <p>⭐ Powtórki i eksport do Anki działają na cały kurs — niezależnie od tego, który minikurs otworzysz.</p>
     </div>
-    <div class="tiles">${tiles}${lockedTiles}</div>
+    <section class="course-section"><h2 class="course-section-title">Kurs M</h2><div class="tiles">${tiles}${lockedTiles}</div></section>
+    <section class="course-section"><h2 class="course-section-title">Kurs K · Conversation Lab</h2><div class="tiles">${kTile}</div></section>
   </section>
   ${mkViews}
-  <footer style="color:var(--muted);font-size:13px;margin-top:30px">${minikursy.length} ${minikursy.length === 1 ? 'minikurs' : 'minikursy'} · ${items.length} działów · ${totalSent} zdań · narzędzie lokalne do nauki i eksportu do Anki.</footer>
+  <footer style="color:var(--muted);font-size:13px;margin-top:30px">Kurs M + Kurs K · ${allItems.length} działów · ${totalSent} zdań · narzędzie lokalne do nauki i eksportu do Anki.</footer>
 </main>
 </div>
 <div id="audiobar" hidden>
@@ -684,5 +746,5 @@ markStars(); refreshCounts(); showHome();
 
 fs.writeFileSync(OUT, html);
 console.log('Podgląd:', OUT);
-console.log('Minikursy:', minikursy.map((m) => 'M' + m).join(', '), '| działów:', items.length, '| zdań:', totalSent);
-for (const it of items) console.log(' ', it.id, '·', it.sentenceCount, 'zdań ·', it.newExpressions.length, 'nowych');
+console.log('Kursy:', minikursy.map((m) => 'M' + m).join(', '), '| K1–K' + kItems.length, '| działów:', allItems.length, '| zdań:', totalSent);
+for (const it of allItems) console.log(' ', it.id, '·', it.sentenceCount, 'zdań ·', it.newExpressions.length, 'nowych');
