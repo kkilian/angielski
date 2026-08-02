@@ -113,9 +113,15 @@ test('real browser keeps M and K study flows independent', { timeout: 30_000 }, 
     'about:blank',
   ], { stdio: ['ignore', 'ignore', 'pipe'] });
 
-  t.after(() => {
-    browser.kill('SIGTERM');
-    fs.rmSync(profile, { recursive: true, force: true });
+  t.after(async () => {
+    if (browser.exitCode === null && browser.signalCode === null) {
+      const exited = new Promise((resolve) => browser.once('exit', resolve));
+      browser.kill('SIGTERM');
+      const forceKill = setTimeout(() => browser.kill('SIGKILL'), 5_000);
+      await exited;
+      clearTimeout(forceKill);
+    }
+    fs.rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
   });
 
   const debuggerUrl = await waitForDebugger(browser);
