@@ -276,7 +276,17 @@ function renderMinikursy() {
       <h1>Angielski</h1>
       <p class="sub">${genCount} ${plural(genCount, 'minikurs', 'minikursy', 'minikursów')} · ${totalAudio} ${plural(totalAudio, 'nagranie', 'nagrania', 'nagrań')} · słuchaj i powtarzaj na głos</p>
     </section>
-    <div class="mk-list">${tiles}</div>
+    <div class="mk-list">${tiles}
+      <a class="mk mk-k" href="k.html">
+        <span class="mk-num">K</span>
+        <span class="mk-body">
+          <span class="mk-title">Kurs K · Conversation Lab</span>
+          <span class="mk-sub">osobna ścieżka: rozmowy i materiały od lektora</span>
+          <span class="mk-meta">B2 → C1 · realne rozmowy</span>
+        </span>
+        <span class="mk-chev">›</span>
+      </a>
+    </div>
     <footer class="site-foot">
       <div><b>Angielski · Studio</b> — ${esc(BUILD)}</div>
       <div>build ${esc(fmtBuild(DATA.generatedAt))}</div>

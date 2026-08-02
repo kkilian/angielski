@@ -26,6 +26,12 @@ test('player helpers keep K playback behavior predictable', () => {
   assert.equal(cleanTitle('K2 · Kintsugi: siła niedoskonałości'), 'Kintsugi: siła niedoskonałości');
 });
 
+test('M homepage links to course K', () => {
+  const app = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
+  assert.match(app, /href="k\.html"/);
+  assert.match(app, /Conversation Lab/);
+});
+
 test('K storage uses its own namespace', () => {
   const app = fs.readFileSync(new URL('../k-app.js', import.meta.url), 'utf8');
   assert.match(app, /ang\.k\.repeat/);

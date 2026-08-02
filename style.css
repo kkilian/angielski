@@ -217,6 +217,7 @@ body.with-player .view { padding-bottom: 220px; }
   -webkit-tap-highlight-color: transparent;
   transition: border-color 0.16s ease, transform 0.06s ease, background 0.16s ease;
 }
+a.mk { text-decoration: none; }
 .mk:hover { border-color: var(--amber-line); background: #221d18; }
 .mk:active { transform: scale(0.992); }
 .mk-num {
