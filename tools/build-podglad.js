@@ -284,7 +284,8 @@ let mkViews = '';
 
 function rowData(item, plPL, plEN, key, targets, blocks) {
   const legacy = item.course === 'm' ? ` data-mk="${item.mk}" data-d="${item.ln}"` : '';
-  return `data-k="${key}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-course="${item.course}" data-chapter="${item.chapter}"${legacy}`;
+  const chapter = item.course === 'k' ? item.label : item.chapter;
+  return `data-k="${key}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-course="${item.course}" data-chapter="${chapter}"${legacy}`;
 }
 
 function renderRows(item, group) {
