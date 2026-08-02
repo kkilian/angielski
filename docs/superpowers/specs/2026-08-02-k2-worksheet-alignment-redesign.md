@@ -1,7 +1,7 @@
 # K2 — pełna zgodność z worksheetem kintsugi
 
-**Data:** 2026-08-02  
-**Status:** zatwierdzony do realizacji poleceniem użytkownika, aby przemyśleć i wygenerować całość ponownie  
+**Data:** 2026-08-02
+**Status:** zatwierdzony do realizacji poleceniem użytkownika, aby przemyśleć i wygenerować całość ponownie
 **Zakres:** wyłącznie K2; K1 i działający interfejs kursu K pozostają bez zmian
 
 ## Cel
