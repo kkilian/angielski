@@ -37,3 +37,13 @@ test('preview keeps the existing M course present', () => {
   assert.match(html, /data-go="m10"/);
   assert.match(html, /id="m1-d1"/);
 });
+
+test('K review storage and export are isolated from M', () => {
+  const html = buildPreview();
+  assert.match(html, /stars:'kurs\.k\.stars'/);
+  assert.match(html, /exported:'kurs\.k\.exported'/);
+  assert.match(html, /m:\{stars:'kurs\.stars',exported:'kurs\.exported'\}/);
+  assert.match(html, /tr\.dataset\.course!==activeCourse/);
+  assert.match(html, /course:'K',chapter:tr\.dataset\.chapter/);
+  assert.match(html, /deck:activeCourse==='k'\?'angielski-k':'angielski'/);
+});

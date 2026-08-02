@@ -532,13 +532,13 @@ body.review-mode .review{display:block}
     <button id="back-home" hidden>← Kursy</button>
     <h1 id="topbar-title">Angielski — podgląd</h1>
     <button id="toggle">🙈 Ukryj angielski</button>
-    <button id="review-toggle">⭐ Powtórki (<span id="review-toggle-count">0</span>)</button>
-    <button id="export-json" title="Pobierz gwiazdkowane zdania jako JSON do Anki">⬇ Wyeksportuj JSON</button>
+    <button id="review-toggle">⭐ Powtórki <span id="review-course">M</span> (<span id="review-toggle-count">0</span>)</button>
+    <button id="export-json" title="Pobierz gwiazdkowane zdania jako JSON do Anki">⬇ Eksport M do Anki</button>
   </div>
   <p class="intro">📋 Podgląd tekstu kursu. Wybierz minikurs (M1 / M2). „🙈 Ukryj angielski" → kolumna EN się rozmazuje, klikasz pojedyncze zdanie, żeby je odsłonić (mów na głos, sprawdzaj się). ☆ przy zdaniu wrzuca je do <b>⭐ Powtórki</b> (wspólne dla całego kursu). „⬇ Wyeksportuj JSON" pobiera tylko <b>nowe</b> ⭐ (po eksporcie zmieniają się w ✅ i nie wchodzą do kolejnych eksportów) → dajesz mi JSON, a skill <b>przejmij-json</b> robi z nich karty Anki z audio (luka C1: PL u góry, EN z luką).</p>
   <div class="legend"><span><u class="new">podkreślone</u> = nowe klocki w TYM dziale</span></div>
   <section class="review">
-    <div class="rhead"><h2>⭐ Powtórki</h2><span class="rcount" id="review-count">0 par</span><span class="rhint">„⬇ Wyeksportuj JSON" u góry pobiera tylko nowe ⭐ · ✅ = już wyeksportowane do Anki.</span></div>
+    <div class="rhead"><h2>⭐ Powtórki <span id="review-title-course">M</span></h2><span class="rcount" id="review-count">0 par</span><span class="rhint">Przycisk eksportu u góry pobiera tylko nowe ⭐ · ✅ = już wyeksportowane do Anki.</span></div>
     <div class="group plain" id="review-box"><table><tbody id="review-body"></tbody></table></div>
     <p id="review-empty">Oznacz pary gwiazdką (☆) przy zdaniach, które sprawiły kłopot — wylądują tutaj do powtórki.</p>
   </section>
@@ -583,16 +583,35 @@ document.addEventListener('click',e=>{
   const td=e.target.closest('td.en');
   if(td && (body.classList.contains('study')||body.classList.contains('review-mode'))) td.classList.toggle('show');
 });
-// ---- ⭐ Powtórki (jeden wspólny zbiór gwiazdek dla całego kursu) ----
-// kurs.stars = oznaczone; kurs.exported = podzbiór już wyeksportowany do Anki (✅).
-const KEY='kurs.stars';
-const KEY_EXP='kurs.exported';
-let stars; try{ stars=new Set(JSON.parse(localStorage.getItem(KEY)||'[]')); }catch(e){ stars=new Set(); }
-let exported; try{ exported=new Set(JSON.parse(localStorage.getItem(KEY_EXP)||'[]')); }catch(e){ exported=new Set(); }
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify([...stars])); localStorage.setItem(KEY_EXP, JSON.stringify([...exported])); }catch(e){} }
+// ---- ⭐ Powtórki: osobny stan dla Kursu M i Kursu K ----
+const STORE_KEYS={m:{stars:'kurs.stars',exported:'kurs.exported'},k:{stars:'kurs.k.stars',exported:'kurs.k.exported'}};
+let activeCourse='m';
+const reviewState={};
+function loadSet(key){
+  try{return new Set(JSON.parse(localStorage.getItem(key)||'[]'));}catch(e){return new Set();}
+}
+function stateFor(course){
+  if(!STORE_KEYS[course]) throw new Error('Nieznany kurs: '+course);
+  if(!reviewState[course]) reviewState[course]={
+    stars:loadSet(STORE_KEYS[course].stars),
+    exported:loadSet(STORE_KEYS[course].exported)
+  };
+  return reviewState[course];
+}
+function saveCourse(course){
+  const state=stateFor(course), keys=STORE_KEYS[course];
+  try{
+    localStorage.setItem(keys.stars,JSON.stringify([...state.stars]));
+    localStorage.setItem(keys.exported,JSON.stringify([...state.exported]));
+  }catch(e){}
+}
 function rowKey(tr){ return tr.getAttribute('data-k'); }
-function freshKeys(){ return [...stars].filter(k=>!exported.has(k)); }
+function freshKeys(course=activeCourse){
+  const {stars,exported}=stateFor(course);
+  return [...stars].filter(k=>!exported.has(k));
+}
 function refreshCounts(){
+  const {stars}=stateFor(activeCourse);
   const n=stars.size, f=freshKeys().length;
   document.getElementById('review-toggle-count').textContent=n;
   const pary=n+' '+(n===1?'para':(n%10>=2&&n%10<=4&&!(n%100>=12&&n%100<=14)?'pary':'par'));
@@ -600,34 +619,39 @@ function refreshCounts(){
   document.getElementById('review-count').textContent=f?pary+' · '+f+' '+nowe:pary;
   document.getElementById('review-empty').style.display=n?'none':'block';
 }
-function starFace(k){ return exported.has(k)?'✅':'⭐'; }
+function starFace(k,course=activeCourse){ return stateFor(course).exported.has(k)?'✅':'⭐'; }
 function markStars(){
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
     const b=tr.querySelector('.star-btn'); if(!b) return;
-    const k=rowKey(tr), on=stars.has(k);
+    const course=tr.dataset.course||activeCourse;
+    const k=rowKey(tr), on=stateFor(course).stars.has(k);
     b.classList.toggle('on',on);
-    b.textContent=on?starFace(k):'☆';
+    b.textContent=on?starFace(k,course):'☆';
   });
 }
 function buildReview(){
+  const {stars,exported}=stateFor(activeCourse);
   const tb=document.getElementById('review-body'); tb.innerHTML='';
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
+    if(tr.dataset.course!==activeCourse) return;
     if(!stars.has(rowKey(tr))) return;
     const plCell=tr.querySelector('td.pl')||tr.querySelector('td.prompt');
     const pl=plCell?plCell.innerHTML:'', en=tr.querySelector('td.en').innerHTML;
     const k=tr.getAttribute('data-k');
-    const row=document.createElement('tr'); row.setAttribute('data-k',k);
+    const row=document.createElement('tr'); row.setAttribute('data-k',k); row.dataset.course=activeCourse;
     if(exported.has(k)) row.className='was-exported';
-    row.innerHTML='<td class="star"><button class="star-btn on">'+starFace(k)+'</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';
+    row.innerHTML='<td class="star"><button class="star-btn on">'+starFace(k,activeCourse)+'</button></td><td class="pl">'+pl+'</td><td class="en">'+en+'</td>';
     tb.appendChild(row);
   });
 }
 document.addEventListener('click',e=>{
   const b=e.target.closest('.star-btn'); if(!b) return;
   const tr=b.closest('tr[data-k]'); if(!tr) return;
+  const course=tr.dataset.course||activeCourse;
+  const {stars,exported}=stateFor(course);
   const k=rowKey(tr);
   if(stars.has(k)){ stars.delete(k); exported.delete(k); } else stars.add(k);
-  save(); markStars(); refreshCounts();
+  saveCourse(course); markStars(); refreshCounts();
   if(body.classList.contains('review-mode')) buildReview();
 });
 document.getElementById('review-toggle').addEventListener('click',()=>{
@@ -638,38 +662,54 @@ document.getElementById('review-toggle').addEventListener('click',()=>{
 // ---- ⬇ Eksport JSON (gwiazdkowane → karty Anki przez skill przejmij-json) ----
 // Bierze tylko NOWE gwiazdki (⭐ bez ✅); po pobraniu pliku oznacza je jako wyeksportowane.
 function collectStarredCards(){
+  const {stars,exported}=stateFor(activeCourse);
   const cards=[], keys=[];
   document.querySelectorAll('section.group tr[data-k]').forEach(tr=>{
+    if(tr.dataset.course!==activeCourse) return;
     const k=rowKey(tr);
     if(!stars.has(k)||exported.has(k)) return;
     let targets=[], blocks=[];
     try{ targets=JSON.parse(tr.dataset.targets||'[]'); }catch(e){}
     try{ blocks=JSON.parse(tr.dataset.blocks||'[]'); }catch(e){}
-    cards.push({ pl:tr.dataset.pl, en:tr.dataset.en, targets, blocks,
-                 mk:Number(tr.dataset.mk), d:Number(tr.dataset.d) });
+    cards.push(activeCourse==='k'
+      ? {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,course:'K',chapter:tr.dataset.chapter}
+      : {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,mk:Number(tr.dataset.mk),d:Number(tr.dataset.d)});
     keys.push(k);
   });
   return { cards, keys };
 }
 window.collectStarredCards = collectStarredCards; // hook do weryfikacji headless
 document.getElementById('export-json').addEventListener('click',()=>{
+  const {stars,exported}=stateFor(activeCourse);
   const picked=collectStarredCards();
   if(!picked.cards.length){
     alert(stars.size?'Wszystkie gwiazdki są już wyeksportowane (✅). Oznacz nowe zdania, żeby mieć co eksportować.':'Najpierw oznacz zdania gwiazdką (☆).');
     return;
   }
-  const out={ source:'angielski-podglad', deck:'angielski', exportedAt:new Date().toISOString(), cards:picked.cards };
+  const out={source:'angielski-podglad',deck:activeCourse==='k'?'angielski-k':'angielski',exportedAt:new Date().toISOString(),cards:picked.cards};
   const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');
   const dt=new Date(), pad=x=>String(x).padStart(2,'0');
-  a.href=url; a.download='powtorki-angielski-'+dt.getFullYear()+pad(dt.getMonth()+1)+pad(dt.getDate())+'.json';
+  const dateStamp=dt.getFullYear()+pad(dt.getMonth()+1)+pad(dt.getDate());
+  const suffix=activeCourse==='k'?'-k':'';
+  a.href=url; a.download='powtorki-angielski'+suffix+'-'+dateStamp+'.json';
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),1500);
   picked.keys.forEach(k=>exported.add(k));
-  save(); markStars(); refreshCounts();
+  saveCourse(activeCourse); markStars(); refreshCounts();
   if(body.classList.contains('review-mode')) buildReview();
 });
+function setActiveCourse(course){
+  if(!STORE_KEYS[course]) return;
+  activeCourse=course;
+  const label=course.toUpperCase();
+  document.getElementById('review-course').textContent=label;
+  document.getElementById('review-title-course').textContent=label;
+  document.getElementById('export-json').textContent='⬇ Eksport '+label+' do Anki';
+  markStars(); refreshCounts();
+  if(body.classList.contains('review-mode')) buildReview();
+}
 // ---- ▶︎ Audio: kolejka grup (grupa-1 → grupa-2 → …) na jednym <audio> ----
 const player=document.getElementById('player');
 const audiobar=document.getElementById('audiobar');
