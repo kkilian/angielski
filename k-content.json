@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T13:54:58.458Z",
+  "generatedAt": "2026-08-02T16:22:05.736Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -20,27 +20,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "K/01-k1-powiedz-to-raz/grupa-1.mp3?v=1785677458351"
+          "src": "K/01-k1-powiedz-to-raz/grupa-1.mp3?v=1785673082059"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "K/01-k1-powiedz-to-raz/grupa-2.mp3?v=1785677458356"
+          "src": "K/01-k1-powiedz-to-raz/grupa-2.mp3?v=1785673082069"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "K/01-k1-powiedz-to-raz/grupa-3.mp3?v=1785677458361"
+          "src": "K/01-k1-powiedz-to-raz/grupa-3.mp3?v=1785673082076"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "K/01-k1-powiedz-to-raz/grupa-4.mp3?v=1785677458366"
+          "src": "K/01-k1-powiedz-to-raz/grupa-4.mp3?v=1785673082085"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "K/01-k1-powiedz-to-raz/grupa-5.mp3?v=1785677458371"
+          "src": "K/01-k1-powiedz-to-raz/grupa-5.mp3?v=1785673082096"
         }
       ]
     },
@@ -58,27 +58,27 @@
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "K/02-k2-kintsugi/grupa-1.mp3?v=1785678656899"
+          "src": "K/02-k2-kintsugi/grupa-1.mp3?v=1785687541077"
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "K/02-k2-kintsugi/grupa-2.mp3?v=1785678714244"
+          "src": "K/02-k2-kintsugi/grupa-2.mp3?v=1785687579046"
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "K/02-k2-kintsugi/grupa-3.mp3?v=1785678764617"
+          "src": "K/02-k2-kintsugi/grupa-3.mp3?v=1785687618108"
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "K/02-k2-kintsugi/grupa-4.mp3?v=1785678815062"
+          "src": "K/02-k2-kintsugi/grupa-4.mp3?v=1785687653399"
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "K/02-k2-kintsugi/grupa-5.mp3?v=1785678874824"
+          "src": "K/02-k2-kintsugi/grupa-5.mp3?v=1785687708695"
         }
       ]
     }

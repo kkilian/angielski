@@ -4,8 +4,9 @@
 
 Kurs K jest osobną ścieżką B2 -> C1 zbudowaną wokół prawdziwych rozmów z
 lektorem i materiałów otrzymywanych przed zajęciami. Każdy dział ma pomóc mówić
-precyzyjniej podczas najbliższej rozmowy, a następny dział odzyskuje wybrane
-procedury komunikacyjne z poprzednich.
+precyzyjniej podczas najbliższej rozmowy. Działy są samodzielne: nie ma
+obowiązkowej ciągłości między nimi, a frazy z wcześniejszych działów wracają
+tylko jako lekki klej tam, gdzie naturalnie pasują.
 
 K nie pobiera wyrażeń ani harmonogramu z kursu M. Jedynym rejestrem zależności
 jest `K/slownik-k.json`.
@@ -14,6 +15,9 @@ jest `K/slownik-k.json`.
 
 - General American, naturalny język mówiony B2 -> C1.
 - Mało targetów, dużo wydobyć: zasiew -> splot -> składanka.
+- Zdania do powtarzania na głos: każda grupa zaczyna krótko (otwarcie ~8 słów
+  EN), a dłuższe, złożone zdania pojawiają się dopiero na końcu grupy jako
+  składanka. Wykładowe definicje nie wchodzą do audio.
 - Polska kolumna wywołuje konkretną, naturalną odpowiedź po angielsku.
 - Sztywne lub błędne wersje trafiają do notki `Typowe błędy Polaka`, nie do audio.
 - Ostatnia grupa odtwarza lub symuluje realną rozmowę: pytanie EN -> podpowiedź PL -> odpowiedź EN.
@@ -58,19 +62,15 @@ wszystkie siedem pytań z Exercise 2 i Exercise 3.
 - `the transience of things`
 - `mental resilience`
 
-**Obowiązkowe powroty z K1:**
+**Lekki klej z K1 (bez obowiązku):** frazy takie jak `I'd say...`,
+`What I mean is...` czy `It's sort of like...` pojawiają się tylko tam, gdzie
+naturalnie pasują do odpowiedzi na pytania worksheetu.
 
-- `to get my point across`
-- `What I mean is...`
-- `It's sort of like...`
-- `I should have mentioned...`
-- `I'd say...`
-- `What ... most is ...`
-
-**Łuk działu:** pięć definicji z worksheetu -> historia naprawy i legenda o
-Ashikadze Yoshimasie -> wabi-sabi -> odporność psychiczna i ukrywanie porażek ->
-perfekcjonizm -> konsumpcja i odpady -> próbna rozmowa z siedmioma pytaniami z
-PDF-u i trzema nieprzewidywalnymi follow-upami.
+**Łuk działu:** zasiew pięciu słów w krótkich, codziennych zdaniach ->
+artykuł: metoda, legenda o Yoshimasie, wabi-sabi (pytania 1-2) -> metafora
+psychologiczna i ukrywanie porażek (pytania 3-4) -> perfekcjonizm, naprawa
+vs wyrzucanie, trudna przeszłość (pytania 5-7) -> próbna rozmowa z siedmioma
+pytaniami z PDF-u i trzema follow-upami.
 
 ## Dalszy rozwój
 

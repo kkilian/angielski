@@ -31,6 +31,10 @@ function parseGroups(markdown) {
 
 const groups = parseGroups(chapter);
 
+function countEnglishWords(text) {
+  return text.split(/\s+/).filter((token) => /[A-Za-z0-9]/.test(token)).length;
+}
+
 test('K2 actively drills every vocabulary item highlighted in the worksheet', () => {
   const requiredWords = ['shatter', 'crude', 'aesthetic', 'transience', 'resilience'];
 
@@ -61,6 +65,50 @@ test('K2 mock conversation starts with all seven worksheet questions in order', 
   assert.match(groupFive.body, /<!-- mode: scenka -->/);
   assert.equal(groupFive.rows.length, 10);
   assert.deepEqual(groupFive.rows.slice(0, 7).map((row) => row[0]), expectedQuestions);
+});
+
+test('K2 groups open with short sentences and Group 1 stays easy to repeat', () => {
+  for (const group of groups.filter((g) => g.number <= 4)) {
+    group.rows.slice(0, 3).forEach((cells, index) => {
+      const words = countEnglishWords(cells[1]);
+      assert.ok(
+        words <= 9,
+        `Group ${group.number} row ${index + 1} opens with ${words} words: "${cells[1]}"`,
+      );
+    });
+  }
+
+  const groupOne = groups.find((group) => group.number === 1);
+  assert.ok(groupOne, 'Group 1 is missing');
+  for (const cells of groupOne.rows) {
+    const words = countEnglishWords(cells[1]);
+    assert.ok(words <= 12, `Group 1 row has ${words} words: "${cells[1]}"`);
+  }
+});
+
+test('K2 rotates target words instead of massing them', () => {
+  const targetPatterns = [
+    /\bshatter(?:s|ed|ing)?\b/i,
+    /\bcrude\b/i,
+    /\baesthetic\b/i,
+    /\btransience\b/i,
+    /\bresilience\b/i,
+  ];
+
+  for (const group of groups.filter((g) => g.number <= 4)) {
+    for (const pattern of targetPatterns) {
+      let run = 0;
+      let longestRun = 0;
+      for (const cells of group.rows) {
+        run = pattern.test(cells[1]) ? run + 1 : 0;
+        longestRun = Math.max(longestRun, run);
+      }
+      assert.ok(
+        longestRun <= 3,
+        `Group ${group.number}: ${pattern} appears in ${longestRun} consecutive rows`,
+      );
+    }
+  }
 });
 
 test('K2 keeps the five-group audio contract and 10–18 rows per group', () => {

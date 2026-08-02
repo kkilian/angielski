@@ -29,7 +29,7 @@
       "en": "to get my point across",
       "typ": "kolokacja",
       "intro": "k1",
-      "review": ["k2", "k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k20"]
+      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k20"]
     },
     {
       "id": "what-i-mean-is",
@@ -77,7 +77,7 @@
       "en": "I should have mentioned...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k2", "k4", "k6", "k8", "k10", "k13"]
+      "review": ["k4", "k6", "k8", "k10", "k13"]
     },
     {
       "id": "id-say",
@@ -93,7 +93,7 @@
       "en": "What ... most is ...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k2", "k4", "k6", "k8", "k10", "k13"]
+      "review": ["k4", "k6", "k8", "k10", "k13"]
     },
     {
       "id": "shatter-into-pieces",
