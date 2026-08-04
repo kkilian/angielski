@@ -17,16 +17,31 @@ function buildPreview() {
   return fs.readFileSync(OUT, 'utf8');
 }
 
-test('preview renders K1 and K2 as an independent course with all audio', () => {
+// Rozmiar Kursu K rośnie z każdym działem — czytamy go z dysku, żeby test
+// nie wymagał ręcznej aktualizacji przy K4, K5…
+function kAudioSources() {
+  const courseRoot = path.join(ROOT, 'K');
+  return fs.readdirSync(courseRoot)
+    .filter((name) => /^\d{2}-k\d+-/.test(name))
+    .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10))
+    .flatMap((dir) => fs.readdirSync(path.join(courseRoot, dir))
+      .filter((file) => /^grupa-\d+\.mp3$/.test(file))
+      .sort((a, b) => Number.parseInt(a.slice(6), 10) - Number.parseInt(b.slice(6), 10))
+      .map((file) => `K/${dir}/${file}`));
+}
+
+test('preview renders every K chapter as an independent course with all audio', () => {
   const html = buildPreview();
+  const sources = kAudioSources();
   assert.match(html, /data-go="k"/);
   assert.match(html, /data-view="k" data-course="k"/);
   assert.match(html, /id="k1"/);
   assert.match(html, /id="k2"/);
+  assert.match(html, /id="k3"/);
   assert.match(html, /Kurs K[^<]*Conversation Lab/);
-  assert.match(html, /Odtwórz cały Kurs K · 10 grup/);
-  assert.match(html, /K\/01-k1-powiedz-to-raz\/grupa-1\.mp3/);
-  assert.match(html, /K\/02-k2-kintsugi\/grupa-5\.mp3/);
+  assert.match(html, new RegExp(`Odtwórz cały Kurs K · ${sources.length} grup`));
+  assert.ok(html.includes(sources[0]), `brak pierwszej grupy audio: ${sources[0]}`);
+  assert.ok(html.includes(sources.at(-1)), `brak ostatniej grupy audio: ${sources.at(-1)}`);
   assert.ok((html.match(/data-course="k"/g) || []).length > 100);
 });
 

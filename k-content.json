@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T16:22:05.736Z",
+  "generatedAt": "2026-08-04T05:44:47.084Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -79,6 +79,59 @@
           "n": 5,
           "label": "Grupa 5",
           "src": "K/02-k2-kintsugi/grupa-5.mp3?v=1785687708695"
+        }
+      ]
+    },
+    {
+      "id": "k3",
+      "slug": "K/03-k3-jednym-zdaniem",
+      "localNumber": 3,
+      "title": "K3 · Powiedz to w jednym zdaniu / K3 · Say It in One Sentence",
+      "titlePl": "K3 · Powiedz to w jednym zdaniu",
+      "titleEn": "K3 · Say It in One Sentence",
+      "description": "Krótsza wypowiedź i gotowe słowo: Polska i Ameryka, miasta, drogi, jedzenie.",
+      "pdf": "K/03-k3-jednym-zdaniem/rozdzial.pdf",
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "src": "K/03-k3-jednym-zdaniem/grupa-1.mp3?v=1785822079612"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "src": "K/03-k3-jednym-zdaniem/grupa-2.mp3?v=1785822127948"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "src": "K/03-k3-jednym-zdaniem/grupa-3.mp3?v=1785822168525"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "src": "K/03-k3-jednym-zdaniem/grupa-4.mp3?v=1785822231337"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "src": "K/03-k3-jednym-zdaniem/grupa-5.mp3?v=1785822270917"
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "src": "K/03-k3-jednym-zdaniem/grupa-6.mp3?v=1785821916739"
+        },
+        {
+          "n": 7,
+          "label": "Grupa 7",
+          "src": "K/03-k3-jednym-zdaniem/grupa-7.mp3?v=1785821961891"
+        },
+        {
+          "n": 8,
+          "label": "Grupa 8",
+          "src": "K/03-k3-jednym-zdaniem/grupa-8.mp3?v=1785822015302"
         }
       ]
     }

@@ -18,6 +18,19 @@ function buildPreview() {
   assert.equal(run.status, 0, run.stderr || run.stdout);
 }
 
+// Kolejka „cały Kurs K" rośnie z każdym działem — czytamy ją z dysku, żeby
+// test nie wymagał ręcznej aktualizacji przy K4, K5…
+function kAudioSources() {
+  const courseRoot = path.join(ROOT, 'K');
+  return fs.readdirSync(courseRoot)
+    .filter((name) => /^\d{2}-k\d+-/.test(name))
+    .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10))
+    .flatMap((dir) => fs.readdirSync(path.join(courseRoot, dir))
+      .filter((file) => /^grupa-\d+\.mp3$/.test(file))
+      .sort((a, b) => Number.parseInt(a.slice(6), 10) - Number.parseInt(b.slice(6), 10))
+      .map((file) => `K/${dir}/${file}`));
+}
+
 function waitForDebugger(browser) {
   return new Promise((resolve, reject) => {
     let output = '';
@@ -174,11 +187,12 @@ test('real browser keeps M and K study flows independent', { timeout: 30_000 }, 
 
   await cdp.evaluate("document.querySelector('#k1 .gplay').click()");
   assert.match(await cdp.evaluate("document.querySelector('#player').getAttribute('src')"), /K\/01-k1-powiedz-to-raz\/grupa-1\.mp3$/);
+  const kSources = kAudioSources();
   await cdp.evaluate("document.querySelector('.course-k .play-mk').click()");
   assert.deepEqual(await cdp.evaluate('({length:queue.length,first:queue[0],last:queue.at(-1)})'), {
-    length: 10,
-    first: 'K/01-k1-powiedz-to-raz/grupa-1.mp3',
-    last: 'K/02-k2-kintsugi/grupa-5.mp3',
+    length: kSources.length,
+    first: kSources[0],
+    last: kSources.at(-1),
   });
 
   await cdp.evaluate("document.querySelector('#back-home').click();document.querySelector('.tile[data-go=\"m1\"]').click()");

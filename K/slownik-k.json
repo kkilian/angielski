@@ -20,6 +20,13 @@
       "tytulPl": "Kintsugi: siła niedoskonałości",
       "tytulEn": "Kintsugi: The Strength of Imperfection",
       "opis": "Kintsugi, wabi-sabi, odporność psychiczna, perfekcjonizm i konsumpcja."
+    },
+    {
+      "id": "k3",
+      "folder": "03-k3-jednym-zdaniem",
+      "tytulPl": "Powiedz to w jednym zdaniu",
+      "tytulEn": "Say It in One Sentence",
+      "opis": "Krótsza wypowiedź i gotowe słowo: Polska i Ameryka, miasta, drogi, jedzenie."
     }
   ],
   "wyrazenia": [
@@ -53,7 +60,7 @@
       "en": "It's sort of like...",
       "typ": "kolokacja",
       "intro": "k1",
-      "review": ["k2", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": ["k2", "k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
     },
     {
       "id": "i-was-thinking-we-could",
@@ -101,7 +108,7 @@
       "en": "to shatter into pieces",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
     },
     {
       "id": "crude-repair",
@@ -109,7 +116,7 @@
       "en": "a crude repair",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
     },
     {
       "id": "aesthetic-value",
@@ -125,7 +132,7 @@
       "en": "the transience of things",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
     },
     {
       "id": "mental-resilience",
@@ -134,6 +141,86 @@
       "typ": "kolokacja",
       "intro": "k2",
       "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "an-election",
+      "pl": "wybory (jedne, na konkretne stanowisko)",
+      "en": "an election",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "courtyard",
+      "pl": "podwórko / studnia w kamienicy",
+      "en": "a courtyard",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "self-service",
+      "pl": "samoobsługa; samoobsługowy",
+      "en": "self-service",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+    },
+    {
+      "id": "common-knowledge",
+      "pl": "powszechnie wiadome",
+      "en": "common knowledge",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+    },
+    {
+      "id": "word-of-mouth",
+      "pl": "poczta pantoflowa / z ust do ust",
+      "en": "word of mouth",
+      "typ": "idiom",
+      "intro": "k3",
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "commute",
+      "pl": "dojeżdżać do pracy; dojazd",
+      "en": "to commute",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+    },
+    {
+      "id": "the-suburbs",
+      "pl": "przedmieścia; podmiejski",
+      "en": "the suburbs / suburban",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+    },
+    {
+      "id": "toll-road",
+      "pl": "myto; droga płatna, płatna autostrada",
+      "en": "a toll / a toll road",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+    },
+    {
+      "id": "tourist-trap",
+      "pl": "pułapka na turystów",
+      "en": "a tourist trap",
+      "typ": "idiom",
+      "intro": "k3",
+      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+    },
+    {
+      "id": "homogeneous",
+      "pl": "jednorodny (etnicznie, kulturowo)",
+      "en": "homogeneous",
+      "typ": "kolokacja",
+      "intro": "k3",
+      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
     }
   ]
 }

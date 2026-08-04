@@ -72,7 +72,61 @@ psychologiczna i ukrywanie porażek (pytania 3-4) -> perfekcjonizm, naprawa
 vs wyrzucanie, trudna przeszłość (pytania 5-7) -> próbna rozmowa z siedmioma
 pytaniami z PDF-u i trzema follow-upami.
 
+## K3 - Powiedz to w jednym zdaniu / Say It in One Sentence
+
+**Źródło:** transkrypcja drugiej rozmowy z lektorem (2026-08-03, 1:04:15); Krzysiek
+jest Osobą A.
+
+**Diagnoza:** lektor ocenia słownictwo jako mocne i nie widzi rażących błędów
+gramatycznych. Realne wąskie gardło nazwał sam Krzysiek: „I can't find a way to say
+it in one sentence instead of five sentences". Do tego w transkrypcji jest kilkanaście
+miejsc, w których zabrakło konkretnego słowa („How would you say?", „What's the name
+of it when…", „I don't have the words").
+
+**Nowe targety (słowa, których zabrakło albo które warto mieć aktywnie):**
+
+- `an election`
+- `a courtyard`
+- `self-service`
+- `common knowledge`
+- `word of mouth`
+- `to commute`
+- `the suburbs / suburban`
+- `a toll / a toll road`
+- `a tourist trap`
+- `homogeneous`
+
+**Kompresja jako zasada projektowa:** polska kolumna podaje myśl tak rozwlekle, jak
+padła na lekcji, angielska daje jej zwięzły, jednozdaniowy odpowiednik. W scence
+odpowiedzi wzorcowe mają maksymalnie dwa zdania.
+
+**Błędy z lekcji:** poprawne formy są wplecione w zdania drylu i wracają wielokrotnie;
+wersje błędne nie trafiają do audio, tylko do notki `Typowe błędy Polaka` (zgodnie
+z Zasadą 3 metody). Trzy klasy błędów dostały własne grupy, bo pojawiały się na lekcji
+najczęściej:
+
+- **Grupa 5 — rodzajniki:** `a very nice city`, `have a problem`, `the average person`,
+  `a completely different part`, ale `health care` i `health insurance` bez rodzajnika.
+- **Grupa 6 — `there is/are` i `used to`:** `there were no roads`, `winters used to be
+  harsh`, `there didn't use to be`, `are they waiting`.
+- **Grupa 7 — przyimki i kalki czasownikowe:** `complain about`, `talk about`,
+  `think of`, `drive a car`, `on vacation`, `twice`, `has mass appeal`, `a real native`,
+  `back roads`.
+
+**Lekki klej z K1:** `I was thinking we could...`, `Would it be OK if...?`,
+`What I mean is...`, `I'd say...`, `I'm blanking on the word`, `to get my point across`.
+Z K2 wracają `aesthetic value` i `mental resilience`; `shatter into pieces`,
+`a crude repair` i `the transience of things` przesunięto na `k4`, bo nie wchodzą
+naturalnie w rozmowę o Polsce i USA.
+
+**Łuk działu (8 grup):** zasiew dziesięciu słów w krótkich zdaniach -> Kraków, płatna
+autostrada, bar mleczny i wakacje -> Ameryka: przedmieścia, dojazdy, zamknięte paczki
+znajomych -> składanka i porównania USA/Polska (zdrowie, American dream) -> trzy grupy
+naprawy błędów (rodzajniki, `there is/are` + `used to`, przyimki i kalki) -> scenka
+z realnymi pytaniami lektora z tej lekcji.
+
 ## Dalszy rozwój
 
-K3 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora.
+K4 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora
+(zapowiedziany temat: Red Pill - artykuł ma przyjść przed kolejnymi zajęciami).
 Rejestr już planuje rozproszone powroty, ale nie przesądza przyszłych tematów.
