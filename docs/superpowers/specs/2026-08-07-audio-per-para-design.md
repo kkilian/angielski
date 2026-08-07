@@ -172,7 +172,11 @@ Interfejs wiersza poleceń zostaje: `assemble-audio.js <rozdzial.md> [--only N] 
 
 Jednorazowe narzędzie, **bez OpenAI**, bez rekompresji (`ffmpeg -ss/-to -c copy`).
 
-Dla każdej grupy działu:
+**Grupy słuchanki narzędzie odrzuca** — offsety zdań wymagałyby osobnego dopasowania,
+a w Kursie K nie ma ani jednej słuchanki. Obsługę dopisze się, gdy pojawi się pierwszy
+migrowany dział, który ją zawiera.
+
+Dla każdej pozostałej grupy działu:
 
 1. Sparsuj `rozdzial.md`, ustal tryb i wiersze.
 2. Odtwórz **oczekiwaną listę ciszy** przez `planujParę` (te same wzory, które je wygenerowały).
