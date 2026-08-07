@@ -40,3 +40,23 @@ test('K storage uses its own namespace', () => {
   assert.match(app, /Tryb pętli:.*Zmień tryb/);
   assert.doesNotMatch(app, /fetch\(['"]content\.json/);
 });
+
+test('K uzywa wspolnego modulu par i karty z fraza', () => {
+  const app = fs.readFileSync(new URL('../k-app.js', import.meta.url), 'utf8');
+  assert.match(app, /from '\.\/pary\.js'/);
+  assert.match(app, /audioManifest/);
+  assert.match(app, /budujKolejke/);
+  assert.match(app, /nastepnyTryb/);
+
+  const html = fs.readFileSync(new URL('../k.html', import.meta.url), 'utf8');
+  assert.match(html, /id="p-wyzwalacz"/);
+  assert.match(html, /id="p-wzorzec"/);
+  assert.match(html, /id="p-para"/);
+  assert.equal((html.match(/<audio\b/g) || []).length, 1, 'nadal jeden element audio');
+});
+
+test('wzorzec jest ukryty, dopoki nie leci', () => {
+  const css = fs.readFileSync(new URL('../k-style.css', import.meta.url), 'utf8');
+  assert.match(css, /\.player\s+#p-wzorzec\s*\{[^}]*visibility:\s*hidden/);
+  assert.match(css, /\.player\.wzorzec\s+#p-wzorzec\s*\{[^}]*visibility:\s*visible/);
+});

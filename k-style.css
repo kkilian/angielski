@@ -371,6 +371,15 @@ body.with-player .view { padding-bottom: 230px; }
 .now-copy { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .now-copy strong { font-family: var(--display); font-size: 17px; font-weight: 400; }
 .now-copy span { overflow: hidden; color: var(--paper-dim); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Karta z aktualną frazą. Wzorzec zajmuje miejsce od początku (visibility,
+   nie display), żeby karta nie podskakiwała w momencie odsłonięcia. */
+.player .fraza { padding: 2px 4px 10px; }
+.player .fraza p { margin: 0; }
+.player #p-wyzwalacz { font-size: 17px; line-height: 1.35; color: var(--paper-dim); }
+.player #p-wzorzec { margin-top: 8px; font-size: 19px; line-height: 1.35; font-weight: 650; visibility: hidden; }
+.player.wzorzec #p-wzorzec { visibility: visible; }
+.player #p-para { font-variant-numeric: tabular-nums; }
 .repeat {
   min-width: 76px;
   min-height: 38px;
@@ -386,7 +395,9 @@ body.with-player .view { padding-bottom: 230px; }
   text-transform: uppercase;
   cursor: pointer;
 }
-.repeat[data-mode="one"], .repeat[data-mode="all"] { border-color: var(--gold); color: var(--gold); }
+/* format 1: one/all · format 2: para/grupa/caly — każdy stan poza „wył." świeci */
+.repeat[data-mode="one"], .repeat[data-mode="all"],
+.repeat[data-mode="para"], .repeat[data-mode="grupa"], .repeat[data-mode="caly"] { border-color: var(--gold); color: var(--gold); }
 .timeline { display: grid; grid-template-columns: 38px 1fr 38px; align-items: center; gap: 10px; margin-top: 10px; }
 .timeline span { color: var(--paper-dim); font-family: var(--utility); font-size: 9px; text-align: center; }
 #p-seek { width: 100%; min-height: 28px; accent-color: var(--gold); cursor: pointer; }
