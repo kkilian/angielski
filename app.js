@@ -6,6 +6,8 @@
 //  - tryb "cały" = przejście na zdarzeniu 'ended' + Media Session 'nexttrack' (ręczny fallback),
 //  - pierwszy play musi wyjść z dotknięcia użytkownika (dlatego play() w handlerach kliknięć).
 
+import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla } from './pary.js';
+
 const audio = document.getElementById('audio');
 const view = document.getElementById('view');
 const playerEl = document.getElementById('player');
@@ -13,7 +15,12 @@ const backBtn = document.getElementById('back');
 const seek = document.getElementById('p-seek');
 
 const ART_SIZES = [96, 128, 192, 256, 384, 512];
-const REPEAT_LABEL = { off: 'wył', one: 'jedna', all: 'cały' };
+const REPEAT_LABEL = {
+  off: 'wył', one: 'jedna', all: 'cały',
+  para: 'para', grupa: 'grupa', caly: 'cały',
+};
+// Wchodząc w dział formatu 2 przekładamy zapamiętany tryb na nowe nazwy.
+const TRYB_Z_FORMATU1 = { one: 'grupa', all: 'caly' };
 
 // Znacznik wersji (widoczny w stopce — potwierdza deploy).
 const BUILD = 'M2 · v3 · 2026-06-26 · minikursy';
@@ -83,9 +90,91 @@ function fmtBuild(iso) {
 }
 
 /* ---------- silnik audio ---------- */
+/* ---------- format 2: audio per para (patrz pary.js) ---------- */
+state.kolejka = [];
+state.poz = 0;
+let manifest = null;
+let manifestDla = null;
+const grupaTeraz = () => (manifest ? manifest.grupy[state.index] : null);
+const maPary = () => state.kolejka.length > 0 && state.kolejka[0].rola !== 'sluchanka';
+
+async function wczytajManifest(chapter) {
+  if (manifestDla === chapter.id) return manifest;
+  const response = await fetch(`${chapter.audioManifest}?v=${chapter.audioVersion}`, { cache: 'no-cache' });
+  if (!response.ok) throw new Error(`audio.json ${response.status}`);
+  manifest = await response.json();
+  manifestDla = chapter.id;
+  return manifest;
+}
+
+async function grajPary(chapter, index, poz) {
+  try {
+    await wczytajManifest(chapter);
+  } catch {
+    setText('p-wyzwalacz', 'Nie udało się wczytać audio tego działu.');
+    setText('p-wzorzec', '');
+    return;
+  }
+  const grupa = manifest.grupy[index];
+  if (!grupa) return;
+  state.chapter = chapter;
+  state.index = index;
+  if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
+  state.kolejka = budujKolejke(grupa, chapter.audioVersion);
+  state.poz = Math.min(poz, Math.max(0, state.kolejka.length - 1));
+  wczytajPozycje();
+  audio.play().catch(() => {});
+  persist();
+}
+
+function wczytajPozycje() {
+  const element = state.kolejka[state.poz];
+  if (!element) return;
+  audio.src = element.src;
+  audio.loop = false;  // pętla „para" idzie przez przejścia, nie natywnie
+  renderFraza(element);
+  updateMediaSession();
+  renderPlayer();
+  updateActiveUI();
+}
+
+// Wyzwalacz widać zawsze; wzorzec dopiero, gdy leci (klasa .wzorzec na .player).
+function renderFraza(element) {
+  const grupa = grupaTeraz();
+  if (element.rola === 'sluchanka') {
+    const i = zdanieDla(element.zdania, audio.currentTime);
+    const zdanie = element.zdania[i] || {};
+    setText('p-wyzwalacz', zdanie.pl || '');
+    setText('p-wzorzec', zdanie.en || '');
+    playerEl.classList.add('wzorzec');
+    return;
+  }
+  const tekst = element.tekst;
+  setText('p-wyzwalacz', [tekst.pyt, tekst.pl].filter(Boolean).join(' — '));
+  setText('p-wzorzec', tekst.en || '');
+  playerEl.classList.toggle('wzorzec', element.rola === 'wzor');
+  // licznik par dopisuje renderPlayer — inaczej kolejność wywołań by go nadpisała
+}
+
+function skok(offset) {
+  if (!state.kolejka.length) return offset < 0 ? prev() : next();
+  if (offset < 0 && audio.currentTime > 2) { audio.currentTime = 0; return; }
+  state.poz = offset < 0 ? poprzedniaPara(state.poz) : nastepnaPara(state.poz, state.kolejka.length);
+  wczytajPozycje();
+  audio.play().catch(() => {});
+  persist();
+}
+
 function loadAndPlay(chapter, index) {
+  if (chapter.format === 2) return void grajPary(chapter, index, 0);
   const g = chapter.groups[index];
   if (!g) return;
+  // Wracamy z działu formatu 2 — wyczyść kolejkę i kartę z frazą.
+  state.kolejka = [];
+  state.poz = 0;
+  setText('p-wyzwalacz', '');
+  setText('p-wzorzec', '');
+  playerEl.classList.remove('wzorzec');
   state.chapter = chapter;
   state.index = index;
   audio.src = g.src;
@@ -104,7 +193,7 @@ function selectGroup(chapter, index) {
 }
 
 function loopGroup(chapter, index) {
-  setRepeat('one');
+  setRepeat(chapter.format === 2 ? 'grupa' : 'one');
   loadAndPlay(chapter, index);
 }
 
@@ -128,18 +217,21 @@ function prev() {
 function setRepeat(mode) {
   state.repeat = mode;
   localStorage.setItem('ang.repeat', mode);
-  audio.loop = (mode === 'one'); // zmiana w locie, bez restartu utworu
+  audio.loop = mode === 'one' && !state.kolejka.length; // natywna pętla tylko w formacie 1
   renderPlayer();
   updateActiveUI();
 }
 function cycleRepeat() {
+  if (state.kolejka.length) return setRepeat(nastepnyTryb(state.repeat, maPary()));
   const order = ['off', 'one', 'all'];
   setRepeat(order[(order.indexOf(state.repeat) + 1) % order.length]);
 }
 
 function persist() {
   if (state.chapter) {
-    localStorage.setItem('ang.last', JSON.stringify({ id: state.chapter.id, index: state.index }));
+    localStorage.setItem('ang.last', JSON.stringify({
+      id: state.chapter.id, index: state.index, poz: state.poz,
+    }));
   }
 }
 
@@ -150,8 +242,8 @@ function setupMediaSession() {
   const set = (a, h) => { try { ms.setActionHandler(a, h); } catch {} };
   set('play', () => audio.play().catch(() => {}));
   set('pause', () => audio.pause());
-  set('previoustrack', () => prev());
-  set('nexttrack', () => next());
+  set('previoustrack', () => skok(-1));
+  set('nexttrack', () => skok(1));
   set('seekto', (d) => {
     if (d.fastSeek && 'fastSeek' in audio) audio.fastSeek(d.seekTime);
     else audio.currentTime = d.seekTime;
@@ -162,12 +254,27 @@ function setupMediaSession() {
 }
 function updateMediaSession() {
   if (!('mediaSession' in navigator) || !state.chapter) return;
+  const artwork = ART_SIZES.map((s) => ({ src: `icons/icon-${s}.png`, sizes: `${s}x${s}`, type: 'image/png' }));
+  if (state.kolejka.length) {
+    const element = state.kolejka[state.poz];
+    const grupa = grupaTeraz();
+    if (element.rola === 'sluchanka') {
+      const zdanie = element.zdania[zdanieDla(element.zdania, audio.currentTime)] || {};
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: zdanie.en || '', artist: `Grupa ${grupa.n}`, album: 'Angielski', artwork });
+      return;
+    }
+    const opis = opisBlokady(element, { grupa: grupa.n, ilePar: grupa.pary.length });
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: opis.title, artist: opis.artist, album: 'Angielski', artwork });
+    return;
+  }
   const g = state.chapter.groups[state.index];
   navigator.mediaSession.metadata = new MediaMetadata({
     title: g.label,
     artist: state.chapter.titlePl, // tytuł rozdziału widoczny na ekranie blokady
     album: 'Angielski',
-    artwork: ART_SIZES.map((s) => ({ src: `icons/icon-${s}.png`, sizes: `${s}x${s}`, type: 'image/png' })),
+    artwork,
   });
 }
 function setMSState(s) {
@@ -197,7 +304,11 @@ function renderPlayer() {
   document.body.classList.add('with-player');
 
   const g = state.chapter.groups[state.index];
-  setText('p-group', g.label);
+  const el = state.kolejka[state.poz];
+  const grupa = grupaTeraz();
+  setText('p-group', el && el.rola !== 'sluchanka' && grupa
+    ? `${g.label} · ${el.para}/${grupa.pary.length}`
+    : g.label);
   setText('p-chapter', state.chapter.titlePl);
   setText('p-play', audio.paused ? '▶' : '⏸');
   document.body.classList.toggle('playing', !audio.paused); // szpula + puls przycisku
@@ -391,8 +502,25 @@ function restoreLast() {
   try {
     const raw = localStorage.getItem('ang.last');
     if (!raw) return;
-    const { id, index } = JSON.parse(raw);
+    const { id, index, poz } = JSON.parse(raw);
     const ch = DATA.chapters.find((c) => c.id === id);
+    if (ch && ch.format === 2) {
+      wczytajManifest(ch).then(() => {
+        const grupa = manifest.grupy[index];
+        if (!grupa) return;
+        state.chapter = ch;
+        state.index = index;
+        if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
+        state.kolejka = budujKolejke(grupa, ch.audioVersion);
+        state.poz = Math.min(poz || 0, state.kolejka.length - 1);
+        audio.src = state.kolejka[state.poz].src; // tylko wczytaj — start wymaga dotknięcia
+        audio.loop = false;
+        renderFraza(state.kolejka[state.poz]);
+        updateMediaSession();
+        renderPlayer();
+      }).catch(() => {});
+      return;
+    }
     if (ch && ch.groups[index]) {
       state.chapter = ch;
       state.index = index;
@@ -424,8 +552,8 @@ function wire() {
   backBtn.addEventListener('click', () => { location.hash = backHash; });
 
   byId('p-play').addEventListener('click', togglePlay);
-  byId('p-prev').addEventListener('click', prev);
-  byId('p-next').addEventListener('click', next);
+  byId('p-prev').addEventListener('click', () => skok(-1));
+  byId('p-next').addEventListener('click', () => skok(1));
   byId('p-repeat').addEventListener('click', cycleRepeat);
 
   seek.addEventListener('input', () => {
@@ -443,11 +571,42 @@ function wire() {
   audio.addEventListener('play', () => { setMSState('playing'); renderPlayer(); updateActiveUI(); });
   audio.addEventListener('pause', () => { setMSState('paused'); renderPlayer(); updateActiveUI(); });
   audio.addEventListener('ended', () => {
+    if (state.kolejka.length) {
+      const dalej = nastepny(state.poz, state.kolejka.length, state.repeat);
+      if (dalej == null) {
+        if (state.repeat === 'caly') {
+          const ile = state.chapter.groups.length;
+          return void grajPary(state.chapter, (state.index + 1) % ile, 0);
+        }
+        renderPlayer(); updateActiveUI(); return;
+      }
+      state.poz = dalej;
+      wczytajPozycje();
+      audio.play().catch(() => {});
+      return;
+    }
     if (state.repeat === 'all') next();      // tryb "jedna" tu nie trafia (natywna pętla)
     else { renderPlayer(); updateActiveUI(); } // "wył" -> zatrzymane
   });
+
+  // Brakujący plik pary nie może zatrzymać całej grupy ani wpaść w pętlę na sobie.
+  audio.addEventListener('error', () => {
+    if (!state.kolejka.length) return;
+    console.warn('Nie mogę wczytać', audio.src, '— przeskakuję dalej');
+    const dalej = nastepny(state.poz, state.kolejka.length, state.repeat === 'para' ? 'off' : state.repeat);
+    if (dalej == null) return;
+    state.poz = dalej;
+    wczytajPozycje();
+    audio.play().catch(() => {});
+  });
+
   audio.addEventListener('loadedmetadata', () => { updatePositionState(); updateSeekUI(); });
-  audio.addEventListener('timeupdate', throttle(() => { updateSeekUI(); updatePositionState(); }, 500));
+  audio.addEventListener('timeupdate', throttle(() => {
+    updateSeekUI();
+    updatePositionState();
+    const element = state.kolejka[state.poz];
+    if (element && element.rola === 'sluchanka') { renderFraza(element); updateMediaSession(); }
+  }, 500));
 
   window.addEventListener('hashchange', route);
 }

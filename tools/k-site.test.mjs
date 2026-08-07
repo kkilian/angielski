@@ -60,3 +60,15 @@ test('wzorzec jest ukryty, dopoki nie leci', () => {
   assert.match(css, /\.player\s+#p-wzorzec\s*\{[^}]*visibility:\s*hidden/);
   assert.match(css, /\.player\.wzorzec\s+#p-wzorzec\s*\{[^}]*visibility:\s*visible/);
 });
+
+test('M obsluguje oba formaty i nie traci natywnej petli', () => {
+  const app = fs.readFileSync(new URL('../app.js', import.meta.url), 'utf8');
+  assert.match(app, /from '\.\/pary\.js'/);
+  assert.match(app, /format === 2/);
+  assert.match(app, /audio\.loop = \(state\.repeat === 'one'\)/,
+    'format 1 musi dalej zapetlac grupe natywnie');
+
+  const html = fs.readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(html, /id="p-wyzwalacz"/);
+  assert.match(html, /id="p-wzorzec"/);
+});

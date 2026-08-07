@@ -488,6 +488,14 @@ body.playing .reel {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Karta z aktualną frazą (dział formatu 2). Wzorzec zajmuje miejsce od początku
+   (visibility, nie display), żeby karta nie podskakiwała w momencie odsłonięcia. */
+.player .fraza { padding: 2px 4px 10px; }
+.player .fraza p { margin: 0; }
+.player #p-wyzwalacz { font-size: 17px; line-height: 1.35; color: var(--ink-3); }
+.player #p-wzorzec { margin-top: 8px; font-size: 19px; line-height: 1.35; font-weight: 650; visibility: hidden; }
+.player.wzorzec #p-wzorzec { visibility: visible; }
+
 .player-repeat {
   flex-shrink: 0;
   display: inline-flex;
