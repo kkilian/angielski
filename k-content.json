@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T05:44:47.084Z",
+  "generatedAt": "2026-08-07T13:46:16.359Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -15,32 +15,35 @@
       "titleEn": "K1 · Say It Clearly the First Time",
       "description": "Domykanie myśli, ratowanie brakującego słowa i naturalne prowadzenie rozmowy.",
       "pdf": "K/01-k1-powiedz-to-raz/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/01-k1-powiedz-to-raz/audio.json",
+      "audioVersion": 1786109183154,
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "K/01-k1-powiedz-to-raz/grupa-1.mp3?v=1785673082059"
+          "parCount": 12
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "K/01-k1-powiedz-to-raz/grupa-2.mp3?v=1785673082069"
+          "parCount": 12
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "K/01-k1-powiedz-to-raz/grupa-3.mp3?v=1785673082076"
+          "parCount": 12
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "K/01-k1-powiedz-to-raz/grupa-4.mp3?v=1785673082085"
+          "parCount": 12
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "K/01-k1-powiedz-to-raz/grupa-5.mp3?v=1785673082096"
+          "parCount": 10
         }
       ]
     },
@@ -53,32 +56,35 @@
       "titleEn": "K2 · Kintsugi: The Strength of Imperfection",
       "description": "Kintsugi, wabi-sabi, odporność psychiczna, perfekcjonizm i konsumpcja.",
       "pdf": "K/02-k2-kintsugi/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/02-k2-kintsugi/audio.json",
+      "audioVersion": 1786109190713,
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "K/02-k2-kintsugi/grupa-1.mp3?v=1785687541077"
+          "parCount": 13
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "K/02-k2-kintsugi/grupa-2.mp3?v=1785687579046"
+          "parCount": 13
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "K/02-k2-kintsugi/grupa-3.mp3?v=1785687618108"
+          "parCount": 13
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "K/02-k2-kintsugi/grupa-4.mp3?v=1785687653399"
+          "parCount": 13
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "K/02-k2-kintsugi/grupa-5.mp3?v=1785687708695"
+          "parCount": 10
         }
       ]
     },
@@ -91,47 +97,50 @@
       "titleEn": "K3 · Say It in One Sentence",
       "description": "Krótsza wypowiedź i gotowe słowo: Polska i Ameryka, miasta, drogi, jedzenie.",
       "pdf": "K/03-k3-jednym-zdaniem/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/03-k3-jednym-zdaniem/audio.json",
+      "audioVersion": 1786109205664,
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "src": "K/03-k3-jednym-zdaniem/grupa-1.mp3?v=1785822079612"
+          "parCount": 16
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "src": "K/03-k3-jednym-zdaniem/grupa-2.mp3?v=1785822127948"
+          "parCount": 17
         },
         {
           "n": 3,
           "label": "Grupa 3",
-          "src": "K/03-k3-jednym-zdaniem/grupa-3.mp3?v=1785822168525"
+          "parCount": 15
         },
         {
           "n": 4,
           "label": "Grupa 4",
-          "src": "K/03-k3-jednym-zdaniem/grupa-4.mp3?v=1785822231337"
+          "parCount": 18
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "src": "K/03-k3-jednym-zdaniem/grupa-5.mp3?v=1785822270917"
+          "parCount": 15
         },
         {
           "n": 6,
           "label": "Grupa 6",
-          "src": "K/03-k3-jednym-zdaniem/grupa-6.mp3?v=1785821916739"
+          "parCount": 15
         },
         {
           "n": 7,
           "label": "Grupa 7",
-          "src": "K/03-k3-jednym-zdaniem/grupa-7.mp3?v=1785821961891"
+          "parCount": 15
         },
         {
           "n": 8,
           "label": "Grupa 8",
-          "src": "K/03-k3-jednym-zdaniem/grupa-8.mp3?v=1785822015302"
+          "parCount": 11
         }
       ]
     }

@@ -19,15 +19,28 @@ function buildPreview() {
 
 // Rozmiar Kursu K rośnie z każdym działem — czytamy go z dysku, żeby test
 // nie wymagał ręcznej aktualizacji przy K4, K5…
-function kAudioSources() {
+function kDzialy() {
   const courseRoot = path.join(ROOT, 'K');
   return fs.readdirSync(courseRoot)
     .filter((name) => /^\d{2}-k\d+-/.test(name))
     .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10))
-    .flatMap((dir) => fs.readdirSync(path.join(courseRoot, dir))
-      .filter((file) => /^grupa-\d+\.mp3$/.test(file))
-      .sort((a, b) => Number.parseInt(a.slice(6), 10) - Number.parseInt(b.slice(6), 10))
-      .map((file) => `K/${dir}/${file}`));
+    .map((dir) => ({
+      dir,
+      manifest: JSON.parse(fs.readFileSync(path.join(courseRoot, dir, 'audio.json'), 'utf8')),
+    }));
+}
+
+// Kurs K jest w formacie 2 — źródła audio biorą się z audio.json, nie z listy plików.
+function kAudioSources() {
+  return kDzialy().flatMap(({ dir, manifest }) =>
+    manifest.grupy.flatMap((g) => (g.pary || []).flatMap((p) => [
+      `K/${dir}/${p.cue.src}`, `K/${dir}/${p.wzor.src}`,
+    ])));
+}
+
+// Przycisk „Odtwórz cały Kurs K" liczy grupy, nie pliki.
+function kGroupCount() {
+  return kDzialy().reduce((sum, { manifest }) => sum + manifest.grupy.length, 0);
 }
 
 test('preview renders every K chapter as an independent course with all audio', () => {
@@ -39,9 +52,9 @@ test('preview renders every K chapter as an independent course with all audio', 
   assert.match(html, /id="k2"/);
   assert.match(html, /id="k3"/);
   assert.match(html, /Kurs K[^<]*Conversation Lab/);
-  assert.match(html, new RegExp(`Odtwórz cały Kurs K · ${sources.length} grup`));
-  assert.ok(html.includes(sources[0]), `brak pierwszej grupy audio: ${sources[0]}`);
-  assert.ok(html.includes(sources.at(-1)), `brak ostatniej grupy audio: ${sources.at(-1)}`);
+  assert.match(html, new RegExp(`Odtwórz cały Kurs K · ${kGroupCount()} grup`));
+  assert.ok(html.includes(sources[0]), `brak pierwszej pary audio: ${sources[0]}`);
+  assert.ok(html.includes(sources.at(-1)), `brak ostatniej pary audio: ${sources.at(-1)}`);
   assert.ok((html.match(/data-course="k"/g) || []).length > 100);
 });
 
@@ -73,4 +86,20 @@ test('K uses the complete study UI and a distinct visual theme', () => {
   assert.match(html, /#sidenav a\[href\^="#"\]/);
   assert.match(html, /K1 · Powiedz to jasno za pierwszym razem/);
   assert.match(html, /K2 · Kintsugi: siła niedoskonałości/);
+});
+
+test('wiersze Kursu K niosa sciezki do par i eksport je przekazuje', () => {
+  const html = buildPreview();
+  assert.match(html, /data-cue="K\/01-k1-powiedz-to-raz\/audio\/g1-p01-cue\.mp3"/);
+  assert.match(html, /data-en-src="K\/01-k1-powiedz-to-raz\/audio\/g1-p01-en\.mp3"/);
+  assert.match(html, /data-para="1"/);
+  assert.match(html, /class="row-play"/, 'kazdy wiersz ma wlasny przycisk odtwarzania');
+  assert.match(html, /tr\.dataset\.enSrc/, 'eksport siega po sciezke do pliku EN');
+  assert.match(html, /grajaca/, 'jest klasa podswietlenia grajacego wiersza');
+});
+
+test('dzialy Kursu M zostaja przy jednym pliku na grupe', () => {
+  const html = buildPreview();
+  assert.match(html, /data-audio="\[&quot;01-m1d1[^"]*grupa-1\.mp3&quot;\]"/,
+    'M nadal ma kolejke plikow grupowych');
 });

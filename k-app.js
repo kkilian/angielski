@@ -1,3 +1,5 @@
+import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla, bazaDzialu } from './pary.js';
+
 export function fmt(seconds) {
   const safe = Math.max(0, Math.floor(Number(seconds) || 0));
   return `${Math.floor(safe / 60)}:${String(safe % 60).padStart(2, '0')}`;
@@ -35,7 +37,12 @@ function initSite() {
   const player = document.getElementById('player');
   const back = document.getElementById('back');
   const seek = document.getElementById('p-seek');
-  const repeatLabels = { off: 'wył.', one: 'jedna', all: 'całość' };
+  const repeatLabels = {
+    off: 'wył.', one: 'jedna', all: 'całość',      // format 1 (stare działy)
+    para: 'para', grupa: 'grupa', caly: 'całość',  // format 2
+  };
+  // Wchodząc w dział formatu 2 przekładamy zapamiętany tryb na nowe nazwy.
+  const TRYB_Z_FORMATU1 = { one: 'grupa', all: 'caly' };
 
   let data = null;
   let visibleChapterId = null;
@@ -48,6 +55,23 @@ function initSite() {
     repeat: localStorage.getItem('ang.k.repeat') || 'one',
   };
 
+  state.kolejka = [];        // płaska lista elementów bieżącej grupy (pusta = format 1)
+  state.poz = 0;             // pozycja w kolejce
+  let manifest = null;       // audio.json bieżącego działu
+  let manifestDla = null;    // id działu, dla którego manifest jest aktualny
+
+  const grupaTeraz = () => (manifest ? manifest.grupy[state.index] : null);
+  const maPary = () => state.kolejka.length > 0 && state.kolejka[0].rola !== 'sluchanka';
+
+  async function wczytajManifest(chapter) {
+    if (manifestDla === chapter.id) return manifest;
+    const response = await fetch(`${chapter.audioManifest}?v=${chapter.audioVersion}`, { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`audio.json ${response.status}`);
+    manifest = await response.json();
+    manifestDla = chapter.id;
+    return manifest;
+  }
+
   const byId = (id) => document.getElementById(id);
   const setText = (id, text) => {
     const element = byId(id);
@@ -56,11 +80,26 @@ function initSite() {
 
   function updateMediaSession() {
     if (!('mediaSession' in navigator) || !state.chapter) return;
+    const album = 'Kurs K · Conversation Lab';
+    if (state.kolejka.length) {
+      const element = state.kolejka[state.poz];
+      const grupa = grupaTeraz();
+      if (element.rola === 'sluchanka') {
+        const zdanie = element.zdania[zdanieDla(element.zdania, audio.currentTime)] || {};
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: zdanie.en || '', artist: `Grupa ${grupa.n}`, album,
+        });
+        return;
+      }
+      const opis = opisBlokady(element, { grupa: grupa.n, ilePar: grupa.pary.length });
+      navigator.mediaSession.metadata = new MediaMetadata({ title: opis.title, artist: opis.artist, album });
+      return;
+    }
     const group = state.chapter.groups[state.index];
     navigator.mediaSession.metadata = new MediaMetadata({
       title: group.label,
       artist: cleanTitle(state.chapter.titlePl),
-      album: 'Kurs K · Conversation Lab',
+      album,
     });
   }
 
@@ -98,8 +137,10 @@ function initSite() {
     document.body.classList.add('with-player');
     document.body.classList.toggle('is-playing', !audio.paused);
     const group = state.chapter.groups[state.index];
-    setText('p-group', group.label);
-    setText('p-chapter', cleanTitle(state.chapter.titlePl));
+    setText('p-chapter', `K${state.chapter.localNumber} · ${group.label}`);
+    // W formacie 2 licznik par uzupełnia renderFraza; w formacie 1 nie ma par,
+    // więc w to miejsce wraca tytuł działu.
+    if (!state.kolejka.length) setText('p-para', cleanTitle(state.chapter.titlePl));
     setText('p-play', audio.paused ? '▶' : 'Ⅱ');
     setText('p-repeat-label', repeatLabels[state.repeat]);
     const repeatButton = byId('p-repeat');
@@ -121,12 +162,71 @@ function initSite() {
 
   function persist() {
     if (!state.chapter) return;
-    localStorage.setItem('ang.k.last', JSON.stringify({ id: state.chapter.id, index: state.index }));
+    localStorage.setItem('ang.k.last', JSON.stringify({
+      id: state.chapter.id, index: state.index, poz: state.poz,
+    }));
+  }
+
+  async function grajPary(chapter, index, poz) {
+    try {
+      await wczytajManifest(chapter);
+    } catch {
+      setText('p-wyzwalacz', 'Nie udało się wczytać audio tego działu.');
+      setText('p-wzorzec', '');
+      return;
+    }
+    const grupa = manifest.grupy[index];
+    if (!grupa) return;
+    state.chapter = chapter;
+    state.index = index;
+    if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
+    state.kolejka = budujKolejke(grupa, chapter.audioVersion, bazaDzialu(chapter));
+    state.poz = Math.min(poz, Math.max(0, state.kolejka.length - 1));
+    wczytajPozycje();
+    audio.play().catch(() => {});
+    persist();
+  }
+
+  function wczytajPozycje() {
+    const element = state.kolejka[state.poz];
+    if (!element) return;
+    audio.src = element.src;
+    audio.loop = false;  // pętla „para" idzie przez przejścia, nie natywnie
+    renderFraza(element);
+    updateMediaSession();
+    renderPlayer();
+    updateActiveGroup();
+  }
+
+  // Wyzwalacz widać zawsze; wzorzec dopiero, gdy leci (klasa .wzorzec na .player).
+  function renderFraza(element) {
+    const grupa = grupaTeraz();
+    if (element.rola === 'sluchanka') {
+      const i = zdanieDla(element.zdania, audio.currentTime);
+      const zdanie = element.zdania[i] || {};
+      setText('p-wyzwalacz', zdanie.pl || '');
+      setText('p-wzorzec', zdanie.en || '');
+      player.classList.add('wzorzec');  // w słuchance angielski jest treścią, nie odpowiedzią
+      setText('p-para', `${i + 1}/${element.zdania.length}`);
+      return;
+    }
+    const tekst = element.tekst;
+    setText('p-wyzwalacz', [tekst.pyt, tekst.pl].filter(Boolean).join(' — '));
+    setText('p-wzorzec', tekst.en || '');
+    player.classList.toggle('wzorzec', element.rola === 'wzor');
+    setText('p-para', `${element.para}/${grupa.pary.length}`);
   }
 
   function loadAndPlay(chapter, index) {
+    if (chapter.format === 2) return void grajPary(chapter, index, 0);
     const group = chapter.groups[index];
     if (!group) return;
+    // Wracamy z działu formatu 2 — wyczyść kolejkę i kartę z frazą.
+    state.kolejka = [];
+    state.poz = 0;
+    setText('p-wyzwalacz', '');
+    setText('p-wzorzec', '');
+    player.classList.remove('wzorzec');
     state.chapter = chapter;
     state.index = index;
     audio.src = group.src;
@@ -151,6 +251,15 @@ function initSite() {
     loadAndPlay(state.chapter, index);
   }
 
+  function skok(offset) {
+    if (!state.kolejka.length) return move(offset);           // format 1 — po grupach, jak dziś
+    if (offset < 0 && audio.currentTime > 2) { audio.currentTime = 0; return; }
+    state.poz = offset < 0 ? poprzedniaPara(state.poz) : nastepnaPara(state.poz, state.kolejka.length);
+    wczytajPozycje();
+    audio.play().catch(() => {});
+    persist();
+  }
+
   function selectGroup(chapter, index) {
     if (state.chapter?.id === chapter.id && state.index === index) togglePlay();
     else loadAndPlay(chapter, index);
@@ -159,7 +268,7 @@ function initSite() {
   function setRepeat(mode) {
     state.repeat = mode;
     localStorage.setItem('ang.k.repeat', mode);
-    audio.loop = mode === 'one';
+    audio.loop = mode === 'one' && !state.kolejka.length;
     renderPlayer();
   }
 
@@ -268,7 +377,25 @@ function initSite() {
     try {
       const saved = JSON.parse(localStorage.getItem('ang.k.last'));
       const chapter = data.chapters.find((item) => item.id === saved?.id);
-      if (!chapter?.groups[saved.index]) return;
+      if (!chapter) return;
+      if (chapter.format === 2) {
+        wczytajManifest(chapter).then(() => {
+          const grupa = manifest.grupy[saved.index];
+          if (!grupa) return;
+          state.chapter = chapter;
+          state.index = saved.index;
+          if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
+          state.kolejka = budujKolejke(grupa, chapter.audioVersion, bazaDzialu(chapter));
+          state.poz = Math.min(saved.poz || 0, state.kolejka.length - 1);
+          audio.src = state.kolejka[state.poz].src;  // tylko wczytaj — start wymaga dotknięcia
+          audio.loop = false;
+          renderFraza(state.kolejka[state.poz]);
+          updateMediaSession();
+          renderPlayer();
+        }).catch(() => {});
+        return;
+      }
+      if (!chapter.groups[saved.index]) return;
       state.chapter = chapter;
       state.index = saved.index;
       audio.src = chapter.groups[saved.index].src;
@@ -290,7 +417,7 @@ function initSite() {
       const chapter = data.chapters.find((item) => item.id === visibleChapterId);
       const index = Number(action.dataset.index);
       if (action.dataset.action === 'loop') {
-        setRepeat('one');
+        setRepeat(chapter.format === 2 ? 'grupa' : 'one');
         loadAndPlay(chapter, index);
       } else {
         selectGroup(chapter, index);
@@ -299,9 +426,11 @@ function initSite() {
 
     back.addEventListener('click', () => { location.hash = backHash; });
     byId('p-play').addEventListener('click', togglePlay);
-    byId('p-prev').addEventListener('click', () => move(-1));
-    byId('p-next').addEventListener('click', () => move(1));
-    byId('p-repeat').addEventListener('click', () => setRepeat(cycleRepeat(state.repeat)));
+    byId('p-prev').addEventListener('click', () => skok(-1));
+    byId('p-next').addEventListener('click', () => skok(1));
+    byId('p-repeat').addEventListener('click', () => {
+      setRepeat(state.kolejka.length ? nastepnyTryb(state.repeat, maPary()) : cycleRepeat(state.repeat));
+    });
 
     seek.addEventListener('input', () => {
       seeking = true;
@@ -317,11 +446,42 @@ function initSite() {
     audio.addEventListener('play', () => { renderPlayer(); updateActiveGroup(); });
     audio.addEventListener('pause', () => { renderPlayer(); updateActiveGroup(); });
     audio.addEventListener('ended', () => {
+      if (state.kolejka.length) {
+        const dalej = nastepny(state.poz, state.kolejka.length, state.repeat);
+        if (dalej == null) {
+          if (state.repeat === 'caly') {
+            const ile = state.chapter.groups.length;
+            return void grajPary(state.chapter, (state.index + 1) % ile, 0);
+          }
+          renderPlayer(); updateActiveGroup(); return;
+        }
+        state.poz = dalej;
+        wczytajPozycje();
+        audio.play().catch(() => {});
+        return;
+      }
       if (state.repeat === 'all') move(1);
       else { renderPlayer(); updateActiveGroup(); }
     });
+
+    // Brakujący plik pary nie może zatrzymać całej grupy ani wpaść w pętlę na sobie.
+    audio.addEventListener('error', () => {
+      if (!state.kolejka.length) return;
+      console.warn('Nie mogę wczytać', audio.src, '— przeskakuję dalej');
+      const dalej = nastepny(state.poz, state.kolejka.length, state.repeat === 'para' ? 'off' : state.repeat);
+      if (dalej == null) return;
+      state.poz = dalej;
+      wczytajPozycje();
+      audio.play().catch(() => {});
+    });
+
     audio.addEventListener('loadedmetadata', () => { updatePositionState(); updateSeek(); });
-    audio.addEventListener('timeupdate', () => { updatePositionState(); updateSeek(); });
+    audio.addEventListener('timeupdate', () => {
+      updatePositionState();
+      updateSeek();
+      const element = state.kolejka[state.poz];
+      if (element && element.rola === 'sluchanka') { renderFraza(element); updateMediaSession(); }
+    });
     window.addEventListener('hashchange', route);
 
     if ('mediaSession' in navigator) {
@@ -330,8 +490,8 @@ function initSite() {
       };
       set('play', () => audio.play().catch(() => {}));
       set('pause', () => audio.pause());
-      set('previoustrack', () => move(-1));
-      set('nexttrack', () => move(1));
+      set('previoustrack', () => skok(-1));
+      set('nexttrack', () => skok(1));
       set('seekto', (details) => {
         audio.currentTime = details.seekTime;
         updatePositionState();

@@ -181,6 +181,30 @@ function audioForDir(dir) {
   return [...found.keys()].sort((a, b) => a - b).map((n) => found.get(n));
 }
 
+// ---- format 2: pary z audio.json, adresowane POZYCJĄ grupy ----
+// Pozycją, nie numerem `n`, bo parser podglądu nie numeruje grup — tak samo jak
+// istniejące `item.audio[groupIndex]` dla formatu 1. Kolejność w audio.json jest
+// posortowana po `n`, a nagłówki `##` w rozdzial.md idą w tej samej kolejności.
+// Podgląd celowo NIE dokleja ?v= — bywa otwierany z file://, gdzie parametr
+// zapytania psuje ścieżkę, a sam plik i tak powstaje na nowo przy każdym buildzie.
+function paryDlaDir(dir) {
+  const p = path.join(ROOT, dir, 'audio.json');
+  if (!fs.existsSync(p)) return null;
+  try {
+    const m = JSON.parse(fs.readFileSync(p, 'utf8'));
+    if (m.wersja !== 2) return null;
+    return [...m.grupy].sort((a, b) => a.n - b.n)
+      .map((g) => (g.pary || []).map((x) => ({ cue: `${dir}/${x.cue.src}`, en: `${dir}/${x.wzor.src}` })));
+  } catch { return null; }
+}
+
+// Kolejka „odtwórz całą grupę" dla działu formatu 2: wyzwalacz, wzorzec, wyzwalacz…
+function audioParamiDlaDir(dir) {
+  const pary = paryDlaDir(dir);
+  if (!pary) return null;
+  return pary.flatMap((grupa) => grupa.flatMap((p) => [p.cue, p.en]));
+}
+
 // ---- egzamin głosowy: historia podejść (egzaminy/mN/*/werdykt.json) ----
 function egzaminPodejscia(mk) {
   const baza = path.join(ROOT, 'egzaminy', `m${mk}`);
@@ -238,7 +262,8 @@ const mItems = mDirs.map((dir) => {
     sentenceCount: P.groups.reduce((s, g) => s + g.rows.length, 0),
     newExpressions: newExprFor(mRegistry, id, etap),
     blocks: blocksForDzial(mRegistry, id),
-    audio: audioForDir(dir),
+    audio: audioParamiDlaDir(dir) || audioForDir(dir),
+    pary: paryDlaDir(dir),
   };
 });
 
@@ -257,7 +282,8 @@ const kItems = kDirs.map((name) => {
     sentenceCount: parsed.groups.reduce((sum, group) => sum + group.rows.length, 0),
     newExpressions: newExprFor(kRegistry, id),
     blocks: blocksForDzial(kRegistry, id),
-    audio: audioForDir(dir),
+    audio: audioParamiDlaDir(dir) || audioForDir(dir),
+    pary: paryDlaDir(dir),
   };
 });
 
@@ -288,18 +314,28 @@ function rowData(item, plPL, plEN, key, targets, blocks) {
   return `data-k="${key}" data-pl="${A(plPL)}" data-en="${A(plEN)}" data-targets="${A(targets)}" data-blocks="${A(blocks)}" data-course="${item.course}" data-chapter="${chapter}"${legacy}`;
 }
 
-function renderRows(item, group) {
+function renderRows(item, group, groupIndex) {
+  // Dział formatu 2: każdy wiersz zna swoje dwa pliki (wyzwalacz + wzorzec).
+  // Dzięki temu ▶ przy wierszu gra dokładnie tę parę, a grający wiersz da się podświetlić.
+  const paryGrupy = item.pary ? item.pary[groupIndex] : null;
   let rows = '';
-  for (const row of group.rows) {
+  for (const [indeks, row] of group.rows.entries()) {
+    const para = paryGrupy ? paryGrupy[indeks] : null;
+    const audioAttr = para
+      ? ` data-cue="${A(para.cue)}" data-en-src="${A(para.en)}" data-para="${indeks + 1}"`
+      : '';
+    const przyciskWiersza = para
+      ? '<td class="rp"><button class="row-play" title="Odtwórz tę parę">▶︎</button></td>'
+      : '';
     if (group.mode === 'scenka') {
       const plEN = plain(row.a), plPL = plain(row.prompt);
       const key = A(row.prompt + ' ||| ' + row.a);
       const hits = findTargets(plEN, item.blocks);
       const targets = JSON.stringify(hits.map((target) => target.text));
       const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
-      rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
+      rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}${audioAttr}>`
         + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
-        + `<td class="q">${inline(row.q)}</td><td class="prompt">${inline(row.prompt)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.a)}</td></tr>`;
+        + `<td class="q">${inline(row.q)}</td><td class="prompt">${inline(row.prompt)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.a)}</td>${przyciskWiersza}</tr>`;
       continue;
     }
     const plEN = plain(row.en), plPL = plain(row.pl);
@@ -307,9 +343,9 @@ function renderRows(item, group) {
     const hits = findTargets(plEN, item.blocks);
     const targets = JSON.stringify(hits.map((target) => target.text));
     const blocks = JSON.stringify([...new Set(hits.map((target) => target.block))]);
-    rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}>`
+    rows += `<tr ${rowData(item, plPL, plEN, key, targets, blocks)}${audioAttr}>`
       + '<td class="star"><button class="star-btn" title="Do powtórki">☆</button></td>'
-      + `<td class="pl">${inline(row.pl)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.en)}</td></tr>`;
+      + `<td class="pl">${inline(row.pl)}</td><td class="en" tabindex="0" aria-label="Odsłoń angielskie zdanie">${inline(row.en)}</td>${przyciskWiersza}</tr>`;
   }
   return rows;
 }
@@ -321,19 +357,27 @@ function renderArticle(item) {
     .replace(/^K\d+\s*·\s*/, '')
     .trim();
   const shortLabel = item.course === 'k' ? item.label : `D${item.ln}`;
+  // W formacie 2 item.audio to spłaszczona lista par — liczbę GRUP bierzemy z item.pary.
+  const ileGrup = item.pary ? item.pary.length : item.audio.length;
   const dPlay = item.audio.length
-    ? `<button class="play-btn" data-audio="${A(JSON.stringify(item.audio))}" data-label="${A(shortLabel + ' · ' + navTitle)}">▶︎ Odtwórz audio${item.audio.length > 1 ? ` · ${item.audio.length} grup` : ''}</button>`
+    ? `<button class="play-btn" data-audio="${A(JSON.stringify(item.audio))}" data-label="${A(shortLabel + ' · ' + navTitle)}">▶︎ Odtwórz audio${ileGrup > 1 ? ` · ${ileGrup} grup` : ''}</button>`
     : '';
   const chips = item.newExpressions.map((expression) => `<span class="chip">${H(expression)}</span>`).join('');
   let groupsHtml = '';
   P.groups.forEach((group, groupIndex) => {
     const [cls, tagLabel] = tag(group);
-    const groupAudio = item.audio[groupIndex];
+    // Format 2: grupa to lista par (cue, en, cue, en…). Format 1: jeden plik grupy.
+    // item.audio[groupIndex] byłby w formacie 2 przypadkowym plikiem — indeks grupy
+    // nie adresuje spłaszczonej listy par.
+    const paryGrupy = item.pary ? item.pary[groupIndex] : null;
+    const groupAudio = paryGrupy
+      ? paryGrupy.flatMap((p) => [p.cue, p.en])
+      : (item.audio[groupIndex] ? [item.audio[groupIndex]] : []);
     const groupType = tagLabel && tagLabel !== 'Grupa' ? ` · ${tagLabel}` : '';
-    const groupPlay = groupAudio
-      ? `<button class="play-btn gplay" data-audio="${A(JSON.stringify([groupAudio]))}" data-label="${A(shortLabel + ' · ' + group.name + groupType)}" title="Odtwórz tę grupę">▶︎</button>`
+    const groupPlay = groupAudio.length
+      ? `<button class="play-btn gplay" data-audio="${A(JSON.stringify(groupAudio))}" data-label="${A(shortLabel + ' · ' + group.name + groupType)}" title="Odtwórz tę grupę">▶︎</button>`
       : '';
-    groupsHtml += `<section class="group ${cls}"><div class="ghead"><span class="gtag">${H(tagLabel)}</span><span class="gname">${H(group.name)}</span>${groupPlay}</div>${group.cap ? `<div class="gcap">${H(group.cap)}</div>` : ''}<table>${renderRows(item, group)}</table></section>`;
+    groupsHtml += `<section class="group ${cls}"><div class="ghead"><span class="gtag">${H(tagLabel)}</span><span class="gname">${H(group.name)}</span>${groupPlay}</div>${group.cap ? `<div class="gcap">${H(group.cap)}</div>` : ''}<table>${renderRows(item, group, groupIndex)}</table></section>`;
   });
   const stage = item.course === 'k'
     ? `${item.label} · Conversation Lab`
@@ -383,13 +427,15 @@ const kCourseTitle = String(kRegistry.kurs?.tytul || 'Kurs K · Conversation Lab
 const kDescription = kRegistry.kurs?.opis || 'Rozwojowa ścieżka B2 → C1 z realnych rozmów i materiałów od lektora.';
 const kSentenceCount = kItems.reduce((sum, item) => sum + item.sentenceCount, 0);
 const kAudio = kItems.flatMap((item) => item.audio);
-const kTile = `<button class="tile" data-go="k"><span class="t-num">K</span><span class="t-body"><span class="t-title">${H(kCourseTitle)}</span><span class="t-sub">${H(clip(kDescription, 140))}</span><span class="t-meta">${kItems.length} działy · ${kSentenceCount} zdań · ${kAudio.length} grup audio</span></span><span class="t-chev">›</span></button>`;
+// Liczba GRUP, nie plików: w formacie 2 jedna grupa to wiele par (2 pliki na parę).
+const kGrupy = kItems.reduce((sum, item) => sum + (item.pary ? item.pary.length : item.audio.length), 0);
+const kTile = `<button class="tile" data-go="k"><span class="t-num">K</span><span class="t-body"><span class="t-title">${H(kCourseTitle)}</span><span class="t-sub">${H(clip(kDescription, 140))}</span><span class="t-meta">${kItems.length} działy · ${kSentenceCount} zdań · ${kGrupy} grup audio</span></span><span class="t-chev">›</span></button>`;
 const kNavLinks = kItems.map((item) => {
   const title = item.parsed.title.split('/')[0].replace(/^K\d+\s*·\s*/, '').trim();
   return `<a href="#${item.id}">${item.label} · ${H(title)}</a>`;
 }).join('');
 const kPlay = kAudio.length
-  ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(kAudio))}" data-label="Cały Kurs K">▶︎ Odtwórz cały Kurs K · ${kAudio.length} grup</button></div>`
+  ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(kAudio))}" data-label="Cały Kurs K">▶︎ Odtwórz cały Kurs K · ${kGrupy} grup</button></div>`
   : '';
 navGroups += `<div class="navgroup" data-view="k"><div class="navmk">${H(kCourseTitle)}</div>${kNavLinks}</div>`;
 mkViews += `<section class="mk-view course-k" data-view="k" data-course="k">
@@ -466,6 +512,11 @@ u.new{text-decoration:none;background:linear-gradient(transparent 62%,#ffe08a 62
 .dmeta{font-size:13px;color:var(--muted)}
 .chips{margin:8px 0 0;font-size:13px}.chips .cl{color:var(--muted)}
 .dplay{margin:9px 0 0}.mkplay{margin:10px 0 0}
+tr.grajaca td{background:#fff6e8;box-shadow:inset 3px 0 0 var(--accent)}
+td.rp{width:34px;text-align:center;padding-left:0}
+.row-play{background:none;border:none;color:var(--muted);font-size:14px;padding:2px 6px;border-radius:8px;cursor:pointer}
+.row-play:hover{color:var(--accent)}
+.row-play.playing{color:var(--accent);font-weight:700}
 .play-btn{border-color:var(--accent);color:var(--accent);font-weight:700}
 .play-btn:hover{background:var(--accent);color:#fff}
 .play-btn.playing{background:var(--accent);color:#fff}
@@ -689,9 +740,10 @@ function collectStarredCards(){
     let targets=[], blocks=[];
     try{ targets=JSON.parse(tr.dataset.targets||'[]'); }catch(e){}
     try{ blocks=JSON.parse(tr.dataset.blocks||'[]'); }catch(e){}
+    const audio = tr.dataset.enSrc || null;
     cards.push(activeCourse==='k'
-      ? {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,course:'K',chapter:tr.dataset.chapter}
-      : {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,mk:Number(tr.dataset.mk),d:Number(tr.dataset.d)});
+      ? {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,course:'K',chapter:tr.dataset.chapter,audio}
+      : {pl:tr.dataset.pl,en:tr.dataset.en,targets,blocks,mk:Number(tr.dataset.mk),d:Number(tr.dataset.d),audio});
     keys.push(k);
   });
   return { cards, keys };
@@ -737,26 +789,59 @@ function setActiveBtn(btn){
   if(activeBtn && activeBtn!==btn) activeBtn.classList.remove('playing');
   activeBtn=btn||null; if(activeBtn) activeBtn.classList.add('playing');
 }
+// wiersze[i] = <tr>, ktoremu odpowiada pozycja i w kolejce (pusta = dzial formatu 1)
+let wiersze=[];
+function odswiec(){ document.querySelectorAll('tr.grajaca').forEach(tr=>tr.classList.remove('grajaca')); }
+function podswietl(i){
+  odswiec();
+  const tr=wiersze[i]; if(!tr) return;
+  tr.classList.add('grajaca');
+  tr.scrollIntoView({block:'center',behavior:'smooth'});
+}
 function loadCurrent(){
   player.src=queue[qi]||'';
-  audioNow.textContent=qlabel+(queue.length>1?'  ·  grupa '+(qi+1)+'/'+queue.length:'');
+  const pary=wiersze.length>0;
+  const ile=pary?Math.ceil(queue.length/2):queue.length;
+  const nr=pary?Math.floor(qi/2)+1:qi+1;
+  const co=pary?(qi%2?' · wzorzec':' · wyzwalacz'):'';
+  audioNow.textContent=qlabel+(queue.length>1?'  ·  '+(pary?'para ':'grupa ')+nr+'/'+ile+co:'');
 }
-function playQueue(list,label,btn){
-  queue=list.slice(); qi=0; qlabel=label||'Audio'; setActiveBtn(btn);
+function playQueue(list,label,btn,trs){
+  queue=list.slice(); qi=0; qlabel=label||'Audio'; wiersze=trs||[]; setActiveBtn(btn);
   audiobar.hidden=!queue.length; if(!queue.length) return;
-  loadCurrent(); player.play().catch(()=>{});
+  loadCurrent(); podswietl(qi); player.play().catch(()=>{});
 }
 player.addEventListener('ended',()=>{
-  if(qi<queue.length-1){ qi++; loadCurrent(); player.play().catch(()=>{}); }
-  else setActiveBtn(null);
+  if(qi<queue.length-1){ qi++; loadCurrent(); podswietl(qi); player.play().catch(()=>{}); }
+  else { setActiveBtn(null); odswiec(); }
 });
+// Kolejka par bierze sie z wierszy, nie z data-audio — dzieki temu podswietlenie
+// nie moze sie rozjechac z tym, co faktycznie leci.
+function wierszeDo(pb){
+  const poj=pb.closest('section.group')||pb.closest('article.dzial')||pb.closest('.mk-view');
+  return poj?[...poj.querySelectorAll('tr[data-cue]')]:[];
+}
 document.addEventListener('click',e=>{
+  const rp=e.target.closest('.row-play');
+  if(rp){
+    const tr=rp.closest('tr[data-cue]'); if(!tr) return;
+    if(rp===activeBtn && !player.paused){ player.pause(); return; }
+    playQueue([tr.dataset.cue,tr.dataset.enSrc], (tr.dataset.pl||tr.dataset.en||'').slice(0,60), rp, [tr,tr]);
+    return;
+  }
   const pb=e.target.closest('.play-btn'); if(!pb) return;
   let list=[]; try{ list=JSON.parse(pb.dataset.audio||'[]'); }catch(e){}
+  const trs=wierszeDo(pb);
+  if(trs.length*2===list.length){
+    if(pb===activeBtn && !player.paused){ player.pause(); return; }
+    if(pb===activeBtn && player.paused){ player.play().catch(()=>{}); return; }
+    playQueue(trs.flatMap(tr=>[tr.dataset.cue,tr.dataset.enSrc]), pb.dataset.label, pb, trs.flatMap(tr=>[tr,tr]));
+    return;
+  }
   if(!list.length) return;
   if(pb===activeBtn && !player.paused){ player.pause(); return; } // ten sam → pauza
   if(pb===activeBtn && player.paused){ player.play().catch(()=>{}); return; } // ten sam → wznów
-  playQueue(list, pb.dataset.label, pb);
+  playQueue(list, pb.dataset.label, pb, []);
 });
 document.getElementById('audio-close').addEventListener('click',()=>{
   player.pause(); audiobar.hidden=true; setActiveBtn(null);

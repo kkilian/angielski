@@ -20,15 +20,18 @@ function buildPreview() {
 
 // Kolejka „cały Kurs K" rośnie z każdym działem — czytamy ją z dysku, żeby
 // test nie wymagał ręcznej aktualizacji przy K4, K5…
+// Kurs K jest w formacie 2 — kolejka bierze się z audio.json, nie z listy plików.
 function kAudioSources() {
   const courseRoot = path.join(ROOT, 'K');
   return fs.readdirSync(courseRoot)
     .filter((name) => /^\d{2}-k\d+-/.test(name))
     .sort((a, b) => Number.parseInt(a, 10) - Number.parseInt(b, 10))
-    .flatMap((dir) => fs.readdirSync(path.join(courseRoot, dir))
-      .filter((file) => /^grupa-\d+\.mp3$/.test(file))
-      .sort((a, b) => Number.parseInt(a.slice(6), 10) - Number.parseInt(b.slice(6), 10))
-      .map((file) => `K/${dir}/${file}`));
+    .flatMap((dir) => {
+      const m = JSON.parse(fs.readFileSync(path.join(courseRoot, dir, 'audio.json'), 'utf8'));
+      return m.grupy.flatMap((g) => (g.pary || []).flatMap((p) => [
+        `K/${dir}/${p.cue.src}`, `K/${dir}/${p.wzor.src}`,
+      ]));
+    });
 }
 
 function waitForDebugger(browser) {
@@ -186,7 +189,7 @@ test('real browser keeps M and K study flows independent', { timeout: 30_000 }, 
   await cdp.evaluate("document.querySelector('#review-toggle').click()");
 
   await cdp.evaluate("document.querySelector('#k1 .gplay').click()");
-  assert.match(await cdp.evaluate("document.querySelector('#player').getAttribute('src')"), /K\/01-k1-powiedz-to-raz\/grupa-1\.mp3$/);
+  assert.match(await cdp.evaluate("document.querySelector('#player').getAttribute('src')"), /K\/01-k1-powiedz-to-raz\/audio\/g1-p01-cue\.mp3$/);
   const kSources = kAudioSources();
   await cdp.evaluate("document.querySelector('.course-k .play-mk').click()");
   assert.deepEqual(await cdp.evaluate('({length:queue.length,first:queue[0],last:queue.at(-1)})'), {

@@ -1,0 +1,1028 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-08-07T13:26:24.138Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 6.123
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 3.88
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kubek roztrzaskał się na kawałki.",
+            "en": "The mug shattered into pieces."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 9.93
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 4.39
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Upuściłem miskę i roztrzaskała się na kawałki.",
+            "en": "I dropped the bowl, and it shattered into pieces."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 3.873
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 2.654
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Prymitywna naprawa.",
+            "en": "A crude repair."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 8.146
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 3.918
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To była prymitywna naprawa, ale zadziałała.",
+            "en": "It was a crude repair, but it worked."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 3.337
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 2.594
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wartość estetyczna.",
+            "en": "Aesthetic value."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 8.346
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 5.183
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ten stary stół wciąż ma wartość estetyczną.",
+            "en": "That old table still has aesthetic value."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 4.694
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 3.435
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przemijanie rzeczy.",
+            "en": "The transience of things."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 9.458
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 4.861
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nic nie trwa wiecznie — takie jest przemijanie rzeczy.",
+            "en": "Nothing lasts forever — that's the transience of things."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 3.722
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 2.91
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odporność psychiczna.",
+            "en": "Mental resilience."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g1-p10-cue.mp3",
+            "sek": 6.092
+          },
+          "wzor": {
+            "src": "audio/g1-p10-en.mp3",
+            "sek": 4.364
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odporność psychiczną budujesz powoli.",
+            "en": "You build mental resilience slowly."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g1-p11-cue.mp3",
+            "sek": 10.862
+          },
+          "wzor": {
+            "src": "audio/g1-p11-en.mp3",
+            "sek": 5.139
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Naprawa była prymitywna, ale miska już nigdy się nie roztrzaskała.",
+            "en": "The repair was crude, but the bowl never shattered again."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g1-p12-cue.mp3",
+            "sek": 8.455
+          },
+          "wzor": {
+            "src": "audio/g1-p12-en.mp3",
+            "sek": 5.497
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Złote linie nadają misce wartość estetyczną.",
+            "en": "The gold lines give the bowl aesthetic value."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g1-p13-cue.mp3",
+            "sek": 10.615
+          },
+          "wzor": {
+            "src": "audio/g1-p13-en.mp3",
+            "sek": 4.712
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odporność psychiczna to coś w stylu kintsugi dla umysłu.",
+            "en": "Mental resilience is sort of like kintsugi for the mind."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 7.469
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 4.638
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kintsugi znaczy dosłownie „złote łączenie\".",
+            "en": "Kintsugi literally means \"golden joinery.\""
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 9.128
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 4.74
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To japońska sztuka naprawiania stłuczonej ceramiki.",
+            "en": "It's the Japanese art of repairing broken pottery."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 5.211
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 3.933
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pęknięcia zostają widoczne.",
+            "en": "The cracks stay visible."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 9.829
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 4.703
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kawałki łączy się laką zmieszaną ze sproszkowanym złotem.",
+            "en": "The pieces are joined with lacquer mixed with powdered gold."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 8.229
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 4.11
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Naprawiona miska staje się dziełem sztuki.",
+            "en": "The repaired bowl becomes a work of art."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 12.312
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 5.844
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według legendy ulubiona czarka japońskiego wodza została uszkodzona.",
+            "en": "Legend says a Japanese military leader's favorite tea bowl got damaged."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 9.267
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 4.599
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Yoshimasa odesłał ją do Chin do naprawy.",
+            "en": "Yoshimasa sent it back to China to be repaired."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 9.295
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 3.967
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czarka wróciła z brzydkimi metalowymi klamrami.",
+            "en": "The bowl came back with ugly metal staples."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 7.168
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 3.93
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ta prymitywna naprawa go rozczarowała.",
+            "en": "That crude repair disappointed him."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 10.428
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 4.97
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Japońscy rzemieślnicy wymyślili więc bardziej estetyczną metodę.",
+            "en": "So Japanese craftsmen came up with a more aesthetic method."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 11.141
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 5.515
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wabi-sabi odnajduje piękno w niedoskonałości i przemijaniu rzeczy.",
+            "en": "Wabi-sabi finds beauty in imperfection and the transience of things."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g2-p12-cue.mp3",
+            "sek": 16.616
+          },
+          "wzor": {
+            "src": "audio/g2-p12-en.mp3",
+            "sek": 6.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kintsugi naprawia roztrzaskaną ceramikę złotem, więc pęknięcia stają się częścią historii przedmiotu.",
+            "en": "Kintsugi repairs shattered pottery with gold, so the cracks become part of the object's history."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g2-p13-cue.mp3",
+            "sek": 15.782
+          },
+          "wzor": {
+            "src": "audio/g2-p13-en.mp3",
+            "sek": 7.105
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że wabi-sabi celebruje niedoskonałość, a zachodnia kultura woli kupować nowe rzeczy.",
+            "en": "What I mean is, wabi-sabi celebrates imperfection, while Western culture prefers to buy new things."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 5.947
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 3.487
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Psychologowie uwielbiają tę metaforę.",
+            "en": "Psychologists love this metaphor."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 9.047
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 3.973
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trudne doświadczenia nie oznaczają, że jesteśmy złamani.",
+            "en": "Hard experiences don't mean we're broken."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 7.577
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 3.65
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Blizny stają się częścią naszej historii.",
+            "en": "Scars become part of our story."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 9.268
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 3.708
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Życie potrafi roztrzaskać twoje plany na kawałki.",
+            "en": "Life can shatter your plans into pieces."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 8.312
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 4.173
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odporność psychiczna pomaga pozbierać te kawałki.",
+            "en": "Mental resilience helps you pick up the pieces."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 14.049
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 7.129
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Hemingway powiedział: „Świat łamie każdego, a potem wielu jest mocnych w miejscach złamania\".",
+            "en": "Hemingway said, \"The world breaks everyone and afterward many are strong at the broken places.\""
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 6.289
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 3.467
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dlaczego ukrywamy swoje błędy?",
+            "en": "Why do we hide our mistakes?"
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 7.003
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 3.614
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Boimy się osądu i odrzucenia.",
+            "en": "We're afraid of judgment and rejection."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 6.301
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 3.82
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W internecie każdy wygląda idealnie.",
+            "en": "Everyone looks perfect online."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 11.565
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 5.191
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Świadomość przemijania pomaga — dzisiejszy wstyd nie potrwa wiecznie.",
+            "en": "Being aware of transience helps — today's shame won't last forever."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g3-p11-cue.mp3",
+            "sek": 10.656
+          },
+          "wzor": {
+            "src": "audio/g3-p11-en.mp3",
+            "sek": 4.363
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś wyleciało mi słowo i poczułem się jak nieudacznik.",
+            "en": "I once blanked on a word and felt like a failure."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g3-p12-cue.mp3",
+            "sek": 14.957
+          },
+          "wzor": {
+            "src": "audio/g3-p12-en.mp3",
+            "sek": 7.042
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że złote pęknięcia są jak blizny emocjonalne — widoczne, ale nie ma się czego wstydzić.",
+            "en": "I'd say the golden cracks are like emotional scars — visible, but nothing to be ashamed of."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g3-p13-cue.mp3",
+            "sek": 13.733
+          },
+          "wzor": {
+            "src": "audio/g3-p13-en.mp3",
+            "sek": 5.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ukrywamy porażki, bo boimy się, że jeden błąd roztrzaska nasz wizerunek.",
+            "en": "We hide our failures because we're afraid one mistake will shatter our image."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 6.374
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 3.572
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Perfekcjonizm bywa pułapką.",
+            "en": "Perfectionism can be a trap."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 5.844
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 3.021
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nic nie wydaje się wystarczająco dobre.",
+            "en": "Nothing feels good enough."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 6.731
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 3.097
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Strach przed błędami nas powstrzymuje.",
+            "en": "Fear of mistakes holds us back."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 6.931
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 3.04
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że w większości się zgadzam.",
+            "en": "I'd say I mostly agree."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 8.658
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 5.419
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wysokie standardy motywują, ale perfekcjonizm paraliżuje.",
+            "en": "High standards motivate, but perfectionism paralyzes."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 7.722
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 4.095
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Perfekcjonizm potrafi roztrzaskać twoją pewność siebie.",
+            "en": "Perfectionism can shatter your confidence."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 7.072
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 4.032
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zepsute rzeczy wyrzucamy od razu.",
+            "en": "We throw broken things out right away."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 11.021
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.142
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Naprawianie rzeczy przedłuża ich życie i zmniejsza ilość odpadów.",
+            "en": "Repairing something extends its life and cuts down on waste."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 11.106
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 5.193
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nawet prymitywna naprawa i tak jest lepsza niż wyrzucenie.",
+            "en": "Even a crude repair is still better than throwing something out."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 11.877
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 5.609
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Stare rzeczy mają swoją wartość estetyczną i swoją historię.",
+            "en": "Old things have their own aesthetic value and their own story."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g4-p11-cue.mp3",
+            "sek": 11.35
+          },
+          "wzor": {
+            "src": "audio/g4-p11-en.mp3",
+            "sek": 4.921
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przemijanie rzeczy uczy nas doceniać to, co mamy.",
+            "en": "The transience of things teaches us to appreciate what we have."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g4-p12-cue.mp3",
+            "sek": 12.379
+          },
+          "wzor": {
+            "src": "audio/g4-p12-en.mp3",
+            "sek": 5.937
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Lider, który sam zaznał porażki, lepiej rozumie ludzi w kryzysie.",
+            "en": "A leader who's been through failure understands people in a crisis better."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g4-p13-cue.mp3",
+            "sek": 13.748
+          },
+          "wzor": {
+            "src": "audio/g4-p13-en.mp3",
+            "sek": 5.147
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trudna przeszłość buduje odporność psychiczną tylko wtedy, gdy wyciągamy z niej wnioski.",
+            "en": "A difficult past builds mental resilience only if we learn from it."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 29.777
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 12.991
+          },
+          "tekst": {
+            "pyt": "What is Kintsugi, and how did a disappointed Japanese military leader accidentally help create it in the 15th century?",
+            "pl": "Dwa zdania: metoda ze złotem, potem legenda o czarce Yoshimasy i klamrach.",
+            "en": "Kintsugi repairs broken pottery with gold and leaves the cracks visible. Legend says Yoshimasa's bowl came back with ugly staples, and that crude repair inspired a more aesthetic method."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 31.7
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 10.755
+          },
+          "tekst": {
+            "pyt": "How does the philosophy of *Wabi-Sabi* differ from modern western ideas about perfection and buying new things?",
+            "pl": "Piękno niedoskonałości i przemijania kontra presja na idealność i kupowanie nowego.",
+            "en": "Wabi-sabi finds beauty in imperfection and the transience of things. Western culture pushes us to look perfect and buy new things instead of repairing them."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 28.968
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 11.039
+          },
+          "tekst": {
+            "pyt": "Why do modern psychologists use Kintsugi as a metaphor for human emotions and mental resilience?",
+            "pl": "Złote pęknięcia = blizny emocjonalne; obraz zdrowienia bez ukrywania szkód.",
+            "en": "The golden cracks are sort of like emotional scars — visible, but not shameful. It's a hopeful image of mental resilience: you can recover without hiding the damage."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 28.227
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 8.46
+          },
+          "tekst": {
+            "pyt": "In your opinion, why are people often tempted to hide their personal mistakes, scars, or failures from others?",
+            "pl": "Lęk przed osądem i odrzuceniem; boimy się, że jeden błąd nas zdefiniuje; social media.",
+            "en": "We're afraid of judgment and rejection. People worry that one mistake will define them, and social media makes that pressure worse."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 28.205
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 9.445
+          },
+          "tekst": {
+            "pyt": "Do you agree or disagree with the saying: \"Perfectionism is a barrier to real happiness\"? Explain why.",
+            "pl": "Zgódź się z zastrzeżeniem: standardy motywują, perfekcjonizm paraliżuje.",
+            "en": "I'd say I mostly agree. High standards can motivate you, but perfectionism can shatter your confidence and stop you from acting."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 33.73
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 9.347
+          },
+          "tekst": {
+            "pyt": "In modern society, we often throw away broken items immediately. How can adopting a Kintsugi mindset change our relationship with material possessions and environmental waste?",
+            "pl": "Najpierw stop i myśl o naprawie; mniej odpadów; stare rzeczy mają historię.",
+            "en": "It makes us stop and think about repairing things first. Even a crude repair reduces waste, and an old object keeps its history and aesthetic value."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 31.955
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 8.628
+          },
+          "tekst": {
+            "pyt": "Can a person’s past mistakes or difficult experiences actually make them a more valuable friend, colleague, or leader? Why or why not?",
+            "pl": "„Tak, pod warunkiem, że\": wnioski budują odporność i empatię; sam ból nie wystarcza.",
+            "en": "Yes, but only if they learn from it. A difficult past can build resilience and empathy; the pain alone isn't enough."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 21.866
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 7.635
+          },
+          "tekst": {
+            "pyt": "What does transience mean, in your own words?",
+            "pl": "Powiedz prosto: rzeczy nie trwają wiecznie; połącz z wabi-sabi.",
+            "en": "Transience means that things don't last forever. Wabi-sabi says that's not sad — it's part of their beauty."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g5-p09-cue.mp3",
+            "sek": 26.225
+          },
+          "wzor": {
+            "src": "audio/g5-p09-en.mp3",
+            "sek": 8.421
+          },
+          "tekst": {
+            "pyt": "Have you ever repaired something instead of replacing it?",
+            "pl": "Opowiedz o pierwszej wersji waszej aplikacji: prymitywna, ale poprawiana, nie wyrzucona.",
+            "en": "Sure — the first version of our math app was pretty crude. We kept fixing and improving it instead of starting from scratch."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g5-p10-cue.mp3",
+            "sek": 24.335
+          },
+          "wzor": {
+            "src": "audio/g5-p10-en.mp3",
+            "sek": 8.523
+          },
+          "tekst": {
+            "pyt": "How does this connect to your English?",
+            "pl": "Błąd nie roztrzaskuje postępu: poprawiasz zdanie i mówisz dalej.",
+            "en": "A mistake doesn't shatter my progress. I just fix the sentence and keep going — that's my kind of mental resilience."
+          }
+        }
+      ]
+    }
+  ]
+}

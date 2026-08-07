@@ -1,0 +1,964 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-08-07T13:26:17.032Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 11.313
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 4.733
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chcę przekazywać sedno bez krążenia wokół tematu.",
+            "en": "I want to get my point across without talking in circles."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 12.45
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 4.611
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zwykle w końcu przekazuję sedno, ale zajmuje mi to za długo.",
+            "en": "I usually get my point across, but it takes me too long."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 9.575
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 3.424
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Udało ci się jasno powiedzieć, o co ci chodzi?",
+            "en": "Did you manage to get your point across clearly?"
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 13.333
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 5.937
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że pracuję nad materiałami do nauki, a nie nad samą maturą.",
+            "en": "What I mean is, I work on the study materials, not the matura exam itself."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 18.123
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 7.763
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie układamy egzaminu. Chodzi mi o to, że tworzymy aplikacje i kursy — to coś w stylu uporządkowanego pomocnika do nauki matematyki.",
+            "en": "We don't write the exam. What I mean is, we make apps and courses — it's sort of like a structured study companion for math."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 19.034
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 7.525
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że znam gramatykę, tylko podczas mówienia nie zawsze potrafię wystarczająco szybko zastosować ją w praktyce.",
+            "en": "What I mean is, I know the grammar; I just can't always put it into practice quickly enough when I'm speaking."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 12.886
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 5.674
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedy mówię za długo, gubię sedno, zanim zdążę je przekazać.",
+            "en": "When I talk for too long, I lose the thread before I can get my point across."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 13.219
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 5.16
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym miał wybrać jeden cel, byłoby nim jasne przekazywanie sedna.",
+            "en": "If I had to pick one goal, it would be getting my point across clearly."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 10.423
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 4.692
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Najpierw powiedz sedno, a dopiero potem dodaj szczegóły.",
+            "en": "Get your point across first, then add the details."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g1-p10-cue.mp3",
+            "sek": 12.841
+          },
+          "wzor": {
+            "src": "audio/g1-p10-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czasem myśl jest prosta; trudno jest tylko jasno ją przekazać.",
+            "en": "Sometimes the idea is simple; getting it across clearly is the hard part."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g1-p11-cue.mp3",
+            "sek": 10.959
+          },
+          "wzor": {
+            "src": "audio/g1-p11-en.mp3",
+            "sek": 4.8
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że nie potrzebuję kolejnej listy zasad.",
+            "en": "What I mean is, I don't need another list of rules."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g1-p12-cue.mp3",
+            "sek": 14.45
+          },
+          "wzor": {
+            "src": "audio/g1-p12-en.mp3",
+            "sek": 6.3
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Potrzebuję używać angielskiego, który już znam, żeby od razu przekazywać sedno.",
+            "en": "I need to use the English I already know so I can get my point across right away."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 5.85
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 3.327
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyleciało mi słowo.",
+            "en": "I'm blanking on the word."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 9.248
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 4.427
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyleciało mi angielskie słowo na „ciekawostkę”.",
+            "en": "I'm blanking on the English word for “ciekawostka.”"
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 9.59
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 4.218
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyleciało mi słowo — daj mi sekundę.",
+            "en": "I'm blanking on the word — give me a second."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 13.282
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 5.639
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyleciało mi słowo — to coś w stylu małego, zaskakującego faktu.",
+            "en": "I'm blanking on the word — it's sort of like a small, surprising fact."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 8.893
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 4.583
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To coś w stylu Duolingo, tylko do matematyki.",
+            "en": "It's sort of like Duolingo, but for math."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 11.291
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.214
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To coś w stylu rozmowy kwalifikacyjnej, tylko co tydzień.",
+            "en": "It's sort of like a job interview, but every week."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 13.08
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 5.703
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedy wylatuje mi słowo, opisuję je, zamiast przechodzić na polski.",
+            "en": "When I'm blanking on a word, I describe it instead of switching to Polish."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 14.311
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 5.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To coś w stylu zgadywanki — opisujesz rzecz, aż druga osoba ją odgadnie.",
+            "en": "It's sort of like a guessing game — you describe the thing until the other person gets it."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 12.494
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.463
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyleciało mi słowo, ale i tak udało mi się przekazać sedno.",
+            "en": "I was blanking on the word, but I still managed to get my point across."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 14.476
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 6.709
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że brak jednego słowa nie musi zatrzymywać całego zdania.",
+            "en": "What I mean is, not knowing one word doesn't have to bring your whole sentence to a halt."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 13.202
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 5.463
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdy wyleci mi słowo, mogę powiedzieć „to coś w stylu…” i mówić dalej.",
+            "en": "When I'm blanking on a word, I can say, “It's sort of like…” and keep going."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g2-p12-cue.mp3",
+            "sek": 15.551
+          },
+          "wzor": {
+            "src": "audio/g2-p12-en.mp3",
+            "sek": 7.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nawet gdy wyleci mi słowo, niedoskonały opis może wystarczyć, żeby jasno przekazać sedno.",
+            "en": "Even when I'm blanking on a word, an imperfect description can be enough to get my point across clearly."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 10.28
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 4.47
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak sobie myślałem, że moglibyśmy rozmawiać głównie po angielsku.",
+            "en": "I was thinking we could speak mostly in English."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 11.957
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 4.818
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak sobie myślałem, że moglibyśmy oprzeć lekcje na krótkich artykułach.",
+            "en": "I was thinking we could build the lessons around short articles."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 13.045
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 5.643
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak sobie myślałem, że moglibyśmy robić ćwiczenia z moich własnych nagrań.",
+            "en": "I was thinking we could build exercises around my own recordings."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 8.943
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 4.17
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybym nagrywał nasze rozmowy?",
+            "en": "Would it be OK if I recorded our conversations?"
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 13.399
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybym od czasu do czasu przerwał i poprosił o przykład?",
+            "en": "Would it be OK if I stopped you now and then to ask for an example?"
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 13.352
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 5.577
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybym najpierw spróbował po angielsku opisać, co mam na myśli?",
+            "en": "Would it be OK if I tried to describe what I mean in English first?"
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 13.942
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 5.516
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak sobie myślałem, że moglibyśmy najpierw porozmawiać, a poprawki zrobić później.",
+            "en": "I was thinking we could talk first and go over the corrections afterward."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 17.005
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 7.597
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że nie chcę przerywać toku rozmowy przy każdym błędzie — to trochę jak zatrzymywanie filmu po każdym zdaniu.",
+            "en": "What I mean is, I don't want to interrupt the flow every time I make a mistake — it's sort of like pausing a movie after every line."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 13.07
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 4.542
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybym wysyłał ci temat dzień przed lekcją?",
+            "en": "Would it be OK if I sent you the topic the day before the lesson?"
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 16.765
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 5.909
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak sobie myślałem, że moglibyśmy spotykać się co tydzień, żebym miał motywację do przygotowania się.",
+            "en": "I was thinking we could meet every week so I'd stay motivated to prepare."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g3-p11-cue.mp3",
+            "sek": 13.727
+          },
+          "wzor": {
+            "src": "audio/g3-p11-en.mp3",
+            "sek": 5.524
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Najbardziej pomogłoby mi, gdybym najpierw wyjaśnił, czego naprawdę potrzebuję.",
+            "en": "What would help most, though, is if I explained what I actually need first."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g3-p12-cue.mp3",
+            "sek": 14.155
+          },
+          "wzor": {
+            "src": "audio/g3-p12-en.mp3",
+            "sek": 6.301
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybyśmy spróbowali tak przez miesiąc i potem ocenili efekty?",
+            "en": "Would it be OK if we tried it this way for a month and then reviewed how it went?"
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 10.608
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 4.667
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć, że zajmujemy się tylko matematyką.",
+            "en": "I should have mentioned that we only cover math."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 12.317
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 4.939
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć, że nie układamy samej matury.",
+            "en": "I should have mentioned that we don't write the matura exam itself."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 9.559
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 4.906
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć o tym na samym początku.",
+            "en": "I should have mentioned that right at the start."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 9.077
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 4.721
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że mój angielski jest gdzieś w okolicach B2.",
+            "en": "I'd say my English is somewhere around B2."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 11.3
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 5.056
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że siłownia to bardziej nawyk niż hobby.",
+            "en": "I'd say the gym is more of a habit than a hobby."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 9.051
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 4.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym raczej „ciekawostki” niż „teorie spiskowe”.",
+            "en": "I'd say “fun facts” rather than “conspiracy theories.”"
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 10.853
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 4.463
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć, że zależy mi głównie na mówieniu.",
+            "en": "I should have mentioned that speaking is my main priority."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 13.903
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.091
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Największą trudność sprawia mi jasne przekazanie sedna za pierwszym razem.",
+            "en": "What I struggle with most is getting my point across clearly the first time."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 14.833
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 5.652
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że potrafię to powiedzieć, ale często potrzebuję zbyt wielu zdań.",
+            "en": "What I mean is, I can say it, but I often need way too many sentences."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 14.209
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 5.563
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć, że gdy wylatuje mi słowo, zwykle przechodzę na polski.",
+            "en": "I should have mentioned that I usually switch to Polish when I'm blanking on a word."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g4-p11-cue.mp3",
+            "sek": 14.402
+          },
+          "wzor": {
+            "src": "audio/g4-p11-en.mp3",
+            "sek": 6.357
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że niedoskonały opis to coś w stylu tymczasowego mostu — pozwala mówić dalej.",
+            "en": "I'd say an imperfect description is sort of like a temporary bridge — it lets you keep talking."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g4-p12-cue.mp3",
+            "sek": 14.65
+          },
+          "wzor": {
+            "src": "audio/g4-p12-en.mp3",
+            "sek": 6.398
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powinienem był wspomnieć o tym wcześniej — chcę nauczyć się mówić dalej mimo brakującego słowa.",
+            "en": "I should have mentioned this earlier — I want to learn to keep going even when I'm missing a word."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 26.623
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 7.688
+          },
+          "tekst": {
+            "pyt": "So, what do you do for work?",
+            "pl": "Powiedz, że pracujesz w edukacji i tworzycie aplikacje oraz kursy pomagające uczniom przygotowywać się do polskiej matury z matematyki.",
+            "en": "I work in education — we make apps and courses that help students prepare for Poland's high school exit exam in math."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 18.29
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 5.698
+          },
+          "tekst": {
+            "pyt": "Wait, do you actually write the exam?",
+            "pl": "Zaprzecz i dodaj, że powinieneś był wyjaśnić to od razu.",
+            "en": "No, we don't write the exam itself. I should have mentioned that right away."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 14.432
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": "Is it for every school subject?",
+            "pl": "Powiedz krótko, że tylko matematyka i że to jest cały wasz fokus.",
+            "en": "Just math. I'd say that's our whole focus."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 20.042
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 6.27
+          },
+          "tekst": {
+            "pyt": "What are you into outside of work?",
+            "pl": "Wymień siłownię, szachy i ciekawostki, łagodząc ocenę.",
+            "en": "I'd say the gym, a bit of chess, and fun facts are the main things I'm into."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 24.301
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 7.378
+          },
+          "tekst": {
+            "pyt": "What kind of facts do you mean?",
+            "pl": "Powiedz, że to coś w stylu ciekawostek: losowe, zaskakujące fakty, które zostają w głowie, choć nie są szczególnie użyteczne.",
+            "en": "It's sort of like trivia: random, surprising facts that stick with you even though they're not especially useful."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 20.11
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 6.22
+          },
+          "tekst": {
+            "pyt": "What happens when you can't remember a word?",
+            "pl": "Powiedz, że wylatuje ci słowo, ale spróbujesz je opisać.",
+            "en": "I'll say I'm blanking on the word and try to describe it instead of switching to Polish."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 21.668
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 6.299
+          },
+          "tekst": {
+            "pyt": "What do you want to get out of these lessons?",
+            "pl": "Powiedz, że chcesz jasno przekazywać sedno w czasie rzeczywistym, bez potrzebowania dwudziestu zdań.",
+            "en": "I want to get my point across clearly in real time, without needing twenty sentences."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 16.809
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 5.482
+          },
+          "tekst": {
+            "pyt": "How would you like to structure the lessons?",
+            "pl": "Zaproponuj miękko rozmowę opartą na krótkim artykule.",
+            "en": "I was thinking we could use a short article to guide each conversation."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g5-p09-cue.mp3",
+            "sek": 20.419
+          },
+          "wzor": {
+            "src": "audio/g5-p09-en.mp3",
+            "sek": 5.415
+          },
+          "tekst": {
+            "pyt": "Do you want me to correct every mistake?",
+            "pl": "Zapytaj, czy możecie zostawić drobne błędy do końca rozmowy.",
+            "en": "Would it be OK if we saved the smaller corrections until the end of the conversation?"
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g5-p10-cue.mp3",
+            "sek": 25.546
+          },
+          "wzor": {
+            "src": "audio/g5-p10-en.mp3",
+            "sek": 7.957
+          },
+          "tekst": {
+            "pyt": "How would you describe your English right now?",
+            "pl": "Powiedz, że jesteś mniej więcej na B2: dużo rozumiesz, ale musisz szybciej i jaśniej przekazywać sedno.",
+            "en": "I'd say I'm around B2. What I mean is, I understand a lot, but I need to get my point across faster and more clearly."
+          }
+        }
+      ]
+    }
+  ]
+}
