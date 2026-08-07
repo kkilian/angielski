@@ -11,7 +11,9 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 const SKILL = path.join(process.env.HOME, '.claude', 'skills', 'angielski-rozdzial', 'assemble-audio.js');
-const { parseChapter, normalizeMode, oczekiwaneCisze } = require(SKILL);
+// tekstPary bierzemy z generatora, a nie kopiujemy: kształt tekstu na ekran musi
+// być ten sam po obu stronach (dział zmigrowany i dział wygenerowany od nowa).
+const { parseChapter, normalizeMode, oczekiwaneCisze, tekstPary } = require(SKILL);
 
 // Oczekiwana cisza `v` pasuje do wykrytej, gdy ta jest nie krótsza niż v − TOLERANCJA.
 // Cisza w pliku bywa DŁUŻSZA od zamówionej (nagranie TTS ma ciszę na krawędziach),
@@ -77,13 +79,6 @@ export function wykryjCisze(mp3) {
   }
   if (start != null) out.push({ start, end: null }); // urwana na końcu pliku
   return out;
-}
-
-// Teksty na ekran: jeden kształt dla wszystkich trybów (patrz specka).
-function tekstPary(tryb, para) {
-  if (tryb === 'scenka') return { pyt: para.q, pl: para.prompt || null, en: para.a };
-  if (tryb === 'en-only') return { pyt: para.pl, pl: null, en: para.en };
-  return { pyt: null, pl: para.pl, en: para.en };
 }
 
 // Kontrola sensu: wzorzec to jedno zdanie EN plus przerwa — jego długość musi
