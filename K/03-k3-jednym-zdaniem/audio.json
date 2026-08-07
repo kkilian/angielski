@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-07T13:26:32.268Z",
+  "generatedAt": "2026-08-07T15:30:53.027Z",
   "grupy": [
     {
       "n": 1,
@@ -10,11 +10,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g1-p01-cue.mp3",
-            "sek": 5.692
+            "sek": 5.712
           },
           "wzor": {
             "src": "audio/g1-p01-en.mp3",
-            "sek": 4.266
+            "sek": 3.576
           },
           "tekst": {
             "pyt": null,
@@ -26,11 +26,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g1-p02-cue.mp3",
-            "sek": 9.103
+            "sek": 9.312
           },
           "wzor": {
             "src": "audio/g1-p02-en.mp3",
-            "sek": 3.874
+            "sek": 3.816
           },
           "tekst": {
             "pyt": null,
@@ -42,11 +42,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g1-p03-cue.mp3",
-            "sek": 3.342
+            "sek": 3.768
           },
           "wzor": {
             "src": "audio/g1-p03-en.mp3",
-            "sek": 3.004
+            "sek": 2.76
           },
           "tekst": {
             "pyt": null,
@@ -58,11 +58,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g1-p04-cue.mp3",
-            "sek": 5.493
+            "sek": 5.904
           },
           "wzor": {
             "src": "audio/g1-p04-en.mp3",
-            "sek": 2.761
+            "sek": 3.024
           },
           "tekst": {
             "pyt": null,
@@ -74,11 +74,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g1-p05-cue.mp3",
-            "sek": 7.744
+            "sek": 7.896
           },
           "wzor": {
             "src": "audio/g1-p05-en.mp3",
-            "sek": 3.898
+            "sek": 3.264
           },
           "tekst": {
             "pyt": null,
@@ -90,11 +90,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g1-p06-cue.mp3",
-            "sek": 6.326
+            "sek": 6.312
           },
           "wzor": {
             "src": "audio/g1-p06-en.mp3",
-            "sek": 3.339
+            "sek": 3.768
           },
           "tekst": {
             "pyt": null,
@@ -106,11 +106,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g1-p07-cue.mp3",
-            "sek": 6.396
+            "sek": 6.504
           },
           "wzor": {
             "src": "audio/g1-p07-en.mp3",
-            "sek": 3.323
+            "sek": 3.312
           },
           "tekst": {
             "pyt": null,
@@ -122,11 +122,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g1-p08-cue.mp3",
-            "sek": 4.743
+            "sek": 4.656
           },
           "wzor": {
             "src": "audio/g1-p08-en.mp3",
-            "sek": 2.908
+            "sek": 2.616
           },
           "tekst": {
             "pyt": null,
@@ -138,11 +138,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g1-p09-cue.mp3",
-            "sek": 7.976
+            "sek": 7.416
           },
           "wzor": {
             "src": "audio/g1-p09-en.mp3",
-            "sek": 3.746
+            "sek": 3.36
           },
           "tekst": {
             "pyt": null,
@@ -154,11 +154,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g1-p10-cue.mp3",
-            "sek": 6.287
+            "sek": 5.712
           },
           "wzor": {
             "src": "audio/g1-p10-en.mp3",
-            "sek": 3.63
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
@@ -170,11 +170,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g1-p11-cue.mp3",
-            "sek": 8.678
+            "sek": 8.712
           },
           "wzor": {
             "src": "audio/g1-p11-en.mp3",
-            "sek": 4.929
+            "sek": 3.96
           },
           "tekst": {
             "pyt": null,
@@ -186,11 +186,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g1-p12-cue.mp3",
-            "sek": 6.38
+            "sek": 6.312
           },
           "wzor": {
             "src": "audio/g1-p12-en.mp3",
-            "sek": 3.064
+            "sek": 4.056
           },
           "tekst": {
             "pyt": null,
@@ -202,11 +202,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g1-p13-cue.mp3",
-            "sek": 8.104
+            "sek": 8.256
           },
           "wzor": {
             "src": "audio/g1-p13-en.mp3",
-            "sek": 4.161
+            "sek": 4.272
           },
           "tekst": {
             "pyt": null,
@@ -218,11 +218,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g1-p14-cue.mp3",
-            "sek": 7.755
+            "sek": 8.4
           },
           "wzor": {
             "src": "audio/g1-p14-en.mp3",
-            "sek": 4.119
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
@@ -234,11 +234,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g1-p15-cue.mp3",
-            "sek": 10.575
+            "sek": 10.368
           },
           "wzor": {
             "src": "audio/g1-p15-en.mp3",
-            "sek": 3.844
+            "sek": 4.176
           },
           "tekst": {
             "pyt": null,
@@ -250,11 +250,11 @@
           "n": 16,
           "cue": {
             "src": "audio/g1-p16-cue.mp3",
-            "sek": 10.938
+            "sek": 10.512
           },
           "wzor": {
             "src": "audio/g1-p16-en.mp3",
-            "sek": 4.297
+            "sek": 4.608
           },
           "tekst": {
             "pyt": null,
@@ -272,11 +272,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g2-p01-cue.mp3",
-            "sek": 7.676
+            "sek": 6.912
           },
           "wzor": {
             "src": "audio/g2-p01-en.mp3",
-            "sek": 4.045
+            "sek": 4.224
           },
           "tekst": {
             "pyt": null,
@@ -288,11 +288,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g2-p02-cue.mp3",
-            "sek": 5.347
+            "sek": 4.8
           },
           "wzor": {
             "src": "audio/g2-p02-en.mp3",
-            "sek": 3.689
+            "sek": 3.168
           },
           "tekst": {
             "pyt": null,
@@ -304,11 +304,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g2-p03-cue.mp3",
-            "sek": 8.241
+            "sek": 8.208
           },
           "wzor": {
             "src": "audio/g2-p03-en.mp3",
-            "sek": 4.109
+            "sek": 3.624
           },
           "tekst": {
             "pyt": null,
@@ -320,11 +320,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g2-p04-cue.mp3",
-            "sek": 9.975
+            "sek": 10.2
           },
           "wzor": {
             "src": "audio/g2-p04-en.mp3",
-            "sek": 3.882
+            "sek": 3.96
           },
           "tekst": {
             "pyt": null,
@@ -336,11 +336,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g2-p05-cue.mp3",
-            "sek": 8.626
+            "sek": 8.856
           },
           "wzor": {
             "src": "audio/g2-p05-en.mp3",
-            "sek": 4.5
+            "sek": 4.464
           },
           "tekst": {
             "pyt": null,
@@ -352,11 +352,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g2-p06-cue.mp3",
-            "sek": 13.477
+            "sek": 13.608
           },
           "wzor": {
             "src": "audio/g2-p06-en.mp3",
-            "sek": 5.594
+            "sek": 5.064
           },
           "tekst": {
             "pyt": null,
@@ -368,11 +368,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g2-p07-cue.mp3",
-            "sek": 11.161
+            "sek": 10.656
           },
           "wzor": {
             "src": "audio/g2-p07-en.mp3",
-            "sek": 4.915
+            "sek": 5.376
           },
           "tekst": {
             "pyt": null,
@@ -384,11 +384,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g2-p08-cue.mp3",
-            "sek": 6.558
+            "sek": 6.456
           },
           "wzor": {
             "src": "audio/g2-p08-en.mp3",
-            "sek": 3.868
+            "sek": 3.72
           },
           "tekst": {
             "pyt": null,
@@ -400,11 +400,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g2-p09-cue.mp3",
-            "sek": 9.549
+            "sek": 9.36
           },
           "wzor": {
             "src": "audio/g2-p09-en.mp3",
-            "sek": 4.358
+            "sek": 3.816
           },
           "tekst": {
             "pyt": null,
@@ -416,11 +416,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g2-p10-cue.mp3",
-            "sek": 12.416
+            "sek": 11.76
           },
           "wzor": {
             "src": "audio/g2-p10-en.mp3",
-            "sek": 3.978
+            "sek": 4.512
           },
           "tekst": {
             "pyt": null,
@@ -432,11 +432,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g2-p11-cue.mp3",
-            "sek": 12.028
+            "sek": 11.4
           },
           "wzor": {
             "src": "audio/g2-p11-en.mp3",
-            "sek": 4.083
+            "sek": 4.704
           },
           "tekst": {
             "pyt": null,
@@ -448,11 +448,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g2-p12-cue.mp3",
-            "sek": 11.08
+            "sek": 10.8
           },
           "wzor": {
             "src": "audio/g2-p12-en.mp3",
-            "sek": 4.164
+            "sek": 5.376
           },
           "tekst": {
             "pyt": null,
@@ -464,11 +464,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g2-p13-cue.mp3",
-            "sek": 10.016
+            "sek": 9.96
           },
           "wzor": {
             "src": "audio/g2-p13-en.mp3",
-            "sek": 4.701
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -480,11 +480,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g2-p14-cue.mp3",
-            "sek": 13.802
+            "sek": 14.472
           },
           "wzor": {
             "src": "audio/g2-p14-en.mp3",
-            "sek": 6.045
+            "sek": 7.104
           },
           "tekst": {
             "pyt": null,
@@ -496,11 +496,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g2-p15-cue.mp3",
-            "sek": 12.887
+            "sek": 12.048
           },
           "wzor": {
             "src": "audio/g2-p15-en.mp3",
-            "sek": 5.341
+            "sek": 4.704
           },
           "tekst": {
             "pyt": null,
@@ -512,11 +512,11 @@
           "n": 16,
           "cue": {
             "src": "audio/g2-p16-cue.mp3",
-            "sek": 12.694
+            "sek": 12.864
           },
           "wzor": {
             "src": "audio/g2-p16-en.mp3",
-            "sek": 5.64
+            "sek": 6.216
           },
           "tekst": {
             "pyt": null,
@@ -528,11 +528,11 @@
           "n": 17,
           "cue": {
             "src": "audio/g2-p17-cue.mp3",
-            "sek": 15.758
+            "sek": 14.784
           },
           "wzor": {
             "src": "audio/g2-p17-en.mp3",
-            "sek": 5.982
+            "sek": 6.264
           },
           "tekst": {
             "pyt": null,
@@ -550,11 +550,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g3-p01-cue.mp3",
-            "sek": 7.033
+            "sek": 6.408
           },
           "wzor": {
             "src": "audio/g3-p01-en.mp3",
-            "sek": 3.185
+            "sek": 3.312
           },
           "tekst": {
             "pyt": null,
@@ -566,11 +566,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g3-p02-cue.mp3",
-            "sek": 7.381
+            "sek": 7.2
           },
           "wzor": {
             "src": "audio/g3-p02-en.mp3",
-            "sek": 3.304
+            "sek": 3.456
           },
           "tekst": {
             "pyt": null,
@@ -582,11 +582,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g3-p03-cue.mp3",
-            "sek": 6.059
+            "sek": 5.808
           },
           "wzor": {
             "src": "audio/g3-p03-en.mp3",
-            "sek": 3.434
+            "sek": 3.576
           },
           "tekst": {
             "pyt": null,
@@ -598,11 +598,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g3-p04-cue.mp3",
-            "sek": 10.893
+            "sek": 9.96
           },
           "wzor": {
             "src": "audio/g3-p04-en.mp3",
-            "sek": 4.262
+            "sek": 4.872
           },
           "tekst": {
             "pyt": null,
@@ -614,11 +614,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g3-p05-cue.mp3",
-            "sek": 10.276
+            "sek": 10.152
           },
           "wzor": {
             "src": "audio/g3-p05-en.mp3",
-            "sek": 3.957
+            "sek": 4.176
           },
           "tekst": {
             "pyt": null,
@@ -630,11 +630,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g3-p06-cue.mp3",
-            "sek": 11.031
+            "sek": 11.208
           },
           "wzor": {
             "src": "audio/g3-p06-en.mp3",
-            "sek": 4.994
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -646,11 +646,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g3-p07-cue.mp3",
-            "sek": 7.606
+            "sek": 7.704
           },
           "wzor": {
             "src": "audio/g3-p07-en.mp3",
-            "sek": 4.544
+            "sek": 4.776
           },
           "tekst": {
             "pyt": null,
@@ -662,11 +662,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g3-p08-cue.mp3",
-            "sek": 10.407
+            "sek": 9.96
           },
           "wzor": {
             "src": "audio/g3-p08-en.mp3",
-            "sek": 4.333
+            "sek": 3.768
           },
           "tekst": {
             "pyt": null,
@@ -678,11 +678,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g3-p09-cue.mp3",
-            "sek": 12.898
+            "sek": 12.168
           },
           "wzor": {
             "src": "audio/g3-p09-en.mp3",
-            "sek": 5.275
+            "sek": 5.424
           },
           "tekst": {
             "pyt": null,
@@ -694,11 +694,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g3-p10-cue.mp3",
-            "sek": 12.407
+            "sek": 11.856
           },
           "wzor": {
             "src": "audio/g3-p10-en.mp3",
-            "sek": 5.472
+            "sek": 5.568
           },
           "tekst": {
             "pyt": null,
@@ -710,11 +710,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g3-p11-cue.mp3",
-            "sek": 11.395
+            "sek": 11.952
           },
           "wzor": {
             "src": "audio/g3-p11-en.mp3",
-            "sek": 4.712
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
@@ -726,11 +726,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g3-p12-cue.mp3",
-            "sek": 12.193
+            "sek": 12.648
           },
           "wzor": {
             "src": "audio/g3-p12-en.mp3",
-            "sek": 5.417
+            "sek": 5.016
           },
           "tekst": {
             "pyt": null,
@@ -742,11 +742,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g3-p13-cue.mp3",
-            "sek": 11.594
+            "sek": 11.808
           },
           "wzor": {
             "src": "audio/g3-p13-en.mp3",
-            "sek": 4.508
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -758,11 +758,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g3-p14-cue.mp3",
-            "sek": 14.315
+            "sek": 13.68
           },
           "wzor": {
             "src": "audio/g3-p14-en.mp3",
-            "sek": 5.096
+            "sek": 6.072
           },
           "tekst": {
             "pyt": null,
@@ -774,11 +774,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g3-p15-cue.mp3",
-            "sek": 6.513
+            "sek": 6.864
           },
           "wzor": {
             "src": "audio/g3-p15-en.mp3",
-            "sek": 3.713
+            "sek": 3.072
           },
           "tekst": {
             "pyt": null,
@@ -796,11 +796,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g4-p01-cue.mp3",
-            "sek": 6.787
+            "sek": 6.456
           },
           "wzor": {
             "src": "audio/g4-p01-en.mp3",
-            "sek": 2.997
+            "sek": 3.816
           },
           "tekst": {
             "pyt": null,
@@ -812,11 +812,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g4-p02-cue.mp3",
-            "sek": 8.136
+            "sek": 8.352
           },
           "wzor": {
             "src": "audio/g4-p02-en.mp3",
-            "sek": 3.763
+            "sek": 3.72
           },
           "tekst": {
             "pyt": null,
@@ -828,11 +828,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g4-p03-cue.mp3",
-            "sek": 6.214
+            "sek": 6.216
           },
           "wzor": {
             "src": "audio/g4-p03-en.mp3",
-            "sek": 3.701
+            "sek": 4.224
           },
           "tekst": {
             "pyt": null,
@@ -844,11 +844,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g4-p04-cue.mp3",
-            "sek": 8.902
+            "sek": 9.168
           },
           "wzor": {
             "src": "audio/g4-p04-en.mp3",
-            "sek": 3.881
+            "sek": 4.464
           },
           "tekst": {
             "pyt": null,
@@ -860,11 +860,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g4-p05-cue.mp3",
-            "sek": 11.893
+            "sek": 11.856
           },
           "wzor": {
             "src": "audio/g4-p05-en.mp3",
-            "sek": 4.838
+            "sek": 4.872
           },
           "tekst": {
             "pyt": null,
@@ -876,11 +876,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g4-p06-cue.mp3",
-            "sek": 14.003
+            "sek": 14.376
           },
           "wzor": {
             "src": "audio/g4-p06-en.mp3",
-            "sek": 6.255
+            "sek": 6.12
           },
           "tekst": {
             "pyt": null,
@@ -892,11 +892,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g4-p07-cue.mp3",
-            "sek": 10.755
+            "sek": 11.616
           },
           "wzor": {
             "src": "audio/g4-p07-en.mp3",
-            "sek": 5.009
+            "sek": 5.064
           },
           "tekst": {
             "pyt": null,
@@ -908,11 +908,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g4-p08-cue.mp3",
-            "sek": 12.803
+            "sek": 12.528
           },
           "wzor": {
             "src": "audio/g4-p08-en.mp3",
-            "sek": 5.371
+            "sek": 5.712
           },
           "tekst": {
             "pyt": null,
@@ -924,11 +924,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g4-p09-cue.mp3",
-            "sek": 8.609
+            "sek": 9.456
           },
           "wzor": {
             "src": "audio/g4-p09-en.mp3",
-            "sek": 3.482
+            "sek": 4.464
           },
           "tekst": {
             "pyt": null,
@@ -940,11 +940,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g4-p10-cue.mp3",
-            "sek": 12.793
+            "sek": 11.496
           },
           "wzor": {
             "src": "audio/g4-p10-en.mp3",
-            "sek": 4.398
+            "sek": 5.304
           },
           "tekst": {
             "pyt": null,
@@ -956,11 +956,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g4-p11-cue.mp3",
-            "sek": 13.632
+            "sek": 13.728
           },
           "wzor": {
             "src": "audio/g4-p11-en.mp3",
-            "sek": 5.794
+            "sek": 5.52
           },
           "tekst": {
             "pyt": null,
@@ -972,11 +972,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g4-p12-cue.mp3",
-            "sek": 15.737
+            "sek": 14.424
           },
           "wzor": {
             "src": "audio/g4-p12-en.mp3",
-            "sek": 7.667
+            "sek": 7.368
           },
           "tekst": {
             "pyt": null,
@@ -988,11 +988,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g4-p13-cue.mp3",
-            "sek": 15.105
+            "sek": 15.312
           },
           "wzor": {
             "src": "audio/g4-p13-en.mp3",
-            "sek": 6.837
+            "sek": 7.056
           },
           "tekst": {
             "pyt": null,
@@ -1004,11 +1004,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g4-p14-cue.mp3",
-            "sek": 11.664
+            "sek": 12.216
           },
           "wzor": {
             "src": "audio/g4-p14-en.mp3",
-            "sek": 5.105
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -1020,11 +1020,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g4-p15-cue.mp3",
-            "sek": 13.073
+            "sek": 12.816
           },
           "wzor": {
             "src": "audio/g4-p15-en.mp3",
-            "sek": 6.306
+            "sek": 5.856
           },
           "tekst": {
             "pyt": null,
@@ -1036,11 +1036,11 @@
           "n": 16,
           "cue": {
             "src": "audio/g4-p16-cue.mp3",
-            "sek": 7.025
+            "sek": 8.064
           },
           "wzor": {
             "src": "audio/g4-p16-en.mp3",
-            "sek": 4.149
+            "sek": 4.32
           },
           "tekst": {
             "pyt": null,
@@ -1052,11 +1052,11 @@
           "n": 17,
           "cue": {
             "src": "audio/g4-p17-cue.mp3",
-            "sek": 13.408
+            "sek": 13.416
           },
           "wzor": {
             "src": "audio/g4-p17-en.mp3",
-            "sek": 5.506
+            "sek": 5.256
           },
           "tekst": {
             "pyt": null,
@@ -1068,11 +1068,11 @@
           "n": 18,
           "cue": {
             "src": "audio/g4-p18-cue.mp3",
-            "sek": 13.729
+            "sek": 13.68
           },
           "wzor": {
             "src": "audio/g4-p18-en.mp3",
-            "sek": 5.994
+            "sek": 6.576
           },
           "tekst": {
             "pyt": null,
@@ -1090,11 +1090,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g5-p01-cue.mp3",
-            "sek": 5.765
+            "sek": 5.952
           },
           "wzor": {
             "src": "audio/g5-p01-en.mp3",
-            "sek": 2.887
+            "sek": 2.856
           },
           "tekst": {
             "pyt": null,
@@ -1106,11 +1106,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g5-p02-cue.mp3",
-            "sek": 6.281
+            "sek": 6.816
           },
           "wzor": {
             "src": "audio/g5-p02-en.mp3",
-            "sek": 3.67
+            "sek": 3.672
           },
           "tekst": {
             "pyt": null,
@@ -1122,11 +1122,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g5-p03-cue.mp3",
-            "sek": 7.42
+            "sek": 7.512
           },
           "wzor": {
             "src": "audio/g5-p03-en.mp3",
-            "sek": 4.611
+            "sek": 3.672
           },
           "tekst": {
             "pyt": null,
@@ -1138,11 +1138,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g5-p04-cue.mp3",
-            "sek": 11.32
+            "sek": 11.76
           },
           "wzor": {
             "src": "audio/g5-p04-en.mp3",
-            "sek": 5.703
+            "sek": 4.608
           },
           "tekst": {
             "pyt": null,
@@ -1154,11 +1154,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g5-p05-cue.mp3",
-            "sek": 9.263
+            "sek": 9.696
           },
           "wzor": {
             "src": "audio/g5-p05-en.mp3",
-            "sek": 3.679
+            "sek": 4.176
           },
           "tekst": {
             "pyt": null,
@@ -1170,11 +1170,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g5-p06-cue.mp3",
-            "sek": 8.104
+            "sek": 7.368
           },
           "wzor": {
             "src": "audio/g5-p06-en.mp3",
-            "sek": 3.475
+            "sek": 3.768
           },
           "tekst": {
             "pyt": null,
@@ -1186,11 +1186,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g5-p07-cue.mp3",
-            "sek": 13.801
+            "sek": 14.064
           },
           "wzor": {
             "src": "audio/g5-p07-en.mp3",
-            "sek": 5.968
+            "sek": 6.576
           },
           "tekst": {
             "pyt": null,
@@ -1202,11 +1202,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g5-p08-cue.mp3",
-            "sek": 9.145
+            "sek": 8.808
           },
           "wzor": {
             "src": "audio/g5-p08-en.mp3",
-            "sek": 3.482
+            "sek": 3.72
           },
           "tekst": {
             "pyt": null,
@@ -1218,11 +1218,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g5-p09-cue.mp3",
-            "sek": 10.574
+            "sek": 10.56
           },
           "wzor": {
             "src": "audio/g5-p09-en.mp3",
-            "sek": 4.3
+            "sek": 4.32
           },
           "tekst": {
             "pyt": null,
@@ -1234,11 +1234,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g5-p10-cue.mp3",
-            "sek": 11.442
+            "sek": 11.112
           },
           "wzor": {
             "src": "audio/g5-p10-en.mp3",
-            "sek": 4.599
+            "sek": 5.16
           },
           "tekst": {
             "pyt": null,
@@ -1250,11 +1250,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g5-p11-cue.mp3",
-            "sek": 11.799
+            "sek": 11.352
           },
           "wzor": {
             "src": "audio/g5-p11-en.mp3",
-            "sek": 4.39
+            "sek": 5.016
           },
           "tekst": {
             "pyt": null,
@@ -1266,11 +1266,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g5-p12-cue.mp3",
-            "sek": 12.246
+            "sek": 12.768
           },
           "wzor": {
             "src": "audio/g5-p12-en.mp3",
-            "sek": 4.411
+            "sek": 4.656
           },
           "tekst": {
             "pyt": null,
@@ -1282,11 +1282,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g5-p13-cue.mp3",
-            "sek": 10.658
+            "sek": 11.016
           },
           "wzor": {
             "src": "audio/g5-p13-en.mp3",
-            "sek": 4.256
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -1298,11 +1298,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g5-p14-cue.mp3",
-            "sek": 15.708
+            "sek": 14.832
           },
           "wzor": {
             "src": "audio/g5-p14-en.mp3",
-            "sek": 6.682
+            "sek": 6.864
           },
           "tekst": {
             "pyt": null,
@@ -1314,11 +1314,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g5-p15-cue.mp3",
-            "sek": 10.562
+            "sek": 10.608
           },
           "wzor": {
             "src": "audio/g5-p15-en.mp3",
-            "sek": 4.239
+            "sek": 4.56
           },
           "tekst": {
             "pyt": null,
@@ -1336,11 +1336,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g6-p01-cue.mp3",
-            "sek": 5.364
+            "sek": 6.168
           },
           "wzor": {
             "src": "audio/g6-p01-en.mp3",
-            "sek": 3.377
+            "sek": 3.024
           },
           "tekst": {
             "pyt": null,
@@ -1352,11 +1352,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g6-p02-cue.mp3",
-            "sek": 6.352
+            "sek": 6.6
           },
           "wzor": {
             "src": "audio/g6-p02-en.mp3",
-            "sek": 3.987
+            "sek": 3.456
           },
           "tekst": {
             "pyt": null,
@@ -1368,11 +1368,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g6-p03-cue.mp3",
-            "sek": 5.961
+            "sek": 5.568
           },
           "wzor": {
             "src": "audio/g6-p03-en.mp3",
-            "sek": 3.786
+            "sek": 3.312
           },
           "tekst": {
             "pyt": null,
@@ -1384,11 +1384,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g6-p04-cue.mp3",
-            "sek": 10.441
+            "sek": 10.296
           },
           "wzor": {
             "src": "audio/g6-p04-en.mp3",
-            "sek": 5.629
+            "sek": 4.416
           },
           "tekst": {
             "pyt": null,
@@ -1400,11 +1400,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g6-p05-cue.mp3",
-            "sek": 6.564
+            "sek": 6.456
           },
           "wzor": {
             "src": "audio/g6-p05-en.mp3",
-            "sek": 3.902
+            "sek": 3.816
           },
           "tekst": {
             "pyt": null,
@@ -1416,11 +1416,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g6-p06-cue.mp3",
-            "sek": 12.225
+            "sek": 11.856
           },
           "wzor": {
             "src": "audio/g6-p06-en.mp3",
-            "sek": 4.365
+            "sek": 4.968
           },
           "tekst": {
             "pyt": null,
@@ -1432,11 +1432,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g6-p07-cue.mp3",
-            "sek": 8.915
+            "sek": 8.448
           },
           "wzor": {
             "src": "audio/g6-p07-en.mp3",
-            "sek": 3.519
+            "sek": 3.36
           },
           "tekst": {
             "pyt": null,
@@ -1448,11 +1448,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g6-p08-cue.mp3",
-            "sek": 10.163
+            "sek": 10.416
           },
           "wzor": {
             "src": "audio/g6-p08-en.mp3",
-            "sek": 4.948
+            "sek": 4.104
           },
           "tekst": {
             "pyt": null,
@@ -1464,11 +1464,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g6-p09-cue.mp3",
-            "sek": 10.261
+            "sek": 9.504
           },
           "wzor": {
             "src": "audio/g6-p09-en.mp3",
-            "sek": 4.761
+            "sek": 4.824
           },
           "tekst": {
             "pyt": null,
@@ -1480,11 +1480,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g6-p10-cue.mp3",
-            "sek": 12.82
+            "sek": 12.552
           },
           "wzor": {
             "src": "audio/g6-p10-en.mp3",
-            "sek": 4.584
+            "sek": 5.568
           },
           "tekst": {
             "pyt": null,
@@ -1496,11 +1496,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g6-p11-cue.mp3",
-            "sek": 13.484
+            "sek": 13.968
           },
           "wzor": {
             "src": "audio/g6-p11-en.mp3",
-            "sek": 5.084
+            "sek": 5.568
           },
           "tekst": {
             "pyt": null,
@@ -1512,11 +1512,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g6-p12-cue.mp3",
-            "sek": 11.46
+            "sek": 10.704
           },
           "wzor": {
             "src": "audio/g6-p12-en.mp3",
-            "sek": 5.163
+            "sek": 5.208
           },
           "tekst": {
             "pyt": null,
@@ -1528,11 +1528,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g6-p13-cue.mp3",
-            "sek": 13.004
+            "sek": 12.6
           },
           "wzor": {
             "src": "audio/g6-p13-en.mp3",
-            "sek": 5.182
+            "sek": 4.704
           },
           "tekst": {
             "pyt": null,
@@ -1544,11 +1544,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g6-p14-cue.mp3",
-            "sek": 13.272
+            "sek": 13.08
           },
           "wzor": {
             "src": "audio/g6-p14-en.mp3",
-            "sek": 5.087
+            "sek": 4.56
           },
           "tekst": {
             "pyt": null,
@@ -1560,11 +1560,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g6-p15-cue.mp3",
-            "sek": 13.86
+            "sek": 13.68
           },
           "wzor": {
             "src": "audio/g6-p15-en.mp3",
-            "sek": 7.504
+            "sek": 6.168
           },
           "tekst": {
             "pyt": null,
@@ -1582,11 +1582,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g7-p01-cue.mp3",
-            "sek": 4.562
+            "sek": 4.704
           },
           "wzor": {
             "src": "audio/g7-p01-en.mp3",
-            "sek": 2.354
+            "sek": 2.616
           },
           "tekst": {
             "pyt": null,
@@ -1598,11 +1598,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g7-p02-cue.mp3",
-            "sek": 5.983
+            "sek": 6.096
           },
           "wzor": {
             "src": "audio/g7-p02-en.mp3",
-            "sek": 3.141
+            "sek": 4.464
           },
           "tekst": {
             "pyt": null,
@@ -1614,11 +1614,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g7-p03-cue.mp3",
-            "sek": 4.814
+            "sek": 4.848
           },
           "wzor": {
             "src": "audio/g7-p03-en.mp3",
-            "sek": 2.674
+            "sek": 2.76
           },
           "tekst": {
             "pyt": null,
@@ -1630,11 +1630,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g7-p04-cue.mp3",
-            "sek": 7.08
+            "sek": 6.552
           },
           "wzor": {
             "src": "audio/g7-p04-en.mp3",
-            "sek": 4.243
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
@@ -1646,11 +1646,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g7-p05-cue.mp3",
-            "sek": 6.152
+            "sek": 5.256
           },
           "wzor": {
             "src": "audio/g7-p05-en.mp3",
-            "sek": 3.313
+            "sek": 3.312
           },
           "tekst": {
             "pyt": null,
@@ -1662,11 +1662,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g7-p06-cue.mp3",
-            "sek": 10.741
+            "sek": 9.696
           },
           "wzor": {
             "src": "audio/g7-p06-en.mp3",
-            "sek": 3.915
+            "sek": 4.416
           },
           "tekst": {
             "pyt": null,
@@ -1678,11 +1678,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g7-p07-cue.mp3",
-            "sek": 10.801
+            "sek": 10.2
           },
           "wzor": {
             "src": "audio/g7-p07-en.mp3",
-            "sek": 5.386
+            "sek": 5.064
           },
           "tekst": {
             "pyt": null,
@@ -1694,11 +1694,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g7-p08-cue.mp3",
-            "sek": 8.339
+            "sek": 8.616
           },
           "wzor": {
             "src": "audio/g7-p08-en.mp3",
-            "sek": 4.379
+            "sek": 4.104
           },
           "tekst": {
             "pyt": null,
@@ -1710,11 +1710,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g7-p09-cue.mp3",
-            "sek": 11.638
+            "sek": 12.36
           },
           "wzor": {
             "src": "audio/g7-p09-en.mp3",
-            "sek": 6.028
+            "sek": 6.168
           },
           "tekst": {
             "pyt": null,
@@ -1726,11 +1726,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g7-p10-cue.mp3",
-            "sek": 10.798
+            "sek": 11.256
           },
           "wzor": {
             "src": "audio/g7-p10-en.mp3",
-            "sek": 4.404
+            "sek": 3.576
           },
           "tekst": {
             "pyt": null,
@@ -1742,11 +1742,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g7-p11-cue.mp3",
-            "sek": 10.659
+            "sek": 11.904
           },
           "wzor": {
             "src": "audio/g7-p11-en.mp3",
-            "sek": 4.517
+            "sek": 4.872
           },
           "tekst": {
             "pyt": null,
@@ -1758,11 +1758,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g7-p12-cue.mp3",
-            "sek": 9.775
+            "sek": 10.104
           },
           "wzor": {
             "src": "audio/g7-p12-en.mp3",
-            "sek": 4.29
+            "sek": 4.776
           },
           "tekst": {
             "pyt": null,
@@ -1774,11 +1774,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g7-p13-cue.mp3",
-            "sek": 14.024
+            "sek": 13.152
           },
           "wzor": {
             "src": "audio/g7-p13-en.mp3",
-            "sek": 5.069
+            "sek": 5.664
           },
           "tekst": {
             "pyt": null,
@@ -1790,11 +1790,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g7-p14-cue.mp3",
-            "sek": 11.945
+            "sek": 12.216
           },
           "wzor": {
             "src": "audio/g7-p14-en.mp3",
-            "sek": 5.492
+            "sek": 5.712
           },
           "tekst": {
             "pyt": null,
@@ -1806,11 +1806,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g7-p15-cue.mp3",
-            "sek": 14.217
+            "sek": 14.016
           },
           "wzor": {
             "src": "audio/g7-p15-en.mp3",
-            "sek": 5.476
+            "sek": 5.424
           },
           "tekst": {
             "pyt": null,
@@ -1828,11 +1828,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g8-p01-cue.mp3",
-            "sek": 23.875
+            "sek": 23.352
           },
           "wzor": {
             "src": "audio/g8-p01-en.mp3",
-            "sek": 7.756
+            "sek": 8.616
           },
           "tekst": {
             "pyt": "Have you been to Japan?",
@@ -1844,11 +1844,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g8-p02-cue.mp3",
-            "sek": 24.928
+            "sek": 25.128
           },
           "wzor": {
             "src": "audio/g8-p02-en.mp3",
-            "sek": 9.41
+            "sek": 9.168
           },
           "tekst": {
             "pyt": "Is there some type of general European culture?",
@@ -1860,11 +1860,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g8-p03-cue.mp3",
-            "sek": 24.95
+            "sek": 25.392
           },
           "wzor": {
             "src": "audio/g8-p03-en.mp3",
-            "sek": 8.98
+            "sek": 9.504
           },
           "tekst": {
             "pyt": "Did you like Kraków when you were living there?",
@@ -1876,11 +1876,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g8-p04-cue.mp3",
-            "sek": 24.017
+            "sek": 23.952
           },
           "wzor": {
             "src": "audio/g8-p04-en.mp3",
-            "sek": 9.721
+            "sek": 9.504
           },
           "tekst": {
             "pyt": "What about Warsaw? What's your opinion on it?",
@@ -1892,11 +1892,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g8-p05-cue.mp3",
-            "sek": 20.175
+            "sek": 20.064
           },
           "wzor": {
             "src": "audio/g8-p05-en.mp3",
-            "sek": 7.001
+            "sek": 6.672
           },
           "tekst": {
             "pyt": "Do you have a favorite cuisine?",
@@ -1908,11 +1908,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g8-p06-cue.mp3",
-            "sek": 20.649
+            "sek": 20.976
           },
           "wzor": {
             "src": "audio/g8-p06-en.mp3",
-            "sek": 6.257
+            "sek": 7.224
           },
           "tekst": {
             "pyt": "What's your favorite thing to get at a milk bar?",
@@ -1924,11 +1924,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g8-p07-cue.mp3",
-            "sek": 23.927
+            "sek": 22.32
           },
           "wzor": {
             "src": "audio/g8-p07-en.mp3",
-            "sek": 6.857
+            "sek": 6.504
           },
           "tekst": {
             "pyt": "How do people find the good milk bars?",
@@ -1940,11 +1940,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g8-p08-cue.mp3",
-            "sek": 22.927
+            "sek": 22.68
           },
           "wzor": {
             "src": "audio/g8-p08-en.mp3",
-            "sek": 6.658
+            "sek": 7.056
           },
           "tekst": {
             "pyt": "Do you cook for yourself? What do you make on a normal day?",
@@ -1956,11 +1956,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g8-p09-cue.mp3",
-            "sek": 24.306
+            "sek": 25.248
           },
           "wzor": {
             "src": "audio/g8-p09-en.mp3",
-            "sek": 8.747
+            "sek": 8.808
           },
           "tekst": {
             "pyt": "Did you keep a lot of friends from your childhood?",
@@ -1972,11 +1972,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g8-p10-cue.mp3",
-            "sek": 22.486
+            "sek": 23.208
           },
           "wzor": {
             "src": "audio/g8-p10-en.mp3",
-            "sek": 7.953
+            "sek": 7.464
           },
           "tekst": {
             "pyt": "Kraków just lost its mayor — what happens now?",
@@ -1988,11 +1988,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g8-p11-cue.mp3",
-            "sek": 28.27
+            "sek": 28.776
           },
           "wzor": {
             "src": "audio/g8-p11-en.mp3",
-            "sek": 9.565
+            "sek": 9.504
           },
           "tekst": {
             "pyt": "Would you want to go to the US?",

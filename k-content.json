@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T13:46:16.359Z",
+  "generatedAt": "2026-08-07T15:39:37.676Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -17,7 +17,7 @@
       "pdf": "K/01-k1-powiedz-to-raz/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/01-k1-powiedz-to-raz/audio.json",
-      "audioVersion": 1786109183154,
+      "audioVersion": 1786111468346,
       "hasAudio": true,
       "groups": [
         {
@@ -58,7 +58,7 @@
       "pdf": "K/02-k2-kintsugi/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/02-k2-kintsugi/audio.json",
-      "audioVersion": 1786109190713,
+      "audioVersion": 1786111468397,
       "hasAudio": true,
       "groups": [
         {
@@ -99,7 +99,7 @@
       "pdf": "K/03-k3-jednym-zdaniem/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/03-k3-jednym-zdaniem/audio.json",
-      "audioVersion": 1786109205664,
+      "audioVersion": 1786117107828,
       "hasAudio": true,
       "groups": [
         {
