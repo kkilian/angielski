@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -92,7 +93,13 @@ test('ostatnia para siega konca pliku', () => {
   assert.equal(pary[0].wzorDo, 11.5);
 });
 
-test('planuje caly dzial K2 na prawdziwych plikach', () => {
+// Migracja jest jednorazowa: po niej grupa-N.mp3 juz nie istnieje i nie ma czego
+// planowac. Testy ponizej maja sens tylko dla dzialu, ktory czeka na pociecie —
+// zostawiamy je dla przyszlych dzialow (np. przeniesionych z Kursu M).
+const doMigracji = (dir) => fs.existsSync(path.join(ROOT, 'K', dir, 'grupa-1.mp3'));
+
+test('planuje caly dzial K2 na prawdziwych plikach', (t) => {
+  if (!doMigracji('02-k2-kintsugi')) return t.skip('K2 jest juz w formacie 2');
   const r = zaplanujDzial(path.join(ROOT, 'K', '02-k2-kintsugi'));
   assert.equal(r.ok, true, r.powod);
   assert.equal(r.grupy.length, 5);
@@ -111,8 +118,10 @@ test('planuje caly dzial K2 na prawdziwych plikach', () => {
   assert.ok(r.grupy[4].pary[0].tekst.pyt.length > 0);
 });
 
-test('planuje caly dzial K1 i K3', () => {
-  for (const dir of ['01-k1-powiedz-to-raz', '03-k3-jednym-zdaniem']) {
+test('planuje caly dzial K1 i K3', (t) => {
+  const czekaja = ['01-k1-powiedz-to-raz', '03-k3-jednym-zdaniem'].filter(doMigracji);
+  if (!czekaja.length) return t.skip('K1 i K3 sa juz w formacie 2');
+  for (const dir of czekaja) {
     const r = zaplanujDzial(path.join(ROOT, 'K', dir));
     assert.equal(r.ok, true, `${dir}: ${r.powod}`);
   }

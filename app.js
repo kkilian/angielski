@@ -6,7 +6,7 @@
 //  - tryb "cały" = przejście na zdarzeniu 'ended' + Media Session 'nexttrack' (ręczny fallback),
 //  - pierwszy play musi wyjść z dotknięcia użytkownika (dlatego play() w handlerach kliknięć).
 
-import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla } from './pary.js';
+import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla, bazaDzialu } from './pary.js';
 
 const audio = document.getElementById('audio');
 const view = document.getElementById('view');
@@ -120,7 +120,7 @@ async function grajPary(chapter, index, poz) {
   state.chapter = chapter;
   state.index = index;
   if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
-  state.kolejka = budujKolejke(grupa, chapter.audioVersion);
+  state.kolejka = budujKolejke(grupa, chapter.audioVersion, bazaDzialu(chapter));
   state.poz = Math.min(poz, Math.max(0, state.kolejka.length - 1));
   wczytajPozycje();
   audio.play().catch(() => {});
@@ -511,7 +511,7 @@ function restoreLast() {
         state.chapter = ch;
         state.index = index;
         if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
-        state.kolejka = budujKolejke(grupa, ch.audioVersion);
+        state.kolejka = budujKolejke(grupa, ch.audioVersion, bazaDzialu(ch));
         state.poz = Math.min(poz || 0, state.kolejka.length - 1);
         audio.src = state.kolejka[state.poz].src; // tylko wczytaj — start wymaga dotknięcia
         audio.loop = false;

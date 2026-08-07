@@ -1,0 +1,2006 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-08-07T13:26:32.268Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 5.692
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 4.266
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Są wybory we wrześniu.",
+            "en": "There's an election in September."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 9.103
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 3.874
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W środku tamtej kamienicy jest podwórko.",
+            "en": "There's a courtyard in the middle of that building."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 3.342
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 3.004
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To samoobsługa.",
+            "en": "It's self-service."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 5.493
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 2.761
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To nie jest powszechnie wiadome.",
+            "en": "It's not common knowledge."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 7.744
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 3.898
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie dowiadują się pocztą pantoflową.",
+            "en": "People find out by word of mouth."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 6.326
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 3.339
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dojeżdżałem kiedyś do Krakowa.",
+            "en": "I used to commute to Kraków."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 6.396
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 3.323
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "On dorastał na przedmieściach.",
+            "en": "He grew up in the suburbs."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 4.743
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 2.908
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To płatna autostrada.",
+            "en": "It's a toll road."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 7.976
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 3.746
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tamta restauracja to pułapka na turystów.",
+            "en": "That restaurant is a tourist trap."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g1-p10-cue.mp3",
+            "sek": 6.287
+          },
+          "wzor": {
+            "src": "audio/g1-p10-en.mp3",
+            "sek": 3.63
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Polska jest dość jednorodna.",
+            "en": "Poland is pretty homogeneous."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g1-p11-cue.mp3",
+            "sek": 8.678
+          },
+          "wzor": {
+            "src": "audio/g1-p11-en.mp3",
+            "sek": 4.929
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kosze na śmieci stoją na podwórku kamienicy.",
+            "en": "The trash cans are in the building's courtyard."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g1-p12-cue.mp3",
+            "sek": 6.38
+          },
+          "wzor": {
+            "src": "audio/g1-p12-en.mp3",
+            "sek": 3.064
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Myto kosztuje czterdzieści złotych.",
+            "en": "The toll is forty zlotys."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g1-p13-cue.mp3",
+            "sek": 8.104
+          },
+          "wzor": {
+            "src": "audio/g1-p13-en.mp3",
+            "sek": 4.161
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Bar mleczny jest samoobsługowy i tani.",
+            "en": "The milk bar is self-service and cheap."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g1-p14-cue.mp3",
+            "sek": 7.755
+          },
+          "wzor": {
+            "src": "audio/g1-p14-en.mp3",
+            "sek": 4.119
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Większość ludzi dojeżdża do Krakowa do pracy.",
+            "en": "Most people commute to Kraków for work."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g1-p15-cue.mp3",
+            "sek": 10.575
+          },
+          "wzor": {
+            "src": "audio/g1-p15-en.mp3",
+            "sek": 3.844
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Myślałem, że moglibyśmy zacząć od krótszego artykułu.",
+            "en": "I was thinking we could start with a shorter article."
+          }
+        },
+        {
+          "n": 16,
+          "cue": {
+            "src": "audio/g1-p16-cue.mp3",
+            "sek": 10.938
+          },
+          "wzor": {
+            "src": "audio/g1-p16-en.mp3",
+            "sek": 4.297
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czy byłoby OK, gdybym dostał artykuł w piątek?",
+            "en": "Would it be OK if I got the article on Friday?"
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 7.676
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 4.045
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zapłaciliśmy myto na autostradzie.",
+            "en": "We paid a toll on the highway."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 5.347
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 3.689
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Studiowałem na AGH.",
+            "en": "I studied at AGH."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 8.241
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 4.109
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Drogi były kiedyś pełne dziur w jezdni.",
+            "en": "The roads used to be full of potholes."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 9.975
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 3.882
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ta knajpa przy dworcu to czysta pułapka na turystów.",
+            "en": "The bar by the station is a total tourist trap."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 8.626
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 4.5
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś w Polsce prawie nie było dróg.",
+            "en": "There used to be almost no roads in Poland."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 13.477
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 5.594
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przez lata jedyną szybką drogą dokądkolwiek była płatna autostrada.",
+            "en": "For years, the only fast way to get anywhere was a toll road."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 11.161
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 4.915
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że knajpy przy Rynku to pułapki na turystów.",
+            "en": "I'd say the bars around the main square are tourist traps."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 6.558
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 3.868
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czekamy na wybory we wrześniu.",
+            "en": "We're waiting for the election in September."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 9.549
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 4.358
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To samoobsługowy lokal, więc nie ma tam kelnerów.",
+            "en": "It's a self-service place, so there are no waiters."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 12.416
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 3.978
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "O najlepszym barze mlecznym dowiadujesz się pocztą pantoflową.",
+            "en": "You hear about the best milk bar by word of mouth."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 12.028
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 4.083
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To nie jest powszechnie wiadome, ale można tam zarezerwować stolik.",
+            "en": "It's not common knowledge, but you can get a reservation there."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g2-p12-cue.mp3",
+            "sek": 11.08
+          },
+          "wzor": {
+            "src": "audio/g2-p12-en.mp3",
+            "sek": 4.164
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że jedzenie jest tam o połowę tańsze.",
+            "en": "What I mean is, the food there is half the price."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g2-p13-cue.mp3",
+            "sek": 10.016
+          },
+          "wzor": {
+            "src": "audio/g2-p13-en.mp3",
+            "sek": 4.701
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nikt poniżej trzydziestki nie je już flaków ani galarety.",
+            "en": "Nobody under thirty eats tripe soup or aspic anymore."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g2-p14-cue.mp3",
+            "sek": 13.802
+          },
+          "wzor": {
+            "src": "audio/g2-p14-en.mp3",
+            "sek": 6.045
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie narzekają na ceny biletów, ale i tak codziennie jeżdżą tramwajem do pracy.",
+            "en": "People complain about ticket prices, but they still take the tram to work every day."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g2-p15-cue.mp3",
+            "sek": 12.887
+          },
+          "wzor": {
+            "src": "audio/g2-p15-en.mp3",
+            "sek": 5.341
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wolałbym zapłacić myto, niż jechać dwie godziny bocznymi drogami.",
+            "en": "I'd rather pay the toll than drive two hours on back roads."
+          }
+        },
+        {
+          "n": 16,
+          "cue": {
+            "src": "audio/g2-p16-cue.mp3",
+            "sek": 12.694
+          },
+          "wzor": {
+            "src": "audio/g2-p16-en.mp3",
+            "sek": 5.64
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wjeżdżasz w bramę i lądujesz na podwórku pełnym koszy na śmieci.",
+            "en": "You go through the archway and end up in a courtyard full of trash cans."
+          }
+        },
+        {
+          "n": 17,
+          "cue": {
+            "src": "audio/g2-p17-cue.mp3",
+            "sek": 15.758
+          },
+          "wzor": {
+            "src": "audio/g2-p17-en.mp3",
+            "sek": 5.982
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kraków jest dość jednorodny, ale i tak spotkasz tam ludzi z całego świata.",
+            "en": "Kraków is pretty homogeneous, but you still meet people from all over the world."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 7.033
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 3.185
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "On mieszka na przedmieściach.",
+            "en": "He lives out in the suburbs."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 7.381
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 3.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Codziennie dojeżdża do Nowego Jorku.",
+            "en": "He commutes to New York every day."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 6.059
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 3.434
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To bardzo jednorodne miasteczko.",
+            "en": "It's a very homogeneous town."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 10.893
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 4.262
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dorastał w podmiejskim miasteczku na Long Island.",
+            "en": "He grew up in a suburban town on Long Island."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 10.276
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 3.957
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dojazd do miasta zajmuje im godzinę pociągiem.",
+            "en": "Their commute into the city takes an hour by train."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 11.031
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 4.994
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na przedmieściach nie ma chodników, więc wszyscy jeżdżą samochodem.",
+            "en": "There are no sidewalks in the suburbs, so everybody drives."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 7.606
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 4.544
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Większość ludzi zostaje tam na całe życie.",
+            "en": "Most people stay there their whole lives."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 10.407
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 4.333
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tam praca sama do ciebie trafia — pocztą pantoflową.",
+            "en": "Out there, jobs find you through word of mouth."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 12.898
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 5.275
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W takim miasteczku jest powszechnie wiadome, które rodziny rządzą.",
+            "en": "In a town like that, it's common knowledge which families run things."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 12.407
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 5.472
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałbym, że takie miasteczko jest bardziej jednorodne niż Kraków.",
+            "en": "I'd say a town like that is more homogeneous than Kraków."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g3-p11-cue.mp3",
+            "sek": 11.395
+          },
+          "wzor": {
+            "src": "audio/g3-p11-en.mp3",
+            "sek": 4.712
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie rozumiem, czemu oni nigdy by się stamtąd nie wyprowadzili.",
+            "en": "I don't get why they'd never move away from there."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g3-p12-cue.mp3",
+            "sek": 12.193
+          },
+          "wzor": {
+            "src": "audio/g3-p12-en.mp3",
+            "sek": 5.417
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś w tamtej okolicy nie było żadnego transportu publicznego.",
+            "en": "There used to be no public transportation in that area at all."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g3-p13-cue.mp3",
+            "sek": 11.594
+          },
+          "wzor": {
+            "src": "audio/g3-p13-en.mp3",
+            "sek": 4.508
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dwugodzinny dojazd codziennie zmusiłby mnie do zmiany pracy.",
+            "en": "A two-hour commute every day would make me change jobs."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g3-p14-cue.mp3",
+            "sek": 14.315
+          },
+          "wzor": {
+            "src": "audio/g3-p14-en.mp3",
+            "sek": 5.096
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wielu ludzi wyprowadza się z takiego podmiejskiego miasteczka raz i na tym koniec.",
+            "en": "A lot of people leave a suburban town like that once, and that's it."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g3-p15-cue.mp3",
+            "sek": 6.513
+          },
+          "wzor": {
+            "src": "audio/g3-p15-en.mp3",
+            "sek": 3.713
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "No to kiedy właściwie są te wybory?",
+            "en": "So when is the election, anyway?"
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 6.787
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 2.997
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Teraz to już powszechnie wiadome.",
+            "en": "By now that's common knowledge."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 8.136
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 3.763
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Cała ta okolica to pułapka na turystów.",
+            "en": "The whole neighborhood is a tourist trap."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 6.214
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 3.701
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wybory niczego tam nie zmieniły.",
+            "en": "The election didn't change anything there."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 8.902
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 3.881
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wtedy nie potrafiłem jasno powiedzieć, o co mi chodzi.",
+            "en": "I couldn't get my point across back then."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 11.893
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 4.838
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W Ameryce leczenie kosztuje więcej, niż zarabia większość ludzi.",
+            "en": "In the US, medical care costs more than most people make."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 14.003
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 6.255
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chodzi mi o to, że tam wszystko jest dwa razy droższe, a nie o połowę tańsze.",
+            "en": "What I mean is, everything there costs twice as much, not half the price."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 10.755
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 5.009
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Amerykanie narzekają na ubezpieczenie tak, jak my narzekamy na ZUS.",
+            "en": "Americans complain about insurance the way we complain about ZUS."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 12.803
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.371
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś dało się tam kupić dom, pracując jako parkingowy.",
+            "en": "You used to be able to buy a house there, working as a parking attendant."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 8.609
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 3.482
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To coś w stylu Polski, tylko podniesionej do kwadratu.",
+            "en": "It's sort of like Poland, but squared."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 12.793
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 4.398
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Poczta pantoflowa działa tam lepiej niż jakiekolwiek ogłoszenie o pracę.",
+            "en": "Word of mouth works better there than any job posting."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g4-p11-cue.mp3",
+            "sek": 13.632
+          },
+          "wzor": {
+            "src": "audio/g4-p11-en.mp3",
+            "sek": 5.794
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jest angielskie słowo na podwórko w kamienicy, ale wyleciało mi z głowy.",
+            "en": "There's an English word for a yard inside a building, but I'm blanking on it."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g4-p12-cue.mp3",
+            "sek": 15.737
+          },
+          "wzor": {
+            "src": "audio/g4-p12-en.mp3",
+            "sek": 7.667
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Stara przedwojenna kamienica z podwórkiem ma wartość estetyczną, której nowy blok nie ma.",
+            "en": "An old prewar building with a courtyard has aesthetic value that a new apartment building just doesn't."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g4-p13-cue.mp3",
+            "sek": 15.105
+          },
+          "wzor": {
+            "src": "audio/g4-p13-en.mp3",
+            "sek": 6.837
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Bar mleczny jest samoobsługowy i o połowę tańszy niż pułapki na turystów przy Rynku.",
+            "en": "The milk bar is self-service and half the price of the tourist traps on the main square."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g4-p14-cue.mp3",
+            "sek": 11.664
+          },
+          "wzor": {
+            "src": "audio/g4-p14-en.mp3",
+            "sek": 5.105
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Codzienne dojeżdżanie z przedmieść to dwie godziny w aucie.",
+            "en": "Commuting in from the suburbs every day means two hours in the car."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g4-p15-cue.mp3",
+            "sek": 13.073
+          },
+          "wzor": {
+            "src": "audio/g4-p15-en.mp3",
+            "sek": 6.306
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedy kraj jest jednorodny, ludzie zakładają, że wszyscy myślą tak samo.",
+            "en": "When a country is homogeneous, people assume everyone thinks the same way."
+          }
+        },
+        {
+          "n": 16,
+          "cue": {
+            "src": "audio/g4-p16-cue.mp3",
+            "sek": 7.025
+          },
+          "wzor": {
+            "src": "audio/g4-p16-en.mp3",
+            "sek": 4.149
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Japonia wybiela swoją wojenną historię.",
+            "en": "Japan is whitewashing its wartime history."
+          }
+        },
+        {
+          "n": 17,
+          "cue": {
+            "src": "audio/g4-p17-cue.mp3",
+            "sek": 13.408
+          },
+          "wzor": {
+            "src": "audio/g4-p17-en.mp3",
+            "sek": 5.506
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyprowadzka do obcego miasta w pojedynkę wymaga sporej odporności psychicznej.",
+            "en": "Moving to a new city on your own takes real mental resilience."
+          }
+        },
+        {
+          "n": 18,
+          "cue": {
+            "src": "audio/g4-p18-cue.mp3",
+            "sek": 13.729
+          },
+          "wzor": {
+            "src": "audio/g4-p18-en.mp3",
+            "sek": 5.994
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przed wyborami wszyscy obiecują tańsze bilety, a potem i tak płacisz tyle samo.",
+            "en": "Before the election, everybody promises cheaper tickets, and then you pay the same anyway."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 5.765
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 2.887
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To bardzo ładne miasto.",
+            "en": "It's a very nice city."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 6.281
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 3.67
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gluten to dla mnie problem.",
+            "en": "Gluten is a problem for me."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 7.42
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 4.611
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na parterze była gruzińska restauracja.",
+            "en": "There was a Georgian restaurant downstairs."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 11.32
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 5.703
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kraków jest bardzo ładnym miastem do zwiedzania na pięć dni.",
+            "en": "Kraków is a very nice city to visit for five days."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 9.263
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 3.679
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jak jesteś uczulony na gluten, masz problem.",
+            "en": "If you're allergic to gluten, you've got a problem."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 8.104
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 3.475
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W Polsce opieka zdrowotna jest za darmo.",
+            "en": "In Poland, health care is free."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 13.801
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 5.968
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jak spytasz przeciętnego Polaka, powie ci, że to mniej więcej ta sama cena.",
+            "en": "If you ask the average Polish person, they'll tell you it's pretty much the same price."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 9.145
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 3.482
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Oni są z zupełnie innej części kraju.",
+            "en": "They're from a completely different part of the country."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g5-p09-cue.mp3",
+            "sek": 10.574
+          },
+          "wzor": {
+            "src": "audio/g5-p09-en.mp3",
+            "sek": 4.3
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mieszkam w bloku, ale nie na ostatnim piętrze.",
+            "en": "I live in an apartment building, but not on the top floor."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g5-p10-cue.mp3",
+            "sek": 11.442
+          },
+          "wzor": {
+            "src": "audio/g5-p10-en.mp3",
+            "sek": 4.599
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W Stanach płacisz miesięczną składkę za ubezpieczenie zdrowotne.",
+            "en": "In the States, you pay a monthly premium for health insurance."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g5-p11-cue.mp3",
+            "sek": 11.799
+          },
+          "wzor": {
+            "src": "audio/g5-p11-en.mp3",
+            "sek": 4.39
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie chcieli wezwać karetki, bo nie mieli ubezpieczenia.",
+            "en": "They didn't want to call an ambulance because they had no insurance."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g5-p12-cue.mp3",
+            "sek": 12.246
+          },
+          "wzor": {
+            "src": "audio/g5-p12-en.mp3",
+            "sek": 4.411
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To dla mnie dziwna rzecz, że masz znajomych tylko z liceum.",
+            "en": "It's a weird thing to me that you only keep your friends from high school."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g5-p13-cue.mp3",
+            "sek": 10.658
+          },
+          "wzor": {
+            "src": "audio/g5-p13-en.mp3",
+            "sek": 4.256
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przeciętnemu człowiekowi żyje się tu lepiej niż w Stanach.",
+            "en": "The average person is better off here than in the States."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g5-p14-cue.mp3",
+            "sek": 15.708
+          },
+          "wzor": {
+            "src": "audio/g5-p14-en.mp3",
+            "sek": 6.682
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kraków to świetne miasto na pięć dni, ale przeciętnego człowieka nie stać, żeby tam mieszkać.",
+            "en": "Kraków is a great city for five days, but the average person can't afford to live there."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g5-p15-cue.mp3",
+            "sek": 10.562
+          },
+          "wzor": {
+            "src": "audio/g5-p15-en.mp3",
+            "sek": 4.239
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Darmowa opieka zdrowotna to nie luksus, tylko norma.",
+            "en": "Free health care isn't a luxury — it's the norm."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g6-p01-cue.mp3",
+            "sek": 5.364
+          },
+          "wzor": {
+            "src": "audio/g6-p01-en.mp3",
+            "sek": 3.377
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie było tu żadnych dróg.",
+            "en": "There were no roads here."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g6-p02-cue.mp3",
+            "sek": 6.352
+          },
+          "wzor": {
+            "src": "audio/g6-p02-en.mp3",
+            "sek": 3.987
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś zimy były bardzo ostre.",
+            "en": "Winters used to be very harsh."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g6-p03-cue.mp3",
+            "sek": 5.961
+          },
+          "wzor": {
+            "src": "audio/g6-p03-en.mp3",
+            "sek": 3.786
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie ma tam chodników.",
+            "en": "There are no sidewalks out there."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g6-p04-cue.mp3",
+            "sek": 10.441
+          },
+          "wzor": {
+            "src": "audio/g6-p04-en.mp3",
+            "sek": 5.629
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś w Polsce nie było żadnych autostrad.",
+            "en": "There used to be no highways in Poland at all."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g6-p05-cue.mp3",
+            "sek": 6.564
+          },
+          "wzor": {
+            "src": "audio/g6-p05-en.mp3",
+            "sek": 3.902
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś śnieg padał codziennie.",
+            "en": "It used to snow every day."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g6-p06-cue.mp3",
+            "sek": 12.225
+          },
+          "wzor": {
+            "src": "audio/g6-p06-en.mp3",
+            "sek": 4.365
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Są rzeczy, które robimy i wydają nam się zupełnie normalne.",
+            "en": "There are things we do here that seem totally normal to us."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g6-p07-cue.mp3",
+            "sek": 8.915
+          },
+          "wzor": {
+            "src": "audio/g6-p07-en.mp3",
+            "sek": 3.519
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To oni teraz po prostu czekają na wybory?",
+            "en": "So are they just waiting for the election?"
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g6-p08-cue.mp3",
+            "sek": 10.163
+          },
+          "wzor": {
+            "src": "audio/g6-p08-en.mp3",
+            "sek": 4.948
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zimy bywały kiedyś dużo ostrzejsze niż teraz.",
+            "en": "Winters used to be a lot harsher than they are now."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g6-p09-cue.mp3",
+            "sek": 10.261
+          },
+          "wzor": {
+            "src": "audio/g6-p09-en.mp3",
+            "sek": 4.761
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Są rzeczy, które wszyscy tutaj przyjmują za oczywiste.",
+            "en": "There are things everybody here just takes for granted."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g6-p10-cue.mp3",
+            "sek": 12.82
+          },
+          "wzor": {
+            "src": "audio/g6-p10-en.mp3",
+            "sek": 4.584
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wtedy nie było innej drogi — jechałeś płatną autostradą.",
+            "en": "Back then there was no other way — you took the toll road."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g6-p11-cue.mp3",
+            "sek": 13.484
+          },
+          "wzor": {
+            "src": "audio/g6-p11-en.mp3",
+            "sek": 5.084
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jest w centrum kilka barów mlecznych, ale tylko jeden jest dobry.",
+            "en": "There are a few milk bars downtown, but only one is any good."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g6-p12-cue.mp3",
+            "sek": 11.46
+          },
+          "wzor": {
+            "src": "audio/g6-p12-en.mp3",
+            "sek": 5.163
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś nie narzekaliśmy na pogodę tak jak teraz.",
+            "en": "We never used to complain about the weather like we do now."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g6-p13-cue.mp3",
+            "sek": 13.004
+          },
+          "wzor": {
+            "src": "audio/g6-p13-en.mp3",
+            "sek": 5.182
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie ma tam nic poza barem, do którego chodzą wszyscy z liceum.",
+            "en": "There's nothing out there except the bar everybody from high school goes to."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g6-p14-cue.mp3",
+            "sek": 13.272
+          },
+          "wzor": {
+            "src": "audio/g6-p14-en.mp3",
+            "sek": 5.087
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś w tamtej kamienicy nie było windy, a teraz jest.",
+            "en": "There never used to be an elevator in that building — now there is."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g6-p15-cue.mp3",
+            "sek": 13.86
+          },
+          "wzor": {
+            "src": "audio/g6-p15-en.mp3",
+            "sek": 7.504
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedyś dało się kupić dom za pensję parkingowego, a teraz to niemożliwe.",
+            "en": "You used to be able to buy a house on a parking attendant's paycheck, and now it's impossible."
+          }
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g7-p01-cue.mp3",
+            "sek": 4.562
+          },
+          "wzor": {
+            "src": "audio/g7-p01-en.mp3",
+            "sek": 2.354
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "On jest na studiach.",
+            "en": "He's in college."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g7-p02-cue.mp3",
+            "sek": 5.983
+          },
+          "wzor": {
+            "src": "audio/g7-p02-en.mp3",
+            "sek": 3.141
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie narzekają na pogodę.",
+            "en": "People complain about the weather."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g7-p03-cue.mp3",
+            "sek": 4.814
+          },
+          "wzor": {
+            "src": "audio/g7-p03-en.mp3",
+            "sek": 2.674
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Byłem tam już dwa razy.",
+            "en": "I've been there twice."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g7-p04-cue.mp3",
+            "sek": 7.08
+          },
+          "wzor": {
+            "src": "audio/g7-p04-en.mp3",
+            "sek": 4.243
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jeździmy tam na wakacje co roku.",
+            "en": "We go there on vacation every year."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g7-p05-cue.mp3",
+            "sek": 6.152
+          },
+          "wzor": {
+            "src": "audio/g7-p05-en.mp3",
+            "sek": 3.313
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Włosi są bardzo ekspresyjni.",
+            "en": "Italians are very expressive."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g7-p06-cue.mp3",
+            "sek": 10.741
+          },
+          "wzor": {
+            "src": "audio/g7-p06-en.mp3",
+            "sek": 3.915
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedy myślimy o Japonii, myślimy tylko o Tokio.",
+            "en": "When we think of Japan, we only think of Tokyo."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g7-p07-cue.mp3",
+            "sek": 10.801
+          },
+          "wzor": {
+            "src": "audio/g7-p07-en.mp3",
+            "sek": 5.386
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jak można jeździć takim autem po polskich drogach?",
+            "en": "How can you drive a car like that on Polish roads?"
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g7-p08-cue.mp3",
+            "sek": 8.339
+          },
+          "wzor": {
+            "src": "audio/g7-p08-en.mp3",
+            "sek": 4.379
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówiłeś o polskim jedzeniu, a nie o włoskim.",
+            "en": "You were talking about Polish food, not Italian."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g7-p09-cue.mp3",
+            "sek": 11.638
+          },
+          "wzor": {
+            "src": "audio/g7-p09-en.mp3",
+            "sek": 6.028
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Włoskie jedzenie trafia do mas — każdy coś dla siebie znajdzie.",
+            "en": "Italian food just has mass appeal — everybody finds something they like."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g7-p10-cue.mp3",
+            "sek": 10.798
+          },
+          "wzor": {
+            "src": "audio/g7-p10-en.mp3",
+            "sek": 4.404
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musisz się tam urodzić, żeby być prawdziwym tutejszym.",
+            "en": "You have to be born there to be a real local."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g7-p11-cue.mp3",
+            "sek": 10.659
+          },
+          "wzor": {
+            "src": "audio/g7-p11-en.mp3",
+            "sek": 4.517
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Boczne drogi zabierają dwie godziny zamiast trzydziestu minut.",
+            "en": "The back roads take two hours instead of thirty minutes."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g7-p12-cue.mp3",
+            "sek": 9.775
+          },
+          "wzor": {
+            "src": "audio/g7-p12-en.mp3",
+            "sek": 4.29
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To, co zauważył, to że Polacy chodzą bardzo szybko.",
+            "en": "What he noticed was that Poles walk really fast."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g7-p13-cue.mp3",
+            "sek": 14.024
+          },
+          "wzor": {
+            "src": "audio/g7-p13-en.mp3",
+            "sek": 5.069
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie rozumiem, czemu ktoś jeździłby nad Bałtyk zamiast do Chorwacji.",
+            "en": "I don't get why anyone would go to the Baltic instead of Croatia."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g7-p14-cue.mp3",
+            "sek": 11.945
+          },
+          "wzor": {
+            "src": "audio/g7-p14-en.mp3",
+            "sek": 5.492
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Narzekają na drogi, ale i tak jeżdżą swoimi autami wszędzie.",
+            "en": "They complain about the roads, but they still drive their cars everywhere."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g7-p15-cue.mp3",
+            "sek": 14.217
+          },
+          "wzor": {
+            "src": "audio/g7-p15-en.mp3",
+            "sek": 5.476
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chorwacja jest o połowę tańsza niż Włochy, więc jeżdżą tam na wakacje co lato.",
+            "en": "Croatia is half the price of Italy, so they go there on vacation every summer."
+          }
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g8-p01-cue.mp3",
+            "sek": 23.875
+          },
+          "wzor": {
+            "src": "audio/g8-p01-en.mp3",
+            "sek": 7.756
+          },
+          "tekst": {
+            "pyt": "Have you been to Japan?",
+            "pl": "Nigdy, ale cię ciekawi; dodaj, że pojechałbyś, tylko nie na długo.",
+            "en": "No, never — but I'd like to. It's completely different from anything I'm used to, so I'd go, just not for long."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g8-p02-cue.mp3",
+            "sek": 24.928
+          },
+          "wzor": {
+            "src": "audio/g8-p02-en.mp3",
+            "sek": 9.41
+          },
+          "tekst": {
+            "pyt": "Is there some type of general European culture?",
+            "pl": "Jedno zdanie: podobnie myślimy o równowadze praca-życie; potem kontra z Japonią.",
+            "en": "I'd say there is — we all think about work-life balance in a similar way. Japan is the opposite: plenty of work, not much life."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g8-p03-cue.mp3",
+            "sek": 24.95
+          },
+          "wzor": {
+            "src": "audio/g8-p03-en.mp3",
+            "sek": 8.98
+          },
+          "tekst": {
+            "pyt": "Did you like Kraków when you were living there?",
+            "pl": "W czasie przeszłym: świetne na pięć dni, ale mieszkanie zrobiło się drogie; dorzuć dojazdy.",
+            "en": "I did, for a while. Great city to visit for five days, but living there got expensive — even the commute cost more than in Warsaw."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g8-p04-cue.mp3",
+            "sek": 24.017
+          },
+          "wzor": {
+            "src": "audio/g8-p04-en.mp3",
+            "sek": 9.721
+          },
+          "tekst": {
+            "pyt": "What about Warsaw? What's your opinion on it?",
+            "pl": "Sprostuj: mieszkałeś w Katowicach na Mariackiej; powiedz, co było najgorsze.",
+            "en": "I actually lived in Katowice, right on Mariacka — the street with all the bars. The courtyard behind the building was full of trash cans and rats."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g8-p05-cue.mp3",
+            "sek": 20.175
+          },
+          "wzor": {
+            "src": "audio/g8-p05-en.mp3",
+            "sek": 7.001
+          },
+          "tekst": {
+            "pyt": "Do you have a favorite cuisine?",
+            "pl": "Polska; dodaj, że jest prosta i dla każdego, poza gluteniarzami.",
+            "en": "Polish, honestly. It's simple food that works for almost everyone — unless you can't eat gluten."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g8-p06-cue.mp3",
+            "sek": 20.649
+          },
+          "wzor": {
+            "src": "audio/g8-p06-en.mp3",
+            "sek": 6.257
+          },
+          "tekst": {
+            "pyt": "What's your favorite thing to get at a milk bar?",
+            "pl": "Gołąbki, tylko w czwartki; dodaj, że to samoobsługa.",
+            "en": "Cabbage rolls, and they only make them on Thursdays. It's self-service, so you grab your own tray."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g8-p07-cue.mp3",
+            "sek": 23.927
+          },
+          "wzor": {
+            "src": "audio/g8-p07-en.mp3",
+            "sek": 6.857
+          },
+          "tekst": {
+            "pyt": "How do people find the good milk bars?",
+            "pl": "Poczta pantoflowa; dodaj, że o rezerwacjach mało kto wie.",
+            "en": "Word of mouth, basically. You can even get a reservation at the best one, but that's not common knowledge."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g8-p08-cue.mp3",
+            "sek": 22.927
+          },
+          "wzor": {
+            "src": "audio/g8-p08-en.mp3",
+            "sek": 6.658
+          },
+          "tekst": {
+            "pyt": "Do you cook for yourself? What do you make on a normal day?",
+            "pl": "Nic wymyślnego — kurczak i ryż; przyznaj wprost, że słabo gotujesz.",
+            "en": "Nothing crazy — chicken and rice, that kind of thing. I'm not great at it, but I'm trying."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g8-p09-cue.mp3",
+            "sek": 24.306
+          },
+          "wzor": {
+            "src": "audio/g8-p09-en.mp3",
+            "sek": 8.747
+          },
+          "tekst": {
+            "pyt": "Did you keep a lot of friends from your childhood?",
+            "pl": "Trzech, kontakt prawie codziennie; dodaj, co cię zdziwiło w amerykańskim modelu.",
+            "en": "Three of them, and we talk almost every day. What surprised me is that out in the suburbs people only ever keep their friends from high school."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g8-p10-cue.mp3",
+            "sek": 22.486
+          },
+          "wzor": {
+            "src": "audio/g8-p10-en.mp3",
+            "sek": 7.953
+          },
+          "tekst": {
+            "pyt": "Kraków just lost its mayor — what happens now?",
+            "pl": "Przedterminowe wybory we wrześniu; dodaj, że procedura trwa około pół roku.",
+            "en": "There's a special election in September. The whole process takes about six months, so everybody's just waiting."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g8-p11-cue.mp3",
+            "sek": 28.27
+          },
+          "wzor": {
+            "src": "audio/g8-p11-en.mp3",
+            "sek": 9.565
+          },
+          "tekst": {
+            "pyt": "Would you want to go to the US?",
+            "pl": "Tak, ale tylko na kilka lat; potem twoja metafora z lekcji — Polska do kwadratu, rozwinięta w obie strony: dobry / średni.",
+            "en": "Yeah, for a couple of years. It's sort of like Poland, but squared — if you're good, the money is squared; if you're average, the problems are squared too."
+          }
+        }
+      ]
+    }
+  ]
+}

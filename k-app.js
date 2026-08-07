@@ -1,4 +1,4 @@
-import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla } from './pary.js';
+import { budujKolejke, nastepny, nastepnaPara, poprzedniaPara, opisBlokady, nastepnyTryb, zdanieDla, bazaDzialu } from './pary.js';
 
 export function fmt(seconds) {
   const safe = Math.max(0, Math.floor(Number(seconds) || 0));
@@ -180,7 +180,7 @@ function initSite() {
     state.chapter = chapter;
     state.index = index;
     if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
-    state.kolejka = budujKolejke(grupa, chapter.audioVersion);
+    state.kolejka = budujKolejke(grupa, chapter.audioVersion, bazaDzialu(chapter));
     state.poz = Math.min(poz, Math.max(0, state.kolejka.length - 1));
     wczytajPozycje();
     audio.play().catch(() => {});
@@ -385,7 +385,7 @@ function initSite() {
           state.chapter = chapter;
           state.index = saved.index;
           if (TRYB_Z_FORMATU1[state.repeat]) state.repeat = TRYB_Z_FORMATU1[state.repeat];
-          state.kolejka = budujKolejke(grupa, chapter.audioVersion);
+          state.kolejka = budujKolejke(grupa, chapter.audioVersion, bazaDzialu(chapter));
           state.poz = Math.min(saved.poz || 0, state.kolejka.length - 1);
           audio.src = state.kolejka[state.poz].src;  // tylko wczytaj — start wymaga dotknięcia
           audio.loop = false;

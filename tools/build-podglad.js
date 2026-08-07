@@ -181,6 +181,32 @@ function audioForDir(dir) {
   return [...found.keys()].sort((a, b) => a - b).map((n) => found.get(n));
 }
 
+// ---- format 2: mapa {grupa → [{cue, en}]} po numerze wiersza (z audio.json) ----
+// Podgląd celowo NIE dokleja ?v= — bywa otwierany z file://, gdzie parametr
+// zapytania psuje ścieżkę, a sam plik i tak powstaje na nowo przy każdym buildzie.
+function paryDlaDir(dir) {
+  const p = path.join(ROOT, dir, 'audio.json');
+  if (!fs.existsSync(p)) return null;
+  try {
+    const m = JSON.parse(fs.readFileSync(p, 'utf8'));
+    if (m.wersja !== 2) return null;
+    const out = new Map();
+    for (const g of m.grupy) {
+      if (!g.pary) continue;
+      out.set(g.n, g.pary.map((x) => ({ cue: `${dir}/${x.cue.src}`, en: `${dir}/${x.wzor.src}` })));
+    }
+    return out;
+  } catch { return null; }
+}
+
+// Kolejka „odtwórz całą grupę" dla działu formatu 2: wyzwalacz, wzorzec, wyzwalacz…
+function audioParamiDlaDir(dir) {
+  const pary = paryDlaDir(dir);
+  if (!pary) return null;
+  return [...pary.keys()].sort((a, b) => a - b)
+    .flatMap((n) => pary.get(n).flatMap((p) => [p.cue, p.en]));
+}
+
 // ---- egzamin głosowy: historia podejść (egzaminy/mN/*/werdykt.json) ----
 function egzaminPodejscia(mk) {
   const baza = path.join(ROOT, 'egzaminy', `m${mk}`);
@@ -238,7 +264,8 @@ const mItems = mDirs.map((dir) => {
     sentenceCount: P.groups.reduce((s, g) => s + g.rows.length, 0),
     newExpressions: newExprFor(mRegistry, id, etap),
     blocks: blocksForDzial(mRegistry, id),
-    audio: audioForDir(dir),
+    audio: audioParamiDlaDir(dir) || audioForDir(dir),
+    pary: paryDlaDir(dir),
   };
 });
 
@@ -257,7 +284,8 @@ const kItems = kDirs.map((name) => {
     sentenceCount: parsed.groups.reduce((sum, group) => sum + group.rows.length, 0),
     newExpressions: newExprFor(kRegistry, id),
     blocks: blocksForDzial(kRegistry, id),
-    audio: audioForDir(dir),
+    audio: audioParamiDlaDir(dir) || audioForDir(dir),
+    pary: paryDlaDir(dir),
   };
 });
 
@@ -383,13 +411,15 @@ const kCourseTitle = String(kRegistry.kurs?.tytul || 'Kurs K · Conversation Lab
 const kDescription = kRegistry.kurs?.opis || 'Rozwojowa ścieżka B2 → C1 z realnych rozmów i materiałów od lektora.';
 const kSentenceCount = kItems.reduce((sum, item) => sum + item.sentenceCount, 0);
 const kAudio = kItems.flatMap((item) => item.audio);
-const kTile = `<button class="tile" data-go="k"><span class="t-num">K</span><span class="t-body"><span class="t-title">${H(kCourseTitle)}</span><span class="t-sub">${H(clip(kDescription, 140))}</span><span class="t-meta">${kItems.length} działy · ${kSentenceCount} zdań · ${kAudio.length} grup audio</span></span><span class="t-chev">›</span></button>`;
+// Liczba GRUP, nie plików: w formacie 2 jedna grupa to wiele par (2 pliki na parę).
+const kGrupy = kItems.reduce((sum, item) => sum + (item.pary ? item.pary.size : item.audio.length), 0);
+const kTile = `<button class="tile" data-go="k"><span class="t-num">K</span><span class="t-body"><span class="t-title">${H(kCourseTitle)}</span><span class="t-sub">${H(clip(kDescription, 140))}</span><span class="t-meta">${kItems.length} działy · ${kSentenceCount} zdań · ${kGrupy} grup audio</span></span><span class="t-chev">›</span></button>`;
 const kNavLinks = kItems.map((item) => {
   const title = item.parsed.title.split('/')[0].replace(/^K\d+\s*·\s*/, '').trim();
   return `<a href="#${item.id}">${item.label} · ${H(title)}</a>`;
 }).join('');
 const kPlay = kAudio.length
-  ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(kAudio))}" data-label="Cały Kurs K">▶︎ Odtwórz cały Kurs K · ${kAudio.length} grup</button></div>`
+  ? `<div class="mkplay"><button class="play-btn play-mk" data-audio="${A(JSON.stringify(kAudio))}" data-label="Cały Kurs K">▶︎ Odtwórz cały Kurs K · ${kGrupy} grup</button></div>`
   : '';
 navGroups += `<div class="navgroup" data-view="k"><div class="navmk">${H(kCourseTitle)}</div>${kNavLinks}</div>`;
 mkViews += `<section class="mk-view course-k" data-view="k" data-course="k">

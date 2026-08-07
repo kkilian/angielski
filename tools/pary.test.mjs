@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { budujKolejke, nastepny, poprzedniaPara, nastepnaPara, opisBlokady, nastepnyTryb, zdanieDla } from '../pary.js';
+import { budujKolejke, nastepny, poprzedniaPara, nastepnaPara, opisBlokady, nastepnyTryb, zdanieDla, bazaDzialu } from '../pary.js';
 
 const GRUPA = {
   n: 3, tryb: 'pl2en',
@@ -21,6 +21,21 @@ test('kolejka przeplata wyzwalacz z wzorcem i doklei wersje', () => {
   assert.equal(q[0].para, 1);
   assert.equal(q[2].para, 2);
   assert.equal(q[0].src, 'audio/g3-p01-cue.mp3?v=1785822079612');
+});
+
+// Regresja: sciezki w audio.json sa wzgledne wobec DZIALU, a przegladarka
+// rozwiazywalaby je wzgledem strony (/k.html) — bez prefiksu kazdy plik dawal 404
+// i odtwarzacz przelatywal cala grupe w dwie sekundy, przeskakujac po bledach.
+test('kolejka doklei katalog dzialu do sciezek z audio.json', () => {
+  const q = budujKolejke(GRUPA, 42, 'K/03-k3-jednym-zdaniem');
+  assert.equal(q[0].src, 'K/03-k3-jednym-zdaniem/audio/g3-p01-cue.mp3?v=42');
+  assert.equal(q[1].src, 'K/03-k3-jednym-zdaniem/audio/g3-p01-en.mp3?v=42');
+});
+
+test('baza dzialu bierze sie ze sciezki manifestu', () => {
+  assert.equal(bazaDzialu({ audioManifest: 'K/01-k1-powiedz-to-raz/audio.json' }), 'K/01-k1-powiedz-to-raz');
+  assert.equal(bazaDzialu({ audioManifest: '58-m10d1-powrot-do-domu/audio.json' }), '58-m10d1-powrot-do-domu');
+  assert.equal(bazaDzialu({}), '', 'brak manifestu → brak prefiksu, nie „undefined"');
 });
 
 test('tryb off zatrzymuje sie po ostatnim elemencie', () => {

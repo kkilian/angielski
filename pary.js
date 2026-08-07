@@ -8,17 +8,28 @@ export const TRYBY_PETLI = ['off', 'para', 'grupa', 'caly'];
 // Wyzwalacze leżą na parzystych pozycjach — na tym opiera się skok po parach.
 // Słuchanka nie ma par (ciągła narracja bez ciszy na produkcję) — zostaje jednym
 // plikiem, a fraza na ekranie przełącza się z offsetów przy `timeupdate`.
-export function budujKolejke(grupa, wersja) {
+//
+// `baza` to katalog działu względem korzenia strony (np. „K/01-k1-powiedz-to-raz").
+// Ścieżki w audio.json są względne wobec DZIAŁU, a przeglądarka rozwiązałaby je
+// względem strony (/k.html) — bez tego prefiksu każdy plik kończy się jako 404.
+export function budujKolejke(grupa, wersja, baza = '') {
   const v = wersja ? `?v=${wersja}` : '';
+  const sciezka = (src) => (baza ? `${baza}/${src}` : src) + v;
   if (grupa.tryb === 'sluchanka') {
-    return [{ src: grupa.src + v, rola: 'sluchanka', para: 1, zdania: grupa.zdania || [] }];
+    return [{ src: sciezka(grupa.src), rola: 'sluchanka', para: 1, zdania: grupa.zdania || [] }];
   }
   const out = [];
   for (const p of grupa.pary || []) {
-    out.push({ src: p.cue.src + v, rola: 'cue', para: p.n, tekst: p.tekst });
-    out.push({ src: p.wzor.src + v, rola: 'wzor', para: p.n, tekst: p.tekst });
+    out.push({ src: sciezka(p.cue.src), rola: 'cue', para: p.n, tekst: p.tekst });
+    out.push({ src: sciezka(p.wzor.src), rola: 'wzor', para: p.n, tekst: p.tekst });
   }
   return out;
+}
+
+// Katalog działu wyprowadzony ze ścieżki jego manifestu — jedno źródło prawdy
+// dla obu odtwarzaczy (K/01-… dla Kursu K, 01-m1d1-… dla Kursu M).
+export function bazaDzialu(chapter) {
+  return String(chapter.audioManifest || '').replace(/\/audio\.json$/, '');
 }
 
 // Które zdanie słuchanki leci w danej sekundzie. Ostatnie trzymamy do końca pliku.
