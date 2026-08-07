@@ -43,6 +43,36 @@ function findGroups(chapterPath, relativeChapterPath) {
   return groups.sort((a, b) => a.n - b.n);
 }
 
+// Dział w formacie 2 opisuje swoje audio w audio.json — nie skanujemy grupa-N.mp3.
+// audioVersion to najświeższy mtime audio; odtwarzacz dokleja go jako ?v= do
+// każdej ścieżki z manifestu (cache-busting bez puchnięcia content.json).
+function czytajFormat2(chapterPath, relativeChapterPath) {
+  const manifestPath = path.join(chapterPath, 'audio.json');
+  if (!fs.existsSync(manifestPath)) return null;
+  let manifest;
+  try { manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')); } catch { return null; }
+  if (manifest.wersja !== 2 || !Array.isArray(manifest.grupy)) return null;
+
+  let version = 0;
+  const dotknij = (p) => { try { version = Math.max(version, fs.statSync(p).mtimeMs); } catch {} };
+  dotknij(manifestPath);
+  const audioDir = path.join(chapterPath, 'audio');
+  if (fs.existsSync(audioDir)) for (const f of fs.readdirSync(audioDir)) dotknij(path.join(audioDir, f));
+  for (const g of manifest.grupy) if (g.src) dotknij(path.join(chapterPath, g.src));
+
+  return {
+    format: 2,
+    audioManifest: `${relativeChapterPath}/audio.json`,
+    audioVersion: Math.round(version),
+    hasAudio: manifest.grupy.length > 0,
+    groups: manifest.grupy.map((g) => ({
+      n: g.n,
+      label: `Grupa ${g.n}`,
+      parCount: g.pary ? g.pary.length : (g.zdania ? g.zdania.length : 0),
+    })),
+  };
+}
+
 export function buildKManifest(rootDir = ROOT) {
   const courseRoot = path.join(rootDir, 'K');
   const registryPath = path.join(courseRoot, 'slownik-k.json');
@@ -63,6 +93,7 @@ export function buildKManifest(rootDir = ROOT) {
     const titles = splitTitle(readTitle(chapterPath), fallbackTitle);
     const chapterMetadata = metadata.get(folder) || {};
     const groups = findGroups(chapterPath, relativeChapterPath);
+    const format2 = czytajFormat2(chapterPath, relativeChapterPath);
 
     return {
       id: chapterMetadata.id || `k${localNumber}`,
@@ -73,8 +104,7 @@ export function buildKManifest(rootDir = ROOT) {
       pdf: fs.existsSync(path.join(chapterPath, 'rozdzial.pdf'))
         ? `${relativeChapterPath}/rozdzial.pdf`
         : null,
-      hasAudio: groups.length > 0,
-      groups,
+      ...(format2 || { hasAudio: groups.length > 0, groups }),
     };
   });
 

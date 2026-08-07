@@ -92,6 +92,36 @@ function findGroups(chapterPath, chapterId) {
     .map((n) => ({ n, label: `Grupa ${n}`, src: found.get(n) }));
 }
 
+// Dział w formacie 2 opisuje swoje audio w audio.json — nie skanujemy grupa-N.mp3.
+// audioVersion to najświeższy mtime audio; odtwarzacz dokleja go jako ?v= do
+// każdej ścieżki z manifestu (cache-busting bez puchnięcia content.json).
+function czytajFormat2(chapterPath, relativeChapterPath) {
+  const manifestPath = path.join(chapterPath, 'audio.json');
+  if (!fs.existsSync(manifestPath)) return null;
+  let manifest;
+  try { manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')); } catch { return null; }
+  if (manifest.wersja !== 2 || !Array.isArray(manifest.grupy)) return null;
+
+  let version = 0;
+  const dotknij = (p) => { try { version = Math.max(version, fs.statSync(p).mtimeMs); } catch {} };
+  dotknij(manifestPath);
+  const audioDir = path.join(chapterPath, 'audio');
+  if (fs.existsSync(audioDir)) for (const f of fs.readdirSync(audioDir)) dotknij(path.join(audioDir, f));
+  for (const g of manifest.grupy) if (g.src) dotknij(path.join(chapterPath, g.src));
+
+  return {
+    format: 2,
+    audioManifest: `${relativeChapterPath}/audio.json`,
+    audioVersion: Math.round(version),
+    hasAudio: manifest.grupy.length > 0,
+    groups: manifest.grupy.map((g) => ({
+      n: g.n,
+      label: `Grupa ${g.n}`,
+      parCount: g.pary ? g.pary.length : (g.zdania ? g.zdania.length : 0),
+    })),
+  };
+}
+
 function build() {
   const ids = fs.readdirSync(ROOT, { withFileTypes: true })
     .filter((e) => e.isDirectory() && isChapterDir(e.name) && !HIDDEN.has(e.name))
@@ -118,8 +148,10 @@ function build() {
 
     const groups = findGroups(chapterPath, id);
     const { minikurs, localNumber } = parseMinikurs(id, number);
+    const format2 = czytajFormat2(chapterPath, id);
 
-    return { id, slug: id, number, minikurs, localNumber, title, titlePl, titleEn, pdf, hasAudio: groups.length > 0, groups };
+    return { id, slug: id, number, minikurs, localNumber, title, titlePl, titleEn, pdf,
+      ...(format2 || { hasAudio: groups.length > 0, groups }) };
   }).sort((a, b) => a.number - b.number);
 
   // Wymiar minikursu — kafle na stronie głównej. Bierzemy WSZYSTKIE minikursy z rejestru

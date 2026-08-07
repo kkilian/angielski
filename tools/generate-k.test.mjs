@@ -48,3 +48,35 @@ test('buildKManifest scans only K and sorts chapters and audio numerically', (t)
   assert.equal(manifest.chapters[1].hasAudio, false);
   assert.equal(manifest.chapters[1].description, 'Drugi dział');
 });
+
+test('buildKManifest rozpoznaje dzial w formacie 2', (t) => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'kurs-k-f2-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+
+  write(root, 'K/slownik-k.json', JSON.stringify({
+    kurs: { id: 'k', tytul: 'Kurs K', opis: 'Osobny kurs' },
+    dzialy: [{ id: 'k1', folder: '01-k1-jeden', opis: 'Pierwszy dział' }],
+    wyrazenia: [],
+  }));
+  write(root, 'K/01-k1-jeden/rozdzial.md', '# K1 · Jeden / K1 · One\n');
+  write(root, 'K/01-k1-jeden/audio/g1-p01-cue.mp3', 'cue');
+  write(root, 'K/01-k1-jeden/audio/g1-p01-en.mp3', 'en');
+  write(root, 'K/01-k1-jeden/audio.json', JSON.stringify({
+    wersja: 2,
+    grupy: [{ n: 1, tryb: 'pl2en', pary: [{
+      n: 1,
+      cue: { src: 'audio/g1-p01-cue.mp3', sek: 5 },
+      wzor: { src: 'audio/g1-p01-en.mp3', sek: 2 },
+      tekst: { pyt: null, pl: 'Test.', en: 'Test.' },
+    }] }],
+  }));
+
+  const ch = buildKManifest(root).chapters[0];
+  assert.equal(ch.format, 2);
+  assert.equal(ch.audioManifest, 'K/01-k1-jeden/audio.json');
+  assert.ok(ch.audioVersion > 0);
+  assert.equal(ch.hasAudio, true);
+  assert.equal(ch.groups.length, 1);
+  assert.equal(ch.groups[0].parCount, 1);
+  assert.equal(ch.groups[0].src, undefined, 'format 2 nie ma src na poziomie grupy');
+});
