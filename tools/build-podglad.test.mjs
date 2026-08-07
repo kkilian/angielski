@@ -87,3 +87,19 @@ test('K uses the complete study UI and a distinct visual theme', () => {
   assert.match(html, /K1 · Powiedz to jasno za pierwszym razem/);
   assert.match(html, /K2 · Kintsugi: siła niedoskonałości/);
 });
+
+test('wiersze Kursu K niosa sciezki do par i eksport je przekazuje', () => {
+  const html = buildPreview();
+  assert.match(html, /data-cue="K\/01-k1-powiedz-to-raz\/audio\/g1-p01-cue\.mp3"/);
+  assert.match(html, /data-en-src="K\/01-k1-powiedz-to-raz\/audio\/g1-p01-en\.mp3"/);
+  assert.match(html, /data-para="1"/);
+  assert.match(html, /class="row-play"/, 'kazdy wiersz ma wlasny przycisk odtwarzania');
+  assert.match(html, /tr\.dataset\.enSrc/, 'eksport siega po sciezke do pliku EN');
+  assert.match(html, /grajaca/, 'jest klasa podswietlenia grajacego wiersza');
+});
+
+test('dzialy Kursu M zostaja przy jednym pliku na grupe', () => {
+  const html = buildPreview();
+  assert.match(html, /data-audio="\[&quot;01-m1d1[^"]*grupa-1\.mp3&quot;\]"/,
+    'M nadal ma kolejke plikow grupowych');
+});
