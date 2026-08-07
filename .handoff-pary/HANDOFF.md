@@ -1,6 +1,27 @@
 # HANDOFF — audio per para (Kurs K)
 
-**Data:** 2026-08-07 · **Stan:** zaprojektowane i zaplanowane, **nic jeszcze nie wykonane**
+> ## ⛔ ZUŻYTY — plan wykonany 2026-08-07
+> Wszystkie 13 zadań zrobione, scalone (`231f8a8`) i wypchnięte na `main`.
+> Kurs K jest w formacie 2: 18 grup → 242 pary → 484 pliki. Bramka iOS przeszła.
+> **Nie wykonuj tego handoffu ponownie** — `grupa-*.mp3` w K już nie istnieje,
+> a `tools/potnij.js` odmówi cięcia (testy migracji pomijają się same).
+>
+> Co poszło inaczej niż w planie (szczegóły w komunikatach commitów):
+> - progi dopasowania ciszy przeskalowane na pomiarach: tolerancja 0,2 → **0,05 s**,
+>   kontrola sensu 0,25 → **0,18 s/słowo**; przy planowanych 3 z 18 grup cięły się źle
+> - `budujKolejke` dostała bazę działu (`bazaDzialu`) — bez tego wszystkie pliki dawały 404
+> - podgląd adresuje grupy pozycją, nie `group.n` (jego parser nie numeruje grup)
+> - trzy asercje w planie były błędne (`6*0.6 !== 3.6`, `punktyCiecia`, `poprzedniaPara(3)`)
+>
+> **Zostało do zrobienia przez Krzyśka:** odpalić Anki i puścić
+> `node ~/.claude/skills/przejmij-json/add-cards.cjs <eksport>.json` (oczekiwane
+> `Z kursu (bez TTS): N`) — w sesji wykonawczej Anki było zamknięte.
+>
+> Poniższa treść zostaje jako zapis stanu sprzed wykonania.
+
+---
+
+**Data:** 2026-08-07 · **Stan:** ~~zaprojektowane i zaplanowane, nic jeszcze nie wykonane~~ → WYKONANE
 
 ## Co masz zrobić
 
