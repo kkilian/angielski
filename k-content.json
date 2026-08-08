@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T15:39:37.676Z",
+  "generatedAt": "2026-08-08T17:47:19.671Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -141,6 +141,72 @@
           "n": 8,
           "label": "Grupa 8",
           "parCount": 11
+        }
+      ]
+    },
+    {
+      "id": "k4",
+      "slug": "K/04-k4-manosfera",
+      "localNumber": 4,
+      "title": "K4 · Manosfera: opowiedz cudzy pogląd / K4 · The Manosphere: Reporting Someone Else's View",
+      "titlePl": "K4 · Manosfera: opowiedz cudzy pogląd",
+      "titleEn": "K4 · The Manosphere: Reporting Someone Else's View",
+      "description": "Arkusz o manosferze i radykalizacji online: streszczenie akapitów, słownictwo i język dystansu.",
+      "pdf": "K/04-k4-manosfera/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/04-k4-manosfera/audio.json",
+      "audioVersion": 1786211222776,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "parCount": 15
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "parCount": 17
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "parCount": 16
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "parCount": 18
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "parCount": 18
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "parCount": 18
+        },
+        {
+          "n": 7,
+          "label": "Grupa 7",
+          "parCount": 18
+        },
+        {
+          "n": 8,
+          "label": "Grupa 8",
+          "parCount": 18
+        },
+        {
+          "n": 9,
+          "label": "Grupa 9",
+          "parCount": 14
+        },
+        {
+          "n": 10,
+          "label": "Grupa 10",
+          "parCount": 12
         }
       ]
     }

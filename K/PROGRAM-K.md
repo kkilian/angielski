@@ -125,8 +125,71 @@ znajomych -> składanka i porównania USA/Polska (zdrowie, American dream) -> tr
 naprawy błędów (rodzajniki, `there is/are` + `used to`, przyimki i kalki) -> scenka
 z realnymi pytaniami lektora z tej lekcji.
 
+## K4 - Manosfera: opowiedz cudzy pogląd / The Manosphere: Reporting Someone Else's View
+
+**Źródło:** worksheet `esl_worksheet_incel_manosphere_deep_in_depth_b1_b2.pdf` od lektora
+oraz transkrypcja głosowej rozmowy Krzyśka z ChatGPT o tym arkuszu (2026-08-08).
+
+**Diagnoza z transkrypcji:** rozmowa dobrnęła tylko do szóstego akapitu - ani jedno
+z jedenastu pytań arkusza nie zostało dotknięte, a to one padną na lekcji. Zacięcia
+były powtarzalne, nie losowe: brakujące słowa (`resent`, `echo chamber`, `reinforce`,
+`feedback loop`, `bitterness`, `martyr`), złe słowa (`compartmentalizing` zamiast
+`categorizing`, `deterministic` zamiast `determined by`, `crooked image` zamiast
+`distorted view`), systematycznie gubione rodzajniki (`there's positive aspect`,
+`creates feedback loop`), mylone przyimki (`biased towards` zamiast `biased against`)
+i brak formuł otwierających streszczenie akapitu („The third, what, the third...").
+
+**Nowe targety - sześć słów z Exercise 1 arkusza:**
+
+- `an incel (involuntary celibate)`
+- `misogyny`
+- `nihilistic`
+- `a manifesto`
+- `radicalization`
+- `counter-terrorism`
+
+**Nowe targety - dziesięć słów, których zabrakło w rozmowie:**
+
+- `to resent somebody / resentment`
+- `an echo chamber`
+- `to reinforce`
+- `a feedback loop`
+- `a distorted view of reality`
+- `bitterness toward somebody`
+- `pointless`
+- `a martyr`
+- `a fixed hierarchy`
+- `to be determined by`
+
+**Atrybucja jako zasada projektowa:** każde zdanie oddające ideologię idzie w mowie
+zależnej (`According to the article...`, `In their view...`, `They argue that...`),
+nigdy jako gołe twierdzenie. To odpowiedź na uwagę Krzyśka z rozmowy („it sounds like
+I'm defending them or something") i jednocześnie umiejętność C1. Pilnuje tego na stałe
+`tools/k4-content.test.mjs`. Wyjątek: grupy zasiewu (1-2) i grupa naprawy gramatyki (7).
+
+**Błędy z rozmowy:** poprawne formy wracają wielokrotnie w drylu, wersje błędne trafiają
+tylko do notki `Typowe błędy Polaka`. Grupa 7 dostała własny blok na dwie klasy błędów,
+które padały systematycznie: rodzajniki (`a darker corner`, `an echo chamber`,
+`a feedback loop`, `a distorted view`, `an umbrella term`) oraz przyimki
+(`biased against`, `resentful of`, `bitterness toward`, `blame somebody for`,
+`funnel into`, `a pipeline to`, `hostility toward`, `prejudice against`).
+
+**Lekki klej z K1 (bez obowiązku):** `It's sort of like...`, `I'm blanking on the word`,
+`I should have mentioned...`, `What ... most is ...`, `I'd say...`, `What I mean is...` -
+wszystkie wchodzą naturalnie w Grupę 8. Pozostałe zaplanowane powroty (`a courtyard`,
+`a toll road`, `a tourist trap`, `a crude repair`, `the transience of things`,
+`homogeneous`) przesunięto dalej, bo nie wchodzą naturalnie w rozmowę o tym tekście.
+
+**Łuk działu (10 grup):** zasiew sześciu słów arkusza -> zasiew dziesięciu słów, których
+zabrakło -> akapity 1-2 z formułami otwarcia -> akapity 3-4 (hierarchia, Black Pill,
+ścieżka radykalizacji) -> akapity 5-6 (ataki, klasyfikacja terrorystyczna, algorytmy) ->
+język debaty pod Exercise 3 i szóste pytanie Exercise 2 (wolność słowa - jedyne pytanie,
+na które sam tekst nie odpowiada) -> naprawa rodzajników i przyimków -> język dystansu
+i przypisywania -> scenka z sześcioma pytaniami Exercise 2 -> scenka z pięcioma pytaniami
+Exercise 3. Wszystkie jedenaście pytań arkusza odtworzone dosłownie i w kolejności,
+plus dopytania, które lektor prawdopodobnie dorzuci.
+
 ## Dalszy rozwój
 
-K4 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora
-(zapowiedziany temat: Red Pill - artykuł ma przyjść przed kolejnymi zajęciami).
-Rejestr już planuje rozproszone powroty, ale nie przesądza przyszłych tematów.
+K5 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora.
+Rejestr planuje rozproszone powroty, ale nie przesądza przyszłych tematów.

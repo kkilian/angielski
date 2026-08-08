@@ -1,6 +1,6 @@
 {
   "$opis": "Niezależny rejestr kursu K. Id działów: k1, k2, k3... Kurs nie korzysta z rejestru M.",
-  "wersja": "2026-08-02",
+  "wersja": "2026-08-08",
   "kurs": {
     "id": "k",
     "tytul": "Kurs K - Conversation Lab",
@@ -27,6 +27,13 @@
       "tytulPl": "Powiedz to w jednym zdaniu",
       "tytulEn": "Say It in One Sentence",
       "opis": "Krótsza wypowiedź i gotowe słowo: Polska i Ameryka, miasta, drogi, jedzenie."
+    },
+    {
+      "id": "k4",
+      "folder": "04-k4-manosfera",
+      "tytulPl": "Manosfera: opowiedz cudzy pogląd",
+      "tytulEn": "The Manosphere: Reporting Someone Else's View",
+      "opis": "Arkusz o manosferze i radykalizacji online: streszczenie akapitów, słownictwo i język dystansu."
     }
   ],
   "wyrazenia": [
@@ -36,7 +43,17 @@
       "en": "to get my point across",
       "typ": "kolokacja",
       "intro": "k1",
-      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k20"]
+      "review": [
+        "k3",
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k20"
+      ]
     },
     {
       "id": "what-i-mean-is",
@@ -44,7 +61,15 @@
       "en": "What I mean is...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k2", "k3", "k5", "k7", "k9", "k12"]
+      "review": [
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k7",
+        "k9",
+        "k12"
+      ]
     },
     {
       "id": "blanking-on-word",
@@ -52,7 +77,18 @@
       "en": "I'm blanking on the word",
       "typ": "idiom",
       "intro": "k1",
-      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": [
+        "k3",
+        "k4",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20"
+      ]
     },
     {
       "id": "sort-of-like",
@@ -60,7 +96,19 @@
       "en": "It's sort of like...",
       "typ": "kolokacja",
       "intro": "k1",
-      "review": ["k2", "k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": [
+        "k2",
+        "k3",
+        "k4",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20"
+      ]
     },
     {
       "id": "i-was-thinking-we-could",
@@ -68,7 +116,14 @@
       "en": "I was thinking we could...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k3", "k5", "k7", "k9", "k12", "k15"]
+      "review": [
+        "k3",
+        "k5",
+        "k7",
+        "k9",
+        "k12",
+        "k15"
+      ]
     },
     {
       "id": "would-it-be-ok-if",
@@ -76,7 +131,14 @@
       "en": "Would it be OK if I...?",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k3", "k5", "k7", "k9", "k12", "k15"]
+      "review": [
+        "k3",
+        "k5",
+        "k7",
+        "k9",
+        "k12",
+        "k15"
+      ]
     },
     {
       "id": "should-have-mentioned",
@@ -84,7 +146,13 @@
       "en": "I should have mentioned...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k4", "k6", "k8", "k10", "k13"]
+      "review": [
+        "k4",
+        "k6",
+        "k8",
+        "k10",
+        "k13"
+      ]
     },
     {
       "id": "id-say",
@@ -92,7 +160,15 @@
       "en": "I'd say...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k2", "k3", "k5", "k7", "k9", "k12"]
+      "review": [
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k7",
+        "k9",
+        "k12"
+      ]
     },
     {
       "id": "what-most-is",
@@ -100,7 +176,13 @@
       "en": "What ... most is ...",
       "typ": "gramatyka",
       "intro": "k1",
-      "review": ["k4", "k6", "k8", "k10", "k13"]
+      "review": [
+        "k4",
+        "k6",
+        "k8",
+        "k10",
+        "k13"
+      ]
     },
     {
       "id": "shatter-into-pieces",
@@ -108,7 +190,17 @@
       "en": "to shatter into pieces",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "crude-repair",
@@ -116,7 +208,17 @@
       "en": "a crude repair",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "aesthetic-value",
@@ -124,7 +226,17 @@
       "en": "aesthetic value",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k3", "k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20"]
+      "review": [
+        "k3",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20"
+      ]
     },
     {
       "id": "transience-of-things",
@@ -132,7 +244,17 @@
       "en": "the transience of things",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "mental-resilience",
@@ -140,7 +262,18 @@
       "en": "mental resilience",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": ["k3", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k3",
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "an-election",
@@ -148,7 +281,17 @@
       "en": "an election",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "courtyard",
@@ -156,7 +299,17 @@
       "en": "a courtyard",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "self-service",
@@ -164,7 +317,17 @@
       "en": "self-service",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "common-knowledge",
@@ -172,7 +335,17 @@
       "en": "common knowledge",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "word-of-mouth",
@@ -180,7 +353,17 @@
       "en": "word of mouth",
       "typ": "idiom",
       "intro": "k3",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "commute",
@@ -188,7 +371,17 @@
       "en": "to commute",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "the-suburbs",
@@ -196,7 +389,17 @@
       "en": "the suburbs / suburban",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
     },
     {
       "id": "toll-road",
@@ -204,7 +407,17 @@
       "en": "a toll / a toll road",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "tourist-trap",
@@ -212,7 +425,17 @@
       "en": "a tourist trap",
       "typ": "idiom",
       "intro": "k3",
-      "review": ["k4", "k6", "k8", "k10", "k12", "k14", "k16", "k18", "k20", "k22"]
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     },
     {
       "id": "homogeneous",
@@ -220,7 +443,473 @@
       "en": "homogeneous",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": ["k4", "k5", "k7", "k9", "k11", "k13", "k15", "k17", "k19", "k22"]
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k22"
+      ]
+    },
+    {
+      "id": "incel",
+      "pl": "incel; mimowolnie bezżenny",
+      "en": "an incel (involuntary celibate)",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "misogyny",
+      "pl": "mizoginia; niechęć do kobiet",
+      "en": "misogyny",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "nihilistic",
+      "pl": "nihilistyczny",
+      "en": "nihilistic",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "manifesto",
+      "pl": "manifest (deklaracja przekonań)",
+      "en": "a manifesto",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "radicalization",
+      "pl": "radykalizacja",
+      "en": "radicalization",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "counter-terrorism",
+      "pl": "działania antyterrorystyczne",
+      "en": "counter-terrorism",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "resent",
+      "pl": "mieć żal do kogoś, czuć urazę",
+      "en": "to resent somebody / resentment",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "echo-chamber",
+      "pl": "bańka informacyjna",
+      "en": "an echo chamber",
+      "typ": "idiom",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "reinforce",
+      "pl": "wzmacniać (przekonania)",
+      "en": "to reinforce",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "feedback-loop",
+      "pl": "sprzężenie zwrotne",
+      "en": "a feedback loop",
+      "typ": "idiom",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "distorted-view",
+      "pl": "zniekształcony obraz rzeczywistości",
+      "en": "a distorted view of reality",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "bitterness-toward",
+      "pl": "gorycz wobec kogoś/czegoś",
+      "en": "bitterness toward somebody",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "pointless",
+      "pl": "bez sensu, bezcelowy",
+      "en": "pointless",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "martyr",
+      "pl": "męczennik",
+      "en": "a martyr",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "fixed-hierarchy",
+      "pl": "sztywna hierarchia",
+      "en": "a fixed hierarchy",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "determined-by",
+      "pl": "być zdeterminowanym przez",
+      "en": "to be determined by",
+      "typ": "gramatyka",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "according-to-the-article",
+      "pl": "według artykułu / tekst twierdzi, że...",
+      "en": "According to the article... / The text argues that...",
+      "typ": "gramatyka",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "not-defending-them",
+      "pl": "żeby było jasne, nie bronię ich",
+      "en": "To be clear, I'm not defending them",
+      "typ": "gramatyka",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "extreme-cases",
+      "pl": "to skrajne przypadki, nie reprezentują wszystkich",
+      "en": "These are extreme cases and they don't represent everyone",
+      "typ": "gramatyka",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "biased-against",
+      "pl": "uprzedzony wobec kogoś",
+      "en": "biased against somebody",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "freedom-of-speech",
+      "pl": "wolność słowa",
+      "en": "freedom of speech",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "content-moderation",
+      "pl": "moderacja treści",
+      "en": "content moderation",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "draw-the-line",
+      "pl": "wyznaczyć granicę",
+      "en": "to draw the line",
+      "typ": "idiom",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "warning-signs",
+      "pl": "sygnały ostrzegawcze",
+      "en": "warning signs",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
     }
   ]
 }

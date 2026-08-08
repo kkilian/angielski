@@ -42,7 +42,7 @@ UI jest sterowane danymi — nowy rozdział pojawia się automatycznie, bez zmia
 | pliki | `grupa-1.mp3` … (~3 min każdy) | `audio/g{N}-p{NN}-{cue,en}.mp3` (po ~5–15 s) |
 | opis | brak — skaner czyta nazwy plików | `audio.json` z tekstem każdej pary |
 | fraza na ekranie | nie | tak (karta + ekran blokady) |
-| gdzie | 39 działów Kursu M | 3 działy Kursu K |
+| gdzie | 39 działów Kursu M | 4 działy Kursu K |
 
 Oba formaty działają równolegie i w tym samym odtwarzaczu — dział bez `audio.json` idzie
 starą ścieżką. **Grupy słuchanki zostają jednym plikiem** także w formacie 2: nie ma tam
