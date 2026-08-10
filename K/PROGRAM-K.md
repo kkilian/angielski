@@ -130,64 +130,39 @@ z realnymi pytaniami lektora z tej lekcji.
 **Źródło:** worksheet `esl_worksheet_incel_manosphere_deep_in_depth_b1_b2.pdf` od lektora
 oraz transkrypcja głosowej rozmowy Krzyśka z ChatGPT o tym arkuszu (2026-08-08).
 
-**Diagnoza z transkrypcji:** rozmowa dobrnęła tylko do szóstego akapitu - ani jedno
-z jedenastu pytań arkusza nie zostało dotknięte, a to one padną na lekcji. Zacięcia
-były powtarzalne, nie losowe: brakujące słowa (`resent`, `echo chamber`, `reinforce`,
-`feedback loop`, `bitterness`, `martyr`), złe słowa (`compartmentalizing` zamiast
-`categorizing`, `deterministic` zamiast `determined by`, `crooked image` zamiast
-`distorted view`), systematycznie gubione rodzajniki (`there's positive aspect`,
-`creates feedback loop`), mylone przyimki (`biased towards` zamiast `biased against`)
-i brak formuł otwierających streszczenie akapitu („The third, what, the third...").
+**Diagnoza z transkryptu:** rozmowa dobrnęła tylko do szóstego akapitu — ani jedno
+z jedenastu pytań arkusza nie zostało dotknięte. Zacięcia były powtarzalne:
+brakujące słowa (`resent`, `echo chamber`, `reinforce`, `feedback loop`,
+`bitterness`), złe słowa (`compartmentalizing` zamiast `categorizing`,
+`deterministic` zamiast `determined by`, `crooked image` zamiast `distorted view`),
+systematycznie gubione rodzajniki i mylone `biased towards`/`against`.
 
-**Nowe targety - sześć słów z Exercise 1 arkusza:**
+**Skrócenie 2026-08-10:** 10 grup → 5 grup, 164 pary → 76 par. Decyzja Krzyśka:
+K4 ma być przygotowaniem do czwartkowej lekcji, nie kursem-encyklopedią.
 
-- `an incel (involuntary celibate)`
-- `misogyny`
-- `nihilistic`
-- `a manifesto`
-- `radicalization`
-- `counter-terrorism`
+**Nowe targety (11, w kolejności ROI z transkryptu):**
 
-**Nowe targety - dziesięć słów, których zabrakło w rozmowie:**
-
-- `to resent somebody / resentment`
+- `to resent somebody / resentful / resentment`
+- `biased against somebody`
 - `an echo chamber`
 - `to reinforce`
 - `a feedback loop`
 - `a distorted view of reality`
 - `bitterness toward somebody`
-- `pointless`
-- `a martyr`
-- `a fixed hierarchy`
 - `to be determined by`
+- `to categorize people into rigid groups`
+- `to move up in the hierarchy` / `a fixed hierarchy`
+- openings and attribution: `According to the article…`, `The text argues that…`, `In their view…`, `To be clear, I'm not defending them`, `These are extreme cases`
 
-**Atrybucja jako zasada projektowa:** każde zdanie oddające ideologię idzie w mowie
-zależnej (`According to the article...`, `In their view...`, `They argue that...`),
-nigdy jako gołe twierdzenie. To odpowiedź na uwagę Krzyśka z rozmowy („it sounds like
-I'm defending them or something") i jednocześnie umiejętność C1. Pilnuje tego na stałe
-`tools/k4-content.test.mjs`. Wyjątek: grupy zasiewu (1-2) i grupa naprawy gramatyki (7).
+**Atrybucja:** każde zdanie oddające ideologię idzie w mowie zależnej — nigdy jako gołe twierdzenie.
 
-**Błędy z rozmowy:** poprawne formy wracają wielokrotnie w drylu, wersje błędne trafiają
-tylko do notki `Typowe błędy Polaka`. Grupa 7 dostała własny blok na dwie klasy błędów,
-które padały systematycznie: rodzajniki (`a darker corner`, `an echo chamber`,
-`a feedback loop`, `a distorted view`, `an umbrella term`) oraz przyimki
-(`biased against`, `resentful of`, `bitterness toward`, `blame somebody for`,
-`funnel into`, `a pipeline to`, `hostility toward`, `prejudice against`).
+**Pytania Exercise 2/3 celowo pominięte** — trenuje je czwartkowa lekcja z tutorem; błędy z niej → K5. Pilnuje tego `tools/k4-content.test.mjs`.
 
-**Lekki klej z K1 (bez obowiązku):** `It's sort of like...`, `I'm blanking on the word`,
-`I should have mentioned...`, `What ... most is ...`, `I'd say...`, `What I mean is...` -
-wszystkie wchodzą naturalnie w Grupę 8. Pozostałe zaplanowane powroty (`a courtyard`,
-`a toll road`, `a tourist trap`, `a crude repair`, `the transience of things`,
-`homogeneous`) przesunięto dalej, bo nie wchodzą naturalnie w rozmowę o tym tekście.
+**Nowa zasada K: zasiew wydłużony do 5–6 kolejnych wierszy** jednego targetu (z wariacjami osoba/czas/przeczenie), potem rotacja. Zamiast dotychczasowego limitu max 3 pod rząd w fazie zasiewu.
 
-**Łuk działu (10 grup):** zasiew sześciu słów arkusza -> zasiew dziesięciu słów, których
-zabrakło -> akapity 1-2 z formułami otwarcia -> akapity 3-4 (hierarchia, Black Pill,
-ścieżka radykalizacji) -> akapity 5-6 (ataki, klasyfikacja terrorystyczna, algorytmy) ->
-język debaty pod Exercise 3 i szóste pytanie Exercise 2 (wolność słowa - jedyne pytanie,
-na które sam tekst nie odpowiada) -> naprawa rodzajników i przyimków -> język dystansu
-i przypisywania -> scenka z sześcioma pytaniami Exercise 2 -> scenka z pięcioma pytaniami
-Exercise 3. Wszystkie jedenaście pytań arkusza odtworzone dosłownie i w kolejności,
-plus dopytania, które lektor prawdopodobnie dorzuci.
+**Łuk działu (5 grup):** G1 — zasiew resent + biased against → G2 — echo chamber + reinforce + feedback loop → G3 — distorted view + bitterness + determined by → G4 — naprawa rodzajników, przyimków, categorize + hierarchy → G5 — otwarcia/atrybucja + streszczenia 6 akapitów recyklingujące targety G1–G4.
+
+**Lekki klej z K1 (bez obowiązku):** `It's sort of like...`, `I'm blanking on the word`, `I should have mentioned...`, `What ... most is ...`, `I'd say...`, `What I mean is...` — wchodzą naturalnie w G5. Pozostałe zaplanowane powroty przesunięto dalej.
 
 ## Dalszy rozwój
 

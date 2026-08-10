@@ -14,7 +14,7 @@
 | Media nie są uprzedzone — po prostu ich ignorują. | The media aren't biased — they just ignore them. |
 | Według artykułu prawo jest uprzedzone wobec mężczyzn. | According to the article, the law is biased against men. |
 | Twierdzą, że kobiety są uprzedzone wobec takich jak oni. | They claim women are biased against guys like them. |
-| Jest rozgoryczony, bo według niego wszyscy są przeciwko niemu. | He's resentful because he thinks everyone is biased against him. |
+| Jest rozgoryczony, bo według niego wszyscy są wobec niego uprzedzeni. | He's resentful because he thinks everyone is biased against him. |
 | Artykuł mówi, że uraza bierze się z poczucia, że społeczeństwo jest uprzedzone. | The article says resentment comes from feeling society is biased against you. |
 | Artykuł mówi, że czują urazę i wierzą, że świat jest przeciwko nim. | The article says they're resentful and think the world is against them. |
 
@@ -35,7 +35,7 @@
 | Sprzężenie zwrotne sprawia, że poglądy coraz trudniej zmienić. | A feedback loop makes views harder and harder to change. |
 | Według artykułu to sprzężenie zwrotne przyspiesza radykalizację. | According to the article, that feedback loop speeds up radicalization. |
 | Bez sprzeciwu z zewnątrz te przekonania tylko się wzmacniają. | Without outside pushback, those beliefs only get reinforced. |
-| W komorze echa ludzie wzmacniają nawzajem swoje przekonania, tworząc sprzężenie zwrotne. | In echo chambers, people reinforce each other's beliefs, creating a feedback loop. |
+| W komorach echa ludzie wzmacniają nawzajem swoje przekonania, tworząc sprzężenie zwrotne. | In echo chambers, people reinforce each other's beliefs, creating a feedback loop. |
 | Tekst twierdzi, że komora echa napędza sprzężenie zwrotne, a to wzmacnia cały system. | The text argues the echo chamber fuels the feedback loop, which reinforces the whole system. |
 | Według ich logiki sprzężenie zwrotne tylko potwierdza to, co komora echa już im wmówiła. | By their own logic, the feedback loop only confirms what the echo chamber already told them. |
 | Gdy wszyscy wokół wzmacniają twoje poglądy, komora echa zamienia się w sprzężenie zwrotne. | When everyone around you reinforces your views, the echo chamber turns into a feedback loop. |
@@ -52,7 +52,7 @@
 | Jego gorycz wobec kobiet tylko narasta. | His bitterness toward women only grows. |
 | Nie czuję goryczy — jestem po prostu zmęczony. | I don't feel bitterness — I'm just tired. |
 | Według artykułu ta gorycz wobec społeczeństwa jest kluczowa. | According to the article, that bitterness toward society is key. |
-| Im dłużej tam są, tym silniejsza ich gorycz wobec świata. | The longer they stay there, the deeper their bitterness toward the world. |
+| Im dłużej tam są, tym głębsza ich gorycz wobec świata. | The longer they stay there, the deeper their bitterness toward the world. |
 | Według nich o wszystkim decyduje wygląd. | In their view, looks determine everything. |
 | Twierdzą, że o twojej wartości decyduje genetyka. | They claim your worth is determined by genetics. |
 | Artykuł mówi, że według nich o sukcesie decyduje wygląd i geny. | The article says that in their view, looks and genetics determine success. |
@@ -69,14 +69,14 @@
 | To klasyczna komora echa. | It's a classic echo chamber. |
 | To tworzy sprzężenie zwrotne. | It creates a feedback loop. |
 | Odizolowane środowisko tworzy zniekształcony obraz rzeczywistości. | An isolated environment creates a distorted view of reality. |
-| Na szczycie hierarchii są „Chadzi". | At the top of the hierarchy are the "Chads." |
+| Według nich na szczycie hierarchii są „Chadzi". | In their view, at the top of the hierarchy are the "Chads." |
 | Według nich nie da się awansować w hierarchii. | In their view, you can't move up in the hierarchy. |
 | Według nich hierarchia jest sztywna i nie da się z niej wyjść. | In their view, the hierarchy is rigid and you can't move up in it. |
 | Kategoryzują ludzi w sztywne grupy. | They categorize people into rigid groups. |
 | Według artykułu kategoryzują ludzi w sztywne archetypy. | According to the article, they categorize people into rigid archetypes. |
 | Nie kategoryzuję ludzi — opisuję tylko, co mówi tekst. | I'm not categorizing people — I'm just describing what the text says. |
-| Na szczycie hierarchii są mężczyźni, a kobiety są nieosiągalne. | At the top of the hierarchy are men, and women are unattainable. |
-| Według nich hierarchia jest niezmienna i nie da się w niej awansować. | In their view, the hierarchy is fixed and you can't move up in it. |
+| Według nich na szczycie hierarchii są mężczyźni, a kobiety są nieosiągalne. | In their view, at the top of the hierarchy are men, and women are unattainable. |
+| Według nich hierarchia jest sztywna i nie da się w niej awansować. | In their view, the hierarchy is fixed and you can't move up in it. |
 | Kategoryzują świat na sztywne grupy, a potem mówią, że nie da się awansować. | They categorize the world into rigid groups, then say you can't move up. |
 
 ## Grupa 5
@@ -91,7 +91,7 @@
 | Według artykułu „czerwona pigułka" oznacza pogląd, że społeczeństwo jest uprzedzone wobec mężczyzn. | According to the article, the Red Pill is the view that society is biased against men. |
 | Drugi akapit mówi, że jest pozytywna strona, ale też ciemniejszy zakątek, gdzie rodzą się incele. | The second paragraph says there's a positive side, but also a darker corner where incels emerge. |
 | Trzeci akapit wyjaśnia, że incele kategoryzują ludzi w sztywne grupy i wierzą, że o wszystkim decyduje genetyka. | The third paragraph explains that incels categorize people into rigid groups and believe genetics determine everything. |
-| Czwarty akapit mówi, że poczucie krzywdy i gorycz tworzą sprzężenie zwrotne, które prowadzi do radykalizacji. | The fourth paragraph says shared grievance and bitterness create a feedback loop that leads to radicalization. |
+| Czwarty akapit mówi, że wspólne poczucie krzywdy i gorycz tworzą sprzężenie zwrotne, które prowadzi do radykalizacji. | The fourth paragraph says shared grievance and bitterness create a feedback loop that leads to radicalization. |
 | Piąty akapit opisuje skrajne przypadki — ataki, w których sprawcy wyrażali gorycz wobec świata. | The fifth paragraph describes extreme cases — attacks where perpetrators expressed bitterness toward the world. |
 | Szósty akapit wyjaśnia, jak algorytmy tworzą komory echa, które wzmacniają szkodliwe przekonania. | The sixth paragraph explains how algorithms create echo chambers that reinforce harmful beliefs. |
 | Według nich o twoim losie decyduje wygląd, więc nie ma sensu się starać. | In their view, looks determine your fate, so there's no point in trying. |
@@ -103,7 +103,7 @@
 
 | polski | angielski | uwagi |
 |---|---|---|
-| mieć żal, czuć urazę | to resent somebody | akcent: ri-**ZENT**. Rzeczownik `resentment` (ri-**ZENT**-ment). Przymiotnik: `resentful **of**` (nie *resentful toward* ani *resentfulness*). |
+| mieć żal, czuć urazę | to resent somebody | akcent: ri-**ZENT**. Rzeczownik `resentment` (ri-**ZENT**-ment). Przymiotnik: `resentful of` (najczęściej); `resentful toward` też jest poprawne. Formy `resentfulness` unikaj — w mowie zawsze `resentment`. |
 | uprzedzony wobec kogoś | biased against somebody | **Nie** *biased towards* — to znaczy „faworyzujący", dokładnie odwrotnie. |
 | komora echa (środowisko społeczne) | an echo chamber | wymowa: **E**-kou — jak `echo`, **nie** „eko". To środowisko społeczne, nie miejsce. |
 | wzmacniać (przekonania) | to reinforce | akcent: ri-in-**FORS**. Kolokacje: `reinforce a belief`, `reinforce each other's beliefs`. |
@@ -139,7 +139,7 @@
 - `crooked image of the world` → `a **distorted view** of reality`. `Crooked` znaczy „krzywy" albo „skorumpowany".
 - `it's all deterministic` → `it's all **determined by** genetics and looks`. `Deterministic` istnieje, ale brzmi jak żargon — w mowie `determined by`.
 - `bitterness with the world` → `bitterness **toward** the world`.
-- `resentfulness of the world` → `they become **resentful of** the world` albo po prostu `they **resent** the world`. Forma `resentfulness` istnieje, ale jest rzadka i książkowa — w mowie zawsze `resentment`.
+- `resentfulness of the world` → `they become **resentful of** the world` albo po prostu `they **resent** the world`. Forma `resentfulness` jest rzadka i książkowa — w mowie zawsze `resentment`. (`Resentful toward` jest poprawne, `resentful of` jest częstsze.)
 - `they express their annoyance with the world` → `they express their **bitterness toward** the world`. `Annoyance` to poziom „ktoś mi zajechał drogę", za słabo na ten tekst.
 - `radicalize content` → `increasingly **radical** content` albo `radicaliz**ing** content`. Radykalizuje się ludzi, nie treści.
 - `at the top of the ladder` → `at the top of the **hierarchy**`. W kontekście tego tekstu to zawsze hierarchia.

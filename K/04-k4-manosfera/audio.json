@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-09T15:34:27.249Z",
+  "generatedAt": "2026-08-10T14:50:24.273Z",
   "grupy": [
     {
       "n": 1,
@@ -10,240 +10,224 @@
           "n": 1,
           "cue": {
             "src": "audio/g1-p01-cue.mp3",
-            "sek": 8.016
+            "sek": 5.266
           },
           "wzor": {
             "src": "audio/g1-p01-en.mp3",
-            "sek": 4.56
+            "sek": 2.856
           },
           "tekst": {
             "pyt": null,
-            "pl": "„Incel\" to skrót od „mimowolnie żyjący w celibacie\".",
-            "en": "\"Incel\" is short for \"involuntary celibate.\""
+            "pl": "On ma żal do kobiet.",
+            "en": "He resents women."
           }
         },
         {
           "n": 2,
           "cue": {
             "src": "audio/g1-p02-cue.mp3",
-            "sek": 8.4
+            "sek": 5.497
           },
           "wzor": {
             "src": "audio/g1-p02-en.mp3",
-            "sek": 4.872
+            "sek": 3.153
           },
           "tekst": {
             "pyt": null,
-            "pl": "Incele to głównie młodzi, odizolowani mężczyźni.",
-            "en": "Incels are mostly young, isolated men."
+            "pl": "One mają żal do społeczeństwa.",
+            "en": "They resent society."
           }
         },
         {
           "n": 3,
           "cue": {
             "src": "audio/g1-p03-cue.mp3",
-            "sek": 5.904
+            "sek": 5.077
           },
           "wzor": {
             "src": "audio/g1-p03-en.mp3",
-            "sek": 3.72
+            "sek": 2.942
           },
           "tekst": {
             "pyt": null,
-            "pl": "Mizoginia to pogarda wobec kobiet.",
-            "en": "Misogyny is contempt for women."
+            "pl": "Ona nie ma do ciebie żalu.",
+            "en": "She doesn't resent you."
           }
         },
         {
           "n": 4,
           "cue": {
             "src": "audio/g1-p04-cue.mp3",
-            "sek": 6.456
+            "sek": 5.595
           },
           "wzor": {
             "src": "audio/g1-p04-en.mp3",
-            "sek": 4.272
+            "sek": 3.531
           },
           "tekst": {
             "pyt": null,
-            "pl": "Ten wpis był otwarcie mizoginiczny.",
-            "en": "That post was openly misogynistic."
+            "pl": "Czuję urazę, że mnie pominęli.",
+            "en": "I resent being left out."
           }
         },
         {
           "n": 5,
           "cue": {
             "src": "audio/g1-p05-cue.mp3",
-            "sek": 7.416
+            "sek": 7.376
           },
           "wzor": {
             "src": "audio/g1-p05-en.mp3",
-            "sek": 4.056
+            "sek": 4.295
           },
           "tekst": {
             "pyt": null,
-            "pl": "„Nihilistyczny\" znaczy, że nic nie ma znaczenia.",
-            "en": "\"Nihilistic\" means that nothing matters."
+            "pl": "Stają się rozgoryczeni na cały świat.",
+            "en": "They become resentful of the whole world."
           }
         },
         {
           "n": 6,
           "cue": {
             "src": "audio/g1-p06-cue.mp3",
-            "sek": 7.8
+            "sek": 6.83
           },
           "wzor": {
             "src": "audio/g1-p06-en.mp3",
-            "sek": 3.96
+            "sek": 4
           },
           "tekst": {
             "pyt": null,
-            "pl": "To bardzo nihilistyczny sposób myślenia.",
-            "en": "That's a very nihilistic way of thinking."
+            "pl": "Ta uraza tylko narasta z czasem.",
+            "en": "That resentment only grows over time."
           }
         },
         {
           "n": 7,
           "cue": {
             "src": "audio/g1-p07-cue.mp3",
-            "sek": 8.112
+            "sek": 9.589
           },
           "wzor": {
             "src": "audio/g1-p07-en.mp3",
-            "sek": 5.16
+            "sek": 5.339
           },
           "tekst": {
             "pyt": null,
-            "pl": "Manifest to publiczna deklaracja przekonań.",
-            "en": "A manifesto is a public declaration of beliefs."
+            "pl": "Według nich społeczeństwo jest uprzedzone wobec mężczyzn.",
+            "en": "In their view, society is biased against men."
           }
         },
         {
           "n": 8,
           "cue": {
             "src": "audio/g1-p08-cue.mp3",
-            "sek": 6.912
+            "sek": 9.371
           },
           "wzor": {
             "src": "audio/g1-p08-en.mp3",
-            "sek": 3.912
+            "sek": 4.892
           },
           "tekst": {
             "pyt": null,
-            "pl": "Opublikował manifest przed atakiem.",
-            "en": "He published a manifesto before the attack."
+            "pl": "Uważają, że system jest uprzedzony wobec nich.",
+            "en": "They believe the system is biased against them."
           }
         },
         {
           "n": 9,
           "cue": {
             "src": "audio/g1-p09-cue.mp3",
-            "sek": 8.16
+            "sek": 9.448
           },
           "wzor": {
             "src": "audio/g1-p09-en.mp3",
-            "sek": 3.576
+            "sek": 4.65
           },
           "tekst": {
             "pyt": null,
-            "pl": "W manifeście wyłożył swoje przekonania.",
-            "en": "He laid out his beliefs in a manifesto."
+            "pl": "Media nie są uprzedzone — po prostu ich ignorują.",
+            "en": "The media aren't biased — they just ignore them."
           }
         },
         {
           "n": 10,
           "cue": {
             "src": "audio/g1-p10-cue.mp3",
-            "sek": 8.856
+            "sek": 10.306
           },
           "wzor": {
             "src": "audio/g1-p10-en.mp3",
-            "sek": 4.704
+            "sek": 5.471
           },
           "tekst": {
             "pyt": null,
-            "pl": "Radykalizacja to proces, nie jeden moment.",
-            "en": "Radicalization is a process, not a single moment."
+            "pl": "Według artykułu prawo jest uprzedzone wobec mężczyzn.",
+            "en": "According to the article, the law is biased against men."
           }
         },
         {
           "n": 11,
           "cue": {
             "src": "audio/g1-p11-cue.mp3",
-            "sek": 8.112
+            "sek": 10.03
           },
           "wzor": {
             "src": "audio/g1-p11-en.mp3",
-            "sek": 4.92
+            "sek": 4.297
           },
           "tekst": {
             "pyt": null,
-            "pl": "Artykuł pokazuje radykalizację krok po kroku.",
-            "en": "The article shows radicalization step by step."
+            "pl": "Twierdzą, że kobiety są uprzedzone wobec takich jak oni.",
+            "en": "They claim women are biased against guys like them."
           }
         },
         {
           "n": 12,
           "cue": {
             "src": "audio/g1-p12-cue.mp3",
-            "sek": 6.912
+            "sek": 11.325
           },
           "wzor": {
             "src": "audio/g1-p12-en.mp3",
-            "sek": 4.656
+            "sek": 4.569
           },
           "tekst": {
             "pyt": null,
-            "pl": "Analitycy antyterrorystyczni śledzą te fora.",
-            "en": "Counter-terrorism analysts track these forums."
+            "pl": "Jest rozgoryczony, bo według niego wszyscy są wobec niego uprzedzeni.",
+            "en": "He's resentful because he thinks everyone is biased against him."
           }
         },
         {
           "n": 13,
           "cue": {
             "src": "audio/g1-p13-cue.mp3",
-            "sek": 12.648
+            "sek": 13.34
           },
           "wzor": {
             "src": "audio/g1-p13-en.mp3",
-            "sek": 5.856
+            "sek": 5.447
           },
           "tekst": {
             "pyt": null,
-            "pl": "Incele budują tożsamość wokół tego, że nie potrafią znaleźć partnerki.",
-            "en": "Incels define their identity around their inability to find a partner."
+            "pl": "Artykuł mówi, że uraza bierze się z poczucia, że społeczeństwo jest uprzedzone.",
+            "en": "The article says resentment comes from feeling society is biased against you."
           }
         },
         {
           "n": 14,
           "cue": {
             "src": "audio/g1-p14-cue.mp3",
-            "sek": 10.656
+            "sek": 13.454
           },
           "wzor": {
             "src": "audio/g1-p14-en.mp3",
-            "sek": 5.256
+            "sek": 5.68
           },
           "tekst": {
             "pyt": null,
-            "pl": "W tych przestrzeniach mizoginia i nihilizm idą w parze.",
-            "en": "Misogyny and nihilism go hand in hand in those spaces."
-          }
-        },
-        {
-          "n": 15,
-          "cue": {
-            "src": "audio/g1-p15-cue.mp3",
-            "sek": 9.816
-          },
-          "wzor": {
-            "src": "audio/g1-p15-en.mp3",
-            "sek": 5.376
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Manifest zamachowca uruchomił śledztwo antyterrorystyczne.",
-            "en": "The attacker's manifesto triggered a counter-terrorism investigation."
+            "pl": "Artykuł mówi, że czują urazę i wierzą, że świat jest przeciwko nim.",
+            "en": "The article says they're resentful and think the world is against them."
           }
         }
       ]
@@ -256,27 +240,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g2-p01-cue.mp3",
-            "sek": 4.608
+            "sek": 5.403
           },
           "wzor": {
             "src": "audio/g2-p01-en.mp3",
-            "sek": 2.976
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Oni mają żal do kobiet.",
-            "en": "They resent women."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g2-p02-cue.mp3",
-            "sek": 5.808
-          },
-          "wzor": {
-            "src": "audio/g2-p02-en.mp3",
-            "sek": 3.312
+            "sek": 2.846
           },
           "tekst": {
             "pyt": null,
@@ -285,30 +253,158 @@
           }
         },
         {
-          "n": 3,
+          "n": 2,
           "cue": {
-            "src": "audio/g2-p03-cue.mp3",
-            "sek": 7.056
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 7.024
           },
           "wzor": {
-            "src": "audio/g2-p03-en.mp3",
-            "sek": 4.368
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 4.455
           },
           "tekst": {
             "pyt": null,
-            "pl": "Takie fora wzmacniają te przekonania.",
-            "en": "Forums like that reinforce those beliefs."
+            "pl": "Komory echa są wszędzie w internecie.",
+            "en": "Echo chambers are everywhere online."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 9.718
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 3.931
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To środowisko społeczne, nie fizyczne miejsce.",
+            "en": "It's a social environment, not a physical place."
           }
         },
         {
           "n": 4,
           "cue": {
             "src": "audio/g2-p04-cue.mp3",
-            "sek": 5.664
+            "sek": 11.151
           },
           "wzor": {
             "src": "audio/g2-p04-en.mp3",
-            "sek": 3.408
+            "sek": 4.964
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W komorze echa słyszysz tylko to, w co już wierzysz.",
+            "en": "In an echo chamber, you only hear what you already believe."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 10.651
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 5.064
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według artykułu te fora działają jak komory echa.",
+            "en": "According to the article, these forums work like echo chambers."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 6.156
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.592
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Te grupy wzmacniają szkodliwe przekonania.",
+            "en": "These groups reinforce harmful beliefs."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 7.314
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 4.217
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie wzmacniają tam nawzajem swoje poglądy.",
+            "en": "People reinforce each other's views there."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 8.361
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 4.757
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Algorytm nie wzmacnia tych przekonań celowo.",
+            "en": "The algorithm doesn't reinforce those beliefs on purpose."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 9.474
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.125
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według tekstu anonimowe fora wzmacniają ekstremizm.",
+            "en": "According to the text, anonymous forums reinforce extremism."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 10.294
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 5.426
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Za każdym razem, gdy to powtarzasz, wzmacniasz to przekonanie.",
+            "en": "Every time you repeat it, you reinforce that belief."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 5.752
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 2.667
           },
           "tekst": {
             "pyt": null,
@@ -317,211 +413,115 @@
           }
         },
         {
-          "n": 5,
-          "cue": {
-            "src": "audio/g2-p05-cue.mp3",
-            "sek": 7.968
-          },
-          "wzor": {
-            "src": "audio/g2-p05-en.mp3",
-            "sek": 3.96
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Mają zniekształcony obraz rzeczywistości.",
-            "en": "They have a distorted view of reality."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g2-p06-cue.mp3",
-            "sek": 6.36
-          },
-          "wzor": {
-            "src": "audio/g2-p06-en.mp3",
-            "sek": 4.104
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Czuje gorycz wobec świata.",
-            "en": "He feels bitterness toward the world."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g2-p07-cue.mp3",
-            "sek": 7.104
-          },
-          "wzor": {
-            "src": "audio/g2-p07-en.mp3",
-            "sek": 4.104
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Uważają, że praca nad sobą nie ma sensu.",
-            "en": "They think self-improvement is pointless."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g2-p08-cue.mp3",
-            "sek": 6.648
-          },
-          "wzor": {
-            "src": "audio/g2-p08-en.mp3",
-            "sek": 3.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Robią z zamachowców męczenników.",
-            "en": "They turn attackers into martyrs."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g2-p09-cue.mp3",
-            "sek": 6.648
-          },
-          "wzor": {
-            "src": "audio/g2-p09-en.mp3",
-            "sek": 3.624
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Wierzą w niezmienną hierarchię.",
-            "en": "They believe in a fixed hierarchy."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g2-p10-cue.mp3",
-            "sek": 7.248
-          },
-          "wzor": {
-            "src": "audio/g2-p10-en.mp3",
-            "sek": 4.368
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Według nich o wszystkim decyduje genetyka.",
-            "en": "In their view, genetics determine everything."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g2-p11-cue.mp3",
-            "sek": 8.952
-          },
-          "wzor": {
-            "src": "audio/g2-p11-en.mp3",
-            "sek": 5.112
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Komora echa wzmacnia to, w co już wierzysz.",
-            "en": "An echo chamber reinforces what you already believe."
-          }
-        },
-        {
           "n": 12,
           "cue": {
             "src": "audio/g2-p12-cue.mp3",
-            "sek": 8.904
+            "sek": 11.712
           },
           "wzor": {
             "src": "audio/g2-p12-en.mp3",
-            "sek": 4.872
+            "sek": 4.926
           },
           "tekst": {
             "pyt": null,
-            "pl": "Gorycz i żal napędzają całą pętlę.",
-            "en": "Bitterness and resentment fuel the whole loop."
+            "pl": "Sprzężenie zwrotne sprawia, że poglądy coraz trudniej zmienić.",
+            "en": "A feedback loop makes views harder and harder to change."
           }
         },
         {
           "n": 13,
           "cue": {
             "src": "audio/g2-p13-cue.mp3",
-            "sek": 11.448
+            "sek": 10.897
           },
           "wzor": {
             "src": "audio/g2-p13-en.mp3",
-            "sek": 4.92
+            "sek": 5.658
           },
           "tekst": {
             "pyt": null,
-            "pl": "Twierdzą, że w tej niezmiennej hierarchii nie da się awansować.",
-            "en": "They argue that you can't move up in that fixed hierarchy."
+            "pl": "Według artykułu to sprzężenie zwrotne przyspiesza radykalizację.",
+            "en": "According to the article, that feedback loop speeds up radicalization."
           }
         },
         {
           "n": 14,
           "cue": {
             "src": "audio/g2-p14-cue.mp3",
-            "sek": 11.4
+            "sek": 10.014
           },
           "wzor": {
             "src": "audio/g2-p14-en.mp3",
-            "sek": 6.168
+            "sek": 5.062
           },
           "tekst": {
             "pyt": null,
-            "pl": "Twierdzą, że jeśli o wszystkim decyduje wygląd, starania nie mają sensu.",
-            "en": "They argue that if looks determine everything, trying is pointless."
+            "pl": "Bez sprzeciwu z zewnątrz te przekonania tylko się wzmacniają.",
+            "en": "Without outside pushback, those beliefs only get reinforced."
           }
         },
         {
           "n": 15,
           "cue": {
             "src": "audio/g2-p15-cue.mp3",
-            "sek": 9.912
+            "sek": 14.389
           },
           "wzor": {
             "src": "audio/g2-p15-en.mp3",
-            "sek": 4.464
+            "sek": 6.119
           },
           "tekst": {
             "pyt": null,
-            "pl": "W takich miejscach ludzie tylko wzmacniają nawzajem swoje przekonania.",
-            "en": "In those spaces, people just reinforce each other's beliefs."
+            "pl": "W komorach echa ludzie wzmacniają nawzajem swoje przekonania, tworząc sprzężenie zwrotne.",
+            "en": "In echo chambers, people reinforce each other's beliefs, creating a feedback loop."
           }
         },
         {
           "n": 16,
           "cue": {
             "src": "audio/g2-p16-cue.mp3",
-            "sek": 14.232
+            "sek": 14.274
           },
           "wzor": {
             "src": "audio/g2-p16-en.mp3",
-            "sek": 5.664
+            "sek": 6.296
           },
           "tekst": {
             "pyt": null,
-            "pl": "Masz zniekształcony obraz świata, gdy wszystko idzie z jednego źródła.",
-            "en": "You get a distorted view of the world when everything comes from one source."
+            "pl": "Tekst twierdzi, że komora echa napędza sprzężenie zwrotne, a to wzmacnia cały system.",
+            "en": "The text argues the echo chamber fuels the feedback loop, which reinforces the whole system."
           }
         },
         {
           "n": 17,
           "cue": {
             "src": "audio/g2-p17-cue.mp3",
-            "sek": 13.968
+            "sek": 15.751
           },
           "wzor": {
             "src": "audio/g2-p17-en.mp3",
-            "sek": 6.312
+            "sek": 6.516
           },
           "tekst": {
             "pyt": null,
-            "pl": "Według artykułu mają żal do świata, więc robią z zamachowców męczenników.",
-            "en": "According to the article, they resent the world, so they turn attackers into martyrs."
+            "pl": "Według ich logiki sprzężenie zwrotne tylko potwierdza to, co komora echa już im wmówiła.",
+            "en": "By their own logic, the feedback loop only confirms what the echo chamber already told them."
+          }
+        },
+        {
+          "n": 18,
+          "cue": {
+            "src": "audio/g2-p18-cue.mp3",
+            "sek": 15.109
+          },
+          "wzor": {
+            "src": "audio/g2-p18-en.mp3",
+            "sek": 6.694
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdy wszyscy wokół wzmacniają twoje poglądy, komora echa zamienia się w sprzężenie zwrotne.",
+            "en": "When everyone around you reinforces your views, the echo chamber turns into a feedback loop."
           }
         }
       ]
@@ -534,256 +534,256 @@
           "n": 1,
           "cue": {
             "src": "audio/g3-p01-cue.mp3",
-            "sek": 6.456
+            "sek": 6.648
           },
           "wzor": {
             "src": "audio/g3-p01-en.mp3",
-            "sek": 3.672
+            "sek": 3.777
           },
           "tekst": {
             "pyt": null,
-            "pl": "Zacznijmy od pierwszego akapitu.",
-            "en": "Let's start with the first paragraph."
+            "pl": "To zniekształcony obraz rzeczywistości.",
+            "en": "It's a distorted view of reality."
           }
         },
         {
           "n": 2,
           "cue": {
             "src": "audio/g3-p02-cue.mp3",
-            "sek": 8.064
+            "sek": 8.463
           },
           "wzor": {
             "src": "audio/g3-p02-en.mp3",
-            "sek": 5.112
+            "sek": 3.755
           },
           "tekst": {
             "pyt": null,
-            "pl": "Pierwszy akapit wprowadza termin „manosfera\".",
-            "en": "The first paragraph introduces the term \"manosphere.\""
+            "pl": "Mają zniekształcony obraz świata.",
+            "en": "They have a distorted view of the world."
           }
         },
         {
           "n": 3,
           "cue": {
             "src": "audio/g3-p03-cue.mp3",
-            "sek": 6.96
+            "sek": 8.752
           },
           "wzor": {
             "src": "audio/g3-p03-en.mp3",
-            "sek": 3.624
+            "sek": 4.525
           },
           "tekst": {
             "pyt": null,
-            "pl": "Krótko mówiąc, to termin parasolowy.",
-            "en": "In short, it's an umbrella term."
+            "pl": "Izolacja tworzy zniekształcony obraz rzeczywistości.",
+            "en": "Isolation creates a distorted view of reality."
           }
         },
         {
           "n": 4,
           "cue": {
             "src": "audio/g3-p04-cue.mp3",
-            "sek": 8.664
+            "sek": 12.349
           },
           "wzor": {
             "src": "audio/g3-p04-en.mp3",
-            "sek": 4.92
+            "sek": 5.751
           },
           "tekst": {
             "pyt": null,
-            "pl": "Obejmuje fora, podcasty i całe społeczności.",
-            "en": "It covers forums, podcasts, and whole communities."
+            "pl": "Według tekstu te fora dają zniekształcony obraz świata.",
+            "en": "According to the text, those forums give a distorted view of the world."
           }
         },
         {
           "n": 5,
           "cue": {
             "src": "audio/g3-p05-cue.mp3",
-            "sek": 7.704
+            "sek": 14.953
           },
           "wzor": {
             "src": "audio/g3-p05-en.mp3",
-            "sek": 3.456
+            "sek": 6.593
           },
           "tekst": {
             "pyt": null,
-            "pl": "Wszystkie krążą wokół spraw mężczyzn.",
-            "en": "They all center on men's issues."
+            "pl": "Jeśli twoim jedynym źródłem jest komora echa, masz zniekształcony obraz rzeczywistości.",
+            "en": "If your only source is an echo chamber, you have a distorted view of reality."
           }
         },
         {
           "n": 6,
           "cue": {
             "src": "audio/g3-p06-cue.mp3",
-            "sek": 9.552
+            "sek": 6.172
           },
           "wzor": {
             "src": "audio/g3-p06-en.mp3",
-            "sek": 3.768
+            "sek": 3.933
           },
           "tekst": {
             "pyt": null,
-            "pl": "„Czerwona pigułka\" to metafora z „Matrixa\".",
-            "en": "\"The Red Pill\" is a metaphor from The Matrix."
+            "pl": "Czują gorycz wobec świata.",
+            "en": "They feel bitterness toward the world."
           }
         },
         {
           "n": 7,
           "cue": {
             "src": "audio/g3-p07-cue.mp3",
-            "sek": 11.352
+            "sek": 6.783
           },
           "wzor": {
             "src": "audio/g3-p07-en.mp3",
-            "sek": 4.92
+            "sek": 4.901
           },
           "tekst": {
             "pyt": null,
-            "pl": "Chodzi o pogląd, że społeczeństwo jest uprzedzone wobec mężczyzn.",
-            "en": "The idea is that society is biased against men."
+            "pl": "Jego gorycz wobec kobiet tylko narasta.",
+            "en": "His bitterness toward women only grows."
           }
         },
         {
           "n": 8,
           "cue": {
             "src": "audio/g3-p08-cue.mp3",
-            "sek": 10.368
+            "sek": 9.115
           },
           "wzor": {
             "src": "audio/g3-p08-en.mp3",
-            "sek": 4.272
+            "sek": 4.467
           },
           "tekst": {
             "pyt": null,
-            "pl": "Wziąć czerwoną pigułkę znaczy przyjąć to przekonanie.",
-            "en": "Taking the Red Pill means accepting that belief."
+            "pl": "Nie czuję goryczy — jestem po prostu zmęczony.",
+            "en": "I don't feel bitterness — I'm just tired."
           }
         },
         {
           "n": 9,
           "cue": {
             "src": "audio/g3-p09-cue.mp3",
-            "sek": 9.552
+            "sek": 10.912
           },
           "wzor": {
             "src": "audio/g3-p09-en.mp3",
-            "sek": 4.368
+            "sek": 5.555
           },
           "tekst": {
             "pyt": null,
-            "pl": "Drugi akapit przechodzi do ciemniejszej strony.",
-            "en": "The second paragraph moves on to the darker side."
+            "pl": "Według artykułu ta gorycz wobec społeczeństwa jest kluczowa.",
+            "en": "According to the article, that bitterness toward society is key."
           }
         },
         {
           "n": 10,
           "cue": {
             "src": "audio/g3-p10-cue.mp3",
-            "sek": 9.552
+            "sek": 12.831
           },
           "wzor": {
             "src": "audio/g3-p10-en.mp3",
-            "sek": 4.464
+            "sek": 5.205
           },
           "tekst": {
             "pyt": null,
-            "pl": "Jest pozytywna strona i jest ciemniejszy zakątek.",
-            "en": "There's a positive side, and there's a darker corner."
+            "pl": "Im dłużej tam są, tym głębsza ich gorycz wobec świata.",
+            "en": "The longer they stay there, the deeper their bitterness toward the world."
           }
         },
         {
           "n": 11,
           "cue": {
             "src": "audio/g3-p11-cue.mp3",
-            "sek": 7.56
+            "sek": 7.084
           },
           "wzor": {
             "src": "audio/g3-p11-en.mp3",
-            "sek": 4.32
+            "sek": 3.904
           },
           "tekst": {
             "pyt": null,
-            "pl": "Po pozytywnej stronie jest praca nad sobą.",
-            "en": "On the positive side, there's self-improvement."
+            "pl": "Według nich o wszystkim decyduje wygląd.",
+            "en": "In their view, looks determine everything."
           }
         },
         {
           "n": 12,
           "cue": {
             "src": "audio/g3-p12-cue.mp3",
-            "sek": 8.208
+            "sek": 9.181
           },
           "wzor": {
             "src": "audio/g3-p12-en.mp3",
-            "sek": 4.464
+            "sek": 4.564
           },
           "tekst": {
             "pyt": null,
-            "pl": "Podnoszenie ciężarów, dyscyplina finansowa, ambicja zawodowa.",
-            "en": "Weightlifting, financial discipline, career ambition."
+            "pl": "Twierdzą, że o twojej wartości decyduje genetyka.",
+            "en": "They claim your worth is determined by genetics."
           }
         },
         {
           "n": 13,
           "cue": {
             "src": "audio/g3-p13-cue.mp3",
-            "sek": 8.16
+            "sek": 12.117
           },
           "wzor": {
             "src": "audio/g3-p13-en.mp3",
-            "sek": 4.512
+            "sek": 6.099
           },
           "tekst": {
             "pyt": null,
-            "pl": "Ciemniejsze zakątki dały początek incelom.",
-            "en": "The darker corners gave rise to incels."
+            "pl": "Artykuł mówi, że według nich o sukcesie decyduje wygląd i geny.",
+            "en": "The article says that in their view, looks and genetics determine success."
           }
         },
         {
           "n": 14,
           "cue": {
             "src": "audio/g3-p14-cue.mp3",
-            "sek": 14.232
+            "sek": 9.706
           },
           "wzor": {
             "src": "audio/g3-p14-en.mp3",
-            "sek": 6.312
+            "sek": 4.529
           },
           "tekst": {
             "pyt": null,
-            "pl": "Autor pisze, że sami budują tożsamość wokół nieumiejętności znalezienia partnerki.",
-            "en": "The author says they define their identity around their inability to find romantic partners."
+            "pl": "Nie wierzę, że o wszystkim decyduje wygląd.",
+            "en": "I don't believe everything is determined by looks."
           }
         },
         {
           "n": 15,
           "cue": {
             "src": "audio/g3-p15-cue.mp3",
-            "sek": 5.304
+            "sek": 14.595
           },
           "wzor": {
             "src": "audio/g3-p15-en.mp3",
-            "sek": 3.36
+            "sek": 6.02
           },
           "tekst": {
             "pyt": null,
-            "pl": "To młodzi, odizolowani mężczyźni.",
-            "en": "They're young, isolated men."
+            "pl": "Według nich o twoim losie decyduje genetyka, więc masz zniekształcony obraz rzeczywistości.",
+            "en": "In their view, genetics determine your fate, so you have a distorted view of reality."
           }
         },
         {
           "n": 16,
           "cue": {
             "src": "audio/g3-p16-cue.mp3",
-            "sek": 17.232
+            "sek": 14.123
           },
           "wzor": {
             "src": "audio/g3-p16-en.mp3",
-            "sek": 10.104
+            "sek": 6.599
           },
           "tekst": {
             "pyt": null,
-            "pl": "Zamiast pracy nad sobą, incelskie fora karmią toksyczny żal, skrajną mizoginię i głęboką wrogość wobec społeczeństwa.",
-            "en": "Instead of self-improvement, incel message boards foster toxic resentment, extreme misogyny, and deep-seated hostility toward society."
+            "pl": "Czują gorycz, bo według nich o twojej pozycji decyduje wygląd, a nie wysiłek.",
+            "en": "They feel bitterness because, in their view, your place is determined by looks, not effort."
           }
         }
       ]
@@ -796,288 +796,240 @@
           "n": 1,
           "cue": {
             "src": "audio/g4-p01-cue.mp3",
-            "sek": 6.816
+            "sek": 5.182
           },
           "wzor": {
             "src": "audio/g4-p01-en.mp3",
-            "sek": 3.672
+            "sek": 3.191
           },
           "tekst": {
             "pyt": null,
-            "pl": "Przejdźmy do trzeciego akapitu.",
-            "en": "Let's move on to the third paragraph."
+            "pl": "Jest pozytywna strona.",
+            "en": "There's a positive side."
           }
         },
         {
           "n": 2,
           "cue": {
             "src": "audio/g4-p02-cue.mp3",
-            "sek": 7.968
+            "sek": 6.38
           },
           "wzor": {
             "src": "audio/g4-p02-en.mp3",
-            "sek": 4.872
+            "sek": 3.308
           },
           "tekst": {
             "pyt": null,
-            "pl": "Socjologowie zwracają uwagę na coś ciekawego.",
-            "en": "Sociologists point out something interesting here."
+            "pl": "Jest też ciemniejszy zakątek.",
+            "en": "There's also a darker corner."
           }
         },
         {
           "n": 3,
           "cue": {
             "src": "audio/g4-p03-cue.mp3",
-            "sek": 8.496
+            "sek": 4.801
           },
           "wzor": {
             "src": "audio/g4-p03-en.mp3",
-            "sek": 5.376
+            "sek": 3.761
           },
           "tekst": {
             "pyt": null,
-            "pl": "Incele mocno opierają się na pseudonaukowej hierarchii.",
-            "en": "Incels rely heavily on a pseudo-scientific hierarchy."
+            "pl": "To termin parasolowy.",
+            "en": "It's an umbrella term."
           }
         },
         {
           "n": 4,
           "cue": {
             "src": "audio/g4-p04-cue.mp3",
-            "sek": 7.704
+            "sek": 5.112
           },
           "wzor": {
             "src": "audio/g4-p04-en.mp3",
-            "sek": 4.32
+            "sek": 2.976
           },
           "tekst": {
             "pyt": null,
-            "pl": "Kategoryzują ludzi według sztywnych archetypów.",
-            "en": "They categorize people into rigid archetypes."
+            "pl": "To klasyczna komora echa.",
+            "en": "It's a classic echo chamber."
           }
         },
         {
           "n": 5,
           "cue": {
             "src": "audio/g4-p05-cue.mp3",
-            "sek": 7.008
+            "sek": 5.493
           },
           "wzor": {
             "src": "audio/g4-p05-en.mp3",
-            "sek": 4.656
+            "sek": 3.395
           },
           "tekst": {
             "pyt": null,
-            "pl": "Hiper-atrakcyjnych mężczyzn nazywają „Chadami\".",
-            "en": "They call hyper-attractive men \"Chads.\""
+            "pl": "To tworzy sprzężenie zwrotne.",
+            "en": "It creates a feedback loop."
           }
         },
         {
           "n": 6,
           "cue": {
             "src": "audio/g4-p06-cue.mp3",
-            "sek": 6.696
+            "sek": 10.921
           },
           "wzor": {
             "src": "audio/g4-p06-en.mp3",
-            "sek": 4.176
+            "sek": 5.016
           },
           "tekst": {
             "pyt": null,
-            "pl": "Nieosiągalne kobiety nazywają „Stacy\".",
-            "en": "They call unattainable women \"Stacys.\""
+            "pl": "Odizolowane środowisko tworzy zniekształcony obraz rzeczywistości.",
+            "en": "An isolated environment creates a distorted view of reality."
           }
         },
         {
           "n": 7,
           "cue": {
             "src": "audio/g4-p07-cue.mp3",
-            "sek": 11.16
+            "sek": 11.008
           },
           "wzor": {
             "src": "audio/g4-p07-en.mp3",
-            "sek": 5.52
+            "sek": 4.781
           },
           "tekst": {
             "pyt": null,
-            "pl": "Według nich pociąg romantyczny jest czysto biologiczny i niezmienny.",
-            "en": "In their view, romantic attraction is purely biological and fixed."
+            "pl": "Według nich na szczycie hierarchii są „Chadzi\".",
+            "en": "In their view, at the top of the hierarchy are the \"Chads.\""
           }
         },
         {
           "n": 8,
           "cue": {
             "src": "audio/g4-p08-cue.mp3",
-            "sek": 10.008
+            "sek": 9.202
           },
           "wzor": {
             "src": "audio/g4-p08-en.mp3",
-            "sek": 5.304
+            "sek": 4.429
           },
           "tekst": {
             "pyt": null,
-            "pl": "To prowadzi prosto do nihilistycznej „czarnej pigułki\".",
-            "en": "This leads directly to the nihilistic \"Black Pill.\""
+            "pl": "Według nich nie da się awansować w hierarchii.",
+            "en": "In their view, you can't move up in the hierarchy."
           }
         },
         {
           "n": 9,
           "cue": {
             "src": "audio/g4-p09-cue.mp3",
-            "sek": 15.912
+            "sek": 13.19
           },
           "wzor": {
             "src": "audio/g4-p09-en.mp3",
-            "sek": 6.072
+            "sek": 5.087
           },
           "tekst": {
             "pyt": null,
-            "pl": "Wyznawcy czarnej pigułki twierdzą, że o twojej wartości decydują wygląd i genetyka.",
-            "en": "Believers in the Black Pill argue that looks and genetics determine your worth."
+            "pl": "Według nich hierarchia jest sztywna i nie da się z niej wyjść.",
+            "en": "In their view, the hierarchy is rigid and you can't move up in it."
           }
         },
         {
           "n": 10,
           "cue": {
             "src": "audio/g4-p10-cue.mp3",
-            "sek": 8.856
+            "sek": 6.705
           },
           "wzor": {
             "src": "audio/g4-p10-en.mp3",
-            "sek": 4.656
+            "sek": 4.224
           },
           "tekst": {
             "pyt": null,
-            "pl": "Dlatego uważają, że praca nad sobą nie ma sensu.",
-            "en": "That's why they think self-improvement is pointless."
+            "pl": "Kategoryzują ludzi w sztywne grupy.",
+            "en": "They categorize people into rigid groups."
           }
         },
         {
           "n": 11,
           "cue": {
             "src": "audio/g4-p11-cue.mp3",
-            "sek": 10.152
+            "sek": 10.436
           },
           "wzor": {
             "src": "audio/g4-p11-en.mp3",
-            "sek": 4.872
+            "sek": 5.253
           },
           "tekst": {
             "pyt": null,
-            "pl": "Wmawiają podatnym użytkownikom, że tkwią w pułapce raz na zawsze.",
-            "en": "They convince vulnerable users that they're fundamentally trapped."
+            "pl": "Według artykułu kategoryzują ludzi w sztywne archetypy.",
+            "en": "According to the article, they categorize people into rigid archetypes."
           }
         },
         {
           "n": 12,
           "cue": {
             "src": "audio/g4-p12-cue.mp3",
-            "sek": 7.608
+            "sek": 12.048
           },
           "wzor": {
             "src": "audio/g4-p12-en.mp3",
-            "sek": 4.608
+            "sek": 5.436
           },
           "tekst": {
             "pyt": null,
-            "pl": "Czwarty akapit tłumaczy, co się dzieje dalej.",
-            "en": "The fourth paragraph explains what happens next."
+            "pl": "Nie kategoryzuję ludzi — opisuję tylko, co mówi tekst.",
+            "en": "I'm not categorizing people — I'm just describing what the text says."
           }
         },
         {
           "n": 13,
           "cue": {
             "src": "audio/g4-p13-cue.mp3",
-            "sek": 10.008
+            "sek": 14.115
           },
           "wzor": {
             "src": "audio/g4-p13-en.mp3",
-            "sek": 5.424
+            "sek": 6.676
           },
           "tekst": {
             "pyt": null,
-            "pl": "Ta beznadzieja tworzy ścieżkę wciągającą w radykalizację.",
-            "en": "That hopelessness creates a pipeline to radicalization."
+            "pl": "Według nich na szczycie hierarchii są mężczyźni, a kobiety są nieosiągalne.",
+            "en": "In their view, at the top of the hierarchy are men, and women are unattainable."
           }
         },
         {
           "n": 14,
           "cue": {
             "src": "audio/g4-p14-cue.mp3",
-            "sek": 11.496
+            "sek": 13.106
           },
           "wzor": {
             "src": "audio/g4-p14-en.mp3",
-            "sek": 5.472
+            "sek": 5.421
           },
           "tekst": {
             "pyt": null,
-            "pl": "Na anonimowych czatach użytkownicy tworzą własny język i żargon.",
-            "en": "In anonymous chat rooms, users construct their own language and jargon."
+            "pl": "Według nich hierarchia jest sztywna i nie da się w niej awansować.",
+            "en": "In their view, the hierarchy is fixed and you can't move up in it."
           }
         },
         {
           "n": 15,
           "cue": {
             "src": "audio/g4-p15-cue.mp3",
-            "sek": 6.096
+            "sek": 13.715
           },
           "wzor": {
             "src": "audio/g4-p15-en.mp3",
-            "sek": 4.32
+            "sek": 5.633
           },
           "tekst": {
             "pyt": null,
-            "pl": "Ten żargon odczłowiecza ludzi z zewnątrz.",
-            "en": "That jargon dehumanizes outsiders."
-          }
-        },
-        {
-          "n": 16,
-          "cue": {
-            "src": "audio/g4-p16-cue.mp3",
-            "sek": 10.2
-          },
-          "wzor": {
-            "src": "audio/g4-p16-en.mp3",
-            "sek": 5.424
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Normalizuje nękanie i czci zamachowców jako męczenników.",
-            "en": "It normalizes harassment and celebrates attackers as martyrs."
-          }
-        },
-        {
-          "n": 17,
-          "cue": {
-            "src": "audio/g4-p17-cue.mp3",
-            "sek": 9.36
-          },
-          "wzor": {
-            "src": "audio/g4-p17-en.mp3",
-            "sek": 4.368
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Te przestrzenie dają zniekształcone poczucie braterstwa.",
-            "en": "These spaces offer a distorted sense of brotherhood."
-          }
-        },
-        {
-          "n": 18,
-          "cue": {
-            "src": "audio/g4-p18-cue.mp3",
-            "sek": 13.512
-          },
-          "wzor": {
-            "src": "audio/g4-p18-en.mp3",
-            "sek": 6.816
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Artykuł twierdzi, że wspólne poczucie krzywdy zamienia osobiste cierpienie w zbiorową agresję.",
-            "en": "The article argues that shared grievance turns personal suffering into collective aggression."
+            "pl": "Kategoryzują świat na sztywne grupy, a potem mówią, że nie da się awansować.",
+            "en": "They categorize the world into rigid groups, then say you can't move up."
           }
         }
       ]
@@ -1090,1598 +1042,224 @@
           "n": 1,
           "cue": {
             "src": "audio/g5-p01-cue.mp3",
-            "sek": 7.56
+            "sek": 4.335
           },
           "wzor": {
             "src": "audio/g5-p01-en.mp3",
-            "sek": 4.704
+            "sek": 2.477
           },
           "tekst": {
             "pyt": null,
-            "pl": "Piąty akapit podaje konkretne przykłady.",
-            "en": "The fifth paragraph gives concrete examples."
+            "pl": "Według artykułu…",
+            "en": "According to the article…"
           }
         },
         {
           "n": 2,
           "cue": {
             "src": "audio/g5-p02-cue.mp3",
-            "sek": 9.696
+            "sek": 4.17
           },
           "wzor": {
             "src": "audio/g5-p02-en.mp3",
-            "sek": 5.016
+            "sek": 2.973
           },
           "tekst": {
             "pyt": null,
-            "pl": "Ten ekstremizm wielokrotnie kończył się realnymi atakami.",
-            "en": "This extremism has repeatedly led to real-world attacks."
+            "pl": "Tekst twierdzi, że…",
+            "en": "The text argues that…"
           }
         },
         {
           "n": 3,
           "cue": {
             "src": "audio/g5-p03-cue.mp3",
-            "sek": 10.848
+            "sek": 3.627
           },
           "wzor": {
             "src": "audio/g5-p03-en.mp3",
-            "sek": 6.024
+            "sek": 2.115
           },
           "tekst": {
             "pyt": null,
-            "pl": "W 2014 roku w Isla Vista w Kalifornii ktoś otworzył ogień.",
-            "en": "In 2014, someone opened fire in Isla Vista, California."
+            "pl": "Według nich…",
+            "en": "In their view…"
           }
         },
         {
           "n": 4,
           "cue": {
             "src": "audio/g5-p04-cue.mp3",
-            "sek": 6.504
+            "sek": 7.295
           },
           "wzor": {
             "src": "audio/g5-p04-en.mp3",
-            "sek": 3.768
+            "sek": 3.701
           },
           "tekst": {
             "pyt": null,
-            "pl": "Sprawca miał dwadzieścia dwa lata.",
-            "en": "The attacker was twenty-two years old."
+            "pl": "Żeby było jasno, ja ich nie bronię.",
+            "en": "To be clear, I'm not defending them."
           }
         },
         {
           "n": 5,
           "cue": {
             "src": "audio/g5-p05-cue.mp3",
-            "sek": 12.048
+            "sek": 9.662
           },
           "wzor": {
             "src": "audio/g5-p05-en.mp3",
-            "sek": 4.92
+            "sek": 4.53
           },
           "tekst": {
             "pyt": null,
-            "pl": "Wcześniej opublikował manifest obwiniający kobiety za swoją samotność.",
-            "en": "He had published a manifesto blaming women for his loneliness."
+            "pl": "To są skrajne przypadki i nie reprezentują wszystkich.",
+            "en": "These are extreme cases and they don't represent everyone."
           }
         },
         {
           "n": 6,
           "cue": {
             "src": "audio/g5-p06-cue.mp3",
-            "sek": 12.408
+            "sek": 14.332
           },
           "wzor": {
             "src": "audio/g5-p06-en.mp3",
-            "sek": 5.376
+            "sek": 6.633
           },
           "tekst": {
             "pyt": null,
-            "pl": "W 2018 roku w Toronto mężczyzna wjechał furgonetką w tłum.",
-            "en": "In 2018, a man drove a van into a crowd in Toronto."
+            "pl": "Pierwszy akapit wprowadza termin „manosfera\" i wyjaśnia metaforę czerwonej pigułki.",
+            "en": "The first paragraph introduces the term \"manosphere\" and explains the Red Pill metaphor."
           }
         },
         {
           "n": 7,
           "cue": {
             "src": "audio/g5-p07-cue.mp3",
-            "sek": 4.8
+            "sek": 16.531
           },
           "wzor": {
             "src": "audio/g5-p07-en.mp3",
-            "sek": 2.904
+            "sek": 7.242
           },
           "tekst": {
             "pyt": null,
-            "pl": "Zginęło jedenaście osób.",
-            "en": "Eleven people were killed."
+            "pl": "Według artykułu „czerwona pigułka\" oznacza pogląd, że społeczeństwo jest uprzedzone wobec mężczyzn.",
+            "en": "According to the article, the Red Pill is the view that society is biased against men."
           }
         },
         {
           "n": 8,
           "cue": {
             "src": "audio/g5-p08-cue.mp3",
-            "sek": 5.76
+            "sek": 15.688
           },
           "wzor": {
             "src": "audio/g5-p08-en.mp3",
-            "sek": 3.672
+            "sek": 6.899
           },
           "tekst": {
             "pyt": null,
-            "pl": "Sam określał się jako incel.",
-            "en": "He identified as an incel."
+            "pl": "Drugi akapit mówi, że jest pozytywna strona, ale też ciemniejszy zakątek, gdzie rodzą się incele.",
+            "en": "The second paragraph says there's a positive side, but also a darker corner where incels emerge."
           }
         },
         {
           "n": 9,
           "cue": {
             "src": "audio/g5-p09-cue.mp3",
-            "sek": 10.752
+            "sek": 16.674
           },
           "wzor": {
             "src": "audio/g5-p09-en.mp3",
-            "sek": 5.664
+            "sek": 7.845
           },
           "tekst": {
             "pyt": null,
-            "pl": "Organy ścigania oficjalnie klasyfikują to dziś jako terroryzm.",
-            "en": "Law enforcement agencies now officially classify this as terrorism."
+            "pl": "Trzeci akapit wyjaśnia, że incele kategoryzują ludzi w sztywne grupy i wierzą, że o wszystkim decyduje genetyka.",
+            "en": "The third paragraph explains that incels categorize people into rigid groups and believe genetics determine everything."
           }
         },
         {
           "n": 10,
           "cue": {
             "src": "audio/g5-p10-cue.mp3",
-            "sek": 10.608
+            "sek": 16.684
           },
           "wzor": {
             "src": "audio/g5-p10-en.mp3",
-            "sek": 5.856
+            "sek": 8.736
           },
           "tekst": {
             "pyt": null,
-            "pl": "Analitycy antyterrorystyczni nazywają to nietradycyjnym terroryzmem wewnętrznym.",
-            "en": "Counter-terrorism analysts call it non-traditional domestic terrorism."
+            "pl": "Czwarty akapit mówi, że wspólne poczucie krzywdy i gorycz tworzą sprzężenie zwrotne, które prowadzi do radykalizacji.",
+            "en": "The fourth paragraph says shared grievance and bitterness create a feedback loop that leads to radicalization."
           }
         },
         {
           "n": 11,
           "cue": {
             "src": "audio/g5-p11-cue.mp3",
-            "sek": 6.552
+            "sek": 14.232
           },
           "wzor": {
             "src": "audio/g5-p11-en.mp3",
-            "sek": 4.776
+            "sek": 7.402
           },
           "tekst": {
             "pyt": null,
-            "pl": "Szósty akapit mówi o algorytmach.",
-            "en": "The sixth paragraph is about algorithms."
+            "pl": "Piąty akapit opisuje skrajne przypadki — ataki, w których sprawcy wyrażali gorycz wobec świata.",
+            "en": "The fifth paragraph describes extreme cases — attacks where perpetrators expressed bitterness toward the world."
           }
         },
         {
           "n": 12,
           "cue": {
             "src": "audio/g5-p12-cue.mp3",
-            "sek": 7.968
+            "sek": 15.381
           },
           "wzor": {
             "src": "audio/g5-p12-en.mp3",
-            "sek": 4.464
+            "sek": 6.922
           },
           "tekst": {
             "pyt": null,
-            "pl": "Algorytmy rekomendacji przyspieszają ten kryzys.",
-            "en": "Recommendation algorithms accelerate this crisis."
+            "pl": "Szósty akapit wyjaśnia, jak algorytmy tworzą komory echa, które wzmacniają szkodliwe przekonania.",
+            "en": "The sixth paragraph explains how algorithms create echo chambers that reinforce harmful beliefs."
           }
         },
         {
           "n": 13,
           "cue": {
             "src": "audio/g5-p13-cue.mp3",
-            "sek": 8.016
+            "sek": 13.564
           },
           "wzor": {
             "src": "audio/g5-p13-en.mp3",
-            "sek": 3.672
+            "sek": 5.356
           },
           "tekst": {
             "pyt": null,
-            "pl": "Są zaprojektowane tak, żeby maksymalizować zaangażowanie.",
-            "en": "They're designed to maximize engagement."
+            "pl": "Według nich o twoim losie decyduje wygląd, więc nie ma sensu się starać.",
+            "en": "In their view, looks determine your fate, so there's no point in trying."
           }
         },
         {
           "n": 14,
           "cue": {
             "src": "audio/g5-p14-cue.mp3",
-            "sek": 8.256
+            "sek": 14.525
           },
           "wzor": {
             "src": "audio/g5-p14-en.mp3",
-            "sek": 4.176
+            "sek": 6.757
           },
           "tekst": {
             "pyt": null,
-            "pl": "Promują treści, które budzą silne emocje.",
-            "en": "They promote content that triggers strong emotions."
-          }
-        },
-        {
-          "n": 15,
-          "cue": {
-            "src": "audio/g5-p15-cue.mp3",
-            "sek": 11.712
-          },
-          "wzor": {
-            "src": "audio/g5-p15-en.mp3",
-            "sek": 6.12
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Ktoś szuka porad o formie, pewności siebie albo zdrowiu psychicznym.",
-            "en": "Someone searches for advice on fitness, confidence, or mental health."
-          }
-        },
-        {
-          "n": 16,
-          "cue": {
-            "src": "audio/g5-p16-cue.mp3",
-            "sek": 12.96
-          },
-          "wzor": {
-            "src": "audio/g5-p16-en.mp3",
-            "sek": 5.76
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Kilka kliknięć później zostaje wepchnięty w coraz bardziej radykalne treści.",
-            "en": "A few clicks later, they get funneled into increasingly radical content."
-          }
-        },
-        {
-          "n": 17,
-          "cue": {
-            "src": "audio/g5-p17-cue.mp3",
-            "sek": 8.016
-          },
-          "wzor": {
-            "src": "audio/g5-p17-en.mp3",
-            "sek": 4.656
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Rozwiązanie wymaga kilku rzeczy naraz.",
-            "en": "The solution requires several things at once."
-          }
-        },
-        {
-          "n": 18,
-          "cue": {
-            "src": "audio/g5-p18-cue.mp3",
-            "sek": 15.696
-          },
-          "wzor": {
-            "src": "audio/g5-p18-en.mp3",
-            "sek": 6.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Więcej wsparcia psychicznego dla mężczyzn, edukacja medialna i ostrzejsza moderacja treści.",
-            "en": "More mental health support for men, digital media education, and stricter content moderation."
-          }
-        }
-      ]
-    },
-    {
-      "n": 6,
-      "tryb": "pl2en",
-      "pary": [
-        {
-          "n": 1,
-          "cue": {
-            "src": "audio/g6-p01-cue.mp3",
-            "sek": 6.216
-          },
-          "wzor": {
-            "src": "audio/g6-p01-en.mp3",
-            "sek": 3.72
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To trudna granica do wyznaczenia.",
-            "en": "It's a hard line to draw."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g6-p02-cue.mp3",
-            "sek": 7.464
-          },
-          "wzor": {
-            "src": "audio/g6-p02-en.mp3",
-            "sek": 3.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Wolność słowa to podstawowe prawo.",
-            "en": "Freedom of speech is a basic right."
-          }
-        },
-        {
-          "n": 3,
-          "cue": {
-            "src": "audio/g6-p03-cue.mp3",
-            "sek": 7.896
-          },
-          "wzor": {
-            "src": "audio/g6-p03-en.mp3",
-            "sek": 4.056
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Rządom trudno regulować te fora.",
-            "en": "It's hard for governments to regulate these forums."
-          }
-        },
-        {
-          "n": 4,
-          "cue": {
-            "src": "audio/g6-p04-cue.mp3",
-            "sek": 6.096
-          },
-          "wzor": {
-            "src": "audio/g6-p04-en.mp3",
-            "sek": 3.36
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Gdzie postawić granicę?",
-            "en": "Where do you draw the line?"
-          }
-        },
-        {
-          "n": 5,
-          "cue": {
-            "src": "audio/g6-p05-cue.mp3",
-            "sek": 8.448
-          },
-          "wzor": {
-            "src": "audio/g6-p05-en.mp3",
-            "sek": 4.776
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Traktowanie tego jak terroryzmu zmienia zasady gry.",
-            "en": "Treating this as terrorism changes the rules."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g6-p06-cue.mp3",
-            "sek": 8.16
-          },
-          "wzor": {
-            "src": "audio/g6-p06-en.mp3",
-            "sek": 4.176
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Platformy powinny być pociągane do odpowiedzialności prawnej.",
-            "en": "Platforms should be held legally responsible."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g6-p07-cue.mp3",
-            "sek": 9.408
-          },
-          "wzor": {
-            "src": "audio/g6-p07-en.mp3",
-            "sek": 4.656
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Obarczanie ich odpowiedzialnością za wszystko idzie za daleko.",
-            "en": "Making them liable for everything goes too far."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g6-p08-cue.mp3",
-            "sek": 8.856
-          },
-          "wzor": {
-            "src": "audio/g6-p08-en.mp3",
-            "sek": 4.056
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Moderacja treści działa tylko do pewnego stopnia.",
-            "en": "Content moderation only works up to a point."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g6-p09-cue.mp3",
-            "sek": 6.264
-          },
-          "wzor": {
-            "src": "audio/g6-p09-en.mp3",
-            "sek": 3.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Banowanie forów spycha je do podziemia.",
-            "en": "Banning forums drives them underground."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g6-p10-cue.mp3",
-            "sek": 8.112
-          },
-          "wzor": {
-            "src": "audio/g6-p10-en.mp3",
-            "sek": 4.464
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Wtedy nikt ich już nie monitoruje.",
-            "en": "Then nobody is monitoring them anymore."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g6-p11-cue.mp3",
-            "sek": 8.496
-          },
-          "wzor": {
-            "src": "audio/g6-p11-en.mp3",
-            "sek": 4.104
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Szkoły powinny uczyć kompetencji medialnych w sieci.",
-            "en": "Schools should teach digital media literacy."
-          }
-        },
-        {
-          "n": 12,
-          "cue": {
-            "src": "audio/g6-p12-cue.mp3",
-            "sek": 10.464
-          },
-          "wzor": {
-            "src": "audio/g6-p12-en.mp3",
-            "sek": 4.704
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Rodzina i przyjaciele mogą wyłapać sygnały ostrzegawcze.",
-            "en": "Friends and family members can spot the warning signs."
-          }
-        },
-        {
-          "n": 13,
-          "cue": {
-            "src": "audio/g6-p13-cue.mp3",
-            "sek": 9.168
-          },
-          "wzor": {
-            "src": "audio/g6-p13-en.mp3",
-            "sek": 4.368
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Nagła zmiana języka to sygnał ostrzegawczy.",
-            "en": "A sudden change in language is a warning sign."
-          }
-        },
-        {
-          "n": 14,
-          "cue": {
-            "src": "audio/g6-p14-cue.mp3",
-            "sek": 7.896
-          },
-          "wzor": {
-            "src": "audio/g6-p14-en.mp3",
-            "sek": 4.272
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Prawdziwym problemem jest izolacja mężczyzn.",
-            "en": "The real problem is male isolation."
-          }
-        },
-        {
-          "n": 15,
-          "cue": {
-            "src": "audio/g6-p15-cue.mp3",
-            "sek": 9.36
-          },
-          "wzor": {
-            "src": "audio/g6-p15-en.mp3",
-            "sek": 4.416
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Trzeba do nich dotrzeć, zanim dotrą do nich fora.",
-            "en": "We have to reach them before the forums do."
-          }
-        },
-        {
-          "n": 16,
-          "cue": {
-            "src": "audio/g6-p16-cue.mp3",
-            "sek": 8.808
-          },
-          "wzor": {
-            "src": "audio/g6-p16-en.mp3",
-            "sek": 4.416
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Powiedziałbym, że sama moderacja niczego nie rozwiąże.",
-            "en": "I'd say moderation alone won't solve anything."
-          }
-        },
-        {
-          "n": 17,
-          "cue": {
-            "src": "audio/g6-p17-cue.mp3",
-            "sek": 13.512
-          },
-          "wzor": {
-            "src": "audio/g6-p17-en.mp3",
-            "sek": 4.872
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Chodzi mi o to, że trzeba pogodzić wolność słowa z bezpieczeństwem.",
-            "en": "What I mean is, you have to balance freedom of speech with safety."
-          }
-        },
-        {
-          "n": 18,
-          "cue": {
-            "src": "audio/g6-p18-cue.mp3",
-            "sek": 12.36
-          },
-          "wzor": {
-            "src": "audio/g6-p18-en.mp3",
-            "sek": 5.76
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Można pociągnąć platformy do odpowiedzialności, ale granicę trudno wyznaczyć.",
-            "en": "You can hold platforms responsible, but the line is hard to draw."
-          }
-        }
-      ]
-    },
-    {
-      "n": 7,
-      "tryb": "pl2en",
-      "pary": [
-        {
-          "n": 1,
-          "cue": {
-            "src": "audio/g7-p01-cue.mp3",
-            "sek": 4.752
-          },
-          "wzor": {
-            "src": "audio/g7-p01-en.mp3",
-            "sek": 2.976
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To termin parasolowy.",
-            "en": "It's an umbrella term."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g7-p02-cue.mp3",
-            "sek": 4.704
-          },
-          "wzor": {
-            "src": "audio/g7-p02-en.mp3",
-            "sek": 2.808
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Jest pozytywna strona.",
-            "en": "There's a positive side."
-          }
-        },
-        {
-          "n": 3,
-          "cue": {
-            "src": "audio/g7-p03-cue.mp3",
-            "sek": 6.648
-          },
-          "wzor": {
-            "src": "audio/g7-p03-en.mp3",
-            "sek": 3.768
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Jest też ciemniejszy zakątek.",
-            "en": "There's also a darker corner."
-          }
-        },
-        {
-          "n": 4,
-          "cue": {
-            "src": "audio/g7-p04-cue.mp3",
-            "sek": 5.304
-          },
-          "wzor": {
-            "src": "audio/g7-p04-en.mp3",
-            "sek": 3.576
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To tworzy sprzężenie zwrotne.",
-            "en": "It creates a feedback loop."
-          }
-        },
-        {
-          "n": 5,
-          "cue": {
-            "src": "audio/g7-p05-cue.mp3",
-            "sek": 11.808
-          },
-          "wzor": {
-            "src": "audio/g7-p05-en.mp3",
-            "sek": 5.808
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Odizolowane środowisko tworzy zniekształcony obraz rzeczywistości.",
-            "en": "An isolated environment creates a distorted view of reality."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g7-p06-cue.mp3",
-            "sek": 9.408
-          },
-          "wzor": {
-            "src": "audio/g7-p06-en.mp3",
-            "sek": 3.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Uważają, że system jest uprzedzony wobec mężczyzn.",
-            "en": "They think the system is biased against men."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g7-p07-cue.mp3",
-            "sek": 8.952
-          },
-          "wzor": {
-            "src": "audio/g7-p07-en.mp3",
-            "sek": 4.656
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Zaczynają być rozgoryczeni na cały świat.",
-            "en": "They become resentful of the whole world."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g7-p08-cue.mp3",
-            "sek": 5.904
-          },
-          "wzor": {
-            "src": "audio/g7-p08-en.mp3",
-            "sek": 3.912
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Czuje gorycz wobec świata.",
-            "en": "He feels bitterness toward the world."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g7-p09-cue.mp3",
-            "sek": 6.696
-          },
-          "wzor": {
-            "src": "audio/g7-p09-en.mp3",
-            "sek": 4.416
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Obwinia kobiety o swoją samotność.",
-            "en": "He blames women for his loneliness."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g7-p10-cue.mp3",
-            "sek": 6.264
-          },
-          "wzor": {
-            "src": "audio/g7-p10-en.mp3",
-            "sek": 4.008
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Mizoginia to uprzedzenie wobec kobiet.",
-            "en": "Misogyny is prejudice against women."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g7-p11-cue.mp3",
-            "sek": 9.168
-          },
-          "wzor": {
-            "src": "audio/g7-p11-en.mp3",
-            "sek": 4.92
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Algorytm wpycha użytkowników w skrajne treści.",
-            "en": "The algorithm funnels users into extreme content."
-          }
-        },
-        {
-          "n": 12,
-          "cue": {
-            "src": "audio/g7-p12-cue.mp3",
-            "sek": 6
-          },
-          "wzor": {
-            "src": "audio/g7-p12-en.mp3",
-            "sek": 3.624
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To ścieżka wciągająca w radykalizację.",
-            "en": "It's a pipeline to radicalization."
-          }
-        },
-        {
-          "n": 13,
-          "cue": {
-            "src": "audio/g7-p13-cue.mp3",
-            "sek": 7.656
-          },
-          "wzor": {
-            "src": "audio/g7-p13-en.mp3",
-            "sek": 4.224
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Czują głęboką wrogość wobec społeczeństwa.",
-            "en": "They feel deep hostility toward society."
-          }
-        },
-        {
-          "n": 14,
-          "cue": {
-            "src": "audio/g7-p14-cue.mp3",
-            "sek": 12.504
-          },
-          "wzor": {
-            "src": "audio/g7-p14-en.mp3",
-            "sek": 4.92
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Platformy powinny odpowiadać za ataki planowane na ich stronach.",
-            "en": "Platforms should be held responsible for attacks planned on their sites."
-          }
-        },
-        {
-          "n": 15,
-          "cue": {
-            "src": "audio/g7-p15-cue.mp3",
-            "sek": 7.608
-          },
-          "wzor": {
-            "src": "audio/g7-p15-en.mp3",
-            "sek": 4.272
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Zgadzam się z autorem w jednej sprawie.",
-            "en": "I agree with the author on one thing."
-          }
-        },
-        {
-          "n": 16,
-          "cue": {
-            "src": "audio/g7-p16-cue.mp3",
-            "sek": 13.104
-          },
-          "wzor": {
-            "src": "audio/g7-p16-en.mp3",
-            "sek": 4.968
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Komora echa to grupa, w której wszyscy już się z tobą zgadzają.",
-            "en": "An echo chamber is a group where everyone already agrees with you."
-          }
-        },
-        {
-          "n": 17,
-          "cue": {
-            "src": "audio/g7-p17-cue.mp3",
-            "sek": 7.2
-          },
-          "wzor": {
-            "src": "audio/g7-p17-en.mp3",
-            "sek": 4.368
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Ci ludzie wzmacniają nawzajem swoje przekonania.",
-            "en": "These people reinforce each other's beliefs."
-          }
-        },
-        {
-          "n": 18,
-          "cue": {
-            "src": "audio/g7-p18-cue.mp3",
-            "sek": 15.024
-          },
-          "wzor": {
-            "src": "audio/g7-p18-en.mp3",
-            "sek": 7.272
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Według artykułu odrzucony młody mężczyzna zamienia żal we wrogość wobec wszystkich kobiet.",
-            "en": "According to the article, a rejected young man turns his resentment into hostility toward all women."
-          }
-        }
-      ]
-    },
-    {
-      "n": 8,
-      "tryb": "pl2en",
-      "pary": [
-        {
-          "n": 1,
-          "cue": {
-            "src": "audio/g8-p01-cue.mp3",
-            "sek": 7.704
-          },
-          "wzor": {
-            "src": "audio/g8-p01-en.mp3",
-            "sek": 4.008
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Zacznę od tego, co mówi tekst.",
-            "en": "Let me start with what the text says."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g8-p02-cue.mp3",
-            "sek": 7.968
-          },
-          "wzor": {
-            "src": "audio/g8-p02-en.mp3",
-            "sek": 4.32
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Według artykułu to zjawisko rośnie.",
-            "en": "According to the article, this phenomenon is growing."
-          }
-        },
-        {
-          "n": 3,
-          "cue": {
-            "src": "audio/g8-p03-cue.mp3",
-            "sek": 10.2
-          },
-          "wzor": {
-            "src": "audio/g8-p03-en.mp3",
-            "sek": 5.016
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Tekst twierdzi, że algorytmy przyspieszają ten kryzys.",
-            "en": "The text argues that algorithms accelerate this crisis."
-          }
-        },
-        {
-          "n": 4,
-          "cue": {
-            "src": "audio/g8-p04-cue.mp3",
-            "sek": 9.648
-          },
-          "wzor": {
-            "src": "audio/g8-p04-en.mp3",
-            "sek": 4.776
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Według tekstu tworzy to sprzężenie zwrotne.",
-            "en": "According to the text, this creates a feedback loop."
-          }
-        },
-        {
-          "n": 5,
-          "cue": {
-            "src": "audio/g8-p05-cue.mp3",
-            "sek": 9.408
-          },
-          "wzor": {
-            "src": "audio/g8-p05-en.mp3",
-            "sek": 4.32
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Autor opisuje ich jako odizolowanych i rozgoryczonych.",
-            "en": "The author describes them as isolated and resentful."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g8-p06-cue.mp3",
-            "sek": 9.048
-          },
-          "wzor": {
-            "src": "audio/g8-p06-en.mp3",
-            "sek": 4.416
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Z tego, co rozumiem, to dwie różne grupy.",
-            "en": "From what I understand, those are two different groups."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g8-p07-cue.mp3",
-            "sek": 8.616
-          },
-          "wzor": {
-            "src": "audio/g8-p07-en.mp3",
-            "sek": 3.624
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Żeby było jasne, ja ich nie bronię.",
-            "en": "To be clear, I'm not defending them."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g8-p08-cue.mp3",
-            "sek": 7.104
-          },
-          "wzor": {
-            "src": "audio/g8-p08-en.mp3",
-            "sek": 3.672
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Opisuję tylko, w co oni wierzą.",
-            "en": "I'm just describing what they believe."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g8-p09-cue.mp3",
-            "sek": 4.968
-          },
-          "wzor": {
-            "src": "audio/g8-p09-en.mp3",
-            "sek": 3.456
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To są skrajne przypadki.",
-            "en": "These are extreme cases."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g8-p10-cue.mp3",
-            "sek": 5.256
-          },
-          "wzor": {
-            "src": "audio/g8-p10-en.mp3",
-            "sek": 3.216
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "One nie reprezentują wszystkich.",
-            "en": "They don't represent everyone."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g8-p11-cue.mp3",
-            "sek": 10.416
-          },
-          "wzor": {
-            "src": "audio/g8-p11-en.mp3",
-            "sek": 5.016
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Warto zaznaczyć, że artykuł sam to mówi.",
-            "en": "It's worth pointing out that the article makes that point itself."
-          }
-        },
-        {
-          "n": 12,
-          "cue": {
-            "src": "audio/g8-p12-cue.mp3",
-            "sek": 10.968
-          },
-          "wzor": {
-            "src": "audio/g8-p12-en.mp3",
-            "sek": 5.376
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "To coś w stylu bańki, w której słyszysz tylko siebie.",
-            "en": "It's sort of like a bubble where you only hear yourself."
-          }
-        },
-        {
-          "n": 13,
-          "cue": {
-            "src": "audio/g8-p13-cue.mp3",
-            "sek": 9.408
-          },
-          "wzor": {
-            "src": "audio/g8-p13-en.mp3",
-            "sek": 4.608
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Wyleciało mi słowo — chodzi mi o żargon.",
-            "en": "I'm blanking on the word — I mean the jargon."
-          }
-        },
-        {
-          "n": 14,
-          "cue": {
-            "src": "audio/g8-p14-cue.mp3",
-            "sek": 7.968
-          },
-          "wzor": {
-            "src": "audio/g8-p14-en.mp3",
-            "sek": 3.864
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Powinienem był wspomnieć o algorytmach wcześniej.",
-            "en": "I should have mentioned the algorithms earlier."
-          }
-        },
-        {
-          "n": 15,
-          "cue": {
-            "src": "audio/g8-p15-cue.mp3",
-            "sek": 10.104
-          },
-          "wzor": {
-            "src": "audio/g8-p15-en.mp3",
-            "sek": 3.504
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Najbardziej zaskoczyło mnie to, jacy oni są młodzi.",
-            "en": "What surprised me most is how young they are."
-          }
-        },
-        {
-          "n": 16,
-          "cue": {
-            "src": "audio/g8-p16-cue.mp3",
-            "sek": 9.696
-          },
-          "wzor": {
-            "src": "audio/g8-p16-en.mp3",
-            "sek": 4.608
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Powiedziałbym, że tekst trochę upraszcza sprawę.",
-            "en": "I'd say the text simplifies things a little."
-          }
-        },
-        {
-          "n": 17,
-          "cue": {
-            "src": "audio/g8-p17-cue.mp3",
-            "sek": 11.4
-          },
-          "wzor": {
-            "src": "audio/g8-p17-en.mp3",
-            "sek": 5.064
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Powiedziałbym, że to daje im zniekształcony obraz świata.",
-            "en": "I'd say that gives them a distorted view of the world."
-          }
-        },
-        {
-          "n": 18,
-          "cue": {
-            "src": "audio/g8-p18-cue.mp3",
-            "sek": 13.584
-          },
-          "wzor": {
-            "src": "audio/g8-p18-en.mp3",
-            "sek": 6.456
-          },
-          "tekst": {
-            "pyt": null,
-            "pl": "Chodzi mi o to, że nie każdy incel jest niebezpieczny — artykuł też to mówi.",
-            "en": "What I mean is, not every incel is dangerous, and the article says that too."
-          }
-        }
-      ]
-    },
-    {
-      "n": 9,
-      "tryb": "scenka",
-      "pary": [
-        {
-          "n": 1,
-          "cue": {
-            "src": "audio/g9-p01-cue.mp3",
-            "sek": 30.936
-          },
-          "wzor": {
-            "src": "audio/g9-p01-en.mp3",
-            "sek": 10.368
-          },
-          "tekst": {
-            "pyt": "What is the main difference between general \"Red Pill\" self-help communities and the \"Incel\" subculture described in the text?",
-            "pl": "Red Pill = praca nad sobą (ciężary, kariera); incele odpuszczają i obwiniają.",
-            "en": "Red Pill communities focus on self-improvement, like weightlifting and career ambition. Incels give up on that and blame women and society instead."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g9-p02-cue.mp3",
-            "sek": 28.92
-          },
-          "wzor": {
-            "src": "audio/g9-p02-en.mp3",
-            "sek": 11.208
-          },
-          "tekst": {
-            "pyt": "How does the \"Black Pill\" ideology lead users into psychological defeatism and hopelessness?",
-            "pl": "Wygląd i genetyka decydują o wartości, więc starania nie mają sensu — pułapka.",
-            "en": "It argues that looks and genetics determine your worth, so self-improvement is pointless. Once you believe that, you feel fundamentally trapped."
-          }
-        },
-        {
-          "n": 3,
-          "cue": {
-            "src": "audio/g9-p03-cue.mp3",
-            "sek": 30.192
-          },
-          "wzor": {
-            "src": "audio/g9-p03-en.mp3",
-            "sek": 11.664
-          },
-          "tekst": {
-            "pyt": "What pseudo-scientific hierarchy and internal jargon do online incel forums use to categorize society?",
-            "pl": "Dwa człony: archetypy Chad/Stacy ORAZ własny żargon odczłowieczający obcych.",
-            "en": "They categorize people into rigid archetypes — \"Chads\" for hyper-attractive men and \"Stacys\" for unattainable women. They also build their own jargon that dehumanizes outsiders."
-          }
-        },
-        {
-          "n": 4,
-          "cue": {
-            "src": "audio/g9-p04-cue.mp3",
-            "sek": 32.88
-          },
-          "wzor": {
-            "src": "audio/g9-p04-en.mp3",
-            "sek": 13.608
-          },
-          "tekst": {
-            "pyt": "What real-world violent events mentioned in the article led law enforcement agencies to classify extreme incel ideology as a form of terrorism?",
-            "pl": "Isla Vista 2014 i Toronto 2018 (jedenaście ofiar); domknij klauzulą o klasyfikacji.",
-            "en": "A shooting in Isla Vista in 2014 and a van attack in Toronto in 2018 that killed eleven people. Since then, law enforcement agencies classify this as non-traditional domestic terrorism."
-          }
-        },
-        {
-          "n": 5,
-          "cue": {
-            "src": "audio/g9-p05-cue.mp3",
-            "sek": 29.976
-          },
-          "wzor": {
-            "src": "audio/g9-p05-en.mp3",
-            "sek": 14.376
-          },
-          "tekst": {
-            "pyt": "In what ways do social media recommendation algorithms accidentally funnel users searching for basic self-help into extremist content?",
-            "pl": "Silnik nagradza oglądalność, więc wygrywają emocje; potem sprzężenie zwrotne.",
-            "en": "Recommendation engines prioritize whatever keeps people watching, so emotionally provocative videos win. That creates a feedback loop where someone looking for fitness advice gets funneled into increasingly radical content."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g9-p06-cue.mp3",
-            "sek": 29.544
-          },
-          "wzor": {
-            "src": "audio/g9-p06-en.mp3",
-            "sek": 9.216
-          },
-          "tekst": {
-            "pyt": "Why is it difficult for governments to regulate toxic online forums while simultaneously protecting freedom of speech?",
-            "pl": "Granica między brzydką opinią a groźbą; bany spychają fora do podziemia.",
-            "en": "The line between an ugly opinion and a real threat is hard to draw. And banning forums often just drives them underground, where nobody is monitoring them."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g9-p07-cue.mp3",
-            "sek": 26.88
-          },
-          "wzor": {
-            "src": "audio/g9-p07-en.mp3",
-            "sek": 9.72
-          },
-          "tekst": {
-            "pyt": "Which of those two groups do you think is more dangerous, and why?",
-            "pl": "Incele — bardziej nihilistyczni, odbierają nadzieję; zaznacz, że to Twoje odczytanie.",
-            "en": "I'd say the incel side, because it's more nihilistic and takes away all hope of changing your situation. But that's just my reading of the article."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g9-p08-cue.mp3",
-            "sek": 24.984
-          },
-          "wzor": {
-            "src": "audio/g9-p08-en.mp3",
-            "sek": 9.36
-          },
-          "tekst": {
-            "pyt": "Do you think the article is fair to the men it describes?",
-            "pl": "W większości tak, ale opiera się na skrajnych przypadkach — i zdystansuj się.",
-            "en": "Mostly, yes, but it leans on extreme cases. To be clear, I'm not defending them — I just think most of them never become violent."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g9-p09-cue.mp3",
-            "sek": 25.272
-          },
-          "wzor": {
-            "src": "audio/g9-p09-en.mp3",
-            "sek": 11.16
-          },
-          "tekst": {
-            "pyt": "Can you explain what an echo chamber is in your own words?",
-            "pl": "Nie miejsce, tylko środowisko społeczne; wzmacnia to, w co już wierzysz.",
-            "en": "It's a social environment, not a place — you only hear opinions that match your own. Over time, it just reinforces whatever you already believe."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g9-p10-cue.mp3",
-            "sek": 26.544
-          },
-          "wzor": {
-            "src": "audio/g9-p10-en.mp3",
-            "sek": 9.312
-          },
-          "tekst": {
-            "pyt": "Why do you think young men end up in these communities in the first place?",
-            "pl": "Samotność i brak wsparcia; algorytm podaje im gotową wspólnotę.",
-            "en": "Loneliness, mostly, and very little support when they struggle. The algorithm then hands them a community that explains their pain for them."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g9-p11-cue.mp3",
-            "sek": 22.32
-          },
-          "wzor": {
-            "src": "audio/g9-p11-en.mp3",
-            "sek": 7.104
-          },
-          "tekst": {
-            "pyt": "Why would anyone believe that self-improvement is pointless?",
-            "pl": "Bo to zdejmuje presję — jeśli nic nie zależy od ciebie, porażka nie jest twoją winą.",
-            "en": "Because it takes the pressure off. If everything is pointless, then failing isn't your fault anymore."
-          }
-        },
-        {
-          "n": 12,
-          "cue": {
-            "src": "audio/g9-p12-cue.mp3",
-            "sek": 26.424
-          },
-          "wzor": {
-            "src": "audio/g9-p12-en.mp3",
-            "sek": 9.264
-          },
-          "tekst": {
-            "pyt": "The text says these men feel trapped. Do you think that's true?",
-            "pl": "Pułapką jest przekonanie, nie geny — u nich to hierarchia „o wszystkim decyduje\".",
-            "en": "They're trapped by what they believe, not by their genes. In their view, a fixed hierarchy determines everything — and that's what keeps them stuck."
-          }
-        },
-        {
-          "n": 13,
-          "cue": {
-            "src": "audio/g9-p13-cue.mp3",
-            "sek": 26.328
-          },
-          "wzor": {
-            "src": "audio/g9-p13-en.mp3",
-            "sek": 10.104
-          },
-          "tekst": {
-            "pyt": "Why does the article call some of these men martyrs?",
-            "pl": "Nie artykuł, tylko fora; to one czczą zamachowców; gorycz robi się groźna.",
-            "en": "It doesn't — the forums do. According to the article, those spaces celebrate past attackers as martyrs, and that's how bitterness turns into something dangerous."
-          }
-        },
-        {
-          "n": 14,
-          "cue": {
-            "src": "audio/g9-p14-cue.mp3",
-            "sek": 27.096
-          },
-          "wzor": {
-            "src": "audio/g9-p14-en.mp3",
-            "sek": 9.168
-          },
-          "tekst": {
-            "pyt": "Why is the word \"martyr\" so dangerous in this context?",
-            "pl": "Zabójca staje się wzorem do naśladowania; wtedy przestaje to być samo gadanie.",
-            "en": "Calling a killer a martyr turns a crime into an example to follow. That's when an online echo chamber stops being just talk."
-          }
-        }
-      ]
-    },
-    {
-      "n": 10,
-      "tryb": "scenka",
-      "pary": [
-        {
-          "n": 1,
-          "cue": {
-            "src": "audio/g10-p01-cue.mp3",
-            "sek": 31.656
-          },
-          "wzor": {
-            "src": "audio/g10-p01-en.mp3",
-            "sek": 9.504
-          },
-          "tekst": {
-            "pyt": "Do you agree or disagree: \"Tech platforms and social media companies should be held legally responsible when violent attacks are planned on their platforms\"? Why or why not?",
-            "pl": "Częściowo tak: jeśli ostrzeżeni i nic nie zrobili — tak; za wszystko — nie.",
-            "en": "I'd say partly. If a company is warned about a threat and does nothing, it should be held responsible, but you can't hold it liable for everything users post."
-          }
-        },
-        {
-          "n": 2,
-          "cue": {
-            "src": "audio/g10-p02-cue.mp3",
-            "sek": 29.52
-          },
-          "wzor": {
-            "src": "audio/g10-p02-en.mp3",
-            "sek": 8.808
-          },
-          "tekst": {
-            "pyt": "How can societies better address issues of male isolation and mental health before young people fall into toxic online communities?",
-            "pl": "Dotrzeć wcześniej: szkoła, sport, tania terapia; rozmowa ma być normalna.",
-            "en": "Reach them before the forums do, through schools, sports, and affordable therapy. It also has to become normal for men to talk about this."
-          }
-        },
-        {
-          "n": 3,
-          "cue": {
-            "src": "audio/g10-p03-cue.mp3",
-            "sek": 29.4
-          },
-          "wzor": {
-            "src": "audio/g10-p03-en.mp3",
-            "sek": 10.32
-          },
-          "tekst": {
-            "pyt": "What steps should be taken in schools or universities to educate students about digital media literacy and avoiding online radicalization?",
-            "pl": "Pokaż, jak działa algorytm, na prawdziwych przykładach — wtedy traci moc.",
-            "en": "Teach students how recommendation algorithms actually work, using real examples. If you can see why a video was pushed to you, it loses a lot of its power."
-          }
-        },
-        {
-          "n": 4,
-          "cue": {
-            "src": "audio/g10-p04-cue.mp3",
-            "sek": 30.6
-          },
-          "wzor": {
-            "src": "audio/g10-p04-en.mp3",
-            "sek": 9.624
-          },
-          "tekst": {
-            "pyt": "Is online content moderation effective, or does banning radical forums simply push extremist groups into secret, unmonitored parts of the internet?",
-            "pl": "Obie rzeczy naraz: tnie zasięg, ale najtwardszych spycha do podziemia.",
-            "en": "Both, honestly. Moderation cuts the reach of these groups, but it also drives the hardcore ones underground, where nobody can monitor them."
-          }
-        },
-        {
-          "n": 5,
-          "cue": {
-            "src": "audio/g10-p05-cue.mp3",
-            "sek": 28.728
-          },
-          "wzor": {
-            "src": "audio/g10-p05-en.mp3",
-            "sek": 11.472
-          },
-          "tekst": {
-            "pyt": "How can friends and family members recognize the warning signs that someone they know is becoming radicalized online?",
-            "pl": "Wycofanie, całe dnie online, nowy żargon; gniew wymierzony w całą grupę ludzi.",
-            "en": "They pull away from friends, spend all their time online, and start using jargon nobody else uses. The clearest sign is anger aimed at a whole group of people."
-          }
-        },
-        {
-          "n": 6,
-          "cue": {
-            "src": "audio/g10-p06-cue.mp3",
-            "sek": 25.392
-          },
-          "wzor": {
-            "src": "audio/g10-p06-en.mp3",
-            "sek": 9.72
-          },
-          "tekst": {
-            "pyt": "Where exactly would you draw the line on free speech?",
-            "pl": "Groźby i nękanie konkretnych osób — tak; brzydka opinia — nie.",
-            "en": "I'd draw it at direct threats and harassment of real people. An ugly opinion is legal, but telling people to go after someone isn't."
-          }
-        },
-        {
-          "n": 7,
-          "cue": {
-            "src": "audio/g10-p07-cue.mp3",
-            "sek": 21.624
-          },
-          "wzor": {
-            "src": "audio/g10-p07-en.mp3",
-            "sek": 8.064
-          },
-          "tekst": {
-            "pyt": "Isn't teaching media literacy just too slow to help?",
-            "pl": "Przyznaj, że wolne, ale jako jedyne zostaje na dłużej.",
-            "en": "It is slow, but it's the only part that lasts. Moderation treats the symptom; education treats the cause."
-          }
-        },
-        {
-          "n": 8,
-          "cue": {
-            "src": "audio/g10-p08-cue.mp3",
-            "sek": 25.296
-          },
-          "wzor": {
-            "src": "audio/g10-p08-en.mp3",
-            "sek": 9.312
-          },
-          "tekst": {
-            "pyt": "If someone close to you started talking like that, what would you actually do?",
-            "pl": "Zostać w kontakcie i pytać zamiast się kłócić.",
-            "en": "I'd stay in touch and keep asking questions instead of arguing. What these guys need most is someone who doesn't write them off."
-          }
-        },
-        {
-          "n": 9,
-          "cue": {
-            "src": "audio/g10-p09-cue.mp3",
-            "sek": 23.28
-          },
-          "wzor": {
-            "src": "audio/g10-p09-en.mp3",
-            "sek": 6.768
-          },
-          "tekst": {
-            "pyt": "Do you think this problem is as big in Poland as in the US?",
-            "pl": "Mniejsze, ale te same filmy docierają — algorytm nie zna granic.",
-            "en": "It's smaller here, but the same videos reach us. The algorithm doesn't really care which country you're in."
-          }
-        },
-        {
-          "n": 10,
-          "cue": {
-            "src": "audio/g10-p10-cue.mp3",
-            "sek": 25.728
-          },
-          "wzor": {
-            "src": "audio/g10-p10-en.mp3",
-            "sek": 10.176
-          },
-          "tekst": {
-            "pyt": "Is there anything in the article you'd push back on?",
-            "pl": "Rozwój osobisty jako „zdrowa strona\" — te same siłownie karmią obie strony.",
-            "en": "It treats self-improvement as the healthy alternative, but the same gyms and podcasts feed the other side too. So I wouldn't draw that line so cleanly."
-          }
-        },
-        {
-          "n": 11,
-          "cue": {
-            "src": "audio/g10-p11-cue.mp3",
-            "sek": 26.64
-          },
-          "wzor": {
-            "src": "audio/g10-p11-en.mp3",
-            "sek": 8.856
-          },
-          "tekst": {
-            "pyt": "What would you say to a young man who already believes all of that?",
-            "pl": "Najpierw samotność na poważnie, nie spór o hierarchię; o goryczy łatwiej rozmawiać.",
-            "en": "I'd start by taking his loneliness seriously instead of arguing about the hierarchy. Bitterness is easier to talk about than ideology."
-          }
-        },
-        {
-          "n": 12,
-          "cue": {
-            "src": "audio/g10-p12-cue.mp3",
-            "sek": 24.336
-          },
-          "wzor": {
-            "src": "audio/g10-p12-en.mp3",
-            "sek": 8.52
-          },
-          "tekst": {
-            "pyt": "If you had to sum up the whole article in one sentence, what would you say?",
-            "pl": "Cytat z ramki: wyizolowana samotność zamienia się w zbiorową nienawiść.",
-            "en": "Online echo chambers can turn isolated personal loneliness into collective hatred, and the algorithms make that path shorter."
+            "pl": "Tekst twierdzi, że sprzężenie zwrotne wzmacnia urazę i gorycz, co prowadzi do eskalacji.",
+            "en": "The text argues that the feedback loop reinforces resentment and bitterness, leading to escalation."
           }
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T15:34:56.935Z",
+  "generatedAt": "2026-08-10T14:50:47.197Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -151,22 +151,22 @@
       "title": "K4 · Manosfera: opowiedz cudzy pogląd / K4 · The Manosphere: Reporting Someone Else's View",
       "titlePl": "K4 · Manosfera: opowiedz cudzy pogląd",
       "titleEn": "K4 · The Manosphere: Reporting Someone Else's View",
-      "description": "Arkusz o manosferze i radykalizacji online: streszczenie akapitów, słownictwo i język dystansu.",
+      "description": "Skrócone do 5 grup — targety z największych błędów transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy).",
       "pdf": "K/04-k4-manosfera/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/04-k4-manosfera/audio.json",
-      "audioVersion": 1786289672813,
+      "audioVersion": 1786373433766,
       "hasAudio": true,
       "groups": [
         {
           "n": 1,
           "label": "Grupa 1",
-          "parCount": 15
+          "parCount": 14
         },
         {
           "n": 2,
           "label": "Grupa 2",
-          "parCount": 17
+          "parCount": 18
         },
         {
           "n": 3,
@@ -176,37 +176,12 @@
         {
           "n": 4,
           "label": "Grupa 4",
-          "parCount": 18
+          "parCount": 15
         },
         {
           "n": 5,
           "label": "Grupa 5",
-          "parCount": 18
-        },
-        {
-          "n": 6,
-          "label": "Grupa 6",
-          "parCount": 18
-        },
-        {
-          "n": 7,
-          "label": "Grupa 7",
-          "parCount": 18
-        },
-        {
-          "n": 8,
-          "label": "Grupa 8",
-          "parCount": 18
-        },
-        {
-          "n": 9,
-          "label": "Grupa 9",
           "parCount": 14
-        },
-        {
-          "n": 10,
-          "label": "Grupa 10",
-          "parCount": 12
         }
       ]
     }
