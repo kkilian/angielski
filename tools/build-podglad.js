@@ -567,6 +567,10 @@ td.en:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 55%,transp
 #review-empty{color:var(--muted);font-size:14px;font-style:italic;padding:10px 2px}
 body.review-mode #sidenav,body.review-mode .legend,body.review-mode .intro,body.review-mode .home,body.review-mode .mk-view{display:none}
 body.review-mode .review{display:block}
+/* ⭐ GWIAZDKI ONLY — filtr tylko dla Kursu K; Kurs M zostaje nietknięty */
+body.stars-only .course-k tr[data-k]:not(.starred){display:none}
+body.stars-only .course-k section.group:not(:has(tr.starred)){display:none}
+body.stars-only .course-k article.dzial:not(:has(tr.starred)){display:none}
 .extra{margin-top:6px;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:4px 16px}
 .extra summary{cursor:pointer;font-weight:600;padding:10px 0;font-size:14px}
 .extra h4{font-size:14px;margin:14px 0 5px}
@@ -595,6 +599,7 @@ body.review-mode .review{display:block}
     <h1 id="topbar-title">Angielski — podgląd</h1>
     <button id="toggle">🙈 Ukryj angielski</button>
     <button id="review-toggle">⭐ Powtórki <span id="review-course">M</span> (<span id="review-toggle-count">0</span>)</button>
+    <button id="stars-only" hidden title="Pokaż i odtwarzaj wyłącznie gwiazdkowane pary">⭐ GWIAZDKI ONLY</button>
     <button id="export-json" title="Pobierz gwiazdkowane zdania jako JSON do Anki">⬇ Eksport M do Anki</button>
   </div>
   <p class="intro">📋 Wybierz Kurs M albo niezależny Kurs K. „🙈 Ukryj angielski" rozmywa kolumnę EN; kliknij zdanie lub użyj Enter, żeby je odsłonić i powiedzieć na głos. ☆ zapisuje zdanie w powtórkach aktywnego kursu. Eksport pobiera tylko nowe ⭐, a po eksporcie oznacza je jako ✅. Zbiory M i K nigdy się nie mieszają.</p>
@@ -696,6 +701,7 @@ function markStars(){
     const k=rowKey(tr), on=stateFor(course).stars.has(k);
     b.classList.toggle('on',on);
     b.textContent=on?starFace(k,course):'☆';
+    tr.classList.toggle('starred',on);
   });
 }
 function buildReview(){
@@ -727,6 +733,12 @@ document.getElementById('review-toggle').addEventListener('click',()=>{
   const on=body.classList.toggle('review-mode');
   document.getElementById('review-toggle').classList.toggle('on',on);
   if(on){ buildReview(); window.scrollTo(0,0); }
+});
+// ---- ⭐ GWIAZDKI ONLY: filtr + kolejki tylko z gwiazdkowanych par (Kurs K) ----
+// Bez localStorage — tryb celowo znika po odświeżeniu.
+const starsOnlyBtn=document.getElementById('stars-only');
+starsOnlyBtn.addEventListener('click',()=>{
+  starsOnlyBtn.classList.toggle('on', body.classList.toggle('stars-only'));
 });
 // ---- ⬇ Eksport JSON (gwiazdkowane → karty Anki przez skill przejmij-json) ----
 // Bierze tylko NOWE gwiazdki (⭐ bez ✅); po pobraniu pliku oznacza je jako wyeksportowane.
@@ -777,6 +789,7 @@ function setActiveCourse(course){
   document.getElementById('review-course').textContent=label;
   document.getElementById('review-title-course').textContent=label;
   document.getElementById('export-json').textContent='⬇ Eksport '+label+' do Anki';
+  starsOnlyBtn.hidden = course!=='k';
   markStars(); refreshCounts();
   if(body.classList.contains('review-mode')) buildReview();
 }
@@ -821,6 +834,12 @@ function wierszeDo(pb){
   const poj=pb.closest('section.group')||pb.closest('article.dzial')||pb.closest('.mk-view');
   return poj?[...poj.querySelectorAll('tr[data-cue]')]:[];
 }
+// Tryb GWIAZDKI ONLY zwęża KOLEJKĘ, ale nie listę do rozpoznania formatu —
+// inaczej trs.length*2===list.length przestaje pasować i Kurs K spada na
+// ścieżkę formatu 1 (gra wszystko z data-audio, bez podświetlania).
+function tylkoGwiazdki(trs){
+  return body.classList.contains('stars-only') ? trs.filter(tr=>tr.classList.contains('starred')) : trs;
+}
 document.addEventListener('click',e=>{
   const rp=e.target.closest('.row-play');
   if(rp){
@@ -835,7 +854,9 @@ document.addEventListener('click',e=>{
   if(trs.length*2===list.length){
     if(pb===activeBtn && !player.paused){ player.pause(); return; }
     if(pb===activeBtn && player.paused){ player.play().catch(()=>{}); return; }
-    playQueue(trs.flatMap(tr=>[tr.dataset.cue,tr.dataset.enSrc]), pb.dataset.label, pb, trs.flatMap(tr=>[tr,tr]));
+    const grane=tylkoGwiazdki(trs);
+    if(!grane.length) return;
+    playQueue(grane.flatMap(tr=>[tr.dataset.cue,tr.dataset.enSrc]), pb.dataset.label, pb, grane.flatMap(tr=>[tr,tr]));
     return;
   }
   if(!list.length) return;

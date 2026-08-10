@@ -103,3 +103,25 @@ test('dzialy Kursu M zostaja przy jednym pliku na grupe', () => {
   assert.match(html, /data-audio="\[&quot;01-m1d1[^"]*grupa-1\.mp3&quot;\]"/,
     'M nadal ma kolejke plikow grupowych');
 });
+
+test('tryb GWIAZDKI ONLY: przycisk, filtr CSS tylko dla K, kolejka z gwiazdek', () => {
+  const html = buildPreview();
+  // przycisk w topbarze, domyślnie schowany
+  assert.match(html, /<button id="stars-only" hidden[^>]*>⭐ GWIAZDKI ONLY<\/button>/);
+  // filtr CSS — zawężony do Kursu K, żeby M zostało nietknięte
+  assert.ok(html.includes('body.stars-only .course-k tr[data-k]:not(.starred){display:none}'));
+  assert.ok(html.includes('body.stars-only .course-k section.group:not(:has(tr.starred)){display:none}'));
+  assert.ok(html.includes('body.stars-only .course-k article.dzial:not(:has(tr.starred)){display:none}'));
+  assert.ok(!html.includes('body.stars-only tr[data-k]:not(.starred)'), 'filtr nie moze byc globalny');
+  // klasa .starred utrzymywana przy kazdej zmianie gwiazdki
+  assert.ok(html.includes("tr.classList.toggle('starred',on)"));
+  // przycisk widoczny wylacznie w Kursie K
+  assert.ok(html.includes("starsOnlyBtn.hidden = course!=='k'"));
+  // tryb celowo NIE jest zapisywany w localStorage
+  assert.ok(!/localStorage[^\n]*stars-only/.test(html));
+  // kolejka: format rozpoznajemy po pelnej liscie, gramy po przefiltrowanej
+  assert.ok(html.includes('function tylkoGwiazdki(trs)'));
+  assert.ok(html.includes('const grane=tylkoGwiazdki(trs);'));
+  assert.ok(html.includes('if(!grane.length) return;'));
+  assert.match(html, /if\(trs\.length\*2===list\.length\)/, 'detekcja formatu 2 nadal na pelnej liscie');
+});

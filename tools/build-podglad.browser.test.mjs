@@ -198,8 +198,46 @@ test('real browser keeps M and K study flows independent', { timeout: 30_000 }, 
     last: kSources.at(-1),
   });
 
+  // --- ⭐ GWIAZDKI ONLY ---
+  assert.equal(await cdp.evaluate("document.querySelector('#stars-only').hidden"), false);
+  await cdp.evaluate("document.querySelector('#stars-only').click()");
+  assert.equal(await cdp.evaluate("document.body.classList.contains('stars-only')&&document.querySelector('#stars-only').classList.contains('on')"), true);
+
+  // widoczny dokładnie jeden wiersz w całym Kursie K + jego grupa i dział zostają
+  assert.deepEqual(await cdp.evaluate(`({
+    wiersze:[...document.querySelectorAll('.course-k tr[data-k]')].filter(tr=>tr.checkVisibility()).length,
+    grupy:[...document.querySelectorAll('.course-k section.group')].filter(g=>g.checkVisibility()).length,
+    dzialy:[...document.querySelectorAll('.course-k article.dzial')].filter(a=>a.checkVisibility()).length
+  })`), { wiersze: 1, grupy: 1, dzialy: 1 });
+
+  // PLAY grupy gra WYŁĄCZNIE gwiazdkowaną parę (2 pliki), nie całą grupę
+  assert.equal(await cdp.evaluate(`(()=>{
+    const tr=document.querySelector('.course-k tr.starred');
+    tr.closest('section.group').querySelector('.gplay').click();
+    return queue.length===2 && queue[0]===tr.dataset.cue && queue[1]===tr.dataset.enSrc;
+  })()`), true);
+
+  // PLAY całego Kursu K też zawęża się do gwiazdek (a nie spada na ścieżkę formatu 1)
+  await cdp.evaluate("document.querySelector('.course-k .play-mk').click()");
+  assert.equal(await cdp.evaluate('queue.length'), 2);
+
+  // odgwiazdkowanie ukrywa na żywo; whole-K play staje się no-opem
+  await cdp.evaluate("document.querySelector('.course-k tr.starred .star-btn').click()");
+  assert.equal(await cdp.evaluate("[...document.querySelectorAll('.course-k tr[data-k],.course-k article.dzial')].filter(el=>el.checkVisibility()).length"), 0);
+  await cdp.evaluate("document.querySelector('.course-k .play-mk').click()");
+  assert.equal(await cdp.evaluate('queue.length'), 2, 'pusty zakres nie buduje nowej kolejki');
+  // przywracamy gwiazdkę — dalsza część testu zakłada k:1
+  await cdp.evaluate("document.querySelector('#k1 tr[data-k] .star-btn').click()");
+  assert.equal(await cdp.evaluate("[...document.querySelectorAll('.course-k tr[data-k]')].filter(tr=>tr.checkVisibility()).length"), 1);
+
   await cdp.evaluate("document.querySelector('#back-home').click();document.querySelector('.tile[data-go=\"m1\"]').click()");
   assert.equal(await cdp.evaluate('activeCourse'), 'm');
+  // tryb zostaje włączony, ale filtr jest scope'owany do .course-k — M nietknięte
+  assert.deepEqual(await cdp.evaluate(`({
+    schowany:document.querySelector('#stars-only').hidden,
+    trybNadalWlaczony:document.body.classList.contains('stars-only'),
+    widoczneWierszeM:[...document.querySelectorAll('.mk-view[data-view="m1"] tr[data-k]')].filter(tr=>tr.checkVisibility()).length>10
+  })`), { schowany: true, trybNadalWlaczony: true, widoczneWierszeM: true });
   await cdp.evaluate("document.querySelector('#m1-d1 tr[data-k] .star-btn').click()");
   assert.deepEqual(await cdp.evaluate(`({
     k:JSON.parse(localStorage.getItem('kurs.k.stars')||'[]').length,
@@ -213,6 +251,8 @@ test('real browser keeps M and K study flows independent', { timeout: 30_000 }, 
   await cdp.evaluate("document.querySelector('#review-toggle').click()");
   assert.equal(await cdp.evaluate("document.querySelectorAll('#review-body tr').length"), 1);
   await cdp.evaluate("document.querySelector('#review-toggle').click();document.querySelector('#back-home').click();document.querySelector('.tile[data-go=\"k\"]').click()");
+  // powrót do K: przycisk znów widoczny i nadal wciśnięty (flaga przeżyła rundę po M)
+  assert.equal(await cdp.evaluate("!document.querySelector('#stars-only').hidden&&document.querySelector('#stars-only').classList.contains('on')"), true);
 
   await cdp.send('Emulation.setDeviceMetricsOverride', {
     width: 375,
