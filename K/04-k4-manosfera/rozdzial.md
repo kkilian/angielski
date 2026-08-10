@@ -58,7 +58,7 @@
 | Ciemniejsze zakątki dały początek incelom. | The darker corners gave rise to incels. |
 | Autor pisze, że sami budują tożsamość wokół nieumiejętności znalezienia partnerki. | The author says they define their identity around their inability to find romantic partners. |
 | To młodzi, odizolowani mężczyźni. | They're young, isolated men. |
-| Zamiast pracy nad sobą, incelskie fora karmią toksyczny żal, skrajną mizoginię i głęboką wrogość wobec społeczeństwa. | According to the author, incel message boards foster toxic resentment, extreme misogyny, and deep-seated hostility toward society. |
+| Zamiast pracy nad sobą, incelskie fora karmią toksyczny żal, skrajną mizoginię i głęboką wrogość wobec społeczeństwa. | Instead of self-improvement, incel message boards foster toxic resentment, extreme misogyny, and deep-seated hostility toward society. |
 
 ## Grupa 4
 | polski | angielski |
@@ -87,7 +87,7 @@
 |---|---|
 | Piąty akapit podaje konkretne przykłady. | The fifth paragraph gives concrete examples. |
 | Ten ekstremizm wielokrotnie kończył się realnymi atakami. | This extremism has repeatedly led to real-world attacks. |
-| W 2014 roku w Isla Vista ktoś otworzył ogień. | In 2014, someone opened fire in Isla Vista, California. |
+| W 2014 roku w Isla Vista w Kalifornii ktoś otworzył ogień. | In 2014, someone opened fire in Isla Vista, California. |
 | Sprawca miał dwadzieścia dwa lata. | The attacker was twenty-two years old. |
 | Wcześniej opublikował manifest obwiniający kobiety za swoją samotność. | He had published a manifesto blaming women for his loneliness. |
 | W 2018 roku w Toronto mężczyzna wjechał furgonetką w tłum. | In 2018, a man drove a van into a crowd in Toronto. |
@@ -100,7 +100,7 @@
 | Są zaprojektowane tak, żeby maksymalizować zaangażowanie. | They're designed to maximize engagement. |
 | Promują treści, które budzą silne emocje. | They promote content that triggers strong emotions. |
 | Ktoś szuka porad o formie, pewności siebie albo zdrowiu psychicznym. | Someone searches for advice on fitness, confidence, or mental health. |
-| Kilka kliknięć później algorytm wpycha go w coraz bardziej radykalne treści. | A few clicks later, they get funneled into increasingly radical content. |
+| Kilka kliknięć później zostaje wepchnięty w coraz bardziej radykalne treści. | A few clicks later, they get funneled into increasingly radical content. |
 | Rozwiązanie wymaga kilku rzeczy naraz. | The solution requires several things at once. |
 | Więcej wsparcia psychicznego dla mężczyzn, edukacja medialna i ostrzejsza moderacja treści. | More mental health support for men, digital media education, and stricter content moderation. |
 
@@ -146,7 +146,7 @@
 | Zgadzam się z autorem w jednej sprawie. | I agree with the author on one thing. |
 | Komora echa to grupa, w której wszyscy już się z tobą zgadzają. | An echo chamber is a group where everyone already agrees with you. |
 | Ci ludzie wzmacniają nawzajem swoje przekonania. | These people reinforce each other's beliefs. |
-| Według artykułu odrzucony młody mężczyzna zamienia żal we wrogość wobec wszystkich kobiet. | According to the article, a young man turns his resentment into hostility toward all women. |
+| Według artykułu odrzucony młody mężczyzna zamienia żal we wrogość wobec wszystkich kobiet. | According to the article, a rejected young man turns his resentment into hostility toward all women. |
 
 ## Grupa 8
 | polski | angielski |

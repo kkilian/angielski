@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-08T17:37:26.511Z",
+  "generatedAt": "2026-08-09T15:34:27.249Z",
   "grupy": [
     {
       "n": 1,
@@ -774,16 +774,16 @@
           "n": 16,
           "cue": {
             "src": "audio/g3-p16-cue.mp3",
-            "sek": 17.664
+            "sek": 17.232
           },
           "wzor": {
             "src": "audio/g3-p16-en.mp3",
-            "sek": 9.912
+            "sek": 10.104
           },
           "tekst": {
             "pyt": null,
             "pl": "Zamiast pracy nad sobą, incelskie fora karmią toksyczny żal, skrajną mizoginię i głęboką wrogość wobec społeczeństwa.",
-            "en": "According to the author, incel message boards foster toxic resentment, extreme misogyny, and deep-seated hostility toward society."
+            "en": "Instead of self-improvement, incel message boards foster toxic resentment, extreme misogyny, and deep-seated hostility toward society."
           }
         }
       ]
@@ -1122,15 +1122,15 @@
           "n": 3,
           "cue": {
             "src": "audio/g5-p03-cue.mp3",
-            "sek": 9.96
+            "sek": 10.848
           },
           "wzor": {
             "src": "audio/g5-p03-en.mp3",
-            "sek": 5.568
+            "sek": 6.024
           },
           "tekst": {
             "pyt": null,
-            "pl": "W 2014 roku w Isla Vista ktoś otworzył ogień.",
+            "pl": "W 2014 roku w Isla Vista w Kalifornii ktoś otworzył ogień.",
             "en": "In 2014, someone opened fire in Isla Vista, California."
           }
         },
@@ -1338,7 +1338,7 @@
           },
           "tekst": {
             "pyt": null,
-            "pl": "Kilka kliknięć później algorytm wpycha go w coraz bardziej radykalne treści.",
+            "pl": "Kilka kliknięć później zostaje wepchnięty w coraz bardziej radykalne treści.",
             "en": "A few clicks later, they get funneled into increasingly radical content."
           }
         },
@@ -1950,16 +1950,16 @@
           "n": 18,
           "cue": {
             "src": "audio/g7-p18-cue.mp3",
-            "sek": 16.128
+            "sek": 15.024
           },
           "wzor": {
             "src": "audio/g7-p18-en.mp3",
-            "sek": 5.856
+            "sek": 7.272
           },
           "tekst": {
             "pyt": null,
             "pl": "Według artykułu odrzucony młody mężczyzna zamienia żal we wrogość wobec wszystkich kobiet.",
-            "en": "According to the article, a young man turns his resentment into hostility toward all women."
+            "en": "According to the article, a rejected young man turns his resentment into hostility toward all women."
           }
         }
       ]

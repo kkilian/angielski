@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T17:47:19.671Z",
+  "generatedAt": "2026-08-09T15:34:56.935Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -155,7 +155,7 @@
       "pdf": "K/04-k4-manosfera/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/04-k4-manosfera/audio.json",
-      "audioVersion": 1786211222776,
+      "audioVersion": 1786289672813,
       "hasAudio": true,
       "groups": [
         {
