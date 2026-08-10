@@ -1,6 +1,6 @@
 {
   "$opis": "Niezależny rejestr kursu K. Id działów: k1, k2, k3... Kurs nie korzysta z rejestru M.",
-  "wersja": "2026-08-08",
+  "wersja": "2026-08-10",
   "kurs": {
     "id": "k",
     "tytul": "Kurs K - Conversation Lab",
@@ -33,7 +33,14 @@
       "folder": "04-k4-manosfera",
       "tytulPl": "Manosfera: opowiedz cudzy pogląd",
       "tytulEn": "The Manosphere: Reporting Someone Else's View",
-      "opis": "Arkusz o manosferze i radykalizacji online: streszczenie akapitów, słownictwo i język dystansu."
+      "opis": "Skrócone do 5 grup — targety z największych błędów transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy)."
+    },
+    {
+      "id": "k5",
+      "folder": "05-k5-",
+      "tytulPl": "K5 (planowany)",
+      "tytulEn": "K5 (planned)",
+      "opis": "Następny dział — błędy z czwartkowej lekcji o K4 + wyrażenia przesunięte z K4 (Exercise 1 arkusza, język debaty, wolność słowa)."
     }
   ],
   "wyrazenia": [
@@ -460,18 +467,17 @@
       "pl": "incel; mimowolnie bezżenny",
       "en": "an incel (involuntary celibate)",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
-        "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
       ]
     },
     {
@@ -479,9 +485,8 @@
       "pl": "mizoginia; niechęć do kobiet",
       "en": "misogyny",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
         "k6",
         "k8",
         "k10",
@@ -498,18 +503,17 @@
       "pl": "nihilistyczny",
       "en": "nihilistic",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
-        "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
       ]
     },
     {
@@ -517,9 +521,8 @@
       "pl": "manifest (deklaracja przekonań)",
       "en": "a manifesto",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
         "k6",
         "k8",
         "k10",
@@ -536,18 +539,17 @@
       "pl": "radykalizacja",
       "en": "radicalization",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
-        "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
       ]
     },
     {
@@ -555,9 +557,8 @@
       "pl": "działania antyterrorystyczne",
       "en": "counter-terrorism",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
         "k6",
         "k8",
         "k10",
@@ -590,7 +591,7 @@
     },
     {
       "id": "echo-chamber",
-      "pl": "bańka informacyjna",
+      "pl": "bańka informacyjna (środowisko społeczne)",
       "en": "an echo chamber",
       "typ": "idiom",
       "intro": "k4",
@@ -688,18 +689,17 @@
       "pl": "bez sensu, bezcelowy",
       "en": "pointless",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
-        "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
       ]
     },
     {
@@ -707,9 +707,8 @@
       "pl": "męczennik",
       "en": "a martyr",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
         "k6",
         "k8",
         "k10",
@@ -723,7 +722,7 @@
     },
     {
       "id": "fixed-hierarchy",
-      "pl": "sztywna hierarchia",
+      "pl": "niezmienna hierarchia",
       "en": "a fixed hierarchy",
       "typ": "kolokacja",
       "intro": "k4",
@@ -780,7 +779,7 @@
     },
     {
       "id": "not-defending-them",
-      "pl": "żeby było jasne, nie bronię ich",
+      "pl": "żeby było jasno, nie bronię ich",
       "en": "To be clear, I'm not defending them",
       "typ": "gramatyka",
       "intro": "k4",
@@ -840,18 +839,17 @@
       "pl": "wolność słowa",
       "en": "freedom of speech",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
-        "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
       ]
     },
     {
@@ -859,9 +857,8 @@
       "pl": "moderacja treści",
       "en": "content moderation",
       "typ": "kolokacja",
-      "intro": "k4",
+      "intro": "k5",
       "review": [
-        "k5",
         "k6",
         "k8",
         "k10",
@@ -878,6 +875,42 @@
       "pl": "wyznaczyć granicę",
       "en": "to draw the line",
       "typ": "idiom",
+      "intro": "k5",
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "warning-signs",
+      "pl": "sygnały ostrzegawcze",
+      "en": "warning signs",
+      "typ": "kolokacja",
+      "intro": "k5",
+      "review": [
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "categorize-into-groups",
+      "pl": "kategoryzować / szufladkować ludzi w sztywne grupy",
+      "en": "to categorize people into rigid groups",
+      "typ": "kolokacja",
       "intro": "k4",
       "review": [
         "k5",
@@ -893,9 +926,9 @@
       ]
     },
     {
-      "id": "warning-signs",
-      "pl": "sygnały ostrzegawcze",
-      "en": "warning signs",
+      "id": "move-up-in-hierarchy",
+      "pl": "awansować w hierarchii",
+      "en": "to move up in the hierarchy",
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
