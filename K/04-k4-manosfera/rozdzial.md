@@ -46,7 +46,7 @@
 | To zniekształcony obraz rzeczywistości. | It's a distorted view of reality. |
 | Mają zniekształcony obraz świata. | They have a distorted view of the world. |
 | Izolacja tworzy zniekształcony obraz rzeczywistości. | Isolation creates a distorted view of reality. |
-| Według tekstu te fora dają zniekształcony obraz świata. | According to the text, those forums give a distorted view of the world. |
+| Według tekstu te fora tworzą zniekształcony obraz świata. | According to the text, those forums create a distorted view of the world. |
 | Jeśli twoim jedynym źródłem jest komora echa, masz zniekształcony obraz rzeczywistości. | If your only source is an echo chamber, you have a distorted view of reality. |
 | Czują gorycz wobec świata. | They feel bitterness toward the world. |
 | Jego gorycz wobec kobiet tylko narasta. | His bitterness toward women only grows. |
@@ -71,12 +71,12 @@
 | Odizolowane środowisko tworzy zniekształcony obraz rzeczywistości. | An isolated environment creates a distorted view of reality. |
 | Według nich na szczycie hierarchii są „Chadzi". | In their view, at the top of the hierarchy are the "Chads." |
 | Według nich nie da się awansować w hierarchii. | In their view, you can't move up in the hierarchy. |
-| Według nich hierarchia jest sztywna i nie da się z niej wyjść. | In their view, the hierarchy is rigid and you can't move up in it. |
+| Według nich hierarchia jest niezmienna i nie da się w niej awansować. | In their view, the hierarchy is fixed and you can't move up in it. |
 | Kategoryzują ludzi w sztywne grupy. | They categorize people into rigid groups. |
 | Według artykułu kategoryzują ludzi w sztywne archetypy. | According to the article, they categorize people into rigid archetypes. |
 | Nie kategoryzuję ludzi — opisuję tylko, co mówi tekst. | I'm not categorizing people — I'm just describing what the text says. |
 | Według nich na szczycie hierarchii są mężczyźni, a kobiety są nieosiągalne. | In their view, at the top of the hierarchy are men, and women are unattainable. |
-| Według nich hierarchia jest sztywna i nie da się w niej awansować. | In their view, the hierarchy is fixed and you can't move up in it. |
+| Według artykułu ta hierarchia jest niezmienna — nie da się w niej awansować. | According to the article, the hierarchy is fixed — you can't move up in it. |
 | Kategoryzują świat na sztywne grupy, a potem mówią, że nie da się awansować. | They categorize the world into rigid groups, then say you can't move up. |
 
 ## Grupa 5
@@ -85,7 +85,7 @@
 | Według artykułu… | According to the article… |
 | Tekst twierdzi, że… | The text argues that… |
 | Według nich… | In their view… |
-| Żeby było jasno, ja ich nie bronię. | To be clear, I'm not defending them. |
+| Żeby było jasne, ja ich nie bronię. | To be clear, I'm not defending them. |
 | To są skrajne przypadki i nie reprezentują wszystkich. | These are extreme cases and they don't represent everyone. |
 | Pierwszy akapit wprowadza termin „manosfera" i wyjaśnia metaforę czerwonej pigułki. | The first paragraph introduces the term "manosphere" and explains the Red Pill metaphor. |
 | Według artykułu „czerwona pigułka" oznacza pogląd, że społeczeństwo jest uprzedzone wobec mężczyzn. | According to the article, the Red Pill is the view that society is biased against men. |
@@ -112,7 +112,7 @@
 | gorycz wobec kogoś/czegoś | bitterness toward somebody | `bitterness **toward**` + osoba/ludzie; `bitterness **about/over**` + sytuacja. **Nigdy** *bitterness with*. |
 | być zdeterminowanym przez | to be determined by | `your worth is determined by looks` — **nie** *it's all deterministic*. |
 | kategoryzować ludzi w sztywne grupy | to categorize people into rigid groups | **Nie** *compartmentalize* — to znaczy „oddzielać od siebie sprawy w głowie". |
-| awansować w hierarchii | to move up in the hierarchy | `hierarchy` = **HAJ**-e-rar-ki (cztery sylaby). W mowie jednym ciągiem: can't-move-**UP**-in-that. |
+| awansować w hierarchii | to move up in the hierarchy | `hierarchy` = **HAJ**-e-rar-ki (cztery sylaby). W mowie jednym ciągiem: can't-move-**UP**-in-the-hierarchy. |
 | niezmienna hierarchia | a fixed hierarchy | `rigid` rezerwujemy dla `rigid archetypes` (sztywne archetypy). |
 
 **Otwarcia streszczeń i atrybucja:**

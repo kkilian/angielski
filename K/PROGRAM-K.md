@@ -137,7 +137,7 @@ brakujące słowa (`resent`, `echo chamber`, `reinforce`, `feedback loop`,
 `deterministic` zamiast `determined by`, `crooked image` zamiast `distorted view`),
 systematycznie gubione rodzajniki i mylone `biased towards`/`against`.
 
-**Skrócenie 2026-08-10:** 10 grup → 5 grup, 164 pary → 76 par. Decyzja Krzyśka:
+**Skrócenie 2026-08-10:** 10 grup → 5 grup, 164 pary → 77 par. Decyzja Krzyśka:
 K4 ma być przygotowaniem do czwartkowej lekcji, nie kursem-encyklopedią.
 
 **Nowe targety (11, w kolejności ROI z transkryptu):**

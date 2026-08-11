@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-10T14:50:24.273Z",
+  "generatedAt": "2026-08-11T06:12:28.670Z",
   "grupy": [
     {
       "n": 1,
@@ -534,11 +534,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g3-p01-cue.mp3",
-            "sek": 6.648
+            "sek": 6.672
           },
           "wzor": {
             "src": "audio/g3-p01-en.mp3",
-            "sek": 3.777
+            "sek": 3.816
           },
           "tekst": {
             "pyt": null,
@@ -550,11 +550,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g3-p02-cue.mp3",
-            "sek": 8.463
+            "sek": 8.472
           },
           "wzor": {
             "src": "audio/g3-p02-en.mp3",
-            "sek": 3.755
+            "sek": 3.792
           },
           "tekst": {
             "pyt": null,
@@ -566,11 +566,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g3-p03-cue.mp3",
-            "sek": 8.752
+            "sek": 8.784
           },
           "wzor": {
             "src": "audio/g3-p03-en.mp3",
-            "sek": 4.525
+            "sek": 4.536
           },
           "tekst": {
             "pyt": null,
@@ -582,27 +582,27 @@
           "n": 4,
           "cue": {
             "src": "audio/g3-p04-cue.mp3",
-            "sek": 12.349
+            "sek": 12.912
           },
           "wzor": {
             "src": "audio/g3-p04-en.mp3",
-            "sek": 5.751
+            "sek": 5.568
           },
           "tekst": {
             "pyt": null,
-            "pl": "Według tekstu te fora dają zniekształcony obraz świata.",
-            "en": "According to the text, those forums give a distorted view of the world."
+            "pl": "Według tekstu te fora tworzą zniekształcony obraz świata.",
+            "en": "According to the text, those forums create a distorted view of the world."
           }
         },
         {
           "n": 5,
           "cue": {
             "src": "audio/g3-p05-cue.mp3",
-            "sek": 14.953
+            "sek": 14.976
           },
           "wzor": {
             "src": "audio/g3-p05-en.mp3",
-            "sek": 6.593
+            "sek": 6.624
           },
           "tekst": {
             "pyt": null,
@@ -614,11 +614,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g3-p06-cue.mp3",
-            "sek": 6.172
+            "sek": 6.192
           },
           "wzor": {
             "src": "audio/g3-p06-en.mp3",
-            "sek": 3.933
+            "sek": 3.96
           },
           "tekst": {
             "pyt": null,
@@ -630,11 +630,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g3-p07-cue.mp3",
-            "sek": 6.783
+            "sek": 6.816
           },
           "wzor": {
             "src": "audio/g3-p07-en.mp3",
-            "sek": 4.901
+            "sek": 4.92
           },
           "tekst": {
             "pyt": null,
@@ -646,11 +646,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g3-p08-cue.mp3",
-            "sek": 9.115
+            "sek": 9.144
           },
           "wzor": {
             "src": "audio/g3-p08-en.mp3",
-            "sek": 4.467
+            "sek": 4.488
           },
           "tekst": {
             "pyt": null,
@@ -662,11 +662,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g3-p09-cue.mp3",
-            "sek": 10.912
+            "sek": 10.944
           },
           "wzor": {
             "src": "audio/g3-p09-en.mp3",
-            "sek": 5.555
+            "sek": 5.568
           },
           "tekst": {
             "pyt": null,
@@ -678,11 +678,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g3-p10-cue.mp3",
-            "sek": 12.831
+            "sek": 12.864
           },
           "wzor": {
             "src": "audio/g3-p10-en.mp3",
-            "sek": 5.205
+            "sek": 5.208
           },
           "tekst": {
             "pyt": null,
@@ -694,11 +694,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g3-p11-cue.mp3",
-            "sek": 7.084
+            "sek": 7.128
           },
           "wzor": {
             "src": "audio/g3-p11-en.mp3",
-            "sek": 3.904
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
@@ -710,11 +710,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g3-p12-cue.mp3",
-            "sek": 9.181
+            "sek": 9.216
           },
           "wzor": {
             "src": "audio/g3-p12-en.mp3",
-            "sek": 4.564
+            "sek": 4.584
           },
           "tekst": {
             "pyt": null,
@@ -726,11 +726,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g3-p13-cue.mp3",
-            "sek": 12.117
+            "sek": 12.144
           },
           "wzor": {
             "src": "audio/g3-p13-en.mp3",
-            "sek": 6.099
+            "sek": 6.12
           },
           "tekst": {
             "pyt": null,
@@ -742,11 +742,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g3-p14-cue.mp3",
-            "sek": 9.706
+            "sek": 9.72
           },
           "wzor": {
             "src": "audio/g3-p14-en.mp3",
-            "sek": 4.529
+            "sek": 4.56
           },
           "tekst": {
             "pyt": null,
@@ -758,11 +758,11 @@
           "n": 15,
           "cue": {
             "src": "audio/g3-p15-cue.mp3",
-            "sek": 14.595
+            "sek": 14.616
           },
           "wzor": {
             "src": "audio/g3-p15-en.mp3",
-            "sek": 6.02
+            "sek": 6.048
           },
           "tekst": {
             "pyt": null,
@@ -774,11 +774,11 @@
           "n": 16,
           "cue": {
             "src": "audio/g3-p16-cue.mp3",
-            "sek": 14.123
+            "sek": 14.136
           },
           "wzor": {
             "src": "audio/g3-p16-en.mp3",
-            "sek": 6.599
+            "sek": 6.576
           },
           "tekst": {
             "pyt": null,
@@ -796,11 +796,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g4-p01-cue.mp3",
-            "sek": 5.182
+            "sek": 5.208
           },
           "wzor": {
             "src": "audio/g4-p01-en.mp3",
-            "sek": 3.191
+            "sek": 3.216
           },
           "tekst": {
             "pyt": null,
@@ -812,11 +812,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g4-p02-cue.mp3",
-            "sek": 6.38
+            "sek": 6.408
           },
           "wzor": {
             "src": "audio/g4-p02-en.mp3",
-            "sek": 3.308
+            "sek": 3.336
           },
           "tekst": {
             "pyt": null,
@@ -828,11 +828,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g4-p03-cue.mp3",
-            "sek": 4.801
+            "sek": 4.824
           },
           "wzor": {
             "src": "audio/g4-p03-en.mp3",
-            "sek": 3.761
+            "sek": 3.792
           },
           "tekst": {
             "pyt": null,
@@ -844,11 +844,11 @@
           "n": 4,
           "cue": {
             "src": "audio/g4-p04-cue.mp3",
-            "sek": 5.112
+            "sek": 5.136
           },
           "wzor": {
             "src": "audio/g4-p04-en.mp3",
-            "sek": 2.976
+            "sek": 3
           },
           "tekst": {
             "pyt": null,
@@ -860,11 +860,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g4-p05-cue.mp3",
-            "sek": 5.493
+            "sek": 5.52
           },
           "wzor": {
             "src": "audio/g4-p05-en.mp3",
-            "sek": 3.395
+            "sek": 3.408
           },
           "tekst": {
             "pyt": null,
@@ -876,11 +876,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g4-p06-cue.mp3",
-            "sek": 10.921
+            "sek": 10.944
           },
           "wzor": {
             "src": "audio/g4-p06-en.mp3",
-            "sek": 5.016
+            "sek": 5.04
           },
           "tekst": {
             "pyt": null,
@@ -892,11 +892,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g4-p07-cue.mp3",
-            "sek": 11.008
+            "sek": 11.04
           },
           "wzor": {
             "src": "audio/g4-p07-en.mp3",
-            "sek": 4.781
+            "sek": 4.8
           },
           "tekst": {
             "pyt": null,
@@ -908,11 +908,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g4-p08-cue.mp3",
-            "sek": 9.202
+            "sek": 9.216
           },
           "wzor": {
             "src": "audio/g4-p08-en.mp3",
-            "sek": 4.429
+            "sek": 4.464
           },
           "tekst": {
             "pyt": null,
@@ -924,27 +924,27 @@
           "n": 9,
           "cue": {
             "src": "audio/g4-p09-cue.mp3",
-            "sek": 13.19
+            "sek": 13.92
           },
           "wzor": {
             "src": "audio/g4-p09-en.mp3",
-            "sek": 5.087
+            "sek": 5.472
           },
           "tekst": {
             "pyt": null,
-            "pl": "Według nich hierarchia jest sztywna i nie da się z niej wyjść.",
-            "en": "In their view, the hierarchy is rigid and you can't move up in it."
+            "pl": "Według nich hierarchia jest niezmienna i nie da się w niej awansować.",
+            "en": "In their view, the hierarchy is fixed and you can't move up in it."
           }
         },
         {
           "n": 10,
           "cue": {
             "src": "audio/g4-p10-cue.mp3",
-            "sek": 6.705
+            "sek": 6.744
           },
           "wzor": {
             "src": "audio/g4-p10-en.mp3",
-            "sek": 4.224
+            "sek": 4.248
           },
           "tekst": {
             "pyt": null,
@@ -956,11 +956,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g4-p11-cue.mp3",
-            "sek": 10.436
+            "sek": 10.464
           },
           "wzor": {
             "src": "audio/g4-p11-en.mp3",
-            "sek": 5.253
+            "sek": 5.28
           },
           "tekst": {
             "pyt": null,
@@ -976,7 +976,7 @@
           },
           "wzor": {
             "src": "audio/g4-p12-en.mp3",
-            "sek": 5.436
+            "sek": 5.472
           },
           "tekst": {
             "pyt": null,
@@ -988,11 +988,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g4-p13-cue.mp3",
-            "sek": 14.115
+            "sek": 14.136
           },
           "wzor": {
             "src": "audio/g4-p13-en.mp3",
-            "sek": 6.676
+            "sek": 6.696
           },
           "tekst": {
             "pyt": null,
@@ -1004,27 +1004,27 @@
           "n": 14,
           "cue": {
             "src": "audio/g4-p14-cue.mp3",
-            "sek": 13.106
+            "sek": 13.512
           },
           "wzor": {
             "src": "audio/g4-p14-en.mp3",
-            "sek": 5.421
+            "sek": 5.976
           },
           "tekst": {
             "pyt": null,
-            "pl": "Według nich hierarchia jest sztywna i nie da się w niej awansować.",
-            "en": "In their view, the hierarchy is fixed and you can't move up in it."
+            "pl": "Według artykułu ta hierarchia jest niezmienna — nie da się w niej awansować.",
+            "en": "According to the article, the hierarchy is fixed — you can't move up in it."
           }
         },
         {
           "n": 15,
           "cue": {
             "src": "audio/g4-p15-cue.mp3",
-            "sek": 13.715
+            "sek": 13.752
           },
           "wzor": {
             "src": "audio/g4-p15-en.mp3",
-            "sek": 5.633
+            "sek": 5.592
           },
           "tekst": {
             "pyt": null,
@@ -1042,11 +1042,11 @@
           "n": 1,
           "cue": {
             "src": "audio/g5-p01-cue.mp3",
-            "sek": 4.335
+            "sek": 4.368
           },
           "wzor": {
             "src": "audio/g5-p01-en.mp3",
-            "sek": 2.477
+            "sek": 2.496
           },
           "tekst": {
             "pyt": null,
@@ -1058,11 +1058,11 @@
           "n": 2,
           "cue": {
             "src": "audio/g5-p02-cue.mp3",
-            "sek": 4.17
+            "sek": 4.2
           },
           "wzor": {
             "src": "audio/g5-p02-en.mp3",
-            "sek": 2.973
+            "sek": 3
           },
           "tekst": {
             "pyt": null,
@@ -1074,11 +1074,11 @@
           "n": 3,
           "cue": {
             "src": "audio/g5-p03-cue.mp3",
-            "sek": 3.627
+            "sek": 3.648
           },
           "wzor": {
             "src": "audio/g5-p03-en.mp3",
-            "sek": 2.115
+            "sek": 2.136
           },
           "tekst": {
             "pyt": null,
@@ -1090,15 +1090,15 @@
           "n": 4,
           "cue": {
             "src": "audio/g5-p04-cue.mp3",
-            "sek": 7.295
+            "sek": 8.256
           },
           "wzor": {
             "src": "audio/g5-p04-en.mp3",
-            "sek": 3.701
+            "sek": 3.912
           },
           "tekst": {
             "pyt": null,
-            "pl": "Żeby było jasno, ja ich nie bronię.",
+            "pl": "Żeby było jasne, ja ich nie bronię.",
             "en": "To be clear, I'm not defending them."
           }
         },
@@ -1106,11 +1106,11 @@
           "n": 5,
           "cue": {
             "src": "audio/g5-p05-cue.mp3",
-            "sek": 9.662
+            "sek": 9.696
           },
           "wzor": {
             "src": "audio/g5-p05-en.mp3",
-            "sek": 4.53
+            "sek": 4.56
           },
           "tekst": {
             "pyt": null,
@@ -1122,11 +1122,11 @@
           "n": 6,
           "cue": {
             "src": "audio/g5-p06-cue.mp3",
-            "sek": 14.332
+            "sek": 14.352
           },
           "wzor": {
             "src": "audio/g5-p06-en.mp3",
-            "sek": 6.633
+            "sek": 6.648
           },
           "tekst": {
             "pyt": null,
@@ -1138,11 +1138,11 @@
           "n": 7,
           "cue": {
             "src": "audio/g5-p07-cue.mp3",
-            "sek": 16.531
+            "sek": 16.56
           },
           "wzor": {
             "src": "audio/g5-p07-en.mp3",
-            "sek": 7.242
+            "sek": 7.272
           },
           "tekst": {
             "pyt": null,
@@ -1154,11 +1154,11 @@
           "n": 8,
           "cue": {
             "src": "audio/g5-p08-cue.mp3",
-            "sek": 15.688
+            "sek": 15.696
           },
           "wzor": {
             "src": "audio/g5-p08-en.mp3",
-            "sek": 6.899
+            "sek": 6.936
           },
           "tekst": {
             "pyt": null,
@@ -1170,11 +1170,11 @@
           "n": 9,
           "cue": {
             "src": "audio/g5-p09-cue.mp3",
-            "sek": 16.674
+            "sek": 16.704
           },
           "wzor": {
             "src": "audio/g5-p09-en.mp3",
-            "sek": 7.845
+            "sek": 7.848
           },
           "tekst": {
             "pyt": null,
@@ -1186,11 +1186,11 @@
           "n": 10,
           "cue": {
             "src": "audio/g5-p10-cue.mp3",
-            "sek": 16.684
+            "sek": 16.728
           },
           "wzor": {
             "src": "audio/g5-p10-en.mp3",
-            "sek": 8.736
+            "sek": 8.76
           },
           "tekst": {
             "pyt": null,
@@ -1202,11 +1202,11 @@
           "n": 11,
           "cue": {
             "src": "audio/g5-p11-cue.mp3",
-            "sek": 14.232
+            "sek": 14.256
           },
           "wzor": {
             "src": "audio/g5-p11-en.mp3",
-            "sek": 7.402
+            "sek": 7.416
           },
           "tekst": {
             "pyt": null,
@@ -1218,11 +1218,11 @@
           "n": 12,
           "cue": {
             "src": "audio/g5-p12-cue.mp3",
-            "sek": 15.381
+            "sek": 15.408
           },
           "wzor": {
             "src": "audio/g5-p12-en.mp3",
-            "sek": 6.922
+            "sek": 6.936
           },
           "tekst": {
             "pyt": null,
@@ -1234,11 +1234,11 @@
           "n": 13,
           "cue": {
             "src": "audio/g5-p13-cue.mp3",
-            "sek": 13.564
+            "sek": 13.584
           },
           "wzor": {
             "src": "audio/g5-p13-en.mp3",
-            "sek": 5.356
+            "sek": 5.376
           },
           "tekst": {
             "pyt": null,
@@ -1250,11 +1250,11 @@
           "n": 14,
           "cue": {
             "src": "audio/g5-p14-cue.mp3",
-            "sek": 14.525
+            "sek": 14.544
           },
           "wzor": {
             "src": "audio/g5-p14-en.mp3",
-            "sek": 6.757
+            "sek": 6.72
           },
           "tekst": {
             "pyt": null,
