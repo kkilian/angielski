@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-11T06:12:28.670Z",
+  "generatedAt": "2026-08-12T09:36:27.676Z",
   "grupy": [
     {
       "n": 1,
@@ -1260,6 +1260,300 @@
             "pyt": null,
             "pl": "Tekst twierdzi, że sprzężenie zwrotne wzmacnia urazę i gorycz, co prowadzi do eskalacji.",
             "en": "The text argues that the feedback loop reinforces resentment and bitterness, leading to escalation."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g6-p01-cue.mp3",
+            "sek": 12.224
+          },
+          "wzor": {
+            "src": "audio/g6-p01-en.mp3",
+            "sek": 3.664
+          },
+          "tekst": {
+            "pyt": "All right, ready to start?",
+            "pl": "Zgódź się i poproś, żeby poprawiał cię na bieżąco.",
+            "en": "Yeah. Just correct me as we go."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g6-p02-cue.mp3",
+            "sek": 12.22
+          },
+          "wzor": {
+            "src": "audio/g6-p02-en.mp3",
+            "sek": 3.352
+          },
+          "tekst": {
+            "pyt": "So that's the whole idea, more or less.",
+            "pl": "Nie dosłyszałeś — poproś, żeby powtórzył.",
+            "en": "Sorry, could you say that again?"
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g6-p03-cue.mp3",
+            "sek": 13.036
+          },
+          "wzor": {
+            "src": "audio/g6-p03-en.mp3",
+            "sek": 3.448
+          },
+          "tekst": {
+            "pyt": "I said the second paragraph is the important one.",
+            "pl": "Powiedz, że nie dosłyszałeś ostatniej części.",
+            "en": "I didn't catch that last part."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g6-p04-cue.mp3",
+            "sek": 13.628
+          },
+          "wzor": {
+            "src": "audio/g6-p04-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": "Got it?",
+            "pl": "Powiedz, że prawie, i poproś, żeby powiedział to wolniej.",
+            "en": "Almost — could you say that a bit more slowly?"
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g6-p05-cue.mp3",
+            "sek": 19.668
+          },
+          "wzor": {
+            "src": "audio/g6-p05-en.mp3",
+            "sek": 5.968
+          },
+          "tekst": {
+            "pyt": "Okay, let me summarize the text for you first.",
+            "pl": "Przekieruj rozmowę: wolisz, żeby to on zadawał pytania, a ty mówił.",
+            "en": "Actually, I'd rather you asked me the questions. I want to do the talking."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g6-p06-cue.mp3",
+            "sek": 16.056
+          },
+          "wzor": {
+            "src": "audio/g6-p06-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": "Do you want me to explain the term before we start?",
+            "pl": "Powiedz, że wolisz najpierw spróbować sam i dać się poprawić.",
+            "en": "I'd rather try it myself first and have you correct me."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g6-p07-cue.mp3",
+            "sek": 17.836
+          },
+          "wzor": {
+            "src": "audio/g6-p07-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": "Should I go on, or do you want to take it?",
+            "pl": "Zaproponuj, żeby zrobili to na odwrót — on pyta, ty odpowiadasz.",
+            "en": "Let's do it the other way around — you ask, I answer."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g6-p08-cue.mp3",
+            "sek": 10.66
+          },
+          "wzor": {
+            "src": "audio/g6-p08-en.mp3",
+            "sek": 3.76
+          },
+          "tekst": {
+            "pyt": "In your own words, what does that term mean?",
+            "pl": "Przyznaj, że tylko zgadujesz.",
+            "en": "Honestly, I'd only be guessing here."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g6-p09-cue.mp3",
+            "sek": 12.356
+          },
+          "wzor": {
+            "src": "audio/g6-p09-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": "Any idea at all?",
+            "pl": "Powiedz, że zgadujesz po samej nazwie.",
+            "en": "Just going by the name, I'd say it's something online."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g6-p10-cue.mp3",
+            "sek": 13.436
+          },
+          "wzor": {
+            "src": "audio/g6-p10-en.mp3",
+            "sek": 4
+          },
+          "tekst": {
+            "pyt": "Take a shot at it.",
+            "pl": "Powiedz, że nie masz pewności, ale spróbujesz.",
+            "en": "I'm not sure, but let me give it a shot."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g6-p11-cue.mp3",
+            "sek": 15.06
+          },
+          "wzor": {
+            "src": "audio/g6-p11-en.mp3",
+            "sek": 3.664
+          },
+          "tekst": {
+            "pyt": "You mixed up two words there — twice, actually.",
+            "pl": "Grzecznie się nie zgódź: jesteś prawie pewien, że powiedziałeś to dobrze.",
+            "en": "Actually, I'm pretty sure I said it right."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g6-p12-cue.mp3",
+            "sek": 14.488
+          },
+          "wzor": {
+            "src": "audio/g6-p12-en.mp3",
+            "sek": 3.4
+          },
+          "tekst": {
+            "pyt": "No, you definitely said the wrong one.",
+            "pl": "Ustąp, ale zapytaj, jak to zabrzmiało.",
+            "en": "Fair enough — how did it sound to you?"
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g6-p13-cue.mp3",
+            "sek": 14.056
+          },
+          "wzor": {
+            "src": "audio/g6-p13-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": "Can we move on to the next paragraph?",
+            "pl": "Poproś, żeby najpierw wrócili do jednej rzeczy.",
+            "en": "Can we come back to that one thing first?"
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g6-p14-cue.mp3",
+            "sek": 11.46
+          },
+          "wzor": {
+            "src": "audio/g6-p14-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": "How do you want to do this?",
+            "pl": "Poproś, żeby szli akapit po akapicie.",
+            "en": "Could we go through it paragraph by paragraph?"
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g6-p15-cue.mp3",
+            "sek": 19.304
+          },
+          "wzor": {
+            "src": "audio/g6-p15-en.mp3",
+            "sek": 5.416
+          },
+          "tekst": {
+            "pyt": "Okay, let's pause there. How did that feel?",
+            "pl": "Powiedz, że gubisz się, gdy musisz mówić szybko, i zapytaj, co cię blokuje.",
+            "en": "I lose it when I have to speak fast. What's holding me back?"
+          }
+        },
+        {
+          "n": 16,
+          "cue": {
+            "src": "audio/g6-p16-cue.mp3",
+            "sek": 17.884
+          },
+          "wzor": {
+            "src": "audio/g6-p16-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": "Your ideas are strong, but the delivery is choppy.",
+            "pl": "Zapytaj, czy to wciąż B1 i co pchnęłoby cię na B2.",
+            "en": "Would you say that's still B1? What would push me into B2?"
+          }
+        },
+        {
+          "n": 17,
+          "cue": {
+            "src": "audio/g6-p17-cue.mp3",
+            "sek": 20.088
+          },
+          "wzor": {
+            "src": "audio/g6-p17-en.mp3",
+            "sek": 7.504
+          },
+          "tekst": {
+            "pyt": "So, in one sentence — what is the article about?",
+            "pl": "Streść jednym zdaniem, z atrybucją.",
+            "en": "According to the article, it's a loose collection of online spaces that push men into echo chambers."
+          }
+        },
+        {
+          "n": 18,
+          "cue": {
+            "src": "audio/g6-p18-cue.mp3",
+            "sek": 15.22
+          },
+          "wzor": {
+            "src": "audio/g6-p18-en.mp3",
+            "sek": 6.064
+          },
+          "tekst": {
+            "pyt": "And what's the risk there?",
+            "pl": "Powiedz, co tekst twierdzi o wzmacnianiu przekonań.",
+            "en": "The text argues those beliefs get reinforced until they're hard to change."
           }
         }
       ]

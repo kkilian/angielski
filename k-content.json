@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T06:13:07.294Z",
+  "generatedAt": "2026-08-12T09:38:24.460Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -151,11 +151,11 @@
       "title": "K4 · Manosfera: opowiedz cudzy pogląd / K4 · The Manosphere: Reporting Someone Else's View",
       "titlePl": "K4 · Manosfera: opowiedz cudzy pogląd",
       "titleEn": "K4 · The Manosphere: Reporting Someone Else's View",
-      "description": "Skrócone do 5 grup — targety z największych błędów transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy).",
+      "description": "Sześć grup: pięć drylowych z targetami z transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy) plus scenka G6 — prowadzenie lekcji i ratowanie rozmowy.",
       "pdf": "K/04-k4-manosfera/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/04-k4-manosfera/audio.json",
-      "audioVersion": 1786428752938,
+      "audioVersion": 1786527463595,
       "hasAudio": true,
       "groups": [
         {
@@ -182,6 +182,11 @@
           "n": 5,
           "label": "Grupa 5",
           "parCount": 14
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "parCount": 18
         }
       ]
     }

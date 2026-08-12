@@ -1,6 +1,6 @@
 {
   "$opis": "Niezależny rejestr kursu K. Id działów: k1, k2, k3... Kurs nie korzysta z rejestru M.",
-  "wersja": "2026-08-10",
+  "wersja": "2026-08-12",
   "kurs": {
     "id": "k",
     "tytul": "Kurs K - Conversation Lab",
@@ -33,7 +33,7 @@
       "folder": "04-k4-manosfera",
       "tytulPl": "Manosfera: opowiedz cudzy pogląd",
       "tytulEn": "The Manosphere: Reporting Someone Else's View",
-      "opis": "Skrócone do 5 grup — targety z największych błędów transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy)."
+      "opis": "Sześć grup: pięć drylowych z targetami z transkryptu (resent, biased against, echo chamber, reinforce, feedback loop, distorted view, bitterness, determined by, categorize, hierarchy) plus scenka G6 — prowadzenie lekcji i ratowanie rozmowy."
     },
     {
       "id": "k5",
@@ -929,6 +929,120 @@
       "id": "move-up-in-hierarchy",
       "pl": "awansować w hierarchii",
       "en": "to move up in the hierarchy",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "say-that-again",
+      "pl": "powiedz to jeszcze raz / nie dosłyszałem",
+      "en": "Say that again / I didn't catch that",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "id-rather-you",
+      "pl": "wolałbym, żebyś… (unreal past po I'd rather)",
+      "en": "I'd rather you asked me / I'd rather try it myself / the other way around",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "only-be-guessing",
+      "pl": "tylko zgaduję / sądząc po samej nazwie",
+      "en": "I'd only be guessing / going by the name / give it a shot",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "pretty-sure-i-said",
+      "pl": "jestem prawie pewien, że powiedziałem…",
+      "en": "I'm pretty sure I said / Fair enough",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k6",
+        "k8",
+        "k10",
+        "k12",
+        "k14",
+        "k16",
+        "k18",
+        "k20",
+        "k22"
+      ]
+    },
+    {
+      "id": "paragraph-by-paragraph",
+      "pl": "akapit po akapicie",
+      "en": "paragraph by paragraph / come back to that",
+      "typ": "kolokacja",
+      "intro": "k4",
+      "review": [
+        "k5",
+        "k7",
+        "k9",
+        "k11",
+        "k13",
+        "k15",
+        "k17",
+        "k19",
+        "k21",
+        "k23"
+      ]
+    },
+    {
+      "id": "correct-me-as-we-go",
+      "pl": "poprawiaj mnie na bieżąco / co mnie blokuje?",
+      "en": "correct me as we go / what's holding me back / Would you say that's",
       "typ": "kolokacja",
       "intro": "k4",
       "review": [

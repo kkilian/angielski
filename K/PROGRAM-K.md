@@ -128,7 +128,8 @@ z realnymi pytaniami lektora z tej lekcji.
 ## K4 - Manosfera: opowiedz cudzy pogląd / The Manosphere: Reporting Someone Else's View
 
 **Źródło:** worksheet `esl_worksheet_incel_manosphere_deep_in_depth_b1_b2.pdf` od lektora
-oraz transkrypcja głosowej rozmowy Krzyśka z ChatGPT o tym arkuszu (2026-08-08).
+oraz **dwie** transkrypcje głosowych rozmów Krzyśka z ChatGPT o tym arkuszu
+(2026-08-08 → G1–G5, 2026-08-12 → G6).
 
 **Diagnoza z transkryptu:** rozmowa dobrnęła tylko do szóstego akapitu — ani jedno
 z jedenastu pytań arkusza nie zostało dotknięte. Zacięcia były powtarzalne:
@@ -139,6 +140,14 @@ systematycznie gubione rodzajniki i mylone `biased towards`/`against`.
 
 **Skrócenie 2026-08-10:** 10 grup → 5 grup, 164 pary → 77 par. Decyzja Krzyśka:
 K4 ma być przygotowaniem do czwartkowej lekcji, nie kursem-encyklopedią.
+
+**Dodanie Grupy 6 (2026-08-12):** 5 grup → 6 grup, 77 → 95 par. Po przećwiczeniu
+G1–G5 druga rozmowa z ChatGPT pokazała, że słownictwo tematyczne już siedzi, ale
+rozmowa rozsypuje się na **prowadzeniu jej**: gołe „Sorry" zamiast prośby
+o powtórzenie, brak sposobu na przekierowanie rozmówcy („so you have to ask me
+questions"), brak języka na przyznanie się do zgadywania i na grzeczną niezgodę.
+Do tego wróciły błędy liczby mnogiej (`push man into isolation`,
+`their harmful belief`) i present continuous zamiast simple (`they are leaning`).
 
 **Nowe targety (11, w kolejności ROI z transkryptu):**
 
@@ -154,13 +163,28 @@ K4 ma być przygotowaniem do czwartkowej lekcji, nie kursem-encyklopedią.
 - `to move up in the hierarchy` / `a fixed hierarchy`
 - openings and attribution: `According to the article…`, `The text argues that…`, `In their view…`, `To be clear, I'm not defending them`, `These are extreme cases`
 
+**Targety Grupy 6 (prowadzenie rozmowy, uniwersalne — nie o manosferze):**
+
+- `Say that again?` / `I didn't catch that (last part)`
+- `I'd rather you asked me the questions` (C1: unreal past po `I'd rather` + podmiot)
+- `I'd only be guessing` / `going by the name`
+- `I'm pretty sure I said…` / `Fair enough`
+- `paragraph by paragraph` / `Can we come back to that?`
+- `Correct me as we go` / `What's holding me back?` / `Would you say that's still B1?`
+
 **Atrybucja:** każde zdanie oddające ideologię idzie w mowie zależnej — nigdy jako gołe twierdzenie.
 
 **Pytania Exercise 2/3 celowo pominięte** — trenuje je czwartkowa lekcja z tutorem; błędy z niej → K5. Pilnuje tego `tools/k4-content.test.mjs`.
 
 **Nowa zasada K: zasiew wydłużony do 5–6 kolejnych wierszy** jednego targetu (z wariacjami osoba/czas/przeczenie), potem rotacja. Zamiast dotychczasowego limitu max 3 pod rząd w fazie zasiewu.
 
-**Łuk działu (5 grup):** G1 — zasiew resent + biased against → G2 — echo chamber + reinforce + feedback loop → G3 — distorted view + bitterness + determined by → G4 — naprawa rodzajników, przyimków, categorize + hierarchy → G5 — otwarcia/atrybucja + streszczenia 6 akapitów recyklingujące targety G1–G4.
+**Łuk działu (6 grup):** G1 — zasiew resent + biased against → G2 — echo chamber + reinforce + feedback loop → G3 — distorted view + bitterness + determined by → G4 — naprawa rodzajników, przyimków, categorize + hierarchy → G5 — otwarcia/atrybucja + streszczenia 6 akapitów recyklingujące targety G1–G4 → **G6 (scenka) — prowadzenie lekcji i ratowanie rozmowy**, zakończone dwoma wierszami składanki, które streszczają dział z atrybucją.
+
+**Wyjątek formatu:** G6 jest jedyną scenką w K4 (`<!-- mode: scenka -->`, pytanie EN →
+podpowiedź PL → odpowiedź EN); G1–G5 zostają drylem `pl2en`. Przywraca to regułę metody
+K („ostatnia grupa symuluje realną rozmowę") — tak samo kończą się K1, K2 i K3.
+Kontraktu pilnuje `tools/k4-content.test.mjs` w obie strony: dryl nie może się zamienić
+w scenkę, a G6 nie może przestać nią być.
 
 **Lekki klej z K1 (bez obowiązku):** `It's sort of like...`, `I'm blanking on the word`, `I should have mentioned...`, `What ... most is ...`, `I'd say...`, `What I mean is...` — wchodzą naturalnie w G5. Pozostałe zaplanowane powroty przesunięto dalej.
 

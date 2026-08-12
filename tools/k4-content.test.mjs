@@ -22,7 +22,12 @@ function parseGroups(markdown) {
       .filter((cells) => !cells.every((cell) => /^:?-{3,}:?$/.test(cell)))
       .filter((cells) => !/^(polski|pytanie \(EN\))$/i.test(cells[0]));
 
-    groups.push({ number: Number(match[1]), body: match[2], rows });
+    groups.push({
+      number: Number(match[1]),
+      body: match[2],
+      scenka: match[2].includes('mode: scenka'),
+      rows,
+    });
   }
 
   return groups;
@@ -30,13 +35,15 @@ function parseGroups(markdown) {
 
 const groups = parseGroups(chapter);
 
-// Wszystkie grupy pl2en — zero scenek.
-function englishCell(cells) {
-  return cells[1];
+// pl2en:  | polski | angielski |                  → angielski w kolumnie 2
+// scenka: | pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) | → angielski w kolumnie 3
+// Bez tego rozróżnienia asercje o angielskim czytałyby polską podpowiedź scenki.
+function englishCell(cells, scenka) {
+  return scenka ? cells[2] : cells[1];
 }
 
 function englishLines(group) {
-  return group.rows.map((cells) => englishCell(cells));
+  return group.rows.map((cells) => englishCell(cells, group.scenka));
 }
 
 function countEnglishWords(text) {
@@ -62,10 +69,10 @@ const allEnglish = groups.flatMap((group) => englishLines(group));
 
 // ─── Kontrakt ────────────────────────────────────────────────
 
-test('K4 ma 5 grup po 10–18 wierszy; wszystkie pl2en', () => {
+test('K4 ma 6 grup po 10–18 wierszy: G1–G5 pl2en, G6 scenka', () => {
   assert.deepEqual(
     groups.map((group) => group.number),
-    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5, 6],
   );
 
   for (const group of groups) {
@@ -73,11 +80,22 @@ test('K4 ma 5 grup po 10–18 wierszy; wszystkie pl2en', () => {
       group.rows.length >= 10 && group.rows.length <= 18,
       `Grupa ${group.number} ma ${group.rows.length} wierszy danych`,
     );
-    // Zero scenek — sprawdź, czy nie ma trybu scenka i czy to na pewno pl2en.
-    assert.ok(
-      !group.body.includes('mode: scenka'),
-      `Grupa ${group.number} ma marker scenki — ma być tylko pl2en`,
+    // Format grupy jest chroniony w obie strony: dryl nie może się zamienić
+    // w scenkę, a ostatnia grupa nie może przestać być rozmową.
+    const powinnaBycScenka = group.number === 6;
+    assert.equal(
+      group.scenka,
+      powinnaBycScenka,
+      powinnaBycScenka
+        ? 'Grupa 6 musi mieć marker <!-- mode: scenka -->'
+        : `Grupa ${group.number} ma marker scenki — ma być pl2en`,
     );
+    // Scenka musi mieć komplet trzech kolumn, inaczej audio nie ma czego czytać.
+    if (group.scenka) {
+      for (const cells of group.rows) {
+        assert.equal(cells.length, 3, `Wiersz scenki ma ${cells.length} kolumn: "${cells.join(' | ')}"`);
+      }
+    }
   }
 });
 
@@ -100,9 +118,9 @@ test('K4 otwiera grupy krótkimi zdaniami, a Grupa 1 nie przekracza 12 słów EN
 
   const groupOne = groups.find((group) => group.number === 1);
   assert.ok(groupOne, 'Brakuje Grupy 1');
-  for (const cells of groupOne.rows) {
-    const words = countEnglishWords(cells[1]);
-    assert.ok(words <= 12, `Wiersz Grupy 1 ma ${words} słów: "${cells[1]}"`);
+  for (const line of englishLines(groupOne)) {
+    const words = countEnglishWords(line);
+    assert.ok(words <= 12, `Wiersz Grupy 1 ma ${words} słów: "${line}"`);
   }
 });
 
@@ -267,4 +285,62 @@ test('K4 NIE zawiera żadnego z 11 pytań Exercise 2/3 arkusza', () => {
       `Pytanie arkusza trafiło do rozdziału: "${q}"`,
     );
   }
+});
+
+// ─── Grupa 6: prowadzenie rozmowy ────────────────────────────
+
+const groupSix = groups.find((group) => group.number === 6);
+
+test('K4 Grupa 6 dryluje sześć ruchów prowadzenia rozmowy', () => {
+  assert.ok(groupSix, 'Brakuje Grupy 6');
+  const answers = englishLines(groupSix);
+
+  const ruchy = [
+    { name: 'prośba o powtórzenie', pattern: /\bsay that again\b/i },
+    { name: 'nie dosłyszałem', pattern: /\bdidn'?t catch that\b/i },
+    { name: 'przekierowanie lektora (I\'d rather you + past)', pattern: /\bi'?d rather you asked\b/i },
+    { name: 'przyznanie się do zgadywania', pattern: /\bonly be guessing\b/i },
+    { name: 'sądząc po nazwie', pattern: /\bgoing by the name\b/i },
+    { name: 'grzeczna niezgoda', pattern: /\bi'?m pretty sure i said\b/i },
+    { name: 'sterowanie tempem', pattern: /\bparagraph by paragraph\b/i },
+    { name: 'prośba o poprawianie', pattern: /\bcorrect me as we go\b/i },
+    { name: 'pytanie o blokadę', pattern: /\bholding me back\b/i },
+  ];
+
+  for (const ruch of ruchy) {
+    assert.ok(
+      answers.some((line) => ruch.pattern.test(line)),
+      `Brakuje w Grupie 6: ${ruch.name}`,
+    );
+  }
+});
+
+test('K4 Grupa 6 nie powtarza błędów z transkryptu 2026-08-12', () => {
+  assert.ok(groupSix, 'Brakuje Grupy 6');
+  const bledy = [
+    { name: 'liczba pojedyncza man', pattern: /\bpush (?:this )?man into\b/i },
+    { name: 'liczba pojedyncza belief', pattern: /\bharmful belief\b(?!s)/i },
+    { name: "I'd rather you + bezokolicznik", pattern: /\bi'?d rather you ask\b/i },
+    { name: 'gołe Sorry bez prośby', pattern: /^sorry\.?$/i },
+    { name: 'you have to ask me', pattern: /\byou have to ask me\b/i },
+  ];
+
+  for (const line of englishLines(groupSix)) {
+    for (const blad of bledy) {
+      assert.ok(!blad.pattern.test(line), `Błąd „${blad.name}" wrócił do audio: "${line}"`);
+    }
+  }
+});
+
+test('K4 Grupa 6 domyka dział składanką z targetami K1–K5', () => {
+  assert.ok(groupSix, 'Brakuje Grupy 6');
+  const ostatnieDwie = englishLines(groupSix).slice(-2);
+  assert.ok(
+    ostatnieDwie.some((line) => /\becho chambers?\b/i.test(line) && /\bmen\b/i.test(line)),
+    'Ostatnie wiersze Grupy 6 mają streszczać dział (echo chambers + men w liczbie mnogiej)',
+  );
+  assert.ok(
+    ostatnieDwie.some((line) => /\bbeliefs get reinforced\b/i.test(line)),
+    'Ostatnie wiersze Grupy 6 mają recyklingować reinforce w stronie biernej z get',
+  );
 });

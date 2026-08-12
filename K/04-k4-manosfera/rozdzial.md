@@ -97,6 +97,29 @@
 | Według nich o twoim losie decyduje wygląd, więc nie ma sensu się starać. | In their view, looks determine your fate, so there's no point in trying. |
 | Tekst twierdzi, że sprzężenie zwrotne wzmacnia urazę i gorycz, co prowadzi do eskalacji. | The text argues that the feedback loop reinforces resentment and bitterness, leading to escalation. |
 
+## Grupa 6
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| All right, ready to start? | Zgódź się i poproś, żeby poprawiał cię na bieżąco. | Yeah. Just correct me as we go. |
+| So that's the whole idea, more or less. | Nie dosłyszałeś — poproś, żeby powtórzył. | Sorry, could you say that again? |
+| I said the second paragraph is the important one. | Powiedz, że nie dosłyszałeś ostatniej części. | I didn't catch that last part. |
+| Got it? | Powiedz, że prawie, i poproś, żeby powiedział to wolniej. | Almost — could you say that a bit more slowly? |
+| Okay, let me summarize the text for you first. | Przekieruj rozmowę: wolisz, żeby to on zadawał pytania, a ty mówił. | Actually, I'd rather you asked me the questions. I want to do the talking. |
+| Do you want me to explain the term before we start? | Powiedz, że wolisz najpierw spróbować sam i dać się poprawić. | I'd rather try it myself first and have you correct me. |
+| Should I go on, or do you want to take it? | Zaproponuj, żeby zrobili to na odwrót — on pyta, ty odpowiadasz. | Let's do it the other way around — you ask, I answer. |
+| In your own words, what does that term mean? | Przyznaj, że tylko zgadujesz. | Honestly, I'd only be guessing here. |
+| Any idea at all? | Powiedz, że zgadujesz po samej nazwie. | Just going by the name, I'd say it's something online. |
+| Take a shot at it. | Powiedz, że nie masz pewności, ale spróbujesz. | I'm not sure, but let me give it a shot. |
+| You mixed up two words there — twice, actually. | Grzecznie się nie zgódź: jesteś prawie pewien, że powiedziałeś to dobrze. | Actually, I'm pretty sure I said it right. |
+| No, you definitely said the wrong one. | Ustąp, ale zapytaj, jak to zabrzmiało. | Fair enough — how did it sound to you? |
+| Can we move on to the next paragraph? | Poproś, żeby najpierw wrócili do jednej rzeczy. | Can we come back to that one thing first? |
+| How do you want to do this? | Poproś, żeby szli akapit po akapicie. | Could we go through it paragraph by paragraph? |
+| Okay, let's pause there. How did that feel? | Powiedz, że gubisz się, gdy musisz mówić szybko, i zapytaj, co cię blokuje. | I lose it when I have to speak fast. What's holding me back? |
+| Your ideas are strong, but the delivery is choppy. | Zapytaj, czy to wciąż B1 i co pchnęłoby cię na B2. | Would you say that's still B1? What would push me into B2? |
+| So, in one sentence — what is the article about? | Streść jednym zdaniem, z atrybucją. | According to the article, it's a loose collection of online spaces that push men into echo chambers. |
+| And what's the risk there? | Powiedz, co tekst twierdzi o wzmacnianiu przekonań. | The text argues those beliefs get reinforced until they're hard to change. |
+
 ## Nowe słowa i struktury
 
 **Główne targety (w kolejności ROI z transkryptu):**
@@ -128,6 +151,25 @@
 `The first paragraph introduces…` · `The second paragraph says…` ·
 `The third paragraph explains that…` · `The fourth paragraph says…` ·
 `The fifth paragraph describes…` · `The sixth paragraph explains how…`
+
+**Prowadzenie rozmowy (Grupa 6) — sześć ruchów na lekcji:**
+
+| polski | angielski | uwagi |
+|---|---|---|
+| powiedz to jeszcze raz | Say that again? / Could you say that again? | akcent: say-that-a-**GAIN**. Gołe `Sorry.` **nie wystarcza** — po angielsku to znaczy „przepraszam", nie „powtórz". |
+| nie dosłyszałem | I didn't catch that (last part). | `catch` = wychwycić uchem. **Nie** *I didn't hear you* — to brzmi, jakby mówił za cicho, a nie że Ty się zgubiłeś. |
+| wolałbym, żebyś… | I'd rather you **asked** me the questions. | **Struktura C1:** po `I'd rather + podmiot` idzie **czas przeszły** (unreal past), choć mowa o teraz. **Nie** *I'd rather you ask*. Bez drugiego podmiotu wraca bezokolicznik: `I'd rather **try** it myself`. |
+| zróbmy to na odwrót | Let's do it the other way around. | całość jednym ciągiem: the-other-way-a-**ROUND**. **Nie** *the opposite way*. |
+| tylko zgaduję | I'd only be guessing (here). | dosłownie „zgadywałbym tylko" — grzeczne przyznanie się do niewiedzy. Mocniejsze i krótsze niż `I don't know what that means`. |
+| sądząc po samej nazwie | Just going by the name… | `go by` = sądzić na podstawie. **Nie** *from looking at the name*. |
+| spróbuję | Let me give it a shot. | neutralne, nie slangowe. Wariant: `Let me try`. |
+| jestem prawie pewien, że powiedziałem… | I'm pretty sure I said… | `pretty sure` = „prawie pewien", nie „ładnie pewien". Miękka niezgoda — nie `You're wrong`. |
+| niech ci będzie | Fair enough. | ustępstwo bez przyznania racji; zawsze dwa słowa, nigdy *fair enought*. |
+| wróćmy do tego | Can we come back to that? | **Nie** *let's return to that* — brzmi jak referat. |
+| akapit po akapicie | paragraph by paragraph | akcent: **PA**-ra-graf. Ten sam wzór: `line by line`, `step by step`. |
+| poprawiaj mnie na bieżąco | Correct me as we go. | `as we go` = w trakcie. **Nie** *correct me currently*. |
+| co mnie blokuje? | What's holding me back? | `hold somebody back` = powstrzymywać przed postępem. |
+| powiedziałbyś, że…? | Would you say that's still B1? | gotowe pytanie o poziom — grzeczniejsze niż `Is my English still B1?`. |
 
 ## Typowe błędy Polaka
 
@@ -161,6 +203,30 @@
 - `categorize people in rigid groups` → `categorize people **into** rigid groups`.
 - `blame women about their situation` → `blame women **for** their situation`.
 
+**Z drugiej rozmowy z ChatGPT (2026-08-12) — Grupa 6:**
+
+- `push man into isolation` → `push **men** into isolation`. Po polsku „mężczyzn"
+  brzmi jak liczba pojedyncza; po angielsku `man` i `men` różnią się jedną samogłoską
+  i native słyszy tę różnicę od razu. Mnoga: **men** (jak `ten`), pojedyncza: **man** (jak `can`).
+- `their harmful belief` → `their harmful **beliefs**`. Grupa ludzi ma wiele przekonań —
+  bez `-s` zdanie sugeruje jedno konkretne.
+- `they are leaning more toward the black pill` → `they **lean** more toward the black pill`.
+  Trwały pogląd = present simple. Present continuous znaczyłoby „właśnie w tej chwili się skłaniają".
+- `incels are not believers of self-improvement` → `incels don't **focus on** self-improvement`
+  albo `incels don't **believe in** self-improvement`. `A believer of` nie istnieje —
+  jest `a believer **in** something`, ale w mowie brzmi to religijnie.
+- `they see hierarchy as fixed` → `they see **the** hierarchy as fixed`.
+  Struktura `see X as Y` jest dobra — brakowało tylko rodzajnika.
+- `a fixed hierarchy in which you cannot move up` → to jest poprawne, ale w mowie
+  prościej: `a fixed hierarchy **that you can't move up in**`. Przyimek na końcu jest
+  po angielsku naturalny, nie błędny.
+- Gołe `Sorry.`, gdy nie dosłyszysz → `Sorry, could you **say that again**?`
+  Samo `Sorry` znaczy „przepraszam" i rozmówca nie wie, czego chcesz.
+- `you have to ask me questions` → `I'd rather **you asked** me the questions`.
+  `You have to` brzmi jak polecenie; `I'd rather you asked` to prośba i od razu C1.
+- `I don't even know what that means` → `I'd only be guessing here`.
+  Ta sama treść, ale nie brzmisz, jakbyś się poddawał.
+
 **Komora echa to nie to samo co filter bubble:**
 `an echo chamber` to środowisko **społeczne** — ludzie powtarzają sobie nawzajem to samo.
 `a filter bubble` to efekt **algorytmu**, który dobiera Ci treści. Arkusz mówi o `echo chambers`,
@@ -170,6 +236,15 @@ więc na lekcji używaj tego słowa; `filter bubble` możesz dorzucić przy szó
 
 - Materiał powstał z arkusza `esl_worksheet_incel_manosphere_deep_in_depth_b1_b2.pdf` od lektora
   oraz z transkrypcji głosowej rozmowy z ChatGPT o tym arkuszu.
+- **Grupa 6 dodana 2026-08-12** z drugiej transkrypcji rozmowy z ChatGPT (po przećwiczeniu
+  G1–G5). Diagnoza z tej rozmowy: słownictwo tematyczne już siedzi, ale rozmowa rozsypywała
+  się na **prowadzeniu jej** — gołe „Sorry" zamiast prośby o powtórzenie, brak sposobu na
+  przekierowanie rozmówcy („you have to ask me questions"), brak języka na przyznanie się do
+  zgadywania i na grzeczną niezgodę. G6 trenuje dokładnie te ruchy — **uniwersalnie**,
+  bo używa się ich na każdej lekcji, nie tylko przy tym arkuszu.
+- Grupa 6 jest jedyną **scenką** w tym dziale (pytanie EN → podpowiedź PL → odpowiedź EN);
+  G1–G5 zostają drylem `pl2en`. Przywraca to regułę metody K: ostatnia grupa symuluje
+  realną rozmowę (tak samo kończą się K1, K2 i K3).
 - Rozdział skrócony z 10 do 5 grup — skupiony na największych błędach z transkryptu
   (resent, biased against, echo chamber, reinforce, feedback loop, distorted view,
   bitterness, determined by, categorize, hierarchy).
