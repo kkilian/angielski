@@ -1,0 +1,1350 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-08-18T06:55:26.835Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 8.904
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kamieniarze to byli rzemieślnicy, którzy budowali katedry.",
+            "en": "Stone masons were craftsmen who built cathedrals."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 4.92
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 3.952
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Masoni wywodzili się od nich.",
+            "en": "Freemasons originated from them."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 9.048
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Cała ta tradycja wywodziła się ze średniowiecznych gildii.",
+            "en": "The whole tradition originated from medieval guilds."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 7.368
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 4.312
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Sam symbol wywodził się z ich narzędzi.",
+            "en": "The symbol itself originated from their tools."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 8.256
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rzemiosło przekształciło się w sposób myślenia.",
+            "en": "The craft evolved into a way of thinking."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 8.952
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gildia przekształciła się w towarzystwo filozoficzne.",
+            "en": "The guild evolved into a philosophical society."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 14.208
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przez swoją pracę byli blisko związani z ludźmi zamożnymi i wpływowymi.",
+            "en": "Through their work they were closely connected to wealthy and powerful people."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 11.064
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Z czasem mogli stać się dobrze poinformowani i dobrze ustosunkowani.",
+            "en": "Over time they may have become well-informed and well-connected."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 19.52
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 11.464
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ostatecznie sieć przekształciła się w bractwo filozoficzne oddane samodoskonaleniu i służbie społeczności, gdzie ludzie wymieniali się pomysłami i budowali relacje.",
+            "en": "Eventually the network evolved into a philosophical brotherhood dedicated to self-improvement and community service, where people exchanged ideas and built relationships."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 7.608
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 3.808
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówi się, że spotykali się w lożach.",
+            "en": "It's said that they met in lodges."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówi się, że kilku ojców założycieli było masonami.",
+            "en": "It's said that several Founding Fathers were Freemasons."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 12.216
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 5.104
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówi się, że oświecenie zaczęło się dużo wcześniej, niż ludzie sądzą.",
+            "en": "It's said that the Enlightenment started much earlier than people think."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 9.456
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówi się, że loże trzymały swoje zapiski w tajemnicy.",
+            "en": "It's said that the lodges kept their records private."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 7.848
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Podobno niektórzy przywódcy polityczni byli masonami.",
+            "en": "Supposedly, some political leaders were Freemasons."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 8.52
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.12
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według historyków to były po prostu kluby dyskusyjne.",
+            "en": "According to historians, they were just discussion clubs."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 9.408
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Masoni byli zaangażowani w ważne wydarzenia polityczne.",
+            "en": "Freemasons were involved in important political events."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 13.464
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 6.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kilku ojców założycieli było masonami, w tym Jerzy Waszyngton i Benjamin Franklin.",
+            "en": "Several Founding Fathers were Freemasons, including George Washington and Benjamin Franklin."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 9.504
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak jak w Ameryce, coś podobnego widzimy w Europie.",
+            "en": "As with America, we see something similar in Europe."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 13.32
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 6.256
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Masoni byli zaangażowani w wielkie wydarzenia polityczne, w tym w rewolucję francuską.",
+            "en": "Freemasons were involved in major political events, including the French Revolution."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 17.048
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 7.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówi się, że idee oświeceniowe omawiane w lożach masońskich wpłynęły później na Deklarację Niepodległości.",
+            "en": "It's said that Enlightenment ideas discussed in Masonic lodges later influenced the Declaration of Independence."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 8.448
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Możliwe, że wtedy pociągali za polityczne sznurki.",
+            "en": "They might have been pulling political strings."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 10.056
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 4.552
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Możliwe, że przez całe dekady działali za kulisami.",
+            "en": "They might have been working behind the scenes for decades."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 10.608
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Możliwe, że przez cały tamten czas rozmawiali o filozofii.",
+            "en": "They might have been talking about philosophy the whole time."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 10.608
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wielu ludzi podejrzewało, że mogli wtedy wpływać na wybory.",
+            "en": "Many people suspected that they might have been influencing elections."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 15.312
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 6.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Skrytość sprawiła, że ludzie zaczęli podejrzewać, że masoni mogli coś wtedy ukrywać.",
+            "en": "The secrecy led people to suspect that Freemasons might have been hiding something."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 10.416
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Możliwe, że w ogóle niczego wtedy nie knuli.",
+            "en": "They might not have been up to anything at all."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 8.616
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 4.552
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Masoneria była organizacją bardzo skrytą — ukrywała, co robi.",
+            "en": "Freemasonry was a very secretive organization."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 6
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ta skrytość rozpaliła kontrowersje.",
+            "en": "That secrecy sparked controversy."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 13.056
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 6.352
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Cała ta sytuacja skończyła się tym, że masonerię zdelegalizowano w kilku krajach.",
+            "en": "This whole situation resulted in Freemasonry being banned in several countries."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 20.216
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 10
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kontrowersje kazały wielu ludziom podejrzewać, że masoni mogli wtedy pociągać za polityczne sznurki, i cała ta sytuacja skończyła się delegalizacją masonerii.",
+            "en": "The controversy led many people to suspect that they might have been pulling political strings, and this whole situation resulted in Freemasonry being banned."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 5.664
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie wskazują na rzekome znaki.",
+            "en": "People point to supposed signs."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 8.208
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rzekomych dowodów nikt nigdy nie przedstawia.",
+            "en": "Nobody ever actually produces the supposed evidence."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 7.704
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 3.448
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To rzekomy znak ich obecności.",
+            "en": "It's a supposed sign of their presence."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 8.16
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ich rzekomy wpływ nigdy nie został udowodniony.",
+            "en": "Their supposed influence has never been proven."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 14.12
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 5.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Niektórzy wskazują na symbole widziane na budynkach jako rzekome znaki ich obecności.",
+            "en": "Some people point to symbols seen on buildings as supposed signs of their presence."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 13.32
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Są całe kanały na YouTubie twierdzące, że ukryte elity rządzą światem.",
+            "en": "There are whole YouTube channels claiming that hidden elites run the world."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 5.52
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 3.4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Podobno spotykają się do dziś.",
+            "en": "They supposedly still meet today."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 10.512
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.104
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To bodaj najsłynniejsze tajne stowarzyszenie na świecie.",
+            "en": "That's arguably the most famous secret society in the world."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 18.656
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 9.256
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Teorie spiskowe pokazują naszą psychologiczną potrzebę porządku. Kiedy wszystko wydaje się chaotyczne, wygodnie jest obwinić tajną grupę.",
+            "en": "Conspiracy theories show our psychological desire for order. When things feel chaotic, it's comforting to blame a secret group."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 21.656
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 11.368
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Masoneria pozostaje głównym motywem niektórych teorii spiskowych, twierdzących, że ukryte elity mogłyby kontrolować nowy porządek świata — teorii często łączonych z iluminatami.",
+            "en": "Freemasonry remains a central theme in some conspiracy theories claiming that hidden elites could control the New World Order — theories often linked to the Illuminati."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 13.256
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 6.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "No więc — czytałem ostatnio o masonach, a to się zaczyna od kamieniarzy.",
+            "en": "So, I've been reading about the Freemasons — and it actually starts with stone masons."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 13.112
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 6.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kamieniarze — rzemieślnicy od katedr — i stąd wzięli się masoni.",
+            "en": "Stone masons were craftsmen who built cathedrals, and that's where the Freemasons came from."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 13.52
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 6.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przez swoją pracę blisko zamożnych i wpływowych: pieniądze i władza.",
+            "en": "Through their work they were closely connected to wealthy and powerful people — money and power."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 12.36
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A z czasem mogli stać się dobrze poinformowani i dobrze ustosunkowani.",
+            "en": "And over time they may have become well-informed and well-connected."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 19.256
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 11.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "I w końcu ta cała sieć przekształciła się w bractwo filozoficzne: samodoskonalenie, służba społeczności, wymiana myśli, znajomości.",
+            "en": "And eventually that whole network evolved into a philosophical brotherhood dedicated to self-improvement and community service, where people exchanged ideas and made connections."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 13.32
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 5.968
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Teraz polityka: masoni byli zaangażowani w naprawdę duże wydarzenia polityczne. Weźmy Amerykę.",
+            "en": "Now, Freemasons were involved in some pretty big political events. Take America."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 11.568
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kilku ojców założycieli było masonami — Waszyngton, Franklin.",
+            "en": "Several of the Founding Fathers were Freemasons — Washington, Franklin."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 16.352
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 8.248
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A mówi się, że idee oświeceniowe omawiane w lożach masońskich wpłynęły później na Deklarację Niepodległości.",
+            "en": "And it's said that Enlightenment ideas discussed in Masonic lodges later influenced the Declaration of Independence."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g5-p09-cue.mp3",
+            "sek": 20.216
+          },
+          "wzor": {
+            "src": "audio/g5-p09-en.mp3",
+            "sek": 10.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "I tak jak w Ameryce, coś podobnego widzimy w Europie: rewolucja francuska choćby — te same loże, te same idee, sporo tych samych ludzi.",
+            "en": "And as with America, we see something similar in Europe — the French Revolution, for one. Same lodges, same Enlightenment ideas, a lot of the same people."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g5-p10-cue.mp3",
+            "sek": 16.352
+          },
+          "wzor": {
+            "src": "audio/g5-p10-en.mp3",
+            "sek": 8.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale jest haczyk: masoneria była organizacją bardzo skrytą, i ta skrytość rozpaliła kontrowersje.",
+            "en": "Here's the thing, though. Freemasonry was a very secretive organization, and that secrecy sparked a lot of controversy."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g5-p11-cue.mp3",
+            "sek": 14.96
+          },
+          "wzor": {
+            "src": "audio/g5-p11-en.mp3",
+            "sek": 9.16
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "I to kazało ludziom podejrzewać, że mogli wtedy pociągać za sznurki — a skończyło się delegalizacją.",
+            "en": "And that led a lot of people to suspect that Freemasons might have been pulling political strings — and that's how Freemasonry ended up getting banned."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g5-p12-cue.mp3",
+            "sek": 15.416
+          },
+          "wzor": {
+            "src": "audio/g5-p12-en.mp3",
+            "sek": 6.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nawet dziś ludzie wskazują na symbole na budynkach jako rzekome znaki, że masoni wciąż tu są.",
+            "en": "Even now, people point to symbols you see on buildings as supposed signs that they're still around."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g5-p13-cue.mp3",
+            "sek": 17.96
+          },
+          "wzor": {
+            "src": "audio/g5-p13-en.mp3",
+            "sek": 9.112
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wciąż główny motyw teorii spiskowych, często z iluminatami i całą tą rzekomą historią o ukrytych elitach.",
+            "en": "Freemasonry still comes up in a lot of conspiracy theories — usually together with the Illuminati, and the whole supposed hidden-elites thing."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g5-p14-cue.mp3",
+            "sek": 16.352
+          },
+          "wzor": {
+            "src": "audio/g5-p14-en.mp3",
+            "sek": 13.12
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A dla mnie to mówi więcej o nas niż o nich: potrzeba porządku, a w chaosie wygodnie jest obwinić tajną grupę.",
+            "en": "But to me, that says more about us than about them. Conspiracy theories show our psychological desire for order, and when things feel chaotic, it's comforting to blame a secret group."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g6-p01-cue.mp3",
+            "sek": 32.74
+          },
+          "wzor": {
+            "src": "audio/g6-p01-en.mp3",
+            "sek": 10.912
+          },
+          "tekst": {
+            "pyt": "You said you'd been reading about something weird. What was it?",
+            "pl": "Nazwij temat, ZANIM użyjesz „oni\" — inaczej rozmówca nie wie, o kim mówisz. Potem: masoni wywodzili się od kamieniarzy budujących katedry, a praca postawiła ich blisko zamożnych i wpływowych.",
+            "en": "The Freemasons, actually. They originated from stone masons — craftsmen who built cathedrals. And that work put them close to the rich and powerful."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g6-p02-cue.mp3",
+            "sek": 33.532
+          },
+          "wzor": {
+            "src": "audio/g6-p02-en.mp3",
+            "sek": 11.104
+          },
+          "tekst": {
+            "pyt": "Cathedral builders? How do you get from that to a secret club?",
+            "pl": "Powiedz, że z czasem mogli stać się nieźle poinformowani i ustosunkowani, że musieli poznać mnóstwo wpływowych ludzi, i że ta cała sieć w końcu przerodziła się w bractwo filozoficzne.",
+            "en": "They may have become pretty well-informed and well-connected over the years — they must have met a lot of influential people. And eventually that whole network turned into a philosophical brotherhood."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g6-p03-cue.mp3",
+            "sek": 24.652
+          },
+          "wzor": {
+            "src": "audio/g6-p03-en.mp3",
+            "sek": 8.968
+          },
+          "tekst": {
+            "pyt": "Were they ever political, though?",
+            "pl": "Zareaguj najpierw jednym słowem, dopiero potem informuj. Podaj Amerykę i wymień dwóch ojców założycieli po nazwisku.",
+            "en": "Oh, definitely. Take America — several of the Founding Fathers were Freemasons, including George Washington and Benjamin Franklin."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g6-p04-cue.mp3",
+            "sek": 36.82
+          },
+          "wzor": {
+            "src": "audio/g6-p04-en.mp3",
+            "sek": 9.808
+          },
+          "tekst": {
+            "pyt": "Come on — plenty of important people joined clubs. That doesn't mean the lodge actually shaped anything.",
+            "pl": "Ustąp punkt, zamiast się upierać („niech ci będzie — nie mówię, że to oni ją napisali\"), a potem przejdź na „mówi się, że…\": idee oświeceniowe omawiane w lożach wpłynęły później na Deklarację Niepodległości.",
+            "en": "Fair enough — I'm not saying they wrote it. But it's said that Enlightenment ideas discussed in Masonic lodges later influenced the Declaration of Independence."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g6-p05-cue.mp3",
+            "sek": 36.724
+          },
+          "wzor": {
+            "src": "audio/g6-p05-en.mp3",
+            "sek": 14.608
+          },
+          "tekst": {
+            "pyt": "Huh. Okay — then why did governments go after them?",
+            "pl": "Poprowadź cały łańcuch w trzech krokach: masoneria była organizacją bardzo skrytą, ta skrytość rozpaliła kontrowersje, kontrowersje kazały ludziom podejrzewać pociąganie za sznurki — i skończyło się delegalizacją.",
+            "en": "Freemasonry was a very secretive organization, and that secrecy sparked controversy. It led many people to suspect that Freemasons might have been pulling political strings, and this whole situation resulted in Freemasonry being banned."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g6-p06-cue.mp3",
+            "sek": 34.156
+          },
+          "wzor": {
+            "src": "audio/g6-p06-en.mp3",
+            "sek": 10.648
+          },
+          "tekst": {
+            "pyt": "Do you actually buy any of that yourself?",
+            "pl": "Odsuń się od tezy: aż tak byś nie poszedł, mógłbyś tylko zgadywać, nie ma twardych dowodów. Zaznacz, że nie twierdzisz, że nic się nigdy nie wydarzyło — tylko że nikt nie wie, jaki naprawdę mieli wpływ.",
+            "en": "I wouldn't go that far — I'd only be guessing, and there's no hard evidence. I'm not saying nothing ever happened; I'm just saying no one really knows how much influence they had."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g6-p07-cue.mp3",
+            "sek": 28.42
+          },
+          "wzor": {
+            "src": "audio/g6-p07-en.mp3",
+            "sek": 13.864
+          },
+          "tekst": {
+            "pyt": "So why does this stuff still stick around?",
+            "pl": "Powiedz „powiedziałbym, że wszystko sprowadza się do…\", wyłóż mechanizm (potrzeba porządku, w chaosie wygodnie obwinić tajną grupę) i zamknij tym, że masoneria po prostu akurat się na tę rolę nadała.",
+            "en": "I'd say it all comes down to this. Conspiracy theories show our psychological desire for order, and when things feel chaotic, it's comforting to blame a secret group. Freemasonry just happened to be the group people picked."
+          }
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g7-p01-cue.mp3",
+            "sek": 6.552
+          },
+          "wzor": {
+            "src": "audio/g7-p01-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Władze zamknęły wszystkie parki.",
+            "en": "The authorities closed all the parks."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g7-p02-cue.mp3",
+            "sek": 7.152
+          },
+          "wzor": {
+            "src": "audio/g7-p02-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Władze bały się utraty kontroli.",
+            "en": "The authorities were afraid of losing control."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g7-p03-cue.mp3",
+            "sek": 7.464
+          },
+          "wzor": {
+            "src": "audio/g7-p03-en.mp3",
+            "sek": 4.312
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Z czasem władze złagodziły obostrzenia.",
+            "en": "Over time, the authorities eased the restrictions."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g7-p04-cue.mp3",
+            "sek": 10.416
+          },
+          "wzor": {
+            "src": "audio/g7-p04-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Obostrzenia poluzowali dopiero kilka miesięcy później.",
+            "en": "They didn't loosen the restrictions until a few months later."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g7-p05-cue.mp3",
+            "sek": 9.6
+          },
+          "wzor": {
+            "src": "audio/g7-p05-en.mp3",
+            "sek": 3.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Można było dostać mandat za spacer po lesie.",
+            "en": "You could get fined for walking in the woods."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g7-p06-cue.mp3",
+            "sek": 10.512
+          },
+          "wzor": {
+            "src": "audio/g7-p06-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie dostawali mandaty za siedzenie na parkowej ławce.",
+            "en": "People were getting fined for sitting on a park bench."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g7-p07-cue.mp3",
+            "sek": 5.904
+          },
+          "wzor": {
+            "src": "audio/g7-p07-en.mp3",
+            "sek": 2.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Parki były odgrodzone taśmą.",
+            "en": "The parks were taped off."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g7-p08-cue.mp3",
+            "sek": 14.048
+          },
+          "wzor": {
+            "src": "audio/g7-p08-en.mp3",
+            "sek": 6.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zamienili cały stadion w szpital polowy, ale nie było tam żadnych ludzi.",
+            "en": "They turned the whole stadium into a field hospital, but there were no people in it."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g7-p09-cue.mp3",
+            "sek": 13.208
+          },
+          "wzor": {
+            "src": "audio/g7-p09-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie było kolejek, bo w sklepach były specjalne godziny dla seniorów.",
+            "en": "There were no lines, because there were special hours for the elderly at the stores."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g7-p10-cue.mp3",
+            "sek": 10.512
+          },
+          "wzor": {
+            "src": "audio/g7-p10-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie wolno było iść chodnikiem z drugą osobą.",
+            "en": "You weren't allowed to walk down the sidewalk with another person."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g7-p11-cue.mp3",
+            "sek": 12.92
+          },
+          "wzor": {
+            "src": "audio/g7-p11-en.mp3",
+            "sek": 6.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rzuciłem tę grę, bo pożerała mi cały czas — odpuściłem ją na dobre.",
+            "en": "I quit the game because it was eating up all my time — I gave it up for good."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g7-p12-cue.mp3",
+            "sek": 17.408
+          },
+          "wzor": {
+            "src": "audio/g7-p12-en.mp3",
+            "sek": 7.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mason może się ujawnić, ale tylko z własnej nieprzymuszonej woli i na własnych warunkach — nikt nie może go zmusić.",
+            "en": "A Freemason can reveal himself, but only of his own free will and on his own terms — nobody can force him."
+          }
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g8-p01-cue.mp3",
+            "sek": 33.052
+          },
+          "wzor": {
+            "src": "audio/g8-p01-en.mp3",
+            "sek": 9.208
+          },
+          "tekst": {
+            "pyt": "What would have happened if the Church had never banned them?",
+            "pl": "Zbuduj gdybanie mieszane — przeszła przyczyna, dzisiejszy skutek: gdyby ich nie zakazano, nikt by DZIŚ o nich nie mówił. Prawdę mówiąc, to właśnie zakaz zrobił z prywatnego klubu legendę.",
+            "en": "If the Church had never banned them, nobody would be talking about them today. Honestly, the ban is what turned a private club into a legend."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g8-p02-cue.mp3",
+            "sek": 35.02
+          },
+          "wzor": {
+            "src": "audio/g8-p02-en.mp3",
+            "sek": 10.216
+          },
+          "tekst": {
+            "pyt": "Suppose the lodges hadn't kept anything secret. Would anyone care about them now?",
+            "pl": "Odpowiedz przecząco i uzasadnij gdybaniem: gdyby wtedy wszystko było jawne, wyglądaliby jak każdy inny klub dyskusyjny, a ludzie zapomnieliby o nich sto lat temu.",
+            "en": "No — if everything had been out in the open, they would have looked like any other discussion club. People would have forgotten them a hundred years ago."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g8-p03-cue.mp3",
+            "sek": 33.772
+          },
+          "wzor": {
+            "src": "audio/g8-p03-en.mp3",
+            "sek": 7.264
+          },
+          "tekst": {
+            "pyt": "If you had been invited to a lodge back in the day, would you have joined?",
+            "pl": "Odpowiedz „chyba tak\" — całość w gdybaniu o przeszłości: byś wstąpił, choćby z czystej ciekawości. Ale gdybyś wtedy poznał ich sekrety, nie mógłbyś już nikomu o tym powiedzieć.",
+            "en": "I guess so. I would have joined, just out of curiosity. But if I had learned their secrets, I wouldn't have been able to tell anyone."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g8-p04-cue.mp3",
+            "sek": 32.62
+          },
+          "wzor": {
+            "src": "audio/g8-p04-en.mp3",
+            "sek": 8.8
+          },
+          "tekst": {
+            "pyt": "If that stadium hospital had actually filled up, would anyone have called the whole thing a hoax?",
+            "pl": "Zaprzecz gdybaniem: gdyby te łóżka się zapełniły, nikt by tego nie nazwał mistyfikacją. Wątpić było łatwo, bo sami nigdy tego nie widzieliśmy na własne oczy.",
+            "en": "If those beds had filled up, nobody would have called it a hoax. It was easy to doubt it because we never saw it with our own eyes."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g8-p05-cue.mp3",
+            "sek": 30.916
+          },
+          "wzor": {
+            "src": "audio/g8-p05-en.mp3",
+            "sek": 9.448
+          },
+          "tekst": {
+            "pyt": "And if the authorities had explained the rules instead of just taping the parks off?",
+            "pl": "Dokończ gdybanie: gdyby wyjaśnili zasady, ludzie by im bardziej zaufali — i mniej osób sięgnęłoby po teorie spiskowe o tym wszystkim.",
+            "en": "If they had explained the rules, people would have trusted them more. Fewer people would have turned to conspiracy theories about the whole thing."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g8-p06-cue.mp3",
+            "sek": 31.516
+          },
+          "wzor": {
+            "src": "audio/g8-p06-en.mp3",
+            "sek": 9.352
+          },
+          "tekst": {
+            "pyt": "What would you tell a friend who's convinced a secret group runs the world?",
+            "pl": "Zacznij od „nie wiem, jak to ująć\", potem gdybanie o teraz: gdyby taka grupa rządziła światem, nie zostawiałaby wskazówek na budynkach (forma ciągła: wouldn't be leaving). Zamknij: on po prostu szuka porządku w chaosie.",
+            "en": "I'm not sure how to put it, but if a group like that ran the world, it wouldn't be leaving clues on buildings. I'd tell him he's looking for order in the chaos."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g8-p07-cue.mp3",
+            "sek": 30.724
+          },
+          "wzor": {
+            "src": "audio/g8-p07-en.mp3",
+            "sek": 9.52
+          },
+          "tekst": {
+            "pyt": "Would you have believed any of this five years ago?",
+            "pl": "Przyznaj: pięć lat temu byś się z tego śmiał. Ale gdybyś już wtedy przeczytał to, co przeczytałeś od tamtego czasu, już wtedy zadawałbyś dokładnie te same pytania.",
+            "en": "Five years ago I would have laughed at it. But if I had read back then what I've read since, I would have been asking the exact same questions."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g8-p08-cue.mp3",
+            "sek": 37.684
+          },
+          "wzor": {
+            "src": "audio/g8-p08-en.mp3",
+            "sek": 11.56
+          },
+          "tekst": {
+            "pyt": "If you had to sum this whole thing up in two sentences, what would you say?",
+            "pl": "Zamknij dwoma gdybaniami różnego typu — najpierw o przeszłości: gdyby nie cała ta skrytość, skończyliby jako przypis w historii; potem o dziś: gdyby ludzie mniej bali się chaosu, nikt by nie potrzebował tajnej grupy do obwiniania.",
+            "en": "If it hadn't been for all the secrecy, they would have ended up as a footnote in history. And if people were less afraid of chaos, nobody would need a secret group to blame."
+          }
+        }
+      ]
+    }
+  ]
+}
