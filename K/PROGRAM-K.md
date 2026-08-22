@@ -355,137 +355,144 @@ targetów; G1–G5 to dryl `pl2en`, każda grupa = jeden target.
 wypełniaczem. **Uwaga na przyszłość:** rejestr planuje powroty szybciej, niż działy są
 w stanie je wchłonąć — przy K7 warto go przejrzeć, a nie znowu przesuwać.
 
-## K7 - Masoni / The Freemasons
+## K7 - Cztery dziury / Four Gaps
 
-**Źródło:** cztery własnoręczne mapy myśli Krzyśka, narysowane po angielsku w przygotowaniu
-do wypowiedzi na lekcji — skan `~/Downloads/Zeskanowany dokument 6.pdf`, 4 strony.
-Nie transkrypt lekcji, nie materiał od lektora: **jego własne notatki**.
-Od 2026-08-18 drugie źródło: transkrypcja samej lekcji
-(`~/Movies/2026-08-17 18-38-00 — transkrypcja.md`, 55 min 33 s) → Grupy 7–8, patrz niżej.
+**Przepisany od zera 2026-08-22.** Poprzednia wersja — 81 par w 8 grupach o masonach,
+zbudowana z czterech własnoręcznych map myśli — leży w commicie `805ecde`.
 
-**Powrót do budowania z TEMATU po dziale zbudowanym z BŁĘDÓW.** K6 wziął materiał źródłowy
-wyłącznie do diagnozy i przeniósł dryl w inny świat. K7 robi coś przeciwnego, bo prośba
-brzmiała dosłownie: „chcę umieć tłumaczyć to zgodnie z moimi notatkami". To ten sam wzorzec
-co K2 i K4 — dział pod arkusz trenuje arkusz.
+**Źródło:** pomiar, nie temat. Trzy transkrypcje lekcji (2026-08-03 kintsugi,
+2026-08-13 manosfera, 2026-08-17 masoni), ~9200 słów mowy spontanicznej Krzyśka po
+odsianiu fragmentów czytanych z artykułu na głos.
 
-**Kluczowa obserwacja o materiale źródłowym — mapy myśli nie mają kleju narracyjnego.**
-Między „AMERYKA" a „EUROPA" jest strzałka, nie zdanie. Na kartce strzałka wystarcza,
-na głos nie — i to jest realna dziura, przez którą wypowiedź rozsypuje się na lekcji.
-Dryl uczy cegieł; przejść nie uczy nikt. Stąd nowy element formatu, patrz niżej.
+**Co pokazał pomiar.** Twarde metryki stoją w miejscu: udział w rozmowie 49→50→50%,
+bogactwo słownictwa (TTR na próbce 2000 słów) 0,229→0,243→0,242. Pozorny skok tempa
+w 08-17 okazał się własnością formatu lekcji, nie postępem — lektor poruszył się
+identycznie (43→39→54 vs 45→39→53 słów/min). Rośnie piętro abstrakcji tematu
+i strategia omijania luki opisem; **gramatyka nie rusza się wcale**:
 
-**Targety (w kolejności ROI):**
+| dziura | dane |
+|---|---|
+| strefa irrealis | `would have` 0×, `could have` 0×, `I wish` 0×, `unless` 0× |
+| czasy Perfect | past perfect 0×, present perfect ~2× |
+| rodzajniki | „different culture", „you have problem", „made hospital from it", „It is conspiracy theory" |
+| mgła zamiast precyzji | „or something" 51×, „right?" 57×, „I think" 69×, „I feel like" 20× |
 
-- rodzajniki przy nazwach historycznych (`the Declaration of Independence`,
-  `the French Revolution`, `the Enlightenment` vs `Enlightenment ideas`, `the Illuminati`,
-  zero przy `Freemasonry`) — poletko testowe dla `articles-system` z K6, najgęstszego
-  błędu nagrania, na żywym tekście zamiast na ćwiczeniu
-- `might have been + -ing` — piętro nad `must have` / `couldn't have` z K6; polskie „mogli"
-  nie ma czasu, więc Polak ucieka w `might be pulling`
-- atrybucja cudzej tezy: `It's said that` / `claiming that` / `supposed` / `supposedly` —
-  trzecie piętro linii K4 (`According to the article`) → K5 (`reportedly / allegedly`)
-- łańcuch przyczynowy `sparked` / `led … to` / `resulted in X being Y` — Polak zna jeden
-  czasownik (`caused`), angielski ma trzy; `result in` nigdy nie bierze zdania z `that`
-- `originated from` / `evolved into` / `dedicated to`, ramowane przez `over time` / `eventually`
-- imiesłów zamiast `which was`: `ideas discussed in lodges`, `symbols seen on buildings`
-- `involved in` / `linked to` / `remains a central theme in`, oraz `including` zamiast
-  „for example there are…"
-- most między akapitami: `As with America, we see something similar in Europe`
+Ostatni wiersz to jego własna diagnoza z 08-03 (`01:00:18`): *„I sometimes feel like
+I'm going in circles — I want to describe something but I can't find a way to say it
+in one sentence instead of five."*
 
-**Rozmiar:** 8 grup, 81 par (9/11/10/10/14/7/12/8) — pierwotnie 6 grup i 61 par;
-G7–G8 dorobione po lekcji, patrz blok „Dodanie Grup 7–8".
+**Odwrotka, która jest tu najciekawszym faktem.** K6 zbudowany z BŁĘDÓW → K7 zbudowany
+z TEMATU (mapy myśli) → K7 przepisany z powrotem z BŁĘDÓW. Wersja tematyczna zadziałała
+na żywo — monolog z map poniósł całą lekcję 08-17 i to jest ustalenie, nie porażka.
+Ale dział pod temat nie trenuje niczego poza tym tematem, a diagnoza pokazała cztery
+dziury konstrukcyjne, które przeżyły trzy lekcje bez zadrapania. Prośba brzmiała
+dosłownie: „krótszy, celujący w moje słabości, drylujący je mocno i boleśnie".
 
-**Wyjątek formatu — Grupa 5 to RECITAL, nowy tryb w kursie K.** Cały monolog w czternastu
-taktach, w kolejności map I→II→III→IV. Kolumna polska to **hasła z mapy myśli, nie pełne
-zdania** („Kamieniarze, katedry — i stąd wzięli się masoni"), bo takim bodźcem Krzysiek
-będzie dysponował na lekcji. Kolumna angielska dokłada wyłącznie klej, którego notatki
-nie mają: `So, …`, `Now, …`, `Take America, for example`, `For one thing, …`,
-`Here's the thing, though`, `Even today, …`, `But to me, …`. Test pilnuje trzech rzeczy:
-kolejności map, pokrycia wszystkich czterech, i **braku duplikatów wobec Grup 1–4** —
-bo kopiuj-wklej z drylu oznaczałby, że kleju nie ma. Grupa 5 jest zwolniona z reguły
-„otwarcie do 8 słów" (o pierwszym takcie decyduje monolog, nie drabinka trudności).
-G1–G4 to dryl `pl2en`, każda grupa = jedna mapa. Scenki są dwie — G6 (obrona map
-w rozmowie) i G8 (irrealis, dodana po lekcji) — a test pilnuje ich przez
-`SCENKI = new Set([6, 8])` w obie strony i **egzekwuje reguły scenki dla każdej
-z osobna** (`filter`, nie `find` — pierwotna wersja testu sprawdzała tylko pierwszą).
+**Rozmiar:** 4 grupy × 8 par = **32 pary** (było 81). Po jednej grupie na dziurę,
+5 wierszy zasiewu + 3 splotu.
 
-**Test wierności notatkom** (`tools/k7-content.test.mjs`, tablica `KANON`): wszystkie
-**23 zdania z czterech map** muszą paść w kolumnie angielskiej. Bez tego trzy iteracje
-recenzji odsunęłyby rozdział od skanu i nikt by tego nie zauważył. To najważniejsza
-asercja działu i pierwsza tego typu w kursie.
-
-**Przegląd rejestru — wykonany, nie przesunięty.** Sekcja K6 ostrzegała: „rejestr planuje
-powroty szybciej, niż działy są w stanie je wchłonąć — przy K7 warto go przejrzeć, a nie
-znowu przesuwać". Na `k7` zaplanowanych było **90 powrotów**; 61 par ich nie zmieści.
-Zostało **15**, wybranych nie po dacie, tylko po dopasowaniu do materiału: `articles-system`,
-`must-have`, `embedded-question`, `arguably`, `comes-down-to` (k6); `no-one-really-knows`,
-`no-hard-evidence`, `apparently-supposedly`, `wouldnt-go-that-far`, `not-saying-just-saying`
-(k5); `according-to-the-article`, `lead-to`, `only-be-guessing`, `tnij-na-dwa` (k4);
-`id-say` (k1). Pozostałe **75 usunięto bez zastępnika** — żadne nie zostało przesunięte
-na `k8`, bo każde miało już ≥3 zaplanowane powroty. To słownictwo tematyczne cudzych
-działów (kintsugi z k2, Kraków i przedmieścia z k3, incel/manosfera z k4–k5); wróci wtedy,
-gdy przyszły dział trafi w temat, dopisane świadomie.
-
-**Nowe wyrażenia:** 45 wpisów `intro: k7` (32 z map przy budowie działu + 13 z lekcji przy
-G7–G8), każdy z `review[]` na **maksymalnie trzy** działy zamiast dziesięciu. Klocki
-strukturalne (conditionale, `there were no`) dostają dwa–trzy powroty, słownictwo
-tematyczne (`masonic-lodge`, `founding-father`, `conspiracy-theory`, leksyka lockdownu)
-jeden.
-
-**Ograniczenie narzędzia, do zapamiętania:** `check-recykling.js` dopasowuje **słowa**, nie
-**gramatykę** — buduje słowa kluczowe z pola `en` wpisu w rejestrze. Powroty strukturalne
-(`must have`, pytanie zależne, rodzajniki, `tnij-na-dwa`) wracają w K7 z inną leksyką,
-bo na tym polega wydobycie, więc checker ich nie widzi i zgłasza FAIL. Weryfikuje je
-`tools/k7-content.test.mjs` (tablica `POWROTY`, regexy zamiast słów kluczowych). K6 ma
-ten sam FAIL z tego samego powodu.
-
-**Jedno odstępstwo od kanonu, świadome i zgłoszone:** mapa IV Krzyśka ma
-`hidden elites could control a NWO`. Recenzja wykazała, że przy pisowni wielką literą
-`a New World Order` jest wewnętrznie sprzeczne — wielka litera robi z tego nazwę własną,
-a `a` ją odbiera. W rozdziale jest `the New World Order`; regex kanonu przyjmuje oba
-warianty, żeby odstępstwo było jawne, a nie ciche. Wszystkie pozostałe 22 punkty map
-są dosłowne.
-
-**Trzy recenzje (opus) — co znalazły ponad zwykły przegląd:**
-`mason` = MURARZ; polskie „mason" to wyłącznie `Freemason`, a rozdział w pierwszej wersji
-nie ostrzegał o tym ani słowem (najgroźniejszy fałszywy przyjaciel działu). Kolumna polska
-w Grupie 3 sabotowała własny target — rozdział pisał „polskie »mogli« nie ma czasu"
-i mimo to dawał cue bez kotwicy czasowej; wszystkie wyzwalacze dostały „wtedy" /
-„przez całe dekady". Blok EUROPA z mapy II (most + rewolucja francuska) nie miał ani jednej
-pary do wyprodukowania — istniał tylko w recitalu; dosypano dwie pary do Grupy 2.
-
-**Lekki klej:** patrz lista 15 powrotów wyżej — wszystkie padają w Grupach 4–6.
-
-**Dodanie Grup 7–8 (2026-08-18):** 6 grup → 8 grup, 61 → 81 par. Lekcja o masonach odbyła
-się 2026-08-17 o 18:38 — niecałe dwie godziny po ostatniej przebudowie działu (pierwsza
-wersja: 2026-08-15) — była więc czystym testem materiału na żywo. Wynik: kanon map zadziałał (monolog niósł całą lekcję), zawiodła
-leksyka codzienna pod obciążeniem i cała strefa irrealis. Mapowanie diagnozy na grupy:
-
-| co zawiodło NA ŻYWO | timestamp | grupa |
+| grupa | cel | tryb |
 |---|---|---|
-| szukał „władz" dwa razy — doszedł do `authority`, lektor dołożył liczbę mnogą | 24:32–26:09 | G7 |
-| „restrictions went… were cut off… lighter" zamiast `eased/loosened` | 49:13–49:23 | G7 |
-| „so I resigned" o rzuceniu gry (kalka „zrezygnowałem") | 54:52 | G7 |
-| szukał „dobrowolnie" — lektor podał `of your own free will` / `on your own terms` | 38:36–39:10 | G7 |
-| „getting fines for walking" | 49:23 | G7 |
-| „they made a hospital from it" (stadion → szpital polowy) | 53:09 | G7 |
-| „parks taped around" | 49:39 | G7 |
-| „there was special hours for old people" | 47:48 | G7 |
-| „there was no people dying" | 47:27 | G7 |
-| „walk with other person on the sidewalk" | 48:06 | G7 |
-| **zero 2nd/3rd conditionali w całych 55 minutach** (grep: 0 trafień) | — | **G8** |
+| G1 | irrealis: 3rd / mieszany / `I wish` / `unless` / `if it hadn't been for` | `pl2en` |
+| G2 | perfekty: past perfect, `by the time`, present perfect z `since`/`for`, `must have` | `pl2en` |
+| G3 | rodzajniki: brak `a` (×5), potem `a`→zero, `the`→`a`, `a`→`the` | `en-only` |
+| G4 | precyzja: `or something` (×5), potem `right?`, `I feel like`, własna diagnoza | `en-only` |
 
-G7 = dryl `pl2en` (12 par, lockdown COVID + domknięcie masońskie o ujawnianiu się
-`of his own free will`). G8 = scenka (8 wymian): każde pytanie lektora stoi w 2nd/3rd
-conditional, podpowiedź PL wymusza gdybanie w odpowiedzi; dwa pytania celowo recyklingują
-`the authorities` i `taped off` z G7 (dlatego targety lekcji żyją w testowej tablicy
-`TARGETY_LEKCJA`, osobnej od `TARGETS` — reguła „scenka nie podaje targetu w pytaniu"
-ich nie obejmuje). Czarna lista błędów z lekcji pilnowana testem per zdanie, granice słów.
-Nowe testy: `TARGETY_LEKCJA`, czarna lista, wymuszenie irrealis w G8 (każda odpowiedź
-z `would`, ≥5 z 8 w 3rd conditionalu), pytanie 4/3/2 dla każdej grupy.
+**Nowy element formatu — karta „popraw swoje zdanie" w trybie `en-only`.** Grupy 3 i 4
+nie mają polskiego wyzwalacza. Kolumna pierwsza trzyma **dosłowny cytat z lekcji**
+z datą i znacznikiem czasu, w kształcie klapsa filmowego:
+`August 3rd, 6:14 — you said, "it's completely different culture." Add the missing article.`
+Kolumna druga to poprawka.
+
+Wybór trybu nie jest kosmetyczny. Rozważane były trzy:
+
+- **goły `pl2en`** — `assemble-audio.js:317` wysyła kolumnę 1 do `ttsToFile(…, 'pl', …)`,
+  więc polski głos (marin) czytałby angielski cytat. Odpada.
+- **`scenka`** — `build-podglad.js:332` eksportuje do Anki `plPL = plain(row.prompt)`,
+  czyli samą podpowiedź polską. Pytanie lektora nie trafia na kartę, więc błędny cytat
+  zniknąłby z przodu karty w Anki. Odpada.
+- **`en-only`** — istnieje w `assemble-audio.js` (linie 54–62, 227, 284–291), w produkcji
+  w `28-m3d6-decyzje-i-ryzyko`. Ta sama 2-kolumnowa tabela, kolumna 1 czytana **głosem
+  angielskim**, a `build-podglad.js:342` eksportuje ją jako przód karty. Zero nowego kodu.
+
+**Świadomy kompromis:** nagranie odtwarza jego błąd pewnym głosem native'a (priming).
+Łagodzi to ramka `you said, "…"` i to, że para **zawsze** kończy się wersją poprawną —
+w trybie `para` ekspozycja jest 1:1 błąd:poprawka.
+
+**`CYTATY` zastępuje `KANON` jako najważniejszy test działu.** Stary test gwarantował,
+że rozdział uczy dokładnie jego notatek (23 zdania z map). Nowy gwarantuje, że dryluje
+dokładnie jego błędy: 16 wpisów `{grupa, wiersz, data, czas, cytat, blad}`, każdy
+zweryfikowany dosłownie w transkrypcji przed wpisaniem. Test sprawdza, że cytat pada
+**dokładnie raz**, na właściwym wierszu właściwej grupy, w formacie klapsa — i że
+`blad` nigdy nie wraca w kolumnie odpowiedzi (granice słów, nie `includes`, bo każdy
+błąd jest podłańcuchem swojej poprawnej wersji).
+
+Wiersze 3/4 i 4/4 dzielą znacznik `00:53:09` — jedna wypowiedź o stadionie zamienionym
+na szpital polowy, dwa różne błędy naraz. Dlatego unikalność jest egzekwowana na
+cytacie, nie na znaczniku.
+
+**Pozostałe nowe testy:** G1 wymusza irrealis (każda odpowiedź, ≥5 z 8 w pełnym 3rd
+conditionalu, zakaz `if … would` w jednym zdaniu); G2 wymusza perfekty (≥5 past perfect,
+≥3 present perfect, zero wierszy w samym past simple); G3 zasiew pięciu dostawionych `a`
+plus trzy kontrasty per wiersz; G4 — każdy wyzwalacz ma znacznik mgły, żadna odpowiedź
+go nie ma, i **każda odpowiedź to dokładnie jedno zdanie** (sedno grupy); wyzwalacz
+`en-only` ≤30 słów i bez polskich znaków; wyzwalacz `pl2en` po polsku i bez 4-wyrazowego
+wspólnego ciągu z odpowiedzią.
+
+**Zabezpieczenie przed cloze.** `tools/k67-luki.js` migruje notatki K6/K7 z EN ≥21 słów
+i ≥1 klockiem `<b>` na typ `angielski-k-luka`. Nowe karty mają zostać klasyczne, więc
+test trzyma każdą odpowiedź **≤20 słów** i nie wpuszcza `<b>` do tabel par. Bez tego
+ponowne uruchomienie migracji zmieniłoby typ świeżych notatek.
+
+**Operacja na rejestrze — 45 wpisów `intro: k7` rozłożone na trzy stosy:**
+
+- **19 skasowanych bez zastępnika** — czysta leksyka masońska (`stone-mason`,
+  `masonic-lodge`, `founding-father`, `pull-political-strings`, `desire-for-order`,
+  `originate-from`, `evolve-into`…). Precedens: przy budowie K7 wycięto tak 75 wpisów.
+- **21 przeniesionych na `intro: k8`** — klocki strukturalne (`its-said-that`,
+  `claiming-that`, `result-in`, `might-have-been-doing`, `supposed-adj`, `involved-in`,
+  `linked-to`, `lead-sb-to-do`, `including-lista`) plus leksyka, której Krzysiek szukał
+  NA ŻYWO na lekcji 08-17 (`ease-restrictions`, `get-fined-for`, `taped-off`,
+  `the-elderly`, `of-your-own-free-will`, `on-your-own-terms`, `another-person`,
+  `there-were-no`) plus trzy klocki konwersacyjne. **To nie jest materiał masoński —
+  to realnie nauczone rzeczy z zaplanowanymi powrotami.** Skasowanie ich razem
+  z tematem byłoby cichą stratą programu; test pilnuje, że jedenaście z nich dalej
+  istnieje w rejestrze.
+- **5 zostało jako `k7`**, bo ich `en` nadal pada w nowym rozdziale: `the-authorities`
+  (G1/w4), `turn-into` (G3/w4), `give-up-quit` (G1/w3), `conspiracy-theory` (G3/w2),
+  `third-conditional` (G1/w1–5).
+
+Do tego **16 nowych wpisów** `intro: k7` (conditionale, perfekty, trzy reguły rodzajnika,
+zamienniki mgły), każdy z `review[]` na najwyżej trzy działy. Razem 21 — próg testu to 20.
+
+**Powroty na k7 skurczone z 15 do 7**: `articles-system` (G3 to jego dosłowny ciąg dalszy),
+`must-have`, `comes-down-to`, `no-hard-evidence`, `id-say`, `tnij-na-dwa` oraz
+`mixed-conditional` (wprowadzony w K6, drylowany w G1/w8). Pozostałe dziewięć
+przestawione na `k8`.
+
+**Świadome straty, zapisane, żeby za miesiąc nie wyglądały na przeoczenie:**
+kanon 23 zdań z map myśli (K7 przestaje gwarantować wierność notatkom Krzyśka),
+leksyka masońska, 295 powtórek historii w Anki przy kasowaniu starych 81 kart
+(interwały były płytkie: mediana 2 dni, maks 11), oraz materiał tematyczny do rozmowy
+o masonach — PDF i 162 mp3 zostają wyłącznie w commicie-snapshotcie.
+
+**Odstępstwo od skilla, świadome:** `angielski-rozdzial/SKILL.md` każe 10–18 par
+na grupę; K7 ma 8. Kontraktem kursu K są jego testy (stara G6 miała 7 par), a przy
+czterech celach i 32 parach 8 to minimum, przy którym zasiew 5 + splot 3 w ogóle działa.
+
 
 ## Dalszy rozwój
 
 K8 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora.
+
+**K8 dziedziczy poczekalnię po przepisaniu K7 (2026-08-22).** 21 wpisów dostało
+`intro: k8`, a 9 powrotów przestawiono z `k7` na `k8` — nie dlatego, że K8 ma je
+wprowadzać, tylko żeby nie zniknęły razem z materiałem masońskim. Dwie grupy:
+klocki strukturalne (atrybucja cudzej tezy, łańcuch przyczynowy, `might have been -ing`)
+i leksyka, której Krzysiek szukał na żywo na lekcji 08-17 (`the authorities` ma już
+pokrycie w nowym K7, ale `ease the restrictions`, `taped off`, `of your own free will`
+i reszta nie). **Przy budowie K8 tę listę trzeba przejrzeć i przyciąć, a nie przesunąć
+dalej** — to dokładnie ten błąd, przed którym ostrzegała sekcja K6.
 
 **Stan rejestru po przeglądzie przy K7:** korek został rozładowany tylko na `k7`.
 Horyzont dalej jest fikcją — `k8` ma zaplanowane 72 powroty, `k9` 79, `k12` 71, `k18` 67,

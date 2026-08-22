@@ -1,0 +1,542 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-08-22T07:49:40.507Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 8.52
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym wtedy wiedział, nie poszedłbym.",
+            "en": "If I had known, I wouldn't have gone."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 13.152
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 5.464
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdyby te łóżka się zapełniły, nikt by nie wątpił w całą tę sprawę.",
+            "en": "If those beds had filled up, nobody would have doubted the whole thing."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 11.76
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym nie rzucił tamtej gry, straciłbym cały miesiąc.",
+            "en": "If I hadn't quit that game, I would have lost a whole month."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 12.72
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 5.464
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdyby władze wyjaśniły zasady, ludzie by im wtedy bardziej zaufali.",
+            "en": "If the authorities had explained the rules, people would have trusted them more."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 10.92
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym został w Katowicach, nigdy bym cię nie poznał.",
+            "en": "If I had stayed in Katowice, I would never have met you."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 9.912
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Żałuję, że nie zacząłem mówić po angielsku o wiele wcześniej.",
+            "en": "I wish I had started speaking English much earlier."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 10.656
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nikt w to nie uwierzy, chyba że pokażesz im twarde dowody.",
+            "en": "Nobody will believe it unless you show them hard evidence."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 13.256
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 6.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdyby nie ten lockdown, nie rozmawialibyśmy dziś o tym wszystkim. To jest sedno.",
+            "en": "If it hadn't been for the lockdown, we wouldn't be talking about all this today. That's the point."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 8.064
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 3.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zanim zadzwoniła, już wyszedłem.",
+            "en": "I had already left when she called."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 11.808
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zanim skończyłem studia, zdążyłem już zmienić zdanie.",
+            "en": "By the time I finished my degree, I had already changed my mind."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 11.352
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 4.312
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nigdy wcześniej nie mieszkałem sam — dopóki nie przeprowadziłem się do Katowic.",
+            "en": "I had never lived alone until I moved to Katowice."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 11.856
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 5.416
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ludzie wykupili półki, zanim ktokolwiek ogłosił lockdown.",
+            "en": "They had already cleared the shelves before anyone announced the lockdown."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 12.96
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zanim mnie poprawiła, od miesięcy powtarzałem ten sam błąd.",
+            "en": "Before she corrected me, I had been repeating the same mistake for months."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 10.92
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musiałem to gdzieś przeczytać, bo nie pamiętam źródła.",
+            "en": "I must have read it somewhere, because I don't remember the source."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 10.656
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nigdy dotąd nie przeczytałem po angielsku całego artykułu.",
+            "en": "I've never read a whole article in English before."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 14.408
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 6.064
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Uczę się angielskiego od trzech lat i wciąż szukam właściwego słowa.",
+            "en": "I've been learning English for three years and I'm still searching for the right word."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "en-only",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 10.508
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 3.816
+          },
+          "tekst": {
+            "pyt": "August 3rd, 6:14 — you said, \"it's completely different culture.\" Add the missing article.",
+            "pl": null,
+            "en": "It's a completely different culture."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 11.564
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 3.768
+          },
+          "tekst": {
+            "pyt": "August 17th, 47:27 — you said, \"It is conspiracy theory.\" Add the missing article, change nothing else.",
+            "pl": null,
+            "en": "It is a conspiracy theory."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 15.568
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 4.152
+          },
+          "tekst": {
+            "pyt": "August 3rd, 26:42 — you said, \"you have problem when you don't tolerate… if you are allergic to gluten.\" Add the missing article.",
+            "pl": null,
+            "en": "You have a problem if you are allergic to gluten."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 13.464
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 3.36
+          },
+          "tekst": {
+            "pyt": "August 17th, 53:09 — you said, \"they made hospital from it.\" Article, verb and preposition — rebuild it with turn into.",
+            "pl": null,
+            "en": "They turned it into a hospital."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 15.604
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 3.816
+          },
+          "tekst": {
+            "pyt": "August 13th, 19:31 — you said, \"like hundred politics were killed there.\" Three fixes: the hedge, the article, the noun.",
+            "pl": null,
+            "en": "About a hundred politicians were killed there."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 21.3
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 5.712
+          },
+          "tekst": {
+            "pyt": "August 3rd, 58:31 — you said, \"to have a health care in the United States you have to like pay like a subscription monthly.\" That noun is uncountable — drop its article.",
+            "pl": null,
+            "en": "To have health care in the United States you have to pay a monthly subscription."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 12.168
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 3.504
+          },
+          "tekst": {
+            "pyt": "August 13th, 53:56 — you said, \"I watched the documentary about it.\" First mention takes a different article.",
+            "pl": null,
+            "en": "I watched a documentary about it."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 21.208
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 5.352
+          },
+          "tekst": {
+            "pyt": "August 13th, 50:02 — you said, \"find someone in a real world.\" Only one real world — change the article, then finish the thought.",
+            "pl": null,
+            "en": "Even if you find someone in the real world, they still have fifty people texting them."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "en-only",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 12.312
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 3.408
+          },
+          "tekst": {
+            "pyt": "August 3rd, 8:49 — you said, \"They work like yeah 16 hours a day or something, right?\" Drop both hedges and the tag.",
+            "pl": null,
+            "en": "They work sixteen hours a day."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 11.904
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 3.552
+          },
+          "tekst": {
+            "pyt": "August 3rd, 22:13 — you said, \"It was like three years ago or something.\" Replace both hedges with one about.",
+            "pl": null,
+            "en": "It was about three years ago."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 14.468
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 3.72
+          },
+          "tekst": {
+            "pyt": "August 3rd, 21:08 — you said, \"Maybe it's twice cheaper, twice cheaper or something.\" Twice cheaper isn't English — use roughly and half the price.",
+            "pl": null,
+            "en": "It's roughly half the price."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 13.856
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 3.504
+          },
+          "tekst": {
+            "pyt": "August 17th, 53:09 — you said, \"they put like 500 beds in there or something.\" Swap both hedges for a single around.",
+            "pl": null,
+            "en": "They put around five hundred beds in there."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 14.864
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 4.104
+          },
+          "tekst": {
+            "pyt": "August 17th, 31:16 — you said, \"I associate them with Illuminati or something.\" Own it with I'd say, and Illuminati takes the.",
+            "pl": null,
+            "en": "I'd say I associate them with the Illuminati."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 12.816
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 5.064
+          },
+          "tekst": {
+            "pyt": "August 3rd, 18:34 — you said, \"Because someone built them from their money, right?\" Drop the tag and fix the preposition.",
+            "pl": null,
+            "en": "Someone built them with their money."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 15.368
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 4.608
+          },
+          "tekst": {
+            "pyt": "August 3rd, 59:27 — you said, \"I feel like it's the same as in Poland, but squared, right?\" Drop the hedge and the tag — just state it.",
+            "pl": null,
+            "en": "It's the same as in Poland, only squared."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 22.712
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.952
+          },
+          "tekst": {
+            "pyt": "August 3rd, 1:00:18 — you said, \"I feel like I'm going in circles\" and then took five sentences to explain it. Say it in one, starting with it comes down to.",
+            "pl": null,
+            "en": "It comes down to this — I need five sentences where one would do."
+          }
+        }
+      ]
+    }
+  ]
+}
