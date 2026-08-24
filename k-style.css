@@ -332,6 +332,18 @@ body.with-player .view { padding-bottom: 230px; }
   font-size: 20px;
   cursor: pointer;
 }
+.group-432 {
+  flex: 0 0 52px;
+  min-height: 48px;
+  border: 0;
+  background: transparent;
+  color: var(--paper-dim);
+  font-family: var(--utility);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.group-row.active .group-432 { color: var(--gold); }
 .group-row:hover { background: rgba(107, 143, 214, 0.06); }
 .group-row.active { background: var(--gold-soft); }
 .group-row.active .group-play-icon { border-color: var(--gold); background: var(--gold); color: var(--ink); }
@@ -438,6 +450,52 @@ body.with-player .view { padding-bottom: 230px; }
   .site-footer { flex-direction: column; gap: 6px; }
   .player-inner { padding-left: 14px; padding-right: 14px; }
 }
+
+/* ————— Ekran ćwiczenia 4/3/2 ————— */
+.ex432 { padding: 28px 0 40px; text-align: center; }
+.ex432 .eyebrow { text-align: center; }
+.ex432-question {
+  margin: 14px auto 0;
+  max-width: 560px;
+  font-family: var(--display);
+  font-size: clamp(26px, 6vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.ex432-copy { max-width: 420px; margin: 14px auto 0; color: var(--paper-muted); }
+.ex432-rounds { display: flex; justify-content: center; gap: 10px; margin-top: 26px; }
+.ex432-round {
+  min-width: 58px;
+  padding: 6px 10px;
+  border: 1px solid var(--line-strong);
+  color: var(--paper-dim);
+  font-family: var(--utility);
+  font-size: 12px;
+}
+.ex432-round.active { border-color: var(--gold); color: var(--gold); }
+.ex432-round.done { border-color: var(--line); color: var(--paper-dim); background: var(--gold-soft); }
+.ex432-clock {
+  margin-top: 18px;
+  font-family: var(--utility);
+  font-size: clamp(64px, 22vw, 140px);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+  color: var(--gold);
+}
+.ex432-hint { margin: 6px auto 0; max-width: 420px; color: var(--paper-dim); font-family: var(--utility); font-size: 11px; letter-spacing: 0.04em; }
+.ex432-controls { display: flex; justify-content: center; gap: 12px; margin-top: 26px; }
+.ex432-start, .ex432-skip {
+  min-height: 52px;
+  padding: 0 26px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--paper);
+  font-family: var(--utility);
+  font-size: 14px;
+  cursor: pointer;
+}
+.ex432-start { border-color: var(--gold); background: var(--gold); color: var(--ink); }
+body.with-player .ex432 { padding-bottom: 140px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }

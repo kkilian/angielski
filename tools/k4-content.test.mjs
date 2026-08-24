@@ -69,10 +69,13 @@ const allEnglish = groups.flatMap((group) => englishLines(group));
 
 // ─── Kontrakt ────────────────────────────────────────────────
 
-test('K4 ma 6 grup po 10–18 wierszy: G1–G5 pl2en, G6 scenka', () => {
+// Dwie scenki w dziale: G6 prowadzi lekcję, G9 odpowiada na pytania lektora.
+const SCENKI = new Set([6, 9]);
+
+test('K4 ma 9 grup po 10–18 wierszy: dryl pl2en, scenki w G6 i G9', () => {
   assert.deepEqual(
     groups.map((group) => group.number),
-    [1, 2, 3, 4, 5, 6],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9],
   );
 
   for (const group of groups) {
@@ -81,13 +84,13 @@ test('K4 ma 6 grup po 10–18 wierszy: G1–G5 pl2en, G6 scenka', () => {
       `Grupa ${group.number} ma ${group.rows.length} wierszy danych`,
     );
     // Format grupy jest chroniony w obie strony: dryl nie może się zamienić
-    // w scenkę, a ostatnia grupa nie może przestać być rozmową.
-    const powinnaBycScenka = group.number === 6;
+    // w scenkę, a scenka nie może przestać być rozmową.
+    const powinnaBycScenka = SCENKI.has(group.number);
     assert.equal(
       group.scenka,
       powinnaBycScenka,
       powinnaBycScenka
-        ? 'Grupa 6 musi mieć marker <!-- mode: scenka -->'
+        ? `Grupa ${group.number} musi mieć marker <!-- mode: scenka -->`
         : `Grupa ${group.number} ma marker scenki — ma być pl2en`,
     );
     // Scenka musi mieć komplet trzech kolumn, inaczej audio nie ma czego czytać.
@@ -186,6 +189,68 @@ test('K4 nie wpuszcza do audio kalek z transkryptu', () => {
       assert.ok(
         !line.toLowerCase().includes(kalka.toLowerCase()),
         `Kalka "${kalka}" trafiła do audio: "${line}"`,
+      );
+    }
+  }
+});
+
+test('K4 nie wpuszcza do audio błędów z assessmentu 2026-08-13', () => {
+  // Osobno od listy `kalki` powyżej, bo tamta robi includes() na stringu, a tutaj
+  // każdy błąd jest podłańcuchem swojej poprawnej wersji: 'paragraph suggest' siedzi
+  // w 'paragraph suggests', 'lead into' w 'lead in to'. Potrzebne granice słowa.
+  const bledy = [
+    { name: 'lead into zamiast lead to', pattern: /\blead(?:s|ing)? into\b/i },
+    { name: 'fixed on your looks', pattern: /\bfixed on\b/i },
+    { name: 'men problems zamiast men\'s issues', pattern: /\bmen problems\b/i },
+    { name: 'Incels believes', pattern: /\bincels believes\b/i },
+    { name: 'paragraph suggest bez -s', pattern: /\bparagraph suggest\b/i },
+    { name: 'an harmful', pattern: /\ban harmful\b/i },
+    { name: 'zbędne the przy society', pattern: /\bthe society is biased\b/i },
+    { name: 'zbędne the przy radicalization', pattern: /\bthe radicalization\b/i },
+  ];
+
+  for (const line of allEnglish) {
+    for (const blad of bledy) {
+      assert.ok(!blad.pattern.test(line), `Błąd „${blad.name}" trafił do audio: "${line}"`);
+    }
+  }
+});
+
+// ─── Grupy 7–9: budowa zdania ────────────────────────────────
+
+function sentences(text) {
+  return text
+    .split(/(?<=[.!?])\s+/)
+    .map((sentence) => sentence.trim())
+    .filter((sentence) => countEnglishWords(sentence) > 0);
+}
+
+test('K4 Grupy 7–9 trzymają zdania krótkie: max 12 słów na zdanie', () => {
+  for (const group of groups.filter((g) => g.number >= 7)) {
+    for (const line of englishLines(group)) {
+      for (const sentence of sentences(line)) {
+        const words = countEnglishWords(sentence);
+        assert.ok(
+          words <= 12,
+          `Grupa ${group.number}: zdanie ma ${words} słów: "${sentence}"`,
+        );
+      }
+    }
+  }
+});
+
+test('K4 Grupy 7 i 9 tną myśl na dwa zdania (albo mieszczą ją w jednym krótkim)', () => {
+  // Sedno assessmentu 2026-08-13: „budujesz zdanie za długo, zanim wiesz, jak je skończyć".
+  // Dopuszczalne są dwa wyjścia — rozbicie na dwa zdania albo jedno zdanie tak krótkie,
+  // że nie ma się gdzie zaciąć (np. „They reinforce each other's beliefs, creating an
+  // echo chamber."). Zakazane jest jedno długie zdanie z doklejanymi członami.
+  for (const group of groups.filter((g) => g.number === 7 || g.number === 9)) {
+    for (const line of englishLines(group)) {
+      const parts = sentences(line);
+      const words = countEnglishWords(line);
+      assert.ok(
+        parts.length >= 2 || words <= 10,
+        `Grupa ${group.number}: jedno zdanie na ${words} słów, a nie rozbite: "${line}"`,
       );
     }
   }

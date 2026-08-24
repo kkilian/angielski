@@ -120,6 +120,65 @@
 | So, in one sentence — what is the article about? | Streść jednym zdaniem, z atrybucją. | According to the article, it's a loose collection of online spaces that push men into echo chambers. |
 | And what's the risk there? | Powiedz, co tekst twierdzi o wzmacnianiu przekonań. | The text argues those beliefs get reinforced until they're hard to change. |
 
+## Grupa 7
+| polski | angielski |
+|---|---|
+| Incele wierzą w hierarchię, która jest niezmienna. | Incels believe in a hierarchy. It's fixed. |
+| Incele wierzą w niezmienną hierarchię i uważają, że są uwięzieni przez wygląd i geny. | Incels believe in a fixed hierarchy. They think they're trapped by their looks and genetics. |
+| Akapit sugeruje, że wszystko zaczyna się od izolacji. | The paragraph suggests one thing. Isolation starts it all. |
+| Drugi akapit sugeruje coś innego i podaje przykład. | The second paragraph suggests something else. It gives an example. |
+| Artykuł mówi, że te fora rosną, a moderacja za nimi nie nadąża. | The article says those forums keep growing. Moderation can't keep up. |
+| Według nich społeczeństwo jest uprzedzone wobec mężczyzn — i to jest właśnie czerwona pigułka. | In their view, society is biased against men. That's the Red Pill. |
+| Radykalizacja może prowadzić do przemocy w realnym świecie i tego właśnie się boją. | Radicalization can lead to real-world violence. That's the fear. |
+| Izolacja tworzy zniekształcony obraz rzeczywistości, a gorycz robi resztę. | Isolation creates a distorted view of reality. Bitterness does the rest. |
+| Anonimowość rozzuchwala ludzi, więc język robi się ostrzejszy. | Anonymity makes people bolder. The language gets harsher. |
+| Moderacja pomaga, ale nie rozwiązuje problemu. | Moderation helps. It doesn't solve the problem. |
+| Te fora działają jak komora echa i wzmacniają szkodliwe przekonania. | Those forums act as an echo chamber. They reinforce harmful beliefs. |
+| Według artykułu algorytm podsuwa coraz ostrzejsze treści, a użytkownicy nawet tego nie zauważają. | According to the article, the algorithm pushes harsher content. Users don't even notice. |
+| Chciałem powiedzieć coś skomplikowanego, ale zgubiłem się w połowie zdania. | I wanted to say something complicated. I lost the thread halfway. |
+| Tekst twierdzi, że wspólna uraza tworzy sprzężenie zwrotne, przez które poglądy coraz trudniej zmienić. | The text argues that shared resentment creates a feedback loop. Those views get harder to change. |
+| Wzmacniają nawzajem swoje przekonania i tak powstaje komora echa. | They reinforce each other's beliefs, creating an echo chamber. |
+
+## Grupa 8
+| polski | angielski |
+|---|---|
+| To prowadzi do przemocy. | It leads to violence. |
+| Izolacja prowadzi do goryczy. | Isolation leads to bitterness. |
+| Gorycz prowadzi do urazy. | Bitterness leads to resentment. |
+| Według artykułu te fora prowadzą do izolacji. | According to the article, those forums lead to isolation. |
+| To nie prowadzi do przemocy w każdym przypadku. | It doesn't lead to violence in every case. |
+| Według nich wszystko zależy od twojego wyglądu. | In their view, everything is based on your looks. |
+| Według nich o wszystkim decydują geny. | In their view, genetics determine everything. |
+| To nie zależy od wyglądu. | It's not based on looks. |
+| Ta grupa działa jak komora echa. | The group acts as an echo chamber. |
+| Algorytm pcha mężczyzn w stronę ostrzejszych treści. | The algorithm pushes men toward harsher content. |
+| Co ich pcha w stronę czarnej pigułki? | What pushes them toward the Black Pill? |
+| Czują się uwięzieni w systemie, którego nie wybrali. | They feel trapped in a system they didn't choose. |
+| Uważają, że są uwięzieni przez własne geny. | They think they're trapped by their own genetics. |
+| To tylko wzmacnia ich przekonania. | That just reinforces their beliefs. |
+| Ten kanał porusza realne problemy mężczyzn. | That channel raises real men's issues. |
+| Według artykułu manosfera zaczyna się od realnych problemów mężczyzn, a kończy na goryczy. | According to the article, the manosphere starts with real men's issues. It ends in bitterness. |
+
+## Grupa 9
+<!-- mode: scenka -->
+| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |
+|---|---|---|
+| So, what's the manosphere? | Dwa zdania. Najpierw czym jest, potem dla kogo. | It's a group of online spaces. Mostly men. |
+| And who's in there? | Dwa zdania. Kto, a potem że to nie jedna grupa. | Mostly men with different goals. It's not one group. |
+| So what's the Black Pill exactly? | Dwa zdania. Nazwij to najciemniejszym zakątkiem, potem co głoszą. | The article calls it the darkest corner. They believe nothing you do changes anything. |
+| Why do they think that? | Dwa zdania, z atrybucją. Zacznij od tego, co według nich decyduje. | In their view, genetics determine everything. Effort changes nothing. |
+| Okay. And where does the anger come from? | Dwa zdania. Najpierw uraza, potem skąd się bierze. | It starts with resentment. They feel society is biased against them. |
+| And what do those forums do to that? | Dwa zdania. Użyj „act as" i „reinforce". | They act as an echo chamber. They reinforce each other's beliefs. |
+| Why is that dangerous? | Dwa zdania. Sprzężenie zwrotne, potem skutek. | It creates a feedback loop. Those beliefs get harder to change. |
+| Can that lead anywhere worse? | Dwa zdania. Użyj „lead to", nie „lead into". | In extreme cases, it can lead to real-world violence. Those cases are rare. |
+| What role do the algorithms play? | Dwa zdania. Algorytm pcha, człowiek nie zauważa. | Algorithms push men toward harsher content. Users don't notice it. |
+| Is there anything good in it? | Dwa zdania. Przyznaj, że tak, i nazwij to „men's issues". | Yes. Some of it raises real men's issues. |
+| So why does it go wrong? | Dwa zdania. Zacznij od tego, że problemy są prawdziwe. | It starts with real problems. Isolation turns them into bitterness. |
+| Can you say that again, but shorter? | Skróć do dwóch zdań. Nic nie dodawaj. | They reinforce each other's beliefs. That creates an echo chamber. |
+| What would you say to someone in there? | Dwa zdania. Bez oceniania, z dystansem. | I'm not judging them. I'd just ask where they read that. |
+| Sum it up for me. One breath. | Dwa krótkie zdania, z atrybucją. Nic więcej. | According to the article, it's a loose network of online spaces. It pushes men toward bitterness. |
+| And what's the one risk? | Jedno zdanie. Najkrótsze, jakie potrafisz. | Radicalization can lead to real-world violence. |
+
 ## Nowe słowa i struktury
 
 **Główne targety (w kolejności ROI z transkryptu):**
@@ -170,6 +229,35 @@
 | poprawiaj mnie na bieżąco | Correct me as we go. | `as we go` = w trakcie. **Nie** *correct me currently*. |
 | co mnie blokuje? | What's holding me back? | `hold somebody back` = powstrzymywać przed postępem. |
 | powiedziałbyś, że…? | Would you say that's still B1? | gotowe pytanie o poziom — grzeczniejsze niż `Is my English still B1?`. |
+
+**Tnij na dwa zdania (Grupa 7) — reguła, nie słownictwo:**
+
+Największy problem z lekcji nie brzmi „brakuje mi słów", tylko **„buduję zdanie za długo,
+zanim wiem, jak je skończyć"**. Stąd restarty: „they… it… it usually…".
+
+- **Zasada:** jedna myśl = jedno zdanie. Druga myśl = drugie zdanie. Kropka jest darmowa.
+- Zamiast `The incels believe in this fixed hierarchy that they basically think that they're
+  fundamentally trapped…` → `Incels believe in a fixed hierarchy. **They think they're trapped
+  by their looks and genetics.**`
+- **Krócej brzmi bardziej zaawansowanie, nie mniej.** Zamiast `they reinforce their beliefs and
+  it creates feedback loop which works as a echo chamber…` → `They reinforce each other's
+  beliefs, creating an echo chamber.` Imiesłów (`creating`) skleja dwie myśli bez ryzyka —
+  ale użyj go dopiero, gdy zdanie jest już krótkie.
+- Praktyczny test: jeśli w połowie zdania nie wiesz, jak je skończysz — **postaw kropkę i zacznij
+  od nowa**. To nie jest porażka, to jest technika.
+
+**Chunki i przyimki (Grupa 8) — ucz się całości, nie słowa + przyimka:**
+
+| polski | angielski | uwagi |
+|---|---|---|
+| prowadzić do czegoś | to lead **to** something | **Nigdy** *lead into*. `Radicalization can lead **to** violence.` |
+| zależeć od czegoś, opierać się na czymś | to be based **on** something | **Nie** *fixed on your looks*. `Everything is based **on** your looks.` |
+| być zdeterminowanym przez | to be determined **by** something | drugi wariant tej samej myśli: `determined **by** your looks`. |
+| działać jak, pełnić rolę | to act **as** something | `work as an echo chamber` jest zrozumiałe, ale `**act as**` brzmi naturalniej. |
+| pchać kogoś w stronę czegoś | to push somebody **toward** something | `The algorithm pushes men **toward** harsher content.` |
+| być uwięzionym w / przez | trapped **in** / trapped **by** | `trapped **in** a hierarchy` = wewnątrz systemu. `trapped **by** your genetics` = przez coś. |
+| wzmacniać przekonania | to reinforce beliefs | zawsze w liczbie mnogiej — grupa ludzi ma wiele przekonań. |
+| problemy mężczyzn | men's issues | **Nie** *men problems*. Dopełniacz z apostrofem: `men**'s** issues`. |
 
 ## Typowe błędy Polaka
 
@@ -227,6 +315,35 @@
 - `I don't even know what that means` → `I'd only be guessing here`.
   Ta sama treść, ale nie brzmisz, jakbyś się poddawał.
 
+**Z assessmentu polekcyjnego (2026-08-13) — Grupy 7–9:**
+
+*Kolokacje i przyimki:*
+
+- `fixed on your looks` → `**based on** your looks` albo `**determined by** your looks`.
+  `Fixed` w tym miejscu nie istnieje — `a fixed hierarchy` tak, ale `fixed on` już nie.
+- `lead into real-world violence` → `lead **to** real-world violence`. To najostrzejsza
+  pomyłka z tej listy, bo `lead into` brzmi jak wprowadzenie do czegoś, nie skutek.
+- `men problems` → `men**'s** issues`. Rzeczownik nie opisuje tu drugiego rzeczownika —
+  potrzebny dopełniacz.
+- `work as an echo chamber` → zrozumiałe, ale naturalniej `**act as** an echo chamber`.
+
+*Zgoda podmiotu z orzeczeniem — proste reguły, wysokie ROI:*
+
+- `Incels believes` → `Incels **believe**`. Liczba mnoga: czasownik bez `-s`.
+- `The paragraph suggest` → `The paragraph **suggests**`. Liczba pojedyncza: czasownik z `-s`.
+  Odruch jest odwrotny do polskiego, dlatego wypada pod obciążeniem.
+- `an harmful idea` → `**a** harmful idea`. `An` idzie przed **dźwiękiem** samogłoski,
+  a `harmful` zaczyna się od słyszalnego `h`.
+
+*Rodzajniki — tym razem „the" o jedno za dużo:*
+
+- `the society is biased against men` → `**society** is biased against men`.
+- `the radicalization can lead to violence` → `**radicalization** can lead to violence`.
+- Reguła: mówisz o **zjawisku w ogóle** → bez rodzajnika. Mówisz o **konkretnym egzemplarzu**
+  → z rodzajnikiem. To jest lustrzane odbicie błędu z Grupy 4: tam brakowało `a`/`an` przy
+  policzalnych rzeczownikach, tu nadmiarowe `the` trafia na niepoliczalne pojęcia
+  (`society`, `radicalization`, `isolation`, `bitterness`, `moderation`, `anonymity`).
+
 **Komora echa to nie to samo co filter bubble:**
 `an echo chamber` to środowisko **społeczne** — ludzie powtarzają sobie nawzajem to samo.
 `a filter bubble` to efekt **algorytmu**, który dobiera Ci treści. Arkusz mówi o `echo chambers`,
@@ -242,9 +359,24 @@ więc na lekcji używaj tego słowa; `filter bubble` możesz dorzucić przy szó
   przekierowanie rozmówcy („you have to ask me questions"), brak języka na przyznanie się do
   zgadywania i na grzeczną niezgodę. G6 trenuje dokładnie te ruchy — **uniwersalnie**,
   bo używa się ich na każdej lekcji, nie tylko przy tym arkuszu.
-- Grupa 6 jest jedyną **scenką** w tym dziale (pytanie EN → podpowiedź PL → odpowiedź EN);
-  G1–G5 zostają drylem `pl2en`. Przywraca to regułę metody K: ostatnia grupa symuluje
-  realną rozmowę (tak samo kończą się K1, K2 i K3).
+- **Grupy 7–9 dodane 2026-08-13** z assessmentu po lekcji z lektorem. Diagnoza jest o poziom
+  niżej niż przy G6: słownictwo tematyczne siedzi (`radicalization`, `harmful beliefs`,
+  `fixed hierarchy`, `echo chamber`, `reinforce` — wszystko wydrylowane w G1–G5), ale
+  **budowa zdania rozsypuje się na żywo**. Cytat z assessmentu: „Twoim głównym ograniczeniem
+  nie jest brak angielskiego. Problem zaczyna się, gdy próbujesz konstruować i poprawiać
+  zdanie jednocześnie podczas mówienia."
+  - **G7** bierze punkt 1 i 5 (zdanie budowane za długo; trudniejsza konstrukcja niż potrzeba).
+    Punkty 3 i 4 — zgoda podmiotu z orzeczeniem i nadmiarowe `the` — nie dostały własnej grupy
+    **celowo**: krótkie zdanie samo je wymusza. `Society is biased against men.` nie ma gdzie
+    schować błędu; długie zdanie ma. Naprawa punktu 1 naprawia 3 i 4 za darmo.
+  - **G8** bierze punkt 2 (kolokacje i przyimki) — osiem chunków jako całości.
+  - **G9** realizuje zapowiedź lektora na następną rundę: „nie będę Ci dawał zdań do
+    powtarzania — zadam pytanie, Ty odpowiesz sam". Podpowiedź PL jest **celowo cienka**:
+    podaje kąt, nie słowa.
+- **Scenki** w tym dziale są dwie: Grupa 6 (prowadzenie lekcji) i Grupa 9 (odpowiadanie
+  na pytania), obie w formacie pytanie EN → podpowiedź PL → odpowiedź EN. G1–G5, G7 i G8
+  zostają drylem `pl2en`. Utrzymuje to regułę metody K: dział kończy się rozmową, nie drylem
+  (tak samo kończą się K1, K2 i K3).
 - Rozdział skrócony z 10 do 5 grup — skupiony na największych błędach z transkryptu
   (resent, biased against, echo chamber, reinforce, feedback loop, distorted view,
   bitterness, determined by, categorize, hierarchy).

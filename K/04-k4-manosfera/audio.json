@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-12T09:36:27.676Z",
+  "generatedAt": "2026-08-13T10:23:59.673Z",
   "grupy": [
     {
       "n": 1,
@@ -1554,6 +1554,760 @@
             "pyt": "And what's the risk there?",
             "pl": "Powiedz, co tekst twierdzi o wzmacnianiu przekonań.",
             "en": "The text argues those beliefs get reinforced until they're hard to change."
+          }
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g7-p01-cue.mp3",
+            "sek": 8.616
+          },
+          "wzor": {
+            "src": "audio/g7-p01-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Incele wierzą w hierarchię, która jest niezmienna.",
+            "en": "Incels believe in a hierarchy. It's fixed."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g7-p02-cue.mp3",
+            "sek": 15.704
+          },
+          "wzor": {
+            "src": "audio/g7-p02-en.mp3",
+            "sek": 6.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Incele wierzą w niezmienną hierarchię i uważają, że są uwięzieni przez wygląd i geny.",
+            "en": "Incels believe in a fixed hierarchy. They think they're trapped by their looks and genetics."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g7-p03-cue.mp3",
+            "sek": 10.608
+          },
+          "wzor": {
+            "src": "audio/g7-p03-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Akapit sugeruje, że wszystko zaczyna się od izolacji.",
+            "en": "The paragraph suggests one thing. Isolation starts it all."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g7-p04-cue.mp3",
+            "sek": 10.704
+          },
+          "wzor": {
+            "src": "audio/g7-p04-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Drugi akapit sugeruje coś innego i podaje przykład.",
+            "en": "The second paragraph suggests something else. It gives an example."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g7-p05-cue.mp3",
+            "sek": 13.608
+          },
+          "wzor": {
+            "src": "audio/g7-p05-en.mp3",
+            "sek": 5.416
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Artykuł mówi, że te fora rosną, a moderacja za nimi nie nadąża.",
+            "en": "The article says those forums keep growing. Moderation can't keep up."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g7-p06-cue.mp3",
+            "sek": 13.416
+          },
+          "wzor": {
+            "src": "audio/g7-p06-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według nich społeczeństwo jest uprzedzone wobec mężczyzn — i to jest właśnie czerwona pigułka.",
+            "en": "In their view, society is biased against men. That's the Red Pill."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g7-p07-cue.mp3",
+            "sek": 11.664
+          },
+          "wzor": {
+            "src": "audio/g7-p07-en.mp3",
+            "sek": 5.248
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Radykalizacja może prowadzić do przemocy w realnym świecie i tego właśnie się boją.",
+            "en": "Radicalization can lead to real-world violence. That's the fear."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g7-p08-cue.mp3",
+            "sek": 13.248
+          },
+          "wzor": {
+            "src": "audio/g7-p08-en.mp3",
+            "sek": 6.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Izolacja tworzy zniekształcony obraz rzeczywistości, a gorycz robi resztę.",
+            "en": "Isolation creates a distorted view of reality. Bitterness does the rest."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g7-p09-cue.mp3",
+            "sek": 9.72
+          },
+          "wzor": {
+            "src": "audio/g7-p09-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Anonimowość rozzuchwala ludzi, więc język robi się ostrzejszy.",
+            "en": "Anonymity makes people bolder. The language gets harsher."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g7-p10-cue.mp3",
+            "sek": 8.256
+          },
+          "wzor": {
+            "src": "audio/g7-p10-en.mp3",
+            "sek": 4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Moderacja pomaga, ale nie rozwiązuje problemu.",
+            "en": "Moderation helps. It doesn't solve the problem."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g7-p11-cue.mp3",
+            "sek": 12.264
+          },
+          "wzor": {
+            "src": "audio/g7-p11-en.mp3",
+            "sek": 5.752
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Te fora działają jak komora echa i wzmacniają szkodliwe przekonania.",
+            "en": "Those forums act as an echo chamber. They reinforce harmful beliefs."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g7-p12-cue.mp3",
+            "sek": 15.504
+          },
+          "wzor": {
+            "src": "audio/g7-p12-en.mp3",
+            "sek": 6.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według artykułu algorytm podsuwa coraz ostrzejsze treści, a użytkownicy nawet tego nie zauważają.",
+            "en": "According to the article, the algorithm pushes harsher content. Users don't even notice."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g7-p13-cue.mp3",
+            "sek": 12.168
+          },
+          "wzor": {
+            "src": "audio/g7-p13-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chciałem powiedzieć coś skomplikowanego, ale zgubiłem się w połowie zdania.",
+            "en": "I wanted to say something complicated. I lost the thread halfway."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g7-p14-cue.mp3",
+            "sek": 15.8
+          },
+          "wzor": {
+            "src": "audio/g7-p14-en.mp3",
+            "sek": 7.6
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tekst twierdzi, że wspólna uraza tworzy sprzężenie zwrotne, przez które poglądy coraz trudniej zmienić.",
+            "en": "The text argues that shared resentment creates a feedback loop. Those views get harder to change."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g7-p15-cue.mp3",
+            "sek": 10.8
+          },
+          "wzor": {
+            "src": "audio/g7-p15-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wzmacniają nawzajem swoje przekonania i tak powstaje komora echa.",
+            "en": "They reinforce each other's beliefs, creating an echo chamber."
+          }
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g8-p01-cue.mp3",
+            "sek": 5.856
+          },
+          "wzor": {
+            "src": "audio/g8-p01-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To prowadzi do przemocy.",
+            "en": "It leads to violence."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g8-p02-cue.mp3",
+            "sek": 4.56
+          },
+          "wzor": {
+            "src": "audio/g8-p02-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Izolacja prowadzi do goryczy.",
+            "en": "Isolation leads to bitterness."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g8-p03-cue.mp3",
+            "sek": 4.8
+          },
+          "wzor": {
+            "src": "audio/g8-p03-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gorycz prowadzi do urazy.",
+            "en": "Bitterness leads to resentment."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g8-p04-cue.mp3",
+            "sek": 9.12
+          },
+          "wzor": {
+            "src": "audio/g8-p04-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według artykułu te fora prowadzą do izolacji.",
+            "en": "According to the article, those forums lead to isolation."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g8-p05-cue.mp3",
+            "sek": 8.568
+          },
+          "wzor": {
+            "src": "audio/g8-p05-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To nie prowadzi do przemocy w każdym przypadku.",
+            "en": "It doesn't lead to violence in every case."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g8-p06-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g8-p06-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według nich wszystko zależy od twojego wyglądu.",
+            "en": "In their view, everything is based on your looks."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g8-p07-cue.mp3",
+            "sek": 6.912
+          },
+          "wzor": {
+            "src": "audio/g8-p07-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według nich o wszystkim decydują geny.",
+            "en": "In their view, genetics determine everything."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g8-p08-cue.mp3",
+            "sek": 6.456
+          },
+          "wzor": {
+            "src": "audio/g8-p08-en.mp3",
+            "sek": 3.352
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To nie zależy od wyglądu.",
+            "en": "It's not based on looks."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g8-p09-cue.mp3",
+            "sek": 7.464
+          },
+          "wzor": {
+            "src": "audio/g8-p09-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ta grupa działa jak komora echa.",
+            "en": "The group acts as an echo chamber."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g8-p10-cue.mp3",
+            "sek": 8.808
+          },
+          "wzor": {
+            "src": "audio/g8-p10-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Algorytm pcha mężczyzn w stronę ostrzejszych treści.",
+            "en": "The algorithm pushes men toward harsher content."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g8-p11-cue.mp3",
+            "sek": 7.8
+          },
+          "wzor": {
+            "src": "audio/g8-p11-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Co ich pcha w stronę czarnej pigułki?",
+            "en": "What pushes them toward the Black Pill?"
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g8-p12-cue.mp3",
+            "sek": 10.512
+          },
+          "wzor": {
+            "src": "audio/g8-p12-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czują się uwięzieni w systemie, którego nie wybrali.",
+            "en": "They feel trapped in a system they didn't choose."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g8-p13-cue.mp3",
+            "sek": 8.904
+          },
+          "wzor": {
+            "src": "audio/g8-p13-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Uważają, że są uwięzieni przez własne geny.",
+            "en": "They think they're trapped by their own genetics."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g8-p14-cue.mp3",
+            "sek": 7.104
+          },
+          "wzor": {
+            "src": "audio/g8-p14-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To tylko wzmacnia ich przekonania.",
+            "en": "That just reinforces their beliefs."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g8-p15-cue.mp3",
+            "sek": 6.864
+          },
+          "wzor": {
+            "src": "audio/g8-p15-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ten kanał porusza realne problemy mężczyzn.",
+            "en": "That channel raises real men's issues."
+          }
+        },
+        {
+          "n": 16,
+          "cue": {
+            "src": "audio/g8-p16-cue.mp3",
+            "sek": 15.512
+          },
+          "wzor": {
+            "src": "audio/g8-p16-en.mp3",
+            "sek": 7.168
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Według artykułu manosfera zaczyna się od realnych problemów mężczyzn, a kończy na goryczy.",
+            "en": "According to the article, the manosphere starts with real men's issues. It ends in bitterness."
+          }
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g9-p01-cue.mp3",
+            "sek": 12.972
+          },
+          "wzor": {
+            "src": "audio/g9-p01-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": "So, what's the manosphere?",
+            "pl": "Dwa zdania. Najpierw czym jest, potem dla kogo.",
+            "en": "It's a group of online spaces. Mostly men."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g9-p02-cue.mp3",
+            "sek": 13.312
+          },
+          "wzor": {
+            "src": "audio/g9-p02-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": "And who's in there?",
+            "pl": "Dwa zdania. Kto, a potem że to nie jedna grupa.",
+            "en": "Mostly men with different goals. It's not one group."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g9-p03-cue.mp3",
+            "sek": 18.564
+          },
+          "wzor": {
+            "src": "audio/g9-p03-en.mp3",
+            "sek": 6.16
+          },
+          "tekst": {
+            "pyt": "So what's the Black Pill exactly?",
+            "pl": "Dwa zdania. Nazwij to najciemniejszym zakątkiem, potem co głoszą.",
+            "en": "The article calls it the darkest corner. They believe nothing you do changes anything."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g9-p04-cue.mp3",
+            "sek": 14.464
+          },
+          "wzor": {
+            "src": "audio/g9-p04-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": "Why do they think that?",
+            "pl": "Dwa zdania, z atrybucją. Zacznij od tego, co według nich decyduje.",
+            "en": "In their view, genetics determine everything. Effort changes nothing."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g9-p05-cue.mp3",
+            "sek": 16.872
+          },
+          "wzor": {
+            "src": "audio/g9-p05-en.mp3",
+            "sek": 6.256
+          },
+          "tekst": {
+            "pyt": "Okay. And where does the anger come from?",
+            "pl": "Dwa zdania. Najpierw uraza, potem skąd się bierze.",
+            "en": "It starts with resentment. They feel society is biased against them."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g9-p06-cue.mp3",
+            "sek": 16.032
+          },
+          "wzor": {
+            "src": "audio/g9-p06-en.mp3",
+            "sek": 5.968
+          },
+          "tekst": {
+            "pyt": "And what do those forums do to that?",
+            "pl": "Dwa zdania. Użyj „act as\" i „reinforce\".",
+            "en": "They act as an echo chamber. They reinforce each other's beliefs."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g9-p07-cue.mp3",
+            "sek": 15.168
+          },
+          "wzor": {
+            "src": "audio/g9-p07-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": "Why is that dangerous?",
+            "pl": "Dwa zdania. Sprzężenie zwrotne, potem skutek.",
+            "en": "It creates a feedback loop. Those beliefs get harder to change."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g9-p08-cue.mp3",
+            "sek": 17.36
+          },
+          "wzor": {
+            "src": "audio/g9-p08-en.mp3",
+            "sek": 7.168
+          },
+          "tekst": {
+            "pyt": "Can that lead anywhere worse?",
+            "pl": "Dwa zdania. Użyj „lead to\", nie „lead into\".",
+            "en": "In extreme cases, it can lead to real-world violence. Those cases are rare."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g9-p09-cue.mp3",
+            "sek": 14.924
+          },
+          "wzor": {
+            "src": "audio/g9-p09-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": "What role do the algorithms play?",
+            "pl": "Dwa zdania. Algorytm pcha, człowiek nie zauważa.",
+            "en": "Algorithms push men toward harsher content. Users don't notice it."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g9-p10-cue.mp3",
+            "sek": 13.764
+          },
+          "wzor": {
+            "src": "audio/g9-p10-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": "Is there anything good in it?",
+            "pl": "Dwa zdania. Przyznaj, że tak, i nazwij to „men's issues\".",
+            "en": "Yes. Some of it raises real men's issues."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g9-p11-cue.mp3",
+            "sek": 15.212
+          },
+          "wzor": {
+            "src": "audio/g9-p11-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": "So why does it go wrong?",
+            "pl": "Dwa zdania. Zacznij od tego, że problemy są prawdziwe.",
+            "en": "It starts with real problems. Isolation turns them into bitterness."
+          }
+        },
+        {
+          "n": 12,
+          "cue": {
+            "src": "audio/g9-p12-cue.mp3",
+            "sek": 14.468
+          },
+          "wzor": {
+            "src": "audio/g9-p12-en.mp3",
+            "sek": 5.248
+          },
+          "tekst": {
+            "pyt": "Can you say that again, but shorter?",
+            "pl": "Skróć do dwóch zdań. Nic nie dodawaj.",
+            "en": "They reinforce each other's beliefs. That creates an echo chamber."
+          }
+        },
+        {
+          "n": 13,
+          "cue": {
+            "src": "audio/g9-p13-cue.mp3",
+            "sek": 16.32
+          },
+          "wzor": {
+            "src": "audio/g9-p13-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": "What would you say to someone in there?",
+            "pl": "Dwa zdania. Bez oceniania, z dystansem.",
+            "en": "I'm not judging them. I'd just ask where they read that."
+          }
+        },
+        {
+          "n": 14,
+          "cue": {
+            "src": "audio/g9-p14-cue.mp3",
+            "sek": 18.836
+          },
+          "wzor": {
+            "src": "audio/g9-p14-en.mp3",
+            "sek": 6.856
+          },
+          "tekst": {
+            "pyt": "Sum it up for me. One breath.",
+            "pl": "Dwa krótkie zdania, z atrybucją. Nic więcej.",
+            "en": "According to the article, it's a loose network of online spaces. It pushes men toward bitterness."
+          }
+        },
+        {
+          "n": 15,
+          "cue": {
+            "src": "audio/g9-p15-cue.mp3",
+            "sek": 12.124
+          },
+          "wzor": {
+            "src": "audio/g9-p15-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": "And what's the one risk?",
+            "pl": "Jedno zdanie. Najkrótsze, jakie potrafisz.",
+            "en": "Radicalization can lead to real-world violence."
           }
         }
       ]

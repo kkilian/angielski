@@ -20,6 +20,45 @@ export function cleanTitle(title) {
   return String(title).replace(/^K\d+\s*·\s*/i, '');
 }
 
+// ————— Ćwiczenie 4/3/2 (Nation) —————
+// Ta sama odpowiedź trzy razy: 4 min, 3 min, 2 min. Zmiana tempa = ta stała.
+export const RUNDY_432 = [240, 180, 120];
+
+export function stan432(rundy = RUNDY_432) {
+  return { runda: 0, pozostalo: rundy[0], dziala: false, koniec: false, sygnal: null };
+}
+
+// Czysty reduktor. Akcje: start | pauza | skip | tik (jedna sekunda).
+// `sygnal`: 'koniec-rundy' | 'koniec' | null — jednorazowy; UI zamienia go
+// na beep i wibrację. Testowany bez DOM w tools/k-site.test.mjs.
+export function krok432(stan, akcja, rundy = RUNDY_432) {
+  const s = { ...stan, sygnal: null };
+  if (akcja.typ === 'start') {
+    if (s.koniec) return { ...stan432(rundy), dziala: true };
+    s.dziala = true;
+    return s;
+  }
+  if (akcja.typ === 'pauza') { s.dziala = false; return s; }
+  if (akcja.typ === 'skip') {
+    if (s.koniec) return s;
+    if (s.runda + 1 >= rundy.length) { s.koniec = true; s.dziala = false; s.pozostalo = 0; return s; }
+    s.runda += 1;
+    s.pozostalo = rundy[s.runda];
+    return s;
+  }
+  if (akcja.typ === 'tik') {
+    if (!s.dziala || s.koniec) return s;
+    s.pozostalo -= 1;
+    if (s.pozostalo > 0) return s;
+    if (s.runda + 1 >= rundy.length) { s.koniec = true; s.dziala = false; s.pozostalo = 0; s.sygnal = 'koniec'; return s; }
+    s.runda += 1;
+    s.pozostalo = rundy[s.runda];
+    s.sygnal = 'koniec-rundy';
+    return s;
+  }
+  return s;
+}
+
 const esc = (value) => String(value).replace(/[&<>"']/g, (character) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 }[character]));
@@ -332,6 +371,9 @@ function initSite() {
             <small>posłuchaj · odpowiedz · powtórz</small>
           </span>
         </button>
+        ${group.pytanie432
+          ? `<button class="group-432" data-action="432" data-index="${index}" aria-label="Ćwiczenie 4/3/2 — ${esc(group.label)}">4/3/2</button>`
+          : ''}
         <button class="group-loop" data-action="loop" data-index="${index}" aria-label="Zapętl ${esc(group.label)}">↻</button>
       </div>`).join('');
 
@@ -353,6 +395,116 @@ function initSite() {
     window.scrollTo(0, 0);
   }
 
+  // ————— Ekran 4/3/2: pytanie do grupy + trzy rundy mówienia —————
+  let s432 = null;
+  let uchwyt432 = null;
+  let ostatniTik432 = 0;
+  let ctxAudio432 = null;
+
+  function obudzDzwiek432() {
+    // iOS odblokowuje AudioContext wyłącznie w geście użytkownika —
+    // stąd tworzenie i resume() w handlerze przycisku Start, nie przy renderze.
+    try {
+      ctxAudio432 = ctxAudio432 || new (window.AudioContext || window.webkitAudioContext)();
+      ctxAudio432.resume?.();
+    } catch {}
+  }
+
+  function beep432(ile) {
+    try { navigator.vibrate?.(ile > 1 ? [180, 90, 180, 90, 180] : [180]); } catch {}
+    if (!ctxAudio432) return;
+    try {
+      for (let i = 0; i < ile; i += 1) {
+        const t = ctxAudio432.currentTime + i * 0.28;
+        const osc = ctxAudio432.createOscillator();
+        const gain = ctxAudio432.createGain();
+        osc.frequency.value = 880;
+        gain.gain.setValueAtTime(0.0001, t);
+        gain.gain.exponentialRampToValueAtTime(0.4, t + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.2);
+        osc.connect(gain).connect(ctxAudio432.destination);
+        osc.start(t);
+        osc.stop(t + 0.22);
+      }
+    } catch {}
+  }
+
+  function stop432() {
+    if (uchwyt432) { clearInterval(uchwyt432); uchwyt432 = null; }
+    s432 = null;
+  }
+
+  function rysuj432() {
+    if (!s432) return;
+    setText('ex432-clock', fmt(s432.pozostalo));
+    setText('ex432-start', s432.koniec ? 'Jeszcze raz' : s432.dziala ? 'Pauza' : 'Start');
+    document.querySelectorAll('.ex432-round').forEach((el, i) => {
+      el.classList.toggle('done', s432.koniec || i < s432.runda);
+      el.classList.toggle('active', !s432.koniec && i === s432.runda);
+    });
+    setText('ex432-hint', s432.koniec
+      ? 'Trzy rundy za Tobą. Ta sama odpowiedź, coraz mniej czasu — to jest cała metoda.'
+      : `Runda ${s432.runda + 1} z ${RUNDY_432.length} · ta sama odpowiedź, coraz krócej`);
+  }
+
+  function tykaj432() {
+    // Zegar ścienny zamiast liczenia tików: iOS dławi setInterval przy zgaszonym
+    // ekranie, więc nadrobione sekundy przepuszczamy przez reduktor po jednej.
+    if (!s432) return;
+    let sekundy = Math.floor((Date.now() - ostatniTik432) / 1000);
+    if (sekundy <= 0) return;
+    ostatniTik432 += sekundy * 1000;
+    while (sekundy > 0) {
+      s432 = krok432(s432, { typ: 'tik' });
+      if (s432.sygnal) beep432(s432.sygnal === 'koniec' ? 3 : 1);
+      sekundy -= 1;
+    }
+    rysuj432();
+  }
+
+  function render432(chapter, index) {
+    const group = chapter.groups[index];
+    visibleChapterId = chapter.id;
+    backHash = `#/k/${chapter.id}`;
+    back.hidden = false;
+    setText('topbar-context', `K${chapter.localNumber} · 4/3/2`);
+
+    s432 = stan432();
+
+    const rundy = RUNDY_432
+      .map((sek, i) => `<span class="ex432-round${i === 0 ? ' active' : ''}">${fmt(sek)}</span>`)
+      .join('');
+    view.innerHTML = `
+      <section class="ex432" aria-label="Ćwiczenie 4/3/2">
+        <p class="eyebrow">${esc(group.label)} · 4/3/2</p>
+        <h1 class="ex432-question">${esc(group.pytanie432)}</h1>
+        <p class="ex432-copy">Odpowiadaj na głos przez całą rundę. Potem ta sama odpowiedź w 3:00 i w 2:00.</p>
+        <div class="ex432-rounds">${rundy}</div>
+        <div class="ex432-clock" id="ex432-clock">${fmt(RUNDY_432[0])}</div>
+        <p class="ex432-hint" id="ex432-hint">Runda 1 z ${RUNDY_432.length} · ta sama odpowiedź, coraz krócej</p>
+        <div class="ex432-controls">
+          <button class="ex432-start" id="ex432-start" type="button">Start</button>
+          <button class="ex432-skip" id="ex432-skip" type="button">Następna runda</button>
+        </div>
+      </section>`;
+
+    byId('ex432-start').addEventListener('click', () => {
+      obudzDzwiek432();
+      s432 = krok432(s432, { typ: s432.dziala ? 'pauza' : 'start' });
+      if (s432.dziala) {
+        ostatniTik432 = Date.now();
+        if (!uchwyt432) uchwyt432 = setInterval(tykaj432, 250);
+      }
+      rysuj432();
+    });
+    byId('ex432-skip').addEventListener('click', () => {
+      s432 = krok432(s432, { typ: 'skip' });
+      ostatniTik432 = Date.now();
+      rysuj432();
+    });
+    window.scrollTo(0, 0);
+  }
+
   function renderError() {
     back.hidden = true;
     view.innerHTML = `
@@ -365,7 +517,16 @@ function initSite() {
 
   function route() {
     if (!data) return;
-    const match = (location.hash || '').match(/^#\/k\/(k\d+)$/);
+    // Każde wyjście z ekranu 4/3/2 (back, swipe, wordmark, deep link) gasi timer.
+    stop432();
+    const m432 = (location.hash || '').match(/^#\/k\/(k\d+)\/432\/(\d+)$/);
+    if (m432) {
+      const chapter = data.chapters.find((item) => item.id === m432[1]);
+      const index = Number(m432[2]);
+      // Deep link do grupy bez pytania spada na widok działu zamiast wywalać apkę.
+      if (chapter?.groups[index]?.pytanie432) return render432(chapter, index);
+    }
+    const match = (location.hash || '').match(/^#\/k\/(k\d+)/);
     if (match) {
       const chapter = data.chapters.find((item) => item.id === match[1]);
       if (chapter) return renderChapter(chapter);
@@ -416,6 +577,11 @@ function initSite() {
       if (!action || !visibleChapterId) return;
       const chapter = data.chapters.find((item) => item.id === visibleChapterId);
       const index = Number(action.dataset.index);
+      // Gałąź 432 MUSI stać przed else — else łapie wszystko i odpaliłby odtwarzanie.
+      if (action.dataset.action === '432') {
+        location.hash = `#/k/${chapter.id}/432/${index}`;
+        return;
+      }
       if (action.dataset.action === 'loop') {
         setRepeat(chapter.format === 2 ? 'grupa' : 'one');
         loadAndPlay(chapter, index);

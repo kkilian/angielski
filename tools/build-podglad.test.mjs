@@ -125,3 +125,11 @@ test('tryb GWIAZDKI ONLY: przycisk, filtr CSS tylko dla K, kolejka z gwiazdek', 
   assert.ok(html.includes('if(!grane.length) return;'));
   assert.match(html, /if\(trs\.length\*2===list\.length\)/, 'detekcja formatu 2 nadal na pelnej liscie');
 });
+
+test('komentarz 4/3/2 z rozdzial.md nie wycieka do podgladu jako podpis grupy', () => {
+  // parse() w build-podglad.js traktuje kazdy nie-mode'owy komentarz jako podpis
+  // grupy (cur.cap) i renderuje go w <div class="gcap">. Pytania cwiczenia 4/3/2
+  // (`<!-- 432: … -->`) mieszkaja w rozdzial.md i musza byc tam pomijane.
+  const html = buildPreview();
+  assert.doesNotMatch(html, /class="gcap">\s*432:/, 'pytanie 4/3/2 wyrenderowane jako podpis grupy');
+});

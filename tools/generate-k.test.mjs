@@ -80,3 +80,46 @@ test('buildKManifest rozpoznaje dzial w formacie 2', (t) => {
   assert.equal(ch.groups[0].parCount, 1);
   assert.equal(ch.groups[0].src, undefined, 'format 2 nie ma src na poziomie grupy');
 });
+
+test('buildKManifest dokleja pytanie 4/3/2 z komentarza pod nagłówkiem grupy', (t) => {
+  // Pytanie mieszka w rozdzial.md (`<!-- 432: … -->`), NIE w audio.json —
+  // assemble-audio.js przepisuje manifest przy każdej regeneracji audio
+  // i zapisuje wyłącznie {n, tryb, pary}, więc obce pole by zginęło.
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'kurs-k-432-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+
+  write(root, 'K/slownik-k.json', JSON.stringify({
+    kurs: { id: 'k', tytul: 'Kurs K', opis: 'Osobny kurs' },
+    dzialy: [{ id: 'k1', folder: '01-k1-jeden', opis: 'Pierwszy dział' }],
+    wyrazenia: [],
+  }));
+  write(root, 'K/01-k1-jeden/rozdzial.md', [
+    '# K1 · Jeden / K1 · One',
+    '',
+    '<!-- 432: To pytanie stoi przed pierwszą grupą i ma być zignorowane? -->',
+    '',
+    '## Grupa 1',
+    '<!-- 432: What changed after the ban? -->',
+    '| polski | angielski |',
+    '|---|---|',
+    '| Test. | Test. |',
+    '',
+    '## Grupa 2',
+    '<!-- mode: scenka -->',
+    '| pytanie (EN) | podpowiedź (PL) | odpowiedź (EN) |',
+    '|---|---|---|',
+    '| Q? | Steruj. | A. |',
+    '',
+  ].join('\n'));
+  write(root, 'K/01-k1-jeden/audio.json', JSON.stringify({
+    wersja: 2,
+    grupy: [
+      { n: 1, tryb: 'pl2en', pary: [{ n: 1, cue: { src: 'audio/g1-p01-cue.mp3', sek: 5 }, wzor: { src: 'audio/g1-p01-en.mp3', sek: 2 }, tekst: { pyt: null, pl: 'Test.', en: 'Test.' } }] },
+      { n: 2, tryb: 'scenka', pary: [{ n: 1, cue: { src: 'audio/g2-p01-cue.mp3', sek: 5 }, wzor: { src: 'audio/g2-p01-en.mp3', sek: 2 }, tekst: { pyt: 'Q?', pl: 'Steruj.', en: 'A.' } }] },
+    ],
+  }));
+
+  const ch = buildKManifest(root).chapters[0];
+  assert.equal(ch.groups[0].pytanie432, 'What changed after the ban?');
+  assert.equal(ch.groups[1].pytanie432, undefined, 'mode: scenka to nie pytanie 432, a grupa bez komentarza nie dostaje pola');
+});

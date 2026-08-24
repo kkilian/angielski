@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T09:38:24.460Z",
+  "generatedAt": "2026-08-22T07:51:53.343Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -155,7 +155,7 @@
       "pdf": "K/04-k4-manosfera/rozdzial.pdf",
       "format": 2,
       "audioManifest": "K/04-k4-manosfera/audio.json",
-      "audioVersion": 1786527463595,
+      "audioVersion": 1786616698784,
       "hasAudio": true,
       "groups": [
         {
@@ -187,6 +187,148 @@
           "n": 6,
           "label": "Grupa 6",
           "parCount": 18
+        },
+        {
+          "n": 7,
+          "label": "Grupa 7",
+          "parCount": 15
+        },
+        {
+          "n": 8,
+          "label": "Grupa 8",
+          "parCount": 16
+        },
+        {
+          "n": 9,
+          "label": "Grupa 9",
+          "parCount": 15
+        }
+      ]
+    },
+    {
+      "id": "k5",
+      "slug": "K/05-k5-bez-dowodu",
+      "localNumber": 5,
+      "title": "K5 · Mów o tym, czego nikt nie udowodnił / K5 · Talk About What Nobody Can Prove",
+      "titlePl": "K5 · Mów o tym, czego nikt nie udowodnił",
+      "titleEn": "K5 · Talk About What Nobody Can Prove",
+      "description": "Pięć grup na bazie filmu Patricka Boyle'a „Epstein – Follow The Money!”: stopniowanie pewności (reportedly / allegedly / apparently / supposedly), brak dowodu, kompresja myśli w jedno zdanie (What I don't get is… / which is why…) plus scenka G5 — lektor pyta o obejrzany film.",
+      "pdf": "K/05-k5-bez-dowodu/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/05-k5-bez-dowodu/audio.json",
+      "audioVersion": 1786631368438,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "parCount": 16
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "parCount": 16
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "parCount": 15
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "parCount": 14
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "parCount": 14
+        }
+      ]
+    },
+    {
+      "id": "k6",
+      "slug": "K/06-k6-piec-przeciekow",
+      "localNumber": 6,
+      "title": "K6 · Pięć przecieków / K6 · The Five Leaks",
+      "titlePl": "K6 · Pięć przecieków",
+      "titleEn": "K6 · The Five Leaks",
+      "description": "Pięć targetów z diagnozy transkryptu lekcji 2026-08-13, uszeregowanych po ROI: rodzajniki, pytanie zależne, strefa nierzeczywista (must have / 2nd cond), wiązki ratunkowe na brakujące słowo i hedging poza „I think”. Zdania w kontekście korków, kanału i MadreM — nie w kontekście lekcji źródłowej.",
+      "pdf": "K/06-k6-piec-przeciekow/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/06-k6-piec-przeciekow/audio.json",
+      "audioVersion": 1786695190393,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "parCount": 9
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "parCount": 8
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "parCount": 10
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "parCount": 7
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "parCount": 7
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6",
+          "parCount": 6
+        }
+      ]
+    },
+    {
+      "id": "k7",
+      "slug": "K/07-k7-cztery-dziury",
+      "localNumber": 7,
+      "title": "K7 · Cztery dziury / K7 · Four Gaps",
+      "titlePl": "K7 · Cztery dziury",
+      "titleEn": "K7 · Four Gaps",
+      "description": "Dryl czterech dziur zmierzonych na trzech transkrypcjach lekcji (2026-08-03, 2026-08-13, 2026-08-17; ~9200 słów mowy spontanicznej): strefa irrealis (would have / I wish / unless — ZERO wystąpień), czasy Perfect (past perfect 0×), rodzajniki a/the/zero oraz precyzja zamiast mgły („or something\" 51×, „right?\" 57×). Grupy 3 i 4 idą w trybie en-only: wyzwalaczem jest DOSŁOWNY cytat z lekcji z datą i znacznikiem czasu, zadaniem — poprawić własne zdanie. Zastąpił dział o masonach (81 par z map myśli) 2026-08-22.",
+      "pdf": "K/07-k7-cztery-dziury/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/07-k7-cztery-dziury/audio.json",
+      "audioVersion": 1787385075585,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "parCount": 8,
+          "pytanie432": "What would you have done differently in 2020 if you had known how long it would last?"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "parCount": 8,
+          "pytanie432": "Walk me through the last five years — what had already changed before you noticed?"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "parCount": 8,
+          "pytanie432": "What did the lockdown in Poland actually look like, from the stadium to the taped-off parks?"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "parCount": 8,
+          "pytanie432": "Why do conspiracy theories spread, and why do people believe them?"
         }
       ]
     }

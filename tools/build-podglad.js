@@ -52,6 +52,7 @@ function parse(md) {
     const cm = ln.match(/^<!--\s*(.*?)\s*-->/);
     if (cm && cur) {
       const c = cm[1];
+      if (/^432:/.test(c)) continue; // pytanie ćwiczenia 4/3/2 — trafia do k-content.json, nie do podglądu
       const mm = c.match(/mode:\s*(.+)/i);
       if (mm) cur.mode = mm[1].trim(); else cur.cap = c;
       continue;

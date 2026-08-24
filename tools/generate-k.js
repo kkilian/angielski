@@ -43,6 +43,25 @@ function findGroups(chapterPath, relativeChapterPath) {
   return groups.sort((a, b) => a.n - b.n);
 }
 
+// Pytanie do ćwiczenia płynności 4/3/2 — komentarz `<!-- 432: … -->` bezpośrednio
+// pod nagłówkiem `## Grupa N` w rozdzial.md. NIE w audio.json: assemble-audio.js
+// przepisuje manifest przy każdej regeneracji audio i zapisuje wyłącznie
+// {n, tryb, pary}, więc obce pole by zginęło.
+function czytajPytania432(chapterPath) {
+  const markdownPath = path.join(chapterPath, 'rozdzial.md');
+  const pytania = new Map();
+  if (!fs.existsSync(markdownPath)) return pytania;
+  let numer = null;
+  for (const line of fs.readFileSync(markdownPath, 'utf8').split(/\r?\n/)) {
+    const heading = line.match(/^##\s*Grupa\s*(\d+)/i);
+    if (heading) { numer = Number(heading[1]); continue; }
+    if (/^#{1,6}\s+/.test(line)) { numer = null; continue; }
+    const q = line.match(/^<!--\s*432:\s*(.+?)\s*-->\s*$/);
+    if (q && numer != null) pytania.set(numer, q[1]);
+  }
+  return pytania;
+}
+
 // Dział w formacie 2 opisuje swoje audio w audio.json — nie skanujemy grupa-N.mp3.
 // audioVersion to najświeższy mtime audio; odtwarzacz dokleja go jako ?v= do
 // każdej ścieżki z manifestu (cache-busting bez puchnięcia content.json).
@@ -95,6 +114,12 @@ export function buildKManifest(rootDir = ROOT) {
     const groups = findGroups(chapterPath, relativeChapterPath);
     const format2 = czytajFormat2(chapterPath, relativeChapterPath);
 
+    const pytania = czytajPytania432(chapterPath);
+    const audio = format2 || { hasAudio: groups.length > 0, groups };
+    audio.groups = audio.groups.map((g) => (
+      pytania.has(g.n) ? { ...g, pytanie432: pytania.get(g.n) } : g
+    ));
+
     return {
       id: chapterMetadata.id || `k${localNumber}`,
       slug: relativeChapterPath,
@@ -104,7 +129,7 @@ export function buildKManifest(rootDir = ROOT) {
       pdf: fs.existsSync(path.join(chapterPath, 'rozdzial.pdf'))
         ? `${relativeChapterPath}/rozdzial.pdf`
         : null,
-      ...(format2 || { hasAudio: groups.length > 0, groups }),
+      ...audio,
     };
   });
 
