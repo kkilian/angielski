@@ -6,7 +6,8 @@
 //
 // Kształt pola `pl` zależy od trybu grupy (assemble-audio.js:227, tekstPary):
 //   pl2en   → tekst.pl  = polski wyzwalacz
-//   en-only → tekst.pyt = DOSŁOWNY cytat z lekcji + polecenie (tekst.pl jest null)
+//   (do 25.08 G1/G4 chodziły w `en-only` i brały przód z tekst.pyt — cytat z nagrania
+//    plus polecenie. Odrzucone: w Anki czytało się to jak protokół.)
 //
 // Uruchom: node tools/k8-do-anki.js
 
@@ -46,7 +47,7 @@ fs.mkdirSync(outDir, { recursive: true });
 let razem = 0;
 for (const g of manifest.grupy) {
   const cards = g.pary.map((para) => {
-    const pl = g.tryb === 'en-only' ? para.tekst.pyt : para.tekst.pl;
+    const pl = para.tekst.pl;
     const en = para.tekst.en;
     if (!pl) throw new Error(`Grupa ${g.n}, para ${para.n}: brak tekstu wyzwalacza (tryb ${g.tryb})`);
     const planowane = KLOCKI[g.n]?.[para.n - 1] || [];

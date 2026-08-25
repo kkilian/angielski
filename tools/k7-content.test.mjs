@@ -339,7 +339,7 @@ test('K7 trzyma wyzwalacz po polsku i bez podpowiedzi', () => {
   // nie istnieje po angielsku. Sam diakryt nie wystarcza — „To jest teoria
   // spiskowa." jest bezspornie polskie i nie ma ani jednego ogonka.
   const POLSKIE = /[ąćęłńóśźż]/i;
-  const FUNKCYJNE = /(?<!\p{L})(?:że|się|jest|nie|jak|czy|już|tam|ale|tylko|przez|dla|bez|na|w|z|od|po|za|tego|tym|mnie|ich)(?!\p{L})/iu;
+  const FUNKCYJNE = /(?<!\p{L})(?:że|się|jest|nie|jak|czy|już|tam|ale|tylko|przez|dla|bez|na|w|z|od|po|za|tego|tym|mnie|mi|ci|mu|ich|te|ta)(?!\p{L})/iu;
   for (const group of groups) {
     for (const [index, cells] of group.rows.entries()) {
       const cue = cells[0];

@@ -503,26 +503,33 @@ Dlatego K8 wraca do rodzajników i irrealis po K7, ale nie regułą i nie gdyban
 rodzajniki na JEGO zdaniach z 24.08 w pięciu ramach, irrealis jako przeróbka JEGO narracji
 o akademiku na `must have`.
 
-**Rozmiar: 5 grup × 8 par = 40 kart** (decyzja Krzyśka; K7 = 32). Tryb mieszany, też jego
-decyzja: BŁĘDY (rodzajniki, przyimki) = cytaty do poprawienia, UNIKANIA (słowo brakujące,
-rejestr ocen, irrealis) = produkcja z polskiego w nowym kontekście, bo tam nie ma czego
-poprawiać — trzeba to powiedzieć pierwszy raz.
+**Rozmiar: 5 grup × 8 par = 40 kart** (decyzja Krzyśka; K7 = 32).
+
+**Tryb: `pl2en` we wszystkich pięciu grupach (od 2026-08-25).** Pierwotny zamysł był mieszany —
+BŁĘDY (rodzajniki G1, przyimki G4) jako cytaty do poprawienia w trybie `en-only`, UNIKANIA
+(słowo brakujące, rejestr ocen, irrealis) jako produkcja z polskiego. Połowa `en-only` odpadła
+razem z tym samym eksperymentem w K7: **cel dydaktyczny nie usprawiedliwia zmiany interfejsu
+karty.** Materiał dalej pochodzi z transkrypcji, ale kształt karty jest jeden przez cały kurs.
+Szczegóły i wnioski: sekcja K7.
+
+Dryl błędu przeżył zmianę trybu, bo przeniósł się do **polskiego cue jako pułapka**: G4 podaje
+polski przyimek, który tłumaczy się NIE tak, jak podpowiada odruch („w telewizji" → `on TV`,
+„na patelni" → `in a pan`, „do przedmiotów" → `for`), a G1 korzysta z tego, że polski w ogóle
+nie ma rodzajników. Test pilnuje tych pułapek per wiersz (`PULAPKI_PL`).
 
 | G | target (typ, częstotliwość na godzinę JEGO mowy) | tryb |
 |---|---|---|
-| 1 | rodzajnik przed policzalnym l.poj. w pięciu ramach: `a bit of a`, `it was a`, `was a <zawód>`, `the same as an`, `a N-minute`, `there was a`, `make a mess`, `another` (błąd, 50–76/godz.) | `en-only` |
+| 1 | rodzajnik przed policzalnym l.poj. w pięciu ramach: `a bit of a`, `it was a`, `was a <zawód>`, `the same as an`, `a N-minute`, `there was a`, `make a mess`, `another` (błąd, 50–76/godz.) | `pl2en` |
 | 2 | słowo codzienne zamiast apelu do lektora — principal, janitor, elementary school, dorm, feature, em dash, dead giveaway, take advantage of, let it go, could only get better + wiązki `I'm blanking on the word` / `I'm not sure how to put it` / `sort of like` (unikanie, 11 zatrzymań w 22 min) | `pl2en` |
 | 3 | rejestr ocen zamiast terrible ×6 / nice ×6 / weird ×6 / crazy / bullshit — nasty, filthy, run-down, in rough shape, a disaster, a disgrace, depressing, decent, upscale, well kept, pricey, grew on me, brutal (unikanie) | `pl2en` |
-| 4 | przyimek i kolokacja 1:1 z polskiego — in TV → on TV, on universities → at, on the pan → in a pan, using it to → for, generates me → for me, allowed me to participate → let me take the exam, in these days → these days, get to → get into (błąd, 16–25/godz.) | `en-only` |
+| 4 | przyimek i kolokacja 1:1 z polskiego — in TV → on TV, on universities → at, on the pan → in a pan, using it to → for, generates me → for me, allowed me to participate → let me take the exam, in these days → these days, get to → get into (błąd, 16–25/godz.) | `pl2en` |
 | 5 | strefa irrealis — must have + III ×5, couldn't have been worse, 3rd conditional z kotwicą czasową, If I had to guess + might have been -ing (unikanie, 0× w 4000 słów drugi raz z rzędu) | `pl2en` |
 
 **Cytaty (16) — najważniejszy test działu, jak w K7.** Każdy zweryfikowany dosłownie w transkrypcji
-z numerem linii (`tools/k8-content.test.mjs`, tablica `CYTATY`); klaps `August 24th, M:SS — you
-said, "…"`; `blad` nigdy nie wraca w odpowiedzi; tabela proweniencji w `## Typowe błędy Polaka`.
-Trzy decyzje przy doborze: (1) cue en-only ≤30 słów, więc cytat przycięty do najkrótszego spójnego
-fragmentu z błędem (test sprawdza `includes`, nie równość); (2) **polecenie = kontrakt** (lekcja
-z recenzji K7) — każda zmiana w odpowiedzi jest zapowiedziana w poleceniu, cytat w cudzysłowie
-nietknięty; (3) trzy cytaty z „fucking terrible" (00:09:56, 00:26:58, 00:31:03) świadomie NIE weszły
+z numerem linii (`tools/k8-content.test.mjs`, tablica `CYTATY`); `blad` nigdy nie wraca w odpowiedzi;
+tabela proweniencji w `## Typowe błędy Polaka`. Po przejściu na `pl2en` cytat nie stoi już na karcie —
+test wiąże go z wierszem, którego wzorzec go prostuje, i wymusza obecność w tabeli metryki.
+Decyzje przy doborze, które przeżyły: (1) trzy cytaty z „fucking terrible" (00:09:56, 00:26:58, 00:31:03) świadomie NIE weszły
 do kart — wulgaryzm na przodzie karty czytany przez TTS; rejestr ocen idzie w nowym kontekście.
 Wiersz 1/1 (00:01:06) padł w rozmowie z ChatGPT przed lekcją — zostaje, bo to jego zdanie, a błąd
 wrócił trzy razy w kwadrans. Dwie poprawki z diagnozy odrzucone jako brytyjskie: `sit the exam`

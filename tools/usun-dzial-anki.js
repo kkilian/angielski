@@ -1,7 +1,12 @@
-// Kasuje z Anki cały dział K7 przed wgraniem przepisanej wersji.
-// Uruchomiony 22.08 (81 par → 32) i 25.08 (G3/G4 z trybu en-only na zwykły pl2en —
-// zmieniły się i przody kart, i pliki cue.mp3 pod tymi samymi nazwami, więc czysty
-// re-import jest pewniejszy niż liczenie na nadpisanie mediów).
+// Kasuje z Anki cały dział kursu K przed wgraniem przepisanej wersji.
+//
+// Uruchom:  node tools/usun-dzial-anki.js k8            (dry-run, robi backup)
+//           node tools/usun-dzial-anki.js k8 --wykonaj
+//
+// Historia: 22.08 K7 (81 par → 32); 25.08 K7 i K8 (grupy w trybie `en-only`
+// przestawione na zwykły pl2en — zmieniły się przody kart, a wraz z polskim tekstem
+// także hashe plików cue.mp3, więc czysty re-import jest pewniejszy niż liczenie
+// na nadpisanie mediów).
 //
 // DLACZEGO ZAPYTANIE PO TALII, A NIE PO TYPIE NOTATKI:
 // 23 z 81 notatek K7 zostały wcześniej zmigrowane przez tools/k67-luki.js na typ
@@ -24,16 +29,23 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const ANKI = process.env.ANKI_URL || 'http://127.0.0.1:8765';
-const wykonaj = process.argv.includes('--wykonaj');
+const args = process.argv.slice(2);
+const wykonaj = args.includes('--wykonaj');
 
-const DECK = 'angielski-k::K7';
-const TAG = 'k7';
+const DZIAL = (args.find((a) => /^k\d+$/i.test(a)) || '').toLowerCase();
+if (!DZIAL) {
+  console.error('Podaj dział, np.: node tools/usun-dzial-anki.js k8 [--wykonaj]');
+  process.exit(1);
+}
+const DECK = `angielski-k::${DZIAL.toUpperCase()}`;
+const TAG = DZIAL;
 const ZNANE_TYPY = new Set(['angielski-pl-en', 'angielski-k-luka']);
-// 22.08: 23 notatki cloze (zmigrowane przez k67-luki.js z wersji masońskiej).
-// 25.08: 0 — po pierwszym przepisaniu dział ma wyłącznie karty klasyczne. Stała
-// jest asercją stanu, nie ustawieniem: jeśli kiedyś nie zgadza się z rzeczywistością,
-// to znaczy, że Anki rozjechało się z założeniami i trzeba sprawdzić PRZED kasowaniem.
-const OCZEKIWANE_CLOZE = 0;
+// Ile notatek typu `angielski-k-luka` (cloze) spodziewamy się zastać. To ASERCJA
+// STANU, nie ustawienie: jeśli liczba się nie zgadza, Anki rozjechało się z założeniami
+// i trzeba sprawdzić PRZED kasowaniem. K7 miał 23 (zmigrowane przez k67-luki.js
+// z wersji masońskiej) do przepisania 22.08; od tego czasu działy mają 0.
+// Podaj inaczej flagą --cloze=N.
+const OCZEKIWANE_CLOZE = Number((args.find((a) => a.startsWith('--cloze=')) || '--cloze=0').split('=')[1]);
 const MIN_APKG = 100_000;
 
 async function anki(action, params) {
@@ -70,9 +82,9 @@ async function main() {
 
   // 1. talie
   const talie = (await anki('deckNames')).filter((d) => d === DECK || d.startsWith(`${DECK}::`));
-  console.log(`Talie K7 (${talie.length}):`);
+  console.log(`Talie ${DECK} (${talie.length}):`);
   for (const t of talie) console.log(`  ${t}`);
-  if (!talie.length) { console.log('\nNic do kasowania — talii K7 już nie ma.'); return; }
+  if (!talie.length) { console.log(`\nNic do kasowania — talii ${DECK} już nie ma.`); return; }
 
   // 2. notatki + kontrola spójności
   const ids = await anki('findNotes', { query: `deck:"${DECK}"` });
@@ -82,7 +94,7 @@ async function main() {
   console.log(`\nNotatki w talii ${DECK}: ${ids.length}`);
   console.log(`Notatki z tagiem "${TAG}": ${idsTag.length}`);
   if (pozaDeck.length) {
-    console.error(`\nPRZERWANE: ${pozaDeck.length} notatek ma tag "${TAG}", ale leży POZA talią K7.`);
+    console.error(`\nPRZERWANE: ${pozaDeck.length} notatek ma tag "${TAG}", ale leży POZA talią ${DECK}.`);
     console.error(`Kasowanie po talii by ich nie ruszyło, a i tak są częścią działu. Sprawdź ręcznie:`);
     console.error(pozaDeck.join(' '));
     process.exitCode = 1;
@@ -102,7 +114,7 @@ async function main() {
 
   const nieznane = [...perTyp.keys()].filter((t) => !ZNANE_TYPY.has(t));
   if (nieznane.length) {
-    console.error(`\nPRZERWANE: nieoczekiwany typ notatki w K7: ${nieznane.join(', ')}`);
+    console.error(`\nPRZERWANE: nieoczekiwany typ notatki w ${DECK}: ${nieznane.join(', ')}`);
     process.exitCode = 1;
     return;
   }
@@ -116,7 +128,7 @@ async function main() {
   console.log(`\nPliki mediów do posprzątania po kasowaniu: ${MEDIA.size}`);
 
   // 4. backup zawężony do K7 — dokładnie to, co znika, przywracalne jednym kliknięciem
-  const apkg = path.join(__dirname, '..', 'tmp', `k7-przed-usunieciem-${stamp()}.apkg`);
+  const apkg = path.join(__dirname, '..', 'tmp', `${DZIAL}-przed-usunieciem-${stamp()}.apkg`);
   fs.mkdirSync(path.dirname(apkg), { recursive: true });
   await anki('exportPackage', { deck: DECK, path: path.resolve(apkg), includeSched: true });
   const rozmiar = fs.existsSync(apkg) ? fs.statSync(apkg).size : 0;

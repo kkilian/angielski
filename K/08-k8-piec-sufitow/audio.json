@@ -1,24 +1,24 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-25T06:12:47.937Z",
+  "generatedAt": "2026-08-25T16:37:51.364Z",
   "grupy": [
     {
       "n": 1,
-      "tryb": "en-only",
+      "tryb": "pl2en",
       "pary": [
         {
           "n": 1,
           "cue": {
             "src": "audio/g1-p01-cue.mp3",
-            "sek": 9.412
+            "sek": 5.808
           },
           "wzor": {
             "src": "audio/g1-p01-en.mp3",
-            "sek": 3.36
+            "sek": 3.256
           },
           "tekst": {
-            "pyt": "August 24th, 1:06 — you said, \"I'm in a bit of rush.\" Add the missing article.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Trochę mi się spieszy.",
             "en": "I'm in a bit of a rush."
           }
         },
@@ -26,15 +26,15 @@
           "n": 2,
           "cue": {
             "src": "audio/g1-p02-cue.mp3",
-            "sek": 21.852
+            "sek": 14.768
           },
           "wzor": {
             "src": "audio/g1-p02-en.mp3",
-            "sek": 6.6
+            "sek": 6.4
           },
           "tekst": {
-            "pyt": "August 24th, 4:32 — you said, \"it was standard week, nothing crazy. Just enjoying last day of summer.\" Two articles are missing — add both, and join the sentences with a dash.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To był zwyczajny tydzień, nic szalonego — po prostu korzystałem z ostatniego dnia lata.",
             "en": "It was a standard week, nothing crazy — just enjoying the last day of summer."
           }
         },
@@ -42,15 +42,15 @@
           "n": 3,
           "cue": {
             "src": "audio/g1-p03-cue.mp3",
-            "sek": 12.864
+            "sek": 7.704
           },
           "wzor": {
             "src": "audio/g1-p03-en.mp3",
-            "sek": 3.408
+            "sek": 3.808
           },
           "tekst": {
-            "pyt": "August 24th, 7:31 — you said, \"my friend she was medical student.\" Add the article and drop the doubled subject.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Moja koleżanka była studentką medycyny.",
             "en": "My friend was a medical student."
           }
         },
@@ -58,15 +58,15 @@
           "n": 4,
           "cue": {
             "src": "audio/g1-p04-cue.mp3",
-            "sek": 18.408
+            "sek": 12.504
           },
           "wzor": {
             "src": "audio/g1-p04-en.mp3",
-            "sek": 4.752
+            "sek": 4.864
           },
           "tekst": {
-            "pyt": "August 24th, 28:05 — you said, \"it costs the same as apartment, but it's just one room.\" Add the article — the noun starts with a vowel.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Kosztuje tyle samo co mieszkanie, a to tylko jeden pokój.",
             "en": "It costs the same as an apartment, but it's just one room."
           }
         },
@@ -74,15 +74,15 @@
           "n": 5,
           "cue": {
             "src": "audio/g1-p05-cue.mp3",
-            "sek": 20.156
+            "sek": 11.856
           },
           "wzor": {
             "src": "audio/g1-p05-en.mp3",
-            "sek": 5.16
+            "sek": 5.008
           },
           "tekst": {
-            "pyt": "August 24th, 15:14 — you said, \"it was like a 15-minute walk So it was like seven minute run.\" Drop both likes, spell out 15, add the article, hyphen and comma.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To był piętnastominutowy spacer, czyli siedmiominutowy bieg.",
             "en": "It was a fifteen-minute walk, so it was a seven-minute run."
           }
         },
@@ -90,15 +90,15 @@
           "n": 6,
           "cue": {
             "src": "audio/g1-p06-cue.mp3",
-            "sek": 20.448
+            "sek": 12.168
           },
           "wzor": {
             "src": "audio/g1-p06-en.mp3",
-            "sek": 5.664
+            "sek": 5.2
           },
           "tekst": {
-            "pyt": "August 24th, 33:19 — you said, \"Because there was also shared kitchen, you know.\" Add the article, drop because and you know, and end with: and it was a complete mess.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Była też wspólna kuchnia i panował w niej kompletny bałagan.",
             "en": "There was also a shared kitchen, and it was a complete mess."
           }
         },
@@ -106,15 +106,15 @@
           "n": 7,
           "cue": {
             "src": "audio/g1-p07-cue.mp3",
-            "sek": 22.052
+            "sek": 10.848
           },
           "wzor": {
             "src": "audio/g1-p07-en.mp3",
-            "sek": 5.4
+            "sek": 4.6
           },
           "tekst": {
-            "pyt": "August 24th, 31:15 — you said, \"They don't care about anything, they just make mess everywhere.\" Add the article — you make A mess — and swap the comma for a semicolon.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Nic ich nie obchodzi; po prostu wszędzie robią bałagan.",
             "en": "They don't care about anything; they just make a mess everywhere."
           }
         },
@@ -122,15 +122,15 @@
           "n": 8,
           "cue": {
             "src": "audio/g1-p08-cue.mp3",
-            "sek": 22.116
+            "sek": 14.264
           },
           "wzor": {
             "src": "audio/g1-p08-en.mp3",
-            "sek": 6.048
+            "sek": 5.848
           },
           "tekst": {
-            "pyt": "August 24th, 28:57 — you said, \"Then you can get shared room with other person.\" Two fixes — a shared room, another person — and add: or a room to yourself.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Możesz wtedy dostać pokój dzielony z drugą osobą albo pokój tylko dla siebie.",
             "en": "Then you can get a shared room with another person, or a room to yourself."
           }
         }
@@ -406,21 +406,21 @@
     },
     {
       "n": 4,
-      "tryb": "en-only",
+      "tryb": "pl2en",
       "pary": [
         {
           "n": 1,
           "cue": {
             "src": "audio/g4-p01-cue.mp3",
-            "sek": 16.304
+            "sek": 8.448
           },
           "wzor": {
             "src": "audio/g4-p01-en.mp3",
-            "sek": 4.848
+            "sek": 3.352
           },
           "tekst": {
-            "pyt": "August 24th, 48:55 — you said, \"If it's in TV, it's true for them.\" Fix the preposition — things are ON TV.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Jeśli coś jest w telewizji, to dla nich jest prawda.",
             "en": "If it's on TV, it's true for them."
           }
         },
@@ -428,15 +428,15 @@
           "n": 2,
           "cue": {
             "src": "audio/g4-p02-cue.mp3",
-            "sek": 17.608
+            "sek": 9.912
           },
           "wzor": {
             "src": "audio/g4-p02-en.mp3",
-            "sek": 5.352
+            "sek": 4.36
           },
           "tekst": {
-            "pyt": "August 24th, 19:37 — you said, \"it is worth it but it's only on once at some universities.\" Keep at — drop on and once, add a comma before but.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Warto, ale jest to tylko na niektórych uczelniach.",
             "en": "It is worth it, but it's only at some universities."
           }
         },
@@ -444,15 +444,15 @@
           "n": 3,
           "cue": {
             "src": "audio/g4-p03-cue.mp3",
-            "sek": 18.468
+            "sek": 9.264
           },
           "wzor": {
             "src": "audio/g4-p03-en.mp3",
-            "sek": 4.512
+            "sek": 4.12
           },
           "tekst": {
-            "pyt": "August 24th, 34:19 — you said, \"there was usually someone, you know burning something like on the pan or something.\" Things burn IN A pan — and drop the three fillers.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Zwykle ktoś przypalał coś na patelni.",
             "en": "There was usually someone burning something in a pan."
           }
         },
@@ -460,15 +460,15 @@
           "n": 4,
           "cue": {
             "src": "audio/g4-p04-cue.mp3",
-            "sek": 16.356
+            "sek": 9.648
           },
           "wzor": {
             "src": "audio/g4-p04-en.mp3",
-            "sek": 4.32
+            "sek": 4.12
           },
           "tekst": {
-            "pyt": "August 24th, 7:47 — you said, \"she was using it to all of these different subjects.\" You use something FOR a purpose — and drop of.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Używała tego do wszystkich tych różnych przedmiotów.",
             "en": "She was using it for all these different subjects."
           }
         },
@@ -476,15 +476,15 @@
           "n": 5,
           "cue": {
             "src": "audio/g4-p05-cue.mp3",
-            "sek": 13.848
+            "sek": 6.6
           },
           "wzor": {
             "src": "audio/g4-p05-en.mp3",
-            "sek": 3.768
+            "sek": 4.12
           },
           "tekst": {
-            "pyt": "August 24th, 6:56 — you said, \"it generates me the sentences.\" You can't say it that way in English — it generates the sentences FOR me.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To generuje mi zdania.",
             "en": "It generates the sentences for me."
           }
         },
@@ -492,15 +492,15 @@
           "n": 6,
           "cue": {
             "src": "audio/g4-p06-cue.mp3",
-            "sek": 13.752
+            "sek": 6.864
           },
           "wzor": {
             "src": "audio/g4-p06-en.mp3",
-            "sek": 3.168
+            "sek": 3.016
           },
           "tekst": {
-            "pyt": "August 24th, 14:19 — you said, \"they allowed me to to actually participate in this exam.\" Say it the natural way: let me take the exam.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Pozwolili mi podejść do tego egzaminu.",
             "en": "They let me take the exam."
           }
         },
@@ -508,15 +508,15 @@
           "n": 7,
           "cue": {
             "src": "audio/g4-p07-cue.mp3",
-            "sek": 17.864
+            "sek": 9.168
           },
           "wzor": {
             "src": "audio/g4-p07-en.mp3",
-            "sek": 5.016
+            "sek": 4.768
           },
           "tekst": {
-            "pyt": "August 24th, 47:30 — you said, \"in these days most of contact is generated by AI.\" Three fixes: drop in and of, and you meant content, not contact.",
-            "pl": null,
+            "pyt": null,
+            "pl": "W dzisiejszych czasach większość treści generuje AI.",
             "en": "These days most content is generated by AI."
           }
         },
@@ -524,15 +524,15 @@
           "n": 8,
           "cue": {
             "src": "audio/g4-p08-cue.mp3",
-            "sek": 23.368
+            "sek": 13.568
           },
           "wzor": {
             "src": "audio/g4-p08-en.mp3",
-            "sek": 4.848
+            "sek": 5.152
           },
           "tekst": {
-            "pyt": "August 24th, 11:28 — you said, \"if you passed with high score, then you can get to the best high school.\" Three fixes: the article, get INTO, and present tense.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Jeśli zdasz z wysokim wynikiem, możesz dostać się do najlepszego liceum.",
             "en": "If you pass with a high score, then you can get into the best high school."
           }
         }
