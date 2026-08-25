@@ -481,22 +481,125 @@ na grupę; K7 ma 8. Kontraktem kursu K są jego testy (stara G6 miała 7 par), a
 czterech celach i 32 parach 8 to minimum, przy którym zasiew 5 + splot 3 w ogóle działa.
 
 
+## K8 - Pięć sufitów / Five Ceilings
+
+**Zbudowany 2026-08-24, tego samego dnia co transkrypcja i diagnoza lekcji.** Wzorzec: K7
+(dryl własnych błędów), ale cel wybrany INACZEJ — nie „cztery dziury zmierzone na trzech
+lekcjach", tylko Top 5 z jednej diagnozy, ważonej po ROI przez trzech adwersarzy.
+
+**Źródło:** `~/Movies/2026-08-24 18-27-47 — transkrypcja.md` (56 min lekcji z lektorem, ok. 22 min
+i ~4000 słów mowy Krzyśka poza czytaniem artykułu). Diagnoza dopisana na końcu tego pliku:
+5 soczewek (gramatyka, słownictwo, płynność, dyskurs, postęp od 13.08) + 3 sędziów CEFR równolegle
+→ 29 kandydatów → 3 adwersarzy (sceptyk ASR, egzaminator, trener ROI) → ranking. **Poziom: B2−**
+(sędziowie: „B1+ na progu B2" / „IELTS ≈ 6.5" / „dolne B2"). Trzy z pięciu targetów diagnoza
+nazywa dosłownie SUFITEM (Grammar, Lexical Resource, Range) — stąd tytuł.
+
+**Postęp od 13.08 wyznaczył metodę.** Dryle na ZAMKNIĘTĄ REGUŁĘ przeniosły się do mowy w dwa
+tygodnie (pytanie zależne 6:2 → 2:6 na korzyść poprawnych; „how do you call it" 0×). Dryle na
+SYSTEM (rodzajniki: bez zmian, ~28 usterek) i na ZACHOWANIE (irrealis: `would have` / `must have`
+dalej 0×; pytanie o słowo: forma lepsza, zachowanie bez zmian) — forma wykuta, mowa nietknięta.
+Dlatego K8 wraca do rodzajników i irrealis po K7, ale nie regułą i nie gdybaniem z podręcznika:
+rodzajniki na JEGO zdaniach z 24.08 w pięciu ramach, irrealis jako przeróbka JEGO narracji
+o akademiku na `must have`.
+
+**Rozmiar: 5 grup × 8 par = 40 kart** (decyzja Krzyśka; K7 = 32). Tryb mieszany, też jego
+decyzja: BŁĘDY (rodzajniki, przyimki) = cytaty do poprawienia, UNIKANIA (słowo brakujące,
+rejestr ocen, irrealis) = produkcja z polskiego w nowym kontekście, bo tam nie ma czego
+poprawiać — trzeba to powiedzieć pierwszy raz.
+
+| G | target (typ, częstotliwość na godzinę JEGO mowy) | tryb |
+|---|---|---|
+| 1 | rodzajnik przed policzalnym l.poj. w pięciu ramach: `a bit of a`, `it was a`, `was a <zawód>`, `the same as an`, `a N-minute`, `there was a`, `make a mess`, `another` (błąd, 50–76/godz.) | `en-only` |
+| 2 | słowo codzienne zamiast apelu do lektora — principal, janitor, elementary school, dorm, feature, em dash, dead giveaway, take advantage of, let it go, could only get better + wiązki `I'm blanking on the word` / `I'm not sure how to put it` / `sort of like` (unikanie, 11 zatrzymań w 22 min) | `pl2en` |
+| 3 | rejestr ocen zamiast terrible ×6 / nice ×6 / weird ×6 / crazy / bullshit — nasty, filthy, run-down, in rough shape, a disaster, a disgrace, depressing, decent, upscale, well kept, pricey, grew on me, brutal (unikanie) | `pl2en` |
+| 4 | przyimek i kolokacja 1:1 z polskiego — in TV → on TV, on universities → at, on the pan → in a pan, using it to → for, generates me → for me, allowed me to participate → let me take the exam, in these days → these days, get to → get into (błąd, 16–25/godz.) | `en-only` |
+| 5 | strefa irrealis — must have + III ×5, couldn't have been worse, 3rd conditional z kotwicą czasową, If I had to guess + might have been -ing (unikanie, 0× w 4000 słów drugi raz z rzędu) | `pl2en` |
+
+**Cytaty (16) — najważniejszy test działu, jak w K7.** Każdy zweryfikowany dosłownie w transkrypcji
+z numerem linii (`tools/k8-content.test.mjs`, tablica `CYTATY`); klaps `August 24th, M:SS — you
+said, "…"`; `blad` nigdy nie wraca w odpowiedzi; tabela proweniencji w `## Typowe błędy Polaka`.
+Trzy decyzje przy doborze: (1) cue en-only ≤30 słów, więc cytat przycięty do najkrótszego spójnego
+fragmentu z błędem (test sprawdza `includes`, nie równość); (2) **polecenie = kontrakt** (lekcja
+z recenzji K7) — każda zmiana w odpowiedzi jest zapowiedziana w poleceniu, cytat w cudzysłowie
+nietknięty; (3) trzy cytaty z „fucking terrible" (00:09:56, 00:26:58, 00:31:03) świadomie NIE weszły
+do kart — wulgaryzm na przodzie karty czytany przez TTS; rejestr ocen idzie w nowym kontekście.
+Wiersz 1/1 (00:01:06) padł w rozmowie z ChatGPT przed lekcją — zostaje, bo to jego zdanie, a błąd
+wrócił trzy razy w kwadrans. Dwie poprawki z diagnozy odrzucone jako brytyjskie: `sit the exam`
+→ `take the exam`, `neighbourhood` → `neighborhood` (test ma strażnika BrE).
+
+**Wyzwalacze pl2en sprawdzane OSOBNYM recenzentem D** (lekcja K6: „Chyba tak" wyciąga `I think
+so`). Kotwice: G2 rzeczownik o jednym odpowiedniku (*woźny*, *podstawówka*, *funkcja aplikacji*,
+*długi myślnik*); G3 przymiotnik konkretny (*paskudny*, *zasyfiony*, *zapuszczony*, *w opłakanym stanie*,
+*z wyższej półki*; „z czasem SAMA zaczęła mi się podobać" przenosi podmiot na rzecz → `it grew on me`) i zakaz *okropny/straszny/fajny/dziwny/szalony* w cue (test); G5 każde *musiał* z ogonem
+wnioskowania („— inaczej…", „bo…", „tylko nikt nie wie") zamykającym `had to`, zakaz *może/pewnie/
+chyba/myślę* w cue (test), 3rd conditional z kotwicą *w październiku*.
+
+**Recenzja (4 agenty Opus, 2026-08-24/25):** A poprawność — 7 × BŁĄD, wszystkie tej samej klasy co
+w K7: polecenie en-only NIE zapowiadało zmiany, którą odpowiedź robiła (scalenie zdań, `15`→`fifteen`,
+wycięte `Because` / `Now` / `then`). Naprawa po stronie POLECENIA (albo cytat przycięty tak, by zmiana
+nie była potrzebna — G4/w7 bez „Now"). B naturalność — rejestr G3 był słownikowy i brytyjski
+(`grim`, `squalid`, `a shambles`) → wymiana na `nasty` / `filthy` / `in rough shape` / `depressing` /
+`a disaster`, strażnik w teście; polecenia en-only przepisane z „etykiet kompilatora" na zdania
+lektora. D wyzwalacze — 8 × BŁĄD: „funkcja" → `function` (u matematyka pierwszy odruch) → „ficzer";
+„pewny znak" → `a sure sign` zabijał `dead giveaway` → „zdradza na kilometr"; „Nie wiem, jak to ująć"
+ciągnęło `I don't know` → „Nie jestem pewien"; „trochę jak" → `a bit like` → „coś jakby";
+„skorzystała z okazji" → `took the opportunity` → „wykorzystała to, że…" (dopełnienie zdaniowe
+wymusza `take advantage of`); „z czasem ją polubiłem" → `I grew to like it` → podmiot na rzecz;
+„mogli palić" = POZWOLENIE → „niewykluczone, że palili"; G5/w2 ogon „inaczej włączałby się" był
+zgodny z obowiązkiem → dopisany dowód „a nie odezwał się ani razu". C wierność — pierwsza próba padła
+na limicie sesji, powtórzona po poprawkach. Klaps z datą w cue (B: „balast w audio") ZOSTAJE —
+to konwencja K7, którą Krzysiek przyjął.
+
+**Testy (`tools/k8-content.test.mjs`, 25):** port K7 (struktura 5×8, 4/3/2 ×5, CYTATY, ≤20 słów
+i zero `<b>` = poniżej progu cloze, otwarcie ≤8, najdłuższa w ostatniej trzeciej, kalki K7,
+hedging) + nowe: ramy rodzajników per wiersz G1; leksyka i trzy wiązki ratunkowe G2 (+ negatyw
+na „what do you call it" i fałszywych przyjaciół *academic/gymnasium/minus*); strażnik monokultury
+G3 (zero terrible/nice/weird/crazy/bullshit/fucking), zasiew = same negatywy, splot = negatyw +
+pozytyw; poprawka per wiersz G4 + jedno zdanie + zero mgły (z `you know`); sloty G5 (must have ×5
+bez `had to`, couldn't have been worse, 3rd cond z przecinkiem przed `would`, If I had to guess +
+might have been -ing); czarna lista kalek 24.08 i `I don't know` w odpowiedziach; strażnik BrE;
+rejestr: powroty na k8 ≤20 i tylko realizowane, intro k8 ≥20 z `review` 1–2 i `en` padającym
+DOSŁOWNIE w odpowiedzi, 16 skasowanych id nie może zmartwychwstać, horyzont ≤k9 dla wpisów sprzed K7.
+
+**Operacja na rejestrze (`tools/k8-przytnij-rejestr.js`, dry-run domyślny) — poczekalnia
+PRZYCIĘTA, nie przesunięta**, dokładnie tak, jak nakazywała sekcja „Dalszy rozwój" po K7:
+- 16 wpisów `intro: k8` SKASOWANYCH: `i-guess-so` (furtka „Chyba tak"), klocki strukturalne
+  z masonów (`involved-in`, `linked-to`, `including-lista`, `lead-sb-to-do`, `result-in`,
+  `its-said-that`, `claiming-that`, `supposed-adj`), leksyka lockdownu z lekcji 08-17
+  (`ease-restrictions`, `get-fined-for`, `taped-off`, `the-elderly`, `of-your-own-free-will`,
+  `on-your-own-terms`) i `second-conditional` (G5 poszła w must have / 3rd cond).
+  Test K7 `wymagane` zawężony z 11 do 5 id z komentarzem.
+- 5 wpisów `intro: k8` ZOSTAŁO z odświeżonym przykładem z K8: `another-person`, `there-were-no`,
+  `might-have-been-doing`, `not-sure-how-to-put-it`, `honestly`.
+- Powroty na k8: 60 → **9** (`articles-system`, `must-have`, `couldnt-have`, `blanking-on-word`,
+  `sort-of-like`, `commute`, `if-i-had-to-guess`, `no-one-really-knows` + `let-it-go`, który
+  planu nie miał, a K8 go realizuje — zapis faktu, nie długu). 52 wycięte BEZ zastępnika
+  (leksyka tematyczna K2–K5, frazy prowadzenia rozmowy z K4, `a-few`, `embedded-question`,
+  `if-it-werent-for`, `mixed-conditional`, `tend-to`, `arguably`, `wouldnt-have`).
+- 39 nowych `intro: k8`, każdy `review: [k9, k10]`, `en` = dosłowna fraza z odpowiedzi (lekcja
+  K7: przykłady z wielokropkami nie dają się pogrubiać ani sprawdzać).
+- Reguła globalna WYKONANA: dla wpisów sprzed K7 przyszłe powroty = najwyżej {k8 jeśli
+  realizowany, k9}; dla intro k7/k8 — dwa najbliższe zaplanowane. Wpisy sięgające `k26` obcięte.
+  Horyzont po operacji: k9 = 110, k10 = 46, k11 = 11, k12 = 4, dalej nic.
+
+**Anki:** `tools/k8-do-anki.js` → `tmp/k8-grupa-{1..5}.json` → `angielski-k::K8::Grupa N`,
+klasyczny typ `angielski-pl-en`, audio z kursu (zero TTS), 40 kart. Kontrola kolizji pola `PL`
+z wszystkimi 120 notatkami `angielski-pl-en` / `angielski-k-luka` PRZED importem: zero.
+
+**Świadome straty:** 16 wpisów wyżej po nazwie; 52 powroty bez zastępnika; `check-recykling.js`
+daje FAIL na `sort-of-like`, `no-one-really-knows`, `couldnt-have` (dopasowuje słowa z przykładów:
+„It's sort of like…", „She couldn't have known" — dział ma `sort of like a prison`, `couldn't have
+been worse`), kontraktem jest tablica `POWROTY` w teście, jak przy K6/K7. Odstępstwo od skilla:
+8 par na grupę zamiast 10–18 — to samo uzasadnienie co K6/K7 (kurs, którego nie da się skończyć
+przed lekcją, ma ROI zero).
+
 ## Dalszy rozwój
 
-K8 i kolejne działy dostaną temat z następnej rozmowy lub materiału od lektora.
+K9 dostanie target z następnej lekcji — po transkrypcji i diagnozie tym samym torem co K8
+(workflow: 5 soczewek + 3 sędziów → 3 adwersarzy → ranking; rozdział z Top N po ROI).
 
-**K8 dziedziczy poczekalnię po przepisaniu K7 (2026-08-22).** 21 wpisów dostało
-`intro: k8`, a 9 powrotów przestawiono z `k7` na `k8` — nie dlatego, że K8 ma je
-wprowadzać, tylko żeby nie zniknęły razem z materiałem masońskim. Dwie grupy:
-klocki strukturalne (atrybucja cudzej tezy, łańcuch przyczynowy, `might have been -ing`)
-i leksyka, której Krzysiek szukał na żywo na lekcji 08-17 (`the authorities` ma już
-pokrycie w nowym K7, ale `ease the restrictions`, `taped off`, `of your own free will`
-i reszta nie). **Przy budowie K8 tę listę trzeba przejrzeć i przyciąć, a nie przesunąć
-dalej** — to dokładnie ten błąd, przed którym ostrzegała sekcja K6.
-
-**Stan rejestru po przeglądzie przy K7:** korek został rozładowany tylko na `k7`.
-Horyzont dalej jest fikcją — `k8` ma zaplanowane 72 powroty, `k9` 79, `k12` 71, `k18` 67,
-a wpisy sięgają `k26` przy siedmiu istniejących działach. Reguła do zastosowania przy K8,
-zanim znowu urośnie: **`review[]` trzyma najwyżej dwa najbliższe działy**, a wszystko
-zaplanowane dalej niż `k9` — wyciąć. Powrót ma być zasłużony treścią, nie zaplanowany
-na ślepo cztery lata naprzód.
+**Poczekalnia k8 rozładowana przy K8 (2026-08-24), reguła „dwa najbliższe działy" jest teraz
+w teście** (`k8-content.test.mjs`: dla wpisów sprzed K7 żaden powrót dalej niż k9). Ale objętości
+reguła nie trzyma: `k9` ma zaplanowane **110** powrotów (39 nowych z K8 + 5 odświeżonych + wszystko,
+co miało k9 wcześniej), `k10` 46. Przy K9 powtórzyć procedurę z `k8-przytnij-rejestr.js`:
+zostawić ≤20 powrotów, które dział realizuje, resztę wyciąć bez zastępnika, a nie przesunąć na k10.

@@ -444,12 +444,15 @@ test('slownik-k.json zna dział k7 i nie planuje na niego więcej niż 20 powrot
 });
 
 test('slownik-k.json nie zgubił leksyki z lekcji 2026-08-17', () => {
-  // Trzynaście wyrażeń, których Krzysiek szukał NA ŻYWO na lekcji o masonach.
-  // Stary K7 je drylował w Grupie 7; nowy K7 ich nie ma, ale to jest realnie
-  // nauczone słownictwo z zaplanowanymi powrotami — musi przeżyć przepisanie
-  // działu, przeniesione na k8, a nie zniknąć razem z materiałem masońskim.
+  // Wyrażenia, których Krzysiek szukał NA ŻYWO na lekcji o masonach. Stary K7 je
+  // drylował w Grupie 7; przy przepisaniu działu (2026-08-22) przeżyły przeniesione
+  // na k8. Przy budowie K8 (2026-08-24) sześć z nich skasowano ŚWIADOMIE — leksyka
+  // lockdownu (ease-restrictions, get-fined-for, taped-off, the-elderly,
+  // of-your-own-free-will, on-your-own-terms) nie mieści się w pięciu sufitach K8,
+  // a PROGRAM-K zakazuje przesuwania poczekalni dalej. Lista i uzasadnienie:
+  // K/PROGRAM-K.md, sekcja K8 „Świadome straty". Zostaje to, co ma pokrycie.
   const slownik = JSON.parse(fs.readFileSync(path.join(root, 'K', 'slownik-k.json'), 'utf8'));
-  const wymagane = ['the-authorities', 'ease-restrictions', 'get-fined-for', 'taped-off', 'turn-into', 'the-elderly', 'give-up-quit', 'of-your-own-free-will', 'on-your-own-terms', 'another-person', 'there-were-no'];
+  const wymagane = ['the-authorities', 'turn-into', 'give-up-quit', 'another-person', 'there-were-no'];
   const maja = new Set(slownik.wyrazenia.map((w) => w.id));
   const zgubione = wymagane.filter((id) => !maja.has(id));
   assert.deepEqual(zgubione, [], `Leksyka z lekcji 2026-08-17 wypadła z rejestru: ${zgubione.join(', ')}`);

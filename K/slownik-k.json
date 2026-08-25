@@ -1,6 +1,6 @@
 {
   "$opis": "Niezależny rejestr kursu K. Id działów: k1, k2, k3... Kurs nie korzysta z rejestru M.",
-  "wersja": "2026-08-18",
+  "wersja": "2026-08-24",
   "kurs": {
     "id": "k",
     "tytul": "Kurs K - Conversation Lab",
@@ -55,6 +55,13 @@
       "tytulPl": "Cztery dziury",
       "tytulEn": "Four Gaps",
       "opis": "Dryl czterech dziur zmierzonych na trzech transkrypcjach lekcji (2026-08-03, 2026-08-13, 2026-08-17; ~9200 słów mowy spontanicznej): strefa irrealis (would have / I wish / unless — ZERO wystąpień), czasy Perfect (past perfect 0×), rodzajniki a/the/zero oraz precyzja zamiast mgły („or something\" 51×, „right?\" 57×). Grupy 3 i 4 idą w trybie en-only: wyzwalaczem jest DOSŁOWNY cytat z lekcji z datą i znacznikiem czasu, zadaniem — poprawić własne zdanie. Zastąpił dział o masonach (81 par z map myśli) 2026-08-22."
+    },
+    {
+      "id": "k8",
+      "folder": "08-k8-piec-sufitow",
+      "tytulPl": "Pięć sufitów",
+      "tytulEn": "Five Ceilings",
+      "opis": "Pięć targetów z diagnozy lekcji 2026-08-24 (Top 5 po ROI, poziom B2−): rodzajniki w pięciu ramach (en-only — Twoje cytaty), słowo codzienne zamiast apelu do lektora (principal, janitor, dorm, feature, em dash), rejestr ocen zamiast terrible/nice/weird (grim, squalid, run-down, decent, upscale), przyimki kalkowane z polskiego (en-only — Twoje cytaty: in TV, on universities, on the pan) i strefa irrealis (must have / couldn't have been / would have). Kontekst: akademik w Katowicach, szkoła, korki, Anki."
     }
   ],
   "wyrazenia": [
@@ -67,12 +74,7 @@
       "review": [
         "k3",
         "k5",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k20"
+        "k9"
       ]
     },
     {
@@ -86,8 +88,7 @@
         "k3",
         "k4",
         "k5",
-        "k9",
-        "k12"
+        "k9"
       ]
     },
     {
@@ -100,13 +101,7 @@
         "k3",
         "k4",
         "k6",
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k8"
       ]
     },
     {
@@ -120,13 +115,7 @@
         "k3",
         "k4",
         "k6",
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k8"
       ]
     },
     {
@@ -137,9 +126,7 @@
       "intro": "k1",
       "review": [
         "k3",
-        "k9",
-        "k12",
-        "k15"
+        "k9"
       ]
     },
     {
@@ -150,9 +137,7 @@
       "intro": "k1",
       "review": [
         "k3",
-        "k9",
-        "k12",
-        "k15"
+        "k9"
       ]
     },
     {
@@ -163,10 +148,7 @@
       "intro": "k1",
       "review": [
         "k4",
-        "k6",
-        "k8",
-        "k10",
-        "k13"
+        "k6"
       ]
     },
     {
@@ -176,7 +158,6 @@
       "typ": "gramatyka",
       "intro": "k1",
       "review": [
-        "k12",
         "k2",
         "k3",
         "k4",
@@ -193,10 +174,7 @@
       "typ": "gramatyka",
       "intro": "k1",
       "review": [
-        "k10",
-        "k13",
-        "k4",
-        "k8"
+        "k4"
       ]
     },
     {
@@ -205,16 +183,7 @@
       "en": "to shatter into pieces",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "crude-repair",
@@ -222,16 +191,7 @@
       "en": "a crude repair",
       "typ": "kolokacja",
       "intro": "k2",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "aesthetic-value",
@@ -240,14 +200,7 @@
       "typ": "kolokacja",
       "intro": "k2",
       "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k3",
-        "k8"
+        "k3"
       ]
     },
     {
@@ -257,13 +210,7 @@
       "typ": "kolokacja",
       "intro": "k2",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -274,13 +221,7 @@
       "intro": "k2",
       "review": [
         "k3",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -290,13 +231,7 @@
       "typ": "kolokacja",
       "intro": "k3",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -306,13 +241,7 @@
       "typ": "kolokacja",
       "intro": "k3",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -321,16 +250,7 @@
       "en": "self-service",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "common-knowledge",
@@ -338,16 +258,7 @@
       "en": "common knowledge",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "word-of-mouth",
@@ -356,13 +267,7 @@
       "typ": "idiom",
       "intro": "k3",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -372,13 +277,6 @@
       "typ": "kolokacja",
       "intro": "k3",
       "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
         "k8"
       ]
     },
@@ -389,13 +287,7 @@
       "typ": "kolokacja",
       "intro": "k3",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -404,16 +296,7 @@
       "en": "a toll / a toll road",
       "typ": "kolokacja",
       "intro": "k3",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "tourist-trap",
@@ -421,16 +304,7 @@
       "en": "a tourist trap",
       "typ": "idiom",
       "intro": "k3",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "homogeneous",
@@ -439,13 +313,7 @@
       "typ": "kolokacja",
       "intro": "k3",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k22"
+        "k9"
       ]
     },
     {
@@ -454,16 +322,7 @@
       "en": "an incel (involuntary celibate)",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "misogyny",
@@ -471,16 +330,7 @@
       "en": "misogyny",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "nihilistic",
@@ -488,16 +338,7 @@
       "en": "nihilistic",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "manifesto",
@@ -505,16 +346,7 @@
       "en": "a manifesto",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "radicalization",
@@ -522,16 +354,7 @@
       "en": "radicalization",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "counter-terrorism",
@@ -539,16 +362,7 @@
       "en": "counter-terrorism",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "resent",
@@ -557,13 +371,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -573,16 +380,7 @@
       "en": "an echo chamber",
       "typ": "idiom",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "reinforce",
@@ -591,13 +389,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -607,16 +398,7 @@
       "en": "a feedback loop",
       "typ": "idiom",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "distorted-view",
@@ -625,13 +407,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -641,16 +416,7 @@
       "en": "bitterness toward somebody",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "pointless",
@@ -658,16 +424,7 @@
       "en": "pointless",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "martyr",
@@ -675,16 +432,7 @@
       "en": "a martyr",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "fixed-hierarchy",
@@ -693,13 +441,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -709,16 +450,7 @@
       "en": "to be determined by",
       "typ": "gramatyka",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "according-to-the-article",
@@ -727,14 +459,6 @@
       "typ": "gramatyka",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k8",
         "k9"
       ]
     },
@@ -744,16 +468,7 @@
       "en": "To be clear, I'm not defending them",
       "typ": "gramatyka",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "extreme-cases",
@@ -762,13 +477,6 @@
       "typ": "gramatyka",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -778,16 +486,7 @@
       "en": "biased against somebody",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "freedom-of-speech",
@@ -795,16 +494,7 @@
       "en": "freedom of speech",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "content-moderation",
@@ -812,16 +502,7 @@
       "en": "content moderation",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "draw-the-line",
@@ -829,16 +510,7 @@
       "en": "to draw the line",
       "typ": "idiom",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "warning-signs",
@@ -846,16 +518,7 @@
       "en": "warning signs",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "categorize-into-groups",
@@ -864,13 +527,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -880,16 +536,7 @@
       "en": "to move up in the hierarchy",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "say-that-again",
@@ -898,13 +545,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -914,16 +554,7 @@
       "en": "I'd rather you asked me / I'd rather try it myself / the other way around",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "only-be-guessing",
@@ -933,15 +564,7 @@
       "intro": "k4",
       "review": [
         "k5",
-        "k8",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23"
+        "k9"
       ]
     },
     {
@@ -950,16 +573,7 @@
       "en": "I'm pretty sure I said / Fair enough",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "paragraph-by-paragraph",
@@ -968,13 +582,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -984,16 +591,7 @@
       "en": "correct me as we go / what's holding me back / Would you say that's",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "lead-to",
@@ -1002,14 +600,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k8",
         "k9"
       ]
     },
@@ -1019,16 +609,7 @@
       "en": "based on",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "act-as",
@@ -1037,13 +618,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -1053,16 +627,7 @@
       "en": "push men toward / pushes men toward / push them toward / pushes them toward",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "trapped-in",
@@ -1071,13 +636,6 @@
       "typ": "kolokacja",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k9"
       ]
     },
@@ -1087,16 +645,7 @@
       "en": "men's issues",
       "typ": "kolokacja",
       "intro": "k4",
-      "review": [
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k8"
-      ]
+      "review": []
     },
     {
       "id": "tnij-na-dwa",
@@ -1105,13 +654,6 @@
       "typ": "gramatyka",
       "intro": "k4",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
         "k7",
         "k9"
       ]
@@ -1123,14 +665,6 @@
       "typ": "struktura",
       "intro": "k5",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25",
         "k6",
         "k8",
         "k9"
@@ -1142,18 +676,7 @@
       "en": "reportedly / allegedly",
       "typ": "słowo",
       "intro": "k5",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
-      ]
+      "review": []
     },
     {
       "id": "no-hard-evidence",
@@ -1163,15 +686,7 @@
       "intro": "k5",
       "review": [
         "k7",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25"
+        "k9"
       ]
     },
     {
@@ -1180,18 +695,7 @@
       "en": "It's basically a video about... / Long story short...",
       "typ": "fraza",
       "intro": "k5",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
-      ]
+      "review": []
     },
     {
       "id": "what-i-dont-get",
@@ -1200,15 +704,7 @@
       "typ": "struktura",
       "intro": "k5",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25"
+        "k9"
       ]
     },
     {
@@ -1217,18 +713,7 @@
       "en": ", which is why... / which is exactly why...",
       "typ": "struktura",
       "intro": "k5",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
-      ]
+      "review": []
     },
     {
       "id": "apparently-supposedly",
@@ -1237,16 +722,7 @@
       "typ": "słowo",
       "intro": "k5",
       "review": [
-        "k8",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25"
+        "k9"
       ]
     },
     {
@@ -1255,18 +731,7 @@
       "en": "a fortune / to be worth $X / net worth",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
-      ]
+      "review": []
     },
     {
       "id": "whole-point",
@@ -1275,15 +740,7 @@
       "typ": "fraza",
       "intro": "k5",
       "review": [
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25"
+        "k9"
       ]
     },
     {
@@ -1292,18 +749,7 @@
       "en": "The numbers don't add up / It doesn't add up",
       "typ": "kolokacja",
       "intro": "k5",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
-      ]
+      "review": []
     },
     {
       "id": "not-saying-just-saying",
@@ -1312,16 +758,7 @@
       "typ": "struktura",
       "intro": "k5",
       "review": [
-        "k8",
-        "k9",
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25"
+        "k9"
       ]
     },
     {
@@ -1331,16 +768,7 @@
       "typ": "fraza",
       "intro": "k5",
       "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20",
-        "k22",
-        "k24",
-        "k26"
+        "k8"
       ]
     },
     {
@@ -1350,16 +778,7 @@
       "typ": "fraza",
       "intro": "k5",
       "review": [
-        "k11",
-        "k13",
-        "k15",
-        "k17",
-        "k19",
-        "k21",
-        "k23",
-        "k25",
         "k6",
-        "k8",
         "k9"
       ]
     },
@@ -1371,13 +790,7 @@
       "intro": "k6",
       "review": [
         "k7",
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k8"
       ]
     },
     {
@@ -1386,15 +799,7 @@
       "en": "a few points / a few students",
       "typ": "gramatyka",
       "intro": "k6",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
-      ]
+      "review": []
     },
     {
       "id": "embedded-question",
@@ -1402,15 +807,7 @@
       "en": "I don't know what the reason is",
       "typ": "gramatyka",
       "intro": "k6",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
-      ]
+      "review": []
     },
     {
       "id": "must-have",
@@ -1420,13 +817,7 @@
       "intro": "k6",
       "review": [
         "k7",
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k8"
       ]
     },
     {
@@ -1436,13 +827,7 @@
       "typ": "gramatyka",
       "intro": "k6",
       "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k8"
       ]
     },
     {
@@ -1451,15 +836,7 @@
       "en": "If it weren't for…",
       "typ": "gramatyka",
       "intro": "k6",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
-      ]
+      "review": []
     },
     {
       "id": "mixed-conditional",
@@ -1468,14 +845,7 @@
       "typ": "gramatyka",
       "intro": "k6",
       "review": [
-        "k7",
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
+        "k7"
       ]
     },
     {
@@ -1484,15 +854,7 @@
       "en": "I tend to…",
       "typ": "gramatyka",
       "intro": "k6",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
-      ]
+      "review": []
     },
     {
       "id": "i-wonder-when",
@@ -1501,10 +863,7 @@
       "typ": "gramatyka",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1514,46 +873,29 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
       "id": "not-sure-how-to-put-it",
-      "pl": "nie wiem, jak to ująć",
+      "pl": "nie wiem, jak to ująć (wiązka ratunkowa)",
       "en": "I'm not sure how to put it",
       "typ": "kolokacja",
       "intro": "k8",
       "review": [
         "k9",
-        "k12",
-        "k15"
-      ]
-    },
-    {
-      "id": "i-guess-so",
-      "pl": "chyba tak",
-      "en": "I guess so",
-      "typ": "kolokacja",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k12",
-        "k15"
+        "k10"
       ]
     },
     {
       "id": "honestly",
-      "pl": "prawdę mówiąc / szczerze mówiąc",
-      "en": "Honestly… / To be honest…",
+      "pl": "szczerze mówiąc",
+      "en": "Honestly",
       "typ": "kolokacja",
       "intro": "k8",
       "review": [
         "k9",
-        "k12",
-        "k15"
+        "k10"
       ]
     },
     {
@@ -1563,11 +905,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k8",
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1577,10 +915,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1591,10 +926,7 @@
       "intro": "k6",
       "review": [
         "k7",
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1604,10 +936,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1617,10 +946,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1630,10 +956,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1642,15 +965,7 @@
       "en": "He wouldn't have quit if I'd…",
       "typ": "gramatyka",
       "intro": "k6",
-      "review": [
-        "k8",
-        "k10",
-        "k12",
-        "k14",
-        "k16",
-        "k18",
-        "k20"
-      ]
+      "review": []
     },
     {
       "id": "directions",
@@ -1659,10 +974,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1672,10 +984,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1685,10 +994,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1698,10 +1004,7 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
@@ -1711,122 +1014,29 @@
       "typ": "kolokacja",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
+        "k9"
       ]
     },
     {
       "id": "let-it-go",
-      "pl": "odpuścić, machnąć ręką",
+      "pl": "dać sobie spokój z czymś, machnąć ręką (nie: give up)",
       "en": "to let it go",
       "typ": "idiom",
       "intro": "k6",
       "review": [
-        "k9",
-        "k12",
-        "k15",
-        "k18"
-      ]
-    },
-    {
-      "id": "involved-in",
-      "pl": "być zaangażowanym w",
-      "en": "to be involved in",
-      "typ": "kolokacja",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "linked-to",
-      "pl": "łączony z / powiązany z",
-      "en": "linked to",
-      "typ": "kolokacja",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "including-lista",
-      "pl": "w tym / łącznie z (zamiast „for example there are…\")",
-      "en": "including",
-      "typ": "gramatyka",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "lead-sb-to-do",
-      "pl": "sprawić, że ktoś zaczął coś robić",
-      "en": "to lead somebody to do something",
-      "typ": "gramatyka",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "result-in",
-      "pl": "doprowadzić do (czegoś)",
-      "en": "to result in something / in somebody doing something",
-      "typ": "gramatyka",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
+        "k8",
+        "k9"
       ]
     },
     {
       "id": "might-have-been-doing",
-      "pl": "mogli coś robić — przypuszczenie o przeszłości ciągłej",
-      "en": "they might have been doing",
+      "pl": "mogli (wtedy) coś robić — przypuszczenie o przeszłości ciągłej",
+      "en": "they might have been smoking",
       "typ": "gramatyka",
       "intro": "k8",
       "review": [
         "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "its-said-that",
-      "pl": "mówi się, że…",
-      "en": "It's said that…",
-      "typ": "struktura",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "claiming-that",
-      "pl": "twierdzący, że… (atrybucja cudzej tezy)",
-      "en": "claiming that…",
-      "typ": "struktura",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
-      ]
-    },
-    {
-      "id": "supposed-adj",
-      "pl": "rzekomy (przed rzeczownikiem)",
-      "en": "supposed — the supposed signs",
-      "typ": "słowo",
-      "intro": "k8",
-      "review": [
-        "k9",
-        "k11"
+        "k10"
       ]
     },
     {
@@ -1851,36 +1061,6 @@
       ]
     },
     {
-      "id": "ease-restrictions",
-      "pl": "złagodzić / poluzować obostrzenia",
-      "en": "to ease / to loosen the restrictions",
-      "typ": "kolokacja",
-      "intro": "k8",
-      "review": [
-        "k10"
-      ]
-    },
-    {
-      "id": "get-fined-for",
-      "pl": "dostać mandat za",
-      "en": "to get fined for (doing something)",
-      "typ": "kolokacja",
-      "intro": "k8",
-      "review": [
-        "k10"
-      ]
-    },
-    {
-      "id": "taped-off",
-      "pl": "odgrodzony taśmą",
-      "en": "taped off",
-      "typ": "fraza",
-      "intro": "k8",
-      "review": [
-        "k11"
-      ]
-    },
-    {
       "id": "turn-into",
       "pl": "zamienić X w Y",
       "en": "to turn X into Y",
@@ -1888,16 +1068,6 @@
       "intro": "k7",
       "review": [
         "k9"
-      ]
-    },
-    {
-      "id": "the-elderly",
-      "pl": "seniorzy",
-      "en": "the elderly",
-      "typ": "słowo",
-      "intro": "k8",
-      "review": [
-        "k13"
       ]
     },
     {
@@ -1912,55 +1082,25 @@
       ]
     },
     {
-      "id": "of-your-own-free-will",
-      "pl": "z własnej nieprzymuszonej woli",
-      "en": "of your own free will",
-      "typ": "fraza",
-      "intro": "k8",
-      "review": [
-        "k10"
-      ]
-    },
-    {
-      "id": "on-your-own-terms",
-      "pl": "na własnych warunkach",
-      "en": "on your own terms",
-      "typ": "fraza",
-      "intro": "k8",
-      "review": [
-        "k10"
-      ]
-    },
-    {
       "id": "another-person",
       "pl": "z drugą osobą (an + other = another)",
-      "en": "with another person",
-      "typ": "gramatyka",
-      "intro": "k8",
-      "review": [
-        "k9"
-      ]
-    },
-    {
-      "id": "there-were-no",
-      "pl": "nie było ludzi / kolejek (liczbę dyktuje rzeczownik)",
-      "en": "there were no people / lines",
-      "typ": "gramatyka",
-      "intro": "k8",
-      "review": [
-        "k9"
-      ]
-    },
-    {
-      "id": "second-conditional",
-      "pl": "gdybanie o teraz: If + past simple → would",
-      "en": "If a group like that really ran the world, it wouldn't…",
+      "en": "a shared room with another person",
       "typ": "gramatyka",
       "intro": "k8",
       "review": [
         "k9",
-        "k11",
-        "k13"
+        "k10"
+      ]
+    },
+    {
+      "id": "there-were-no",
+      "pl": "nie było zasłon (liczbę dyktuje rzeczownik)",
+      "en": "there were no curtains",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
       ]
     },
     {
@@ -1971,8 +1111,7 @@
       "intro": "k7",
       "review": [
         "k9",
-        "k11",
-        "k13"
+        "k11"
       ]
     },
     {
@@ -2145,6 +1284,435 @@
       "review": [
         "k9",
         "k11"
+      ]
+    },
+    {
+      "id": "a-bit-of-a-rush",
+      "pl": "trochę się spieszę",
+      "en": "a bit of a rush",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "it-was-a-frame",
+      "pl": "to był (jakiś) tydzień / koszmar — „it was a X\"",
+      "en": "It was a standard week",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "the-same-as-an",
+      "pl": "tyle samo co mieszkanie (an przed samogłoską)",
+      "en": "the same as an apartment",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "n-minute-x",
+      "pl": "piętnastominutowy spacer (a + liczba-minute + rzeczownik)",
+      "en": "a fifteen-minute walk",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "make-a-mess",
+      "pl": "robić bałagan",
+      "en": "make a mess",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "principal",
+      "pl": "dyrektor(ka) szkoły",
+      "en": "The principal",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "janitor",
+      "pl": "woźny",
+      "en": "The janitor",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "elementary-school",
+      "pl": "podstawówka",
+      "en": "elementary school",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "dorm",
+      "pl": "akademik (NIE academic)",
+      "en": "the dorm",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "feature-app",
+      "pl": "najlepsza funkcja aplikacji",
+      "en": "best feature",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "em-dash",
+      "pl": "długi myślnik",
+      "en": "An em dash",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "dead-giveaway",
+      "pl": "zdradza na kilometr / pewny znak, że…",
+      "en": "a dead giveaway",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "take-advantage-of",
+      "pl": "wykorzystać (to, że…)",
+      "en": "took advantage of",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "could-only-get-better",
+      "pl": "od tego momentu mogło być już tylko lepiej",
+      "en": "from there it could only get better",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "run-down",
+      "pl": "zapuszczony (budynek)",
+      "en": "run-down",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "a-disgrace",
+      "pl": "hańba",
+      "en": "a disgrace",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "decent",
+      "pl": "całkiem przyzwoity",
+      "en": "pretty decent",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "upscale",
+      "pl": "z wyższej półki",
+      "en": "upscale",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "well-kept",
+      "pl": "zadbany",
+      "en": "well kept",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "pricey",
+      "pl": "drogawy",
+      "en": "pricey",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "grew-on-me",
+      "pl": "z czasem to polubiłem",
+      "en": "it grew on me",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "on-tv",
+      "pl": "w telewizji (on, nie in)",
+      "en": "on TV",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "at-universities",
+      "pl": "na niektórych uczelniach (at, nie on)",
+      "en": "at some universities",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "in-a-pan",
+      "pl": "na patelni (in a pan)",
+      "en": "in a pan",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "use-it-for",
+      "pl": "używać czegoś do (for, nie to)",
+      "en": "using it for",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "generate-for-me",
+      "pl": "generuje mi (bez celownika: … for me)",
+      "en": "the sentences for me",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "let-me-take-the-exam",
+      "pl": "pozwolili mi przystąpić do egzaminu",
+      "en": "let me take the exam",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "these-days",
+      "pl": "w dzisiejszych czasach (bez in)",
+      "en": "These days",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "get-into-school",
+      "pl": "dostać się do (szkoły, na uczelnię)",
+      "en": "get into the best high school",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "must-have-been",
+      "pl": "musiał być (wniosek o przeszłości)",
+      "en": "must have been a bot",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "there-must-have-been",
+      "pl": "musiał być jakiś powód",
+      "en": "There must have been a reason",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "couldnt-have-been-worse",
+      "pl": "gorzej być nie mogło",
+      "en": "it couldn't have been worse",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "otherwise-hed",
+      "pl": "inaczej by… (otherwise + would)",
+      "en": "otherwise he'd be here",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "would-have-moved-out",
+      "pl": "wyprowadziłbym się po tygodniu (3rd cond, kotwica czasowa)",
+      "en": "I would have moved out after a week",
+      "typ": "gramatyka",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "nasty",
+      "pl": "paskudny (łazienka, jedzenie)",
+      "en": "nasty",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "filthy",
+      "pl": "zasyfiony, brudny jak chlew",
+      "en": "filthy",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "in-rough-shape",
+      "pl": "w opłakanym stanie",
+      "en": "in rough shape",
+      "typ": "fraza",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "depressing",
+      "pl": "przygnębiający (miejsce)",
+      "en": "depressing",
+      "typ": "słowo",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
+      ]
+    },
+    {
+      "id": "brutal-commute",
+      "pl": "morderczy (dojazd)",
+      "en": "the commute is brutal",
+      "typ": "kolokacja",
+      "intro": "k8",
+      "review": [
+        "k9",
+        "k10"
       ]
     }
   ]

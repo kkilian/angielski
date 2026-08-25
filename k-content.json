@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T07:51:53.343Z",
+  "generatedAt": "2026-08-25T06:15:47.730Z",
   "course": {
     "id": "k",
     "title": "Kurs K - Conversation Lab",
@@ -329,6 +329,52 @@
           "label": "Grupa 4",
           "parCount": 8,
           "pytanie432": "Why do conspiracy theories spread, and why do people believe them?"
+        }
+      ]
+    },
+    {
+      "id": "k8",
+      "slug": "K/08-k8-piec-sufitow",
+      "localNumber": 8,
+      "title": "K8 · Pięć sufitów / K8 · Five Ceilings",
+      "titlePl": "K8 · Pięć sufitów",
+      "titleEn": "K8 · Five Ceilings",
+      "description": "Pięć targetów z diagnozy lekcji 2026-08-24 (Top 5 po ROI, poziom B2−): rodzajniki w pięciu ramach (en-only — Twoje cytaty), słowo codzienne zamiast apelu do lektora (principal, janitor, dorm, feature, em dash), rejestr ocen zamiast terrible/nice/weird (grim, squalid, run-down, decent, upscale), przyimki kalkowane z polskiego (en-only — Twoje cytaty: in TV, on universities, on the pan) i strefa irrealis (must have / couldn't have been / would have). Kontekst: akademik w Katowicach, szkoła, korki, Anki.",
+      "pdf": "K/08-k8-piec-sufitow/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "K/08-k8-piec-sufitow/audio.json",
+      "audioVersion": 1787638533595,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1",
+          "parCount": 8,
+          "pytanie432": "Describe the dorm in Katowice for an American: the room, the bathroom, the kitchen — what did you get for the money?"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2",
+          "parCount": 8,
+          "pytanie432": "Explain Polish schools to an American: who runs a school, who keeps it clean, and when do the big exams come?"
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3",
+          "parCount": 8,
+          "pytanie432": "Compare the old dorm in Katowice with the private ones — what were they really like, and what did they cost?"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4",
+          "parCount": 8,
+          "pytanie432": "How do you use AI and Anki before a lesson, and what do people your parents' age believe just because it was on TV?"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5",
+          "parCount": 8,
+          "pytanie432": "What do you think happened with the smoke detector, the kitchen that smelled like smoke, and the roommate who never left his room?"
         }
       ]
     }
