@@ -395,37 +395,38 @@ dosłownie: „krótszy, celujący w moje słabości, drylujący je mocno i bole
 |---|---|---|
 | G1 | irrealis: 3rd / mieszany / `I wish` / `unless` / `if it hadn't been for` | `pl2en` |
 | G2 | perfekty: past perfect, `by the time`, present perfect z `since`/`for`, `must have` | `pl2en` |
-| G3 | rodzajniki: brak `a` (×5), potem `a`→zero, `the`→`a`, `a`→`the` | `en-only` |
-| G4 | precyzja: `or something` (×5), potem `right?`, `I feel like`, własna diagnoza | `en-only` |
+| G3 | rodzajniki: brak `a` (×5), potem `a`→zero, `the`→`a`, `a`→`the` | `pl2en` |
+| G4 | precyzja: `or something` (×5), potem `right?`, `I feel like`, własna diagnoza | `pl2en` |
 
-**Nowy element formatu — karta „popraw swoje zdanie" w trybie `en-only`.** Grupy 3 i 4
-nie mają polskiego wyzwalacza. Kolumna pierwsza trzyma **dosłowny cytat z lekcji**
-z datą i znacznikiem czasu, w kształcie klapsa filmowego:
+**Format karty: taki sam jak w każdym innym dziale (decyzja z 25.08).** Wszystkie
+cztery grupy idą w `pl2en` — polski cue, cisza, wzorzec EN.
+
+Pierwsza wersja (22.08) stawiała G3 i G4 w trybie `en-only`: kolumna pierwsza trzymała
+**dosłowny cytat z lekcji** z datą i znacznikiem czasu, w kształcie klapsa filmowego —
 `August 3rd, 6:14 — you said, "it's completely different culture." Add the missing article.`
-Kolumna druga to poprawka.
+Technicznie działało (`en-only` istnieje w `assemble-audio.js`, a `build-podglad.js:342`
+eksportuje kolumnę 1 jako przód karty), ale **odpadło po zderzeniu z użyciem**: w Anki
+przód karty czytał się jak protokół z posiedzenia, a nie jak zdanie do wypowiedzenia,
+i łamał nawyk wspólny wszystkim pozostałym działom kursu. Do tego dochodził priming —
+nagranie odtwarzało błąd pewnym głosem native'a.
 
-Wybór trybu nie jest kosmetyczny. Rozważane były trzy:
+Wniosek szerszy niż ten dział: **cel dydaktyczny („to są TWOJE błędy") nie usprawiedliwia
+zmiany interfejsu karty.** Materiał może pochodzić z transkrypcji; kształt karty ma zostać
+jeden. Ślad po błędzie żyje w tabeli metryki w rozdziale — do przeczytania raz —
+a nie w tym, co Krzysiek powtarza codziennie.
 
-- **goły `pl2en`** — `assemble-audio.js:317` wysyła kolumnę 1 do `ttsToFile(…, 'pl', …)`,
-  więc polski głos (marin) czytałby angielski cytat. Odpada.
-- **`scenka`** — `build-podglad.js:332` eksportuje do Anki `plPL = plain(row.prompt)`,
-  czyli samą podpowiedź polską. Pytanie lektora nie trafia na kartę, więc błędny cytat
-  zniknąłby z przodu karty w Anki. Odpada.
-- **`en-only`** — istnieje w `assemble-audio.js` (linie 54–62, 227, 284–291), w produkcji
-  w `28-m3d6-decyzje-i-ryzyko`. Ta sama 2-kolumnowa tabela, kolumna 1 czytana **głosem
-  angielskim**, a `build-podglad.js:342` eksportuje ją jako przód karty. Zero nowego kodu.
-
-**Świadomy kompromis:** nagranie odtwarza jego błąd pewnym głosem native'a (priming).
-Łagodzi to ramka `you said, "…"` i to, że para **zawsze** kończy się wersją poprawną —
-w trybie `para` ekspozycja jest 1:1 błąd:poprawka.
+Odrzucona po drodze była też **`scenka`**: `build-podglad.js:332` eksportuje do Anki
+`plPL = plain(row.prompt)`, czyli samą podpowiedź polską, więc pytanie lektora nie
+trafiłoby na kartę wcale.
 
 **`CYTATY` zastępuje `KANON` jako najważniejszy test działu.** Stary test gwarantował,
 że rozdział uczy dokładnie jego notatek (23 zdania z map). Nowy gwarantuje, że dryluje
 dokładnie jego błędy: 16 wpisów `{grupa, wiersz, data, czas, cytat, blad}`, każdy
-zweryfikowany dosłownie w transkrypcji przed wpisaniem. Test sprawdza, że cytat pada
-**dokładnie raz**, na właściwym wierszu właściwej grupy, w formacie klapsa — i że
-`blad` nigdy nie wraca w kolumnie odpowiedzi (granice słów, nie `includes`, bo każdy
-błąd jest podłańcuchem swojej poprawnej wersji).
+zweryfikowany dosłownie w transkrypcji przed wpisaniem. Po zmianie formatu cytat nie
+stoi już na karcie, więc test pilnuje dwóch rzeczy: że **tabela metryki** w rozdziale
+dokumentuje wszystkie 16 (data, znacznik, plik transkrypcji) i że `blad` nigdy nie wraca
+w kolumnie odpowiedzi (granice słów, nie `includes`, bo każdy błąd jest podłańcuchem
+swojej poprawnej wersji).
 
 Wiersze 3/4 i 4/4 dzielą znacznik `00:53:09` — jedna wypowiedź o stadionie zamienionym
 na szpital polowy, dwa różne błędy naraz. Dlatego unikalność jest egzekwowana na
@@ -434,10 +435,10 @@ cytacie, nie na znaczniku.
 **Pozostałe nowe testy:** G1 wymusza irrealis (każda odpowiedź, ≥5 z 8 w pełnym 3rd
 conditionalu, zakaz `if … would` w jednym zdaniu); G2 wymusza perfekty (≥5 past perfect,
 ≥3 present perfect, zero wierszy w samym past simple); G3 zasiew pięciu dostawionych `a`
-plus trzy kontrasty per wiersz; G4 — każdy wyzwalacz ma znacznik mgły, żadna odpowiedź
-go nie ma, i **każda odpowiedź to dokładnie jedno zdanie** (sedno grupy); wyzwalacz
-`en-only` ≤30 słów i bez polskich znaków; wyzwalacz `pl2en` po polsku i bez 4-wyrazowego
-wspólnego ciągu z odpowiedzią.
+plus trzy kontrasty per wiersz; G4 — wiersze 2–4 mają polskie przybliżenie („jakieś",
+„mniej więcej"), które **musi** wyjść jako `about` / `around` / `roughly`, żadna odpowiedź
+nie niesie mgły i **każda jest dokładnie jednym zdaniem** (sedno grupy); każdy wyzwalacz
+jest polski i bez 4-wyrazowego wspólnego ciągu z odpowiedzią.
 
 **Zabezpieczenie przed cloze.** `tools/k67-luki.js` migruje notatki K6/K7 z EN ≥21 słów
 i ≥1 klockiem `<b>` na typ `angielski-k-luka`. Nowe karty mają zostać klasyczne, więc

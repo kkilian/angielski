@@ -41,10 +41,11 @@ function parseGroups(markdown) {
 
 const groups = parseGroups(chapter);
 
-// Wszystkie cztery grupy mają dwie kolumny `| polski | angielski |`.
-// pl2en  → kolumna 1 to polski cue, czytany głosem PL (marin).
-// en-only→ kolumna 1 to CYTAT Krzyśka + polecenie, czytany głosem EN (cedar).
-//          assemble-audio.js:227 → tekstPary zwraca {pyt: para.pl, pl: null, en}.
+// Wszystkie cztery grupy mają dwie kolumny `| polski | angielski |` i idą w trybie
+// `pl2en` — polski cue głosem PL (marin), cisza, wzorzec EN (cedar). Dokładnie tak
+// jak każdy inny dział kursu. Wersja z 22.08 stawiała G3/G4 w trybie `en-only`
+// (przód karty = cytat Krzyśka z lekcji + polecenie); odrzucona 25.08 — w Anki
+// czytało się to jak protokół, a nie jak zdanie do wypowiedzenia.
 const answers = (group) => group.rows.map((cells) => cells[1]);
 const cues = (group) => group.rows.map((cells) => cells[0]);
 
@@ -55,16 +56,16 @@ function countEnglishWords(text) {
 const allEnglish = groups.flatMap(answers);
 const blob = allEnglish.join('\n');
 
-const MODES = { 1: 'pl2en', 2: 'pl2en', 3: 'en-only', 4: 'en-only' };
-const EN_ONLY = new Set([3, 4]);
+const MODES = { 1: 'pl2en', 2: 'pl2en', 3: 'pl2en', 4: 'pl2en' };
 const PAR_W_GRUPIE = 8;
 
 // --------------------------------------------------------------- cytaty
 // NAJWAŻNIEJSZY TEST DZIAŁU (następca KANON-u z wersji masońskiej).
 // Szesnaście zdań, które Krzysiek NAPRAWDĘ powiedział na lekcji — każde
-// zweryfikowane dosłownie w transkrypcji przed wpisaniem tutaj. Bez tego testu
-// trzy iteracje recenzji zamienią jego zdania na wygładzone zdania z podręcznika
-// i cały sens działu („to są TWOJE błędy") wyparuje bez śladu.
+// zweryfikowane dosłownie w transkrypcji przed wpisaniem tutaj. Od 25.08 cytaty
+// NIE stoją już na kartach (te są zwykłe PL→EN); żyją w tabeli metryki i pilnują
+// dwóch rzeczy: że każdy wiersz G3/G4 prostuje konkretną, udokumentowaną wpadkę,
+// i że wersja błędna nigdy nie wraca w kolumnie wzorca.
 //
 // `blad` musi łapać wersję błędną i NIE łapać poprawnej — dlatego wzorce są
 // zakotwiczone w sąsiednich słowach, a nie w samym rzeczowniku.
@@ -91,12 +92,6 @@ const CYTATY = [
   { grupa: 4, wiersz: 8, data: '2026-08-03', czas: '01:00:18', cytat: "I feel like I'm going in circles", blad: /\bgoing in circles\b/i },
 ];
 
-// Klaps filmowy: „August 3rd, 6:14 — you said, "…"". Znacznik jest MM:SS, a powyżej
-// godziny H:MM:SS — „60:18" to nieistniejąca minuta i test ma to wyłapać.
-// Data najpierw, żeby granica
-// przed ciszą była czysta, a ostatnią rzeczą w parze zawsze była wersja poprawna.
-const SLATE = /^(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}(?:st|nd|rd|th), \d{1,2}:\d{2}(?::\d{2})? — you said, "/;
-
 // Sześć powrotów zamiast piętnastu — dział skurczył się z 81 par do 32.
 // Pozostałe dziewięć przeniesione na k8 w slownik-k.json.
 const POWROTY = [
@@ -122,12 +117,12 @@ const MGLA = [
 
 // ============================================================ struktura
 
-test('K7 ma 4 grupy po 8 par, tryby pl2en / pl2en / en-only / en-only', () => {
+test('K7 ma 4 grupy po 8 par, wszystkie w trybie pl2en', () => {
   assert.deepEqual(groups.map((g) => g.number), [1, 2, 3, 4]);
 
   for (const group of groups) {
     assert.equal(group.rows.length, PAR_W_GRUPIE, `Grupa ${group.number} ma ${group.rows.length} wierszy, wymagane ${PAR_W_GRUPIE}`);
-    // W obie strony: dryl PL nie może stać się en-only ani odwrotnie.
+    // Tryb jest kontraktem audio: en-only puściłoby polski cue głosem angielskim.
     assert.equal(group.mode, MODES[group.number], `Grupa ${group.number}: tryb „${group.mode}" zamiast „${MODES[group.number]}"`);
     for (const [index, cells] of group.rows.entries()) {
       assert.equal(cells.length, 2, `Grupa ${group.number}, wiersz ${index + 1}: ${cells.length} kolumn zamiast 2`);
@@ -171,45 +166,16 @@ test('K7 ma nagłówek z separatorem " / " i obie sekcje notatek', () => {
 
 // ============================================== wierność cytatom (rdzeń działu)
 
-test('K7 cytuje dokładnie te zdania, które Krzysiek powiedział na lekcji', () => {
-  const wszystkieCue = groups.filter((g) => EN_ONLY.has(g.number)).flatMap(cues);
-  const brakujace = [];
-  for (const c of CYTATY) {
-    const trafienia = wszystkieCue.filter((cue) => cue.includes(c.cytat));
-    if (trafienia.length !== 1) brakujace.push(`G${c.grupa}/w${c.wiersz} (${c.data} ${c.czas}): ${trafienia.length}× „${c.cytat}"`);
-  }
-  assert.deepEqual(brakujace, [], `Cytaty, które nie występują dokładnie raz w kolumnie wyzwalacza:\n  ${brakujace.join('\n  ')}`);
-});
-
-test('K7 stawia cytat na właściwym wierszu właściwej grupy', () => {
+test('K7 wiąże każdy cytat z wierszem, który go prostuje', () => {
+  // Cytat nie stoi już na karcie, więc jedyne, co go trzyma przy drylu, to ten test:
+  // każdy wpis z CYTATY musi wskazywać istniejący wiersz, a jego wzorzec musi być
+  // wolny od błędu. Bez tego tabela metryki stałaby się ozdobą.
   for (const c of CYTATY) {
     const group = groups.find((g) => g.number === c.grupa);
     assert.ok(group, `Brak Grupy ${c.grupa}`);
-    const cue = group.rows[c.wiersz - 1]?.[0];
-    assert.ok(cue, `Grupa ${c.grupa} nie ma wiersza ${c.wiersz}`);
-    assert.ok(cue.includes(c.cytat), `G${c.grupa}, wiersz ${c.wiersz}: wyzwalacz nie zawiera „${c.cytat}"`);
-  }
-});
-
-test('K7 podaje wyzwalacz en-only w formie klapsa z datą i znacznikiem', () => {
-  for (const group of groups.filter((g) => EN_ONLY.has(g.number))) {
-    for (const [index, cue] of cues(group).entries()) {
-      assert.match(cue, SLATE, `G${group.number}, wiersz ${index + 1}: wyzwalacz nie zaczyna się klapsem „Month Dth, M:SS — you said, "…"`);
-    }
-  }
-});
-
-test('K7 zgadza znacznik w wyzwalaczu z tabelą metryki', () => {
-  // Sam wzorzec klapsa nie wystarcza: „60:18" ma poprawny KSZTAŁT MM:SS, choć minuta 60
-  // nie istnieje. Jedyne wiarygodne źródło to pole `czas` (HH:MM:SS) — wyzwalacz musi
-  // nieść jego skróconą postać, więc każda literówka w minucie wywala test.
-  const skrot = (hhmmss) => {
-    const [h, m, sek] = hhmmss.split(':').map(Number);
-    return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${String(sek).padStart(2, '0')}` : `${m}:${String(sek).padStart(2, '0')}`;
-  };
-  for (const c of CYTATY) {
-    const cue = groups.find((g) => g.number === c.grupa).rows[c.wiersz - 1][0];
-    assert.ok(cue.includes(skrot(c.czas)), `G${c.grupa}, wiersz ${c.wiersz}: wyzwalacz nie niesie znacznika „${skrot(c.czas)}" (z ${c.czas})`);
+    const odp = group.rows[c.wiersz - 1]?.[1];
+    assert.ok(odp, `Grupa ${c.grupa} nie ma wiersza ${c.wiersz}`);
+    assert.ok(!c.blad.test(odp), `G${c.grupa}, wiersz ${c.wiersz}: wzorzec nadal niesie błąd „${c.cytat}"`);
   }
 });
 
@@ -239,7 +205,7 @@ test('K7 nigdy nie powtarza błędu po angielsku w kolumnie odpowiedzi', () => {
 
 test('K7 nie powtarza żadnego zdania — ani odpowiedzi, ani wyzwalacza', () => {
   const norm = (t) => t.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
-  const pula = [...allEnglish, ...groups.filter((g) => EN_ONLY.has(g.number)).flatMap(cues)];
+  const pula = [...allEnglish, ...groups.flatMap(cues)];
   const widziane = new Set();
   const duplikaty = [];
   for (const linia of pula) {
@@ -307,11 +273,22 @@ test('K7 zasiewa Grupę 3 pięcioma brakującymi „a", potem trzy kontrasty', (
   assert.match(g3.rows[7][1], /\bthe real world\b/i, 'G3, wiersz 8: kontrast „a" → „the" przy jedynym desygnacie');
 });
 
-test('K7 zasiewa Grupę 4 mgłą i wypędza ją z odpowiedzi', () => {
+test('K7 wypędza mgłę z Grupy 4 i wstawia w jej miejsce konkret', () => {
+  // W trybie pl2en mgła nie może stać na karcie — jest po polskiej stronie
+  // („jakieś", „mniej więcej"), a zadaniem jest wyprodukować angielski konkret.
   const g4 = groups.find((g) => g.number === 4);
-  for (const [index, cue] of cues(g4).entries()) {
-    assert.ok(MGLA.some((m) => m.pattern.test(cue)), `G4, wiersz ${index + 1}: wyzwalacz nie zawiera żadnego znacznika mgły`);
+  const PRZYBLIZENIE = /\b(?:about|around|roughly|give or take)\b/i;
+  // Uwaga na \b: to granica ASCII, więc „\bjakieś\b" nie łapie własnego „ś".
+  // Stąd lookaroundy po \p{L} z flagą u zamiast \b.
+  const MGLA_PL = /(?<!\p{L})(?:jakieś|mniej więcej|coś koło|około)(?!\p{L})/iu;
+
+  // Zasiew: wiersze 2–4 dają polskie przybliżenie, które MUSI wyjść jako
+  // about / around / roughly, a nie jako „or something" (51× na lekcjach).
+  for (const i of [1, 2, 3]) {
+    assert.match(g4.rows[i][0], MGLA_PL, `G4, wiersz ${i + 1}: polski cue nie niesie przybliżenia do przetłumaczenia`);
+    assert.match(g4.rows[i][1], PRZYBLIZENIE, `G4, wiersz ${i + 1}: wzorzec nie podaje precyzyjnego przybliżenia`);
   }
+
   for (const [index, odp] of answers(g4).entries()) {
     for (const m of MGLA) {
       assert.ok(!m.pattern.test(odp), `G4, wiersz ${index + 1}: mgła „${m.nazwa}" przetrwała w odpowiedzi: ${odp}`);
@@ -357,24 +334,23 @@ test('K7 nie kwalifikuje się do migracji na cloze', () => {
   assert.doesNotMatch(tabele, /<b\b/i, 'Pogrubienia należą do sekcji notatek, nie do tabel par');
 });
 
-test('K7 trzyma wyzwalacz en-only krótko i po angielsku', () => {
-  for (const group of groups.filter((g) => EN_ONLY.has(g.number))) {
-    for (const [index, cue] of cues(group).entries()) {
-      const slowa = countEnglishWords(cue);
-      assert.ok(slowa <= 30, `G${group.number}, wiersz ${index + 1}: wyzwalacz ma ${slowa} słów — cue audio robi się za długi`);
-      assert.doesNotMatch(cue, /[ąćęłńóśźż]/i, `G${group.number}, wiersz ${index + 1}: wyzwalacz en-only czyta głos EN, więc musi być po angielsku`);
-    }
-  }
-});
-
-test('K7 trzyma wyzwalacz pl2en po polsku i bez podpowiedzi', () => {
-  for (const group of groups.filter((g) => !EN_ONLY.has(g.number))) {
+test('K7 trzyma wyzwalacz po polsku i bez podpowiedzi', () => {
+  // Polskość sprawdzamy dwutorowo: znak diakrytyczny ALBO słowo funkcyjne, które
+  // nie istnieje po angielsku. Sam diakryt nie wystarcza — „To jest teoria
+  // spiskowa." jest bezspornie polskie i nie ma ani jednego ogonka.
+  const POLSKIE = /[ąćęłńóśźż]/i;
+  const FUNKCYJNE = /(?<!\p{L})(?:że|się|jest|nie|jak|czy|już|tam|ale|tylko|przez|dla|bez|na|w|z|od|po|za|tego|tym|mnie|ich)(?!\p{L})/iu;
+  for (const group of groups) {
     for (const [index, cells] of group.rows.entries()) {
-      assert.match(cells[0], /[ąćęłńóśźż]/i, `G${group.number}, wiersz ${index + 1}: polski wyzwalacz bez polskich znaków`);
+      const cue = cells[0];
+      assert.ok(
+        POLSKIE.test(cue) || FUNKCYJNE.test(cue),
+        `G${group.number}, wiersz ${index + 1}: wyzwalacz nie wygląda na polski — głos PL przeczyta go jak polski tekst`,
+      );
       const slowaEn = cells[1].toLowerCase().split(/\s+/);
       for (let i = 0; i + 4 <= slowaEn.length; i += 1) {
         const fragment = slowaEn.slice(i, i + 4).join(' ');
-        assert.ok(!cells[0].toLowerCase().includes(fragment), `G${group.number}, wiersz ${index + 1}: wyzwalacz zdradza odpowiedź („${fragment}")`);
+        assert.ok(!cue.toLowerCase().includes(fragment), `G${group.number}, wiersz ${index + 1}: wyzwalacz zdradza odpowiedź („${fragment}")`);
       }
     }
   }
@@ -403,8 +379,7 @@ test('K7 nie uczy kalk z polskiego', () => {
 test('K7 nie podsuwa zużytych narzędzi hedgingu w odpowiedziach', () => {
   // `I think` / `I feel like` / `probably` padły 69 / 20 / 46 razy w transkrypcjach.
   // K6 je wypalał, Grupa 4 celuje w nie wprost — nie mogą wrócić w kolumnie wzorca.
-  // Zakaz dotyczy WYŁĄCZNIE odpowiedzi: w wyzwalaczach G4 są obowiązkowe, bo to
-  // właśnie błąd do naprawienia.
+  // Zakaz dotyczy kolumny angielskiej — to ona jest wzorcem do powtarzania.
   assert.doesNotMatch(blob, /\b(?:I think|I feel like|probably)\b/i);
 });
 

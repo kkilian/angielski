@@ -1,6 +1,6 @@
 {
   "wersja": 2,
-  "generatedAt": "2026-08-22T07:49:40.507Z",
+  "generatedAt": "2026-08-25T07:38:20.256Z",
   "grupy": [
     {
       "n": 1,
@@ -272,21 +272,21 @@
     },
     {
       "n": 3,
-      "tryb": "en-only",
+      "tryb": "pl2en",
       "pary": [
         {
           "n": 1,
           "cue": {
             "src": "audio/g3-p01-cue.mp3",
-            "sek": 10.508
+            "sek": 6.168
           },
           "wzor": {
             "src": "audio/g3-p01-en.mp3",
-            "sek": 3.816
+            "sek": 3.808
           },
           "tekst": {
-            "pyt": "August 3rd, 6:14 — you said, \"it's completely different culture.\" Add the missing article.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To zupełnie inna kultura.",
             "en": "It's a completely different culture."
           }
         },
@@ -294,15 +294,15 @@
           "n": 2,
           "cue": {
             "src": "audio/g3-p02-cue.mp3",
-            "sek": 11.564
+            "sek": 5.808
           },
           "wzor": {
             "src": "audio/g3-p02-en.mp3",
-            "sek": 3.768
+            "sek": 2.8
           },
           "tekst": {
-            "pyt": "August 17th, 47:27 — you said, \"It is conspiracy theory.\" Add the missing article, change nothing else.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To jest teoria spiskowa.",
             "en": "It is a conspiracy theory."
           }
         },
@@ -310,15 +310,15 @@
           "n": 3,
           "cue": {
             "src": "audio/g3-p03-cue.mp3",
-            "sek": 15.568
+            "sek": 9.504
           },
           "wzor": {
             "src": "audio/g3-p03-en.mp3",
-            "sek": 4.152
+            "sek": 4.048
           },
           "tekst": {
-            "pyt": "August 3rd, 26:42 — you said, \"you have problem when you don't tolerate… if you are allergic to gluten.\" Add the missing article.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Masz problem, jeśli jesteś uczulony na gluten.",
             "en": "You have a problem if you are allergic to gluten."
           }
         },
@@ -326,15 +326,15 @@
           "n": 4,
           "cue": {
             "src": "audio/g3-p04-cue.mp3",
-            "sek": 13.464
+            "sek": 5.52
           },
           "wzor": {
             "src": "audio/g3-p04-en.mp3",
-            "sek": 3.36
+            "sek": 3.352
           },
           "tekst": {
-            "pyt": "August 17th, 53:09 — you said, \"they made hospital from it.\" Article, verb and preposition — rebuild it with turn into.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Zamienili to w szpital.",
             "en": "They turned it into a hospital."
           }
         },
@@ -342,15 +342,15 @@
           "n": 5,
           "cue": {
             "src": "audio/g3-p05-cue.mp3",
-            "sek": 15.604
+            "sek": 7.248
           },
           "wzor": {
             "src": "audio/g3-p05-en.mp3",
-            "sek": 3.816
+            "sek": 4.048
           },
           "tekst": {
-            "pyt": "August 13th, 19:31 — you said, \"like hundred politics were killed there.\" Three fixes: the hedge, the article, the noun.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Zabito tam około stu polityków.",
             "en": "About a hundred politicians were killed there."
           }
         },
@@ -358,15 +358,15 @@
           "n": 6,
           "cue": {
             "src": "audio/g3-p06-cue.mp3",
-            "sek": 21.3
+            "sek": 13.352
           },
           "wzor": {
             "src": "audio/g3-p06-en.mp3",
-            "sek": 5.712
+            "sek": 5.8
           },
           "tekst": {
-            "pyt": "August 3rd, 58:31 — you said, \"to have a health care in the United States you have to like pay like a subscription monthly.\" That noun is uncountable — drop its article.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Żeby mieć opiekę zdrowotną w Stanach, trzeba płacić miesięczny abonament.",
             "en": "To have health care in the United States you have to pay a monthly subscription."
           }
         },
@@ -374,15 +374,15 @@
           "n": 7,
           "cue": {
             "src": "audio/g3-p07-cue.mp3",
-            "sek": 12.168
+            "sek": 6.648
           },
           "wzor": {
             "src": "audio/g3-p07-en.mp3",
-            "sek": 3.504
+            "sek": 4.6
           },
           "tekst": {
-            "pyt": "August 13th, 53:56 — you said, \"I watched the documentary about it.\" First mention takes a different article.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Obejrzałem o tym dokument.",
             "en": "I watched a documentary about it."
           }
         },
@@ -390,15 +390,15 @@
           "n": 8,
           "cue": {
             "src": "audio/g3-p08-cue.mp3",
-            "sek": 21.208
+            "sek": 15.512
           },
           "wzor": {
             "src": "audio/g3-p08-en.mp3",
-            "sek": 5.352
+            "sek": 5.608
           },
           "tekst": {
-            "pyt": "August 13th, 50:02 — you said, \"find someone in a real world.\" Only one real world — change the article, then finish the thought.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Nawet jeśli poznasz kogoś w prawdziwym świecie, i tak pisze do niego pięćdziesiąt innych osób.",
             "en": "Even if you find someone in the real world, they still have fifty people texting them."
           }
         }
@@ -406,21 +406,21 @@
     },
     {
       "n": 4,
-      "tryb": "en-only",
+      "tryb": "pl2en",
       "pary": [
         {
           "n": 1,
           "cue": {
             "src": "audio/g4-p01-cue.mp3",
-            "sek": 12.312
+            "sek": 7.248
           },
           "wzor": {
             "src": "audio/g4-p01-en.mp3",
-            "sek": 3.408
+            "sek": 3.904
           },
           "tekst": {
-            "pyt": "August 3rd, 8:49 — you said, \"They work like yeah 16 hours a day or something, right?\" Drop both hedges and the tag.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Pracują szesnaście godzin dziennie.",
             "en": "They work sixteen hours a day."
           }
         },
@@ -428,15 +428,15 @@
           "n": 2,
           "cue": {
             "src": "audio/g4-p02-cue.mp3",
-            "sek": 11.904
+            "sek": 6.456
           },
           "wzor": {
             "src": "audio/g4-p02-en.mp3",
-            "sek": 3.552
+            "sek": 3.112
           },
           "tekst": {
-            "pyt": "August 3rd, 22:13 — you said, \"It was like three years ago or something.\" Replace both hedges with one about.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To było jakieś trzy lata temu.",
             "en": "It was about three years ago."
           }
         },
@@ -444,15 +444,15 @@
           "n": 3,
           "cue": {
             "src": "audio/g4-p03-cue.mp3",
-            "sek": 14.468
+            "sek": 5.712
           },
           "wzor": {
             "src": "audio/g4-p03-en.mp3",
-            "sek": 3.72
+            "sek": 3.256
           },
           "tekst": {
-            "pyt": "August 3rd, 21:08 — you said, \"Maybe it's twice cheaper, twice cheaper or something.\" Twice cheaper isn't English — use roughly and half the price.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To mniej więcej połowa ceny.",
             "en": "It's roughly half the price."
           }
         },
@@ -460,15 +460,15 @@
           "n": 4,
           "cue": {
             "src": "audio/g4-p04-cue.mp3",
-            "sek": 13.856
+            "sek": 7.248
           },
           "wzor": {
             "src": "audio/g4-p04-en.mp3",
-            "sek": 3.504
+            "sek": 4.168
           },
           "tekst": {
-            "pyt": "August 17th, 53:09 — you said, \"they put like 500 beds in there or something.\" Swap both hedges for a single around.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Wstawili tam jakieś pięćset łóżek.",
             "en": "They put around five hundred beds in there."
           }
         },
@@ -476,15 +476,15 @@
           "n": 5,
           "cue": {
             "src": "audio/g4-p05-cue.mp3",
-            "sek": 14.864
+            "sek": 9.264
           },
           "wzor": {
             "src": "audio/g4-p05-en.mp3",
-            "sek": 4.104
+            "sek": 4.216
           },
           "tekst": {
-            "pyt": "August 17th, 31:16 — you said, \"I associate them with Illuminati or something.\" Own it with I'd say, and Illuminati takes the.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Powiedziałbym, że kojarzą mi się z iluminatami.",
             "en": "I'd say I associate them with the Illuminati."
           }
         },
@@ -492,15 +492,15 @@
           "n": 6,
           "cue": {
             "src": "audio/g4-p06-cue.mp3",
-            "sek": 12.816
+            "sek": 6.36
           },
           "wzor": {
             "src": "audio/g4-p06-en.mp3",
-            "sek": 5.064
+            "sek": 3.256
           },
           "tekst": {
-            "pyt": "August 3rd, 18:34 — you said, \"Because someone built them from their money, right?\" Drop the tag and fix the preposition.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Ktoś zbudował je za swoje pieniądze.",
             "en": "Someone built them with their money."
           }
         },
@@ -508,15 +508,15 @@
           "n": 7,
           "cue": {
             "src": "audio/g4-p07-cue.mp3",
-            "sek": 15.368
+            "sek": 9.72
           },
           "wzor": {
             "src": "audio/g4-p07-en.mp3",
-            "sek": 4.608
+            "sek": 4.408
           },
           "tekst": {
-            "pyt": "August 3rd, 59:27 — you said, \"I feel like it's the same as in Poland, but squared, right?\" Drop the hedge and the tag — just state it.",
-            "pl": null,
+            "pyt": null,
+            "pl": "To to samo co w Polsce, tylko do kwadratu.",
             "en": "It's the same as in Poland, only squared."
           }
         },
@@ -524,15 +524,15 @@
           "n": 8,
           "cue": {
             "src": "audio/g4-p08-cue.mp3",
-            "sek": 22.712
+            "sek": 14.648
           },
           "wzor": {
             "src": "audio/g4-p08-en.mp3",
-            "sek": 5.952
+            "sek": 6.016
           },
           "tekst": {
-            "pyt": "August 3rd, 1:00:18 — you said, \"I feel like I'm going in circles\" and then took five sentences to explain it. Say it in one, starting with it comes down to.",
-            "pl": null,
+            "pyt": null,
+            "pl": "Sprowadza się to do tego, że potrzebuję pięciu zdań tam, gdzie wystarczyłoby jedno.",
             "en": "It comes down to this — I need five sentences where one would do."
           }
         }

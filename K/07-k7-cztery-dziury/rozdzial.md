@@ -28,31 +28,29 @@
 
 ## Grupa 3
 <!-- 432: What did the lockdown in Poland actually look like, from the stadium to the taped-off parks? -->
-<!-- mode: en-only -->
 | polski | angielski |
 |---|---|
-| August 3rd, 6:14 — you said, "it's completely different culture." Add the missing article. | It's a completely different culture. |
-| August 17th, 47:27 — you said, "It is conspiracy theory." Add the missing article, change nothing else. | It is a conspiracy theory. |
-| August 3rd, 26:42 — you said, "you have problem when you don't tolerate… if you are allergic to gluten." Add the missing article. | You have a problem if you are allergic to gluten. |
-| August 17th, 53:09 — you said, "they made hospital from it." Article, verb and preposition — rebuild it with turn into. | They turned it into a hospital. |
-| August 13th, 19:31 — you said, "like hundred politics were killed there." Three fixes: the hedge, the article, the noun. | About a hundred politicians were killed there. |
-| August 3rd, 58:31 — you said, "to have a health care in the United States you have to like pay like a subscription monthly." That noun is uncountable — drop its article. | To have health care in the United States you have to pay a monthly subscription. |
-| August 13th, 53:56 — you said, "I watched the documentary about it." First mention takes a different article. | I watched a documentary about it. |
-| August 13th, 50:02 — you said, "find someone in a real world." Only one real world — change the article, then finish the thought. | Even if you find someone in the real world, they still have fifty people texting them. |
+| To zupełnie inna kultura. | It's a completely different culture. |
+| To jest teoria spiskowa. | It is a conspiracy theory. |
+| Masz problem, jeśli jesteś uczulony na gluten. | You have a problem if you are allergic to gluten. |
+| Zamienili to w szpital. | They turned it into a hospital. |
+| Zabito tam około stu polityków. | About a hundred politicians were killed there. |
+| Żeby mieć opiekę zdrowotną w Stanach, trzeba płacić miesięczny abonament. | To have health care in the United States you have to pay a monthly subscription. |
+| Obejrzałem o tym dokument. | I watched a documentary about it. |
+| Nawet jeśli poznasz kogoś w prawdziwym świecie, i tak pisze do niego pięćdziesiąt innych osób. | Even if you find someone in the real world, they still have fifty people texting them. |
 
 ## Grupa 4
 <!-- 432: Why do conspiracy theories spread, and why do people believe them? -->
-<!-- mode: en-only -->
 | polski | angielski |
 |---|---|
-| August 3rd, 8:49 — you said, "They work like yeah 16 hours a day or something, right?" Drop both hedges and the tag. | They work sixteen hours a day. |
-| August 3rd, 22:13 — you said, "It was like three years ago or something." Replace both hedges with one about. | It was about three years ago. |
-| August 3rd, 21:08 — you said, "Maybe it's twice cheaper, twice cheaper or something." Twice cheaper isn't English — use roughly and half the price. | It's roughly half the price. |
-| August 17th, 53:09 — you said, "they put like 500 beds in there or something." Swap both hedges for a single around. | They put around five hundred beds in there. |
-| August 17th, 31:16 — you said, "I associate them with Illuminati or something." Own it with I'd say, and Illuminati takes the. | I'd say I associate them with the Illuminati. |
-| August 3rd, 18:34 — you said, "Because someone built them from their money, right?" Drop the tag and fix the preposition. | Someone built them with their money. |
-| August 3rd, 59:27 — you said, "I feel like it's the same as in Poland, but squared, right?" Drop the hedge and the tag — just state it. | It's the same as in Poland, only squared. |
-| August 3rd, 1:00:18 — you said, "I feel like I'm going in circles" and then took five sentences to explain it. Say it in one, starting with it comes down to. | It comes down to this — I need five sentences where one would do. |
+| Pracują szesnaście godzin dziennie. | They work sixteen hours a day. |
+| To było jakieś trzy lata temu. | It was about three years ago. |
+| To mniej więcej połowa ceny. | It's roughly half the price. |
+| Wstawili tam jakieś pięćset łóżek. | They put around five hundred beds in there. |
+| Powiedziałbym, że kojarzą mi się z iluminatami. | I'd say I associate them with the Illuminati. |
+| Ktoś zbudował je za swoje pieniądze. | Someone built them with their money. |
+| To to samo co w Polsce, tylko do kwadratu. | It's the same as in Poland, only squared. |
+| Sprowadza się to do tego, że potrzebuję pięciu zdań tam, gdzie wystarczyłoby jedno. | It comes down to this — I need five sentences where one would do. |
 
 ## Nowe słowa i struktury
 
@@ -114,9 +112,10 @@ W mowie oba `'d` brzmią identycznie: `If I'd known, I'd have stayed` — pierws
 
 ## Typowe błędy Polaka
 
-Wszystkie szesnaście zdań w Grupach 3 i 4 to **dosłowne cytaty z lekcji**, nie
-przykłady wymyślone. Tabela poniżej jest ich metryką — data, znacznik czasu i plik
-transkrypcji, żeby każdy dało się odsłuchać w oryginale.
+Wzorce w Grupach 3 i 4 nie są wymyślone: każdy prostuje **zdanie, które naprawdę
+padło** na lekcji. Karta wygląda tak samo jak w każdym innym dziale — polski cue,
+angielska odpowiedź — a cytat źródłowy siedzi w tabeli poniżej: data, znacznik czasu
+i plik transkrypcji, żeby każdy dało się odsłuchać w oryginale.
 
 | grupa | wiersz | data | znacznik | co padło | plik |
 |---|---|---|---|---|---|
@@ -140,12 +139,13 @@ transkrypcji, żeby każdy dało się odsłuchać w oryginale.
 Wiersze 3/4 i 4/4 dzielą znacznik **00:53:09** — to jedna długa wypowiedź o stadionie
 zamienionym na szpital polowy, w której padły dwa różne błędy naraz.
 
-**Dlaczego wyzwalacz jest po angielsku, a nie po polsku.** Grupy 3 i 4 idą w trybie
-`en-only`: kolumna pierwsza jest czytana **głosem angielskim**, bo trzyma Twoje własne
-zdanie. Polski lektor czytający angielski cytat brzmiałby absurdalnie. Konsekwencja,
-którą trzeba znać: nagranie odtwarza Twój błąd pewnym głosem native'a. Ramka
-`you said, "…"` sygnalizuje, że to cytat, a para **zawsze** kończy się wersją
-poprawną — ostatnia rzecz, którą słyszysz, jest dobra.
+**Dlaczego cue jest polski, a nie „oto twój błąd, popraw go".** Wszystkie cztery
+grupy idą w zwykłym trybie `pl2en`, tak jak każdy dział kursu: polski lektor,
+cisza, wzorzec po angielsku. Wersja z cytatem i znacznikiem czasu na przodzie karty
+odpadła — w Anki czytało się to jak protokół, nie jak zdanie do powiedzenia, a błąd
+odtwarzany pewnym głosem native'a i tak wracał do ucha. Zdanie błędne zostaje więc
+tylko w tabeli powyżej, do przeczytania raz. To, co powtarzasz co dzień, jest
+wyłącznie poprawne.
 
 **Czego ten dział NIE robi.** Nie uczy słownictwa tematycznego i nie ma wspólnego
 tematu. Cztery grupy to cztery konstrukcje. Materiałem są Twoje zdania, więc treść

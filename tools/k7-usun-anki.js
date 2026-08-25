@@ -1,4 +1,7 @@
-// Kasuje z Anki cały dział K7 przed wgraniem przepisanej wersji (32 pary zamiast 81).
+// Kasuje z Anki cały dział K7 przed wgraniem przepisanej wersji.
+// Uruchomiony 22.08 (81 par → 32) i 25.08 (G3/G4 z trybu en-only na zwykły pl2en —
+// zmieniły się i przody kart, i pliki cue.mp3 pod tymi samymi nazwami, więc czysty
+// re-import jest pewniejszy niż liczenie na nadpisanie mediów).
 //
 // DLACZEGO ZAPYTANIE PO TALII, A NIE PO TYPIE NOTATKI:
 // 23 z 81 notatek K7 zostały wcześniej zmigrowane przez tools/k67-luki.js na typ
@@ -26,7 +29,11 @@ const wykonaj = process.argv.includes('--wykonaj');
 const DECK = 'angielski-k::K7';
 const TAG = 'k7';
 const ZNANE_TYPY = new Set(['angielski-pl-en', 'angielski-k-luka']);
-const OCZEKIWANE_CLOZE = 23;
+// 22.08: 23 notatki cloze (zmigrowane przez k67-luki.js z wersji masońskiej).
+// 25.08: 0 — po pierwszym przepisaniu dział ma wyłącznie karty klasyczne. Stała
+// jest asercją stanu, nie ustawieniem: jeśli kiedyś nie zgadza się z rzeczywistością,
+// to znaczy, że Anki rozjechało się z założeniami i trzeba sprawdzić PRZED kasowaniem.
+const OCZEKIWANE_CLOZE = 0;
 const MIN_APKG = 100_000;
 
 async function anki(action, params) {

@@ -4,9 +4,9 @@
 // pola `audio`, przez co add-cards.cjs schodził na płatne TTS zamiast użyć gotowych
 // nagrań kursu. Tutaj ścieżki lecą wprost z audio.json, więc nie da się ich zgubić.
 //
-// Kształt pola `pl` zależy od trybu grupy (assemble-audio.js:227, tekstPary):
-//   pl2en   → tekst.pl  = polski wyzwalacz
-//   en-only → tekst.pyt = DOSŁOWNY cytat z lekcji + polecenie (tekst.pl jest null)
+// Wszystkie cztery grupy idą w trybie pl2en, więc przód karty to zawsze `tekst.pl`.
+// (Do 25.08 G3/G4 chodziły w `en-only` i przód brały z `tekst.pyt` — cytat z lekcji
+// plus polecenie. Odrzucone: w Anki czytało się to jak protokół.)
 //
 // Uruchom: node tools/k7-do-anki.js
 
@@ -47,9 +47,9 @@ fs.mkdirSync(outDir, { recursive: true });
 let razem = 0;
 for (const g of manifest.grupy) {
   const cards = g.pary.map((para) => {
-    const pl = g.tryb === 'en-only' ? para.tekst.pyt : para.tekst.pl;
+    const pl = para.tekst.pl;
     const en = para.tekst.en;
-    if (!pl) throw new Error(`Grupa ${g.n}, para ${para.n}: brak tekstu wyzwalacza (tryb ${g.tryb})`);
+    if (!pl) throw new Error(`Grupa ${g.n}, para ${para.n}: brak polskiego wyzwalacza (tryb ${g.tryb})`);
     const targets = (KLOCKI[g.n]?.[para.n - 1] || []).filter((k) => en.toLowerCase().includes(k.toLowerCase()));
     if (!targets.length) throw new Error(`Grupa ${g.n}, para ${para.n}: żaden klocek nie pasuje do „${en}"`);
     return {
