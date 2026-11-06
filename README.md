@@ -19,4 +19,5 @@ pętla na zablokowanym iPhonie, fraza na ekranie blokady, przycisk „3 rundy”
 4. Audio: `node ~/.claude/skills/angielski-rozdzial/assemble-audio.js R/<dział>/rozdzial.md` (po poprawkach `--only N --force`).
 5. PDF: `~/.claude/skills/gstack/make-pdf/dist/pdf generate R/<dział>/rozdzial.md <scratchpad>/x.pdf` → `R/<dział>/rozdzial.pdf`.
 6. Wpis w `R/kurs.json` (`dzialy[]`), potem `npm run build` (content.json).
-7. Podgląd: `npm run serve` → http://127.0.0.1:8010. Push na GitHub/Render tylko po „wrzuć” KK.
+7. Karty Anki (od 06.11): do 10 kart z błędów dnia w formacie luka z dźwiękiem, `node ~/Desktop/kariera-mundurowa/brain/angielski/narzedzia/krzykrzy-karty.cjs <plik.json> [--proba]` (zasady w `brain/angielski/README.md`, krok 3).
+8. Podgląd: `npm run serve` → http://127.0.0.1:8010. Push na GitHub/Render tylko po „wrzuć” KK.
