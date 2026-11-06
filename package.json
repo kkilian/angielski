@@ -1,13 +1,11 @@
 {
-  "name": "angielski-audio",
+  "name": "angielski-rozmowa",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Odtwarzacz audio do nauki angielskiego — statyczna strona (Render).",
+  "description": "Angielski do rozmowy w PAŻP: dział z każdej sesji, audio per para (statyczna strona, Render).",
   "scripts": {
-    "build": "node tools/build-all.js",
-    "build:k": "node tools/generate-k.js",
-    "serve": "npm run build && python3 -m http.server 8000",
-    "egzamin": "node tools/egzamin/server.mjs"
+    "build": "node tools/generate.js",
+    "serve": "npm run build && python3 -m http.server 8010"
   }
 }

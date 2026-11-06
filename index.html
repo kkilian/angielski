@@ -3,58 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Angielski do rozmowy w PAŻP: dział z każdej sesji, z Twoich nagrań.">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#14110f">
+  <meta name="theme-color" content="#0d1930">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Angielski">
-  <title>Angielski — studio audio</title>
+  <meta name="apple-mobile-web-app-title" content="Rozmowa">
+  <title>Rozmowa · angielski</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="icons/icon-192.png">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <button class="topbar-back" id="back" type="button" hidden aria-label="Wstecz">‹</button>
-    <span class="topbar-title" id="topbar-title">Angielski</span>
+    <button class="back" id="back" type="button" hidden aria-label="Wstecz">←</button>
+    <a class="wordmark" href="#/" aria-label="Strona główna">
+      <span class="wordmark-k">R</span>
+      <span class="wordmark-copy">Rozmowa</span>
+    </a>
+    <span class="topbar-context" id="topbar-context">Rozmowa</span>
   </header>
 
-  <main id="view" class="view"><!-- wypełniane przez app.js --></main>
+  <main class="view" id="view"></main>
 
-  <!-- Deck (sticky, dół). Widoczny po wybraniu grupy. -->
-  <div class="player" id="player" hidden>
-    <div class="deck">
-      <div class="player-top">
-        <span class="reel" aria-hidden="true"></span>
-        <div class="player-info">
-          <span class="player-group" id="p-group">Grupa 1</span>
-          <span class="player-chapter" id="p-chapter">—</span>
+  <section class="player" id="player" hidden aria-label="Odtwarzacz audio">
+    <div class="player-inner">
+      <div class="player-meta">
+        <span class="now-mark" aria-hidden="true"></span>
+        <div class="now-copy">
+          <strong id="p-chapter">—</strong>
+          <span id="p-para"></span>
         </div>
-        <button class="player-repeat" id="p-repeat" type="button" aria-label="Tryb pętli">
-          <span class="rep-glyph">⟳</span><span class="rep-tag" id="p-rep-tag">jedna</span>
+        <button class="repeat" id="p-repeat" type="button" aria-label="Tryb pętli: jedna. Zmień tryb">
+          <span aria-hidden="true">↻</span>
+          <span id="p-repeat-label">jedna</span>
         </button>
       </div>
+
       <div class="fraza" aria-live="polite">
         <p class="fraza-wyzwalacz" id="p-wyzwalacz"></p>
         <p class="fraza-wzorzec" id="p-wzorzec"></p>
       </div>
-      <div class="player-seek">
-        <span class="t t-cur" id="p-cur">0:00</span>
-        <input type="range" id="p-seek" min="0" max="1000" value="0" step="1" aria-label="Postęp odtwarzania">
-        <span class="t t-dur" id="p-dur">0:00</span>
+
+      <div class="timeline">
+        <span id="p-current">0:00</span>
+        <input id="p-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Postęp odtwarzania">
+        <span id="p-duration">0:00</span>
       </div>
-      <div class="player-controls">
-        <button class="pc" id="p-prev" type="button" aria-label="Poprzednia grupa">⏮</button>
-        <button class="pc pc-main" id="p-play" type="button" aria-label="Odtwórz lub pauza">▶</button>
-        <button class="pc" id="p-next" type="button" aria-label="Następna grupa">⏭</button>
+
+      <div class="transport">
+        <button id="p-prev" type="button" aria-label="Poprzednia grupa">↤</button>
+        <button class="play" id="p-play" type="button" aria-label="Odtwórz lub wstrzymaj">▶</button>
+        <button id="p-next" type="button" aria-label="Następna grupa">↦</button>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Jeden, współdzielony element audio (sedno odtwarzania w tle na iOS). -->
   <audio id="audio" playsinline preload="metadata"></audio>
-
   <script src="app.js" type="module"></script>
 </body>
 </html>

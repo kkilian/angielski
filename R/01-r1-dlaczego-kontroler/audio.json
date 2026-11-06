@@ -1,0 +1,773 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-11-06T11:34:09.640Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 13.208
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wciągnęła mnie gra OpenScope, którą odkryłem mniej więcej rok temu.",
+            "en": "I got hooked on a game called OpenScope, which I discovered about a year ago."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 11.568
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 4.816
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na początku kontrolowanie tych samolotów wydawało się prawie niemożliwe.",
+            "en": "At first, it seemed almost impossible to control the aircraft."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 13.304
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zobaczyłem na YouTubie, jak ktoś w to gra, i postanowiłem spróbować.",
+            "en": "I saw someone playing it on YouTube, and I decided to give it a try."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trudno jest prowadzić wiele samolotów naraz.",
+            "en": "It's hard to handle a lot of aircraft at once."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 13.152
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dopiero wtedy dowiedziałem się, że ludzie robią to zawodowo.",
+            "en": "Only then did I find out that people do this for a living."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 14.36
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zrobiłem rozeznanie i dowiedziałem się, że mogę złożyć podanie o tę pracę.",
+            "en": "I did my research and found out that I could apply for the job."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 14.12
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 5.368
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musiałem dużo ćwiczyć, żeby lepiej radzić sobie w zadaniach FEAST i w teście radarowym.",
+            "en": "I had to practice a lot to get better at the FEAST tasks and the radar test."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 10.704
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Uwielbiam robić wymagające rzeczy i przesuwać swoje granice.",
+            "en": "I love doing challenging things and pushing my limits."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 12.312
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To bardzo ważna praca i jest na nią realne zapotrzebowanie.",
+            "en": "It's a very important job, and there's a real need for it."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g1-p10-cue.mp3",
+            "sek": 9.6
+          },
+          "wzor": {
+            "src": "audio/g1-p10-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W dzisiejszym świecie ta praca jest naprawdę potrzebna.",
+            "en": "This job is really needed in today's world."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 5.568
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 2.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Podam przykład.",
+            "en": "Let me give you an example."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 12.768
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 5.056
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Myślę, że największym wyzwaniem będzie pogodzenie szybkości z dokładnością.",
+            "en": "I think the biggest challenge will be balancing speed and accuracy."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 10.008
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 4.6
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W tej pracy nie możesz poświęcać dokładności dla szybkości.",
+            "en": "In this job, you can't sacrifice accuracy for speed."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 13.056
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 5.464
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czasem łapałem się na tym, że podejmuję szybkie decyzje, które nie były zbyt trafne.",
+            "en": "Sometimes I caught myself making quick decisions that weren't very accurate."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 12.6
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Podczas testu radarowego miałem wszystko zaplanowane w głowie.",
+            "en": "During the radar test, I had everything planned out in my head."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 9.648
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.12
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Potem natrafiłem na problem i się rozproszyłem.",
+            "en": "Then I ran into a problem and got distracted."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 13.416
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zmieniłem wysokość jednego samolotu i zderzył się z innym.",
+            "en": "I changed the altitude of one aircraft, and it collided with another one."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Oba zrobiły się czerwone, czyli to była kolizja.",
+            "en": "They both turned red, which meant a collision."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 14.552
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Myślę, że to była mieszanka stresu i tego, że byłem w nowym otoczeniu.",
+            "en": "I think it was a mix of stress and being in a new environment."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 15.056
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 5.752
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Od tamtej pory, gdy coś wybije mnie z rytmu, najpierw sprawdzam cały obraz ruchu.",
+            "en": "Since then, whenever something throws me off, I check the whole traffic picture first."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 9.96
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trafność twoich decyzji liczy się bardziej niż szybkość.",
+            "en": "The accuracy of your decisions matters more than speed."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 8.064
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To był długi, wyczerpujący dzień.",
+            "en": "It was a long, exhausting day."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 9
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W sektorze było naraz dwanaście samolotów.",
+            "en": "There were twelve aircraft in the sector at once."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 9.768
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 3.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wciągnąłem się w szachy jeszcze w liceum.",
+            "en": "I got hooked on chess back in high school."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 10.2
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Natrafiliśmy na problem z tym drugim samolotem.",
+            "en": "We ran into a problem with the other aircraft."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 8.76
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 3.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ten test naprawdę doprowadził mnie do granic możliwości.",
+            "en": "That test really pushed me to my limits."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 8.352
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 3.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kontroler dał pilotowi zgodę na wznoszenie.",
+            "en": "The controller cleared the pilot to climb."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 10.704
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dopiero wtedy dotarło do mnie, jak ważna jest ta praca.",
+            "en": "Only then did I realize how important this job is."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 5.616
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 2.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To bardzo potrzebna zmiana.",
+            "en": "It's a much-needed change."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 9.168
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 3.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To był dla mnie zupełnie nowy świat.",
+            "en": "It was a completely new world for me."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 28.468
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 8.656
+          },
+          "tekst": {
+            "pyt": "Why do you want to be an air traffic controller?",
+            "pl": "Powiedz, że zaczęło się od symulatora OpenScope, wciągnęło cię wyzwanie i wtedy zrozumiałeś, że można z tego zrobić zawód.",
+            "en": "It started with OpenScope, an ATC simulator. I got hooked on the challenge, and that's when I realized you could actually do this as a career."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 18.88
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 5.752
+          },
+          "tekst": {
+            "pyt": "How did you first come across OpenScope?",
+            "pl": "Powiedz, że trafiłeś na YouTubie na nagranie z gry i postanowiłeś spróbować.",
+            "en": "I came across a gameplay video on YouTube and decided to give it a try."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 27.58
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 7.72
+          },
+          "tekst": {
+            "pyt": "So is it just a game to you?",
+            "pl": "Powiedz, że na początku tak, ale teraz chcesz robić to naprawdę, bo to ważna praca i jest na nią realne zapotrzebowanie.",
+            "en": "At first, yes. But now I want to do it for real, because it's important work, and there's a real need for it."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 18.752
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": "What do you like most about it?",
+            "pl": "Powiedz, że lubisz wyzwanie: uwielbiasz robić trudne rzeczy i przesuwać swoje granice.",
+            "en": "I like the challenge. I love doing difficult things and pushing my limits."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 17.16
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": "What will be the hardest part of this job for you?",
+            "pl": "Powiedz, że najtrudniejsze będzie pogodzenie szybkości z dokładnością.",
+            "en": "I think the hardest part will be balancing speed and accuracy."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 27.028
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 9.112
+          },
+          "tekst": {
+            "pyt": "Can you give me an example?",
+            "pl": "Opowiedz krótko o teście radarowym: pochłonął cię jeden problem, zmieniłeś wysokość jednego samolotu i zderzył się z innym.",
+            "en": "In the radar test, I got caught up in one problem and changed the altitude of one aircraft, and it ended up colliding with another one."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 19.068
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": "What did you learn from that?",
+            "pl": "Powiedz, że nauczyłeś się zatrzymać i sprawdzić cały obraz, zanim cokolwiek zmienisz.",
+            "en": "I learned to step back and check the whole picture before I change anything."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 18.076
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 5.464
+          },
+          "tekst": {
+            "pyt": "How do you deal with stress?",
+            "pl": "Powiedz, że ćwiczysz pod presją czasu, aż stres zaczyna wydawać się czymś normalnym.",
+            "en": "I train under time pressure until the stress starts to feel normal."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "sluchanka",
+      "src": "grupa-5.mp3",
+      "zdania": [
+        {
+          "pl": "Zainteresowałem się kontrolą ruchu lotniczego dzięki symulatorowi OpenScope.",
+          "en": "I got interested in air traffic control through a simulator called OpenScope.",
+          "t": [
+            0,
+            5.352
+          ]
+        },
+        {
+          "pl": "Zobaczyłem na YouTubie, jak ktoś w to gra, i wyglądało to na tak trudne, że po prostu musiałem spróbować.",
+          "en": "I saw someone playing it on YouTube, and it looked so difficult that I just had to try it.",
+          "t": [
+            7.852,
+            13.516
+          ]
+        },
+        {
+          "pl": "Na początku kompletnie poległem.",
+          "en": "At first, I was terrible at it.",
+          "t": [
+            16.016,
+            18.536
+          ]
+        },
+        {
+          "pl": "Ale potem mnie wciągnęło i zacząłem ćwiczyć, żeby być lepszym.",
+          "en": "But then I got hooked, and I started practicing to get better at it.",
+          "t": [
+            20.006,
+            23.51
+          ]
+        },
+        {
+          "pl": "Wtedy dowiedziałem się, że ludzie robią to zawodowo i że można z tego zrobić karierę.",
+          "en": "That's when I found out that people do this for a living and that you could build a career out of it.",
+          "t": [
+            26.01,
+            30.81
+          ]
+        },
+        {
+          "pl": "Więc złożyłem podanie.",
+          "en": "So I applied.",
+          "t": [
+            33.31,
+            34.63
+          ]
+        },
+        {
+          "pl": "W trakcie rekrutacji okazało się, że to coś więcej.",
+          "en": "During the recruitment process, I found out there was much more to it.",
+          "t": [
+            35.53,
+            39.538
+          ]
+        },
+        {
+          "pl": "Pamiętam, jak przygotowywałem się do FEAST One i do testu radarowego.",
+          "en": "I remember preparing for FEAST One and the radar test.",
+          "t": [
+            42.038,
+            45.302
+          ]
+        },
+        {
+          "pl": "Było naprawdę ciężko i właśnie to lubię: wyzwanie.",
+          "en": "It was really hard, and that's exactly the part I like: the challenge.",
+          "t": [
+            47.402,
+            51.65
+          ]
+        },
+        {
+          "pl": "A do tego to naprawdę ważna praca i jest na nią realne zapotrzebowanie.",
+          "en": "And on top of that, it's really important work, and there's a real need for it.",
+          "t": [
+            54.15,
+            59.07
+          ]
+        },
+        {
+          "pl": "Myślę, że największym wyzwaniem będzie pogodzenie szybkości z dokładnością.",
+          "en": "I think the biggest challenge will be balancing speed and accuracy.",
+          "t": [
+            61.57,
+            66.538
+          ]
+        },
+        {
+          "pl": "Trzeba działać szybko, ale nigdy kosztem dokładności.",
+          "en": "You have to be quick, but never at the expense of accuracy.",
+          "t": [
+            68.848,
+            73.312
+          ]
+        },
+        {
+          "pl": "Podczas testu radarowego natrafiłem na problem i się rozproszyłem.",
+          "en": "During the radar test, I ran into a problem and got distracted.",
+          "t": [
+            75.812,
+            80.78
+          ]
+        },
+        {
+          "pl": "Zmieniłem wysokość jednego samolotu i zderzył się z innym.",
+          "en": "I changed the altitude of one aircraft, and it collided with another one.",
+          "t": [
+            83.28,
+            88.68
+          ]
+        },
+        {
+          "pl": "To była mieszanka stresu i tego, że byłem w nowym otoczeniu.",
+          "en": "It was a mix of stress and being in a new environment.",
+          "t": [
+            91.18,
+            95.38
+          ]
+        },
+        {
+          "pl": "Od tamtej pory, gdy coś wybije mnie z rytmu, najpierw sprawdzam cały obraz ruchu.",
+          "en": "Since then, whenever something throws me off, I check the whole traffic picture first.",
+          "t": [
+            97.88,
+            102.992
+          ]
+        }
+      ]
+    }
+  ]
+}

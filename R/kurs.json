@@ -1,0 +1,18 @@
+{
+  "$opis": "Rejestr kursu Rozmowa. Jeden dział = jedna sesja angielskiego z planu do rozmowy w PAŻP (od 06.11.2026). Id: r1, r2, r3...",
+  "wersja": "2026-11-06",
+  "kurs": {
+    "id": "r",
+    "tytul": "Rozmowa · angielski",
+    "opis": "Dział z każdej sesji: Twoje zdania z nagrań poprawione, te same ramy w nowych zdaniach, komisja, która dopytuje, i shadowing całych odpowiedzi."
+  },
+  "dzialy": [
+    {
+      "id": "r1",
+      "folder": "01-r1-dlaczego-kontroler",
+      "tytulPl": "Dlaczego kontroler",
+      "tytulEn": "Why ATC",
+      "opis": "06.11 · „Why ATC?” w 3 rundach (W 67 → 79 → 92) i bliźniak „hardest part” (W 67,3). Rodzajniki przed przymiotnikiem, aircraft bez -s, hooked on, ran into a problem, Only then did I, wymowa radar i altitude."
+    }
+  ]
+}

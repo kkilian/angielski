@@ -1,12 +1,3 @@
 node_modules/
 .DS_Store
-**/.DS_Store
-.gstack/
-podglad.html
-podglad-m2.html
-.handoff-m2/
-.handoff-jazda/
-M1-pl-en.md
-.mockups/
-egzaminy/
-.worktrees/
+tmp/
