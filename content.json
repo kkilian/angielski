@@ -1,11 +1,92 @@
 {
-  "generatedAt": "2026-11-06T11:34:41.567Z",
+  "generatedAt": "2026-11-08T15:04:48.025Z",
   "course": {
     "id": "r",
     "title": "Rozmowa · angielski",
     "description": "Dział z każdej sesji: Twoje zdania z nagrań poprawione, te same ramy w nowych zdaniach, komisja, która dopytuje, i shadowing całych odpowiedzi."
   },
   "chapters": [
+    {
+      "id": "r2",
+      "slug": "R/02-r2-historie",
+      "localNumber": 2,
+      "title": "R2 · Bank historii / R2 · Story bank",
+      "titlePl": "R2 · Bank historii",
+      "titleEn": "R2 · Story bank",
+      "description": "08.11 · 8 historii na rozmowę za pierwszym razem (W średnio 73, najlepsza 81: Norwegia). Czas przeszły po thought/told/asked, trzeci tryb (wouldn't have gotten), make a mistake, a second chance, the whole, on a team, a bit of a clean freak.",
+      "pdf": "R/02-r2-historie/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "R/02-r2-historie/audio.json",
+      "audioVersion": 1794150273334,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1 · Historia 1: przygotowanie do FEAST",
+          "parCount": 9,
+          "pytanie432": "How do you prepare for something important?"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2 · Historia 2: błąd w teście lewo-prawo",
+          "parCount": 9,
+          "pytanie432": "Tell us about a mistake you made."
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3 · Historia 3: stres w dniu FEAST",
+          "parCount": 11,
+          "pytanie432": "How do you handle stress?"
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4 · Historia 4: zespół w Norwegii",
+          "parCount": 9,
+          "pytanie432": "Have you ever worked on an international team?"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5 · Historia 5: negocjacje umowy",
+          "parCount": 7,
+          "pytanie432": "Tell us about a difficult negotiation."
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6 · Historia 6: decyzja o terminie RADAR",
+          "parCount": 8,
+          "pytanie432": "Tell us about a decision you made without full information."
+        },
+        {
+          "n": 7,
+          "label": "Grupa 7 · Historia 7: zmiana metody nauki",
+          "parCount": 10,
+          "pytanie432": "Tell us about a time you changed your approach."
+        },
+        {
+          "n": 8,
+          "label": "Grupa 8 · Historia 8: konflikt we wspólnym domu",
+          "parCount": 10,
+          "pytanie432": "Tell us about a conflict in a team."
+        },
+        {
+          "n": 9,
+          "label": "Grupa 9 · Nowe zdania",
+          "parCount": 10,
+          "pytanie432": "Tell us about a time you were wrong about something."
+        },
+        {
+          "n": 10,
+          "label": "Grupa 10 · Komisja dopytuje",
+          "parCount": 9,
+          "pytanie432": "Tell us about a time you had to adapt quickly."
+        },
+        {
+          "n": 11,
+          "label": "Grupa 11 · Shadowing: historie 1 i 5",
+          "parCount": 15
+        }
+      ]
+    },
     {
       "id": "r1",
       "slug": "R/01-r1-dlaczego-kontroler",

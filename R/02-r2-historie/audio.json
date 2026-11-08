@@ -1,0 +1,1665 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-11-08T14:59:51.232Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 9.312
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 3.712
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Podam przykład, jak to robię.",
+            "en": "Let me give you an example of how I do it."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 12.216
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pod koniec sierpnia zacząłem się przygotowywać do testu FEAST One.",
+            "en": "In late August, I started preparing for the FEAST One test."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 11.712
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przekonałem się, że testy próbne w internecie nie są zbyt dobre.",
+            "en": "I found out that the online practice tests weren't very good."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 11.16
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Były bardzo powtarzalne: każda runda wyglądała dokładnie tak samo.",
+            "en": "They were really repetitive: every round was exactly the same."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 5.448
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 2.848
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie było w nich dużej różnorodności.",
+            "en": "There wasn't much variety."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 7.968
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc postanowiłem zbudować własne.",
+            "en": "So I decided to build my own."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 10.92
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dzięki agentom do programowania zrobiłem to w dwa dni.",
+            "en": "With coding agents, I got it done in two days."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 12.048
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 4.816
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Miałem dokładnie takie gry, jakich potrzebowałem do ćwiczenia tych umiejętności.",
+            "en": "I had exactly the games I needed to practice those skills."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 13.568
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Okazało się, że było warto: dobrze mi poszło na FEAST One i zdałem.",
+            "en": "It turned out it was worth it: I did well on FEAST One and passed."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 10.248
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 4.648
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam sytuację, kiedy popełniłem duży błąd.",
+            "en": "I remember one time when I made a big mistake."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 9.12
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 3.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Okazało się, że przygotowałem się trochę za dobrze.",
+            "en": "It turned out I'd prepared a little too well."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 15.512
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 6.4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tak mocno trenowałem na własnej wersji testu, że zapomniałem, że prawdziwy może wyglądać inaczej.",
+            "en": "I trained so hard on my own version of the test that I forgot the real one could be different."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 15.968
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 6.352
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Było zadanie, w którym trzeba było zdecydować, czy postać trzyma przedmiot w lewej, czy w prawej ręce.",
+            "en": "There was a task where you had to decide whether a figure was holding an object in its left or right hand."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 15.464
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 7.72
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W prawdziwym teście postać trzymała dwa przedmioty w rękach, a trzeci był między jej nogami.",
+            "en": "In the real test, the figure held two objects in its hands, and there was a third one between its legs."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 13.664
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trzeba było dopasować go do jednego z przedmiotów w rękach i zdecydować, która to ręka.",
+            "en": "You had to match it to one of the objects in its hands and decide which hand it was."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 13.448
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na początku popełniłem kilka błędów, ale potem wróciłem na właściwe tory.",
+            "en": "I made a few mistakes at the beginning, but then I got back on track."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 7.416
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 3.352
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dostosowałem się do nowego formatu.",
+            "en": "I adjusted to the new format."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 12.12
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.152
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W sumie popełniłem od siedmiu do dziesięciu błędów, co nie było takie złe.",
+            "en": "In total, I made seven to ten mistakes, which wasn't that bad."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 13.56
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 5.104
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dla mnie radzenie sobie ze stresem to nie coś, co robisz, kiedy już jesteś zestresowany.",
+            "en": "For me, handling stress isn't something you do when you're already stressed."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 8.76
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To raczej zestaw nawyków i rutyn.",
+            "en": "It's more of a set of habits and routines."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 15.2
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 6.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Piętnastego października miałem egzamin FEAST i wiedziałem, że mam tylko jedną szansę.",
+            "en": "On October 15th, I had my FEAST exam, and I knew I only had one shot."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 13.152
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 4.648
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Można dostać drugą szansę, ale trzeba czekać dwa lata.",
+            "en": "You can get a second chance, but you have to wait two years."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 12.8
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A wtedy możesz być już w zupełnie innym miejscu w życiu.",
+            "en": "And by then, you could be in a completely different place in your life."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 9.768
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc postanowiłem spisać swoją poranną rutynę.",
+            "en": "So I decided to write down my morning routine."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 15.968
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 8.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rano wziąłem zimny prysznic, wypiłem swoją yerbę, zjadłem małe śniadanie i trochę medytowałem.",
+            "en": "In the morning, I took a cold shower, had my yerba mate, ate a small breakfast, and did some meditation."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 11.304
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przez dwa tygodnie przed testem zrobiłem ze snu priorytet.",
+            "en": "For two weeks before the test, I made sleep a priority."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 7.968
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 3.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Poranek minął lepiej, niż się spodziewałem.",
+            "en": "The morning went better than I expected."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g3-p10-cue.mp3",
+            "sek": 11.112
+          },
+          "wzor": {
+            "src": "audio/g3-p10-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W drodze na lotnisko zrobiłem krótką rozgrzewkę.",
+            "en": "I did a short warm-up on my way to the airport."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g3-p11-cue.mp3",
+            "sek": 9.504
+          },
+          "wzor": {
+            "src": "audio/g3-p11-en.mp3",
+            "sek": 5.752
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Cały czas powtarzałem sobie: puls to moje paliwo.",
+            "en": "I kept telling myself: my pulse is my fuel."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 10.104
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Moja historia jest pewnie inna, niż się spodziewacie.",
+            "en": "My story is probably different from what you'd expect."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 6.912
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 3.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie mam dużego doświadczenia zawodowego.",
+            "en": "I don't have much work experience."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 15.512
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 6.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale pracowałem w Norwegii w międzynarodowym zespole, który pomagał naukowcom na stacji badawczej.",
+            "en": "But I worked in Norway on an international team that helped scientists at a research station."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 12.768
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Stację prowadzi NIBIO, Norweski Instytut Badań Biogospodarki.",
+            "en": "The station is run by NIBIO, the Norwegian Institute of Bioeconomy Research."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 12.72
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 4.552
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jeździłem tam przez trzy sezony, za każdym razem na kilka miesięcy.",
+            "en": "I went there for three seasons, a few months each time."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 11.856
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 6.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pracowałem z Norwegami, Amerykanami, Czechami, Słowakami i Niemcami.",
+            "en": "I worked with Norwegians, Americans, Czechs, Slovaks, and Germans."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 5.064
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rozmawialiśmy głównie po angielsku.",
+            "en": "We mostly spoke English."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 9.768
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Teraz znam kilka słów po czesku i po niemiecku.",
+            "en": "Now I know a few words in Czech and German."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 9.912
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Praca szła bardzo dobrze i bardzo mi się podobała.",
+            "en": "The work went really well, and I loved it."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 14.72
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 6.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pracuję jako korepetytor z matematyki, prywatnie pod własną marką i w szkole korepetycji.",
+            "en": "I work as a math tutor, both privately under my own brand and for a tutoring school."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 14.504
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na początku każdego roku szkolnego trzeba wynegocjować własną umowę.",
+            "en": "At the beginning of every school year, you have to negotiate your own contract."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 11.4
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 5.32
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym nie negocjował, mógłbym nie dostać tylu grup.",
+            "en": "If I hadn't negotiated, I might not have gotten as many groups."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 13.52
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 5.368
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziałem im, że muszę mieć pewność, że dostanę minimalną liczbę grup.",
+            "en": "I told them I needed to know I'd get a minimum number of groups."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 8.952
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Poprosiłem o gwarantowane minimum czterech grup.",
+            "en": "I asked for a guaranteed minimum of four groups."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 11.064
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zgodzili się i w końcu dostałem dużo grup.",
+            "en": "They agreed, and I ended up with a lot of groups."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 9.048
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 3.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie dostałbym ich, gdybym nie negocjował.",
+            "en": "I wouldn't have gotten them if I hadn't negotiated."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g6-p01-cue.mp3",
+            "sek": 14.552
+          },
+          "wzor": {
+            "src": "audio/g6-p01-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam, że właśnie skończyłem FEAST One i jechałem pociągiem do rodzinnego miasta.",
+            "en": "I remember I'd just finished FEAST One and was on a train to my hometown."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g6-p02-cue.mp3",
+            "sek": 15.8
+          },
+          "wzor": {
+            "src": "audio/g6-p02-en.mp3",
+            "sek": 6.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wtedy dostałem maila, że zdałem, i jeszcze tego samego dnia musiałem wybrać termin testu radarowego.",
+            "en": "That's when I got an email saying I'd passed, and I had to schedule my radar test that same day."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g6-p03-cue.mp3",
+            "sek": 6.552
+          },
+          "wzor": {
+            "src": "audio/g6-p03-en.mp3",
+            "sek": 4.12
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wybrałem czwarty listopada.",
+            "en": "I scheduled it for November 4th."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g6-p04-cue.mp3",
+            "sek": 13.304
+          },
+          "wzor": {
+            "src": "audio/g6-p04-en.mp3",
+            "sek": 4.816
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie wiedziałem, czy będę tego dnia wolny i czy nie powinienem poczekać.",
+            "en": "I didn't know if I'd be free that day or if I should wait."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g6-p05-cue.mp3",
+            "sek": 15.464
+          },
+          "wzor": {
+            "src": "audio/g6-p05-en.mp3",
+            "sek": 6.4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Postanowiłem wybrać jak najpóźniejszy termin, żeby mieć więcej czasu na research i przygotowanie.",
+            "en": "I decided to go as late as possible, so I'd have more time to research and prepare."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g6-p06-cue.mp3",
+            "sek": 13.568
+          },
+          "wzor": {
+            "src": "audio/g6-p06-en.mp3",
+            "sek": 5.368
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Czułem, że jeśli nie zarezerwuję od razu, ktoś inny zajmie ten termin.",
+            "en": "I felt that if I didn't book it right away, someone else would take the slot."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g6-p07-cue.mp3",
+            "sek": 14.648
+          },
+          "wzor": {
+            "src": "audio/g6-p07-en.mp3",
+            "sek": 6.712
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Minusem było to, że miałem też więcej czasu na stres i nadmierne rozmyślanie o wszystkim.",
+            "en": "The trade-off was that I also had more time to stress and overthink everything."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g6-p08-cue.mp3",
+            "sek": 11.4
+          },
+          "wzor": {
+            "src": "audio/g6-p08-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Raczej nie rozmyślam za dużo, ale tak długie czekanie było trudne.",
+            "en": "I'm not a big overthinker, but waiting that long was hard."
+          }
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g7-p01-cue.mp3",
+            "sek": 8.448
+          },
+          "wzor": {
+            "src": "audio/g7-p01-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam, jak brałem lekcje angielskiego z lektorem.",
+            "en": "I remember taking English lessons with a tutor."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g7-p02-cue.mp3",
+            "sek": 12.456
+          },
+          "wzor": {
+            "src": "audio/g7-p02-en.mp3",
+            "sek": 4.648
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wtedy myślałem, że to najlepszy sposób na naukę angielskiego.",
+            "en": "At the time, I thought it was the best way to learn English."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g7-p03-cue.mp3",
+            "sek": 13.904
+          },
+          "wzor": {
+            "src": "audio/g7-p03-en.mp3",
+            "sek": 5.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zwykle się mówi, że najlepiej uczyć się języka, rozmawiając z drugą osobą.",
+            "en": "People usually say the best way to learn a language is to speak it with another person."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g7-p04-cue.mp3",
+            "sek": 9.552
+          },
+          "wzor": {
+            "src": "audio/g7-p04-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale okazało się, że lektor był bardzo gadatliwy.",
+            "en": "But it turned out the tutor was very talkative."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g7-p05-cue.mp3",
+            "sek": 8.304
+          },
+          "wzor": {
+            "src": "audio/g7-p05-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mówił przez mniej więcej 60% lekcji.",
+            "en": "He talked for about 60% of the lesson."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g7-p06-cue.mp3",
+            "sek": 15.008
+          },
+          "wzor": {
+            "src": "audio/g7-p06-en.mp3",
+            "sek": 6.4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To wyglądało jak wywiad: interesowało mnie, co mówi, więc ciągle zadawałem mu pytania.",
+            "en": "It felt like an interview: I was interested in what he was saying, so I kept asking him questions."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g7-p07-cue.mp3",
+            "sek": 12.656
+          },
+          "wzor": {
+            "src": "audio/g7-p07-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zapytałem go, czy mogę nagrać całą lekcję, bo była online.",
+            "en": "I asked him if I could record the whole lesson, because it was online."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g7-p08-cue.mp3",
+            "sek": 16.208
+          },
+          "wzor": {
+            "src": "audio/g7-p08-en.mp3",
+            "sek": 6.712
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Potem puściłem nagranie przez narzędzie AI, żeby je przepisać i zmierzyć, ile mówił każdy z nas.",
+            "en": "Then I ran the audio through an AI tool to transcribe it and measure how long each of us talked."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g7-p09-cue.mp3",
+            "sek": 14.864
+          },
+          "wzor": {
+            "src": "audio/g7-p09-en.mp3",
+            "sek": 6.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc zmieniłem podejście: teraz nagrywam się, odsłuchuję i poprawiam swoje błędy.",
+            "en": "So I changed my approach: now I record myself, listen back, and correct my mistakes."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g7-p10-cue.mp3",
+            "sek": 5.352
+          },
+          "wzor": {
+            "src": "audio/g7-p10-en.mp3",
+            "sek": 2.848
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To działa dużo lepiej.",
+            "en": "It works much better."
+          }
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g8-p01-cue.mp3",
+            "sek": 6.168
+          },
+          "wzor": {
+            "src": "audio/g8-p01-en.mp3",
+            "sek": 3.952
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Raczej nie jestem konfliktowy.",
+            "en": "I'm not really a confrontational person."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g8-p02-cue.mp3",
+            "sek": 14
+          },
+          "wzor": {
+            "src": "audio/g8-p02-en.mp3",
+            "sek": 5.368
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Kiedy byłem w Norwegii, mieszkałem we wspólnym domu z innymi ludźmi.",
+            "en": "When I was in Norway, I lived in a shared house with other people."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g8-p03-cue.mp3",
+            "sek": 12.504
+          },
+          "wzor": {
+            "src": "audio/g8-p03-en.mp3",
+            "sek": 4.816
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mieszkał tam chłopak z Czech, który był trochę irytujący.",
+            "en": "There was a guy from the Czech Republic who was a bit annoying."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g8-p04-cue.mp3",
+            "sek": 9.312
+          },
+          "wzor": {
+            "src": "audio/g8-p04-en.mp3",
+            "sek": 4.72
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zwykle współlokatorzy irytują, bo w ogóle nie sprzątają.",
+            "en": "Usually, roommates are annoying because they never clean."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g8-p05-cue.mp3",
+            "sek": 10.704
+          },
+          "wzor": {
+            "src": "audio/g8-p05-en.mp3",
+            "sek": 4.504
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "On był zupełnym przeciwieństwem: sprzątał jak szalony.",
+            "en": "He was the complete opposite: he cleaned like crazy."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g8-p06-cue.mp3",
+            "sek": 4.704
+          },
+          "wzor": {
+            "src": "audio/g8-p06-en.mp3",
+            "sek": 3.448
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odkurzał codziennie.",
+            "en": "He vacuumed every single day."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g8-p07-cue.mp3",
+            "sek": 7.92
+          },
+          "wzor": {
+            "src": "audio/g8-p07-en.mp3",
+            "sek": 3.064
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Miał lekką obsesję na punkcie sprzątania.",
+            "en": "He was a bit of a clean freak."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g8-p08-cue.mp3",
+            "sek": 15.368
+          },
+          "wzor": {
+            "src": "audio/g8-p08-en.mp3",
+            "sek": 6.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Był na mnie zły, że nie sprzątam, ale trudno sprzątać, kiedy ktoś robi to cały czas.",
+            "en": "He was annoyed with me because I didn't clean, but it's hard to clean when someone's doing it all the time."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g8-p09-cue.mp3",
+            "sek": 13.4
+          },
+          "wzor": {
+            "src": "audio/g8-p09-en.mp3",
+            "sek": 6.448
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Chciałem usiąść z nim i ustalić grafik sprzątania, ale go to nie interesowało.",
+            "en": "I wanted to sit down with him and make a cleaning schedule, but he wasn't interested."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g8-p10-cue.mp3",
+            "sek": 15.704
+          },
+          "wzor": {
+            "src": "audio/g8-p10-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Po mniej więcej dwóch miesiącach przestaliśmy ze sobą rozmawiać i od tamtej pory nie mamy kontaktu.",
+            "en": "About two months in, we stopped talking, and we haven't been in touch since."
+          }
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g9-p01-cue.mp3",
+            "sek": 7.464
+          },
+          "wzor": {
+            "src": "audio/g9-p01-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Myślałem, że test będzie łatwy.",
+            "en": "I thought the test would be easy."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g9-p02-cue.mp3",
+            "sek": 7.368
+          },
+          "wzor": {
+            "src": "audio/g9-p02-en.mp3",
+            "sek": 3.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie wiedziałem, że format się zmienił.",
+            "en": "I didn't know the format had changed."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g9-p03-cue.mp3",
+            "sek": 7.968
+          },
+          "wzor": {
+            "src": "audio/g9-p03-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedziała mi, że jest zmęczona.",
+            "en": "She told me she was tired."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g9-p04-cue.mp3",
+            "sek": 7.8
+          },
+          "wzor": {
+            "src": "audio/g9-p04-en.mp3",
+            "sek": 3.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zapytałem, czy mogę zadać pytanie.",
+            "en": "I asked if I could ask a question."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g9-p05-cue.mp3",
+            "sek": 7.608
+          },
+          "wzor": {
+            "src": "audio/g9-p05-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym się nie przygotował, nie zdałbym.",
+            "en": "If I hadn't prepared, I wouldn't have passed."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g9-p06-cue.mp3",
+            "sek": 7.656
+          },
+          "wzor": {
+            "src": "audio/g9-p06-en.mp3",
+            "sek": 3.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Popełniłem ten sam błąd dwa razy.",
+            "en": "I made the same mistake twice."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g9-p07-cue.mp3",
+            "sek": 10.32
+          },
+          "wzor": {
+            "src": "audio/g9-p07-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wziąłem zimny prysznic i od razu poczułem się lepiej.",
+            "en": "I took a cold shower and felt better right away."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g9-p08-cue.mp3",
+            "sek": 6.816
+          },
+          "wzor": {
+            "src": "audio/g9-p08-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie każdy dostaje drugą szansę.",
+            "en": "Not everyone gets a second chance."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g9-p09-cue.mp3",
+            "sek": 10.368
+          },
+          "wzor": {
+            "src": "audio/g9-p09-en.mp3",
+            "sek": 4.864
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jego styl pracy był zupełnym przeciwieństwem mojego.",
+            "en": "His working style was the complete opposite of mine."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g9-p10-cue.mp3",
+            "sek": 8.448
+          },
+          "wzor": {
+            "src": "audio/g9-p10-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To był dla mnie lekki szok.",
+            "en": "It was a bit of a shock for me."
+          }
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g10-p01-cue.mp3",
+            "sek": 22.44
+          },
+          "wzor": {
+            "src": "audio/g10-p01-en.mp3",
+            "sek": 6.712
+          },
+          "tekst": {
+            "pyt": "Why did you build your own training games?",
+            "pl": "Powiedz, że testy próbne w internecie były powtarzalne i mało zróżnicowane, więc zbudowałeś własne.",
+            "en": "The online practice tests were really repetitive, and there wasn't much variety, so I built my own."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g10-p02-cue.mp3",
+            "sek": 23.576
+          },
+          "wzor": {
+            "src": "audio/g10-p02-en.mp3",
+            "sek": 6.952
+          },
+          "tekst": {
+            "pyt": "Why was FEAST One so important to you?",
+            "pl": "Powiedz, że to była twoja jedyna szansa: jeśli oblejesz, na kolejną próbę czekasz dwa lata.",
+            "en": "It was my one shot. If you fail, you have to wait two years before you can try again."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g10-p03-cue.mp3",
+            "sek": 19.552
+          },
+          "wzor": {
+            "src": "audio/g10-p03-en.mp3",
+            "sek": 5.368
+          },
+          "tekst": {
+            "pyt": "What did you learn from the left-right task?",
+            "pl": "Powiedz, że nauczyłeś się, że format trzeba znać, zanim wejdziesz na test.",
+            "en": "I learned that you have to know the format before you walk into the test."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g10-p04-cue.mp3",
+            "sek": 15.716
+          },
+          "wzor": {
+            "src": "audio/g10-p04-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": "And did you pass in the end?",
+            "pl": "Powiedz, że tak, a poranek minął lepiej, niż się spodziewałeś.",
+            "en": "Yes, I did. The morning went better than I expected."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g10-p05-cue.mp3",
+            "sek": 20.956
+          },
+          "wzor": {
+            "src": "audio/g10-p05-en.mp3",
+            "sek": 7.312
+          },
+          "tekst": {
+            "pyt": "What language did you use with the team in Norway?",
+            "pl": "Powiedz, że używaliście głównie angielskiego, bo pracowałeś z Norwegami, Amerykanami, Czechami, Słowakami i Niemcami.",
+            "en": "Mostly English, because I worked with Norwegians, Americans, Czechs, Slovaks, and Germans."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g10-p06-cue.mp3",
+            "sek": 17.256
+          },
+          "wzor": {
+            "src": "audio/g10-p06-en.mp3",
+            "sek": 4.312
+          },
+          "tekst": {
+            "pyt": "How did you make sure they kept their promise?",
+            "pl": "Powiedz, że nie podpisałeś umowy, dopóki nie odpowiedzieli na twojego maila.",
+            "en": "I didn't sign the contract until they replied to my email."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g10-p07-cue.mp3",
+            "sek": 21.332
+          },
+          "wzor": {
+            "src": "audio/g10-p07-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": "Would you choose the same date again?",
+            "pl": "Powiedz, że tak: dzięki temu miałeś około dwudziestu dni treningu zamiast kilku.",
+            "en": "Yes, I would. It gave me about twenty days of training instead of just a few."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g10-p08-cue.mp3",
+            "sek": 23.476
+          },
+          "wzor": {
+            "src": "audio/g10-p08-en.mp3",
+            "sek": 7.048
+          },
+          "tekst": {
+            "pyt": "How do you know your new method works better?",
+            "pl": "Powiedz, że mierzysz płynność po każdej sesji i dziś pierwszy raz przekroczyłeś 80.",
+            "en": "I measure my fluency after every session, and today my score went over eighty for the first time."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g10-p09-cue.mp3",
+            "sek": 24.08
+          },
+          "wzor": {
+            "src": "audio/g10-p09-en.mp3",
+            "sek": 7.048
+          },
+          "tekst": {
+            "pyt": "Did you try to solve the problem with your roommate?",
+            "pl": "Powiedz, że tak: chciałeś usiąść z nim i ustalić grafik sprzątania, ale go to nie interesowało.",
+            "en": "Yes, I did. I wanted to sit down with him and make a cleaning schedule, but he wasn't interested."
+          }
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "tryb": "sluchanka",
+      "src": "grupa-11.mp3",
+      "zdania": [
+        {
+          "pl": "Kiedyś musiałem przygotować się do FEAST One, pierwszego testu w rekrutacji na kontrolerów ruchu lotniczego.",
+          "en": "One time, I had to prepare for FEAST One, the first test in the recruitment process for air traffic controllers.",
+          "t": [
+            0,
+            6.36
+          ]
+        },
+        {
+          "pl": "Miałem tylko jedną szansę: jeśli oblejesz, czekasz dwa lata.",
+          "en": "I only had one shot: if you fail, you have to wait two years.",
+          "t": [
+            8.86,
+            13.78
+          ]
+        },
+        {
+          "pl": "Zacząłem się przygotowywać i przekonałem się, że testy próbne w internecie nie są zbyt dobre.",
+          "en": "I started preparing, and I found out that the online practice tests weren't very good.",
+          "t": [
+            16.28,
+            21.584
+          ]
+        },
+        {
+          "pl": "Były bardzo powtarzalne i mało zróżnicowane.",
+          "en": "They were really repetitive, and there wasn't much variety.",
+          "t": [
+            24.084,
+            27.348
+          ]
+        },
+        {
+          "pl": "Więc postanowiłem zbudować własne gry treningowe.",
+          "en": "So I decided to build my own training games.",
+          "t": [
+            29.238,
+            31.902
+          ]
+        },
+        {
+          "pl": "Dzięki agentom do programowania zrobiłem to w dwa dni i miałem dokładnie takie gry, jakich potrzebowałem.",
+          "en": "With coding agents, I got it done in two days, and I had exactly the games I needed.",
+          "t": [
+            33.792,
+            38.712
+          ]
+        },
+        {
+          "pl": "Potem robiłem pełne symulacje testu, po dwie, trzy godziny.",
+          "en": "Then I did full test simulations that lasted two to three hours.",
+          "t": [
+            41.212,
+            45.412
+          ]
+        },
+        {
+          "pl": "Piętnastego października napisałem test i zdałem.",
+          "en": "On October 15th, I took the test and passed.",
+          "t": [
+            47.912,
+            51.968
+          ]
+        },
+        {
+          "pl": "Pracuję jako korepetytor z matematyki, prywatnie i w szkole korepetycji.",
+          "en": "I work as a math tutor, both privately and for a tutoring school.",
+          "t": [
+            53.858,
+            58.178
+          ]
+        },
+        {
+          "pl": "Na początku każdego roku szkolnego trzeba wynegocjować własną umowę.",
+          "en": "At the beginning of every school year, you have to negotiate your own contract.",
+          "t": [
+            60.678,
+            65.526
+          ]
+        },
+        {
+          "pl": "Szkoła chciała umowy bez gwarancji liczby godzin.",
+          "en": "The school wanted a contract with no guaranteed hours.",
+          "t": [
+            68.026,
+            72.034
+          ]
+        },
+        {
+          "pl": "Więc poprosiłem o minimum czterech grup na poziomie rozszerzonym, zapisane w umowie.",
+          "en": "So I asked for a minimum of four advanced-level groups, written into the contract.",
+          "t": [
+            73.924,
+            78.58
+          ]
+        },
+        {
+          "pl": "Na spotkaniu w sierpniu powiedziałem, że nie podpiszę, dopóki nie odpowiedzą na mojego maila.",
+          "en": "At the meeting in August, I said I wouldn't sign until they replied to my email.",
+          "t": [
+            81.08,
+            86.48
+          ]
+        },
+        {
+          "pl": "Umowę podpisałem we wrześniu.",
+          "en": "I signed the contract in September.",
+          "t": [
+            88.98,
+            91.884
+          ]
+        },
+        {
+          "pl": "W końcu dostałem dużo grup, których nie dostałbym, gdybym nie negocjował.",
+          "en": "In the end, I got a lot of groups, which I wouldn't have gotten if I hadn't negotiated.",
+          "t": [
+            93.144,
+            98.448
+          ]
+        }
+      ]
+    }
+  ]
+}
