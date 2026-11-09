@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-11-08T15:04:48.025Z",
+  "generatedAt": "2026-11-09T14:33:35.758Z",
   "course": {
     "id": "r",
     "title": "Rozmowa · angielski",
     "description": "Dział z każdej sesji: Twoje zdania z nagrań poprawione, te same ramy w nowych zdaniach, komisja, która dopytuje, i shadowing całych odpowiedzi."
   },
   "chapters": [
+    {
+      "id": "r3",
+      "slug": "R/03-r3-rundy-negocjacje",
+      "localNumber": 3,
+      "title": "R3 · Rundy: przygotowanie i negocjacje / R3 · Rounds: preparation and negotiation",
+      "titlePl": "R3 · Rundy: przygotowanie i negocjacje",
+      "titleEn": "R3 · Rounds: preparation and negotiation",
+      "description": "09.11 · historia 1 w 3 rundach (W 75 → 74 → 82), historia 5 (W 77 → 77 → 91) i bliźniak „learn something new quickly” (W 77, 06.11: 67). as well as I can, very quickly, it paid off, by the hour, turn down, suggest that they give, by trial and error, and so on.",
+      "pdf": "R/03-r3-rundy-negocjacje/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "R/03-r3-rundy-negocjacje/audio.json",
+      "audioVersion": 1794234808727,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1 · Twoje zdania: przygotowanie do FEAST",
+          "parCount": 9,
+          "pytanie432": "How do you prepare for something important?"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2 · Twoje zdania: negocjacje",
+          "parCount": 11,
+          "pytanie432": "Tell us about a difficult negotiation."
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3 · Twoje zdania: bliźniak",
+          "parCount": 9,
+          "pytanie432": "Tell us about a time you had to learn something new quickly."
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4 · Nowe zdania",
+          "parCount": 10,
+          "pytanie432": "Tell us about something you're proud of."
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5 · Komisja dopytuje",
+          "parCount": 8,
+          "pytanie432": "Tell us about a time you had to convince someone."
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6 · Shadowing: negocjacje i bliźniak",
+          "parCount": 13
+        }
+      ]
+    },
     {
       "id": "r2",
       "slug": "R/02-r2-historie",

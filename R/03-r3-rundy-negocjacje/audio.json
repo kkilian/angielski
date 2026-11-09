@@ -1,0 +1,899 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-11-09T14:33:00.047Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 14.52
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 5.32
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przygotowanie do FEAST One było trudne, bo masz właściwie tylko jedną szansę.",
+            "en": "Preparing for FEAST One was hard, because you basically only get one shot."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 14.72
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 7.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Sprawdziłem, jak się przygotować, i trafiłem na stronę Eurocontrolu z grami treningowymi.",
+            "en": "I looked into how to prepare and stumbled upon a Eurocontrol website with some practice games."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 13.208
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale te gry były dla mnie za łatwe i bardzo szybko mi się znudziły.",
+            "en": "But the games were too easy for me, and I got bored with them very quickly."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 8.352
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 4.408
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc postanowiłem zbudować własną wersję.",
+            "en": "So I decided to build my own version."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 16.2
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Skopiowałem podstawową logikę i zbudowałem nowe gry z innymi, trudniejszymi scenariuszami.",
+            "en": "I copied the basic logic and built new games with different, harder scenarios."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 15.464
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 6.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Potem trenowałem na nich ponad miesiąc, robiąc pełne symulacje, każdą po dwie, trzy godziny.",
+            "en": "Then I trained on them for over a month, doing full simulations, two or three hours each."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 8.568
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "I to się opłaciło: zdałem FEAST One.",
+            "en": "And it paid off: I passed FEAST One."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 10.368
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 4.6
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zwykle staram się przygotować najlepiej, jak potrafię.",
+            "en": "I usually try to prepare as well as I can."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 9.312
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 3.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Często to robię, budując własne narzędzia.",
+            "en": "I often do that by building my own tools."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 10.056
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 4.648
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam, jak we wrześniu negocjowałem z moim pracodawcą.",
+            "en": "I remember negotiating with my employer back in September."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 13.56
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 5.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jak pewnie wiecie z mojego CV, pracuję w firmie korepetycyjnej.",
+            "en": "As you may know from my résumé, I work for a tutoring company."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 14.12
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 6.112
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Co roku podpisujesz z nimi nową umowę i przydzielają ci konkretną liczbę grup.",
+            "en": "Every year, you sign a new contract with them, and they assign you a specific number of groups."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 13.016
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Płacą za godzinę, więc im więcej masz grup, tym więcej zarabiasz.",
+            "en": "You get paid by the hour, so the more groups you get, the more you earn."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 13.848
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 4.6
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Większość nauczycieli pracuje tam tylko godzinę albo dwie w tygodniu.",
+            "en": "Most of the teachers there only work an hour or two a week."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 10.92
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A ja odrzuciłem inną pracę, żeby pracować z nimi.",
+            "en": "And I'd turned down another job to work with them."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 13.016
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 6.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc napisałem im maila, że w poprzednim roku poszło mi bardzo dobrze.",
+            "en": "So I wrote them an email saying I'd done very well the year before."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 11.616
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zasugerowałem, żeby dali mi wszystkie grupy z matematyki rozszerzonej.",
+            "en": "I suggested that they give me all the advanced math groups."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 8.856
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 4.168
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zgodzili się i zacząłem dobrze zarabiać.",
+            "en": "They agreed, and I started making good money."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g2-p10-cue.mp3",
+            "sek": 11.904
+          },
+          "wzor": {
+            "src": "audio/g2-p10-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym nie napisał tego maila, nie zarobiłbym tyle.",
+            "en": "If I hadn't written that email, I wouldn't have earned as much."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g2-p11-cue.mp3",
+            "sek": 8.76
+          },
+          "wzor": {
+            "src": "audio/g2-p11-en.mp3",
+            "sek": 3.52
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trzeba trochę odwagi, żeby to zrobić.",
+            "en": "It takes a bit of courage to do that."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 14.12
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 5.752
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Jak wiecie z mojego CV, uczę matematyki, ale tworzę też własne oprogramowanie.",
+            "en": "As you know from my résumé, I teach math, but I also build my own software."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 13.152
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 4.36
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W tym roku kolega poprosił mnie, żebym zrobił dla niego stronę internetową.",
+            "en": "This year, a friend asked me to build a website for him."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 12.912
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 4.312
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To strona, na której można spersonalizować własną odzież kolarską.",
+            "en": "It's a website where you can customize your own cycling apparel."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 8.856
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 3.808
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie miałem żadnego doświadczenia w takich projektach.",
+            "en": "I had no experience with projects like that."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 8.76
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 3.4
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Rozgryzienie tego zajęło mi trochę czasu.",
+            "en": "It took me some time to figure it out."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 12.456
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 5.248
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale dziś są agenci do programowania, więc poszło dość gładko.",
+            "en": "But these days there are coding agents, so it went pretty smoothly."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 10.32
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musiałem się dużo nauczyć metodą prób i błędów.",
+            "en": "I had to learn a lot by trial and error."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 3.904
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zbudowałem kilka prototypów i mu je pokazałem.",
+            "en": "I built a few prototypes and showed them to him."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g3-p09-cue.mp3",
+            "sek": 12.456
+          },
+          "wzor": {
+            "src": "audio/g3-p09-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Na podstawie jego uwag zrobiłem drugą wersję i tak dalej.",
+            "en": "Based on his feedback, I built a second version, and so on."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 7.32
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 3.304
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zrób to najlepiej, jak potrafisz.",
+            "en": "Do it as well as you can."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 6.048
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 2.848
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nauczył się tego bardzo szybko.",
+            "en": "He learned it very quickly."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 7.464
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Cała ta ciężka praca się opłaciła.",
+            "en": "All that hard work paid off."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 9.264
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 4.768
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Gdybym nie zapytał, nie dostałbym tej pracy.",
+            "en": "If I hadn't asked, I wouldn't have gotten the job."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 4.8
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 2.848
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odrzuciłem tę ofertę.",
+            "en": "I turned down the offer."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 6.36
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 2.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Płacą mi za godzinę.",
+            "en": "I get paid by the hour."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 7.056
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 3.568
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zasugerowała, żebyśmy wyszli wcześniej.",
+            "en": "She suggested that we leave early."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 6
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 3.808
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przydzielili mi nową grupę.",
+            "en": "They assigned me a new group."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 7.2
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 3.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Trafiłem na ciekawy artykuł.",
+            "en": "I came across an interesting article."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 8.208
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 3.352
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nauczył się tego metodą prób i błędów.",
+            "en": "He learned it by trial and error."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 18.58
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 5.848
+          },
+          "tekst": {
+            "pyt": "How long did you train for FEAST One?",
+            "pl": "Powiedz, że ponad miesiąc, robiąc pełne symulacje, każdą po dwie, trzy godziny.",
+            "en": "For over a month, doing full simulations, two or three hours each."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 17.788
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 4.552
+          },
+          "tekst": {
+            "pyt": "Why didn't you just use the practice games you found?",
+            "pl": "Powiedz, że były za łatwe i bardzo szybko ci się znudziły.",
+            "en": "They were too easy, and I got bored with them very quickly."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 22.364
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 6.16
+          },
+          "tekst": {
+            "pyt": "What was at stake in that negotiation?",
+            "pl": "Powiedz, że odrzuciłeś inną pracę, żeby pracować z nimi, więc potrzebowałeś dużo grup.",
+            "en": "I'd turned down another job to work with them, so I needed a lot of groups."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 13.836
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 4.912
+          },
+          "tekst": {
+            "pyt": "Why did you think they would agree?",
+            "pl": "Powiedz, że w poprzednim roku poszło ci bardzo dobrze.",
+            "en": "Because I'd done very well the year before."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 22.008
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": "What would have happened if you hadn't written that email?",
+            "pl": "Powiedz, że pewnie skończyłoby się na godzinie albo dwóch w tygodniu, jak u większości nauczycieli.",
+            "en": "I'd probably have ended up with an hour or two a week, like most of the teachers."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 15.928
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": "How did you learn to build that website?",
+            "pl": "Powiedz, że metodą prób i błędów, z pomocą agentów do programowania.",
+            "en": "By trial and error, with help from coding agents."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 17.928
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": "How did you know what your friend wanted?",
+            "pl": "Powiedz, że pokazywałeś mu prototypy i poprawiałeś je na podstawie jego uwag.",
+            "en": "I showed him prototypes and improved them based on his feedback."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 20.364
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": "So are you a software engineer?",
+            "pl": "Powiedz, że nie: jesteś korepetytorem z matematyki, a programowanie to dla ciebie raczej coś pobocznego.",
+            "en": "No, I'm a math tutor. Programming is more of a side thing for me."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "sluchanka",
+      "src": "grupa-6.mp3",
+      "zdania": [
+        {
+          "pl": "We wrześniu musiałem wynegocjować nową umowę z firmą korepetycyjną, w której pracuję.",
+          "en": "Back in September, I had to negotiate a new contract with the tutoring company I work for.",
+          "t": [
+            0,
+            5.304
+          ]
+        },
+        {
+          "pl": "Płacą za godzinę, a większość nauczycieli pracuje tam tylko godzinę albo dwie w tygodniu.",
+          "en": "You get paid by the hour, and most of the teachers there only work an hour or two a week.",
+          "t": [
+            7.804,
+            13.372
+          ]
+        },
+        {
+          "pl": "Ale ja odrzuciłem inną pracę, żeby pracować z nimi, więc potrzebowałem dużo więcej.",
+          "en": "But I'd turned down another job to work with them, so I needed a lot more than that.",
+          "t": [
+            15.872,
+            21.536
+          ]
+        },
+        {
+          "pl": "Więc napisałem im maila, że w poprzednim roku poszło mi bardzo dobrze.",
+          "en": "So I wrote them an email saying I'd done very well the year before.",
+          "t": [
+            24.036,
+            29.052
+          ]
+        },
+        {
+          "pl": "Zasugerowałem, żeby dali mi wszystkie grupy z matematyki rozszerzonej.",
+          "en": "I suggested that they give me all the advanced math groups.",
+          "t": [
+            31.552,
+            35.704
+          ]
+        },
+        {
+          "pl": "Zgodzili się i zacząłem dobrze zarabiać.",
+          "en": "They agreed, and I started making good money.",
+          "t": [
+            38.014,
+            41.422
+          ]
+        },
+        {
+          "pl": "Gdybym nie napisał tego maila, nie zarobiłbym nawet w przybliżeniu tyle.",
+          "en": "If I hadn't written that email, I wouldn't have earned nearly as much.",
+          "t": [
+            43.102,
+            47.614
+          ]
+        },
+        {
+          "pl": "W tym roku kolega poprosił mnie, żebym zrobił stronę, na której można spersonalizować własną odzież kolarską.",
+          "en": "This year, a friend asked me to build a website where you can customize your own cycling apparel.",
+          "t": [
+            50.114,
+            55.322
+          ]
+        },
+        {
+          "pl": "Nie miałem doświadczenia w takich projektach, więc musiałem się dużo nauczyć, i to szybko.",
+          "en": "I had no experience with projects like that, so I had to learn a lot, and fast.",
+          "t": [
+            57.822,
+            62.742
+          ]
+        },
+        {
+          "pl": "Uczyłem się metodą prób i błędów, z pomocą agentów do programowania.",
+          "en": "I learned by trial and error, with help from coding agents.",
+          "t": [
+            65.242,
+            68.794
+          ]
+        },
+        {
+          "pl": "Zbudowałem kilka prototypów i mu je pokazałem.",
+          "en": "I built a few prototypes and showed them to him.",
+          "t": [
+            71.104,
+            74.464
+          ]
+        },
+        {
+          "pl": "Na podstawie jego uwag zrobiłem drugą wersję i poprawiałem ją dalej.",
+          "en": "Based on his feedback, I built a second version and kept improving it.",
+          "t": [
+            76.564,
+            80.068
+          ]
+        },
+        {
+          "pl": "Rozgryzienie tego zajęło trochę czasu, ale poszło dość gładko.",
+          "en": "It took some time to figure out, but it went pretty smoothly.",
+          "t": [
+            82.568,
+            86.024
+          ]
+        }
+      ]
+    }
+  ]
+}
