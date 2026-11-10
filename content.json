@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-11-09T14:33:35.758Z",
+  "generatedAt": "2026-11-10T08:46:42.916Z",
   "course": {
     "id": "r",
     "title": "Rozmowa · angielski",
     "description": "Dział z każdej sesji: Twoje zdania z nagrań poprawione, te same ramy w nowych zdaniach, komisja, która dopytuje, i shadowing całych odpowiedzi."
   },
   "chapters": [
+    {
+      "id": "r4",
+      "slug": "R/04-r4-rundy-stres-decyzja",
+      "localNumber": 4,
+      "title": "R4 · Rundy: stres i decyzje / R4 · Rounds: stress and decisions",
+      "titlePl": "R4 · Rundy: stres i decyzje",
+      "titleEn": "R4 · Rounds: stress and decisions",
+      "description": "10.11 · historia 3 w 3 rundach (W 70 → 81 → 75), historia 6 (W 84 → 97) i bliźniak „decide quickly” (W 78, 09.11: 77). prepare for, as well as I can, how it would go, he wrote back that I was welcome, decide whether to, keep telling myself, went smoothly, connecting train, different from, FEAST /fiːst/.",
+      "pdf": "R/04-r4-rundy-stres-decyzja/rozdzial.pdf",
+      "format": 2,
+      "audioManifest": "R/04-r4-rundy-stres-decyzja/audio.json",
+      "audioVersion": 1794300402686,
+      "hasAudio": true,
+      "groups": [
+        {
+          "n": 1,
+          "label": "Grupa 1 · Twoje zdania: stres",
+          "parCount": 11,
+          "pytanie432": "How do you handle stress?"
+        },
+        {
+          "n": 2,
+          "label": "Grupa 2 · Twoje zdania: decyzja bez pełnych informacji",
+          "parCount": 9,
+          "pytanie432": "Tell us about a decision you made without full information."
+        },
+        {
+          "n": 3,
+          "label": "Grupa 3 · Twoje zdania: bliźniak",
+          "parCount": 8,
+          "pytanie432": "Tell us about a time you had to decide quickly."
+        },
+        {
+          "n": 4,
+          "label": "Grupa 4 · Nowe zdania",
+          "parCount": 10,
+          "pytanie432": "How do you deal with pressure?"
+        },
+        {
+          "n": 5,
+          "label": "Grupa 5 · Komisja dopytuje",
+          "parCount": 8,
+          "pytanie432": "Tell us about a risk you took."
+        },
+        {
+          "n": 6,
+          "label": "Grupa 6 · Shadowing: stres i decyzja",
+          "parCount": 14
+        }
+      ]
+    },
     {
       "id": "r3",
       "slug": "R/03-r3-rundy-negocjacje",
@@ -17,7 +68,7 @@
       "pdf": "R/03-r3-rundy-negocjacje/rozdzial.pdf",
       "format": 2,
       "audioManifest": "R/03-r3-rundy-negocjacje/audio.json",
-      "audioVersion": 1794234808727,
+      "audioVersion": 1794300402518,
       "hasAudio": true,
       "groups": [
         {
@@ -68,7 +119,7 @@
       "pdf": "R/02-r2-historie/rozdzial.pdf",
       "format": 2,
       "audioManifest": "R/02-r2-historie/audio.json",
-      "audioVersion": 1794150273334,
+      "audioVersion": 1794300402495,
       "hasAudio": true,
       "groups": [
         {
@@ -149,7 +200,7 @@
       "pdf": "R/01-r1-dlaczego-kontroler/rozdzial.pdf",
       "format": 2,
       "audioManifest": "R/01-r1-dlaczego-kontroler/audio.json",
-      "audioVersion": 1793964871440,
+      "audioVersion": 1794300402424,
       "hasAudio": true,
       "groups": [
         {

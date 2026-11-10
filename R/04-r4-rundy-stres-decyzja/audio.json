@@ -1,0 +1,891 @@
+{
+  "wersja": 2,
+  "generatedAt": "2026-11-10T08:36:38.011Z",
+  "grupy": [
+    {
+      "n": 1,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g1-p01-cue.mp3",
+            "sek": 13.856
+          },
+          "wzor": {
+            "src": "audio/g1-p01-en.mp3",
+            "sek": 5.248
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Zwykle radzę sobie ze stresem, przygotowując się do zadania najlepiej, jak potrafię.",
+            "en": "I usually handle stress by preparing for the task as well as I can."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g1-p02-cue.mp3",
+            "sek": 8.76
+          },
+          "wzor": {
+            "src": "audio/g1-p02-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam na przykład przygotowania do FEAST One.",
+            "en": "For example, I remember preparing for FEAST One."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g1-p03-cue.mp3",
+            "sek": 14.456
+          },
+          "wzor": {
+            "src": "audio/g1-p03-en.mp3",
+            "sek": 5.608
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Byłem bardzo zestresowany i miałem złe przeczucia co do tego, jak to wszystko pójdzie.",
+            "en": "I was very stressed, and I had a bad feeling about how it would all go."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g1-p04-cue.mp3",
+            "sek": 10.104
+          },
+          "wzor": {
+            "src": "audio/g1-p04-en.mp3",
+            "sek": 4.456
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale przypominałem sobie też, jak dobrze się przygotowałem.",
+            "en": "But I also reminded myself how well I'd prepared."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g1-p05-cue.mp3",
+            "sek": 14.456
+          },
+          "wzor": {
+            "src": "audio/g1-p05-en.mp3",
+            "sek": 5.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pomaga mi wyobrazić sobie pracę, którą wykonałem, i przeszkody, które już pokonałem.",
+            "en": "It helps me picture the work I've done and the obstacles I've already overcome."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g1-p06-cue.mp3",
+            "sek": 13.712
+          },
+          "wzor": {
+            "src": "audio/g1-p06-en.mp3",
+            "sek": 6.112
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To przestawia mi coś w głowie i zaczynam patrzeć na zadanie bardziej pozytywnie.",
+            "en": "It flips a switch in my head, and I start to look at the task more positively."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g1-p07-cue.mp3",
+            "sek": 14.72
+          },
+          "wzor": {
+            "src": "audio/g1-p07-en.mp3",
+            "sek": 6.76
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc dla mnie to połączenie dobrego przygotowania i pamiętania o wcześniejszych sukcesach.",
+            "en": "So for me, it's a mix of being well prepared and remembering my previous wins."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g1-p08-cue.mp3",
+            "sek": 14.048
+          },
+          "wzor": {
+            "src": "audio/g1-p08-en.mp3",
+            "sek": 5.512
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Tej jesieni zbudowałem własny symulator, zestaw gier, na których trenowałem.",
+            "en": "This fall, I built my own simulator, a set of games that I trained on."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g1-p09-cue.mp3",
+            "sek": 13.52
+          },
+          "wzor": {
+            "src": "audio/g1-p09-en.mp3",
+            "sek": 7.12
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Dzień przed testem powtarzałem sobie, że zrobiłem całą robotę i jestem gotowy.",
+            "en": "The day before the test, I kept telling myself that I'd done all the work and I was ready."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g1-p10-cue.mp3",
+            "sek": 11.016
+          },
+          "wzor": {
+            "src": "audio/g1-p10-en.mp3",
+            "sek": 5.104
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powtarzałem sobie też, że stres jest dla mnie paliwem.",
+            "en": "I also kept telling myself that stress is fuel for me."
+          }
+        },
+        {
+          "n": 11,
+          "cue": {
+            "src": "audio/g1-p11-cue.mp3",
+            "sek": 13.664
+          },
+          "wzor": {
+            "src": "audio/g1-p11-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wyższe tętno i trochę adrenaliny działają na moją korzyść, a nie przeciwko mnie.",
+            "en": "A higher heart rate and a bit of adrenaline work for me, not against me."
+          }
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g2-p01-cue.mp3",
+            "sek": 13.952
+          },
+          "wzor": {
+            "src": "audio/g2-p01-en.mp3",
+            "sek": 5.464
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pamiętam, jak kiedyś musiałem podjąć decyzję bez wszystkich informacji.",
+            "en": "I remember a time I had to make a decision without all the information."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g2-p02-cue.mp3",
+            "sek": 16.016
+          },
+          "wzor": {
+            "src": "audio/g2-p02-en.mp3",
+            "sek": 8.848
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "W maju musiałem zdecydować, czy szukać pracy w Krakowie, czy wrócić do rodziców i polecieć na kilka miesięcy do Norwegii.",
+            "en": "Back in May, I had to decide whether to look for a job in Kraków or move back in with my parents and fly to Norway for a few months."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g2-p03-cue.mp3",
+            "sek": 12.704
+          },
+          "wzor": {
+            "src": "audio/g2-p03-en.mp3",
+            "sek": 5.2
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wciąż pracowałem w Krakowie, ale moja umowa dobiegała końca.",
+            "en": "I was still working in Kraków, but my contract was coming to an end."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g2-p04-cue.mp3",
+            "sek": 13.616
+          },
+          "wzor": {
+            "src": "audio/g2-p04-en.mp3",
+            "sek": 4.96
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Wysłałem maila do kolegi w Norwegii i napisałem mu, że szukam pracy.",
+            "en": "I emailed a friend in Norway and told him I was looking for a job."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g2-p05-cue.mp3",
+            "sek": 9.36
+          },
+          "wzor": {
+            "src": "audio/g2-p05-en.mp3",
+            "sek": 5.152
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Odpisał, że śmiało mogę u nich pracować.",
+            "en": "He wrote back that I was welcome to work with them."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g2-p06-cue.mp3",
+            "sek": 14.912
+          },
+          "wzor": {
+            "src": "audio/g2-p06-en.mp3",
+            "sek": 6.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Ale nie wiedziałem, jak długo potrwa ta praca, co będę tam robić ani ile płacą.",
+            "en": "But I didn't know how long the job would last, what I'd be doing, or how much it paid."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g2-p07-cue.mp3",
+            "sek": 11.952
+          },
+          "wzor": {
+            "src": "audio/g2-p07-en.mp3",
+            "sek": 5.104
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musiałem też zdecydować, co zrobić z pokojem w Krakowie.",
+            "en": "I also had to decide what to do about my room in Kraków."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g2-p08-cue.mp3",
+            "sek": 16.664
+          },
+          "wzor": {
+            "src": "audio/g2-p08-en.mp3",
+            "sek": 7
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Mogłem wrócić do rodziców i trzymać u nich swoje rzeczy albo dalej płacić za pokój, kiedy będę w Norwegii.",
+            "en": "I could move back in with my parents and keep my things there, or keep paying for the room while I was in Norway."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g2-p09-cue.mp3",
+            "sek": 15.104
+          },
+          "wzor": {
+            "src": "audio/g2-p09-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Długo się nad tym zastanawiałem i ostatecznie wszystko bardzo dobrze się ułożyło.",
+            "en": "I thought it over for a long time, and in the end, it all worked out really well."
+          }
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g3-p01-cue.mp3",
+            "sek": 13.352
+          },
+          "wzor": {
+            "src": "audio/g3-p01-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pierwsze, co przychodzi mi do głowy, to prosta sytuacja z zeszłego czwartku.",
+            "en": "The first thing that comes to mind is a simple situation from last Thursday."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g3-p02-cue.mp3",
+            "sek": 12.968
+          },
+          "wzor": {
+            "src": "audio/g3-p02-en.mp3",
+            "sek": 5.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Musiałem zdecydować, czy jechać do Krakowa autobusem, czy pociągiem.",
+            "en": "I had to decide whether to go to Kraków by bus or by train."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g3-p03-cue.mp3",
+            "sek": 6.816
+          },
+          "wzor": {
+            "src": "audio/g3-p03-en.mp3",
+            "sek": 3.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Autobus odjeżdżał za dziesięć minut.",
+            "en": "The bus was leaving in ten minutes."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g3-p04-cue.mp3",
+            "sek": 7.704
+          },
+          "wzor": {
+            "src": "audio/g3-p04-en.mp3",
+            "sek": 3.112
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie chciałem pakować się w pośpiechu.",
+            "en": "I didn't want to pack in a rush."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g3-p05-cue.mp3",
+            "sek": 16.52
+          },
+          "wzor": {
+            "src": "audio/g3-p05-en.mp3",
+            "sek": 6.448
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Więc postanowiłem zapłacić trochę więcej, poczekać jeszcze trzydzieści minut i bez pośpiechu wszystko spakować.",
+            "en": "So I decided to pay a bit more, wait another thirty minutes, and pack everything without rushing."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g3-p06-cue.mp3",
+            "sek": 13.112
+          },
+          "wzor": {
+            "src": "audio/g3-p06-en.mp3",
+            "sek": 5.92
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Prawie spóźniłem się na przesiadkę, ale ostatecznie wszystko poszło gładko.",
+            "en": "I was almost late for my connecting train, but in the end, everything went smoothly."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g3-p07-cue.mp3",
+            "sek": 15.368
+          },
+          "wzor": {
+            "src": "audio/g3-p07-en.mp3",
+            "sek": 6.208
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "A podróż pociągiem pierwszą klasą to zupełnie co innego niż jazda starym autobusem.",
+            "en": "And traveling first class on a train is completely different from taking an old bus."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g3-p08-cue.mp3",
+            "sek": 5.112
+          },
+          "wzor": {
+            "src": "audio/g3-p08-en.mp3",
+            "sek": 2.704
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "To była dobra decyzja.",
+            "en": "It was a good decision."
+          }
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tryb": "pl2en",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g4-p01-cue.mp3",
+            "sek": 11.4
+          },
+          "wzor": {
+            "src": "audio/g4-p01-en.mp3",
+            "sek": 3.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przygotowała się do rozmowy kwalifikacyjnej najlepiej, jak potrafiła.",
+            "en": "She prepared for the interview as well as she could."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g4-p02-cue.mp3",
+            "sek": 7.104
+          },
+          "wzor": {
+            "src": "audio/g4-p02-en.mp3",
+            "sek": 3.256
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie wiedziałem, jak to pójdzie.",
+            "en": "I didn't know how it would go."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g4-p03-cue.mp3",
+            "sek": 11.712
+          },
+          "wzor": {
+            "src": "audio/g4-p03-en.mp3",
+            "sek": 4.264
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powiedział mi, że śmiało mogę zostać, ile chcę.",
+            "en": "He told me I was welcome to stay as long as I wanted."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g4-p04-cue.mp3",
+            "sek": 8.52
+          },
+          "wzor": {
+            "src": "audio/g4-p04-en.mp3",
+            "sek": 3.856
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie mogą się zdecydować, czy sprzedać dom.",
+            "en": "They can't decide whether to sell the house."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g4-p05-cue.mp3",
+            "sek": 10.92
+          },
+          "wzor": {
+            "src": "audio/g4-p05-en.mp3",
+            "sek": 5.56
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powtarzałem sobie, że wszystko będzie dobrze.",
+            "en": "I kept telling myself that everything would be fine."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g4-p06-cue.mp3",
+            "sek": 4.2
+          },
+          "wzor": {
+            "src": "audio/g4-p06-en.mp3",
+            "sek": 2.656
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Powtarzasz się.",
+            "en": "You're repeating yourself."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g4-p07-cue.mp3",
+            "sek": 5.064
+          },
+          "wzor": {
+            "src": "audio/g4-p07-en.mp3",
+            "sek": 3.16
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Przeprowadzka poszła gładko.",
+            "en": "The move went smoothly."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g4-p08-cue.mp3",
+            "sek": 6
+          },
+          "wzor": {
+            "src": "audio/g4-p08-en.mp3",
+            "sek": 3.616
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Nie zdążyliśmy na przesiadkę.",
+            "en": "We missed our connecting train."
+          }
+        },
+        {
+          "n": 9,
+          "cue": {
+            "src": "audio/g4-p09-cue.mp3",
+            "sek": 9.12
+          },
+          "wzor": {
+            "src": "audio/g4-p09-en.mp3",
+            "sek": 4.216
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Życie tutaj jest zupełnie inne niż w domu.",
+            "en": "Life here is completely different from life back home."
+          }
+        },
+        {
+          "n": 10,
+          "cue": {
+            "src": "audio/g4-p10-cue.mp3",
+            "sek": 6.768
+          },
+          "wzor": {
+            "src": "audio/g4-p10-en.mp3",
+            "sek": 3.664
+          },
+          "tekst": {
+            "pyt": null,
+            "pl": "Pokonała strach przed lataniem.",
+            "en": "She overcame her fear of flying."
+          }
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tryb": "scenka",
+      "pary": [
+        {
+          "n": 1,
+          "cue": {
+            "src": "audio/g5-p01-cue.mp3",
+            "sek": 23.472
+          },
+          "wzor": {
+            "src": "audio/g5-p01-en.mp3",
+            "sek": 6.808
+          },
+          "tekst": {
+            "pyt": "How did you deal with the stress before FEAST One?",
+            "pl": "Powiedz, że powtarzałeś sobie, że zrobiłeś całą robotę i że stres jest dla ciebie paliwem.",
+            "en": "I kept telling myself that I'd done all the work and that stress is fuel for me."
+          }
+        },
+        {
+          "n": 2,
+          "cue": {
+            "src": "audio/g5-p02-cue.mp3",
+            "sek": 20.364
+          },
+          "wzor": {
+            "src": "audio/g5-p02-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": "Doesn't stress hurt your performance?",
+            "pl": "Powiedz, że nie w twoim przypadku: wyższe tętno działa na twoją korzyść, a nie przeciwko tobie.",
+            "en": "Not in my case. A higher heart rate works for me, not against me."
+          }
+        },
+        {
+          "n": 3,
+          "cue": {
+            "src": "audio/g5-p03-cue.mp3",
+            "sek": 20.72
+          },
+          "wzor": {
+            "src": "audio/g5-p03-en.mp3",
+            "sek": 5.8
+          },
+          "tekst": {
+            "pyt": "What do you mean by remembering your previous wins?",
+            "pl": "Powiedz, że myślisz o przeszkodach, które już pokonałeś, i to dodaje ci pewności siebie.",
+            "en": "I think about the obstacles I've already overcome, and it gives me confidence."
+          }
+        },
+        {
+          "n": 4,
+          "cue": {
+            "src": "audio/g5-p04-cue.mp3",
+            "sek": 18.38
+          },
+          "wzor": {
+            "src": "audio/g5-p04-en.mp3",
+            "sek": 5.512
+          },
+          "tekst": {
+            "pyt": "Controllers deal with stress every day. How would you handle that?",
+            "pl": "Powiedz, że tak samo: dobre przygotowanie i traktowanie stresu jak paliwa.",
+            "en": "The same way: good preparation and treating stress as fuel."
+          }
+        },
+        {
+          "n": 5,
+          "cue": {
+            "src": "audio/g5-p05-cue.mp3",
+            "sek": 18.876
+          },
+          "wzor": {
+            "src": "audio/g5-p05-en.mp3",
+            "sek": 5.248
+          },
+          "tekst": {
+            "pyt": "What made the Norway decision so hard?",
+            "pl": "Powiedz, że nie wiedziałeś, jak długo potrwa praca ani ile płacą.",
+            "en": "I didn't know how long the job would last or how much it paid."
+          }
+        },
+        {
+          "n": 6,
+          "cue": {
+            "src": "audio/g5-p06-cue.mp3",
+            "sek": 14.208
+          },
+          "wzor": {
+            "src": "audio/g5-p06-en.mp3",
+            "sek": 4.048
+          },
+          "tekst": {
+            "pyt": "What did your friend tell you?",
+            "pl": "Powiedz, że odpisał, że śmiało możesz u nich pracować.",
+            "en": "He wrote back that I was welcome to work with them."
+          }
+        },
+        {
+          "n": 7,
+          "cue": {
+            "src": "audio/g5-p07-cue.mp3",
+            "sek": 24.056
+          },
+          "wzor": {
+            "src": "audio/g5-p07-en.mp3",
+            "sek": 6.016
+          },
+          "tekst": {
+            "pyt": "Why did you take the train instead of the bus?",
+            "pl": "Powiedz, że nie chciałeś pakować się w pośpiechu, więc zapłaciłeś trochę więcej i poczekałeś pół godziny.",
+            "en": "I didn't want to pack in a rush, so I paid a bit more and waited half an hour."
+          }
+        },
+        {
+          "n": 8,
+          "cue": {
+            "src": "audio/g5-p08-cue.mp3",
+            "sek": 15.212
+          },
+          "wzor": {
+            "src": "audio/g5-p08-en.mp3",
+            "sek": 5.008
+          },
+          "tekst": {
+            "pyt": "Would you make the same decision again?",
+            "pl": "Powiedz, że tak: ostatecznie wszystko się ułożyło.",
+            "en": "Yes, I would. It all worked out in the end."
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tryb": "sluchanka",
+      "src": "grupa-6.mp3",
+      "zdania": [
+        {
+          "pl": "Zwykle radzę sobie ze stresem, przygotowując się najlepiej, jak potrafię.",
+          "en": "I usually handle stress by preparing as well as I can.",
+          "t": [
+            0,
+            4.248
+          ]
+        },
+        {
+          "pl": "Przed FEAST One byłem bardzo zestresowany i miałem złe przeczucia co do tego, jak to pójdzie.",
+          "en": "Before FEAST One, I was very stressed, and I had a bad feeling about how it would go.",
+          "t": [
+            6.558,
+            12.678
+          ]
+        },
+        {
+          "pl": "Więc przypominałem sobie o całej pracy, którą wykonałem.",
+          "en": "So I reminded myself of all the work I'd done.",
+          "t": [
+            15.178,
+            19.834
+          ]
+        },
+        {
+          "pl": "Zbudowałem własny symulator i trenowałem na nim ponad miesiąc.",
+          "en": "I'd built my own simulator and trained on it for over a month.",
+          "t": [
+            21.934,
+            26.35
+          ]
+        },
+        {
+          "pl": "Dzień przed testem powtarzałem sobie, że jestem gotowy.",
+          "en": "The day before the test, I kept telling myself that I was ready.",
+          "t": [
+            28.85,
+            33.314
+          ]
+        },
+        {
+          "pl": "Powtarzałem sobie też, że stres jest dla mnie paliwem.",
+          "en": "I also kept telling myself that stress is fuel for me.",
+          "t": [
+            35.814,
+            40.134
+          ]
+        },
+        {
+          "pl": "Wyższe tętno i trochę adrenaliny działają na moją korzyść, a nie przeciwko mnie.",
+          "en": "A higher heart rate and a bit of adrenaline work for me, not against me.",
+          "t": [
+            42.444,
+            46.812
+          ]
+        },
+        {
+          "pl": "W maju musiałem podjąć decyzję, nie mając wszystkich informacji.",
+          "en": "Back in May, I had to make a decision without all the information.",
+          "t": [
+            49.312,
+            53.632
+          ]
+        },
+        {
+          "pl": "Musiałem zdecydować, czy szukać pracy w Krakowie, czy pojechać na kilka miesięcy do Norwegii.",
+          "en": "I had to decide whether to look for a job in Kraków or go to Norway for a few months.",
+          "t": [
+            56.132,
+            61.388
+          ]
+        },
+        {
+          "pl": "Wciąż pracowałem w Krakowie, ale moja umowa dobiegała końca.",
+          "en": "I was still working in Kraków, but my contract was coming to an end.",
+          "t": [
+            63.888,
+            68.088
+          ]
+        },
+        {
+          "pl": "Wysłałem maila do kolegi w Norwegii, a on odpisał, że śmiało mogę u nich pracować.",
+          "en": "I emailed a friend in Norway, and he wrote back that I was welcome to work with them.",
+          "t": [
+            70.588,
+            75.508
+          ]
+        },
+        {
+          "pl": "Ale nie wiedziałem, jak długo potrwa ta praca ani ile płacą.",
+          "en": "But I didn't know how long the job would last or how much it paid.",
+          "t": [
+            78.008,
+            82.424
+          ]
+        },
+        {
+          "pl": "Musiałem też zdecydować, czy zatrzymać pokój w Krakowie, czy wrócić do rodziców.",
+          "en": "I also had to decide whether to keep my room in Kraków or move back in with my parents.",
+          "t": [
+            84.924,
+            90.732
+          ]
+        },
+        {
+          "pl": "Długo się nad tym zastanawiałem i ostatecznie wszystko bardzo dobrze się ułożyło.",
+          "en": "I thought it over for a long time, and in the end, it all worked out really well.",
+          "t": [
+            93.232,
+            98.152
+          ]
+        }
+      ]
+    }
+  ]
+}
